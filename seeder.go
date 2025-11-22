@@ -19,7 +19,7 @@ func seedQuestions() {
 	questions := []Question{
 		// CULTURA - Símbolos Patrios,
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuál es el nombre oficial actual del país?",
 			Difficulty:  2,
@@ -33,7 +33,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿En qué año Colombia adoptó definitivamente su nombre actual de \"República de Colombia\"?",
 			Difficulty:  2,
@@ -47,7 +47,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Quién dio el nombre de \"República de Colombia\" el 15 de febrero de 1819?",
 			Difficulty:  2,
@@ -61,7 +61,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "El nombre de Colombia es un homenaje a:",
 			Difficulty:  2,
@@ -75,7 +75,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuáles son los colores de la bandera de Colombia en orden de arriba hacia abajo?",
 			Difficulty:  2,
@@ -89,7 +89,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "En la bandera nacional, el color amarillo representa:",
 			Difficulty:  2,
@@ -103,7 +103,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Qué representa el color azul en la bandera?",
 			Difficulty:  2,
@@ -117,7 +117,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "El color rojo de la bandera simboliza:",
 			Difficulty:  2,
@@ -131,7 +131,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Quién propuso los colores de la bandera basándose en la teoría de los colores de Goethe?",
 			Difficulty:  2,
@@ -145,7 +145,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿En qué fecha se declaró oficialmente la bandera actual mediante la Ley 124?",
 			Difficulty:  2,
@@ -159,7 +159,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Quién diseñó el escudo de armas de Colombia?",
 			Difficulty:  2,
@@ -173,7 +173,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿En qué año fue diseñado el escudo nacional?",
 			Difficulty:  2,
@@ -187,7 +187,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Qué ave aparece en el escudo nacional?",
 			Difficulty:  2,
@@ -201,7 +201,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuál es el lema nacional que aparece en el escudo?",
 			Difficulty:  2,
@@ -215,7 +215,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "En la franja superior del escudo, ¿qué fruto aparece?",
 			Difficulty:  2,
@@ -229,7 +229,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Qué simboliza el gorro frigio en el escudo nacional?",
 			Difficulty:  2,
@@ -243,7 +243,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "Los dos buques en la franja inferior del escudo representan:",
 			Difficulty:  2,
@@ -257,7 +257,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Quién escribió la letra del himno nacional?",
 			Difficulty:  2,
@@ -271,7 +271,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Quién compuso la música del himno nacional?",
 			Difficulty:  2,
@@ -285,7 +285,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿En qué año fue compuesto el himno nacional?",
 			Difficulty:  2,
@@ -299,7 +299,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuál es el ave nacional de Colombia?",
 			Difficulty:  2,
@@ -313,7 +313,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuál es la flor nacional de Colombia?",
 			Difficulty:  2,
@@ -327,7 +327,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuál es el nombre científico de la flor nacional?",
 			Difficulty:  2,
@@ -341,7 +341,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuál es el árbol nacional de Colombia?",
 			Difficulty:  2,
@@ -355,7 +355,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuál es considerado el símbolo cultural de Colombia mencionado en el documento?",
 			Difficulty:  2,
@@ -369,7 +369,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
 			Text:        "¿Cuál es la moneda oficial de Colombia?",
 			Difficulty:  2,
@@ -383,7 +383,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA",
 			Text:        "Según el documento, ¿cuál es considerado el plato insigne de Bogotá?",
 			Difficulty:  2,
@@ -397,7 +397,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA",
 			Text:        "¿Qué plato es típico de la región antioqueña?",
 			Difficulty:  2,
@@ -411,7 +411,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA",
 			Text:        "El sancocho de gallina es un plato típico del:",
 			Difficulty:  2,
@@ -425,7 +425,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA",
 			Text:        "La lechona es un plato tradicional del:",
 			Difficulty:  2,
@@ -439,7 +439,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA",
 			Text:        "El mote de queso es típico de:",
 			Difficulty:  2,
@@ -453,7 +453,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA",
 			Text:        "¿Cuál de estos ingredientes NO se menciona como parte del ajiaco?",
 			Difficulty:  2,
@@ -467,7 +467,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "¿En qué ciudad se celebra el Carnaval más famoso de Colombia?",
 			Difficulty:  2,
@@ -481,7 +481,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "El Carnaval de Negros y Blancos se celebra en:",
 			Difficulty:  2,
@@ -495,7 +495,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "¿En qué mes se celebra el Carnaval de Barranquilla?",
 			Difficulty:  2,
@@ -509,7 +509,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "La Feria de las Flores se celebra en:",
 			Difficulty:  2,
@@ -523,7 +523,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "¿En qué mes se realiza la Feria de las Flores?",
 			Difficulty:  2,
@@ -537,7 +537,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "El Festival Vallenato se celebra en:",
 			Difficulty:  2,
@@ -551,7 +551,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "El Festival Internacional de Teatro se realiza en:",
 			Difficulty:  2,
@@ -565,7 +565,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "¿Cada cuántos años se celebra el Festival Iberoamericano de Teatro de Bogotá?",
 			Difficulty:  2,
@@ -579,7 +579,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVALES Y CELEBRACIONES",
 			Text:        "El Festival de la Leyenda Vallenata rinde homenaje a:",
 			Difficulty:  2,
@@ -609,7 +609,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
 			Text:        "¿Quién es conocido por sus esculturas voluminosas?",
 			Difficulty:  2,
@@ -639,7 +639,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
 			Text:        "¿Dónde se encuentra el Museo del Oro?",
 			Difficulty:  2,
@@ -669,7 +669,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
 			Text:        "¿Cuál es el teatro más antiguo de Colombia según el documento?",
 			Difficulty:  2,
@@ -699,7 +699,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
 			Text:        "El Teatro Colón está ubicado en:",
 			Difficulty:  2,
@@ -729,7 +729,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
 			Text:        "¿Quién escribió \"Cien años de soledad\"?",
 			Difficulty:  2,
@@ -759,7 +759,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
 			Text:        "¿En qué año Gabriel García Márquez ganó el Premio Nobel de Literatura?",
 			Difficulty:  2,
@@ -789,7 +789,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
 			Text:        "¿Quién escribió \"María\"?",
 			Difficulty:  2,
@@ -819,7 +819,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
 			Text:        "\"La Vorágine\" fue escrita por:",
 			Difficulty:  2,
@@ -849,7 +849,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA",
 			Text:        "¿De qué región es originario el vallenato?",
 			Difficulty:  2,
@@ -879,7 +879,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA",
 			Text:        "La cumbia es originaria de:",
 			Difficulty:  2,
@@ -909,7 +909,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA",
 			Text:        "El bambuco es característico de:",
 			Difficulty:  2,
@@ -939,7 +939,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA",
 			Text:        "El joropo es el baile típico de:",
 			Difficulty:  2,
@@ -969,7 +969,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA",
 			Text:        "El currulao es una danza del:",
 			Difficulty:  2,
@@ -999,7 +999,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA",
 			Text:        "¿Cuál es el instrumento principal del vallenato?",
 			Difficulty:  2,
@@ -1029,7 +1029,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA",
 			Text:        "La gaita es un instrumento típico de:",
 			Difficulty:  2,
@@ -1059,7 +1059,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "DEPORTES",
 			Text:        "Según el documento, ¿cuál es el deporte más popular en Colombia?",
 			Difficulty:  2,
@@ -1089,7 +1089,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "DEPORTES",
 			Text:        "¿Cuál es considerado el deporte nacional de Colombia?",
 			Difficulty:  2,
@@ -1119,7 +1119,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "DEPORTES",
 			Text:        "¿Quiénes son mencionados como ciclistas destacados en el documento?",
 			Difficulty:  2,
@@ -1149,7 +1149,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN",
 			Text:        "Según el documento, ¿cuál es la religión predominante en Colombia?",
 			Difficulty:  2,
@@ -1179,7 +1179,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN",
 			Text:        "¿Qué porcentaje de la población se identifica como católica según el texto?",
 			Difficulty:  2,
@@ -1209,7 +1209,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿Cuál de estas ciudades es mencionada como Patrimonio de la Humanidad por la UNESCO?",
 			Difficulty:  2,
@@ -1239,7 +1239,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El Parque Nacional Tayrona está ubicado en:",
 			Difficulty:  2,
@@ -1269,7 +1269,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿Dónde se encuentra el Santuario de Las Lajas?",
 			Difficulty:  2,
@@ -1299,7 +1299,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "Caño Cristales es conocido como:",
 			Difficulty:  2,
@@ -1329,7 +1329,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿En qué departamento se encuentra Caño Cristales?",
 			Difficulty:  2,
@@ -1359,7 +1359,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El Eje Cafetero incluye los departamentos de:",
 			Difficulty:  2,
@@ -1389,7 +1389,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "Villa de Leyva está ubicada en:",
 			Difficulty:  2,
@@ -1419,7 +1419,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿Qué ciudad es conocida como \"La Ciudad Amurallada\"?",
 			Difficulty:  2,
@@ -1449,7 +1449,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El Nevado del Ruiz se encuentra en:",
 			Difficulty:  2,
@@ -1479,7 +1479,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿Cuál es el pico más alto de Colombia según el documento?",
 			Difficulty:  2,
@@ -1509,7 +1509,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "La Ciudad Perdida (Teyuna) se encuentra en:",
 			Difficulty:  2,
@@ -1539,7 +1539,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿Qué isla colombiana es mencionada como destino turístico en el Caribe?",
 			Difficulty:  2,
@@ -1569,7 +1569,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El desierto de La Tatacoa está en el departamento de:",
 			Difficulty:  2,
@@ -1599,7 +1599,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "La Catedral de Sal está ubicada en:",
 			Difficulty:  2,
@@ -1629,7 +1629,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El Parque Arqueológico de San Agustín está en:",
 			Difficulty:  2,
@@ -1659,7 +1659,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿Cuál es la capital del departamento del Amazonas?",
 			Difficulty:  2,
@@ -1689,7 +1689,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El Chocó tiene costas sobre:",
 			Difficulty:  2,
@@ -1719,7 +1719,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿Cuál es el río más importante de Colombia según el documento?",
 			Difficulty:  2,
@@ -1749,7 +1749,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El Archipiélago del Rosario está cerca de:",
 			Difficulty:  2,
@@ -1779,7 +1779,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿En qué mes se celebran las principales festividades de Semana Santa en Popayán?",
 			Difficulty:  2,
@@ -1809,7 +1809,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El Puente de Boyacá es importante porque:",
 			Difficulty:  2,
@@ -1839,7 +1839,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El Museo Nacional está ubicado en:",
 			Difficulty:  2,
@@ -1869,7 +1869,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "¿Cuál es la bebida más representativa de Colombia a nivel mundial?",
 			Difficulty:  2,
@@ -1899,7 +1899,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA Y SOCIEDAD",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO",
 			Text:        "El sombrero vueltiao es originario de:",
 			Difficulty:  2,
@@ -1929,7 +1929,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuántas regiones naturales tiene Colombia según el documento?",
 			Difficulty:  2,
@@ -1959,7 +1959,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuáles son las seis regiones naturales de Colombia?",
 			Difficulty:  2,
@@ -1989,7 +1989,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la región más extensa de Colombia?",
 			Difficulty:  2,
@@ -2019,7 +2019,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La región Andina se caracteriza por:",
 			Difficulty:  2,
@@ -2049,7 +2049,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Qué región es conocida como los Llanos Orientales?",
 			Difficulty:  2,
@@ -2079,7 +2079,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La región Insular incluye:",
 			Difficulty:  2,
@@ -2109,7 +2109,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuántos kilómetros de costa tiene Colombia en el Caribe según el documento?",
 			Difficulty:  2,
@@ -2139,7 +2139,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuántos kilómetros de costa tiene Colombia en el Pacífico?",
 			Difficulty:  2,
@@ -2169,7 +2169,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuántos departamentos tiene Colombia?",
 			Difficulty:  2,
@@ -2199,7 +2199,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del departamento de Antioquia?",
 			Difficulty:  2,
@@ -2229,7 +2229,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del departamento del Atlántico es:",
 			Difficulty:  2,
@@ -2259,7 +2259,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital de Bolívar?",
 			Difficulty:  2,
@@ -2289,7 +2289,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital de Boyacá es:",
 			Difficulty:  2,
@@ -2319,7 +2319,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del departamento de Caldas?",
 			Difficulty:  2,
@@ -2349,7 +2349,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Caquetá es:",
 			Difficulty:  2,
@@ -2379,7 +2379,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del Cauca?",
 			Difficulty:  2,
@@ -2409,7 +2409,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Cesar es:",
 			Difficulty:  2,
@@ -2439,7 +2439,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del departamento de Córdoba?",
 			Difficulty:  2,
@@ -2469,7 +2469,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital de Cundinamarca es:",
 			Difficulty:  2,
@@ -2499,7 +2499,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del departamento del Chocó?",
 			Difficulty:  2,
@@ -2529,7 +2529,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Huila es:",
 			Difficulty:  2,
@@ -2559,7 +2559,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital de La Guajira?",
 			Difficulty:  2,
@@ -2589,7 +2589,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Magdalena es:",
 			Difficulty:  2,
@@ -2619,7 +2619,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del Meta?",
 			Difficulty:  2,
@@ -2649,7 +2649,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital de Nariño es:",
 			Difficulty:  2,
@@ -2679,7 +2679,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital de Norte de Santander?",
 			Difficulty:  2,
@@ -2709,7 +2709,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Putumayo es:",
 			Difficulty:  2,
@@ -2739,7 +2739,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del Quindío?",
 			Difficulty:  2,
@@ -2769,7 +2769,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital de Risaralda es:",
 			Difficulty:  2,
@@ -2799,7 +2799,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital de Santander?",
 			Difficulty:  2,
@@ -2829,7 +2829,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital de Sucre es:",
 			Difficulty:  2,
@@ -2859,7 +2859,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del Tolima?",
 			Difficulty:  2,
@@ -2889,7 +2889,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Valle del Cauca es:",
 			Difficulty:  2,
@@ -2919,7 +2919,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del Arauca?",
 			Difficulty:  2,
@@ -2949,7 +2949,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Casanare es:",
 			Difficulty:  2,
@@ -2979,7 +2979,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del Vichada?",
 			Difficulty:  2,
@@ -3009,7 +3009,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Guainía es:",
 			Difficulty:  2,
@@ -3039,7 +3039,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del Guaviare?",
 			Difficulty:  2,
@@ -3069,7 +3069,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "La capital del Vaupés es:",
 			Difficulty:  2,
@@ -3099,7 +3099,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Cuál es la capital del Amazonas?",
 			Difficulty:  2,
@@ -3129,7 +3129,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "San Andrés y Providencia tiene su capital en:",
 			Difficulty:  2,
@@ -3159,7 +3159,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Con cuántos países limita Colombia por tierra?",
 			Difficulty:  2,
@@ -3189,7 +3189,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "Colombia limita al este con:",
 			Difficulty:  2,
@@ -3219,7 +3219,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "Colombia limita al sur con:",
 			Difficulty:  2,
@@ -3249,7 +3249,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
 			Text:        "¿Con qué país limita Colombia al noroeste?",
 			Difficulty:  2,
@@ -4329,7 +4329,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "PRINCIPIOS CONSTITUCIONALES",
 			Text:        "Según la Constitución, Colombia es:",
 			Difficulty:  2,
@@ -4359,7 +4359,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "PRINCIPIOS CONSTITUCIONALES",
 			Text:        "La soberanía reside en:",
 			Difficulty:  2,
@@ -4389,7 +4389,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "PRINCIPIOS CONSTITUCIONALES",
 			Text:        "Colombia se organiza en forma de:",
 			Difficulty:  2,
@@ -4419,7 +4419,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "PRINCIPIOS CONSTITUCIONALES",
 			Text:        "Son fines esenciales del Estado:",
 			Difficulty:  2,
@@ -4449,7 +4449,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "DERECHOS FUNDAMENTALES",
 			Text:        "El derecho a la vida es:",
 			Difficulty:  2,
@@ -4479,7 +4479,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "DERECHOS FUNDAMENTALES",
 			Text:        "¿Cuál de estos es un derecho fundamental?",
 			Difficulty:  2,
@@ -4509,7 +4509,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "DERECHOS FUNDAMENTALES",
 			Text:        "La acción de tutela protege:",
 			Difficulty:  2,
@@ -4539,7 +4539,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "DERECHOS FUNDAMENTALES",
 			Text:        "La tutela debe ser resuelta en:",
 			Difficulty:  2,
@@ -4569,7 +4569,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "DERECHOS FUNDAMENTALES",
 			Text:        "El habeas corpus protege:",
 			Difficulty:  2,
@@ -4599,7 +4599,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "DERECHOS FUNDAMENTALES",
 			Text:        "¿Desde qué edad se es ciudadano colombiano?",
 			Difficulty:  2,
@@ -4629,7 +4629,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "¿Cuáles son las tres ramas del poder público?",
 			Difficulty:  2,
@@ -4659,7 +4659,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "La Rama Ejecutiva está encabezada por:",
 			Difficulty:  2,
@@ -4689,7 +4689,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "¿Quién es el Jefe de Estado y Jefe de Gobierno?",
 			Difficulty:  2,
@@ -4719,7 +4719,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "El período presidencial es de:",
 			Difficulty:  2,
@@ -4749,7 +4749,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "¿Se permite la reelección presidencial inmediata?",
 			Difficulty:  2,
@@ -4779,7 +4779,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "El Congreso de la República está compuesto por:",
 			Difficulty:  2,
@@ -4809,7 +4809,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "¿Cuántos senadores componen el Senado?",
 			Difficulty:  2,
@@ -4839,7 +4839,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "Los senadores son elegidos por:",
 			Difficulty:  2,
@@ -4869,7 +4869,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "El período de senadores y representantes es de:",
 			Difficulty:  2,
@@ -4899,7 +4899,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMAS DEL PODER PÚBLICO",
 			Text:        "La función principal del Congreso es:",
 			Difficulty:  2,
@@ -4929,7 +4929,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA JUDICIAL",
 			Text:        "La Corte Constitucional está compuesta por:",
 			Difficulty:  2,
@@ -4959,7 +4959,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA JUDICIAL",
 			Text:        "El período de los magistrados de la Corte Constitucional es de:",
 			Difficulty:  2,
@@ -4989,7 +4989,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA JUDICIAL",
 			Text:        "La Corte Suprema de Justicia tiene:",
 			Difficulty:  2,
@@ -5019,7 +5019,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA JUDICIAL",
 			Text:        "El Consejo de Estado es el máximo tribunal de:",
 			Difficulty:  2,
@@ -5049,7 +5049,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA JUDICIAL",
 			Text:        "¿Quién dirige la Fiscalía General de la Nación?",
 			Difficulty:  2,
@@ -5079,7 +5079,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA JUDICIAL",
 			Text:        "El Fiscal General es elegido por:",
 			Difficulty:  2,
@@ -5109,7 +5109,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANISMOS DE CONTROL",
 			Text:        "El Ministerio Público está conformado por:",
 			Difficulty:  2,
@@ -5139,7 +5139,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANISMOS DE CONTROL",
 			Text:        "El Procurador General de la Nación es elegido por:",
 			Difficulty:  2,
@@ -5169,7 +5169,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANISMOS DE CONTROL",
 			Text:        "La Contraloría General de la República se encarga de:",
 			Difficulty:  2,
@@ -5199,7 +5199,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANISMOS DE CONTROL",
 			Text:        "El Contralor General es elegido por:",
 			Difficulty:  2,
@@ -5229,7 +5229,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANISMOS DE CONTROL",
 			Text:        "El Defensor del Pueblo es elegido por:",
 			Difficulty:  2,
@@ -5259,7 +5259,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANIZACIÓN ELECTORAL",
 			Text:        "La organización electoral está conformada por:",
 			Difficulty:  2,
@@ -5289,7 +5289,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANIZACIÓN ELECTORAL",
 			Text:        "El Registrador Nacional del Estado Civil es nombrado por:",
 			Difficulty:  2,
@@ -5319,7 +5319,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANIZACIÓN ELECTORAL",
 			Text:        "El voto en Colombia es:",
 			Difficulty:  2,
@@ -5349,7 +5349,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ENTIDADES TERRITORIALES",
 			Text:        "Son entidades territoriales:",
 			Difficulty:  2,
@@ -5379,7 +5379,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ENTIDADES TERRITORIALES",
 			Text:        "Los gobernadores son elegidos por:",
 			Difficulty:  2,
@@ -5409,7 +5409,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ENTIDADES TERRITORIALES",
 			Text:        "El período de los gobernadores es de:",
 			Difficulty:  2,
@@ -5439,7 +5439,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ENTIDADES TERRITORIALES",
 			Text:        "Los alcaldes son elegidos por:",
 			Difficulty:  2,
@@ -5469,7 +5469,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ENTIDADES TERRITORIALES",
 			Text:        "El período de los alcaldes es de:",
 			Difficulty:  2,
@@ -5499,7 +5499,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ENTIDADES TERRITORIALES",
 			Text:        "Las Asambleas Departamentales son:",
 			Difficulty:  2,
@@ -5529,7 +5529,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ENTIDADES TERRITORIALES",
 			Text:        "Los Concejos Municipales:",
 			Difficulty:  2,
@@ -5559,7 +5559,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PARTICIPACIÓN",
 			Text:        "Son mecanismos de participación ciudadana:",
 			Difficulty:  2,
@@ -5589,7 +5589,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PARTICIPACIÓN",
 			Text:        "El referendo sirve para:",
 			Difficulty:  2,
@@ -5619,7 +5619,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PARTICIPACIÓN",
 			Text:        "La revocatoria del mandato procede para:",
 			Difficulty:  2,
@@ -5649,7 +5649,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PARTICIPACIÓN",
 			Text:        "La iniciativa popular legislativa requiere el respaldo de:",
 			Difficulty:  2,
@@ -5679,7 +5679,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ÓRGANOS AUTÓNOMOS",
 			Text:        "El Banco de la República es:",
 			Difficulty:  2,
@@ -5709,7 +5709,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ÓRGANOS AUTÓNOMOS",
 			Text:        "La función principal del Banco de la República es:",
 			Difficulty:  2,
@@ -5739,7 +5739,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ÓRGANOS AUTÓNOMOS",
 			Text:        "Las Corporaciones Autónomas Regionales se encargan de:",
 			Difficulty:  2,
@@ -5769,7 +5769,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ÓRGANOS AUTÓNOMOS",
 			Text:        "La Comisión Nacional del Servicio Civil protege:",
 			Difficulty:  2,
@@ -5799,7 +5799,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "REFORMAS CONSTITUCIONALES",
 			Text:        "La Constitución puede ser reformada por:",
 			Difficulty:  2,
@@ -5829,7 +5829,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "REFORMAS CONSTITUCIONALES",
 			Text:        "Un acto legislativo requiere:",
 			Difficulty:  2,
@@ -5859,7 +5859,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "REFORMAS CONSTITUCIONALES",
 			Text:        "También se puede reformar la Constitución por:",
 			Difficulty:  2,
@@ -5889,7 +5889,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "CONTROL CONSTITUCIONAL",
 			Text:        "La acción pública de inconstitucionalidad puede ser interpuesta por:",
 			Difficulty:  2,
@@ -5919,7 +5919,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "CONTROL CONSTITUCIONAL",
 			Text:        "Las sentencias de la Corte Constitucional:",
 			Difficulty:  2,
@@ -5949,7 +5949,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ESTADOS DE EXCEPCIÓN",
 			Text:        "Los estados de excepción son:",
 			Difficulty:  2,
@@ -5979,7 +5979,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ESTADOS DE EXCEPCIÓN",
 			Text:        "El estado de guerra exterior lo declara:",
 			Difficulty:  2,
@@ -6009,7 +6009,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ESTADOS DE EXCEPCIÓN",
 			Text:        "El estado de conmoción interior puede durar inicialmente:",
 			Difficulty:  2,
@@ -6039,7 +6039,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ESTADOS DE EXCEPCIÓN",
 			Text:        "El estado de emergencia puede declararse por:",
 			Difficulty:  2,
@@ -6069,7 +6069,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ESTADOS DE EXCEPCIÓN",
 			Text:        "Durante los estados de excepción:",
 			Difficulty:  2,
@@ -6099,7 +6099,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN Y ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ESTADOS DE EXCEPCIÓN",
 			Text:        "Los decretos de estados de excepción tienen:",
 			Difficulty:  2,
@@ -6129,7 +6129,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "¿En qué fechas específicas se celebra el Carnaval de Barranquilla?",
 			Difficulty:  2,
@@ -6159,7 +6159,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "¿Qué se celebra en la Feria de las Flores además del desfile de silleteros?",
 			Difficulty:  2,
@@ -6189,7 +6189,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "El Festival Iberoamericano de Teatro de Bogotá se celebra:",
 			Difficulty:  2,
@@ -6219,7 +6219,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "¿En qué fechas se celebra el Carnaval de Negros y Blancos en Pasto?",
 			Difficulty:  2,
@@ -6249,7 +6249,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "El Festival del Mono Núñez se realiza en:",
 			Difficulty:  2,
@@ -6279,7 +6279,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "¿Qué tipo de música se celebra en el Festival del Mono Núñez?",
 			Difficulty:  2,
@@ -6309,7 +6309,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "La Feria de Manizales se celebra en:",
 			Difficulty:  2,
@@ -6339,7 +6339,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "¿Qué festividad importante se celebra en Popayán durante la Semana Santa?",
 			Difficulty:  2,
@@ -6369,7 +6369,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "El Festival Internacional de Cine de Cartagena (FICCI) se fundó en:",
 			Difficulty:  2,
@@ -6399,7 +6399,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "FESTIVIDADES Y FERIAS REGIONALES",
 			Text:        "La Feria de Cali se celebra del:",
 			Difficulty:  2,
@@ -6429,7 +6429,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "El plato \"mote de queso\" incluye como ingrediente principal:",
 			Difficulty:  2,
@@ -6459,7 +6459,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "¿Qué tipo de pescado se usa tradicionalmente en el arroz con coco caribeño?",
 			Difficulty:  2,
@@ -6489,7 +6489,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "El \"Rondón\" de San Andrés incluye un ingrediente llamado:",
 			Difficulty:  2,
@@ -6519,7 +6519,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "Los \"domplines\" del Rondón son:",
 			Difficulty:  2,
@@ -6549,7 +6549,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "¿De qué región es típico el \"sancocho de rabo\"?",
 			Difficulty:  2,
@@ -6579,7 +6579,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "La \"lechona tolimense\" se rellena con:",
 			Difficulty:  2,
@@ -6609,7 +6609,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "El \"puchero santafereño\" es originario de:",
 			Difficulty:  2,
@@ -6639,7 +6639,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "¿Qué hierba característica lleva el ajiaco?",
 			Difficulty:  2,
@@ -6669,7 +6669,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "Los \"aborrajados\" del Valle del Cauca son:",
 			Difficulty:  2,
@@ -6699,7 +6699,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA REGIONAL DETALLADA",
 			Text:        "El \"tilote\" o \"titoté\" es parte de la preparación de:",
 			Difficulty:  2,
@@ -6729,7 +6729,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ETNIAS Y DEMOGRAFÍA",
 			Text:        "¿Cuáles son algunos de los grupos indígenas de la Amazonía colombiana?",
 			Difficulty:  2,
@@ -6759,7 +6759,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ETNIAS Y DEMOGRAFÍA",
 			Text:        "Los grupos Emberá, Wounaan y Awá habitan principalmente en:",
 			Difficulty:  2,
@@ -6789,7 +6789,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ETNIAS Y DEMOGRAFÍA",
 			Text:        "¿Qué porcentaje de la población colombiana se identifica como católica según el documento?",
 			Difficulty:  2,
@@ -6819,7 +6819,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ETNIAS Y DEMOGRAFÍA",
 			Text:        "La población afrocolombiana se concentra principalmente en:",
 			Difficulty:  2,
@@ -6849,7 +6849,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ETNIAS Y DEMOGRAFÍA",
 			Text:        "Los Tikunas son una etnia característica de:",
 			Difficulty:  2,
@@ -6879,7 +6879,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "Débora Arango fue reconocida principalmente como:",
 			Difficulty:  2,
@@ -6909,7 +6909,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "¿Quién fundó el Teatro Experimental de Cali (TEC)?",
 			Difficulty:  2,
@@ -6939,7 +6939,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "El TEC fue fundado en el año:",
 			Difficulty:  2,
@@ -6969,7 +6969,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "¿Qué artista colombiano murió en Mónaco en 2023?",
 			Difficulty:  2,
@@ -6999,7 +6999,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "La \"Paloma de la Paz\" de Botero fue entregada al presidente:",
 			Difficulty:  2,
@@ -7029,7 +7029,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "¿En qué año se fundó la primera Escuela de Bellas Artes en Bogotá?",
 			Difficulty:  2,
@@ -7059,7 +7059,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "Eduardo Ramírez Villamizar es conocido por su estilo:",
 			Difficulty:  2,
@@ -7089,7 +7089,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "¿Quién fue Gregorio Vásquez de Arce y Ceballos?",
 			Difficulty:  2,
@@ -7119,7 +7119,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "El muralismo colombiano fue influenciado por artistas como:",
 			Difficulty:  2,
@@ -7149,7 +7149,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARTE Y ARTISTAS ESPECÍFICOS",
 			Text:        "Pedro Nel Gómez fue representante del:",
 			Difficulty:  2,
@@ -7179,7 +7179,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA REGIONAL",
 			Text:        "El instrumento principal del currulao es:",
 			Difficulty:  2,
@@ -7209,7 +7209,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA REGIONAL",
 			Text:        "La gaita es un instrumento característico de:",
 			Difficulty:  2,
@@ -7239,7 +7239,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA REGIONAL",
 			Text:        "¿De qué material está hecha la marimba de chonta?",
 			Difficulty:  2,
@@ -7269,7 +7269,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA REGIONAL",
 			Text:        "El mapalé es una danza originaria de:",
 			Difficulty:  2,
@@ -7299,7 +7299,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MÚSICA Y DANZA REGIONAL",
 			Text:        "¿Qué instrumento se usa en el joropo llanero?",
 			Difficulty:  2,
@@ -7329,7 +7329,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "El Santuario de Las Lajas está ubicado específicamente en:",
 			Difficulty:  2,
@@ -7359,7 +7359,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "¿En qué meses Caño Cristales muestra sus colores más vivos?",
 			Difficulty:  2,
@@ -7389,7 +7389,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "¿Cuántos colores se dice que tiene Caño Cristales?",
 			Difficulty:  2,
@@ -7419,7 +7419,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "La Ciudad Perdida (Teyuna) fue construida por:",
 			Difficulty:  2,
@@ -7449,7 +7449,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "¿En qué año aproximadamente se construyó Ciudad Perdida?",
 			Difficulty:  2,
@@ -7479,7 +7479,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "El Parque Arqueológico de San Agustín es famoso por:",
 			Difficulty:  2,
@@ -7509,7 +7509,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "¿Cuántas hectáreas aproximadamente tiene el Parque Tayrona?",
 			Difficulty:  2,
@@ -7539,7 +7539,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "El desierto de La Tatacoa es conocido por:",
 			Difficulty:  2,
@@ -7569,7 +7569,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "¿Qué profundidad tiene la Catedral de Sal de Zipaquirá?",
 			Difficulty:  2,
@@ -7599,7 +7599,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "TURISMO Y SITIOS ESPECÍFICOS",
 			Text:        "El Puente de Boyacá es importante porque allí:",
 			Difficulty:  2,
@@ -7629,7 +7629,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MONEDA Y BILLETES",
 			Text:        "¿Qué animal aparece en la moneda de mil pesos?",
 			Difficulty:  2,
@@ -7659,7 +7659,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MONEDA Y BILLETES",
 			Text:        "La moneda de quinientos pesos tiene representada:",
 			Difficulty:  2,
@@ -7689,7 +7689,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MONEDA Y BILLETES",
 			Text:        "¿Qué planta aparece en la moneda de cien pesos?",
 			Difficulty:  2,
@@ -7719,7 +7719,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MONEDA Y BILLETES",
 			Text:        "El oso de anteojos aparece en la moneda de:",
 			Difficulty:  2,
@@ -7749,7 +7749,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "MONEDA Y BILLETES",
 			Text:        "La guacamaya bandera está en la moneda de:",
 			Difficulty:  2,
@@ -7779,7 +7779,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "LITERATURA Y ESCRITORES",
 			Text:        "¿En qué año murió Gabriel García Márquez?",
 			Difficulty:  2,
@@ -7809,7 +7809,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "LITERATURA Y ESCRITORES",
 			Text:        "\"La María\" de Jorge Isaacs es considerada una novela:",
 			Difficulty:  2,
@@ -7839,7 +7839,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "LITERATURA Y ESCRITORES",
 			Text:        "Rafael Pombo es conocido principalmente por:",
 			Difficulty:  2,
@@ -7869,7 +7869,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "LITERATURA Y ESCRITORES",
 			Text:        "Tomás Carrasquilla escribió sobre:",
 			Difficulty:  2,
@@ -7899,7 +7899,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "LITERATURA Y ESCRITORES",
 			Text:        "José Asunción Silva fue principalmente:",
 			Difficulty:  2,
@@ -7929,7 +7929,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "DEPORTES ESPECÍFICOS",
 			Text:        "¿Cómo se juega el tejo?",
 			Difficulty:  2,
@@ -7959,7 +7959,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "DEPORTES ESPECÍFICOS",
 			Text:        "Mariana Pajón es campeona en:",
 			Difficulty:  2,
@@ -7989,7 +7989,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "DEPORTES ESPECÍFICOS",
 			Text:        "Caterine Ibargüen ganó medalla olímpica en:",
 			Difficulty:  2,
@@ -8019,7 +8019,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "DEPORTES ESPECÍFICOS",
 			Text:        "¿Quién fue René Higuita?",
 			Difficulty:  2,
@@ -8049,7 +8049,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "DEPORTES ESPECÍFICOS",
 			Text:        "Nairo Quintana ha ganado:",
 			Difficulty:  2,
@@ -8079,7 +8079,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARQUITECTURA Y TEATROS",
 			Text:        "El Teatro Heredia está ubicado en:",
 			Difficulty:  2,
@@ -8109,7 +8109,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARQUITECTURA Y TEATROS",
 			Text:        "¿En qué año se fundó el Teatro Colón de Bogotá?",
 			Difficulty:  2,
@@ -8139,7 +8139,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARQUITECTURA Y TEATROS",
 			Text:        "El Teatro Pablo Tobón Uribe está en:",
 			Difficulty:  2,
@@ -8169,7 +8169,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARQUITECTURA Y TEATROS",
 			Text:        "¿Qué característica arquitectónica tiene el Teatro Colón?",
 			Difficulty:  2,
@@ -8199,7 +8199,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "ARQUITECTURA Y TEATROS",
 			Text:        "El Teatro Jorge Eliécer Gaitán antes se llamaba:",
 			Difficulty:  2,
@@ -8229,7 +8229,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN Y TRADICIONES",
 			Text:        "¿Qué porcentaje de protestantes hay en Colombia aproximadamente?",
 			Difficulty:  2,
@@ -8259,7 +8259,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN Y TRADICIONES",
 			Text:        "Las procesiones de Semana Santa de Popayán datan del:",
 			Difficulty:  2,
@@ -8289,7 +8289,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN Y TRADICIONES",
 			Text:        "El Santuario de Monserrate en Bogotá está a una altura de:",
 			Difficulty:  2,
@@ -8319,7 +8319,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN Y TRADICIONES",
 			Text:        "La Catedral Primada de Bogotá se construyó en:",
 			Difficulty:  2,
@@ -8349,7 +8349,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CULTURA EXPANDIDA - FESTIVIDADES, FERIAS Y TRADICIONES",
+			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN Y TRADICIONES",
 			Text:        "El Divino Niño es una devoción popular centrada en:",
 			Difficulty:  2,
@@ -8379,7 +8379,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS Y CULTIVOS",
 			Text:        "El piso térmico cálido en Colombia va desde:",
 			Difficulty:  2,
@@ -8409,7 +8409,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS Y CULTIVOS",
 			Text:        "¿Qué cultivos son típicos del piso térmico cálido?",
 			Difficulty:  2,
@@ -8439,7 +8439,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS Y CULTIVOS",
 			Text:        "El piso térmico templado está entre:",
 			Difficulty:  2,
@@ -8469,7 +8469,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS Y CULTIVOS",
 			Text:        "¿En qué piso térmico se cultiva principalmente el café?",
 			Difficulty:  2,
@@ -8499,7 +8499,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS Y CULTIVOS",
 			Text:        "El piso térmico frío va desde:",
 			Difficulty:  2,
@@ -8529,7 +8529,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS Y CULTIVOS",
 			Text:        "¿Qué se cultiva en el piso térmico frío?",
 			Difficulty:  2,
@@ -8559,7 +8559,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS Y CULTIVOS",
 			Text:        "El páramo comienza aproximadamente a:",
 			Difficulty:  2,
@@ -8589,7 +8589,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS Y CULTIVOS",
 			Text:        "¿Qué planta es característica del páramo?",
 			Difficulty:  2,
@@ -8619,7 +8619,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN CARIBE - CARACTERÍSTICAS ESPECÍFICAS",
 			Text:        "¿Cuántos kilómetros de costa tiene la región Caribe según el documento?",
 			Difficulty:  2,
@@ -8649,7 +8649,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN CARIBE - CARACTERÍSTICAS ESPECÍFICAS",
 			Text:        "La Ciénaga Grande de Santa Marta es:",
 			Difficulty:  2,
@@ -8679,7 +8679,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN CARIBE - CARACTERÍSTICAS ESPECÍFICAS",
 			Text:        "¿Qué península se encuentra en La Guajira?",
 			Difficulty:  2,
@@ -8709,7 +8709,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN CARIBE - CARACTERÍSTICAS ESPECÍFICAS",
 			Text:        "El Golfo de Urabá está entre:",
 			Difficulty:  2,
@@ -8739,7 +8739,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN CARIBE - CARACTERÍSTICAS ESPECÍFICAS",
 			Text:        "La Sierra Nevada de Santa Marta es:",
 			Difficulty:  2,
@@ -8769,7 +8769,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN CARIBE - CARACTERÍSTICAS ESPECÍFICAS",
 			Text:        "¿Qué altura alcanza el Pico Cristóbal Colón?",
 			Difficulty:  2,
@@ -8799,7 +8799,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN CARIBE - CARACTERÍSTICAS ESPECÍFICAS",
 			Text:        "Los Montes de María están ubicados entre:",
 			Difficulty:  2,
@@ -8829,7 +8829,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN PACÍFICA - CARACTERÍSTICAS",
 			Text:        "¿Cuántos kilómetros de costa tiene el Pacífico colombiano?",
 			Difficulty:  2,
@@ -8859,7 +8859,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN PACÍFICA - CARACTERÍSTICAS",
 			Text:        "¿Cuál es el principal puerto del Pacífico?",
 			Difficulty:  2,
@@ -8889,7 +8889,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN PACÍFICA - CARACTERÍSTICAS",
 			Text:        "El río Atrato desemboca en:",
 			Difficulty:  2,
@@ -8919,7 +8919,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN PACÍFICA - CARACTERÍSTICAS",
 			Text:        "¿Qué característica tiene la selva del Chocó biogeográfico?",
 			Difficulty:  2,
@@ -8949,7 +8949,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN PACÍFICA - CARACTERÍSTICAS",
 			Text:        "Los manglares del Pacífico son importantes porque:",
 			Difficulty:  2,
@@ -8979,7 +8979,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ANDINA - DETALLES",
 			Text:        "¿Cuántas cordilleras atraviesan la región Andina?",
 			Difficulty:  2,
@@ -9009,7 +9009,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ANDINA - DETALLES",
 			Text:        "El Valle del Magdalena está entre las cordilleras:",
 			Difficulty:  2,
@@ -9039,7 +9039,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ANDINA - DETALLES",
 			Text:        "El Valle del Cauca está entre las cordilleras:",
 			Difficulty:  2,
@@ -9069,7 +9069,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ANDINA - DETALLES",
 			Text:        "¿Dónde está ubicado el Valle de Aburrá?",
 			Difficulty:  2,
@@ -9099,7 +9099,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ANDINA - DETALLES",
 			Text:        "El Macizo Colombiano es importante porque:",
 			Difficulty:  2,
@@ -9129,7 +9129,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ANDINA - DETALLES",
 			Text:        "¿En qué departamento está el Cañón del Chicamocha?",
 			Difficulty:  2,
@@ -9159,7 +9159,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ANDINA - DETALLES",
 			Text:        "El Nevado del Cocuy está en:",
 			Difficulty:  2,
@@ -9189,7 +9189,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ANDINA - DETALLES",
 			Text:        "¿Cuál es el páramo más grande del mundo ubicado en Colombia?",
 			Difficulty:  2,
@@ -9219,7 +9219,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ORINOQUÍA - CARACTERÍSTICAS",
 			Text:        "La Orinoquía representa aproximadamente qué porcentaje del territorio nacional:",
 			Difficulty:  2,
@@ -9249,7 +9249,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ORINOQUÍA - CARACTERÍSTICAS",
 			Text:        "¿Cómo se conoce también a la Orinoquía?",
 			Difficulty:  2,
@@ -9279,7 +9279,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ORINOQUÍA - CARACTERÍSTICAS",
 			Text:        "El río Meta es tributario del:",
 			Difficulty:  2,
@@ -9309,7 +9309,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ORINOQUÍA - CARACTERÍSTICAS",
 			Text:        "La Serranía de la Macarena es famosa por:",
 			Difficulty:  2,
@@ -9339,7 +9339,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ORINOQUÍA - CARACTERÍSTICAS",
 			Text:        "¿Qué actividad económica predomina en los Llanos?",
 			Difficulty:  2,
@@ -9369,7 +9369,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN ORINOQUÍA - CARACTERÍSTICAS",
 			Text:        "Los \"morichales\" de los Llanos son:",
 			Difficulty:  2,
@@ -9399,7 +9399,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN AMAZÓNICA - DETALLES",
 			Text:        "¿Qué extensión aproximada tiene la Amazonía colombiana?",
 			Difficulty:  2,
@@ -9429,7 +9429,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN AMAZÓNICA - DETALLES",
 			Text:        "¿Cuántas especies de plantas se estiman en la Amazonía colombiana?",
 			Difficulty:  2,
@@ -9459,7 +9459,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN AMAZÓNICA - DETALLES",
 			Text:        "¿Qué porcentaje de especies vegetales amazónicas son endémicas?",
 			Difficulty:  2,
@@ -9489,7 +9489,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN AMAZÓNICA - DETALLES",
 			Text:        "La Victoria amazónica es:",
 			Difficulty:  2,
@@ -9519,7 +9519,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN AMAZÓNICA - DETALLES",
 			Text:        "¿Cuál es la capital del Guaviare?",
 			Difficulty:  2,
@@ -9549,7 +9549,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN AMAZÓNICA - DETALLES",
 			Text:        "El río Putumayo sirve de frontera con:",
 			Difficulty:  2,
@@ -9579,7 +9579,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN INSULAR",
 			Text:        "¿A qué distancia está San Andrés de la costa colombiana?",
 			Difficulty:  2,
@@ -9609,7 +9609,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN INSULAR",
 			Text:        "¿Qué idiomas se hablan en San Andrés además del español?",
 			Difficulty:  2,
@@ -9639,7 +9639,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN INSULAR",
 			Text:        "La isla de Providencia es conocida por:",
 			Difficulty:  2,
@@ -9669,7 +9669,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN INSULAR",
 			Text:        "Malpelo es importante porque:",
 			Difficulty:  2,
@@ -9699,7 +9699,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN INSULAR",
 			Text:        "Gorgona fue utilizada como:",
 			Difficulty:  2,
@@ -9729,7 +9729,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "¿Cuántos kilómetros tiene el río Magdalena?",
 			Difficulty:  2,
@@ -9759,7 +9759,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "El río Cauca es afluente del:",
 			Difficulty:  2,
@@ -9789,7 +9789,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "¿Dónde nace el río Magdalena?",
 			Difficulty:  2,
@@ -9819,7 +9819,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "El río Caquetá desemboca en el:",
 			Difficulty:  2,
@@ -9849,7 +9849,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "La Laguna de la Cocha está en:",
 			Difficulty:  2,
@@ -9879,7 +9879,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "CLIMA Y BIODIVERSIDAD",
 			Text:        "¿Cuántas especies de aves tiene Colombia aproximadamente?",
 			Difficulty:  2,
@@ -9909,7 +9909,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "CLIMA Y BIODIVERSIDAD",
 			Text:        "Colombia ocupa el primer lugar mundial en diversidad de:",
 			Difficulty:  2,
@@ -9939,7 +9939,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "CLIMA Y BIODIVERSIDAD",
 			Text:        "¿Cuántas especies de orquídeas se estiman en Colombia?",
 			Difficulty:  2,
@@ -9969,7 +9969,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "CLIMA Y BIODIVERSIDAD",
 			Text:        "El oso de anteojos habita principalmente en:",
 			Difficulty:  2,
@@ -9999,7 +9999,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "CLIMA Y BIODIVERSIDAD",
 			Text:        "El delfín rosado se encuentra en:",
 			Difficulty:  2,
@@ -10029,7 +10029,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PARQUES NACIONALES",
 			Text:        "¿Cuántos parques nacionales naturales tiene Colombia aproximadamente?",
 			Difficulty:  2,
@@ -10059,7 +10059,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PARQUES NACIONALES",
 			Text:        "El Parque Nacional Natural más grande es:",
 			Difficulty:  2,
@@ -10089,7 +10089,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PARQUES NACIONALES",
 			Text:        "El Parque Nacional El Tuparro está en:",
 			Difficulty:  2,
@@ -10119,7 +10119,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PARQUES NACIONALES",
 			Text:        "El Parque Nacional Los Katíos es compartido con:",
 			Difficulty:  2,
@@ -10149,7 +10149,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PARQUES NACIONALES",
 			Text:        "El Parque Nacional Amacayacu protege principalmente:",
 			Difficulty:  2,
@@ -10179,7 +10179,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FRONTERAS Y LÍMITES",
 			Text:        "Colombia tiene frontera terrestre con cuántos países:",
 			Difficulty:  2,
@@ -10209,7 +10209,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FRONTERAS Y LÍMITES",
 			Text:        "La frontera más larga de Colombia es con:",
 			Difficulty:  2,
@@ -10239,7 +10239,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FRONTERAS Y LÍMITES",
 			Text:        "El río Arauca sirve de frontera con:",
 			Difficulty:  2,
@@ -10269,7 +10269,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FRONTERAS Y LÍMITES",
 			Text:        "La frontera con Panamá está marcada por:",
 			Difficulty:  2,
@@ -10299,7 +10299,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FRONTERAS Y LÍMITES",
 			Text:        "Colombia tiene fronteras marítimas con:",
 			Difficulty:  2,
@@ -10329,7 +10329,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ASPECTOS ECONÓMICOS REGIONALES",
 			Text:        "La principal actividad económica de la región Caribe es:",
 			Difficulty:  2,
@@ -10359,7 +10359,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ASPECTOS ECONÓMICOS REGIONALES",
 			Text:        "El Cerrejón en La Guajira es una mina de:",
 			Difficulty:  2,
@@ -10389,7 +10389,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ASPECTOS ECONÓMICOS REGIONALES",
 			Text:        "Las esmeraldas colombianas provienen principalmente de:",
 			Difficulty:  2,
@@ -10419,7 +10419,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ASPECTOS ECONÓMICOS REGIONALES",
 			Text:        "El petróleo se extrae principalmente en:",
 			Difficulty:  2,
@@ -10449,7 +10449,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA EXPANDIDA - REGIONES Y CARACTERÍSTICAS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ASPECTOS ECONÓMICOS REGIONALES",
 			Text:        "La zona bananera del Urabá está en:",
 			Difficulty:  2,
@@ -10479,7 +10479,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "PERÍODO PRECOLOMBINO",
 			Text:        "Los Muiscas habitaban principalmente en:",
 			Difficulty:  2,
@@ -10509,7 +10509,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "PERÍODO PRECOLOMBINO",
 			Text:        "Los Tayronas se ubicaban en:",
 			Difficulty:  2,
@@ -10539,7 +10539,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "PERÍODO PRECOLOMBINO",
 			Text:        "Los Quimbayas fueron famosos por:",
 			Difficulty:  2,
@@ -10569,7 +10569,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "PERÍODO PRECOLOMBINO",
 			Text:        "El Dorado era un mito relacionado con:",
 			Difficulty:  2,
@@ -10599,7 +10599,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "PERÍODO PRECOLOMBINO",
 			Text:        "Los Zenúes desarrollaron un sistema de:",
 			Difficulty:  2,
@@ -10629,7 +10629,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA CONQUISTA",
 			Text:        "¿En qué año llegó Rodrigo de Bastidas a la costa colombiana?",
 			Difficulty:  2,
@@ -10659,7 +10659,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA CONQUISTA",
 			Text:        "Santa Marta fue fundada por:",
 			Difficulty:  2,
@@ -10689,7 +10689,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA CONQUISTA",
 			Text:        "¿En qué año fue fundada Santa Marta?",
 			Difficulty:  2,
@@ -10719,7 +10719,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA CONQUISTA",
 			Text:        "Cartagena de Indias fue fundada en:",
 			Difficulty:  2,
@@ -10749,7 +10749,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA CONQUISTA",
 			Text:        "¿Quién fundó Cartagena?",
 			Difficulty:  2,
@@ -10779,7 +10779,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA CONQUISTA",
 			Text:        "Bogotá fue fundada por:",
 			Difficulty:  2,
@@ -10809,7 +10809,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA CONQUISTA",
 			Text:        "¿En qué fecha fue fundada Bogotá?",
 			Difficulty:  2,
@@ -10839,7 +10839,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA CONQUISTA",
 			Text:        "El cacique muisca que resistió a los españoles fue:",
 			Difficulty:  2,
@@ -10869,7 +10869,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA COLONIA",
 			Text:        "¿En qué año se creó la Audiencia de Santafé?",
 			Difficulty:  2,
@@ -10899,7 +10899,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA COLONIA",
 			Text:        "El Virreinato de Nueva Granada se creó por primera vez en:",
 			Difficulty:  2,
@@ -10929,7 +10929,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA COLONIA",
 			Text:        "¿Por qué se suprimió temporalmente el Virreinato en 1723?",
 			Difficulty:  2,
@@ -10959,7 +10959,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA COLONIA",
 			Text:        "El Virreinato se restableció definitivamente en:",
 			Difficulty:  2,
@@ -10989,7 +10989,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA COLONIA",
 			Text:        "La economía colonial se basaba principalmente en:",
 			Difficulty:  2,
@@ -11019,7 +11019,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA COLONIA",
 			Text:        "Las encomiendas eran:",
 			Difficulty:  2,
@@ -11049,7 +11049,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA COLONIA",
 			Text:        "La mita era:",
 			Difficulty:  2,
@@ -11079,7 +11079,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "LA COLONIA",
 			Text:        "Los resguardos indígenas eran:",
 			Difficulty:  2,
@@ -11109,7 +11109,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "Las Reformas Borbónicas fueron implementadas por:",
 			Difficulty:  2,
@@ -11139,7 +11139,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "¿En qué siglo se implementaron las Reformas Borbónicas?",
 			Difficulty:  2,
@@ -11169,7 +11169,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "La expulsión de los jesuitas ocurrió en:",
 			Difficulty:  2,
@@ -11199,7 +11199,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "El movimiento de los Comuneros ocurrió en:",
 			Difficulty:  2,
@@ -11229,7 +11229,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "Los Comuneros se levantaron en:",
 			Difficulty:  2,
@@ -11259,7 +11259,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "¿Quién lideró a los Comuneros?",
 			Difficulty:  2,
@@ -11289,7 +11289,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "Las capitulaciones de Zipaquirá fueron:",
 			Difficulty:  2,
@@ -11319,7 +11319,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "¿Qué pasó con José Antonio Galán?",
 			Difficulty:  2,
@@ -11349,7 +11349,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "ILUSTRACIÓN Y EXPEDICIÓN BOTÁNICA",
 			Text:        "La Expedición Botánica fue dirigida por:",
 			Difficulty:  2,
@@ -11379,7 +11379,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "ILUSTRACIÓN Y EXPEDICIÓN BOTÁNICA",
 			Text:        "La Expedición Botánica comenzó en:",
 			Difficulty:  2,
@@ -11409,7 +11409,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "ILUSTRACIÓN Y EXPEDICIÓN BOTÁNICA",
 			Text:        "Francisco José de Caldas era conocido como:",
 			Difficulty:  2,
@@ -11439,7 +11439,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "ILUSTRACIÓN Y EXPEDICIÓN BOTÁNICA",
 			Text:        "Antonio Nariño tradujo:",
 			Difficulty:  2,
@@ -11469,7 +11469,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "ILUSTRACIÓN Y EXPEDICIÓN BOTÁNICA",
 			Text:        "¿En qué año tradujo Nariño los Derechos del Hombre?",
 			Difficulty:  2,
@@ -11499,7 +11499,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "El Memorial de Agravios fue escrito por:",
 			Difficulty:  2,
@@ -11529,7 +11529,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "¿En qué año se escribió el Memorial de Agravios?",
 			Difficulty:  2,
@@ -11559,7 +11559,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "El florero de Llorente ocurrió un:",
 			Difficulty:  2,
@@ -11589,7 +11589,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "¿Quiénes protagonizaron el incidente del florero?",
 			Difficulty:  2,
@@ -11619,7 +11619,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "La primera república (Patria Boba) duró de:",
 			Difficulty:  2,
@@ -11649,7 +11649,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "¿Por qué se llamó \"Patria Boba\"?",
 			Difficulty:  2,
@@ -11679,7 +11679,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "El Congreso de las Provincias Unidas se reunió en:",
 			Difficulty:  2,
@@ -11709,7 +11709,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "La Reconquista española fue liderada por:",
 			Difficulty:  2,
@@ -11739,7 +11739,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "Pablo Morillo era conocido como:",
 			Difficulty:  2,
@@ -11769,7 +11769,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "El Régimen del Terror duró de:",
 			Difficulty:  2,
@@ -11799,7 +11799,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "La Campaña Libertadora de 1819 duró:",
 			Difficulty:  2,
@@ -11829,7 +11829,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "¿Desde dónde partió Bolívar en la Campaña Libertadora?",
 			Difficulty:  2,
@@ -11859,7 +11859,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "La Batalla del Pantano de Vargas fue el:",
 			Difficulty:  2,
@@ -11889,7 +11889,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "¿Quién comandó las tropas españolas en Boyacá?",
 			Difficulty:  2,
@@ -11919,7 +11919,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "El Congreso de Cúcuta se realizó en:",
 			Difficulty:  2,
@@ -11949,7 +11949,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "INDEPENDENCIA",
 			Text:        "La Constitución de Cúcuta estableció:",
 			Difficulty:  2,
@@ -11979,7 +11979,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "GRAN COLOMBIA",
 			Text:        "La Gran Colombia existió entre:",
 			Difficulty:  2,
@@ -12009,7 +12009,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "GRAN COLOMBIA",
 			Text:        "La capital de la Gran Colombia era:",
 			Difficulty:  2,
@@ -12039,7 +12039,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "GRAN COLOMBIA",
 			Text:        "¿Por qué se disolvió la Gran Colombia?",
 			Difficulty:  2,
@@ -12069,7 +12069,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "GRAN COLOMBIA",
 			Text:        "La Convención de Ocaña fue en:",
 			Difficulty:  2,
@@ -12099,7 +12099,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "GRAN COLOMBIA",
 			Text:        "La Noche Septembrina fue:",
 			Difficulty:  2,
@@ -12129,7 +12129,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "GRAN COLOMBIA",
 			Text:        "¿Quién salvó a Bolívar en la Noche Septembrina?",
 			Difficulty:  2,
@@ -12159,7 +12159,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "GRAN COLOMBIA",
 			Text:        "Bolívar murió en:",
 			Difficulty:  2,
@@ -12189,7 +12189,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "GRAN COLOMBIA",
 			Text:        "¿En qué fecha murió Bolívar?",
 			Difficulty:  2,
@@ -12219,7 +12219,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "El primer presidente de la Nueva Granada fue:",
 			Difficulty:  2,
@@ -12249,7 +12249,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "La Guerra de los Supremos ocurrió en:",
 			Difficulty:  2,
@@ -12279,7 +12279,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "La abolición definitiva de la esclavitud fue en:",
 			Difficulty:  2,
@@ -12309,7 +12309,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "¿Quién decretó la abolición de la esclavitud?",
 			Difficulty:  2,
@@ -12339,7 +12339,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "La Constitución de Rionegro era:",
 			Difficulty:  2,
@@ -12369,7 +12369,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "Los Estados Unidos de Colombia existieron entre:",
 			Difficulty:  2,
@@ -12399,7 +12399,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "La Regeneración fue liderada por:",
 			Difficulty:  2,
@@ -12429,7 +12429,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "El Concordato con la Iglesia se firmó en:",
 			Difficulty:  2,
@@ -12459,7 +12459,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "La Guerra de los Mil Días causó aproximadamente:",
 			Difficulty:  2,
@@ -12489,7 +12489,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "¿Quién era presidente cuando se perdió Panamá?",
 			Difficulty:  2,
@@ -12519,7 +12519,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "El tratado Herrán-Hay fue:",
 			Difficulty:  2,
@@ -12549,7 +12549,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XIX - REPÚBLICA",
 			Text:        "Panamá declaró su independencia con apoyo de:",
 			Difficulty:  2,
@@ -12579,7 +12579,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "Rafael Reyes gobernó entre:",
 			Difficulty:  2,
@@ -12609,7 +12609,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "El quinquenio de Reyes se caracterizó por:",
 			Difficulty:  2,
@@ -12639,7 +12639,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "La República Conservadora duró:",
 			Difficulty:  2,
@@ -12669,7 +12669,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "La Masacre de las Bananeras ocurrió en:",
 			Difficulty:  2,
@@ -12699,7 +12699,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "¿Cuántos trabajadores murieron en la Masacre de las Bananeras?",
 			Difficulty:  2,
@@ -12729,7 +12729,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "La República Liberal comenzó con:",
 			Difficulty:  2,
@@ -12759,7 +12759,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "La \"Revolución en Marcha\" fue de:",
 			Difficulty:  2,
@@ -12789,7 +12789,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "Jorge Eliécer Gaitán fue asesinado a las:",
 			Difficulty:  2,
@@ -12819,7 +12819,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "El asesino de Gaitán fue:",
 			Difficulty:  2,
@@ -12849,7 +12849,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA EXPANDIDA - PERÍODOS Y PROCESOS",
+			Category:    "HISTORIA",
 			SubCategory: "SIGLO XX",
 			Text:        "Se estima que en El Bogotazo murieron:",
 			Difficulty:  2,
@@ -12879,7 +12879,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿En qué fecha se conmemora el Día de la Independencia de Colombia?",
 			Difficulty:  2,
@@ -12909,7 +12909,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue conocido como \"El Libertador\"?",
 			Difficulty:  2,
@@ -12939,7 +12939,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La Batalla de Boyacá ocurrió en el año:",
 			Difficulty:  2,
@@ -12969,7 +12969,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Cuál fue el primer nombre de Colombia como república independiente?",
 			Difficulty:  2,
@@ -12999,7 +12999,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El período conocido como \"La Patria Boba\" se caracterizó por:",
 			Difficulty:  2,
@@ -13029,7 +13029,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue el primer presidente de la Gran Colombia?",
 			Difficulty:  2,
@@ -13059,7 +13059,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La Guerra de los Mil Días ocurrió entre:",
 			Difficulty:  2,
@@ -13089,7 +13089,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Qué evento histórico ocurrió el 9 de abril de 1948?",
 			Difficulty:  2,
@@ -13119,7 +13119,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El Frente Nacional fue un acuerdo político entre:",
 			Difficulty:  2,
@@ -13149,7 +13149,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿En qué año se separó Panamá de Colombia?",
 			Difficulty:  2,
@@ -13179,7 +13179,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue conocido como \"El Hombre de las Leyes\"?",
 			Difficulty:  2,
@@ -13209,7 +13209,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La Constitución de Rionegro (1863) establecía un sistema:",
 			Difficulty:  2,
@@ -13239,7 +13239,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue el autor del Himno Nacional de Colombia?",
 			Difficulty:  2,
@@ -13269,7 +13269,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El período de \"La Violencia\" en Colombia se sitúa principalmente entre:",
 			Difficulty:  2,
@@ -13299,7 +13299,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Cuál fue la primera constitución de Colombia independiente?",
 			Difficulty:  2,
@@ -13329,7 +13329,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El movimiento de los Comuneros ocurrió en:",
 			Difficulty:  2,
@@ -13359,7 +13359,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién tradujo los Derechos del Hombre y del Ciudadano al español?",
 			Difficulty:  2,
@@ -13389,7 +13389,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La Regeneración fue un movimiento político liderado por:",
 			Difficulty:  2,
@@ -13419,7 +13419,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿En qué año se firmó el actual acuerdo de paz con las FARC?",
 			Difficulty:  2,
@@ -13449,7 +13449,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El M-19 fue un grupo guerrillero que se desmovilizó en:",
 			Difficulty:  2,
@@ -13479,7 +13479,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es la capital de Colombia?",
 			Difficulty:  2,
@@ -13509,7 +13509,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "Colombia limita al norte con:",
 			Difficulty:  2,
@@ -13539,7 +13539,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuántos departamentos tiene Colombia?",
 			Difficulty:  2,
@@ -13569,7 +13569,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El pico más alto de Colombia es:",
 			Difficulty:  2,
@@ -13599,7 +13599,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es el río más importante de Colombia?",
 			Difficulty:  2,
@@ -13629,7 +13629,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La región de la Orinoquía también es conocida como:",
 			Difficulty:  2,
@@ -13659,7 +13659,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es el único departamento de Colombia que tiene costas en ambos océanos?",
 			Difficulty:  2,
@@ -13689,7 +13689,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La Sierra Nevada de Santa Marta es:",
 			Difficulty:  2,
@@ -13719,7 +13719,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es la ciudad más poblada de Colombia después de Bogotá?",
 			Difficulty:  2,
@@ -13749,7 +13749,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Archipiélago de San Andrés y Providencia se encuentra en:",
 			Difficulty:  2,
@@ -13779,7 +13779,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es el departamento más grande de Colombia?",
 			Difficulty:  2,
@@ -13809,7 +13809,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Páramo de Sumapaz es importante porque:",
 			Difficulty:  2,
@@ -13839,7 +13839,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuántas regiones naturales tiene Colombia?",
 			Difficulty:  2,
@@ -13869,7 +13869,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Tapón del Darién se encuentra entre:",
 			Difficulty:  2,
@@ -13899,7 +13899,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La capital del departamento de Antioquia es:",
 			Difficulty:  2,
@@ -13929,7 +13929,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál de estas ciudades NO pertenece al Eje Cafetero?",
 			Difficulty:  2,
@@ -13959,7 +13959,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Nevado del Ruiz se encuentra en:",
 			Difficulty:  2,
@@ -13989,7 +13989,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es el principal puerto sobre el Océano Pacífico?",
 			Difficulty:  2,
@@ -14019,7 +14019,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La región Insular de Colombia incluye:",
 			Difficulty:  2,
@@ -14049,7 +14049,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Cañón del Chicamocha se encuentra en el departamento de:",
 			Difficulty:  2,
@@ -14079,7 +14079,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "¿Cuál es la flor nacional de Colombia?",
 			Difficulty:  2,
@@ -14109,7 +14109,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "El ave nacional de Colombia es:",
 			Difficulty:  2,
@@ -14139,7 +14139,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "¿Cuál es el árbol nacional de Colombia?",
 			Difficulty:  2,
@@ -14169,7 +14169,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "El sombrero vueltiao es originario de:",
 			Difficulty:  2,
@@ -14199,7 +14199,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "¿Quién escribió \"Cien años de soledad\"?",
 			Difficulty:  2,
@@ -14229,7 +14229,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "El vallenato es originario de:",
 			Difficulty:  2,
@@ -14259,7 +14259,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "La cumbia es:",
 			Difficulty:  2,
@@ -14289,7 +14289,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "El Carnaval de Barranquilla se celebra:",
 			Difficulty:  2,
@@ -14319,7 +14319,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "¿Cuál de estos es un plato típico de Colombia?",
 			Difficulty:  2,
@@ -14349,7 +14349,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "El Festival de la Leyenda Vallenata se celebra en:",
 			Difficulty:  2,
@@ -14379,7 +14379,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "Fernando Botero es famoso por:",
 			Difficulty:  2,
@@ -14409,7 +14409,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "¿Cuál es la bebida nacional de Colombia?",
 			Difficulty:  2,
@@ -14439,7 +14439,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "La Feria de las Flores se celebra en:",
 			Difficulty:  2,
@@ -14469,7 +14469,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "El tejo es:",
 			Difficulty:  2,
@@ -14499,7 +14499,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "¿Quién es conocido como \"El Joe\" en la música colombiana?",
 			Difficulty:  2,
@@ -14529,7 +14529,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "El Festival Iberoamericano de Teatro se realiza en:",
 			Difficulty:  2,
@@ -14559,7 +14559,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "La mochila wayúu es una artesanía de:",
 			Difficulty:  2,
@@ -14589,7 +14589,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "El bambuco es:",
 			Difficulty:  2,
@@ -14619,7 +14619,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "¿Cuál de estos escritores colombianos ganó el Premio Nobel de Literatura?",
 			Difficulty:  2,
@@ -14649,7 +14649,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "MÓDULO 4: CULTURA (20 preguntas)",
+			Category:    "CULTURA",
 			SubCategory: "",
 			Text:        "La Semana Santa en Popayán es famosa por:",
 			Difficulty:  2,
@@ -14679,7 +14679,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Qué artículo de la Constitución establece que Colombia es un Estado Social de Derecho?",
 			Difficulty:  2,
@@ -14709,7 +14709,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "La tutela protege derechos:",
 			Difficulty:  2,
@@ -14739,7 +14739,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Cuántos años dura el período de un alcalde en Colombia?",
 			Difficulty:  2,
@@ -14769,7 +14769,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "El Defensor del Pueblo es elegido por:",
 			Difficulty:  2,
@@ -14799,7 +14799,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Qué organismo tiene la función de acusar ante el Senado al Presidente?",
 			Difficulty:  2,
@@ -14829,7 +14829,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "El derecho a la doble nacionalidad en Colombia está:",
 			Difficulty:  2,
@@ -14859,7 +14859,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Cuál es la edad mínima para ser elegido Presidente de Colombia?",
 			Difficulty:  2,
@@ -14889,7 +14889,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "La revocatoria del mandato es un mecanismo que aplica para:",
 			Difficulty:  2,
@@ -14919,7 +14919,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Cuántos magistrados tiene la Corte Suprema de Justicia?",
 			Difficulty:  2,
@@ -14949,7 +14949,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "El voto en Colombia es:",
 			Difficulty:  2,
@@ -14979,7 +14979,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "La iniciativa legislativa puede ser ejercida por:",
 			Difficulty:  2,
@@ -15009,7 +15009,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Qué porcentaje del censo electoral se requiere para convocar un referendo?",
 			Difficulty:  2,
@@ -15039,7 +15039,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "El Fiscal General de la Nación es elegido por:",
 			Difficulty:  2,
@@ -15069,7 +15069,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "Los estados de excepción en Colombia son:",
 			Difficulty:  2,
@@ -15099,7 +15099,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Cuál es el quórum mínimo para sesionar en el Congreso?",
 			Difficulty:  2,
@@ -15129,7 +15129,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "El Banco de la República tiene como función principal:",
 			Difficulty:  2,
@@ -15159,7 +15159,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Quién nombra al Procurador General de la Nación?",
 			Difficulty:  2,
@@ -15189,7 +15189,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "La acción popular protege:",
 			Difficulty:  2,
@@ -15219,7 +15219,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "El período de los gobernadores es de:",
 			Difficulty:  2,
@@ -15249,7 +15249,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "CONSTITUCIÓN POLÍTICA DE COLOMBIA",
+			Category:    "CONSTITUCION",
 			SubCategory: "",
 			Text:        "¿Cuántos debates requiere un proyecto de ley para ser aprobado?",
 			Difficulty:  2,
@@ -15279,7 +15279,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El grito de independencia del 20 de julio de 1810 ocurrió por:",
 			Difficulty:  2,
@@ -15309,7 +15309,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue conocido como \"El Precursor\" de la independencia?",
 			Difficulty:  2,
@@ -15339,7 +15339,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La Campaña Libertadora de 1819 fue comandada por:",
 			Difficulty:  2,
@@ -15369,7 +15369,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Qué países conformaban la Gran Colombia?",
 			Difficulty:  2,
@@ -15399,7 +15399,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La Constitución de 1886 fue promovida por:",
 			Difficulty:  2,
@@ -15429,7 +15429,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿En qué año fue abolida definitivamente la esclavitud en Colombia?",
 			Difficulty:  2,
@@ -15459,7 +15459,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La Batalla del Pantano de Vargas ocurrió en:",
 			Difficulty:  2,
@@ -15489,7 +15489,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue el primer presidente de la República de la Nueva Granada?",
 			Difficulty:  2,
@@ -15519,7 +15519,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El período conocido como \"La Hegemonía Conservadora\" duró aproximadamente:",
 			Difficulty:  2,
@@ -15549,7 +15549,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La \"Masacre de las Bananeras\" ocurrió en:",
 			Difficulty:  2,
@@ -15579,7 +15579,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue el presidente durante el cual Colombia perdió a Panamá?",
 			Difficulty:  2,
@@ -15609,7 +15609,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La República Liberal (1930-1946) comenzó con el presidente:",
 			Difficulty:  2,
@@ -15639,7 +15639,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El Palacio de Justicia fue tomado por el M-19 en:",
 			Difficulty:  2,
@@ -15669,7 +15669,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue conocido como \"El Tribuno del Pueblo\"?",
 			Difficulty:  2,
@@ -15699,7 +15699,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La \"Séptima Papeleta\" fue un movimiento estudiantil que promovió:",
 			Difficulty:  2,
@@ -15729,7 +15729,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿En qué año las mujeres obtuvieron el derecho al voto en Colombia?",
 			Difficulty:  2,
@@ -15759,7 +15759,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El Tratado Urrutia-Thomson de 1914 fue firmado con:",
 			Difficulty:  2,
@@ -15789,7 +15789,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "La Batalla de Palonegro fue parte de:",
 			Difficulty:  2,
@@ -15819,7 +15819,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "¿Quién fue el único presidente militar del siglo XX en Colombia?",
 			Difficulty:  2,
@@ -15849,7 +15849,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "HISTORIA PATRIA",
+			Category:    "HISTORIA",
 			SubCategory: "",
 			Text:        "El proceso de descentralización administrativa comenzó con:",
 			Difficulty:  2,
@@ -15879,7 +15879,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es la extensión territorial aproximada de Colombia?",
 			Difficulty:  2,
@@ -15909,7 +15909,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "Colombia tiene frontera marítima con:",
 			Difficulty:  2,
@@ -15939,7 +15939,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La capital del departamento del Meta es:",
 			Difficulty:  2,
@@ -15969,7 +15969,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es el departamento más pequeño de Colombia?",
 			Difficulty:  2,
@@ -15999,7 +15999,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Parque Nacional Natural más grande de Colombia es:",
 			Difficulty:  2,
@@ -16029,7 +16029,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál de estos ríos NO nace en Colombia?",
 			Difficulty:  2,
@@ -16059,7 +16059,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La Península de La Guajira limita con:",
 			Difficulty:  2,
@@ -16089,7 +16089,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuántas cordilleras atraviesan el territorio colombiano?",
 			Difficulty:  2,
@@ -16119,7 +16119,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Golfo de Urabá se encuentra entre los departamentos de:",
 			Difficulty:  2,
@@ -16149,7 +16149,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La capital del departamento de Boyacá es:",
 			Difficulty:  2,
@@ -16179,7 +16179,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es el punto más septentrional (norte) de Colombia?",
 			Difficulty:  2,
@@ -16209,7 +16209,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Macizo Colombiano es importante porque:",
 			Difficulty:  2,
@@ -16239,7 +16239,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál de estas islas NO pertenece a Colombia?",
 			Difficulty:  2,
@@ -16269,7 +16269,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La depresión Momposina se encuentra en:",
 			Difficulty:  2,
@@ -16299,7 +16299,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La capital del departamento del Cesar es:",
 			Difficulty:  2,
@@ -16329,7 +16329,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Desierto de la Tatacoa está ubicado en:",
 			Difficulty:  2,
@@ -16359,7 +16359,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál es el volcán más activo de Colombia?",
 			Difficulty:  2,
@@ -16389,7 +16389,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "La Ciénaga Grande de Santa Marta es:",
 			Difficulty:  2,
@@ -16419,7 +16419,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "¿Cuál de estas ciudades está más al sur?",
 			Difficulty:  2,
@@ -16449,7 +16449,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "",
 			Text:        "El Nudo de los Pastos o de Huaca se encuentra en:",
 			Difficulty:  2,
