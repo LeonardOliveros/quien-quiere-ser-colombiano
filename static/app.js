@@ -34,7 +34,21 @@ async function fetchWithAuth(url, options = {}) {
         options.headers['Authorization'] = token;
     }
 
-    return fetch(url, options);
+    const response = await fetch(url, options);
+
+    // Handle 401 Unauthorized - token is invalid
+    if (response.status === 401) {
+        // Clear invalid token from localStorage
+        localStorage.removeItem('token');
+        localStorage.removeItem('userId');
+        currentUser = null;
+
+        // Show alert and redirect to login
+        alert('Sesión expirada o inválida. Por favor, inicia sesión de nuevo.');
+        location.reload();
+    }
+
+    return response;
 }
 
 // Initialize app
@@ -229,8 +243,15 @@ async function startGame(mode) {
             resetGameState();
             showGameScreen();
             loadNextQuestion();
+            // Initialize timer display
             if (timeRemaining > 0) {
                 startTimer();
+            } else {
+                // No time limit - show progress indicator instead of timer
+                const timerEl = document.getElementById('timer');
+                if (timerEl) {
+                    timerEl.textContent = '1/' + config.question_count;
+                }
             }
         }
     } catch (error) {
@@ -309,13 +330,21 @@ async function loadNextQuestion() {
         const response = await fetchWithAuth(`${API_URL}/game/${currentSession}/question`, {
             headers: {}
         });
-        
+
         const data = await response.json();
-        
+
         if (response.ok && data.question) {
             currentQuestion = data.question;
             questionIndex = data.question_number;
             displayQuestion();
+
+            // Update progress counter in timer element for no-time-limit games
+            if (timeRemaining === 0) {
+                const timerEl = document.getElementById('timer');
+                if (timerEl) {
+                    timerEl.textContent = questionIndex + '/' + data.total_questions;
+                }
+            }
         } else {
             // No more questions, end game
             endGame();
@@ -451,8 +480,10 @@ function showAnswerResult(selectedIndex, isCorrect, explanation) {
     }
 }
 
-async function flagQuestion() {
-    if (!currentQuestion || flaggedQuestions.includes(currentQuestion.id)) return;
+async function flagQuestion(event) {
+    if (!currentQuestion) return;
+
+    const isFlagged = flaggedQuestions.includes(currentQuestion.id);
 
     try {
         await fetchWithAuth(`${API_URL}/game/${currentSession}/flag`, {
@@ -462,18 +493,35 @@ async function flagQuestion() {
             },
             body: JSON.stringify({ question_id: currentQuestion.id })
         });
-        
-        flaggedQuestions.push(currentQuestion.id);
+
+        // Find the flag button
+        let flagBtn = null;
+        if (event && event.target) {
+            flagBtn = event.target.closest('button');
+        } else {
+            flagBtn = document.querySelector('button:has(i.fa-flag)');
+        }
+
+        if (isFlagged) {
+            // Unmark the question
+            flaggedQuestions = flaggedQuestions.filter(id => id !== currentQuestion.id);
+            if (flagBtn) {
+                flagBtn.classList.remove('btn-warning');
+                flagBtn.innerHTML = '<i class="fas fa-flag"></i> Marcar';
+            }
+        } else {
+            // Mark the question
+            flaggedQuestions.push(currentQuestion.id);
+            if (flagBtn) {
+                flagBtn.classList.add('btn-warning');
+                flagBtn.innerHTML = '<i class="fas fa-flag"></i> Marcada';
+            }
+        }
+
+        // Update the flagged count
         const flaggedCountEl = document.getElementById('flaggedCount');
         if (flaggedCountEl) {
             flaggedCountEl.textContent = flaggedQuestions.length;
-        }
-        
-        // Visual feedback
-        const flagBtn = event.target.closest('button');
-        if (flagBtn) {
-            flagBtn.classList.add('btn-warning');
-            flagBtn.innerHTML = '<i class="fas fa-flag"></i> Marcada';
         }
     } catch (error) {
         console.error('Error flagging question:', error);
@@ -569,13 +617,84 @@ function updateTimerDisplay() {
 }
 
 function pauseGame() {
+    // Disable all answer buttons to pause the game
+    for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById(`answer-${i}`);
+        if (btn) {
+            btn.disabled = true;
+        }
+    }
+
+    // Disable all lifeline buttons
+    const lifelineButtons = document.querySelectorAll('.btn-lifeline');
+    lifelineButtons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    // Stop the timer if it's running
     if (timer) {
         clearInterval(timer);
         timer = null;
-        // Show pause modal
-        if (confirm('Juego pausado. Presiona OK para continuar.')) {
-            startTimer();
+    }
+
+    // Show pause modal and wait for user to continue
+    const pauseModal = document.createElement('div');
+    pauseModal.className = 'modal fade';
+    pauseModal.id = 'pauseModal';
+    pauseModal.setAttribute('tabindex', '-1');
+    pauseModal.innerHTML = `
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Juego Pausado</h5>
+                </div>
+                <div class="modal-body">
+                    <p>El juego está pausado. Presiona "Continuar" para reanudar.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="resumeBtn">Continuar</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(pauseModal);
+    const modal = new bootstrap.Modal(pauseModal);
+    modal.show();
+
+    // Handle resume
+    document.getElementById('resumeBtn').addEventListener('click', () => {
+        modal.hide();
+        setTimeout(() => {
+            pauseModal.remove();
+            resumeGame();
+        }, 300);
+    });
+}
+
+function resumeGame() {
+    // Re-enable all answer buttons that haven't been answered yet
+    for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById(`answer-${i}`);
+        if (btn) {
+            // Only keep disabled if the current question was already answered
+            if (currentQuestion && !currentQuestion.answered) {
+                btn.disabled = false;
+            }
         }
+    }
+
+    // Re-enable all lifeline buttons that haven't been used
+    const lifelineButtons = document.querySelectorAll('.btn-lifeline');
+    lifelineButtons.forEach(btn => {
+        if (!btn.classList.contains('used')) {
+            btn.disabled = false;
+        }
+    });
+
+    // Restart the timer if time limit exists
+    if (timeRemaining > 0) {
+        startTimer();
     }
 }
 
@@ -1055,6 +1174,7 @@ window.use50_50 = use50_50;
 window.useHint = useHint;
 window.skipQuestion = skipQuestion;
 window.pauseGame = pauseGame;
+window.resumeGame = resumeGame;
 window.showStats = showStats;
 window.showHistory = showHistory;
 window.showRecommendations = showRecommendations;
