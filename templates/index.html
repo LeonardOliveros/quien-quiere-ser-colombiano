@@ -59,6 +59,11 @@
 
     <!-- Main Menu -->
     <div id="mainMenu" class="container text-center py-5" style="display: none;">
+        <div class="position-absolute top-0 end-0 p-3">
+            <button class="btn btn-outline-danger btn-sm" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+            </button>
+        </div>
         <h1 class="display-3 mb-4 text-golden">¿Quién Quiere Ser Colombiano?</h1>
         <h3 class="mb-5">Quiz de Preparación para el Examen de Naturalización</h3>
         
@@ -67,11 +72,11 @@
                 <div class="game-modes">
                     <button class="btn btn-game btn-lg m-2" onclick="startGame('PRACTICE')">
                         <i class="fas fa-graduation-cap"></i> Modo Práctica
-                        <small class="d-block">Sin límite de tiempo</small>
+                        <small class="d-block" id="practiceDesc">Sin límite de tiempo</small>
                     </button>
                     <button class="btn btn-game btn-lg m-2" onclick="startGame('TIMED')">
                         <i class="fas fa-clock"></i> Contrarreloj
-                        <small class="d-block">3 horas - 80 preguntas</small>
+                        <small class="d-block" id="timedDesc">3 horas - Todas las preguntas</small>
                     </button>
                     <button class="btn btn-game btn-lg m-2" onclick="startGame('WEAK_AREAS')">
                         <i class="fas fa-chart-line"></i> Áreas Débiles

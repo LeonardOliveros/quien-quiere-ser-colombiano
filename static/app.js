@@ -18,6 +18,10 @@ let lifelines = {
     hint: true,
     skip: 3
 };
+let questionCounts = {
+    total: 1000,
+    byCategory: {}
+};
 
 // API Base URL
 const API_URL = '/api';
@@ -199,11 +203,34 @@ async function autoLoginAfterRegister(username, password) {
 }
 
 // Navigation functions
-function showMainMenu() {
+async function showMainMenu() {
     hideAllScreens();
     const mainMenu = document.getElementById('mainMenu');
     if (mainMenu) {
         mainMenu.style.display = 'block';
+    }
+    // Load question counts from database
+    await loadQuestionCounts();
+}
+
+async function loadQuestionCounts() {
+    try {
+        const response = await fetch(`${API_URL}/questions/count`);
+        const data = await response.json();
+
+        if (response.ok) {
+            questionCounts.total = data.total || 1000;
+            questionCounts.byCategory = data.by_category || {};
+
+            // Update UI elements with real counts
+            const timedDesc = document.getElementById('timedDesc');
+            if (timedDesc) {
+                timedDesc.textContent = `3 horas - ${questionCounts.total} preguntas`;
+            }
+        }
+    } catch (error) {
+        console.error('Error loading question counts:', error);
+        // Keep default values if error
     }
 }
 
@@ -240,7 +267,7 @@ async function startGame(mode) {
     // Determine game configuration
     let config = {
         mode: mode,
-        question_count: 1000, // Use all available questions
+        question_count: questionCounts.total,
         time_limit: 0,
         categories: ['CULTURA', 'GEOGRAFIA', 'HISTORIA', 'CONSTITUCION'],
         difficulty: 'MIXED',
@@ -249,18 +276,19 @@ async function startGame(mode) {
 
     switch (mode) {
         case 'TIMED':
-            config.question_count = 1000; // Use all available questions
+            config.question_count = questionCounts.total;
             config.time_limit = 10800; // 3 hours in seconds
             break;
         case 'WEAK_AREAS':
             config.focus_weak_areas = true;
-            config.question_count = 1000; // Use all available questions
+            config.question_count = questionCounts.total;
             break;
         case 'CATEGORY':
             const category = await selectCategory();
             if (!category) return;
             config.categories = [category];
-            config.question_count = 1000; // Use all available questions
+            // Use the count for this specific category if available
+            config.question_count = questionCounts.byCategory[category] || questionCounts.total;
             break;
     }
     
@@ -717,12 +745,13 @@ function quitGame() {
                 </div>
                 <div class="modal-body">
                     <p><strong>¿Estás seguro que deseas salir del juego?</strong></p>
-                    <p>Tu progreso actual será guardado y podrás ver los resultados.</p>
+                    <p>Tu progreso actual será guardado.</p>
                     <p class="text-muted mb-0">Preguntas respondidas: ${correctAnswers + incorrectAnswers}</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="cancelQuitBtn">Cancelar</button>
-                    <button type="button" class="btn btn-danger" id="confirmQuitBtn">Sí, Salir</button>
+                    <button type="button" class="btn btn-warning" id="quitToMenuBtn">Ir al Menú</button>
+                    <button type="button" class="btn btn-danger" id="confirmQuitBtn">Ver Resultados</button>
                 </div>
             </div>
         </div>
@@ -740,7 +769,31 @@ function quitGame() {
         }, 300);
     });
 
-    // Handle confirm quit
+    // Handle quit to menu (without showing results)
+    document.getElementById('quitToMenuBtn').addEventListener('click', async () => {
+        modal.hide();
+        setTimeout(async () => {
+            quitModal.remove();
+            // Stop timer
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+            }
+            // End the session on the backend but don't show results
+            try {
+                await fetchWithAuth(`${API_URL}/game/${currentSession}/end`, {
+                    method: 'POST',
+                    headers: {}
+                });
+            } catch (error) {
+                console.error('Error ending session:', error);
+            }
+            // Go directly to main menu
+            showMainMenu();
+        }, 300);
+    });
+
+    // Handle confirm quit with results
     document.getElementById('confirmQuitBtn').addEventListener('click', () => {
         modal.hide();
         setTimeout(() => {
@@ -936,10 +989,13 @@ function displayResults(results) {
 // Statistics functions
 async function showStats() {
     try {
+        // Ensure question counts are loaded
+        await loadQuestionCounts();
+
         const response = await fetchWithAuth(`${API_URL}/user/${currentUser.id}/stats`, {
             headers: {}
         });
-        
+
         const stats = await response.json();
         displayStats(stats);
     } catch (error) {
@@ -980,8 +1036,9 @@ function displayStats(stats) {
                 <div class="col-md-3">
                     <div class="stat-card">
                         <i class="fas fa-question-circle fa-2x mb-2"></i>
-                        <p class="stat-label">Preguntas Totales</p>
+                        <p class="stat-label">Preguntas Respondidas</p>
                         <p class="stat-value">${stats.total_questions || 0}</p>
+                        <small class="text-muted d-block mt-1">de ${questionCounts.total} disponibles</small>
                     </div>
                 </div>
             </div>
@@ -1000,6 +1057,9 @@ function displayStats(stats) {
                 `<span class="text-danger">↓${Math.abs(catStats.improvement).toFixed(1)}%</span>` :
                 '<span class="text-muted">--</span>';
             
+            const availableQuestions = questionCounts.byCategory[category] || 0;
+            const answeredQuestions = catStats.total_questions || 0;
+
             html += `
                 <div class="col-md-6 mb-3">
                     <div class="category-stat-card">
@@ -1010,8 +1070,11 @@ function displayStats(stats) {
                             </div>
                         </div>
                         <small>
-                            ${catStats.correct_answers || 0}/${catStats.total_questions || 0} correctas
+                            ${catStats.correct_answers || 0}/${answeredQuestions} correctas
                             ${improvement}
+                        </small>
+                        <small class="d-block text-muted mt-1">
+                            <i class="fas fa-database"></i> ${availableQuestions} preguntas disponibles en BD
                         </small>
                     </div>
                 </div>
@@ -1215,8 +1278,8 @@ function displayQuestionCount(data) {
 
 // Helper functions
 function getQuestionCount() {
-    // Return a large number since we want to use all available questions
-    return 1000;
+    // Return the total count from database
+    return questionCounts.total;
 }
 
 function getCategoryColor(category) {
