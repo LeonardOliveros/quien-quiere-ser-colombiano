@@ -12928,7 +12928,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Simón Bolívar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -12953,7 +12953,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1819",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12983,7 +12983,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Gran Colombia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13008,7 +13008,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Guerras civiles entre centralistas y federalistas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13043,7 +13043,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Simón Bolívar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13068,7 +13068,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "1899-1902",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13103,7 +13103,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El asesinato de Jorge Eliécer Gaitán (El Bogotazo)",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13133,7 +13133,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Conservadores y Liberales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13158,7 +13158,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text: "1903",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13193,7 +13193,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Francisco de Paula Santander",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13223,7 +13223,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Federalista",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13258,7 +13258,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Oreste Síndici (música) y Rafael Núñez (letra)",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -13283,7 +13283,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1948-1958",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13313,7 +13313,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Constitución de Cúcuta (1821)",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13338,7 +13338,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text: "1781",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13373,7 +13373,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Antonio Nariño",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13398,7 +13398,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Rafael Núñez",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13433,7 +13433,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "2016",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13463,7 +13463,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1990",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13498,7 +13498,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bogotá D.C.",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -13523,7 +13523,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Mar Caribe",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13558,7 +13558,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "32",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -13578,7 +13578,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Pico Simón Bolívar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13613,7 +13613,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Río Magdalena",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13638,7 +13638,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Los Llanos Orientales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13678,7 +13678,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Chocó",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -13698,7 +13698,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "La formación montañosa costera más alta del mundo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13733,7 +13733,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Medellín",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13763,7 +13763,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Mar Caribe",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13798,7 +13798,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Amazonas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -13818,7 +13818,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Es el páramo más grande del mundo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -13858,7 +13858,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "6",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -13888,7 +13888,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Colombia y Panamá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -13913,7 +13913,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Medellín",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -13953,7 +13953,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bucaramanga",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     4,
 				},
 			},
@@ -13973,7 +13973,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La Cordillera Central",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14008,7 +14008,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Buenaventura",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -14033,7 +14033,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "San Andrés, Providencia y las islas del Pacífico",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14063,7 +14063,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Santander",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14098,7 +14098,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La orquídea (Cattleya trianae)",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -14123,7 +14123,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El cóndor de los Andes",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14158,7 +14158,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La palma de cera del Quindío",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -14183,7 +14183,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Córdoba y Sucre",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14218,7 +14218,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Gabriel García Márquez",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -14243,7 +14243,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La Costa Caribe",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14273,7 +14273,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un baile y género musical",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14303,7 +14303,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Antes de la cuaresma",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14333,7 +14333,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bandeja paisa",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14368,7 +14368,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Valledupar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -14393,7 +14393,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Sus esculturas y pinturas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14433,7 +14433,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El café",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     4,
 				},
 			},
@@ -14458,7 +14458,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Medellín",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -14483,7 +14483,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un deporte nacional",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14513,7 +14513,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Joe Arroyo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14548,7 +14548,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bogotá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -14573,7 +14573,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los Wayúu de La Guajira",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14603,7 +14603,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un género musical y baile andino",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -14638,7 +14638,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Gabriel García Márquez",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -14663,7 +14663,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Sus procesiones religiosas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15293,7 +15293,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El incidente del florero de Llorente",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15323,7 +15323,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Francisco de Miranda",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15353,7 +15353,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bolívar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15383,7 +15383,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Colombia, Venezuela, Ecuador, Panamá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15413,7 +15413,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Rafael Núñez",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15448,7 +15448,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1851",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -15478,7 +15478,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1819",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -15498,7 +15498,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Francisco de Paula Santander",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -15543,7 +15543,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "45 años (1886-1930)",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     4,
 				},
 			},
@@ -15558,7 +15558,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text: "1928",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -15593,7 +15593,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "José Manuel Marroquín",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15623,7 +15623,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Enrique Olaya Herrera",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15653,7 +15653,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1985",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15677,8 +15677,8 @@ func seedQuestions() {
 			Explanation: "",
 			Choices: []Choice{
 				{
-					Text:      "Jorge Eliécer Gaitán",
-					IsCorrect: false,
+					Text:      "Jorge Eliécer Gaitán (José Acevedo y Gómez 1810)",
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -15713,7 +15713,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La Asamblea Nacional Constituyente",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15748,7 +15748,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1957",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -15773,7 +15773,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Estados Unidos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15803,7 +15803,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La Guerra de los Mil Días",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15828,7 +15828,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Gustavo Rojas Pinilla",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -15868,7 +15868,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La Constitución de 1991",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -15898,7 +15898,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1.141.748 km²",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -15928,7 +15928,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "9 países",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -15953,7 +15953,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Villavicencio",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -15988,7 +15988,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "San Andrés y Providencia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -16008,7 +16008,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Chiribiquete",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -16048,7 +16048,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Orinoco",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -16073,7 +16073,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Venezuela",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16108,7 +16108,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Tres",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -16133,7 +16133,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Antioquia y Chocó",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16168,7 +16168,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Tunja",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -16193,7 +16193,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Punta Gallinas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16223,7 +16223,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Es donde nacen los principales ríos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16258,7 +16258,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Margarita",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -16288,7 +16288,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Valle del Magdalena",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -16308,7 +16308,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Valledupar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -16343,7 +16343,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Huila",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16373,7 +16373,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Galeras",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16403,7 +16403,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un humedal costero",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16433,7 +16433,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Leticia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16458,7 +16458,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Nariño",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -16493,7 +16493,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Coro y primera estrofa",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16523,7 +16523,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Amarillo, azul, rojo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16553,7 +16553,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Marzo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16583,7 +16583,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Alejandro Obregón",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16608,7 +16608,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "José Eustasio Rivera",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -16643,7 +16643,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Cartagena",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16673,7 +16673,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Dos años",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16708,7 +16708,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bogotá y el altiplano",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -16733,7 +16733,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Lucho Bermúdez",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16763,7 +16763,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Pasto",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16793,7 +16793,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un recipiente tradicional",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16823,7 +16823,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Jorge Isaacs",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16853,7 +16853,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Andina colombiana",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16888,7 +16888,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Diciembre",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -16913,7 +16913,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Vallenato",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -16938,7 +16938,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "El Carnaval de Barranquilla",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -16973,7 +16973,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Nariño",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -17003,7 +17003,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los Llanos Orientales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -17028,7 +17028,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Héctor Abad Faciolince",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -17063,7 +17063,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Santa Marta",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
