@@ -113,5 +113,6 @@ func setupRoutes(r *gin.Engine) {
 		api.GET("/questions", getQuestions)
 		api.GET("/questions/:id", getQuestion)
 		api.GET("/questions/category/:category", getQuestionsByCategory)
+		api.GET("/questions/count", getQuestionsCount)
 	}
 }

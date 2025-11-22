@@ -702,6 +702,60 @@ function pauseGame() {
     });
 }
 
+function quitGame() {
+    // Show confirmation modal
+    const quitModal = document.createElement('div');
+    quitModal.className = 'modal fade';
+    quitModal.id = 'quitModal';
+    quitModal.setAttribute('tabindex', '-1');
+    quitModal.setAttribute('data-bs-backdrop', 'static');
+    quitModal.innerHTML = `
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="fas fa-exclamation-triangle"></i> Confirmar Salida</h5>
+                </div>
+                <div class="modal-body">
+                    <p><strong>¿Estás seguro que deseas salir del juego?</strong></p>
+                    <p>Tu progreso actual será guardado y podrás ver los resultados.</p>
+                    <p class="text-muted mb-0">Preguntas respondidas: ${correctAnswers + incorrectAnswers}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancelQuitBtn">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="confirmQuitBtn">Sí, Salir</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(quitModal);
+    const modal = new bootstrap.Modal(quitModal);
+    modal.show();
+
+    // Handle cancel
+    document.getElementById('cancelQuitBtn').addEventListener('click', () => {
+        modal.hide();
+        setTimeout(() => {
+            quitModal.remove();
+        }, 300);
+    });
+
+    // Handle confirm quit
+    document.getElementById('confirmQuitBtn').addEventListener('click', () => {
+        modal.hide();
+        setTimeout(() => {
+            quitModal.remove();
+            // Stop timer
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+            }
+            // End game and show results
+            endGame();
+        }, 300);
+    });
+}
+
 function resumeGame() {
     // Re-enable all answer buttons that haven't been answered yet
     for (let i = 0; i < 4; i++) {
@@ -1116,6 +1170,49 @@ function displayRecommendations(recommendations) {
     showModal('Recomendaciones de Estudio', html);
 }
 
+// Question count functions
+async function showQuestionCount() {
+    try {
+        const response = await fetch(`${API_URL}/questions/count`);
+        const data = await response.json();
+
+        if (response.ok) {
+            displayQuestionCount(data);
+        } else {
+            alert('Error al cargar el conteo de preguntas');
+        }
+    } catch (error) {
+        console.error('Show question count error:', error);
+        alert('Error al cargar el conteo de preguntas');
+    }
+}
+
+function displayQuestionCount(data) {
+    const displayDiv = document.getElementById('questionCountDisplay');
+    if (!displayDiv) return;
+
+    // Show the display
+    displayDiv.style.display = 'block';
+
+    // Update total count
+    const totalDisplay = document.getElementById('totalQuestionsDisplay');
+    if (totalDisplay) {
+        totalDisplay.textContent = data.total || 0;
+    }
+
+    // Update category counts
+    const categories = ['CULTURA', 'GEOGRAFIA', 'HISTORIA', 'CONSTITUCION'];
+    categories.forEach(category => {
+        const countElement = document.getElementById(`count${category}`);
+        if (countElement && data.by_category) {
+            countElement.textContent = data.by_category[category] || 0;
+        }
+    });
+
+    // Scroll to the display
+    displayDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
 // Helper functions
 function getQuestionCount() {
     // Return a large number since we want to use all available questions
@@ -1201,10 +1298,12 @@ window.use50_50 = use50_50;
 window.useHint = useHint;
 window.skipQuestion = skipQuestion;
 window.pauseGame = pauseGame;
+window.quitGame = quitGame;
 window.resumeGame = resumeGame;
 window.showStats = showStats;
 window.showHistory = showHistory;
 window.showRecommendations = showRecommendations;
+window.showQuestionCount = showQuestionCount;
 window.backToMenu = backToMenu;
 window.startNewGame = startNewGame;
 window.logout = logout;

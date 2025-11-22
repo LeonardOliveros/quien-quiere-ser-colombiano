@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"math"
+	mrand "math/rand"
 	"net/http"
 	"strconv"
 	"time"
@@ -176,6 +177,12 @@ func getNextQuestion(c *gin.Context) {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
 		return
 	}
+
+	// Randomize the order of choices to prevent visual memorization
+	mrand.Seed(time.Now().UnixNano())
+	mrand.Shuffle(len(question.Choices), func(i, j int) {
+		question.Choices[i], question.Choices[j] = question.Choices[j], question.Choices[i]
+	})
 
 	// Hide correct answer from choices
 	for i := range question.Choices {
@@ -368,6 +375,40 @@ func getQuestionsByCategory(c *gin.Context) {
 	var questions []Question
 	db.Preload("Choices").Where("category = ?", category).Find(&questions)
 	c.JSON(http.StatusOK, questions)
+}
+
+func getQuestionsCount(c *gin.Context) {
+	// Get total count
+	var totalCount int64
+	db.Model(&Question{}).Count(&totalCount)
+
+	// Get count by category
+	categories := []string{"CULTURA", "GEOGRAFIA", "HISTORIA", "CONSTITUCION"}
+	categoryCount := make(map[string]int64)
+
+	for _, category := range categories {
+		var count int64
+		db.Model(&Question{}).Where("category = ?", category).Count(&count)
+		categoryCount[category] = count
+	}
+
+	// Get count by subcategory (optional detailed breakdown)
+	var subcategoryCounts []struct {
+		Category    string
+		SubCategory string
+		Count       int64
+	}
+
+	db.Model(&Question{}).
+		Select("category, sub_category, COUNT(*) as count").
+		Group("category, sub_category").
+		Scan(&subcategoryCounts)
+
+	c.JSON(http.StatusOK, gin.H{
+		"total":             totalCount,
+		"by_category":       categoryCount,
+		"by_subcategory":    subcategoryCounts,
+	})
 }
 
 // User statistics handlers

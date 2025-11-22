@@ -102,6 +102,54 @@
                 </button>
             </div>
         </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <button class="btn btn-outline-info w-100" onclick="showQuestionCount()">
+                    <i class="fas fa-database"></i> Base de Datos de Preguntas
+                </button>
+            </div>
+        </div>
+
+        <div id="questionCountDisplay" class="mt-4 text-center" style="display: none;">
+            <div class="card bg-dark text-light">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-list-ol"></i> Total de Preguntas Disponibles</h5>
+                    <h2 class="display-4 text-golden" id="totalQuestionsDisplay">0</h2>
+                    <hr class="bg-light">
+                    <div class="row mt-3">
+                        <div class="col-md-3">
+                            <div class="category-count">
+                                <i class="fas fa-landmark text-info"></i>
+                                <h6>CULTURA</h6>
+                                <h4 id="countCULTURA">0</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="category-count">
+                                <i class="fas fa-globe text-success"></i>
+                                <h6>GEOGRAFÍA</h6>
+                                <h4 id="countGEOGRAFIA">0</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="category-count">
+                                <i class="fas fa-scroll text-warning"></i>
+                                <h6>HISTORIA</h6>
+                                <h4 id="countHISTORIA">0</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="category-count">
+                                <i class="fas fa-gavel text-danger"></i>
+                                <h6>CONSTITUCIÓN</h6>
+                                <h4 id="countCONSTITUCION">0</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Game Screen -->
@@ -126,8 +174,11 @@
                     <button class="btn btn-warning btn-sm" onclick="flagQuestion(event)">
                         <i class="fas fa-flag"></i> Marcar
                     </button>
-                    <button class="btn btn-danger btn-sm" onclick="pauseGame()">
+                    <button class="btn btn-info btn-sm" onclick="pauseGame()">
                         <i class="fas fa-pause"></i> Pausar
+                    </button>
+                    <button class="btn btn-danger btn-sm" onclick="quitGame()">
+                        <i class="fas fa-times-circle"></i> Salir
                     </button>
                 </div>
             </div>
