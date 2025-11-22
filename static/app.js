@@ -130,33 +130,71 @@ async function handleLogin(e) {
 
 async function handleRegister(e) {
     e.preventDefault();
-    
+
     const username = document.getElementById('regUsername').value;
     const email = document.getElementById('regEmail').value;
     const password = document.getElementById('regPassword').value;
-    
+
     try {
         const response = await fetch(`${API_URL}/register`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, email, password })
         });
-        
+
         const data = await response.json();
-        
+
         if (response.ok) {
-            alert('Registro exitoso! Por favor inicia sesión.');
-            // Switch to login tab
-            const loginTab = document.querySelector('#authTabs .nav-link[href="#login"]');
-            if (loginTab) {
-                loginTab.click();
-            }
+            // Automatically login after successful registration
+            await autoLoginAfterRegister(username, password);
         } else {
             alert(data.error || 'Error al registrarse');
         }
     } catch (error) {
         console.error('Register error:', error);
         alert('Error de conexión');
+    }
+}
+
+async function autoLoginAfterRegister(username, password) {
+    try {
+        const response = await fetch(`${API_URL}/login`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            localStorage.setItem('userId', data.user_id);
+            localStorage.setItem('token', data.token);
+            currentUser = { id: data.user_id, token: data.token };
+
+            // Clear registration form
+            const registerForm = document.getElementById('registerForm');
+            if (registerForm) {
+                registerForm.reset();
+            }
+
+            // Close modal
+            const authModal = bootstrap.Modal.getInstance(document.getElementById('authModal'));
+            if (authModal) {
+                authModal.hide();
+            }
+
+            showMainMenu();
+        } else {
+            alert(data.error || 'Error al iniciar sesión automático');
+            // Switch to login tab so user can try manually
+            const loginTab = document.querySelector('#authTabs .nav-link[href="#login"]');
+            if (loginTab) {
+                loginTab.click();
+            }
+        }
+    } catch (error) {
+        console.error('Auto-login error:', error);
+        alert('Error de conexión. Por favor, inicia sesión manualmente.');
     }
 }
 
