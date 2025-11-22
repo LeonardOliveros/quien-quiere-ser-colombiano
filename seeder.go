@@ -682,7 +682,7 @@ func seedQuestions() {
 					Order:     1,
 				},
 				{
-					Text:      "Teatro Heredia",
+					Text:      "Teatro Heredia (Hoy Teatro Colón)",
 					IsCorrect: true,
 					Order:     2,
 				},
@@ -1061,7 +1061,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "DEPORTES",
-			Text:        "Según el documento, ¿cuál es el deporte más popular en Colombia?",
+			Text:        "¿Cuál es el deporte más popular en Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -1121,7 +1121,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "DEPORTES",
-			Text:        "¿Quiénes son mencionados como ciclistas destacados en el documento?",
+			Text:        "¿Quiénes son mencionados como ciclistas destacados en Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -1151,7 +1151,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN",
-			Text:        "Según el documento, ¿cuál es la religión predominante en Colombia?",
+			Text:        "¿Cuál es la religión predominante en Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -1181,7 +1181,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "RELIGIÓN",
-			Text:        "¿Qué porcentaje de la población se identifica como católica según el texto?",
+			Text:        "¿Qué porcentaje de la población se identifica como católica en Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -1481,7 +1481,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "TURISMO",
-			Text:        "¿Cuál es el pico más alto de Colombia según el documento?",
+			Text:        "¿Cuál es el pico más alto de Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -1948,7 +1948,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "6",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -1968,7 +1968,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Caribe, Pacífica, Andina, Orinoquía, Amazonía, Insular",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -2003,7 +2003,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Amazonía",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2033,7 +2033,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Sus tres cordilleras",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2063,7 +2063,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Orinoquía",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2098,7 +2098,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "San Andrés, Providencia y Santa Catalina",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2123,7 +2123,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1.600 km",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2158,7 +2158,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1.300 km",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2188,7 +2188,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "32",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2213,7 +2213,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Medellín",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2248,7 +2248,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Barranquilla",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2273,7 +2273,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Cartagena",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2308,7 +2308,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Tunja",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2338,7 +2338,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Manizales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2368,7 +2368,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Mocoa",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2393,7 +2393,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Popayán",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2418,7 +2418,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Valledupar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -2453,7 +2453,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Montería",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2478,7 +2478,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Bogotá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -2518,7 +2518,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Quibdó",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2548,7 +2548,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Neiva",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2578,7 +2578,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Riohacha",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2603,7 +2603,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Santa Marta",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2638,7 +2638,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Villavicencio",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2668,7 +2668,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Pasto",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2693,7 +2693,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Cúcuta",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2723,7 +2723,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Mocoa",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2758,7 +2758,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Armenia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2788,7 +2788,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Pereira",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2818,7 +2818,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bucaramanga",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2843,7 +2843,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Sincelejo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2873,7 +2873,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Ibagué",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2908,7 +2908,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Cali",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2933,7 +2933,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Arauca",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -2968,7 +2968,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Yopal",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -2993,7 +2993,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Puerto Carreño",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3023,7 +3023,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Puerto Inírida",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3058,7 +3058,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "San José del Guaviare",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -3083,7 +3083,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Mitú",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3118,7 +3118,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Leticia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -3143,7 +3143,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "San Andrés",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3178,7 +3178,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "5",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -3203,7 +3203,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Venezuela y Brasil",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3233,7 +3233,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Ecuador y Perú",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3268,7 +3268,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Panamá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -3293,7 +3293,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Nueva Granada",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3328,7 +3328,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Colombia, Venezuela, Ecuador y Panamá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -3353,7 +3353,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1819",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3383,7 +3383,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Nueva Granada, Confederación Granadina, Estados Unidos de Colombia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3413,7 +3413,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "20 de julio de 1810",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3443,7 +3443,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Grito de Independencia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3473,7 +3473,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Florero de Llorente",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3503,7 +3503,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "7 de agosto de 1819",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3538,7 +3538,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Simón Bolívar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -3563,7 +3563,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Guerras civiles entre centralistas y federalistas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3588,7 +3588,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "1810-1815",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -3623,7 +3623,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Pablo Morillo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3658,7 +3658,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Simón Bolívar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -3683,7 +3683,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Francisco de Paula Santander",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3713,7 +3713,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Traducir los Derechos del Hombre y del Ciudadano",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3743,7 +3743,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Heroína y mártir de la independencia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3773,7 +3773,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1817",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3798,7 +3798,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text: "1825",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -3833,7 +3833,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Francisco de Paula Santander",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3868,7 +3868,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1863",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -3893,7 +3893,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Federalista",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3923,7 +3923,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Rafael Núñez",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3953,7 +3953,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Centralista",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -3983,7 +3983,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1899-1902",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4013,7 +4013,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1903",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4043,7 +4043,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Líder liberal asesinado en 1948",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4068,7 +4068,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "9 de abril de 1948",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -4102,8 +4102,8 @@ func seedQuestions() {
 					Order:     1,
 				},
 				{
-					Text:      "1948-1958",
-					IsCorrect: false,
+					Text:      "1946-1958",
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4133,7 +4133,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Gustavo Rojas Pinilla",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4163,7 +4163,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Liberales y conservadores",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4193,7 +4193,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1958-1974",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4228,7 +4228,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1991",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4248,7 +4248,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Presidente durante la Constituyente de 1991",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -4288,7 +4288,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "2016",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4313,7 +4313,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Juan Manuel Santos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4343,7 +4343,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un Estado social de derecho",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4378,7 +4378,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El pueblo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4403,7 +4403,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "República unitaria, descentralizada, con autonomía de sus entidades territoriales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4443,7 +4443,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Todas las anteriores",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     4,
 				},
 			},
@@ -4463,7 +4463,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Inviolable",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4493,7 +4493,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Derecho al libre desarrollo de la personalidad",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4528,7 +4528,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Derechos fundamentales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4548,7 +4548,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "10 días",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -4583,7 +4583,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La libertad personal",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4618,7 +4618,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "18 años",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4643,7 +4643,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Ejecutiva, Legislativa, Judicial",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4678,7 +4678,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Presidente de la República",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4708,7 +4708,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Presidente de la República",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4733,7 +4733,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "4 años",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4768,7 +4768,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "No",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4798,7 +4798,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Senado y Cámara de Representantes",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4828,7 +4828,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "108",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -4853,7 +4853,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Circunscripción nacional",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4883,7 +4883,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "4 años",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4913,7 +4913,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Hacer las leyes",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4943,7 +4943,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "9 magistrados",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -4978,7 +4978,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "8 años",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5003,7 +5003,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "23 magistrados",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5038,7 +5038,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Lo contencioso administrativo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5063,7 +5063,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Fiscal General",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5098,7 +5098,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La Corte Suprema de Justicia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5128,7 +5128,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Procuraduría, Defensoría y Personerías",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5153,7 +5153,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Senado",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5183,7 +5183,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El control fiscal",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5213,7 +5213,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Congreso en pleno",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5243,7 +5243,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La Cámara de Representantes",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5273,7 +5273,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Consejo Nacional Electoral y Registraduría",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5308,7 +5308,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los presidentes de las altas cortes",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5333,7 +5333,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un derecho y un deber ciudadano",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5368,7 +5368,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Departamentos, municipios, distritos y territorios indígenas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5393,7 +5393,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Voto popular",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5428,7 +5428,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "4 años",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5458,7 +5458,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Voto popular",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5488,7 +5488,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "4 años",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5513,7 +5513,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Corporaciones administrativas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5543,7 +5543,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Aprueban los acuerdos municipales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5573,7 +5573,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Voto, referendo, plebiscito, consulta popular",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5603,7 +5603,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Aprobar o derogar leyes",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5638,7 +5638,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Gobernadores y alcaldes",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5663,7 +5663,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "0.5% del censo electoral",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5698,7 +5698,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El banco central con autonomía",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5723,7 +5723,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Mantener el poder adquisitivo de la moneda",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5753,7 +5753,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El medio ambiente",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5783,7 +5783,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El sistema de mérito en el empleo público",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5818,7 +5818,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Solo la Corte Constitucional",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5848,7 +5848,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "8 debates",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5873,7 +5873,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Referendo o Asamblea Constituyente",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5908,7 +5908,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Cualquier ciudadano",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -5933,7 +5933,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Son definitivas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5963,7 +5963,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Guerra exterior, conmoción interior, emergencia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -5993,7 +5993,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Presidente con firma de todos los ministros",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -6023,7 +6023,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "90 días",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -6053,7 +6053,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "30 días",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -6083,7 +6083,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "No pueden suspenderse los derechos humanos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -6113,7 +6113,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Fuerza de ley mientras dure el estado",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
