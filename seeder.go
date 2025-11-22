@@ -12263,7 +12263,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1839-1842",
-					IsCorrect: True,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
