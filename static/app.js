@@ -236,31 +236,31 @@ function hideAllScreens() {
 // Game functions
 async function startGame(mode) {
     gameMode = mode;
-    
+
     // Determine game configuration
     let config = {
         mode: mode,
-        question_count: 20,
+        question_count: 1000, // Use all available questions
         time_limit: 0,
         categories: ['CULTURA', 'GEOGRAFIA', 'HISTORIA', 'CONSTITUCION'],
         difficulty: 'MIXED',
         focus_weak_areas: false
     };
-    
+
     switch (mode) {
         case 'TIMED':
-            config.question_count = 80;
+            config.question_count = 1000; // Use all available questions
             config.time_limit = 10800; // 3 hours in seconds
             break;
         case 'WEAK_AREAS':
             config.focus_weak_areas = true;
-            config.question_count = 30;
+            config.question_count = 1000; // Use all available questions
             break;
         case 'CATEGORY':
             const category = await selectCategory();
             if (!category) return;
             config.categories = [category];
-            config.question_count = 20;
+            config.question_count = 1000; // Use all available questions
             break;
     }
     
@@ -285,10 +285,10 @@ async function startGame(mode) {
             if (timeRemaining > 0) {
                 startTimer();
             } else {
-                // No time limit - show progress indicator instead of timer
+                // No time limit - show placeholder
                 const timerEl = document.getElementById('timer');
                 if (timerEl) {
-                    timerEl.textContent = '1/' + config.question_count;
+                    timerEl.textContent = '--:--';
                 }
             }
         }
@@ -375,14 +375,6 @@ async function loadNextQuestion() {
             currentQuestion = data.question;
             questionIndex = data.question_number;
             displayQuestion();
-
-            // Update progress counter in timer element for no-time-limit games
-            if (timeRemaining === 0) {
-                const timerEl = document.getElementById('timer');
-                if (timerEl) {
-                    timerEl.textContent = questionIndex + '/' + data.total_questions;
-                }
-            }
         } else {
             // No more questions, end game
             endGame();
@@ -1126,11 +1118,8 @@ function displayRecommendations(recommendations) {
 
 // Helper functions
 function getQuestionCount() {
-    switch (gameMode) {
-        case 'TIMED': return 80;
-        case 'WEAK_AREAS': return 30;
-        default: return 20;
-    }
+    // Return a large number since we want to use all available questions
+    return 1000;
 }
 
 function getCategoryColor(category) {
