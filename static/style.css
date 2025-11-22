@@ -1,0 +1,512 @@
+/* Quiz App Styles - Millionaire Game Show Theme */
+
+:root {
+    --primary-color: #1a1a2e;
+    --secondary-color: #16213e;
+    --accent-color: #0f3460;
+    --gold-color: #ffd700;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--text-light);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Typography */
+.text-golden {
+    color: var(--gold-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1.display-3 {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Main Menu Styles */
+#mainMenu {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.game-modes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-game {
+    background: linear-gradient(145deg, var(--accent-color), var(--secondary-color));
+    color: var(--text-light);
+    border: 2px solid var(--gold-color);
+    padding: 20px 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    min-width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-game:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--gold-color), transparent);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+}
+
+.btn-game:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+    color: var(--gold-color);
+}
+
+.btn-game:hover:before {
+    opacity: 1;
+}
+
+.btn-game i {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn-game small {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+/* Game Screen */
+#gameScreen {
+    background: radial-gradient(ellipse at center, var(--secondary-color) 0%, var(--primary-color) 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.timer-display {
+    font-size: 1.5rem;
+    color: var(--warning-color);
+    font-weight: bold;
+}
+
+.question-counter {
+    font-size: 1.2rem;
+    color: var(--gold-color);
+}
+
+.category-badge .badge {
+    font-size: 1rem;
+    padding: 8px 20px;
+    text-transform: uppercase;
+}
+
+/* Question Box */
+.question-box {
+    background: linear-gradient(145deg, var(--accent-color), var(--secondary-color));
+    border: 3px solid var(--gold-color);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.question-box::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, var(--gold-color), transparent, var(--gold-color));
+    z-index: -1;
+    border-radius: 20px;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+.question-text {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Answers Grid */
+.answers-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.answer-btn {
+    width: 100%;
+    background: linear-gradient(145deg, #1e3c72, #2a5298);
+    border: 2px solid var(--gold-color);
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.answer-btn:hover {
+    background: linear-gradient(145deg, #2a5298, #1e3c72);
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+}
+
+.answer-letter {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--gold-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+.answer-text {
+    flex: 1;
+    text-align: left;
+}
+
+.answer-btn.correct {
+    background: linear-gradient(145deg, #28a745, #218838);
+    animation: pulse 0.5s ease;
+}
+
+.answer-btn.incorrect {
+    background: linear-gradient(145deg, #dc3545, #c82333);
+    animation: shake 0.5s ease;
+}
+
+.answer-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+/* Lifelines */
+.lifelines {
+    margin-top: 30px;
+}
+
+.btn-lifeline {
+    background: linear-gradient(145deg, var(--warning-color), #e0a800);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-lifeline:hover:not(.used) {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+.btn-lifeline.used {
+    background: #666;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Progress Bar */
+.progress-indicator {
+    max-width: 900px;
+    margin: 30px auto 0;
+}
+
+.progress {
+    height: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.5s ease;
+    background: linear-gradient(90deg, var(--success-color), #5cb85c);
+}
+
+.score-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.score-display .badge {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Results Screen */
+#resultsScreen {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    min-height: 100vh;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--gold-color);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.score-circle {
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--gold-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+    background: radial-gradient(circle, var(--accent-color), var(--secondary-color));
+}
+
+.score-big {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--gold-color);
+}
+
+.result-status {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.result-status.passed {
+    color: var(--success-color);
+}
+
+.result-status.failed {
+    color: var(--danger-color);
+}
+
+/* Category Results */
+.category-result {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--gold-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.category-result h5 {
+    color: var(--gold-color);
+    margin-bottom: 10px;
+}
+
+.category-score-bar {
+    background: rgba(0, 0, 0, 0.3);
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-score-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--success-color), #5cb85c);
+    transition: width 1s ease;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/* Review Sections */
+.incorrect-review, .flagged-review {
+    max-height: 400px;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.review-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--danger-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.review-item.flagged {
+    border-left-color: var(--warning-color);
+}
+
+.review-question {
+    font-weight: bold;
+    color: var(--gold-color);
+    margin-bottom: 10px;
+}
+
+.review-answer {
+    margin: 5px 0;
+}
+
+.user-answer {
+    color: var(--danger-color);
+}
+
+.correct-answer {
+    color: var(--success-color);
+}
+
+.explanation {
+    background: rgba(255, 215, 0, 0.1);
+    border-left: 3px solid var(--gold-color);
+    padding: 10px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Recommendations */
+.recommendations {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.recommendation-item {
+    background: linear-gradient(145deg, var(--accent-color), var(--secondary-color));
+    border-left: 4px solid var(--warning-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.recommendation-item h6 {
+    color: var(--warning-color);
+    margin-bottom: 10px;
+}
+
+/* Modal Styles */
+.modal-content {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border: 2px solid var(--gold-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--gold-color);
+}
+
+.modal-title {
+    color: var(--gold-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .question-text {
+        font-size: 1.3rem;
+    }
+    
+    .answer-btn {
+        padding: 15px;
+        font-size: 1rem;
+    }
+    
+    .btn-game {
+        min-width: 200px;
+        padding: 15px 20px;
+    }
+    
+    .score-circle {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .score-big {
+        font-size: 2rem;
+    }
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffed4e;
+}
