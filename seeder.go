@@ -8393,7 +8393,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "0 a 1.000 metros",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8423,7 +8423,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Banano, cacao, caña de azúcar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8453,7 +8453,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1.000 y 2.000 metros",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8483,7 +8483,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Templado",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8513,7 +8513,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "2.000 a 3.000 metros",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8543,7 +8543,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Papa, cebolla, trigo, cebada",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8578,7 +8578,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "3.000 metros",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -8603,7 +8603,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Frailejón",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8621,7 +8621,7 @@ func seedQuestions() {
 		{
 			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN CARIBE - CARACTERÍSTICAS ESPECÍFICAS",
-			Text:        "¿Cuántos kilómetros de costa tiene la región Caribe según el documento?",
+			Text:        "¿Cuántos kilómetros de costa tiene la región Caribe?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -8633,7 +8633,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1.600 km",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8663,7 +8663,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un humedal costero",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8693,7 +8693,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Península de La Guajira",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8723,7 +8723,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Antioquia y Chocó",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8753,7 +8753,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La formación montañosa costera más alta del mundo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8788,7 +8788,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "5.775 metros",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -8813,7 +8813,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bolívar y Sucre",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8848,7 +8848,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1.300 km",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -8873,7 +8873,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Buenaventura",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8903,7 +8903,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Golfo de Urabá (Caribe)",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8933,7 +8933,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Es una de las más lluviosas del mundo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8963,7 +8963,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Son criaderos de especies marinas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -8998,7 +8998,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Tres",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9023,7 +9023,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Central y Oriental",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9053,7 +9053,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Central y Occidental",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9083,7 +9083,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "En Medellín",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9113,7 +9113,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Nacen los ríos Magdalena, Cauca, Caquetá y Patía",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9143,7 +9143,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Santander",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9168,7 +9168,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Boyacá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -9203,7 +9203,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Páramo de Sumapaz",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9238,7 +9238,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "28%",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9263,7 +9263,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los Llanos Orientales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9298,7 +9298,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Orinoco",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9323,7 +9323,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Caño Cristales",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9353,7 +9353,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Ganadería extensiva",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9383,7 +9383,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Palmeras de moriche en zonas húmedas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9418,7 +9418,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "403.000 km²",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9448,7 +9448,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "30.000",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9483,7 +9483,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "60%",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     4,
 				},
 			},
@@ -9503,7 +9503,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un nenúfar gigante",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9533,7 +9533,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "San José del Guaviare",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9568,7 +9568,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Ecuador y Perú",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9598,7 +9598,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "700 km",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9623,7 +9623,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Inglés y creole",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9653,7 +9653,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Su barrera de coral",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9683,7 +9683,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Es santuario de fauna marina",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9713,7 +9713,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Prisión de alta seguridad",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9743,7 +9743,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1.540 km",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9778,7 +9778,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Magdalena",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9803,7 +9803,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Macizo Colombiano (Laguna del Magdalena)",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9833,7 +9833,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Amazonas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9863,7 +9863,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Nariño",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9898,7 +9898,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1.900",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9923,7 +9923,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Orquídeas y aves",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -9958,7 +9958,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "3.500",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -9983,7 +9983,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los bosques andinos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10018,7 +10018,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los ríos amazónicos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -10053,7 +10053,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "60",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     4,
 				},
 			},
@@ -10073,7 +10073,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Chiribiquete",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10103,7 +10103,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Vichada",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10138,7 +10138,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Panamá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -10163,7 +10163,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Selva amazónica",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10198,7 +10198,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "5",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -10223,7 +10223,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Venezuela",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10253,7 +10253,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Venezuela",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10283,7 +10283,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Tapón del Darién",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10318,7 +10318,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "9 países",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -10343,7 +10343,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Turismo, ganadería y agroindustria",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10373,7 +10373,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Carbón",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10403,7 +10403,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Boyacá y Cundinamarca",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10433,7 +10433,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Meta, Casanare, Arauca",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10463,7 +10463,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Antioquia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10493,7 +10493,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El altiplano cundiboyacense",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10523,7 +10523,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "La Sierra Nevada de Santa Marta",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10553,7 +10553,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Su orfebrería en oro",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10583,7 +10583,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los Muiscas y la laguna de Guatavita",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10613,7 +10613,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Canales de drenaje en La Mojana",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10643,7 +10643,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1499",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10673,7 +10673,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Rodrigo de Bastidas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10703,7 +10703,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1525",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10733,7 +10733,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1533",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10763,7 +10763,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Pedro de Heredia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10793,7 +10793,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Gonzalo Jiménez de Quesada",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10823,7 +10823,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "6 de agosto de 1538",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10863,7 +10863,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Todos los anteriores",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     4,
 				},
 			},
@@ -10883,7 +10883,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1549",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10913,7 +10913,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1717",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -10953,7 +10953,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Problemas administrativos y económicos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     4,
 				},
 			},
@@ -10973,7 +10973,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1739",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11003,7 +11003,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Explotación de oro y trata de esclavos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11033,7 +11033,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Sistema de trabajo indígena asignado a españoles",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11063,7 +11063,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Trabajo forzoso indígena en las minas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11093,7 +11093,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Tierras comunales para indígenas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11128,7 +11128,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Carlos III y Carlos IV",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -11158,7 +11158,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "XVIII",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -11183,7 +11183,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1767",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11218,7 +11218,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1781",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -11243,7 +11243,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Socorro, Santander",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11273,7 +11273,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "José Antonio Galán",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11303,7 +11303,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un acuerdo entre Comuneros y autoridades",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11333,7 +11333,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Fue ejecutado y descuartizado",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11363,7 +11363,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "José Celestino Mutis",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11393,7 +11393,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1783",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11423,7 +11423,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Sabio",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11453,7 +11453,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los Derechos del Hombre y del Ciudadano",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11483,7 +11483,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1793",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11513,7 +11513,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Camilo Torres",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11543,7 +11543,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1809",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11578,7 +11578,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Viernes",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -11603,7 +11603,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los hermanos Morales y Llorente",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11633,7 +11633,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1810-1815",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11663,7 +11663,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Por las guerras civiles entre federalistas y centralistas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11693,7 +11693,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Tunja",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11723,7 +11723,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Pablo Morillo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11753,7 +11753,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "El Pacificador",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11783,7 +11783,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1815-1819",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11813,7 +11813,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "77 días",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11843,7 +11843,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Los Llanos de Casanare",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11868,7 +11868,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "25 de julio de 1819",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -11903,7 +11903,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "José María Barreiro",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11933,7 +11933,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1821",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11963,7 +11963,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un sistema centralista",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -11993,7 +11993,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1819-1831",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12023,7 +12023,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Bogotá",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12053,7 +12053,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Diferencias regionales y políticas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12083,7 +12083,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1828",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12113,7 +12113,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Un intento de asesinato a Bolívar",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12143,7 +12143,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Manuela Sáenz",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12178,7 +12178,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Santa Marta",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -12198,7 +12198,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "17 de diciembre de 1830",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -12233,7 +12233,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Santander",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12263,7 +12263,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1839-1842",
-					IsCorrect: false,
+					IsCorrect: True,
 					Order:     2,
 				},
 				{
@@ -12298,7 +12298,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1851",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -12323,7 +12323,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "José Hilario López",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12353,7 +12353,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Federalista radical",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12383,7 +12383,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1863-1886",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12413,7 +12413,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Rafael Núñez",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12443,7 +12443,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1887",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12478,7 +12478,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "100.000 muertos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -12503,7 +12503,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "José Manuel Marroquín",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12533,7 +12533,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Rechazado por el Congreso colombiano",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12568,7 +12568,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Estados Unidos",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     3,
 				},
 				{
@@ -12593,7 +12593,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1904-1909",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12623,7 +12623,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Modernización y autoritarismo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12653,7 +12653,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1886-1930",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12683,7 +12683,7 @@ func seedQuestions() {
 				},
 				{
 					Text: "1928",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12708,7 +12708,7 @@ func seedQuestions() {
 			Choices: []Choice{
 				{
 					Text:      "Número exacto desconocido (versiones varían)",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     1,
 				},
 				{
@@ -12743,7 +12743,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Olaya Herrera",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12773,7 +12773,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Alfonso López Pumarejo",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12803,7 +12803,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "1:15 pm",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12833,7 +12833,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Juan Roa Sierra",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12863,7 +12863,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Entre 500 y 3.000 personas",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
@@ -12893,7 +12893,7 @@ func seedQuestions() {
 				},
 				{
 					Text:      "20 de julio",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
