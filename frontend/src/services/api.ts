@@ -34,7 +34,8 @@ class ApiService {
       (config) => {
         const token = localStorage.getItem('token')
         if (token) {
-          config.headers.Authorization = `Bearer ${token}`
+          // Backend expects token without "Bearer " prefix
+          config.headers.Authorization = token
         }
         return config
       },

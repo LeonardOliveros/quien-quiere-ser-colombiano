@@ -114,7 +114,7 @@ let correctAnswers = 0;
 // Example types
 interface Question {
   id: number
-  question_text: string
+  text: string
   category: string
   subcategory: string
   difficulty: string

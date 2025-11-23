@@ -25,13 +25,13 @@
         </div>
 
         <!-- Category Results -->
-        <div class="result-card mt-4" v-if="results.category_scores && results.category_scores.length > 0">
+        <div class="result-card mt-4" v-if="results.category_scores && Object.keys(results.category_scores).length > 0">
           <h3 class="text-golden mb-4">Resultados por Categoría</h3>
-          <div v-for="categoryScore in results.category_scores" :key="categoryScore.category" class="category-result">
+          <div v-for="(categoryScore, category) in results.category_scores" :key="category" class="category-result">
             <h5>{{ categoryScore.category }}</h5>
             <div class="category-score-bar">
               <div class="category-score-fill" :style="{ width: categoryScore.percentage + '%' }">
-                {{ categoryScore.percentage.toFixed(1) }}% ({{ categoryScore.correct }}/{{ categoryScore.total }})
+                {{ categoryScore.percentage.toFixed(1) }}% ({{ categoryScore.correct_answers }}/{{ categoryScore.total_questions }})
               </div>
             </div>
           </div>
@@ -42,12 +42,12 @@
           <h3 class="text-golden mb-4">Respuestas Incorrectas</h3>
           <div class="incorrect-review">
             <div v-for="(item, index) in results.incorrect_answers" :key="index" class="review-item">
-              <div class="review-question">{{ item.question_text }}</div>
+              <div class="review-question">{{ item.question.text }}</div>
               <div class="review-answer user-answer">
-                <strong>Tu respuesta:</strong> {{ item.user_choice }}
+                <strong>Tu respuesta:</strong> {{ item.user_choice.text }}
               </div>
               <div class="review-answer correct-answer">
-                <strong>Respuesta correcta:</strong> {{ item.correct_choice }}
+                <strong>Respuesta correcta:</strong> {{ item.correct_choice.text }}
               </div>
               <div class="explanation" v-if="item.explanation">
                 <i class="fas fa-info-circle"></i> {{ item.explanation }}
@@ -61,7 +61,7 @@
           <h3 class="text-golden mb-4">Preguntas Marcadas</h3>
           <div class="flagged-review">
             <div v-for="(item, index) in results.flagged_questions" :key="index" class="review-item flagged">
-              <div class="review-question">{{ item.question_text }}</div>
+              <div class="review-question">{{ item.text }}</div>
               <div class="badge bg-info">{{ item.category }}</div>
             </div>
           </div>
@@ -72,9 +72,7 @@
           <h3 class="text-golden mb-4">Recomendaciones de Estudio</h3>
           <div class="recommendations">
             <div v-for="(rec, index) in results.recommendations" :key="index" class="recommendation-item">
-              <h6>{{ rec.category }} - {{ rec.subcategory }}</h6>
-              <p>{{ rec.description }}</p>
-              <small class="badge bg-warning">Prioridad: {{ rec.priority }}/5</small>
+              <p>{{ rec }}</p>
             </div>
           </div>
         </div>

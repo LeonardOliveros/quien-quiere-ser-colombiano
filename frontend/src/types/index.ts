@@ -24,12 +24,12 @@ export interface RegisterResponse {
 // Question types
 export interface Choice {
   id: number
-  choice_text: string
+  text: string
 }
 
 export interface Question {
   id: number
-  question_text: string
+  text: string
   category: string
   subcategory: string
   difficulty: string
@@ -81,22 +81,27 @@ export interface FlagRequest {
 // Results types
 export interface CategoryScore {
   category: string
-  correct: number
-  total: number
+  total_questions: number
+  correct_answers: number
   percentage: number
+  passed: boolean
 }
 
 export interface IncorrectAnswer {
-  question_text: string
-  user_choice: string
-  correct_choice: string
+  question: Question
+  user_choice: Choice
+  correct_choice: Choice
   explanation: string
-  category: string
 }
 
 export interface FlaggedQuestion {
-  question_text: string
+  id: number
+  text: string
   category: string
+  subcategory: string
+  difficulty: string
+  hint?: string
+  explanation?: string
   choices: Choice[]
 }
 
@@ -115,10 +120,10 @@ export interface GameResults {
   score: number
   percentage: number
   time_taken: number
-  category_scores: CategoryScore[]
+  category_scores: { [key: string]: CategoryScore }
   incorrect_answers: IncorrectAnswer[]
   flagged_questions: FlaggedQuestion[]
-  recommendations: Recommendation[]
+  recommendations: string[]
 }
 
 // Statistics types

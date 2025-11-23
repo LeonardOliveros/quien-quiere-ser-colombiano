@@ -1,0 +1,37 @@
+2025/11/23 13:06:54 Database connected and migrated successfully
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /assets/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /assets/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] GET    /favicon.ico              --> main.main.(*RouterGroup).StaticFile.func2 (4 handlers)
+[GIN-debug] HEAD   /favicon.ico              --> main.main.(*RouterGroup).StaticFile.func2 (4 handlers)
+[GIN-debug] POST   /api/register             --> main.registerUser (4 handlers)
+[GIN-debug] POST   /api/login                --> main.loginUser (4 handlers)
+[GIN-debug] POST   /api/game/start           --> main.startGame (5 handlers)
+[GIN-debug] GET    /api/game/:sessionId/question --> main.getNextQuestion (5 handlers)
+[GIN-debug] POST   /api/game/:sessionId/answer --> main.submitAnswer (5 handlers)
+[GIN-debug] POST   /api/game/:sessionId/flag --> main.flagQuestion (5 handlers)
+[GIN-debug] GET    /api/game/:sessionId/results --> main.getGameResults (5 handlers)
+[GIN-debug] POST   /api/game/:sessionId/end  --> main.endGame (5 handlers)
+[GIN-debug] GET    /api/user/:userId/stats   --> main.getUserStats (5 handlers)
+[GIN-debug] GET    /api/user/:userId/weak-areas --> main.getWeakAreas (5 handlers)
+[GIN-debug] GET    /api/user/:userId/history --> main.getGameHistory (5 handlers)
+[GIN-debug] DELETE /api/user/:userId/stats   --> main.resetUserStats (5 handlers)
+[GIN-debug] GET    /api/recommendations/:userId --> main.getStudyRecommendations (5 handlers)
+[GIN-debug] GET    /api/questions            --> main.getQuestions (4 handlers)
+[GIN-debug] GET    /api/questions/:id        --> main.getQuestion (4 handlers)
+[GIN-debug] GET    /api/questions/category/:category --> main.getQuestionsByCategory (4 handlers)
+[GIN-debug] GET    /api/questions/count      --> main.getQuestionsCount (4 handlers)
+2025/11/23 13:06:54 Database already contains 590 questions
+2025/11/23 13:06:54 Server starting on port 8080
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2025/11/23 - 13:07:13 | 201 |   63.883458ms |             ::1 | POST     "/api/register"
+[GIN] 2025/11/23 - 13:07:13 | 200 |   60.833583ms |             ::1 | POST     "/api/login"
+[GIN] 2025/11/23 - 13:07:13 | 200 |    1.360958ms |             ::1 | GET      "/api/user/2/stats"
+signal: killed

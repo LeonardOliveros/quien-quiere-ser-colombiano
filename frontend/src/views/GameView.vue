@@ -15,8 +15,12 @@
             </div>
           </div>
           <div class="col-md-3 text-end">
-            <button class="btn btn-sm btn-warning me-2" @click="flagCurrentQuestion">
-              <i class="fas fa-flag"></i> Marcar
+            <button
+              class="btn btn-sm me-2"
+              :class="isFlagged ? 'btn-warning' : 'btn-outline-warning'"
+              @click="flagCurrentQuestion"
+            >
+              <i class="fas fa-flag"></i> {{ isFlagged ? 'Marcada' : 'Marcar' }}
             </button>
             <button class="btn btn-sm btn-danger" @click="confirmQuit">
               <i class="fas fa-times"></i> Salir
@@ -34,7 +38,7 @@
 
       <!-- Question Box -->
       <div v-if="gameStore.currentQuestion && !showingAnswer" class="question-box">
-        <p class="question-text">{{ gameStore.currentQuestion.question_text }}</p>
+        <p class="question-text">{{ gameStore.currentQuestion.text }}</p>
       </div>
 
       <!-- Show hint if used -->
@@ -43,7 +47,7 @@
       </div>
 
       <!-- Answers Grid -->
-      <div v-if="!showingAnswer" class="answers-grid">
+      <div class="answers-grid">
         <div class="row g-3">
           <div
             v-for="(choice, index) in visibleChoices"
@@ -52,12 +56,16 @@
           >
             <button
               class="answer-btn"
-              :class="{ 'disabled': answering }"
+              :class="{
+                'disabled': answering || showingAnswer,
+                'correct': showingAnswer && choice.id === correctChoiceId,
+                'incorrect': showingAnswer && choice.id === selectedChoiceId && !answerCorrect
+              }"
               @click="selectAnswer(choice.id)"
-              :disabled="answering"
+              :disabled="answering || showingAnswer"
             >
               <span class="answer-letter">{{ String.fromCharCode(65 + index) }}</span>
-              <span class="answer-text">{{ choice.choice_text }}</span>
+              <span class="answer-text">{{ choice.text }}</span>
             </button>
           </div>
         </div>
@@ -65,24 +73,21 @@
 
       <!-- Answer Feedback -->
       <div v-if="showingAnswer" class="answer-feedback">
-        <div class="feedback-card" :class="{ 'correct': answerCorrect, 'incorrect': !answerCorrect }">
-          <h2 v-if="answerCorrect" class="text-success">
+        <div class="feedback-message text-center mb-3">
+          <h3 v-if="answerCorrect" class="text-success">
             <i class="fas fa-check-circle"></i> ¡Correcto!
-          </h2>
-          <h2 v-else class="text-danger">
+          </h3>
+          <h3 v-else class="text-danger">
             <i class="fas fa-times-circle"></i> Incorrecto
-          </h2>
+          </h3>
+        </div>
 
-          <div v-if="!answerCorrect" class="mt-3">
-            <p><strong>La respuesta correcta era:</strong></p>
-            <p class="correct-answer-text">{{ correctAnswerText }}</p>
-          </div>
+        <div v-if="answerExplanation" class="explanation-box">
+          <strong><i class="fas fa-info-circle"></i> Explicación:</strong> {{ answerExplanation }}
+        </div>
 
-          <div v-if="answerExplanation" class="explanation-box mt-3">
-            <strong>Explicación:</strong> {{ answerExplanation }}
-          </div>
-
-          <button class="btn btn-primary btn-lg mt-4" @click="nextQuestion">
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-lg" @click="nextQuestion">
             Siguiente Pregunta <i class="fas fa-arrow-right"></i>
           </button>
         </div>
@@ -157,9 +162,12 @@ const showingAnswer = ref(false)
 const answerCorrect = ref(false)
 const answerExplanation = ref('')
 const correctAnswerText = ref('')
+const correctChoiceId = ref<number | null>(null)
+const selectedChoiceId = ref<number | null>(null)
 const showHint = ref(false)
 const removedChoices = ref<Set<number>>(new Set())
 const timeLeft = ref(0)
+const isFlagged = ref(false)
 let timerInterval: number | null = null
 
 const visibleChoices = computed(() => {
@@ -210,24 +218,29 @@ async function loadQuestion() {
   showingAnswer.value = false
   showHint.value = false
   removedChoices.value.clear()
+  isFlagged.value = false
+  selectedChoiceId.value = null
+  correctChoiceId.value = null
 }
 
 async function selectAnswer(choiceId: number) {
   if (answering.value || showingAnswer.value) return
 
   answering.value = true
+  selectedChoiceId.value = choiceId
 
   const result = await gameStore.submitAnswer(choiceId)
 
   if (result.success) {
     answerCorrect.value = result.correct!
     answerExplanation.value = result.explanation!
+    correctChoiceId.value = result.correctChoiceId!
 
     if (!result.correct && gameStore.currentQuestion) {
       const correctChoice = gameStore.currentQuestion.choices.find(
         (c) => c.id === result.correctChoiceId
       )
-      correctAnswerText.value = correctChoice?.choice_text || ''
+      correctAnswerText.value = correctChoice?.text || ''
     }
 
     showingAnswer.value = true
@@ -244,7 +257,16 @@ async function nextQuestion() {
 
 async function flagCurrentQuestion() {
   const result = await gameStore.flagQuestion()
-  if (!result.success) {
+  if (result.success) {
+    // Toggle the visual state
+    isFlagged.value = !isFlagged.value
+    // Update the counter only when flagging (not unflagging)
+    if (isFlagged.value) {
+      gameStore.flaggedCount++
+    } else {
+      gameStore.flaggedCount--
+    }
+  } else {
     alert(result.message || 'Error al marcar la pregunta')
   }
 }
@@ -439,31 +461,17 @@ function formatTime(seconds: number): string {
 
 .answer-feedback {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
-.feedback-card {
-  background: rgba(255, 255, 255, 0.1);
-  border: 3px solid;
-  border-radius: 20px;
-  padding: 40px;
-  text-align: center;
-  animation: slideIn 0.5s ease;
+.feedback-message {
+  animation: fadeIn 0.5s ease;
 }
 
-.feedback-card.correct {
-  border-color: var(--success-color);
-  animation: correctPulse 1.5s ease-in-out 3;
-}
-
-.feedback-card.incorrect {
-  border-color: var(--danger-color);
-}
-
-.correct-answer-text {
-  font-size: 1.3rem;
-  color: var(--gold-color);
+.feedback-message h3 {
   font-weight: bold;
+  font-size: 1.8rem;
+  margin: 10px 0;
 }
 
 .explanation-box {
@@ -472,6 +480,9 @@ function formatTime(seconds: number): string {
   padding: 20px;
   text-align: left;
   border-radius: 5px;
+  margin: 20px auto;
+  max-width: 900px;
+  animation: slideIn 0.5s ease;
 }
 
 .lifelines {
@@ -533,6 +544,22 @@ function formatTime(seconds: number): string {
 .score-display .badge {
   padding: 10px 20px;
   font-size: 1rem;
+}
+
+.btn-outline-warning {
+  background: transparent;
+  border: 2px solid var(--warning-color);
+  color: var(--warning-color);
+}
+
+.btn-outline-warning:hover {
+  background: var(--warning-color);
+  color: var(--primary-color);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes slideIn {

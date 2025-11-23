@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"gorm.io/gorm"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -270,7 +271,7 @@ func submitAnswer(c *gin.Context) {
 
 func flagQuestion(c *gin.Context) {
 	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
-	
+
 	var flagData struct {
 		QuestionID uint `json:"question_id"`
 	}
@@ -280,12 +281,19 @@ func flagQuestion(c *gin.Context) {
 		return
 	}
 
-	// Update the flag status
-	db.Model(&GameAnswer{}).
+	// Ejecuta el toggle y devuelve cuántas filas fueron afectadas
+	result := db.Model(&GameAnswer{}).
 		Where("game_session_id = ? AND question_id = ?", sessionID, flagData.QuestionID).
-		Update("is_flagged", true)
+		Update("is_flagged", gorm.Expr("NOT is_flagged"))
 
-	c.JSON(http.StatusOK, gin.H{"message": "Question flagged for review"})
+	if result.Error != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": result.Error.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"message": "Flag status toggled",
+	})
 }
 
 func endGame(c *gin.Context) {
