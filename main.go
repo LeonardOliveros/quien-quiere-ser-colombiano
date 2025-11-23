@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-	"net/http"
 	"os"
 
 	"github.com/gin-contrib/cors"
@@ -30,12 +29,17 @@ func main() {
 	config.AllowHeaders = []string{"Origin", "Content-Type", "Authorization"}
 	r.Use(cors.New(config))
 
-	// Serve static files
-	r.Static("/static", "./static")
-	r.LoadHTMLGlob("templates/*")
+	// Serve Vue.js SPA static files
+	r.Static("/assets", "./dist/assets")
+	r.StaticFile("/favicon.ico", "./dist/favicon.ico")
 
 	// Routes
 	setupRoutes(r)
+
+	// Serve Vue.js SPA for all non-API routes (must be last)
+	r.NoRoute(func(c *gin.Context) {
+		c.File("./dist/index.html")
+	})
 
 	// Seed database with questions if empty
 	seedQuestions()
@@ -76,11 +80,6 @@ func initDB() {
 }
 
 func setupRoutes(r *gin.Engine) {
-	// Web routes
-	r.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "index.html", nil)
-	})
-
 	// API routes
 	api := r.Group("/api")
 	{
