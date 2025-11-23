@@ -489,15 +489,15 @@ async function selectAnswer(index) {
         
         if (response.ok) {
             currentQuestion.answered = true;
-            showAnswerResult(index, data.correct, data.explanation);
-            
+            showAnswerResult(index, data.correct, data.correct_choice_id, data.explanation);
+
             if (data.correct) {
                 correctAnswers++;
             } else {
                 incorrectAnswers++;
             }
             updateScoreDisplay();
-            
+
             // Load next question after delay
             setTimeout(() => {
                 loadNextQuestion();
@@ -509,18 +509,18 @@ async function selectAnswer(index) {
     }
 }
 
-function showAnswerResult(selectedIndex, isCorrect, explanation) {
+function showAnswerResult(selectedIndex, isCorrect, correctChoiceId, explanation) {
     const selectedBtn = document.getElementById(`answer-${selectedIndex}`);
-    
+
     if (selectedBtn) {
         if (isCorrect) {
             selectedBtn.classList.add('correct');
         } else {
             selectedBtn.classList.add('incorrect');
-            // Show correct answer
-            if (currentQuestion.choices) {
+            // Show correct answer using the correct choice ID from backend
+            if (currentQuestion.choices && correctChoiceId) {
                 currentQuestion.choices.forEach((choice, index) => {
-                    if (choice.is_correct) {
+                    if (choice.id === correctChoiceId) {
                         const correctBtn = document.getElementById(`answer-${index}`);
                         if (correctBtn) {
                             correctBtn.classList.add('correct');
@@ -530,7 +530,7 @@ function showAnswerResult(selectedIndex, isCorrect, explanation) {
             }
         }
     }
-    
+
     // Disable all buttons
     for (let i = 0; i < 4; i++) {
         const btn = document.getElementById(`answer-${i}`);

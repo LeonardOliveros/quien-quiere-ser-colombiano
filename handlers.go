@@ -256,10 +256,15 @@ func submitAnswer(c *gin.Context) {
 			UpdateColumn("score", db.Raw("score + ?", 10))
 	}
 
+	// Get the correct choice to send back in the response
+	var correctChoice Choice
+	db.Where("question_id = ? AND is_correct = true", answerData.QuestionID).First(&correctChoice)
+
 	c.JSON(http.StatusOK, gin.H{
-		"correct":     choice.IsCorrect,
-		"choice_id":   choice.ID,
-		"explanation": getQuestionExplanation(answerData.QuestionID),
+		"correct":           choice.IsCorrect,
+		"choice_id":         choice.ID,
+		"correct_choice_id": correctChoice.ID,
+		"explanation":       getQuestionExplanation(answerData.QuestionID),
 	})
 }
 
