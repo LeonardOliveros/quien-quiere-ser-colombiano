@@ -1127,12 +1127,47 @@ function displayStats(stats) {
     `;
     
     statsContent.innerHTML = html;
-    
+
     // Show modal
     const statsModal = document.getElementById('statsModal');
     if (statsModal) {
         const modal = new bootstrap.Modal(statsModal);
         modal.show();
+    }
+}
+
+async function resetStats() {
+    // Show confirmation dialog
+    const confirmed = confirm('¿Estás seguro de que deseas restablecer todas tus estadísticas?\n\nEsta acción eliminará:\n- Todos tus juegos guardados\n- Tu historial completo\n- Todas las recomendaciones de estudio\n\nEsta acción NO se puede deshacer.');
+
+    if (!confirmed) {
+        return;
+    }
+
+    try {
+        const response = await fetchWithAuth(`${API_URL}/user/${currentUser.id}/stats`, {
+            method: 'DELETE',
+            headers: {}
+        });
+
+        if (response.ok) {
+            alert('Estadísticas restablecidas exitosamente.');
+
+            // Close the stats modal
+            const statsModal = bootstrap.Modal.getInstance(document.getElementById('statsModal'));
+            if (statsModal) {
+                statsModal.hide();
+            }
+
+            // Refresh the page to show clean stats
+            location.reload();
+        } else {
+            const data = await response.json();
+            alert(data.error || 'Error al restablecer estadísticas');
+        }
+    } catch (error) {
+        console.error('Reset stats error:', error);
+        alert('Error al restablecer estadísticas');
     }
 }
 
@@ -1366,6 +1401,7 @@ window.pauseGame = pauseGame;
 window.quitGame = quitGame;
 window.resumeGame = resumeGame;
 window.showStats = showStats;
+window.resetStats = resetStats;
 window.showHistory = showHistory;
 window.showRecommendations = showRecommendations;
 window.showQuestionCount = showQuestionCount;

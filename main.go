@@ -104,6 +104,7 @@ func setupRoutes(r *gin.Engine) {
 			protected.GET("/user/:userId/stats", getUserStats)
 			protected.GET("/user/:userId/weak-areas", getWeakAreas)
 			protected.GET("/user/:userId/history", getGameHistory)
+			protected.DELETE("/user/:userId/stats", resetUserStats)
 
 			// Study recommendations
 			protected.GET("/recommendations/:userId", getStudyRecommendations)

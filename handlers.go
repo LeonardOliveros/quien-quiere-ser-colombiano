@@ -461,10 +461,32 @@ func getGameHistory(c *gin.Context) {
 
 func getStudyRecommendations(c *gin.Context) {
 	userID, _ := strconv.Atoi(c.Param("userId"))
-	
+
 	var recommendations []StudyRecommendation
 	db.Where("user_id = ?", userID).Order("priority desc").Find(&recommendations)
 	c.JSON(http.StatusOK, recommendations)
+}
+
+func resetUserStats(c *gin.Context) {
+	userID, _ := strconv.Atoi(c.Param("userId"))
+
+	// Get user ID from auth context to verify authorization
+	authUserID, exists := c.Get("userID")
+	if !exists || authUserID.(uint) != uint(userID) {
+		c.JSON(http.StatusForbidden, gin.H{"error": "Unauthorized to reset these statistics"})
+		return
+	}
+
+	// Delete all game answers for user's sessions
+	db.Exec("DELETE FROM game_answers WHERE game_session_id IN (SELECT id FROM game_sessions WHERE user_id = ?)", userID)
+
+	// Delete all game sessions for the user
+	db.Where("user_id = ?", userID).Delete(&GameSession{})
+
+	// Delete all study recommendations for the user
+	db.Where("user_id = ?", userID).Delete(&StudyRecommendation{})
+
+	c.JSON(http.StatusOK, gin.H{"message": "Statistics reset successfully"})
 }
 
 // Helper functions
