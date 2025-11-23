@@ -71,26 +71,9 @@
         </div>
       </div>
 
-      <!-- Answer Feedback -->
-      <div v-if="showingAnswer" class="answer-feedback">
-        <div class="feedback-message text-center mb-3">
-          <h3 v-if="answerCorrect" class="text-success">
-            <i class="fas fa-check-circle"></i> ¡Correcto!
-          </h3>
-          <h3 v-else class="text-danger">
-            <i class="fas fa-times-circle"></i> Incorrecto
-          </h3>
-        </div>
-
-        <div v-if="answerExplanation" class="explanation-box">
-          <strong><i class="fas fa-info-circle"></i> Explicación:</strong> {{ answerExplanation }}
-        </div>
-
-        <div class="text-center mt-4">
-          <button class="btn btn-primary btn-lg" @click="nextQuestion">
-            Siguiente Pregunta <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
+      <!-- Explanation shown below answers after selection -->
+      <div v-if="showingAnswer && answerExplanation" class="explanation-box mt-3">
+        <strong><i class="fas fa-info-circle"></i> Explicación:</strong> {{ answerExplanation }}
       </div>
 
       <!-- Lifelines -->
@@ -218,9 +201,13 @@ async function loadQuestion() {
   showingAnswer.value = false
   showHint.value = false
   removedChoices.value.clear()
-  isFlagged.value = false
   selectedChoiceId.value = null
   correctChoiceId.value = null
+
+  // Check if current question is already flagged
+  if (gameStore.currentQuestion) {
+    isFlagged.value = gameStore.isQuestionFlagged(gameStore.currentQuestion.id)
+  }
 }
 
 async function selectAnswer(choiceId: number) {
@@ -244,6 +231,11 @@ async function selectAnswer(choiceId: number) {
     }
 
     showingAnswer.value = true
+
+    // Auto-advance to next question after 3 seconds
+    setTimeout(async () => {
+      await loadQuestion()
+    }, 3000)
   } else {
     alert(result.message || 'Error al enviar la respuesta')
   }
@@ -251,21 +243,11 @@ async function selectAnswer(choiceId: number) {
   answering.value = false
 }
 
-async function nextQuestion() {
-  await loadQuestion()
-}
-
 async function flagCurrentQuestion() {
   const result = await gameStore.flagQuestion()
   if (result.success) {
-    // Toggle the visual state
-    isFlagged.value = !isFlagged.value
-    // Update the counter only when flagging (not unflagging)
-    if (isFlagged.value) {
-      gameStore.flaggedCount++
-    } else {
-      gameStore.flaggedCount--
-    }
+    // Update the visual state based on the store's response
+    isFlagged.value = result.isFlagged!
   } else {
     alert(result.message || 'Error al marcar la pregunta')
   }
@@ -576,6 +558,24 @@ function formatTime(seconds: number): string {
     transform: scale(1.05);
     box-shadow: 0 0 40px rgba(40, 167, 69, 1), 0 0 60px rgba(40, 167, 69, 0.8);
   }
+}
+
+@keyframes incorrectShake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.answer-btn.correct {
+  background: linear-gradient(145deg, #28a745, #218838) !important;
+  border-color: #28a745 !important;
+  animation: correctPulse 1.5s ease-in-out infinite;
+}
+
+.answer-btn.incorrect {
+  background: linear-gradient(145deg, #dc3545, #c82333) !important;
+  border-color: #dc3545 !important;
+  animation: incorrectShake 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {

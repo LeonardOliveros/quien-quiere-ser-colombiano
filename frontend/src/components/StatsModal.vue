@@ -1,6 +1,6 @@
 <template>
   <div class="modal-overlay" @click.self="$emit('close')">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Mis Estadísticas</h5>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-md-3 col-6 mb-3">
                   <div class="stat-card">
-                    <div class="stat-value">{{ stats.best_score.toFixed(1) }}%</div>
+                    <div class="stat-value">{{ stats.best_score }}</div>
                     <div class="stat-label">Mejor</div>
                   </div>
                 </div>
@@ -49,19 +49,19 @@
               <div v-for="(catStat, category) in stats.category_stats" :key="category" class="category-stat-item">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <strong>{{ category }}</strong>
-                  <span class="badge bg-info">{{ catStat.percentage.toFixed(1) }}%</span>
+                  <span class="badge bg-info">{{ catStat.average_percentage.toFixed(1) }}%</span>
                 </div>
                 <div class="progress" style="height: 20px;">
                   <div
                     class="progress-bar"
-                    :style="{ width: catStat.percentage + '%' }"
+                    :style="{ width: catStat.average_percentage + '%' }"
                     :class="{
-                      'bg-success': catStat.percentage >= 75,
-                      'bg-warning': catStat.percentage >= 50 && catStat.percentage < 75,
-                      'bg-danger': catStat.percentage < 50
+                      'bg-success': catStat.average_percentage >= 75,
+                      'bg-warning': catStat.average_percentage >= 50 && catStat.average_percentage < 75,
+                      'bg-danger': catStat.average_percentage < 50
                     }"
                   >
-                    {{ catStat.correct }}/{{ catStat.total }}
+                    {{ catStat.correct_answers }}/{{ catStat.total_questions }}
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@
                 <li v-for="(area, index) in stats.weak_areas" :key="index" class="weak-area-item">
                   <i class="fas fa-exclamation-triangle text-danger"></i>
                   {{ area.category }} - {{ area.subcategory }}
-                  <span class="badge bg-danger">{{ area.accuracy.toFixed(1) }}%</span>
+                  <span class="badge bg-danger">{{ area.accuracy }}%</span>
                 </li>
               </ul>
             </div>
@@ -152,11 +152,28 @@ async function confirmReset() {
   justify-content: center;
   z-index: 1050;
   animation: fadeIn 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
 }
 
 .modal-content {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   border: 2px solid var(--gold-color);
+  border-radius: 15px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body {
+  overflow-y: auto;
+  max-height: calc(90vh - 120px);
 }
 
 .modal-header {

@@ -146,12 +146,16 @@ export interface RecentProgress {
   score: number
 }
 
+export interface CategoryStat {
+  category: string
+  total_questions: number
+  correct_answers: number
+  average_percentage: number
+  improvement?: number
+}
+
 export interface CategoryStats {
-  [key: string]: {
-    correct: number
-    total: number
-    percentage: number
-  }
+  [key: string]: CategoryStat
 }
 
 export interface UserStats {

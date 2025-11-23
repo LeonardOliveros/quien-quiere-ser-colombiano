@@ -15,6 +15,7 @@ export const useGameStore = defineStore('game', () => {
   const correctAnswers = ref<number>(0)
   const incorrectAnswers = ref<number>(0)
   const flaggedCount = ref<number>(0)
+  const flaggedQuestions = ref<Set<number>>(new Set())
 
   // Lifelines
   const fiftyFiftyUsed = ref<boolean>(false)
@@ -58,6 +59,7 @@ export const useGameStore = defineStore('game', () => {
       correctAnswers.value = 0
       incorrectAnswers.value = 0
       flaggedCount.value = 0
+      flaggedQuestions.value.clear()
       fiftyFiftyUsed.value = false
       hintUsed.value = false
       skipsRemaining.value = 3
@@ -114,11 +116,21 @@ export const useGameStore = defineStore('game', () => {
     }
   }
 
-  async function flagQuestion(): Promise<{ success: boolean; message?: string }> {
+  async function flagQuestion(): Promise<{ success: boolean; isFlagged?: boolean; message?: string }> {
     try {
-      await api.flagQuestion(sessionId.value!, { question_id: currentQuestion.value!.id })
-      flaggedCount.value++
-      return { success: true }
+      const questionId = currentQuestion.value!.id
+      await api.flagQuestion(sessionId.value!, { question_id: questionId })
+
+      // Toggle the flag state
+      if (flaggedQuestions.value.has(questionId)) {
+        flaggedQuestions.value.delete(questionId)
+        flaggedCount.value--
+      } else {
+        flaggedQuestions.value.add(questionId)
+        flaggedCount.value++
+      }
+
+      return { success: true, isFlagged: flaggedQuestions.value.has(questionId) }
     } catch (error: any) {
       return { success: false, message: error.response?.data?.error || 'Error al marcar la pregunta' }
     }
@@ -177,6 +189,7 @@ export const useGameStore = defineStore('game', () => {
     correctAnswers.value = 0
     incorrectAnswers.value = 0
     flaggedCount.value = 0
+    flaggedQuestions.value.clear()
     fiftyFiftyUsed.value = false
     hintUsed.value = false
     skipsRemaining.value = 3
@@ -184,6 +197,10 @@ export const useGameStore = defineStore('game', () => {
     categories.value = []
     timeLimit.value = 0
     results.value = null
+  }
+
+  function isQuestionFlagged(questionId: number): boolean {
+    return flaggedQuestions.value.has(questionId)
   }
 
   return {
@@ -196,6 +213,7 @@ export const useGameStore = defineStore('game', () => {
     correctAnswers,
     incorrectAnswers,
     flaggedCount,
+    flaggedQuestions,
     fiftyFiftyUsed,
     hintUsed,
     skipsRemaining,
@@ -212,6 +230,7 @@ export const useGameStore = defineStore('game', () => {
     useFiftyFifty,
     useHint,
     useSkip,
-    resetGame
+    resetGame,
+    isQuestionFlagged
   }
 })
