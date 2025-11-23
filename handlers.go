@@ -120,9 +120,19 @@ func startGame(c *gin.Context) {
 		return
 	}
 
+	// Convert categories slice to comma-separated string
+	categoriesStr := ""
+	if len(config.Categories) > 0 {
+		categoriesStr = config.Categories[0]
+		for i := 1; i < len(config.Categories); i++ {
+			categoriesStr += "," + config.Categories[i]
+		}
+	}
+
 	session := GameSession{
 		UserID:        userID.(uint),
 		Mode:          config.Mode,
+		Categories:    categoriesStr,
 		Status:        "ACTIVE",
 		StartTime:     time.Now(),
 		TimeLimit:     config.TimeLimit,
@@ -164,9 +174,19 @@ func getNextQuestion(c *gin.Context) {
 	if len(answeredIDs) > 0 {
 		query = query.Where("id NOT IN ?", answeredIDs)
 	}
-	
-	// Apply category filter if in weak areas mode
-	if session.Mode == "WEAK_AREAS" {
+
+	// Apply category filter based on session mode and stored categories
+	if session.Categories != "" {
+		// Parse comma-separated categories
+		categories := []string{}
+		for _, cat := range splitString(session.Categories, ",") {
+			categories = append(categories, cat)
+		}
+		if len(categories) > 0 {
+			query = query.Where("category IN ?", categories)
+		}
+	} else if session.Mode == "WEAK_AREAS" {
+		// If no categories stored, use weak areas logic
 		weakCategories := getUserWeakCategories(session.UserID)
 		if len(weakCategories) > 0 {
 			query = query.Where("category IN ?", weakCategories)
@@ -649,4 +669,26 @@ func generateStudyDescription(area string, count int) string {
 func generateResources(area string) string {
 	// Return JSON string with study materials
 	return `{"videos": [], "documents": ["COLOMBIA: NUESTRA CASA"], "exercises": []}`
+}
+
+func splitString(s string, sep string) []string {
+	if s == "" {
+		return []string{}
+	}
+	result := []string{}
+	current := ""
+	for _, char := range s {
+		if string(char) == sep {
+			if current != "" {
+				result = append(result, current)
+				current = ""
+			}
+		} else {
+			current += string(char)
+		}
+	}
+	if current != "" {
+		result = append(result, current)
+	}
+	return result
 }

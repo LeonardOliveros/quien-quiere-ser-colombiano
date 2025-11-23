@@ -13,6 +13,7 @@ let correctAnswers = 0;
 let incorrectAnswers = 0;
 let flaggedQuestions = [];
 let gameMode = null;
+let currentGameTotalQuestions = 1000; // Total questions for current game session
 let lifelines = {
     fifty: true,
     hint: true,
@@ -302,10 +303,11 @@ async function startGame(mode) {
         });
         
         const data = await response.json();
-        
+
         if (response.ok) {
             currentSession = data.session_id;
             timeRemaining = config.time_limit;
+            currentGameTotalQuestions = config.question_count; // Save the total for this game
             resetGameState();
             showGameScreen();
             loadNextQuestion();
@@ -425,7 +427,7 @@ function displayQuestion() {
         currentQuestionEl.textContent = questionIndex;
     }
     if (totalQuestionsEl) {
-        totalQuestionsEl.textContent = getQuestionCount();
+        totalQuestionsEl.textContent = currentGameTotalQuestions;
     }
     
     // Update category badge
@@ -457,7 +459,7 @@ function displayQuestion() {
     
     // Update progress bar
     if (progressBarEl) {
-        const progress = (questionIndex / getQuestionCount()) * 100;
+        const progress = (questionIndex / currentGameTotalQuestions) * 100;
         progressBarEl.style.width = progress + '%';
     }
 }

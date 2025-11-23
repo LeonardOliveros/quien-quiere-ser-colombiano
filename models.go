@@ -43,7 +43,8 @@ type GameSession struct {
 	ID            uint      `gorm:"primaryKey" json:"id"`
 	UserID        uint      `gorm:"index" json:"user_id"`
 	User          User      `json:"user,omitempty"`
-	Mode          string    `json:"mode"` // PRACTICE, TIMED, WEAK_AREAS, FULL_TEST
+	Mode          string    `json:"mode"` // PRACTICE, TIMED, WEAK_AREAS, FULL_TEST, CATEGORY
+	Categories    string    `json:"categories"` // Comma-separated list of categories for filtering
 	Status        string    `json:"status"` // ACTIVE, PAUSED, COMPLETED
 	StartTime     time.Time `json:"start_time"`
 	EndTime       *time.Time `json:"end_time"`
