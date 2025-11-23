@@ -113,6 +113,16 @@ async function startGame(mode: string) {
   let categories: string[] = []
   let focusWeakAreas = false
 
+  // For practice and timed modes, get total question count from database
+  if (mode === 'practice' || mode === 'timed') {
+    try {
+      const countData = await api.getQuestionCount()
+      questionCount = countData.total
+    } catch (error) {
+      console.error('Error getting question count:', error)
+    }
+  }
+
   if (mode === 'timed') {
     timeLimit = 180 // 3 hours in minutes
   } else if (mode === 'weak') {

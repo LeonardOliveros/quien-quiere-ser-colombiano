@@ -6,7 +6,10 @@
         <div class="row align-items-center">
           <div class="col-md-3">
             <div v-if="gameStore.timeLimit > 0" class="timer-display">
-              <i class="fas fa-clock"></i> {{ formatTime(timeLeft) }}
+              <i class="fas fa-clock"></i> Tiempo restante: {{ formatTime(timeLeft) }}
+            </div>
+            <div v-else class="timer-display">
+              <i class="fas fa-stopwatch"></i> Tiempo: {{ formatElapsedTime(elapsedTime) }}
             </div>
           </div>
           <div class="col-md-6 text-center">
@@ -150,6 +153,7 @@ const selectedChoiceId = ref<number | null>(null)
 const showHint = ref(false)
 const removedChoices = ref<Set<number>>(new Set())
 const timeLeft = ref(0)
+const elapsedTime = ref(0)
 const isFlagged = ref(false)
 let timerInterval: number | null = null
 
@@ -173,10 +177,14 @@ onMounted(async () => {
 
   await loadQuestion()
 
-  // Start timer if timed mode
+  // Start timer
   if (gameStore.timeLimit > 0) {
+    // Countdown timer for timed mode
     timeLeft.value = gameStore.timeLimit * 60 // Convert minutes to seconds
     startTimer()
+  } else {
+    // Elapsed time counter for practice mode
+    startElapsedTimer()
   }
 })
 
@@ -302,6 +310,19 @@ function startTimer() {
 }
 
 function formatTime(seconds: number): string {
+  const hours = Math.floor(seconds / 3600)
+  const minutes = Math.floor((seconds % 3600) / 60)
+  const secs = seconds % 60
+  return `${hours}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`
+}
+
+function startElapsedTimer() {
+  timerInterval = window.setInterval(() => {
+    elapsedTime.value++
+  }, 1000)
+}
+
+function formatElapsedTime(seconds: number): string {
   const hours = Math.floor(seconds / 3600)
   const minutes = Math.floor((seconds % 3600) / 60)
   const secs = seconds % 60

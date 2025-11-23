@@ -30,7 +30,7 @@
                       'bg-warning': game.score >= 50 && game.score < 70,
                       'bg-danger': game.score < 50
                     }">
-                      {{ game.score.toFixed(1) }}%
+                      {{ game.score }}%
                     </span>
                   </div>
                 </div>
