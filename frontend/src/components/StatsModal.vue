@@ -152,19 +152,37 @@ async function confirmReset() {
   justify-content: center;
   z-index: 1050;
   animation: fadeIn 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.modal-dialog {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .modal-content {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   border: 2px solid var(--gold-color);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-header {
   border-bottom: 1px solid var(--gold-color);
+  flex-shrink: 0;
 }
 
 .modal-title {
   color: var(--gold-color);
+}
+
+.modal-body {
+  overflow-y: auto;
+  flex: 1;
+  max-height: calc(90vh - 120px);
 }
 
 .text-golden {
