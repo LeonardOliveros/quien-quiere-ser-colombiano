@@ -123,7 +123,13 @@ func startGame(c *gin.Context) {
 
 	// Convert categories slice to comma-separated string
 	categoriesStr := ""
-	if len(config.Categories) > 0 {
+
+	// For TIMED mode, force the 4 main categories and 80 questions
+	if config.Mode == "TIMED" {
+		categoriesStr = "CONSTITUCION,HISTORIA,GEOGRAFIA,CULTURA"
+		config.QuestionCount = 80
+		config.Categories = []string{"CONSTITUCION", "HISTORIA", "GEOGRAFIA", "CULTURA"}
+	} else if len(config.Categories) > 0 {
 		categoriesStr = config.Categories[0]
 		for i := 1; i < len(config.Categories); i++ {
 			categoriesStr += "," + config.Categories[i]

@@ -100,3 +100,66 @@ format:
 .PHONY: check
 check: format lint test
 	@echo "All checks passed!"
+
+## frontend-install: Install frontend dependencies
+.PHONY: frontend-install
+frontend-install:
+	@echo "Installing frontend dependencies..."
+	cd frontend && npm install
+
+## frontend-build: Build frontend
+.PHONY: frontend-build
+frontend-build:
+	@echo "Building frontend..."
+	cd frontend && npm run build
+
+## frontend-dev: Run frontend development server
+.PHONY: frontend-dev
+frontend-dev:
+	@echo "Starting frontend development server..."
+	cd frontend && npm run dev
+
+## dev-full: Run both backend and frontend in development mode
+.PHONY: dev-full
+dev-full:
+	@echo "Starting full development environment..."
+	@trap 'kill 0' EXIT; \
+	(cd frontend && npm run dev) & \
+	$(GO) run .
+
+## build-all: Build both frontend and backend
+.PHONY: build-all
+build-all: frontend-build build
+	@echo "Full build complete!"
+
+## clean-sessions: Delete all game sessions from database
+.PHONY: clean-sessions
+clean-sessions:
+	@echo "Cleaning game sessions..."
+	@sqlite3 quiz.db "DELETE FROM game_sessions; DELETE FROM game_answers;" 2>/dev/null || echo "No database found"
+	@echo "Sessions cleaned!"
+
+## clean-old-sessions: Delete old sessions with wrong question count
+.PHONY: clean-old-sessions
+clean-old-sessions:
+	@echo "Cleaning old sessions..."
+	@sqlite3 quiz.db "DELETE FROM game_sessions WHERE total_questions = 753;" 2>/dev/null || echo "No database found"
+	@echo "Old sessions cleaned!"
+
+## db-stats: Show database statistics
+.PHONY: db-stats
+db-stats:
+	@echo "=== Database Statistics ==="
+	@echo ""
+	@sqlite3 quiz.db "SELECT 'Total Questions: ' || COUNT(*) FROM questions;" 2>/dev/null || echo "No database found"
+	@echo ""
+	@echo "Questions by Category:"
+	@sqlite3 quiz.db "SELECT '  ' || category || ': ' || COUNT(*) FROM questions GROUP BY category ORDER BY category;" 2>/dev/null
+	@echo ""
+	@sqlite3 quiz.db "SELECT 'Active Sessions: ' || COUNT(*) FROM game_sessions WHERE status = 'ACTIVE';" 2>/dev/null
+	@sqlite3 quiz.db "SELECT 'Total Sessions: ' || COUNT(*) FROM game_sessions;" 2>/dev/null
+
+## setup: Complete setup (install dependencies and build)
+.PHONY: setup
+setup: deps frontend-install build-all
+	@echo "Setup complete! Run 'make dev-full' to start development"

@@ -1,0 +1,30 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "Quiz application with Go backend and Vue frontend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "go run *.go",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "go build -o quiz-app",
+    "start": "./quiz-app",
+    "clean": "rm -rf quiz-app dist frontend/dist frontend/node_modules",
+    "clean:db": "rm -f quiz.db && echo 'Database deleted'",
+    "clean:sessions": "sqlite3 quiz.db 'DELETE FROM game_sessions; DELETE FROM game_answers;' && echo 'Sessions cleaned'",
+    "deploy": "npm run build && npm run start",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "go run *.go",
+    "test:backend": "go test ./...",
+    "db:seed": "go run seeder.go",
+    "db:reset": "npm run clean:db && npm run dev:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "go": ">=1.21.0"
+  }
+}

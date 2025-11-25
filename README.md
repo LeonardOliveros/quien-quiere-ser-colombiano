@@ -168,11 +168,146 @@ Para agregar más preguntas o mejorar la aplicación:
 
 Proyecto educativo para preparación del examen de naturalización colombiana.
 
+## 🛠️ Desarrollo
+
+### Scripts Disponibles
+
+#### Usando Make (Recomendado)
+```bash
+make help                  # Ver todos los comandos disponibles
+make setup                 # Setup inicial completo (instala todo)
+make dev-full             # Desarrollo: backend + frontend simultáneamente
+make run                  # Solo backend
+make frontend-dev         # Solo frontend en desarrollo
+make build-all            # Build completo (frontend + backend)
+make clean-sessions       # Limpiar todas las sesiones de juego
+make clean-old-sessions   # Limpiar sesiones con datos antiguos
+make db-stats             # Ver estadísticas de la base de datos
+```
+
+#### Usando NPM (desde root)
+```bash
+npm run dev               # Desarrollo: backend + frontend
+npm run build             # Build completo
+npm run frontend          # Solo frontend
+npm run backend           # Solo backend
+npm run clean:sessions    # Limpiar sesiones
+npm run clean:db          # Eliminar base de datos
+```
+
+#### Frontend (desde /frontend)
+```bash
+npm run dev               # Servidor de desarrollo (Vite)
+npm run build             # Build de producción
+npm run build:watch       # Build con auto-reload
+npm run type-check        # Verificar tipos TypeScript
+npm run preview           # Preview del build
+```
+
+### Flujo de Desarrollo
+
+1. **Setup inicial**
+   ```bash
+   make setup
+   # o
+   npm install && cd frontend && npm install
+   ```
+
+2. **Desarrollo con hot-reload**
+   ```bash
+   make dev-full
+   # o
+   npm run dev
+   ```
+   - Backend: http://localhost:8080
+   - Frontend: http://localhost:5173
+
+3. **Build para producción**
+   ```bash
+   make build-all
+   # o
+   npm run build
+   ```
+
+### Estructura del Proyecto
+```
+quiz/
+├── frontend/              # Vue 3 + TypeScript + Vite
+│   ├── src/
+│   │   ├── views/        # Vistas: Login, Menu, Game, Results
+│   │   ├── stores/       # Pinia stores (game, user)
+│   │   ├── services/     # API services
+│   │   └── types/        # TypeScript types
+│   └── dist/             # Build de producción
+├── *.go                  # Backend Go
+├── handlers.go           # API handlers
+├── models.go             # Modelos de datos
+├── seeder.go             # Seed de preguntas
+├── quiz.db               # SQLite database
+├── Makefile              # Make commands
+└── package.json          # NPM scripts
+```
+
+### Stack Tecnológico
+
+**Backend:**
+- Go 1.21+
+- Gin (web framework)
+- GORM (ORM)
+- SQLite (base de datos)
+
+**Frontend:**
+- Vue 3 (Composition API)
+- TypeScript
+- Pinia (state management)
+- Vue Router
+- Axios
+- Vite (build tool)
+- Bootstrap 5
+
+### Gestión de Base de Datos
+
+```bash
+# Ver estadísticas
+make db-stats
+
+# Limpiar sesiones antiguas (antes de actualización)
+make clean-old-sessions
+
+# Limpiar todas las sesiones
+make clean-sessions
+
+# Resetear base de datos completa
+make reset-db
+```
+
+### Troubleshooting
+
+**Problema: "Pregunta 1 de 753" en modo TIMED**
+```bash
+# Solución: Limpiar sesiones antiguas y crear nueva partida
+make clean-old-sessions
+# Luego en el navegador: Cmd+Shift+R (Mac) o Ctrl+Shift+R (Windows)
+```
+
+**Problema: Frontend no refleja cambios**
+```bash
+# Rebuild frontend
+cd frontend && npm run build
+# Limpiar cache del navegador: Cmd+Shift+R
+```
+
+**Problema: Base de datos corrupta**
+```bash
+make reset-db
+```
+
 ## 🙏 Créditos
 
 - Preguntas basadas en el documento oficial "COLOMBIA: NUESTRA CASA"
 - Interfaz inspirada en "¿Quién quiere ser millonario?"
-- Desarrollado con Go, Gin, GORM, y tecnologías web modernas
+- Backend: Go + Gin + GORM + SQLite
+- Frontend: Vue 3 + TypeScript + Vite + Pinia
 
 ---
 

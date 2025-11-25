@@ -50,9 +50,9 @@ export const useGameStore = defineStore('game', () => {
 
       sessionId.value = data.session_id
       gameMode.value = mode
-      categories.value = selectedCategories
+      categories.value = data.config.categories
       timeLimit.value = timeLimitMinutes
-      totalQuestions.value = questionCount
+      totalQuestions.value = data.config.question_count
       startTime.value = Date.now()
 
       // Reset counters
