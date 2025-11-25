@@ -744,42 +744,63 @@ func splitString(s string, sep string) []string {
 }
 
 func generateQuestionSequence(userID uint, mode string, categoriesStr string, questionCount int) string {
-	// Build query to get all available questions
-	query := db.Model(&Question{})
+	var allQuestionIDs []uint
 
-	// Apply category filter
-	if categoriesStr != "" {
-		categories := splitString(categoriesStr, ",")
-		if len(categories) > 0 {
-			query = query.Where("category IN ?", categories)
+	// Time Trial mode: 20 random questions from each of the 4 main categories
+	if mode == "TIMED" {
+		mainCategories := []string{"CONSTITUCION", "HISTORIA", "GEOGRAFIA", "CULTURA"}
+		questionsPerCategory := 20
+
+		for _, category := range mainCategories {
+			var categoryQuestionIDs []uint
+			db.Model(&Question{}).
+				Where("category = ?", category).
+				Order("RANDOM()").
+				Limit(questionsPerCategory).
+				Pluck("id", &categoryQuestionIDs)
+
+			allQuestionIDs = append(allQuestionIDs, categoryQuestionIDs...)
 		}
-	} else if mode == "WEAK_AREAS" {
-		weakCategories := getUserWeakCategories(userID)
-		if len(weakCategories) > 0 {
-			query = query.Where("category IN ?", weakCategories)
+
+		// Shuffle the combined list so categories are mixed
+		mrand.Seed(time.Now().UnixNano())
+		mrand.Shuffle(len(allQuestionIDs), func(i, j int) {
+			allQuestionIDs[i], allQuestionIDs[j] = allQuestionIDs[j], allQuestionIDs[i]
+		})
+	} else {
+		// For other modes (PRACTICE, WEAK_AREAS, etc.): use sequential order
+		query := db.Model(&Question{})
+
+		// Apply category filter
+		if categoriesStr != "" {
+			categories := splitString(categoriesStr, ",")
+			if len(categories) > 0 {
+				query = query.Where("category IN ?", categories)
+			}
+		} else if mode == "WEAK_AREAS" {
+			weakCategories := getUserWeakCategories(userID)
+			if len(weakCategories) > 0 {
+				query = query.Where("category IN ?", weakCategories)
+			}
+		}
+
+		// Get all matching question IDs, ordered by ID for consistency
+		query.Order("id ASC").Pluck("id", &allQuestionIDs)
+
+		// Limit to the requested number of questions
+		if len(allQuestionIDs) > questionCount {
+			allQuestionIDs = allQuestionIDs[:questionCount]
 		}
 	}
 
-	// Get all matching question IDs, ordered by ID for consistency
-	var questionIDs []uint
-	query.Order("id ASC").Pluck("id", &questionIDs)
-
-	if len(questionIDs) == 0 {
+	if len(allQuestionIDs) == 0 {
 		return ""
-	}
-
-	// Limit to the requested number of questions
-	if len(questionIDs) > questionCount {
-		questionIDs = questionIDs[:questionCount]
 	}
 
 	// Convert to comma-separated string
-	if len(questionIDs) == 0 {
-		return ""
-	}
-	result := fmt.Sprintf("%d", questionIDs[0])
-	for i := 1; i < len(questionIDs); i++ {
-		result += fmt.Sprintf(",%d", questionIDs[i])
+	result := fmt.Sprintf("%d", allQuestionIDs[0])
+	for i := 1; i < len(allQuestionIDs); i++ {
+		result += fmt.Sprintf(",%d", allQuestionIDs[i])
 	}
 	return result
 }
