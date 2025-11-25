@@ -154,7 +154,7 @@ func startGame(c *gin.Context) {
 
 func getNextQuestion(c *gin.Context) {
 	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
-	
+
 	var session GameSession
 	if err := db.First(&session, sessionID).Error; err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Session not found"})
@@ -167,11 +167,17 @@ func getNextQuestion(c *gin.Context) {
 		Where("game_session_id = ?", sessionID).
 		Pluck("question_id", &answeredIDs)
 
-	// Get next random question not yet answered
-	var question Question
-	query := db.Preload("Choices")
+	// Check if we've reached the maximum number of questions
+	if len(answeredIDs) >= session.TotalQuestions {
+		c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
+		return
+	}
 
-	// Only add the NOT IN condition if there are answered questions
+	// Get all available questions that match the criteria
+	var availableQuestions []Question
+	query := db
+
+	// Only exclude answered questions
 	if len(answeredIDs) > 0 {
 		query = query.Where("id NOT IN ?", answeredIDs)
 	}
@@ -194,13 +200,25 @@ func getNextQuestion(c *gin.Context) {
 		}
 	}
 
-	if err := query.Order("RANDOM()").First(&question).Error; err != nil {
+	// Get all available questions
+	if err := query.Find(&availableQuestions).Error; err != nil || len(availableQuestions) == 0 {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
 		return
 	}
 
-	// Randomize the order of choices to prevent visual memorization
+	// Randomly select one question from the available pool
 	mrand.Seed(time.Now().UnixNano())
+	randomIndex := mrand.Intn(len(availableQuestions))
+	questionID := availableQuestions[randomIndex].ID
+
+	// Load the selected question with choices
+	var question Question
+	if err := db.Preload("Choices").First(&question, questionID).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Question not found"})
+		return
+	}
+
+	// Randomize the order of choices to prevent visual memorization
 	mrand.Shuffle(len(question.Choices), func(i, j int) {
 		question.Choices[i], question.Choices[j] = question.Choices[j], question.Choices[i]
 	})

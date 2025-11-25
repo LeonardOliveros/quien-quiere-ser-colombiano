@@ -19132,7 +19132,23 @@ func seedQuestions() {
 			Points:      10,
 			Explanation: "La Sierra Nevada de Santa Marta se eleva abruptamente desde la costa y alcanza altitudes de más de 5.700 metros en el Pico Cristóbal Colón, lo que la convierte en la montaña más alta de Colombia",
 			Choices: []Choice{
-			},
+                {
+                    Text:      "Sierra Nevada de Santa Marta",
+                    IsCorrect: true,
+                },
+                {
+                    Text:      "Cordillera Central",
+                    IsCorrect: false,
+                },
+                {
+                    Text:      "Cordillera Oriental",
+                    IsCorrect: false,
+                },
+                {
+                    Text:      "Serranía de la Macarena",
+                    IsCorrect: false,
+                },
+            },
 		},
 	
 		{
@@ -19205,7 +19221,23 @@ func seedQuestions() {
 			Points:      10,
 			Explanation: "La Isla Malpelo es uno de los lugares más importantes del mundo para la observación de tiburones y cuenta con una gran diversidad de especies marinas",
 			Choices: []Choice{
-			},
+                {
+                    Text:      "Buceo con tiburones, especialmente el tiburón martillo",
+                    IsCorrect: true,
+                },
+                {
+                    Text:      "Avistamiento de ballenas jorobadas y sus crías",
+                    IsCorrect: false,
+                },
+                {
+                    Text:      "Observación de delfines rosados de río",
+                    IsCorrect: false,
+                },
+                {
+                    Text:      "Snorkel en la barrera de coral de los siete colores",
+                    IsCorrect: false,
+                },
+            },
 		},
 	
 		{
@@ -19216,7 +19248,23 @@ func seedQuestions() {
 			Points:      10,
 			Explanation: "Los páramos se caracterizan por plantas adaptadas al clima frío, como frailejones y espeletias",
 			Choices: []Choice{
-			},
+                {
+                    Text:      "Frailejones, musgos y líquenes",
+                    IsCorrect: true,
+                },
+                {
+                    Text:      "Manglares, palmas de coco y cacao",
+                    IsCorrect: false,
+                },
+                {
+                    Text:      "Cafetales, guadua y caña de azúcar",
+                    IsCorrect: false,
+                },
+                {
+                    Text:      "Cactus y vegetación desértica",
+                    IsCorrect: false,
+                },
+            },
 		},
 	
 		{
@@ -21757,246 +21805,6 @@ func seedQuestions() {
 					Text:      "Realizar peregrinaciones anuales",
 					IsCorrect: false,
 					Order:     4,
-				},
-				{
-					Text:      "El Rey del Carnaval",
-					IsCorrect: false,
-					Order:     5,
-				},
-				{
-					Text:      "La Marimonda",
-					IsCorrect: false,
-					Order:     6,
-				},
-				{
-					Text:      "El Diablo",
-					IsCorrect: true,
-					Order:     7,
-				},
-				{
-					Text:      "El Mohán",
-					IsCorrect: false,
-					Order:     8,
-				},
-				{
-					Text:      "Feria de Madrid y el Flamenco",
-					IsCorrect: false,
-					Order:     9,
-				},
-				{
-					Text:      "Feria de Sevilla y el Pasodoble",
-					IsCorrect: true,
-					Order:     10,
-				},
-				{
-					Text:      "Feria de Valencia y la Zarzuela",
-					IsCorrect: false,
-					Order:     11,
-				},
-				{
-					Text:      "Feria de Barcelona y la Sardana",
-					IsCorrect: false,
-					Order:     12,
-				},
-				{
-					Text:      "El Hay Festival",
-					IsCorrect: false,
-					Order:     13,
-				},
-				{
-					Text:      "La Feria del Libro de Bogotá (FILBo)",
-					IsCorrect: true,
-					Order:     14,
-				},
-				{
-					Text:      "El Festival de Poesía de Bogotá",
-					IsCorrect: false,
-					Order:     15,
-				},
-				{
-					Text:      "El Encuentro de Tres Culturas",
-					IsCorrect: false,
-					Order:     16,
-				},
-				{
-					Text:      "La Gaita",
-					IsCorrect: false,
-					Order:     17,
-				},
-				{
-					Text:      "La Caja Vallenata",
-					IsCorrect: false,
-					Order:     18,
-				},
-				{
-					Text:      "El Acordeón",
-					IsCorrect: true,
-					Order:     19,
-				},
-				{
-					Text:      "La Guacharaca",
-					IsCorrect: false,
-					Order:     20,
-				},
-				{
-					Text:      "El Mohán de Oro",
-					IsCorrect: false,
-					Order:     21,
-				},
-				{
-					Text:      "La India Catalina",
-					IsCorrect: true,
-					Order:     22,
-				},
-				{
-					Text:      "El Yuruparí de Oro",
-					IsCorrect: false,
-					Order:     23,
-				},
-				{
-					Text:      "La Orquídea de Plata",
-					IsCorrect: false,
-					Order:     24,
-				},
-				{
-					Text:      "Sabor, Tamaño y Textura",
-					IsCorrect: false,
-					Order:     25,
-				},
-				{
-					Text:      "Tradición, Innovación y Servicio",
-					IsCorrect: true,
-					Order:     26,
-				},
-				{
-					Text:      "Rapidez, Cantidad y Precio",
-					IsCorrect: false,
-					Order:     27,
-				},
-				{
-					Text:      "Estética, Relleno y Crujencia",
-					IsCorrect: false,
-					Order:     28,
-				},
-				{
-					Text:      "El Cristo del Perdón",
-					IsCorrect: false,
-					Order:     29,
-				},
-				{
-					Text:      "El Santo Sepulcro",
-					IsCorrect: false,
-					Order:     30,
-				},
-				{
-					Text:      "El Paso Robado",
-					IsCorrect: true,
-					Order:     31,
-				},
-				{
-					Text:      "La Virgen de los Remedios",
-					IsCorrect: false,
-					Order:     32,
-				},
-				{
-					Text:      "La inversión extranjera",
-					IsCorrect: false,
-					Order:     33,
-				},
-				{
-					Text:      "La reflexión política y la tolerancia",
-					IsCorrect: true,
-					Order:     34,
-				},
-				{
-					Text:      "El turismo de playa",
-					IsCorrect: false,
-					Order:     35,
-				},
-				{
-					Text:      "La competencia deportiva",
-					IsCorrect: false,
-					Order:     36,
-				},
-				{
-					Text:      "A Lucho Bermúdez y la cumbia",
-					IsCorrect: false,
-					Order:     37,
-				},
-				{
-					Text:      "A Petronio Álvarez y la música del Pacífico",
-					IsCorrect: true,
-					Order:     38,
-				},
-				{
-					Text:      "A Joe Arroyo y la salsa",
-					IsCorrect: false,
-					Order:     39,
-				},
-				{
-					Text:      "A Rafael Escalona y el vallenato",
-					IsCorrect: false,
-					Order:     40,
-				},
-				{
-					Text:      "Un baile de zapateo rápido",
-					IsCorrect: false,
-					Order:     41,
-				},
-				{
-					Text:      "Una competencia de lazo",
-					IsCorrect: false,
-					Order:     42,
-				},
-				{
-					Text:      "Una historieta cantada en verso",
-					IsCorrect: true,
-					Order:     43,
-				},
-				{
-					Text:      "Un instrumento de cuerda",
-					IsCorrect: false,
-					Order:     44,
-				},
-				{
-					Text:      "La Llorona",
-					IsCorrect: false,
-					Order:     45,
-				},
-				{
-					Text:      "La Madremonte",
-					IsCorrect: false,
-					Order:     46,
-				},
-				{
-					Text:      "Tayarú",
-					IsCorrect: true,
-					Order:     47,
-				},
-				{
-					Text:      "La Patasola",
-					IsCorrect: false,
-					Order:     48,
-				},
-				{
-					Text:      "Español y Vallenato",
-					IsCorrect: false,
-					Order:     49,
-				},
-				{
-					Text:      "Creole, Reggae, Calypso y Soca",
-					IsCorrect: true,
-					Order:     50,
-				},
-				{
-					Text:      "Portugués y Samba",
-					IsCorrect: false,
-					Order:     51,
-				},
-				{
-					Text:      "Inglés moderno y Rock",
-					IsCorrect: false,
-					Order:     52,
 				},
 			},
 		},
