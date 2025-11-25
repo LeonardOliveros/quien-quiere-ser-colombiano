@@ -130,10 +130,18 @@ func startGame(c *gin.Context) {
 		}
 	}
 
+	// Pre-generate the question sequence
+	questionSequence := generateQuestionSequence(userID.(uint), config.Mode, categoriesStr, config.QuestionCount)
+	if questionSequence == "" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "No questions available for the selected criteria"})
+		return
+	}
+
 	session := GameSession{
 		UserID:        userID.(uint),
 		Mode:          config.Mode,
 		Categories:    categoriesStr,
+		QuestionSequence: questionSequence,
 		Status:        "ACTIVE",
 		StartTime:     time.Now(),
 		TimeLimit:     config.TimeLimit,
@@ -161,6 +169,13 @@ func getNextQuestion(c *gin.Context) {
 		return
 	}
 
+	// Parse the pre-generated question sequence
+	questionIDs := parseQuestionSequence(session.QuestionSequence)
+	if len(questionIDs) == 0 {
+		c.JSON(http.StatusNotFound, gin.H{"error": "No questions available"})
+		return
+	}
+
 	// Get answered question IDs
 	var answeredIDs []uint
 	db.Model(&GameAnswer{}).
@@ -168,48 +183,29 @@ func getNextQuestion(c *gin.Context) {
 		Pluck("question_id", &answeredIDs)
 
 	// Check if we've reached the maximum number of questions
-	if len(answeredIDs) >= session.TotalQuestions {
+	if len(answeredIDs) >= session.TotalQuestions || len(answeredIDs) >= len(questionIDs) {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
 		return
 	}
 
-	// Get all available questions that match the criteria
-	var availableQuestions []Question
-	query := db
-
-	// Only exclude answered questions
-	if len(answeredIDs) > 0 {
-		query = query.Where("id NOT IN ?", answeredIDs)
+	// Find the next unanswered question in the sequence
+	var questionID uint
+	answeredMap := make(map[uint]bool)
+	for _, id := range answeredIDs {
+		answeredMap[id] = true
 	}
 
-	// Apply category filter based on session mode and stored categories
-	if session.Categories != "" {
-		// Parse comma-separated categories
-		categories := []string{}
-		for _, cat := range splitString(session.Categories, ",") {
-			categories = append(categories, cat)
-		}
-		if len(categories) > 0 {
-			query = query.Where("category IN ?", categories)
-		}
-	} else if session.Mode == "WEAK_AREAS" {
-		// If no categories stored, use weak areas logic
-		weakCategories := getUserWeakCategories(session.UserID)
-		if len(weakCategories) > 0 {
-			query = query.Where("category IN ?", weakCategories)
+	for _, qid := range questionIDs {
+		if !answeredMap[qid] {
+			questionID = qid
+			break
 		}
 	}
 
-	// Get all available questions
-	if err := query.Find(&availableQuestions).Error; err != nil || len(availableQuestions) == 0 {
+	if questionID == 0 {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
 		return
 	}
-
-	// Randomly select one question from the available pool
-	mrand.Seed(time.Now().UnixNano())
-	randomIndex := mrand.Intn(len(availableQuestions))
-	questionID := availableQuestions[randomIndex].ID
 
 	// Load the selected question with choices
 	var question Question
@@ -219,6 +215,7 @@ func getNextQuestion(c *gin.Context) {
 	}
 
 	// Randomize the order of choices to prevent visual memorization
+	mrand.Seed(time.Now().UnixNano())
 	mrand.Shuffle(len(question.Choices), func(i, j int) {
 		question.Choices[i], question.Choices[j] = question.Choices[j], question.Choices[i]
 	})
@@ -744,4 +741,62 @@ func splitString(s string, sep string) []string {
 		result = append(result, current)
 	}
 	return result
+}
+
+func generateQuestionSequence(userID uint, mode string, categoriesStr string, questionCount int) string {
+	// Build query to get all available questions
+	query := db.Model(&Question{})
+
+	// Apply category filter
+	if categoriesStr != "" {
+		categories := splitString(categoriesStr, ",")
+		if len(categories) > 0 {
+			query = query.Where("category IN ?", categories)
+		}
+	} else if mode == "WEAK_AREAS" {
+		weakCategories := getUserWeakCategories(userID)
+		if len(weakCategories) > 0 {
+			query = query.Where("category IN ?", weakCategories)
+		}
+	}
+
+	// Get all matching question IDs, ordered by ID for consistency
+	var questionIDs []uint
+	query.Order("id ASC").Pluck("id", &questionIDs)
+
+	if len(questionIDs) == 0 {
+		return ""
+	}
+
+	// Limit to the requested number of questions
+	if len(questionIDs) > questionCount {
+		questionIDs = questionIDs[:questionCount]
+	}
+
+	// Convert to comma-separated string
+	if len(questionIDs) == 0 {
+		return ""
+	}
+	result := fmt.Sprintf("%d", questionIDs[0])
+	for i := 1; i < len(questionIDs); i++ {
+		result += fmt.Sprintf(",%d", questionIDs[i])
+	}
+	return result
+}
+
+func parseQuestionSequence(sequence string) []uint {
+	if sequence == "" {
+		return []uint{}
+	}
+
+	parts := splitString(sequence, ",")
+	questionIDs := make([]uint, 0, len(parts))
+
+	for _, part := range parts {
+		if id, err := strconv.ParseUint(part, 10, 32); err == nil {
+			questionIDs = append(questionIDs, uint(id))
+		}
+	}
+
+	return questionIDs
 }

@@ -40,7 +40,7 @@
       </div>
 
       <!-- Question Box -->
-      <div v-if="gameStore.currentQuestion && !showingAnswer" class="question-box">
+      <div v-if="gameStore.currentQuestion" class="question-box">
         <p class="question-text">{{ gameStore.currentQuestion.text }}</p>
       </div>
 
