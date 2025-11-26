@@ -19,7 +19,7 @@ export const useGameStore = defineStore('game', () => {
 
   // Lifelines
   const fiftyFiftyRemaining = ref<number>(3)
-  const hintUsed = ref<boolean>(false)
+  const autosolveRemaining = ref<number>(3)
   const skipsRemaining = ref<number>(3)
 
   // Game config
@@ -61,7 +61,7 @@ export const useGameStore = defineStore('game', () => {
       flaggedCount.value = 0
       flaggedQuestions.value.clear()
       fiftyFiftyRemaining.value = 3
-      hintUsed.value = false
+      autosolveRemaining.value = 3
       skipsRemaining.value = 3
 
       return { success: true }
@@ -220,9 +220,9 @@ export const useGameStore = defineStore('game', () => {
     return false
   }
 
-  function useHint(): boolean {
-    if (!hintUsed.value && currentQuestion.value) {
-      hintUsed.value = true
+  function useAutosolve(): boolean {
+    if (autosolveRemaining.value > 0 && currentQuestion.value) {
+      autosolveRemaining.value--
       return true
     }
     return false
@@ -248,7 +248,7 @@ export const useGameStore = defineStore('game', () => {
     flaggedCount.value = 0
     flaggedQuestions.value.clear()
     fiftyFiftyRemaining.value = 3
-    hintUsed.value = false
+    autosolveRemaining.value = 3
     skipsRemaining.value = 3
     gameMode.value = null
     categories.value = []
@@ -272,7 +272,7 @@ export const useGameStore = defineStore('game', () => {
     flaggedCount,
     flaggedQuestions,
     fiftyFiftyRemaining,
-    hintUsed,
+    autosolveRemaining,
     skipsRemaining,
     gameMode,
     categories,
@@ -288,7 +288,7 @@ export const useGameStore = defineStore('game', () => {
     resumeGame,
     loadResults,
     useFiftyFifty,
-    useHint,
+    useAutosolve,
     useSkip,
     resetGame,
     isQuestionFlagged

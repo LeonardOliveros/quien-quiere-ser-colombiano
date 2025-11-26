@@ -118,6 +118,14 @@ class ApiService {
     return response.data
   }
 
+  async useAutosolve(sessionId: string, questionId: number): Promise<{ correct_choice_id: number }> {
+    const response = await this.axiosInstance.post<{ correct_choice_id: number }>(
+      `/game/${sessionId}/autosolve`,
+      { question_id: questionId }
+    )
+    return response.data
+  }
+
   async endGame(sessionId: string): Promise<{ message: string }> {
     const response = await this.axiosInstance.post<{ message: string }>(`/game/${sessionId}/end`)
     return response.data

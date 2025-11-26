@@ -365,6 +365,42 @@ func useFiftyFifty(c *gin.Context) {
 	})
 }
 
+func useAutosolve(c *gin.Context) {
+	var request struct {
+		QuestionID uint `json:"question_id"`
+	}
+
+	if err := c.ShouldBindJSON(&request); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Load question with choices
+	var question Question
+	if err := db.Preload("Choices").First(&question, request.QuestionID).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Question not found"})
+		return
+	}
+
+	// Find the correct choice
+	var correctChoiceID uint
+	for _, choice := range question.Choices {
+		if choice.IsCorrect {
+			correctChoiceID = choice.ID
+			break
+		}
+	}
+
+	if correctChoiceID == 0 {
+		c.JSON(http.StatusNotFound, gin.H{"error": "No correct answer found"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"correct_choice_id": correctChoiceID,
+	})
+}
+
 func endGame(c *gin.Context) {
 	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
 

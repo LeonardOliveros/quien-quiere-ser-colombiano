@@ -47,11 +47,6 @@
         <p class="question-text">{{ gameStore.currentQuestion.text }}</p>
       </div>
 
-      <!-- Show hint if used -->
-      <div v-if="showHint && gameStore.currentQuestion?.hint" class="hint-box">
-        <i class="fas fa-lightbulb"></i> <strong>Pista:</strong> {{ gameStore.currentQuestion.hint }}
-      </div>
-
       <!-- Answers Grid -->
       <div class="answers-grid">
         <div class="row g-3">
@@ -94,11 +89,11 @@
         </button>
         <button
           class="btn-lifeline"
-          :class="{ 'used': gameStore.hintUsed }"
-          @click="useHint"
-          :disabled="gameStore.hintUsed || showingAnswer"
+          :class="{ 'used': gameStore.autosolveRemaining === 0 }"
+          @click="useAutosolve"
+          :disabled="gameStore.autosolveRemaining === 0 || showingAnswer"
         >
-          <i class="fas fa-lightbulb"></i> Pista
+          <i class="fas fa-check-circle"></i> Resolver ({{ gameStore.autosolveRemaining }})
         </button>
         <button
           class="btn-lifeline"
@@ -154,7 +149,6 @@ const answerExplanation = ref('')
 const correctAnswerText = ref('')
 const correctChoiceId = ref<number | null>(null)
 const selectedChoiceId = ref<number | null>(null)
-const showHint = ref(false)
 const removedChoices = ref<Set<number>>(new Set())
 const fiftyFiftyUsedOnCurrentQuestion = ref(false)
 const timeLeft = ref(0)
@@ -212,7 +206,6 @@ async function loadQuestion() {
 
   // Reset question state
   showingAnswer.value = false
-  showHint.value = false
   removedChoices.value.clear()
   fiftyFiftyUsedOnCurrentQuestion.value = false
   selectedChoiceId.value = null
@@ -290,9 +283,21 @@ async function useFiftyFifty() {
   }
 }
 
-function useHint() {
-  if (gameStore.useHint()) {
-    showHint.value = true
+async function useAutosolve() {
+  if (gameStore.useAutosolve() && gameStore.currentQuestion && gameStore.sessionId) {
+    try {
+      // Call backend to get the correct choice
+      const result = await api.useAutosolve(
+        gameStore.sessionId,
+        gameStore.currentQuestion.id
+      )
+
+      // Auto-select the correct answer
+      await selectAnswer(result.correct_choice_id)
+    } catch (error) {
+      console.error('Error using autosolve:', error)
+      alert('Error al usar el comodín de resolver')
+    }
   }
 }
 
