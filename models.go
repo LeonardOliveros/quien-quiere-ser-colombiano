@@ -54,6 +54,7 @@ type GameSession struct {
 	CorrectAnswers int      `json:"correct_answers"`
 	Score         int       `json:"score"`
 	CreatedAt     time.Time `json:"created_at"`
+	UpdatedAt     time.Time `json:"updated_at"`
 }
 
 // GameAnswer represents a user's answer in a game session

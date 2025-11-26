@@ -110,8 +110,26 @@ class ApiService {
     return response.data
   }
 
+  async useFiftyFifty(sessionId: string, questionId: number): Promise<{ remove_choice_ids: number[] }> {
+    const response = await this.axiosInstance.post<{ remove_choice_ids: number[] }>(
+      `/game/${sessionId}/fifty-fifty`,
+      { question_id: questionId }
+    )
+    return response.data
+  }
+
   async endGame(sessionId: string): Promise<{ message: string }> {
     const response = await this.axiosInstance.post<{ message: string }>(`/game/${sessionId}/end`)
+    return response.data
+  }
+
+  async pauseGame(sessionId: string): Promise<{ message: string }> {
+    const response = await this.axiosInstance.post<{ message: string }>(`/game/${sessionId}/pause`)
+    return response.data
+  }
+
+  async getPausedGame(mode: string): Promise<any> {
+    const response = await this.axiosInstance.get(`/game/paused/${mode}`)
     return response.data
   }
 

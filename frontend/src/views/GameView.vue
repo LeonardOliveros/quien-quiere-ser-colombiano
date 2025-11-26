@@ -25,6 +25,9 @@
             >
               <i class="fas fa-flag"></i> {{ isFlagged ? 'Marcada' : 'Marcar' }}
             </button>
+            <button class="btn btn-sm btn-info me-2" @click="confirmPause">
+              <i class="fas fa-pause"></i> Pausar
+            </button>
             <button class="btn btn-sm btn-danger" @click="confirmQuit">
               <i class="fas fa-times"></i> Salir
             </button>
@@ -83,11 +86,11 @@
       <div class="lifelines text-center">
         <button
           class="btn-lifeline"
-          :class="{ 'used': gameStore.fiftyFiftyUsed }"
+          :class="{ 'used': gameStore.fiftyFiftyRemaining === 0 || fiftyFiftyUsedOnCurrentQuestion }"
           @click="useFiftyFifty"
-          :disabled="gameStore.fiftyFiftyUsed || showingAnswer"
+          :disabled="gameStore.fiftyFiftyRemaining === 0 || fiftyFiftyUsedOnCurrentQuestion || showingAnswer"
         >
-          <i class="fas fa-divide"></i> 50:50
+          <i class="fas fa-divide"></i> 50:50 ({{ gameStore.fiftyFiftyRemaining }})
         </button>
         <button
           class="btn-lifeline"
@@ -139,6 +142,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useGameStore } from '@/stores/game'
+import api from '@/services/api'
 
 const router = useRouter()
 const gameStore = useGameStore()
@@ -152,6 +156,7 @@ const correctChoiceId = ref<number | null>(null)
 const selectedChoiceId = ref<number | null>(null)
 const showHint = ref(false)
 const removedChoices = ref<Set<number>>(new Set())
+const fiftyFiftyUsedOnCurrentQuestion = ref(false)
 const timeLeft = ref(0)
 const elapsedTime = ref(0)
 const isFlagged = ref(false)
@@ -209,6 +214,7 @@ async function loadQuestion() {
   showingAnswer.value = false
   showHint.value = false
   removedChoices.value.clear()
+  fiftyFiftyUsedOnCurrentQuestion.value = false
   selectedChoiceId.value = null
   correctChoiceId.value = null
 
@@ -261,17 +267,26 @@ async function flagCurrentQuestion() {
   }
 }
 
-function useFiftyFifty() {
-  if (gameStore.useFiftyFifty() && gameStore.currentQuestion) {
-    const choices = gameStore.currentQuestion.choices
-    const incorrectChoices = choices.filter(() => {
-      // We don't know which is correct, so randomly remove 2
-      return Math.random() > 0.5
-    }).slice(0, 2)
+async function useFiftyFifty() {
+  if (gameStore.useFiftyFifty() && gameStore.currentQuestion && gameStore.sessionId) {
+    try {
+      // Call backend to get which incorrect choices to remove
+      const result = await api.useFiftyFifty(
+        gameStore.sessionId,
+        gameStore.currentQuestion.id
+      )
 
-    incorrectChoices.forEach((choice) => {
-      removedChoices.value.add(choice.id)
-    })
+      // Remove the choices returned by the backend
+      result.remove_choice_ids.forEach((choiceId: number) => {
+        removedChoices.value.add(choiceId)
+      })
+
+      // Mark that 50:50 was used on this question
+      fiftyFiftyUsedOnCurrentQuestion.value = true
+    } catch (error) {
+      console.error('Error using 50-50:', error)
+      alert('Error al usar el comodín 50-50')
+    }
   }
 }
 
@@ -284,6 +299,22 @@ function useHint() {
 async function skipQuestion() {
   if (gameStore.useSkip()) {
     await loadQuestion()
+  }
+}
+
+function confirmPause() {
+  if (confirm('¿Deseas pausar la partida? Podrás reanudarla más tarde.')) {
+    pauseGame()
+  }
+}
+
+async function pauseGame() {
+  const result = await gameStore.pauseGame()
+  if (result.success) {
+    alert('Partida pausada. Podrás reanudarla desde el menú principal.')
+    router.push('/')
+  } else {
+    alert(result.message || 'Error al pausar la partida')
   }
 }
 

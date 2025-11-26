@@ -357,7 +357,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "SÍMBOLOS PATRIOS",
-			Text:        "¿Cuál es considerado el símbolo cultural de Colombia mencionado en el documento?",
+			Text:        "¿Cuál es considerado el símbolo cultural de Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -385,7 +385,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA",
-			Text:        "Según el documento, ¿cuál es considerado el plato insigne de Bogotá?",
+			Text:        "¿cuál es considerado el plato insigne de Bogotá?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -671,7 +671,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "ARTES Y CULTURA",
-			Text:        "¿Cuál es el teatro más antiguo de Colombia según el documento?",
+			Text:        "¿Cuál es el teatro más antiguo de Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -1721,7 +1721,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "TURISMO",
-			Text:        "¿Cuál es el río más importante de Colombia según el documento?",
+			Text:        "¿Cuál es el río más importante de Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -1931,7 +1931,7 @@ func seedQuestions() {
 		{
 			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
-			Text:        "¿Cuántas regiones naturales tiene Colombia según el documento?",
+			Text:        "¿Cuántas regiones naturales tiene Colombia?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -2111,7 +2111,7 @@ func seedQuestions() {
 		{
 			Category:    "GEOGRAFIA",
 			SubCategory: "REGIONES NATURALES",
-			Text:        "¿Cuántos kilómetros de costa tiene Colombia en el Caribe según el documento?",
+			Text:        "¿Cuántos kilómetros de costa tiene Colombia en el Caribe?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -6791,7 +6791,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "ETNIAS Y DEMOGRAFÍA",
-			Text:        "¿Qué porcentaje de la población colombiana se identifica como católica según el documento?",
+			Text:        "¿Qué porcentaje de la población colombiana se identifica como católica?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -19034,7 +19034,7 @@ func seedQuestions() {
 		{
 			Category:    "DEMOGRAFÍA",
 			SubCategory: "POBLACIÓN ROM",
-			Text:        "¿Cuántas personas se autorreconocieron como gitanos o ROM en el último censo mencionado en el documento?",
+			Text:        "¿Cuántas personas se autorreconocieron como gitanos o ROM?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "De acuerdo con el último Censo, un total de 2.606 personas se autorreconocieron como gitanos o ROM",
@@ -20668,7 +20668,7 @@ func seedQuestions() {
 			Text:        "¿Cuál es la capital del departamento del Vaupés?",
 			Difficulty:  2,
 			Points:      10,
-			Explanation: "Según el mapa político y la lista de departamentos y capitales de la región amazónica presentada en el documento, la capital del departamento del Vaupés es Mitú.",
+			Explanation: "Según el mapa político y la lista de departamentos y capitales de la región amazónica, la capital del departamento del Vaupés es Mitú.",
 			Choices: []Choice{
 				{
 					Text:      "Leticia",
@@ -21812,7 +21812,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "GASTRONOMÍA",
-			Text:        "Según el documento, ¿cuáles son las tres influencias principales que se fusionaron para crear la gastronomía colombiana?",
+			Text:        "¿Cuáles son las tres influencias principales que se fusionaron para crear la gastronomía colombiana?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "La gastronomía nacional es una fusión de diversas influencias indígenas, africanas y europeas",

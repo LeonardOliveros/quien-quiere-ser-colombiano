@@ -175,6 +175,11 @@ func getNextQuestion(c *gin.Context) {
 		return
 	}
 
+	// If session is PAUSED, reactivate it
+	if session.Status == "PAUSED" {
+		db.Model(&session).Update("status", "ACTIVE")
+	}
+
 	// Parse the pre-generated question sequence
 	questionIDs := parseQuestionSequence(session.QuestionSequence)
 	if len(questionIDs) == 0 {
@@ -317,9 +322,52 @@ func flagQuestion(c *gin.Context) {
 	})
 }
 
+func useFiftyFifty(c *gin.Context) {
+	var request struct {
+		QuestionID uint `json:"question_id"`
+	}
+
+	if err := c.ShouldBindJSON(&request); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Load question with choices
+	var question Question
+	if err := db.Preload("Choices").First(&question, request.QuestionID).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Question not found"})
+		return
+	}
+
+	// Find incorrect choices
+	var incorrectChoiceIDs []uint
+	for _, choice := range question.Choices {
+		if !choice.IsCorrect {
+			incorrectChoiceIDs = append(incorrectChoiceIDs, choice.ID)
+		}
+	}
+
+	// Randomly select 2 incorrect choices to remove
+	if len(incorrectChoiceIDs) < 2 {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Not enough incorrect choices"})
+		return
+	}
+
+	// Shuffle and take 2
+	mrand.Seed(time.Now().UnixNano())
+	mrand.Shuffle(len(incorrectChoiceIDs), func(i, j int) {
+		incorrectChoiceIDs[i], incorrectChoiceIDs[j] = incorrectChoiceIDs[j], incorrectChoiceIDs[i]
+	})
+	toRemove := incorrectChoiceIDs[:2]
+
+	c.JSON(http.StatusOK, gin.H{
+		"remove_choice_ids": toRemove,
+	})
+}
+
 func endGame(c *gin.Context) {
 	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
-	
+
 	endTime := time.Now()
 	db.Model(&GameSession{}).Where("id = ?", sessionID).Updates(map[string]interface{}{
 		"end_time": endTime,
@@ -330,6 +378,85 @@ func endGame(c *gin.Context) {
 	generateRecommendations(uint(sessionID))
 
 	c.JSON(http.StatusOK, gin.H{"message": "Game ended successfully"})
+}
+
+func pauseGame(c *gin.Context) {
+	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
+
+	// Update session status to PAUSED
+	if err := db.Model(&GameSession{}).Where("id = ?", sessionID).Update("status", "PAUSED").Error; err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to pause game"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"message": "Game paused successfully"})
+}
+
+func getPausedGame(c *gin.Context) {
+	mode := c.Param("mode")
+
+	// Get user ID from context
+	userID, exists := c.Get("userID")
+	if !exists {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "User not authenticated"})
+		return
+	}
+
+	// Clean up old paused games for this mode (keep only the most recent one)
+	var oldSessions []GameSession
+	db.Where("user_id = ? AND mode = ? AND status = ?", userID, mode, "PAUSED").
+		Order("updated_at DESC").
+		Offset(1). // Skip the most recent one
+		Find(&oldSessions)
+
+	for _, oldSession := range oldSessions {
+		db.Model(&oldSession).Update("status", "COMPLETED")
+	}
+
+	// Find the most recent paused game for this user and mode
+	var session GameSession
+	err := db.Where("user_id = ? AND mode = ? AND status = ?", userID, mode, "PAUSED").
+		Order("updated_at DESC").
+		First(&session).Error
+
+	if err != nil {
+		// No paused game found
+		c.JSON(http.StatusNotFound, gin.H{"error": "No paused game found"})
+		return
+	}
+
+	// Get progress information
+	var answeredCount int64
+	db.Model(&GameAnswer{}).Where("game_session_id = ?", session.ID).Count(&answeredCount)
+
+	// Count incorrect answers
+	var incorrectCount int64
+	db.Model(&GameAnswer{}).Where("game_session_id = ? AND is_correct = ?", session.ID, false).Count(&incorrectCount)
+
+	// Count flagged questions
+	var flaggedCount int64
+	db.Model(&GameAnswer{}).Where("game_session_id = ? AND is_flagged = ?", session.ID, true).Count(&flaggedCount)
+
+	// Get flagged question IDs
+	var flaggedIDs []uint
+	db.Model(&GameAnswer{}).
+		Where("game_session_id = ? AND is_flagged = ?", session.ID, true).
+		Pluck("question_id", &flaggedIDs)
+
+	c.JSON(http.StatusOK, gin.H{
+		"session_id":         session.ID,
+		"mode":               session.Mode,
+		"categories":         session.Categories,
+		"total_questions":    session.TotalQuestions,
+		"answered_questions": answeredCount,
+		"correct_answers":    session.CorrectAnswers,
+		"incorrect_answers":  incorrectCount,
+		"flagged_count":      flaggedCount,
+		"flagged_questions":  flaggedIDs,
+		"score":              session.Score,
+		"time_limit":         session.TimeLimit,
+		"start_time":         session.StartTime,
+	})
 }
 
 func getGameResults(c *gin.Context) {
@@ -391,12 +518,18 @@ func getGameResults(c *gin.Context) {
 		recommendations = append(recommendations, rec.Description)
 	}
 
+	// Calculate percentage safely (avoid division by zero)
+	percentage := 0.0
+	if len(answers) > 0 {
+		percentage = float64(session.CorrectAnswers) / float64(len(answers)) * 100
+	}
+
 	result := GameResult{
 		SessionID:        session.ID,
 		TotalQuestions:   len(answers),
 		CorrectAnswers:   session.CorrectAnswers,
 		Score:            session.Score,
-		Percentage:       float64(session.CorrectAnswers) / float64(len(answers)) * 100,
+		Percentage:       percentage,
 		TimeTaken:        int(session.EndTime.Sub(session.StartTime).Seconds()),
 		CategoryScores:   categoryScores,
 		IncorrectAnswers: incorrectAnswers,

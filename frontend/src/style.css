@@ -1,13 +1,18 @@
-/* Quiz App Styles - Millionaire Game Show Theme */
+/* Quiz App Styles - Modern Purple & Teal Theme */
 
 :root {
-    --primary-color: #1a1a2e;
-    --secondary-color: #16213e;
-    --accent-color: #0f3460;
-    --gold-color: #ffd700;
-    --success-color: #28a745;
-    --danger-color: #dc3545;
-    --warning-color: #ffc107;
+    /* Main Color Palette */
+    --primary-color: #421F73;      /* Deep Purple - Main background */
+    --secondary-color: #331859;     /* Darker Purple - Secondary background */
+    --accent-color: #5550F2;        /* Bright Blue/Purple - Accents and highlights */
+    --accent-teal: #2BD9B9;         /* Bright Teal - Success and accents */
+    --neutral-color: #8A8EA6;       /* Gray - Text and borders */
+
+    /* Legacy colors for compatibility */
+    --gold-color: #2BD9B9;          /* Replaced with Teal */
+    --success-color: #2BD9B9;       /* Teal for success */
+    --danger-color: #dc3545;        /* Keep red for errors */
+    --warning-color: #5550F2;       /* Bright purple for warnings */
     --text-light: #ffffff;
     --text-dark: #333333;
 }
@@ -174,8 +179,8 @@ h1.display-3 {
 
 .answer-btn {
     width: 100%;
-    background: linear-gradient(145deg, #1e3c72, #2a5298);
-    border: 2px solid var(--gold-color);
+    background: linear-gradient(145deg, var(--secondary-color), var(--primary-color));
+    border: 2px solid var(--accent-teal);
     color: var(--text-light);
     padding: 20px;
     border-radius: 15px;
@@ -189,16 +194,16 @@ h1.display-3 {
 }
 
 .answer-btn:hover {
-    background: linear-gradient(145deg, #2a5298, #1e3c72);
+    background: linear-gradient(145deg, var(--accent-color), var(--secondary-color));
     transform: translateX(5px);
-    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(43, 217, 185, 0.4);
 }
 
 .answer-letter {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: var(--gold-color);
+    background: var(--accent-teal);
     color: var(--primary-color);
     border-radius: 50%;
     display: flex;
@@ -515,10 +520,10 @@ h1.display-3 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--gold-color);
+    background: var(--accent-teal);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ffed4e;
+    background: #3FFFDD;
 }

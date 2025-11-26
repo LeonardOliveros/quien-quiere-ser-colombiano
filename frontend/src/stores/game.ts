@@ -18,7 +18,7 @@ export const useGameStore = defineStore('game', () => {
   const flaggedQuestions = ref<Set<number>>(new Set())
 
   // Lifelines
-  const fiftyFiftyUsed = ref<boolean>(false)
+  const fiftyFiftyRemaining = ref<number>(3)
   const hintUsed = ref<boolean>(false)
   const skipsRemaining = ref<number>(3)
 
@@ -60,7 +60,7 @@ export const useGameStore = defineStore('game', () => {
       incorrectAnswers.value = 0
       flaggedCount.value = 0
       flaggedQuestions.value.clear()
-      fiftyFiftyUsed.value = false
+      fiftyFiftyRemaining.value = 3
       hintUsed.value = false
       skipsRemaining.value = 3
 
@@ -145,6 +145,63 @@ export const useGameStore = defineStore('game', () => {
     }
   }
 
+  async function pauseGame(): Promise<{ success: boolean; message?: string }> {
+    try {
+      await api.pauseGame(sessionId.value!)
+      return { success: true }
+    } catch (error: any) {
+      return { success: false, message: error.response?.data?.error || 'Error al pausar el juego' }
+    }
+  }
+
+  async function checkPausedGame(mode: string): Promise<{ hasPausedGame: boolean; pausedGameData?: any }> {
+    try {
+      const data = await api.getPausedGame(mode)
+      return { hasPausedGame: true, pausedGameData: data }
+    } catch (error: any) {
+      return { hasPausedGame: false }
+    }
+  }
+
+  async function resumeGame(pausedData: any): Promise<{ success: boolean; message?: string }> {
+    try {
+      // Restore complete session state
+      sessionId.value = pausedData.session_id.toString()
+      gameMode.value = pausedData.mode
+      totalQuestions.value = pausedData.total_questions
+      correctAnswers.value = pausedData.correct_answers
+      incorrectAnswers.value = pausedData.incorrect_answers || 0
+      flaggedCount.value = pausedData.flagged_count || 0
+      timeLimit.value = pausedData.time_limit
+
+      // Restore flagged questions
+      flaggedQuestions.value.clear()
+      if (pausedData.flagged_questions && Array.isArray(pausedData.flagged_questions)) {
+        pausedData.flagged_questions.forEach((id: number) => {
+          flaggedQuestions.value.add(id)
+        })
+      }
+
+      // Restore categories
+      if (pausedData.categories) {
+        const cats = pausedData.categories.split(',').filter((c: string) => c.trim())
+        categories.value = cats
+      }
+
+      // Restore start time
+      if (pausedData.start_time) {
+        startTime.value = new Date(pausedData.start_time).getTime()
+      }
+
+      // Load next question to resume
+      await loadNextQuestion()
+
+      return { success: true }
+    } catch (error: any) {
+      return { success: false, message: error.response?.data?.error || 'Error al reanudar el juego' }
+    }
+  }
+
   async function loadResults(): Promise<{ success: boolean; data?: GameResults; message?: string }> {
     try {
       const data = await api.getResults(sessionId.value!)
@@ -156,8 +213,8 @@ export const useGameStore = defineStore('game', () => {
   }
 
   function useFiftyFifty(): boolean {
-    if (!fiftyFiftyUsed.value && currentQuestion.value) {
-      fiftyFiftyUsed.value = true
+    if (fiftyFiftyRemaining.value > 0 && currentQuestion.value) {
+      fiftyFiftyRemaining.value--
       return true
     }
     return false
@@ -190,7 +247,7 @@ export const useGameStore = defineStore('game', () => {
     incorrectAnswers.value = 0
     flaggedCount.value = 0
     flaggedQuestions.value.clear()
-    fiftyFiftyUsed.value = false
+    fiftyFiftyRemaining.value = 3
     hintUsed.value = false
     skipsRemaining.value = 3
     gameMode.value = null
@@ -214,7 +271,7 @@ export const useGameStore = defineStore('game', () => {
     incorrectAnswers,
     flaggedCount,
     flaggedQuestions,
-    fiftyFiftyUsed,
+    fiftyFiftyRemaining,
     hintUsed,
     skipsRemaining,
     gameMode,
@@ -226,6 +283,9 @@ export const useGameStore = defineStore('game', () => {
     submitAnswer,
     flagQuestion,
     endGame,
+    pauseGame,
+    checkPausedGame,
+    resumeGame,
     loadResults,
     useFiftyFifty,
     useHint,

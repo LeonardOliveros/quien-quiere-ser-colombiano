@@ -96,8 +96,11 @@ func setupRoutes(r *gin.Engine) {
 			protected.GET("/game/:sessionId/question", getNextQuestion)
 			protected.POST("/game/:sessionId/answer", submitAnswer)
 			protected.POST("/game/:sessionId/flag", flagQuestion)
+			protected.POST("/game/:sessionId/fifty-fifty", useFiftyFifty)
 			protected.GET("/game/:sessionId/results", getGameResults)
 			protected.POST("/game/:sessionId/end", endGame)
+			protected.POST("/game/:sessionId/pause", pauseGame)
+			protected.GET("/game/paused/:mode", getPausedGame)
 
 			// User statistics
 			protected.GET("/user/:userId/stats", getUserStats)

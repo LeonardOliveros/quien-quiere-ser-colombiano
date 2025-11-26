@@ -108,13 +108,49 @@ function logout() {
 }
 
 async function startGame(mode: string) {
+  // Check for paused game first
+  const modeKey = mode === 'practice' ? 'PRACTICE' : mode === 'timed' ? 'TIMED' : mode === 'weak' ? 'WEAK_AREAS' : mode.toUpperCase()
+  const pausedCheck = await gameStore.checkPausedGame(modeKey)
+
+  if (pausedCheck.hasPausedGame) {
+    const pausedData = pausedCheck.pausedGameData
+    const answeredQuestions = pausedData.answered_questions || 0
+    const totalQuestions = pausedData.total_questions || 0
+
+    const choice = confirm(
+      `Tienes una partida pausada (${answeredQuestions}/${totalQuestions} preguntas respondidas).\n\n` +
+      `¿Deseas reanudarla?\n\n` +
+      `Aceptar: Reanudar partida\n` +
+      `Cancelar: Nueva partida`
+    )
+
+    if (choice) {
+      // Resume paused game
+      const resumeResult = await gameStore.resumeGame(pausedData)
+      if (resumeResult.success) {
+        router.push('/game')
+      } else {
+        alert(resumeResult.message || 'Error al reanudar la partida')
+      }
+      return
+    } else {
+      // User chose to start a new game - end the paused one first
+      try {
+        await api.endGame(pausedData.session_id.toString())
+      } catch (error) {
+        console.error('Error ending paused game:', error)
+      }
+    }
+  }
+
+  // Start new game
   let questionCount = 80
   let timeLimit = 0
   let categories: string[] = []
   let focusWeakAreas = false
 
-  // For practice and timed modes, get total question count from database
-  if (mode === 'practice' || mode === 'timed') {
+  // For practice mode, get total question count from database
+  if (mode === 'practice') {
     try {
       const countData = await api.getQuestionCount()
       questionCount = countData.total
@@ -123,7 +159,9 @@ async function startGame(mode: string) {
     }
   }
 
+  // For timed mode, backend will force 80 questions
   if (mode === 'timed') {
+    questionCount = 80 // Backend will enforce this
     timeLimit = 180 // 3 hours in minutes
   } else if (mode === 'weak') {
     focusWeakAreas = true
