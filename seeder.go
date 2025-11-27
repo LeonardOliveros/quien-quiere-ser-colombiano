@@ -17079,7 +17079,7 @@ func seedQuestions() {
 			},
 		},
 		{
-			Category:    "SÍMBOLOS PATRIOS",
+			Category:    "CULTURA",
 			SubCategory: "NOMBRE OFICIAL",
 			Text:        "¿Qué prócer dio el nombre de \"República de Colombia\" en el Congreso de Angostura en 1819?",
 			Difficulty:  2,
@@ -17110,7 +17110,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "SÍMBOLOS PATRIOS",
+			Category:    "CULTURA",
 			SubCategory: "BANDERA NACIONAL",
 			Text:        "¿Qué significado se le atribuye al color amarillo en la bandera nacional de Colombia?",
 			Difficulty:  2,
@@ -17141,7 +17141,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "SÍMBOLOS PATRIOS",
+			Category:    "CULTURA",
 			SubCategory: "ESCUDO NACIONAL",
 			Text:        "¿Qué elemento se encuentra en la franja central del escudo de armas de Colombia?",
 			Difficulty:  2,
@@ -17172,7 +17172,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "SÍMBOLOS PATRIOS",
+			Category:    "CULTURA",
 			SubCategory: "HIMNO NACIONAL",
 			Text:        "¿Quién fue el encargado de componer la música del himno nacional de Colombia?",
 			Difficulty:  2,
@@ -17203,7 +17203,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "SÍMBOLOS PATRIOS",
+			Category:    "CULTURA",
 			SubCategory: "AVE NACIONAL",
 			Text:        "¿Qué característica física distingue a los machos del cóndor andino?",
 			Difficulty:  2,
@@ -17234,7 +17234,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "SÍMBOLOS PATRIOS",
+			Category:    "CULTURA",
 			SubCategory: "FLOR NACIONAL",
 			Text:        "¿Cuál es el nombre científico de la orquídea considerada la flor nacional de Colombia?",
 			Difficulty:  2,
@@ -17265,7 +17265,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "SÍMBOLOS PATRIOS",
+			Category:    "CULTURA",
 			SubCategory: "ÁRBOL NACIONAL",
 			Text:        "¿Hasta qué altura puede crecer la Palma de Cera del Quindío?",
 			Difficulty:  2,
@@ -17544,7 +17544,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "HISTORIA",
 			Text:        "¿En qué año se creó el Servicio Oficial de Turismo, la primera institución pública encargada del desarrollo turístico en Colombia?",
 			Difficulty:  2,
@@ -17575,7 +17575,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "LEGISLACIÓN",
 			Text:        "¿Qué entidad se creó mediante la Ley 60 de 1968 para encargarse de la planeación, regulación y financiación del turismo?",
 			Difficulty:  2,
@@ -17606,7 +17606,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "LITORAL",
 			Text:        "¿Cuáles son las tres ciudades costeras principales donde se concentra la mayor oferta hotelera del turismo litoral?",
 			Difficulty:  2,
@@ -17637,7 +17637,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "NATURALEZA",
 			Text:        "¿Qué municipio del departamento de Santander es conocido por su oferta en turismo de aventura y deportes extremos?",
 			Difficulty:  2,
@@ -17668,7 +17668,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "RURAL",
 			Text:        "¿Qué modalidad turística ha emergido como una alternativa al turismo de sol y playa, permitiendo la interacción con espacios naturales del campo?",
 			Difficulty:  2,
@@ -17699,7 +17699,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "LITORAL",
 			Text:        "¿Qué ciudades del Pacífico funcionan como puertos internacionales para el transporte con países como Ecuador, Perú y Chile?",
 			Difficulty:  2,
@@ -17761,7 +17761,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "REGIONES",
 			Text:        "¿Qué característica natural define al Eje Cafetero además de las plantaciones de café?",
 			Difficulty:  2,
@@ -17792,7 +17792,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "REGIONES",
 			Text:        "¿Qué ciudades se configuran como las más importantes en términos de arquitectura urbana y centros financieros?",
 			Difficulty:  2,
@@ -17823,7 +17823,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "TURISMO",
+			Category:    "CULTURA",
 			SubCategory: "INFRAESTRUCTURA",
 			Text:        "¿Cuál es la razón principal de la baja actividad turística hacia el departamento del Chocó?",
 			Difficulty:  2,
@@ -17855,7 +17855,7 @@ func seedQuestions() {
 	
 		{
 			Category:    "HISTORIA",
-			SubCategory: "CONSTITUCIÓN DE 1991",
+			SubCategory: "CONSTITUCION DE 1991",
 			Text:        "¿Qué sectores de la población fueron reconocidos explícitamente con derechos en la Constitución Política de 1991 tras haber sido excluidos anteriormente?",
 			Difficulty:  2,
 			Points:      10,
@@ -18133,7 +18133,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "PAZ",
+			Category:    "HISTORIA",
 			SubCategory: "JUSTICIA TRANSICIONAL",
 			Text:        "¿Qué función cumple la Comisión de la Verdad dentro del proceso de postconflicto en Colombia?",
 			Difficulty:  2,
@@ -18164,7 +18164,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "HISTORIA COLONIAL",
+			Category:    "HISTORIA",
 			SubCategory: "REFORMAS BORBÓNICAS",
 			Text:        "¿Cuál fue la orden religiosa expulsada tanto de España como de sus colonias en 1767 debido al fortalecimiento del Regalismo?",
 			Difficulty:  2,
@@ -18195,7 +18195,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "INDEPENDENCIA",
+			Category:    "HISTORIA",
 			SubCategory: "MOVIMIENTOS POPULARES",
 			Text:        "¿En qué centros poblados se desarrolló la revuelta de los Comuneros entre 1780 y 1781?",
 			Difficulty:  2,
@@ -18226,7 +18226,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "INDEPENDENCIA",
+			Category:    "HISTORIA",
 			SubCategory: "FIGURAS HISTÓRICAS",
 			Text:        "¿Cómo se llamó el periódico en el que Antonio Nariño utilizó irónicamente el término \"Patria Boba\"?",
 			Difficulty:  2,
@@ -18288,7 +18288,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "POLÍTICA SIGLO XIX",
+			Category:    "HISTORIA",
 			SubCategory: "OLIMPO RADICAL",
 			Text:        "¿Qué nombre recibió el país tras la promulgación de la Constitución de Rionegro en 1863?",
 			Difficulty:  2,
@@ -18350,7 +18350,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ECONOMÍA",
+			Category:    "HISTORIA",
 			SubCategory: "HEGEMONÍA CONSERVADORA",
 			Text:        "¿En qué se invirtieron los 25 millones de dólares recibidos de Estados Unidos durante el gobierno de Pedro Nel Ospina?",
 			Difficulty:  2,
@@ -18381,7 +18381,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "MODERNIZACIÓN",
+			Category:    "HISTORIA",
 			SubCategory: "QUINQUENIO REYES",
 			Text:        "¿Qué tratado firmado en 1905 permitió conseguir un crédito internacional para sanear la deuda externa de Colombia?",
 			Difficulty:  2,
@@ -18412,7 +18412,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "POLÍTICA SIGLO XX",
+			Category:    "HISTORIA",
 			SubCategory: "REPÚBLICA LIBERAL",
 			Text:        "¿Bajo qué ley se inició la construcción de la Ciudad Universitaria de la Universidad Nacional de Colombia?",
 			Difficulty:  2,
@@ -18443,7 +18443,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHOS Y SOCIEDAD",
+			Category:    "HISTORIA",
 			SubCategory: "VOTO FEMENINO",
 			Text:        "¿En qué fecha las mujeres votaron por primera vez en Colombia?",
 			Difficulty:  2,
@@ -18474,7 +18474,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "¿Cuáles son algunos de los ríos más importantes que caracterizan la hidrografía de la Región Pacífica?",
 			Difficulty:  2,
@@ -18505,7 +18505,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Qué cadena montañosa corre paralela a la costa del Pacífico y alcanza picos superiores a los 4.000 metros sobre el nivel del mar?",
 			Difficulty:  2,
@@ -18536,7 +18536,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FLORA",
 			Text:        "¿Qué nombre científico recibe la orquídea conocida comúnmente como \"flor de mayo\" presente en la región?",
 			Difficulty:  2,
@@ -18567,7 +18567,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "SOCIEDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "POBLACIÓN",
 			Text:        "¿Qué comunidades indígenas se mencionan explícitamente como habitantes de la Región Pacífica junto a la población afrocolombiana?",
 			Difficulty:  2,
@@ -18598,7 +18598,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "DIVISIÓN POLÍTICA",
 			Text:        "¿Cuál es la capital del departamento de Nariño según la división política de la Región Pacífica mostrada en el mapa?",
 			Difficulty:  2,
@@ -18629,7 +18629,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FAUNA",
 			Text:        "¿Qué especies de ranas venenosas se encuentran en la Región Pacífica?",
 			Difficulty:  2,
@@ -18660,7 +18660,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "UBICACIÓN",
 			Text:        "¿Qué departamentos abarca la franja costera de la Región Pacífica de norte a sur?",
 			Difficulty:  2,
@@ -18722,7 +18722,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FLORA",
 			Text:        "¿Qué característica permite a las bromelias sobrevivir en los ambientes húmedos de la zona?",
 			Difficulty:  2,
@@ -18753,7 +18753,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ECOLOGÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ECOSISTEMAS",
 			Text:        "¿Qué función vital cumplen los estuarios y manglares presentes en la costa del Pacífico?",
 			Difficulty:  2,
@@ -18784,7 +18784,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "GENERAL",
 			Text:        "¿Qué porcentaje aproximado del territorio de Colombia abarca la llanura de la región de la Orinoquia?",
 			Difficulty:  2,
@@ -18815,7 +18815,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "¿Cuáles son los dos ríos más importantes que atraviesan la Orinoquia y conforman su red hidrográfica principal?",
 			Difficulty:  2,
@@ -18846,7 +18846,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Qué serranía de la región es conocida por albergar el famoso Cañón del Río Cristal?",
 			Difficulty:  2,
@@ -18877,7 +18877,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "FAUNA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "MAMÍFEROS",
 			Text:        "¿Qué animal que habita en los ríos y humedales de la región es considerado el roedor más grande del mundo?",
 			Difficulty:  2,
@@ -18908,7 +18908,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "FAUNA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REPTILES",
 			Text:        "¿Cuál es la especie de caimán endémica de la región que se encuentra en peligro de extinción?",
 			Difficulty:  2,
@@ -18939,7 +18939,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA POLÍTICA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "CAPITALES",
 			Text:        "¿Cuál es la capital del departamento de Vichada?",
 			Difficulty:  2,
@@ -18970,7 +18970,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DEMOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "GRUPOS ÉTNICOS",
 			Text:        "¿Cuáles son algunos de los grupos étnicos indígenas más representativos que habitan en la región de la Orinoquia?",
 			Difficulty:  2,
@@ -19001,7 +19001,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DEMOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "NACIONAL",
 			Text:        "¿Qué porcentaje de la población total de Colombia representan los afrocolombianos según los datos demográficos básicos?",
 			Difficulty:  2,
@@ -19032,7 +19032,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DEMOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "POBLACIÓN ROM",
 			Text:        "¿Cuántas personas se autorreconocieron como gitanos o ROM?",
 			Difficulty:  2,
@@ -19063,7 +19063,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ECONOMÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ACTIVIDADES PRODUCTIVAS",
 			Text:        "¿En qué actividades se basa principalmente la economía de la Orinoquia?",
 			Difficulty:  2,
@@ -19094,7 +19094,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Cuál de las tres cordilleras principales de Colombia se caracteriza por ser la más alta y albergar el Nevado del Huila?",
 			Difficulty:  2,
@@ -19125,7 +19125,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "SISTEMA OROGRÁFICO",
 			Text:        "¿En qué sistema montañoso se encuentra el Pico Cristóbal Colón, considerado la montaña más alta de Colombia?",
 			Difficulty:  2,
@@ -19152,7 +19152,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "VALLES INTERANDINOS",
 			Text:        "¿Qué cultivos predominan en el paisaje agrícola del Valle del Cauca?",
 			Difficulty:  2,
@@ -19183,7 +19183,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "LLANURAS",
 			Text:        "¿Qué nombre reciben las zonas de tierras bajas y pantanosas sujetas a inundaciones estacionales en la Llanura Amazónica?",
 			Difficulty:  2,
@@ -19214,7 +19214,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "TERRITORIO INSULAR",
 			Text:        "¿Por qué actividad de observación de fauna es mundialmente reconocida la Isla Malpelo?",
 			Difficulty:  2,
@@ -19241,7 +19241,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "PISOS TÉRMICOS",
 			Text:        "¿Qué tipo de vegetación es característica del piso térmico de Tierras Heladas o Páramos?",
 			Difficulty:  2,
@@ -19268,7 +19268,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RECURSOS NATURALES",
 			Text:        "¿En qué departamento de Colombia se encuentran los principales yacimientos de esmeraldas de alta calidad?",
 			Difficulty:  2,
@@ -19299,7 +19299,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RECURSOS MINERALES",
 			Text:        "¿En qué regiones se ubican los depósitos importantes de níquel en Colombia?",
 			Difficulty:  2,
@@ -19330,7 +19330,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA HUMANA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "GRUPOS ÉTNICOS",
 			Text:        "¿Cuáles son algunos de los grupos indígenas más prominentes mencionados que conservan su cultura e idioma en Colombia?",
 			Difficulty:  2,
@@ -19361,7 +19361,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA HUMANA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "GRUPOS ÉTNICOS",
 			Text:        "¿Qué comunidad específica se menciona explícitamente como parte incluida dentro del grupo poblacional de los afrocolombianos?",
 			Difficulty:  2,
@@ -19392,7 +19392,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA HUMANA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "GRUPOS ÉTNICOS",
 			Text:        "¿Cuál es el origen del grupo poblacional conocido como mestizos en Colombia?",
 			Difficulty:  2,
@@ -19423,7 +19423,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "CENTROS URBANOS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "BOGOTÁ",
 			Text:        "¿Cuál es la cifra estimada de habitantes que reside dentro de la ciudad de Bogotá, sin contar su área metropolitana?",
 			Difficulty:  2,
@@ -19454,7 +19454,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "CENTROS URBANOS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "MEDELLÍN",
 			Text:        "¿Qué evento cultural específico se destaca como parte de la oferta cultural de la ciudad de Medellín?",
 			Difficulty:  2,
@@ -19485,7 +19485,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "CENTROS URBANOS",
+			Category:    "GEOGRAFIA",
 			SubCategory: "CALI",
 			Text:        "¿Con qué título cultural es conocida la ciudad de Cali debido a su vibrante escena musical y de baile?",
 			Difficulty:  2,
@@ -19516,7 +19516,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ZONAS RURALES",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ECONOMÍA AGRÍCOLA",
 			Text:        "¿Cuáles son los cultivos principales que sustentan la economía de las zonas rurales mencionadas en el texto?",
 			Difficulty:  2,
@@ -19547,7 +19547,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ZONAS RURALES",
+			Category:    "GEOGRAFIA",
 			SubCategory: "DEMOGRAFÍA RURAL",
 			Text:        "¿Qué tipos de comunidades componen generalmente la demografía de las áreas rurales en Colombia?",
 			Difficulty:  2,
@@ -19578,7 +19578,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "¿Cuál es el río más largo de Colombia que atraviesa la región Caribe y es vital para el transporte de carga y pasajeros?",
 			Difficulty:  2,
@@ -19609,7 +19609,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Qué altura alcanza el Pico Cristóbal Colón ubicado en la Sierra Nevada de Santa Marta?",
 			Difficulty:  2,
@@ -19640,7 +19640,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FLORA",
 			Text:        "¿Cuáles son las tres especies de manglares que se encuentran presentes en los ecosistemas costeros de la región Caribe?",
 			Difficulty:  2,
@@ -19671,7 +19671,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA POLÍTICA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "DEPARTAMENTOS Y CAPITALES",
 			Text:        "¿Cuál es la capital del departamento de Córdoba?",
 			Difficulty:  2,
@@ -19702,7 +19702,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FAUNA",
 			Text:        "¿Qué especies de reptiles venenosas se mencionan específicamente como parte de la fauna de la región Caribe?",
 			Difficulty:  2,
@@ -19733,7 +19733,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DEMOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "POBLACIÓN",
 			Text:        "¿Qué porcentaje aproximado de la población total del país alberga la región Caribe?",
 			Difficulty:  2,
@@ -19764,7 +19764,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FLORA",
 			Text:        "¿Qué especies de palmas se destacan en la región por sus usos diversos como la obtención de frutos comestibles y fibras?",
 			Difficulty:  2,
@@ -19795,7 +19795,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA POLÍTICA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "DEPARTAMENTOS Y CAPITALES",
 			Text:        "¿Cuál es la capital del departamento de Sucre?",
 			Difficulty:  2,
@@ -19826,7 +19826,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿En qué ubicación geográfica específica se encuentra la Serranía de Perijá?",
 			Difficulty:  2,
@@ -19857,7 +19857,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DEMOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "GRUPOS ÉTNICOS",
 			Text:        "¿Cuáles son los tres grupos indígenas mencionados explícitamente como parte de la diversidad étnica de la región Caribe?",
 			Difficulty:  2,
@@ -20198,7 +20198,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "UBICACIÓN Y LÍMITES",
 			Text:        "¿En qué parte del país se encuentra ubicada la Región Andina y cuántas cordilleras la componen?",
 			Difficulty:  2,
@@ -20229,7 +20229,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "¿Cuáles son los ríos importantes mencionados que nacen en la Región Andina?",
 			Difficulty:  2,
@@ -20260,7 +20260,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Qué fenómeno geológico dio origen a las cordilleras de la Región Andina?",
 			Difficulty:  2,
@@ -20291,7 +20291,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FAUNA",
 			Text:        "¿Cuántas especies de aves se encuentran registradas en la Región Andina?",
 			Difficulty:  2,
@@ -20322,7 +20322,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FLORA",
 			Text:        "¿Qué porcentaje aproximado de las especies de plantas en la Región Andina son endémicas?",
 			Difficulty:  2,
@@ -20353,7 +20353,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Cuál es la función ecológica principal de los páramos según el texto?",
 			Difficulty:  2,
@@ -20384,7 +20384,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DEMOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "POBLACIÓN",
 			Text:        "¿Cuántos habitantes tiene aproximadamente la Región Andina y qué porcentaje del total nacional representa?",
 			Difficulty:  2,
@@ -20415,7 +20415,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "DIVISION POLITICA",
 			Text:        "Según el mapa de departamentos y capitales, ¿cuál es la capital del departamento de Norte de Santander?",
 			Difficulty:  2,
@@ -20446,7 +20446,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ECONOMÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "AGRICULTURA",
 			Text:        "¿Cuáles son algunos de los cultivos agrícolas más comunes mencionados para la Región Andina?",
 			Difficulty:  2,
@@ -20477,7 +20477,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Qué cañones se mencionan como ejemplos de formaciones geológicas en la región?",
 			Difficulty:  2,
@@ -20508,7 +20508,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FRONTERAS",
 			Text:        "¿Con qué países limita Colombia al oriente, según su ubicación geográfica?",
 			Difficulty:  2,
@@ -20539,7 +20539,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "REGIÓN AMAZÓNICA",
 			Text:        "¿Qué porcentaje aproximado del territorio nacional de Colombia representa la Región Amazónica?",
 			Difficulty:  2,
@@ -20570,7 +20570,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Qué nombre reciben las amplias llanuras formadas por los ríos de la región amazónica que se inundan durante la temporada de lluvias?",
 			Difficulty:  2,
@@ -20601,7 +20601,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FAUNA",
 			Text:        "¿Cuál es considerado el pez de agua dulce más grande del mundo que habita en los ríos de la región amazónica?",
 			Difficulty:  2,
@@ -20632,7 +20632,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FLORA",
 			Text:        "¿Cuáles son algunas de las plantas medicinales destacadas que se encuentran en la región amazónica?",
 			Difficulty:  2,
@@ -20663,7 +20663,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA POLÍTICA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "DEPARTAMENTOS",
 			Text:        "¿Cuál es la capital del departamento del Vaupés?",
 			Difficulty:  2,
@@ -20694,7 +20694,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DEMOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "ETNIAS",
 			Text:        "¿Cuáles son algunos de los grupos étnicos indígenas representativos que habitan la región amazónica?",
 			Difficulty:  2,
@@ -20725,7 +20725,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "HIDROGRAFÍA",
 			Text:        "¿Cuáles son los principales afluentes del río Amazonas mencionados como vitales para la región?",
 			Difficulty:  2,
@@ -20756,7 +20756,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "BIODIVERSIDAD",
+			Category:    "GEOGRAFIA",
 			SubCategory: "FLORA",
 			Text:        "¿Qué característica define a la vegetación de la selva ecuatorial húmeda en la Amazonía?",
 			Difficulty:  2,
@@ -20787,7 +20787,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "GEOGRAFÍA",
+			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
 			Text:        "¿Qué serranía se destaca en la región amazónica como un ejemplo de cadena montañosa más baja comparada con los Andes?",
 			Difficulty:  2,
@@ -20818,7 +20818,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHO CONSTITUCIONAL",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PROTECCIÓN",
 			Text:        "¿Cuál es el mecanismo judicial idóneo para proteger de manera inmediata los derechos fundamentales cuando estos son amenazados por el Estado o un tercero?",
 			Difficulty:  2,
@@ -20849,7 +20849,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHO CONSTITUCIONAL",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PROTECCIÓN",
 			Text:        "¿Qué cantidad mínima de personas se requiere para ejercer una Acción de Grupo con el fin de reparar un daño causado?",
 			Difficulty:  2,
@@ -20880,7 +20880,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHO CONSTITUCIONAL",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PROTECCIÓN",
 			Text:        "¿Cuál es el término establecido por la Ley 1755 de 2015 para que la administración resuelva consultas en relación con las materias a su cargo mediante el derecho de petición?",
 			Difficulty:  2,
@@ -20911,7 +20911,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "PARTICIPACIÓN CIUDADANA",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PARTICIPACIÓN",
 			Text:        "¿Quién es el encargado de convocar al pueblo en un plebiscito para apoyar o rechazar una decisión del Ejecutivo?",
 			Difficulty:  2,
@@ -20942,7 +20942,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "PARTICIPACIÓN CIUDADANA",
+			Category:    "CONSTITUCION",
 			SubCategory: "MECANISMOS DE PARTICIPACIÓN",
 			Text:        "¿Qué porcentaje de firmas se requiere para sustentar la solicitud de revocatoria del mandato de un gobernador o alcalde?",
 			Difficulty:  2,
@@ -20973,7 +20973,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA LEGISLATIVA",
 			Text:        "¿Qué corporación pública representa a la Rama Legislativa y tiene la función de reformar la Constitución y hacer las leyes?",
 			Difficulty:  2,
@@ -21004,7 +21004,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ORGANISMOS DE CONTROL",
 			Text:        "¿Cuál es el máximo órgano de control fiscal del Estado colombiano encargado de vigilar el buen uso de los recursos públicos?",
 			Difficulty:  2,
@@ -21035,7 +21035,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "ÓRGANOS AUTÓNOMOS",
 			Text:        "¿Qué entidad tiene como funciones básicas regular la moneda, los cambios internacionales y el crédito?",
 			Difficulty:  2,
@@ -21066,7 +21066,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA JUDICIAL",
 			Text:        "¿Qué acción constitucional tutela la libertad personal cuando alguien es privado de la libertad con violación de garantías?",
 			Difficulty:  2,
@@ -21097,7 +21097,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ESTRUCTURA DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "RAMA EJECUTIVA",
 			Text:        "¿Quién simboliza la unidad nacional y actúa como Jefe de Estado, Jefe de Gobierno y suprema autoridad administrativa?",
 			Difficulty:  2,
@@ -21128,7 +21128,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "CONSTITUCIÓN",
+			Category:    "CONSTITUCION",
 			SubCategory: "PRINCIPIOS FUNDAMENTALES",
 			Text:        "¿Qué significa que Colombia sea un Estado social de derecho en relación con los derechos humanos?",
 			Difficulty:  2,
@@ -21159,7 +21159,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "ORGANIZACIÓN DEL ESTADO",
+			Category:    "CONSTITUCION",
 			SubCategory: "DESCENTRALIZACIÓN",
 			Text:        "¿En qué consiste la descentralización por colaboración según el texto?",
 			Difficulty:  2,
@@ -21190,7 +21190,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "CONSTITUCIÓN",
+			Category:    "CONSTITUCION",
 			SubCategory: "SOBERANÍA",
 			Text:        "¿A través de qué mecanismo se expresa la autoridad que reside en el pueblo según la soberanía popular?",
 			Difficulty:  2,
@@ -21221,7 +21221,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "CONSTITUCIÓN",
+			Category:    "CONSTITUCION",
 			SubCategory: "JERARQUÍA NORMATIVA",
 			Text:        "¿Qué ocurre en caso de incompatibilidad entre la Constitución y otras normas jurídicas?",
 			Difficulty:  2,
@@ -21252,7 +21252,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHOS",
+			Category:    "CONSTITUCION",
 			SubCategory: "DERECHOS FUNDAMENTALES",
 			Text:        "¿Cuál es la posición del ordenamiento jurídico colombiano frente a la pena de muerte?",
 			Difficulty:  2,
@@ -21283,7 +21283,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHOS",
+			Category:    "CONSTITUCION",
 			SubCategory: "IGUALDAD",
 			Text:        "¿A qué hace referencia la dimensión formal del derecho a la igualdad?",
 			Difficulty:  2,
@@ -21314,7 +21314,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHOS",
+			Category:    "CONSTITUCION",
 			SubCategory: "LIBERTADES INDIVIDUALES",
 			Text:        "¿Qué protege el derecho al libre desarrollo de la personalidad?",
 			Difficulty:  2,
@@ -21345,7 +21345,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHOS",
+			Category:    "CONSTITUCION",
 			SubCategory: "LIBERTAD DE CONCIENCIA",
 			Text:        "¿Cuál es una de las garantías establecidas para la libertad de conciencia en Colombia?",
 			Difficulty:  2,
@@ -21376,7 +21376,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHOS",
+			Category:    "CONSTITUCION",
 			SubCategory: "LIBERTAD DE LOCOMOCIÓN",
 			Text:        "¿Cuándo se considera vulnerado el derecho a la libertad de locomoción?",
 			Difficulty:  2,
@@ -21407,7 +21407,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHOS",
+			Category:    "CONSTITUCION",
 			SubCategory: "DERECHO AL TRABAJO",
 			Text:        "¿Cómo define el texto el derecho al trabajo en relación con la elección de la actividad?",
 			Difficulty:  2,
@@ -21438,7 +21438,7 @@ func seedQuestions() {
 		},
 	
 		{
-			Category:    "DERECHOS",
+			Category:    "CONSTITUCION",
 			SubCategory: "ASOCIACIÓN SINDICAL",
 			Text:        "¿Qué establece el artículo 39 de la Constitución respecto a la constitución de sindicatos?",
 			Difficulty:  2,
