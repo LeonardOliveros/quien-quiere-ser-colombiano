@@ -121,6 +121,11 @@ func startGame(c *gin.Context) {
 		return
 	}
 
+	// Complete any existing active or paused sessions for this user and mode
+	db.Model(&GameSession{}).
+		Where("user_id = ? AND mode = ? AND status IN ?", userID, config.Mode, []string{"ACTIVE", "PAUSED"}).
+		Update("status", "COMPLETED")
+
 	// Convert categories slice to comma-separated string
 	categoriesStr := ""
 
@@ -455,9 +460,9 @@ func getAnyPausedGame(c *gin.Context) {
 		return
 	}
 
-	// Clean up old paused games (keep only the most recent one)
+	// Clean up old active/paused games (keep only the most recent one)
 	var oldSessions []GameSession
-	db.Where("user_id = ? AND status = ?", userID, "PAUSED").
+	db.Where("user_id = ? AND status IN ?", userID, []string{"PAUSED", "ACTIVE"}).
 		Order("updated_at DESC").
 		Offset(1). // Skip the most recent one
 		Find(&oldSessions)
@@ -466,14 +471,14 @@ func getAnyPausedGame(c *gin.Context) {
 		db.Model(&oldSession).Update("status", "COMPLETED")
 	}
 
-	// Find the most recent paused game for this user (any mode)
+	// Find the most recent active or paused game for this user (any mode)
 	var session GameSession
-	err := db.Where("user_id = ? AND status = ?", userID, "PAUSED").
+	err := db.Where("user_id = ? AND status IN ?", userID, []string{"PAUSED", "ACTIVE"}).
 		Order("updated_at DESC").
 		First(&session).Error
 
 	if err != nil {
-		// No paused game found
+		// No active or paused game found
 		c.JSON(http.StatusNotFound, gin.H{"error": "No paused game found"})
 		return
 	}
@@ -509,6 +514,7 @@ func getAnyPausedGame(c *gin.Context) {
 		"score":              session.Score,
 		"time_limit":         session.TimeLimit,
 		"start_time":         session.StartTime,
+		"status":             session.Status,
 	})
 }
 
@@ -522,9 +528,9 @@ func getPausedGame(c *gin.Context) {
 		return
 	}
 
-	// Clean up old paused games for this mode (keep only the most recent one)
+	// Clean up old active/paused games for this mode (keep only the most recent one)
 	var oldSessions []GameSession
-	db.Where("user_id = ? AND mode = ? AND status = ?", userID, mode, "PAUSED").
+	db.Where("user_id = ? AND mode = ? AND status IN ?", userID, mode, []string{"PAUSED", "ACTIVE"}).
 		Order("updated_at DESC").
 		Offset(1). // Skip the most recent one
 		Find(&oldSessions)
@@ -533,14 +539,14 @@ func getPausedGame(c *gin.Context) {
 		db.Model(&oldSession).Update("status", "COMPLETED")
 	}
 
-	// Find the most recent paused game for this user and mode
+	// Find the most recent active or paused game for this user and mode
 	var session GameSession
-	err := db.Where("user_id = ? AND mode = ? AND status = ?", userID, mode, "PAUSED").
+	err := db.Where("user_id = ? AND mode = ? AND status IN ?", userID, mode, []string{"PAUSED", "ACTIVE"}).
 		Order("updated_at DESC").
 		First(&session).Error
 
 	if err != nil {
-		// No paused game found
+		// No active or paused game found
 		c.JSON(http.StatusNotFound, gin.H{"error": "No paused game found"})
 		return
 	}
@@ -576,6 +582,7 @@ func getPausedGame(c *gin.Context) {
 		"score":              session.Score,
 		"time_limit":         session.TimeLimit,
 		"start_time":         session.StartTime,
+		"status":             session.Status,
 	})
 }
 
