@@ -1,20 +1,30 @@
-/* Quiz App Styles - Modern Purple & Teal Theme */
+/* Quiz App Styles - Neon Arcade Theme 🎮 */
 
 :root {
-    /* Main Color Palette */
-    --primary-color: #421F73;      /* Deep Purple - Main background */
-    --secondary-color: #331859;     /* Darker Purple - Secondary background */
-    --accent-color: #5550F2;        /* Bright Blue/Purple - Accents and highlights */
-    --accent-teal: #2BD9B9;         /* Bright Teal - Success and accents */
-    --neutral-color: #8A8EA6;       /* Gray - Text and borders */
+    /* 🎨 Neon Arcade Color Palette */
+    --bg-main: #121212;            /* Gris carbón muy oscuro (fondo principal) */
+    --bg-card: #1E1E24;            /* Gris acero (tarjetas/paneles) */
+    --neon-yellow: #FFEA00;        /* Amarillo neón (acento primario) */
+    --neon-blue: #2979FF;          /* Azul eléctrico (acento secundario) */
+    --neon-red: #FF1744;           /* Rojo neón intenso (acento terciario) */
+    --text-main: #FAFAFA;          /* Blanco humo (texto principal) */
 
-    /* Legacy colors for compatibility */
-    --gold-color: #2BD9B9;          /* Replaced with Teal */
-    --success-color: #2BD9B9;       /* Teal for success */
-    --danger-color: #dc3545;        /* Keep red for errors */
-    --warning-color: #5550F2;       /* Bright purple for warnings */
-    --text-light: #ffffff;
-    --text-dark: #333333;
+    /* Colores con transparencias para glows */
+    --glow-yellow: rgba(255, 234, 0, 0.6);
+    --glow-blue: rgba(41, 121, 255, 0.6);
+    --glow-red: rgba(255, 23, 68, 0.6);
+
+    /* Legacy mapping para compatibilidad */
+    --primary-color: var(--bg-main);
+    --secondary-color: var(--bg-card);
+    --accent-color: var(--neon-blue);
+    --accent-teal: var(--neon-yellow);
+    --gold-color: var(--neon-yellow);
+    --success-color: #00E676;      /* Verde neón para éxito */
+    --danger-color: var(--neon-red);
+    --warning-color: var(--neon-yellow);
+    --text-light: var(--text-main);
+    --text-dark: #121212;
 }
 
 * {
@@ -25,8 +35,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: var(--text-light);
+    background: var(--bg-main);
+    color: var(--text-main);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -55,15 +65,16 @@ h1.display-3 {
 }
 
 .btn-game {
-    background: linear-gradient(145deg, var(--accent-color), var(--secondary-color));
-    color: var(--text-light);
-    border: 2px solid var(--gold-color);
+    background: var(--bg-card);
+    color: var(--text-main);
+    border: 2px solid var(--neon-yellow);
     padding: 20px 30px;
     border-radius: 15px;
     transition: all 0.3s ease;
     min-width: 250px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 10px var(--glow-yellow), inset 0 0 10px rgba(255, 234, 0, 0.1);
 }
 
 .btn-game:before {
@@ -73,17 +84,20 @@ h1.display-3 {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, var(--gold-color), transparent);
+    background: linear-gradient(45deg, var(--neon-yellow), var(--neon-blue));
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 15px;
+    filter: blur(8px);
 }
 
 .btn-game:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
-    color: var(--gold-color);
+    box-shadow: 0 0 20px var(--glow-yellow), 0 0 40px var(--glow-yellow), 0 10px 50px rgba(255, 234, 0, 0.4);
+    color: var(--bg-main);
+    background: var(--neon-yellow);
+    border-color: var(--neon-yellow);
 }
 
 .btn-game:hover:before {
@@ -104,16 +118,18 @@ h1.display-3 {
 
 /* Game Screen */
 .game-screen {
-    background: radial-gradient(ellipse at center, var(--secondary-color) 0%, var(--primary-color) 100%);
+    background: var(--bg-main);
     min-height: 100vh;
     padding: 20px;
 }
 
 .game-header {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--bg-card);
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 30px;
+    border: 1px solid rgba(41, 121, 255, 0.3);
+    box-shadow: 0 0 15px rgba(41, 121, 255, 0.2);
 }
 
 .timer-display {
@@ -135,32 +151,39 @@ h1.display-3 {
 
 /* Question Box */
 .question-box {
-    background: linear-gradient(145deg, var(--accent-color), var(--secondary-color));
-    border: 3px solid var(--gold-color);
+    background: var(--bg-card);
+    border: 2px solid var(--neon-blue);
     border-radius: 20px;
     padding: 40px;
     margin: 30px auto;
     max-width: 900px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px var(--glow-blue), 0 0 40px var(--glow-blue), 0 15px 40px rgba(0, 0, 0, 0.8);
     position: relative;
 }
 
 .question-box::before {
     content: '';
     position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: linear-gradient(45deg, var(--gold-color), transparent, var(--gold-color));
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, var(--neon-yellow), var(--neon-blue), var(--neon-yellow));
     z-index: -1;
     border-radius: 20px;
-    animation: glow 2s ease-in-out infinite;
+    animation: neonGlow 3s ease-in-out infinite;
+    filter: blur(10px);
 }
 
-@keyframes glow {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
+@keyframes neonGlow {
+    0%, 100% {
+        opacity: 0.6;
+        filter: blur(10px) brightness(1);
+    }
+    50% {
+        opacity: 1;
+        filter: blur(15px) brightness(1.5);
+    }
 }
 
 .question-text {
@@ -179,9 +202,9 @@ h1.display-3 {
 
 .answer-btn {
     width: 100%;
-    background: linear-gradient(145deg, var(--secondary-color), var(--primary-color));
-    border: 2px solid var(--accent-teal);
-    color: var(--text-light);
+    background: var(--bg-card);
+    border: 2px solid var(--neon-blue);
+    color: var(--text-main);
     padding: 20px;
     border-radius: 15px;
     font-size: 1.1rem;
@@ -191,20 +214,22 @@ h1.display-3 {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 10px var(--glow-blue);
 }
 
 .answer-btn:hover {
-    background: linear-gradient(145deg, var(--accent-color), var(--secondary-color));
+    background: rgba(41, 121, 255, 0.1);
     transform: translateX(5px);
-    box-shadow: 0 5px 20px rgba(43, 217, 185, 0.4);
+    box-shadow: 0 0 15px var(--glow-blue), 0 0 30px var(--glow-blue);
+    border-color: var(--neon-yellow);
 }
 
 .answer-letter {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: var(--accent-teal);
-    color: var(--primary-color);
+    background: var(--neon-yellow);
+    color: var(--bg-main);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -212,6 +237,7 @@ h1.display-3 {
     font-weight: bold;
     margin-right: 20px;
     font-size: 1.2rem;
+    box-shadow: 0 0 10px var(--glow-yellow);
 }
 
 .answer-text {
@@ -220,14 +246,17 @@ h1.display-3 {
 }
 
 .answer-btn.correct {
-    background: linear-gradient(145deg, #28a745, #218838);
+    background: rgba(0, 230, 118, 0.2);
+    border-color: #00E676;
     animation: correctPulse 1.5s ease-in-out 3;
-    box-shadow: 0 0 30px rgba(40, 167, 69, 0.8);
+    box-shadow: 0 0 30px rgba(0, 230, 118, 0.8), 0 0 60px rgba(0, 230, 118, 0.4);
 }
 
 .answer-btn.incorrect {
-    background: linear-gradient(145deg, #dc3545, #c82333);
+    background: rgba(255, 23, 68, 0.2);
+    border-color: var(--neon-red);
     animation: shake 0.5s ease;
+    box-shadow: 0 0 30px var(--glow-red);
 }
 
 .answer-btn.disabled {
@@ -315,30 +344,42 @@ h1.display-3 {
 
 /* Results Screen */
 .results-screen {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: var(--bg-main);
     min-height: 100vh;
 }
 
 .result-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid var(--gold-color);
+    background: var(--bg-card);
+    border: 2px solid var(--neon-yellow);
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 20px;
     text-align: center;
+    box-shadow: 0 0 20px var(--glow-yellow);
 }
 
 .score-circle {
     width: 200px;
     height: 200px;
-    border: 10px solid var(--gold-color);
+    border: 10px solid var(--neon-yellow);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px auto;
     position: relative;
-    background: radial-gradient(circle, var(--accent-color), var(--secondary-color));
+    background: var(--bg-card);
+    box-shadow: 0 0 30px var(--glow-yellow), 0 0 60px var(--glow-yellow), inset 0 0 20px rgba(255, 234, 0, 0.1);
+    animation: scorePulse 2s ease-in-out infinite;
+}
+
+@keyframes scorePulse {
+    0%, 100% {
+        box-shadow: 0 0 30px var(--glow-yellow), 0 0 60px var(--glow-yellow), inset 0 0 20px rgba(255, 234, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 40px var(--glow-yellow), 0 0 80px var(--glow-yellow), inset 0 0 30px rgba(255, 234, 0, 0.2);
+    }
 }
 
 .score-big {
@@ -461,16 +502,18 @@ h1.display-3 {
 
 /* Modal Styles */
 .modal-content {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    border: 2px solid var(--gold-color);
+    background: var(--bg-card);
+    border: 2px solid var(--neon-blue);
+    box-shadow: 0 0 30px var(--glow-blue), 0 0 60px var(--glow-blue);
 }
 
 .modal-header {
-    border-bottom: 1px solid var(--gold-color);
+    border-bottom: 1px solid var(--neon-yellow);
 }
 
 .modal-title {
-    color: var(--gold-color);
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--glow-yellow);
 }
 
 /* Animations */
@@ -512,18 +555,21 @@ h1.display-3 {
 
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--primary-color);
+    background: var(--bg-main);
+    border-left: 1px solid rgba(41, 121, 255, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--accent-teal);
-    border-radius: 5px;
+    background: var(--neon-blue);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--glow-blue);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #3FFFDD;
+    background: var(--neon-yellow);
+    box-shadow: 0 0 15px var(--glow-yellow);
 }
