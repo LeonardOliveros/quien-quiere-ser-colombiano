@@ -428,6 +428,71 @@ func pauseGame(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Game paused successfully"})
 }
 
+func getAnyPausedGame(c *gin.Context) {
+	// Get user ID from context
+	userID, exists := c.Get("userID")
+	if !exists {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "User not authenticated"})
+		return
+	}
+
+	// Clean up old paused games (keep only the most recent one)
+	var oldSessions []GameSession
+	db.Where("user_id = ? AND status = ?", userID, "PAUSED").
+		Order("updated_at DESC").
+		Offset(1). // Skip the most recent one
+		Find(&oldSessions)
+
+	for _, oldSession := range oldSessions {
+		db.Model(&oldSession).Update("status", "COMPLETED")
+	}
+
+	// Find the most recent paused game for this user (any mode)
+	var session GameSession
+	err := db.Where("user_id = ? AND status = ?", userID, "PAUSED").
+		Order("updated_at DESC").
+		First(&session).Error
+
+	if err != nil {
+		// No paused game found
+		c.JSON(http.StatusNotFound, gin.H{"error": "No paused game found"})
+		return
+	}
+
+	// Get progress information
+	var answeredCount int64
+	db.Model(&GameAnswer{}).Where("game_session_id = ?", session.ID).Count(&answeredCount)
+
+	// Count incorrect answers
+	var incorrectCount int64
+	db.Model(&GameAnswer{}).Where("game_session_id = ? AND is_correct = ?", session.ID, false).Count(&incorrectCount)
+
+	// Count flagged questions
+	var flaggedCount int64
+	db.Model(&GameAnswer{}).Where("game_session_id = ? AND is_flagged = ?", session.ID, true).Count(&flaggedCount)
+
+	// Get flagged question IDs
+	var flaggedIDs []uint
+	db.Model(&GameAnswer{}).
+		Where("game_session_id = ? AND is_flagged = ?", session.ID, true).
+		Pluck("question_id", &flaggedIDs)
+
+	c.JSON(http.StatusOK, gin.H{
+		"session_id":         session.ID,
+		"mode":               session.Mode,
+		"categories":         session.Categories,
+		"total_questions":    session.TotalQuestions,
+		"answered_questions": answeredCount,
+		"correct_answers":    session.CorrectAnswers,
+		"incorrect_answers":  incorrectCount,
+		"flagged_count":      flaggedCount,
+		"flagged_questions":  flaggedIDs,
+		"score":              session.Score,
+		"time_limit":         session.TimeLimit,
+		"start_time":         session.StartTime,
+	})
+}
+
 func getPausedGame(c *gin.Context) {
 	mode := c.Param("mode")
 

@@ -102,6 +102,7 @@ func setupRoutes(r *gin.Engine) {
 			protected.POST("/game/:sessionId/end", endGame)
 			protected.POST("/game/:sessionId/pause", pauseGame)
 			protected.GET("/game/paused/:mode", getPausedGame)
+			protected.GET("/game/paused", getAnyPausedGame)
 
 			// User statistics
 			protected.GET("/user/:userId/stats", getUserStats)

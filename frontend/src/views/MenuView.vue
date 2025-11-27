@@ -6,6 +6,16 @@
       </h1>
 
       <div class="game-modes">
+        <!-- Resume Button (shown only when there's a paused game) -->
+        <button v-if="hasPausedGame" class="btn-game btn-resume" @click="resumePausedGame">
+          <i class="fas fa-play-circle"></i>
+          <div>
+            <strong>Reanudar Partida</strong>
+            <br>
+            <small>Continúa donde lo dejaste</small>
+          </div>
+        </button>
+
         <button class="btn-game" @click="startGame('practice')">
           <i class="fas fa-book-open"></i>
           <div>
@@ -102,44 +112,50 @@ const statsModalOpen = ref(false)
 const historyModalOpen = ref(false)
 const recommendationsModalOpen = ref(false)
 const categoryModalOpen = ref(false)
+const hasPausedGame = ref(false)
+const pausedGameData = ref<any>(null)
+
+// Check for paused game on mount
+async function checkForPausedGame() {
+  try {
+    const data = await api.getAnyPausedGame()
+    hasPausedGame.value = true
+    pausedGameData.value = data
+  } catch (error) {
+    hasPausedGame.value = false
+    pausedGameData.value = null
+  }
+}
+
+// Call on component mount
+checkForPausedGame()
 
 function logout() {
   authStore.logout()
 }
 
 async function startGame(mode: string) {
-  // Check for paused game first
-  const modeKey = mode === 'practice' ? 'PRACTICE' : mode === 'timed' ? 'TIMED' : mode === 'weak' ? 'WEAK_AREAS' : mode.toUpperCase()
-  const pausedCheck = await gameStore.checkPausedGame(modeKey)
-
-  if (pausedCheck.hasPausedGame) {
-    const pausedData = pausedCheck.pausedGameData
-    const answeredQuestions = pausedData.answered_questions || 0
-    const totalQuestions = pausedData.total_questions || 0
-
+  // Check if there's a paused game
+  if (hasPausedGame.value && pausedGameData.value) {
     const choice = confirm(
-      `Tienes una partida pausada (${answeredQuestions}/${totalQuestions} preguntas respondidas).\n\n` +
-      `¿Deseas reanudarla?\n\n` +
-      `Aceptar: Reanudar partida\n` +
-      `Cancelar: Nueva partida`
+      'Tienes una partida pausada.\n\n' +
+      '¿Deseas cancelarla para iniciar una nueva?\n\n' +
+      'Aceptar: Cancelar partida pausada\n' +
+      'Cancelar: Mantener partida pausada'
     )
 
-    if (choice) {
-      // Resume paused game
-      const resumeResult = await gameStore.resumeGame(pausedData)
-      if (resumeResult.success) {
-        router.push('/game')
-      } else {
-        alert(resumeResult.message || 'Error al reanudar la partida')
-      }
+    if (!choice) {
+      // User wants to keep the paused game
       return
-    } else {
-      // User chose to start a new game - end the paused one first
-      try {
-        await api.endGame(pausedData.session_id.toString())
-      } catch (error) {
-        console.error('Error ending paused game:', error)
-      }
+    }
+
+    // User wants to cancel the paused game - end it
+    try {
+      await api.endGame(pausedGameData.value.session_id.toString())
+      hasPausedGame.value = false
+      pausedGameData.value = null
+    } catch (error) {
+      console.error('Error ending paused game:', error)
     }
   }
 
@@ -180,6 +196,17 @@ async function startGame(mode: string) {
     router.push('/game')
   } else {
     alert(result.message || 'Error al iniciar el juego')
+  }
+}
+
+async function resumePausedGame() {
+  if (!pausedGameData.value) return
+
+  const resumeResult = await gameStore.resumeGame(pausedGameData.value)
+  if (resumeResult.success) {
+    router.push('/game')
+  } else {
+    alert(resumeResult.message || 'Error al reanudar la partida')
   }
 }
 
@@ -299,6 +326,26 @@ async function showQuestionCount() {
   font-size: 0.9rem;
   opacity: 0.9;
   margin-top: 5px;
+}
+
+.btn-resume {
+  background: linear-gradient(145deg, var(--accent-teal), #1fa89a);
+  border-color: var(--accent-teal);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.btn-resume:hover {
+  background: linear-gradient(145deg, #3FFFDD, var(--accent-teal));
+  box-shadow: 0 10px 30px rgba(43, 217, 185, 0.5);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(43, 217, 185, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(43, 217, 185, 0);
+  }
 }
 
 .btn-outline-gold {

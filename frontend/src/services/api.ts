@@ -141,6 +141,11 @@ class ApiService {
     return response.data
   }
 
+  async getAnyPausedGame(): Promise<any> {
+    const response = await this.axiosInstance.get('/game/paused')
+    return response.data
+  }
+
   async getResults(sessionId: string): Promise<GameResults> {
     const response = await this.axiosInstance.get<GameResults>(`/game/${sessionId}/results`)
     return response.data

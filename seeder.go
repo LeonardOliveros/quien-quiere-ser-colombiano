@@ -2363,12 +2363,12 @@ func seedQuestions() {
 				},
 				{
 					Text:      "Florencia",
-					IsCorrect: false,
+					IsCorrect: true,
 					Order:     2,
 				},
 				{
 					Text:      "Mocoa",
-					IsCorrect: true,
+					IsCorrect: false,
 					Order:     3,
 				},
 				{
