@@ -70,6 +70,7 @@ func initDB() {
 		&User{},
 		&GameSession{},
 		&GameAnswer{},
+		&QuestionHistory{},
 		&StudyRecommendation{},
 	)
 	if err != nil {

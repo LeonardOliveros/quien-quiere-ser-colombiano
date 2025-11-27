@@ -225,6 +225,13 @@ func getNextQuestion(c *gin.Context) {
 		return
 	}
 
+	// Register this question in the history to prevent it from being used again in active sessions
+	history := QuestionHistory{
+		GameSessionID: uint(sessionID),
+		QuestionID:    questionID,
+	}
+	db.Create(&history)
+
 	// Randomize the order of choices to prevent visual memorization
 	mrand.Seed(time.Now().UnixNano())
 	mrand.Shuffle(len(question.Choices), func(i, j int) {
@@ -743,6 +750,9 @@ func resetUserStats(c *gin.Context) {
 	// Delete all game answers for user's sessions
 	db.Exec("DELETE FROM game_answers WHERE game_session_id IN (SELECT id FROM game_sessions WHERE user_id = ?)", userID)
 
+	// Delete all question history for user's sessions
+	db.Exec("DELETE FROM question_histories WHERE game_session_id IN (SELECT id FROM game_sessions WHERE user_id = ?)", userID)
+
 	// Delete all game sessions for the user
 	db.Where("user_id = ?", userID).Delete(&GameSession{})
 
@@ -986,6 +996,14 @@ func splitString(s string, sep string) []string {
 func generateQuestionSequence(userID uint, mode string, categoriesStr string, questionCount int) string {
 	var allQuestionIDs []uint
 
+	// Get IDs of questions already used by this user in active sessions
+	var usedQuestionIDs []uint
+	db.Table("question_histories").
+		Select("DISTINCT question_histories.question_id").
+		Joins("JOIN game_sessions ON game_sessions.id = question_histories.game_session_id").
+		Where("game_sessions.user_id = ? AND game_sessions.status = ?", userID, "ACTIVE").
+		Pluck("question_id", &usedQuestionIDs)
+
 	// Time Trial mode: 20 random questions from each of the 4 main categories
 	if mode == "TIMED" {
 		mainCategories := []string{"CONSTITUCION", "HISTORIA", "GEOGRAFIA", "CULTURA"}
@@ -993,9 +1011,14 @@ func generateQuestionSequence(userID uint, mode string, categoriesStr string, qu
 
 		for _, category := range mainCategories {
 			var categoryQuestionIDs []uint
-			db.Model(&Question{}).
-				Where("category = ?", category).
-				Order("RANDOM()").
+			query := db.Model(&Question{}).Where("category = ?", category)
+
+			// Exclude already used questions
+			if len(usedQuestionIDs) > 0 {
+				query = query.Where("id NOT IN ?", usedQuestionIDs)
+			}
+
+			query.Order("RANDOM()").
 				Limit(questionsPerCategory).
 				Pluck("id", &categoryQuestionIDs)
 
@@ -1022,6 +1045,11 @@ func generateQuestionSequence(userID uint, mode string, categoriesStr string, qu
 			if len(weakCategories) > 0 {
 				query = query.Where("category IN ?", weakCategories)
 			}
+		}
+
+		// Exclude already used questions
+		if len(usedQuestionIDs) > 0 {
+			query = query.Where("id NOT IN ?", usedQuestionIDs)
 		}
 
 		// Get all matching question IDs, ordered by ID for consistency

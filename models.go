@@ -71,6 +71,14 @@ type GameAnswer struct {
 	AnsweredAt    time.Time `json:"answered_at"`
 }
 
+// QuestionHistory represents the history of questions used in a game session
+type QuestionHistory struct {
+	ID            uint      `gorm:"primaryKey" json:"id"`
+	GameSessionID uint      `gorm:"index" json:"game_session_id"`
+	QuestionID    uint      `gorm:"index" json:"question_id"`
+	CreatedAt     time.Time `json:"created_at"`
+}
+
 // StudyRecommendation represents study suggestions based on performance
 type StudyRecommendation struct {
 	ID          uint   `gorm:"primaryKey" json:"id"`
