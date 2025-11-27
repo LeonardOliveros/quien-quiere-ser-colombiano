@@ -136,21 +136,30 @@ func startGame(c *gin.Context) {
 		}
 	}
 
-	// Pre-generate the question sequence
-	questionSequence := generateQuestionSequence(userID.(uint), config.Mode, categoriesStr, config.QuestionCount)
-	if questionSequence == "" {
+	// Verify that questions are available for the selected criteria
+	query := db.Model(&Question{})
+	if categoriesStr != "" {
+		categories := splitString(categoriesStr, ",")
+		if len(categories) > 0 {
+			query = query.Where("category IN ?", categories)
+		}
+	}
+	var availableCount int64
+	query.Count(&availableCount)
+
+	if availableCount == 0 {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "No questions available for the selected criteria"})
 		return
 	}
 
 	session := GameSession{
-		UserID:        userID.(uint),
-		Mode:          config.Mode,
-		Categories:    categoriesStr,
-		QuestionSequence: questionSequence,
-		Status:        "ACTIVE",
-		StartTime:     time.Now(),
-		TimeLimit:     config.TimeLimit,
+		UserID:         userID.(uint),
+		Mode:           config.Mode,
+		Categories:     categoriesStr,
+		QuestionSequence: "", // No longer needed - questions are selected randomly
+		Status:         "ACTIVE",
+		StartTime:      time.Now(),
+		TimeLimit:      config.TimeLimit,
 		TotalQuestions: config.QuestionCount,
 	}
 
@@ -180,12 +189,11 @@ func getNextQuestion(c *gin.Context) {
 		db.Model(&session).Update("status", "ACTIVE")
 	}
 
-	// Parse the pre-generated question sequence
-	questionIDs := parseQuestionSequence(session.QuestionSequence)
-	if len(questionIDs) == 0 {
-		c.JSON(http.StatusNotFound, gin.H{"error": "No questions available"})
-		return
-	}
+	// Get IDs of questions already presented in this session (from history)
+	var usedQuestionIDs []uint
+	db.Model(&QuestionHistory{}).
+		Where("game_session_id = ?", sessionID).
+		Pluck("question_id", &usedQuestionIDs)
 
 	// Get answered question IDs
 	var answeredIDs []uint
@@ -194,26 +202,30 @@ func getNextQuestion(c *gin.Context) {
 		Pluck("question_id", &answeredIDs)
 
 	// Check if we've reached the maximum number of questions
-	if len(answeredIDs) >= session.TotalQuestions || len(answeredIDs) >= len(questionIDs) {
+	if len(answeredIDs) >= session.TotalQuestions {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
 		return
 	}
 
-	// Find the next unanswered question in the sequence
-	var questionID uint
-	answeredMap := make(map[uint]bool)
-	for _, id := range answeredIDs {
-		answeredMap[id] = true
-	}
+	// Build query to get a random question based on session configuration
+	query := db.Model(&Question{})
 
-	for _, qid := range questionIDs {
-		if !answeredMap[qid] {
-			questionID = qid
-			break
+	// Apply category filter if exists
+	if session.Categories != "" {
+		categories := splitString(session.Categories, ",")
+		if len(categories) > 0 {
+			query = query.Where("category IN ?", categories)
 		}
 	}
 
-	if questionID == 0 {
+	// Exclude questions already used in this session
+	if len(usedQuestionIDs) > 0 {
+		query = query.Where("id NOT IN ?", usedQuestionIDs)
+	}
+
+	// Get a random question
+	var questionID uint
+	if err := query.Order("RANDOM()").Limit(1).Pluck("id", &questionID).Error; err != nil || questionID == 0 {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
 		return
 	}
