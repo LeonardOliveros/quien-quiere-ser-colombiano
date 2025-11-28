@@ -329,22 +329,50 @@ async function showQuestionCount() {
 }
 
 .btn-resume {
-  background: linear-gradient(145deg, var(--accent-teal), #1fa89a);
-  border-color: var(--accent-teal);
-  animation: pulse 2s ease-in-out infinite;
+  background: linear-gradient(145deg, #CAFF00, #90EE02);
+  border: 3px solid var(--neon-yellow);
+  color: #1a1a1a;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  animation: resumePulse 2s ease-in-out infinite;
+  box-shadow: 0 0 20px var(--glow-yellow), 0 0 40px var(--glow-yellow), inset 0 0 10px rgba(255, 234, 0, 0.3);
+}
+
+.btn-resume::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, var(--neon-yellow), #90EE02, var(--neon-yellow));
+  z-index: -1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  border-radius: 18px;
+  filter: blur(15px);
 }
 
 .btn-resume:hover {
-  background: linear-gradient(145deg, #3FFFDD, var(--accent-teal));
-  box-shadow: 0 10px 30px rgba(43, 217, 185, 0.5);
+  background: linear-gradient(145deg, #F0FF80, #C0FF60);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 30px var(--glow-yellow), 0 0 60px var(--glow-yellow), 0 0 90px var(--glow-yellow), inset 0 0 20px rgba(255, 234, 0, 0.5);
+  border-color: #FFFF00;
+  color: #0a0a0a;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes pulse {
+.btn-resume:hover::before {
+  opacity: 1;
+  filter: blur(20px);
+}
+
+@keyframes resumePulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(43, 217, 185, 0.7);
+    box-shadow: 0 0 20px var(--glow-yellow), 0 0 40px var(--glow-yellow), inset 0 0 10px rgba(255, 234, 0, 0.3);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(43, 217, 185, 0);
+    box-shadow: 0 0 30px var(--glow-yellow), 0 0 60px var(--glow-yellow), 0 0 90px rgba(255, 234, 0, 0.4), inset 0 0 15px rgba(255, 234, 0, 0.5);
   }
 }
 

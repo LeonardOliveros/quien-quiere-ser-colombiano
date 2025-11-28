@@ -17732,7 +17732,7 @@ func seedQuestions() {
 		{
 			Category:    "CULTURA",
 			SubCategory: "FESTIVALES",
-			Text:        "¿Qué festividad se celebra en la ciudad de Medellín según el texto?",
+			Text:        "¿Qué festividad se celebra en la ciudad de Medellín?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "Entre las festividades mencionadas que reflejan la herencia cultural se encuentra la Feria de las Flores en Medellín",
@@ -18169,7 +18169,7 @@ func seedQuestions() {
 			Text:        "¿Cuál fue la orden religiosa expulsada tanto de España como de sus colonias en 1767 debido al fortalecimiento del Regalismo?",
 			Difficulty:  2,
 			Points:      10,
-			Explanation: "El texto indica que el fortalecimiento del Regalismo, que defendía la autoridad del rey sobre la del Papa, permitió la expulsión de la Compañía de Jesús en 1767",
+			Explanation: "El fortalecimiento del Regalismo, que defendía la autoridad del rey sobre la del Papa, permitió la expulsión de la Compañía de Jesús en 1767",
 			Choices: []Choice{
 				{
 					Text:      "La Orden de los Agustinos",
@@ -18324,7 +18324,7 @@ func seedQuestions() {
 			Text:        "¿Quién fue el encargado de musicalizar la letra del himno nacional escrita por Rafael Núñez?",
 			Difficulty:  2,
 			Points:      10,
-			Explanation: "El texto especifica que Rafael Núñez escribió la letra del himno nacional y el compositor italiano Oreste Síndici lo musicalizó",
+			Explanation: "Rafael Núñez escribió la letra del himno nacional y el compositor italiano Oreste Síndici lo musicalizó",
 			Choices: []Choice{
 				{
 					Text:      "José Rozo Contreras",
@@ -19518,7 +19518,7 @@ func seedQuestions() {
 		{
 			Category:    "GEOGRAFIA",
 			SubCategory: "ECONOMÍA AGRÍCOLA",
-			Text:        "¿Cuáles son los cultivos principales que sustentan la economía de las zonas rurales mencionadas en el texto?",
+			Text:        "¿Cuáles son los cultivos principales que sustentan la economía de las zonas rurales?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "Los cultivos principales en las zonas rurales incluyen café, plátano, caña de azúcar, arroz, cacao y frutas tropicales",
@@ -19893,7 +19893,7 @@ func seedQuestions() {
 			Text:        "¿Qué penínsulas conectaba el estrecho de Beringia por el cual cruzaron los primeros pobladores humanos hacia el continente americano?",
 			Difficulty:  2,
 			Points:      10,
-			Explanation: "El texto especifica que el estrecho de Beringia conectaba el extremo oriental de Asia (península de Chukotka en Rusia) con el extremo occidental de América del Norte (península de Seward en Alaska).",
+			Explanation: "El estrecho de Beringia conectaba el extremo oriental de Asia (península de Chukotka en Rusia) con el extremo occidental de América del Norte (península de Seward en Alaska).",
 			Choices: []Choice{
 				{
 					Text:      "La península de Kamchatka y la península de Alaska",
@@ -20355,7 +20355,7 @@ func seedQuestions() {
 		{
 			Category:    "GEOGRAFIA",
 			SubCategory: "RELIEVE",
-			Text:        "¿Cuál es la función ecológica principal de los páramos según el texto?",
+			Text:        "¿Cuál es la función ecológica principal de los páramos?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "",
@@ -21161,7 +21161,7 @@ func seedQuestions() {
 		{
 			Category:    "CONSTITUCION",
 			SubCategory: "DESCENTRALIZACIÓN",
-			Text:        "¿En qué consiste la descentralización por colaboración según el texto?",
+			Text:        "¿En qué consiste la descentralización por colaboración?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "La descentralización por colaboración se presenta cuando personas privadas ejercen funciones administrativas, como por ejemplo las Cámaras de Comercio y la Federación Nacional de Cafeteros",
@@ -21409,7 +21409,7 @@ func seedQuestions() {
 		{
 			Category:    "CONSTITUCION",
 			SubCategory: "DERECHO AL TRABAJO",
-			Text:        "¿Cómo define el texto el derecho al trabajo en relación con la elección de la actividad?",
+			Text:        "¿Cómo se define el derecho al trabajo en relación con la elección de la actividad?",
 			Difficulty:  2,
 			Points:      10,
 			Explanation: "El trabajo consiste en la realización de una actividad libremente escogida por la persona, dedicando a ella su esfuerzo intelectual o material",
@@ -21772,37 +21772,6 @@ func seedQuestions() {
 				},
 				{
 					Text:      "César Gaviria",
-					IsCorrect: false,
-					Order:     4,
-				},
-			},
-		},
-	
-		{
-			Category:    "CULTURA",
-			SubCategory: "RELIGIÓN",
-			Text:        "Según las creencias del hinduismo mencionadas en el texto, ¿qué finalidad tiene el karma?",
-			Difficulty:  2,
-			Points:      10,
-			Explanation: "En el hinduismo, el karma es una serie de reglas o conductas que uno tiene que seguir como parte de un proceso para forjar el carácter y ganar sabiduría",
-			Choices: []Choice{
-				{
-					Text:      "Adorar a un único Dios verdadero",
-					IsCorrect: false,
-					Order:     1,
-				},
-				{
-					Text:      "Forjar el carácter y ganar sabiduría",
-					IsCorrect: true,
-					Order:     2,
-				},
-				{
-					Text:      "Memorizar textos sagrados",
-					IsCorrect: false,
-					Order:     3,
-				},
-				{
-					Text:      "Realizar peregrinaciones anuales",
 					IsCorrect: false,
 					Order:     4,
 				},
