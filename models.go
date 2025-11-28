@@ -49,6 +49,8 @@ type GameSession struct {
 	Status        string    `json:"status"` // ACTIVE, PAUSED, COMPLETED
 	StartTime     time.Time `json:"start_time"`
 	EndTime       *time.Time `json:"end_time"`
+	PausedAt      *time.Time `json:"paused_at"` // When the game was paused
+	TimeElapsed   int       `json:"time_elapsed"` // Total time elapsed in seconds (excluding paused time)
 	TimeLimit     int       `json:"time_limit"` // in seconds, 0 for unlimited
 	TotalQuestions int      `json:"total_questions"`
 	CorrectAnswers int      `json:"correct_answers"`

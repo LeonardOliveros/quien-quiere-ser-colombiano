@@ -43,6 +43,7 @@ export interface QuestionResponse {
   question_number: number
   total_questions: number
   time_remaining: number
+  time_elapsed: number
 }
 
 // Game types

@@ -176,13 +176,16 @@ onMounted(async () => {
 
   await loadQuestion()
 
-  // Start timer
+  // Start timer - use time_elapsed from backend to continue where we left off
   if (gameStore.timeLimit > 0) {
     // Countdown timer for timed mode
-    timeLeft.value = gameStore.timeLimit * 60 // Convert minutes to seconds
+    // Calculate remaining time based on elapsed time
+    const totalSeconds = gameStore.timeLimit * 60
+    timeLeft.value = totalSeconds - gameStore.timeElapsed
     startTimer()
   } else {
-    // Elapsed time counter for practice mode
+    // Elapsed time counter for practice mode - continue from where we left off
+    elapsedTime.value = gameStore.timeElapsed
     startElapsedTimer()
   }
 })

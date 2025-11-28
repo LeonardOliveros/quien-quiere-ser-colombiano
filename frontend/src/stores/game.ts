@@ -9,6 +9,7 @@ export const useGameStore = defineStore('game', () => {
   const questionNumber = ref<number>(0)
   const totalQuestions = ref<number>(0)
   const timeRemaining = ref<number>(0)
+  const timeElapsed = ref<number>(0)
   const startTime = ref<number | null>(null)
 
   // Game stats
@@ -77,6 +78,7 @@ export const useGameStore = defineStore('game', () => {
       questionNumber.value = data.question_number
       totalQuestions.value = data.total_questions
       timeRemaining.value = data.time_remaining
+      timeElapsed.value = data.time_elapsed || 0
       return { success: true }
     } catch (error: any) {
       if (error.response?.status === 404) {
@@ -242,6 +244,7 @@ export const useGameStore = defineStore('game', () => {
     questionNumber.value = 0
     totalQuestions.value = 0
     timeRemaining.value = 0
+    timeElapsed.value = 0
     startTime.value = null
     correctAnswers.value = 0
     incorrectAnswers.value = 0
@@ -266,6 +269,7 @@ export const useGameStore = defineStore('game', () => {
     questionNumber,
     totalQuestions,
     timeRemaining,
+    timeElapsed,
     startTime,
     correctAnswers,
     incorrectAnswers,

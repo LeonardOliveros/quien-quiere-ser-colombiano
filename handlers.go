@@ -189,9 +189,21 @@ func getNextQuestion(c *gin.Context) {
 		return
 	}
 
-	// If session is PAUSED, reactivate it
+	// If session is PAUSED, reactivate it and adjust start time
 	if session.Status == "PAUSED" {
-		db.Model(&session).Update("status", "ACTIVE")
+		// Adjust the start time to account for paused time
+		// New start time = now - time_elapsed
+		newStartTime := time.Now().Add(-time.Duration(session.TimeElapsed) * time.Second)
+
+		updates := map[string]interface{}{
+			"status":     "ACTIVE",
+			"start_time": newStartTime,
+			"paused_at":  nil,
+		}
+		db.Model(&session).Where("id = ?", sessionID).Updates(updates)
+
+		// Reload session to get updated values
+		db.First(&session, sessionID)
 	}
 
 	// Get IDs of questions already presented in this session (from history)
@@ -260,11 +272,16 @@ func getNextQuestion(c *gin.Context) {
 		question.Choices[i].IsCorrect = false
 	}
 
+	// Calculate elapsed time and remaining time
+	timeElapsed := calculateCurrentTimeElapsed(session)
+	timeRemaining := getTimeRemaining(session)
+
 	c.JSON(http.StatusOK, gin.H{
 		"question":         question,
 		"question_number":  len(answeredIDs) + 1,
 		"total_questions":  session.TotalQuestions,
-		"time_remaining":   getTimeRemaining(session),
+		"time_remaining":   timeRemaining,
+		"time_elapsed":     timeElapsed,
 	})
 }
 
@@ -443,8 +460,36 @@ func endGame(c *gin.Context) {
 func pauseGame(c *gin.Context) {
 	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
 
-	// Update session status to PAUSED
-	if err := db.Model(&GameSession{}).Where("id = ?", sessionID).Update("status", "PAUSED").Error; err != nil {
+	// Get the session to calculate elapsed time
+	var session GameSession
+	if err := db.First(&session, sessionID).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Session not found"})
+		return
+	}
+
+	// Calculate and save the elapsed time before pausing
+	currentElapsed := session.TimeElapsed
+	if session.Status == "ACTIVE" {
+		// Add the time since last resume (or start)
+		var timeSinceLastActive int
+		if session.PausedAt != nil {
+			// This shouldn't happen in ACTIVE state, but handle it
+			timeSinceLastActive = int(time.Since(session.StartTime).Seconds())
+		} else {
+			timeSinceLastActive = int(time.Since(session.StartTime).Seconds())
+		}
+		currentElapsed = timeSinceLastActive
+	}
+
+	now := time.Now()
+	// Update session: mark as PAUSED, save elapsed time, and record pause time
+	updates := map[string]interface{}{
+		"status":       "PAUSED",
+		"time_elapsed": currentElapsed,
+		"paused_at":    &now,
+	}
+
+	if err := db.Model(&GameSession{}).Where("id = ?", sessionID).Updates(updates).Error; err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to pause game"})
 		return
 	}
@@ -501,6 +546,10 @@ func getAnyPausedGame(c *gin.Context) {
 		Where("game_session_id = ? AND is_flagged = ?", session.ID, true).
 		Pluck("question_id", &flaggedIDs)
 
+	// Calculate elapsed time
+	timeElapsed := calculateCurrentTimeElapsed(session)
+	timeRemaining := getTimeRemaining(session)
+
 	c.JSON(http.StatusOK, gin.H{
 		"session_id":         session.ID,
 		"mode":               session.Mode,
@@ -513,6 +562,8 @@ func getAnyPausedGame(c *gin.Context) {
 		"flagged_questions":  flaggedIDs,
 		"score":              session.Score,
 		"time_limit":         session.TimeLimit,
+		"time_elapsed":       timeElapsed,
+		"time_remaining":     timeRemaining,
 		"start_time":         session.StartTime,
 		"status":             session.Status,
 	})
@@ -569,6 +620,10 @@ func getPausedGame(c *gin.Context) {
 		Where("game_session_id = ? AND is_flagged = ?", session.ID, true).
 		Pluck("question_id", &flaggedIDs)
 
+	// Calculate elapsed time
+	timeElapsed := calculateCurrentTimeElapsed(session)
+	timeRemaining := getTimeRemaining(session)
+
 	c.JSON(http.StatusOK, gin.H{
 		"session_id":         session.ID,
 		"mode":               session.Mode,
@@ -581,6 +636,8 @@ func getPausedGame(c *gin.Context) {
 		"flagged_questions":  flaggedIDs,
 		"score":              session.Score,
 		"time_limit":         session.TimeLimit,
+		"time_elapsed":       timeElapsed,
+		"time_remaining":     timeRemaining,
 		"start_time":         session.StartTime,
 		"status":             session.Status,
 	})
@@ -788,16 +845,29 @@ func generateToken() string {
 	return hex.EncodeToString(b)
 }
 
+// calculateCurrentTimeElapsed returns the total time elapsed excluding paused time
+func calculateCurrentTimeElapsed(session GameSession) int {
+	if session.Status == "PAUSED" {
+		// Return the saved elapsed time when paused
+		return session.TimeElapsed
+	}
+
+	// For ACTIVE sessions, calculate time since start
+	return int(time.Since(session.StartTime).Seconds())
+}
+
 func getTimeRemaining(session GameSession) int {
 	if session.TimeLimit == 0 {
 		return -1 // Unlimited time
 	}
-	elapsed := time.Since(session.StartTime).Seconds()
-	remaining := float64(session.TimeLimit) - elapsed
+
+	elapsed := calculateCurrentTimeElapsed(session)
+	remaining := session.TimeLimit - elapsed
+
 	if remaining < 0 {
 		return 0
 	}
-	return int(remaining)
+	return remaining
 }
 
 func getQuestionExplanation(questionID uint) string {
