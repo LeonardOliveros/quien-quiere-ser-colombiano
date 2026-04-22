@@ -129,10 +129,11 @@ func startGame(c *gin.Context) {
 	// Convert categories slice to comma-separated string
 	categoriesStr := ""
 
-	// For TIMED mode, force the 4 main categories and 80 questions
+	// For TIMED mode, force the 4 main categories, 80 questions (20 per category), and 1 hour time limit
 	if config.Mode == "TIMED" {
 		categoriesStr = "CONSTITUCION,HISTORIA,GEOGRAFIA,CULTURA"
 		config.QuestionCount = 80
+		config.TimeLimit = 3600 // 1 hour in seconds (60 minutes * 60 seconds)
 		config.Categories = []string{"CONSTITUCION", "HISTORIA", "GEOGRAFIA", "CULTURA"}
 	} else if len(config.Categories) > 0 {
 		categoriesStr = config.Categories[0]
@@ -227,11 +228,51 @@ func getNextQuestion(c *gin.Context) {
 	// Build query to get a random question based on session configuration
 	query := db.Model(&Question{})
 
-	// Apply category filter if exists
-	if session.Categories != "" {
-		categories := splitString(session.Categories, ",")
-		if len(categories) > 0 {
-			query = query.Where("category IN ?", categories)
+	// For TIMED mode, ensure 20 questions per category
+	if session.Mode == "TIMED" {
+		// Count questions answered per category
+		var categoryCount []struct {
+			Category string
+			Count    int64
+		}
+		db.Table("game_answers").
+			Select("questions.category, COUNT(*) as count").
+			Joins("JOIN questions ON questions.id = game_answers.question_id").
+			Where("game_answers.game_session_id = ?", sessionID).
+			Group("questions.category").
+			Scan(&categoryCount)
+
+		// Create map of category counts
+		categoryCountMap := make(map[string]int64)
+		for _, cc := range categoryCount {
+			categoryCountMap[cc.Category] = cc.Count
+		}
+
+		// Find categories that haven't reached 20 questions yet
+		availableCategories := []string{}
+		mainCategories := []string{"CONSTITUCION", "HISTORIA", "GEOGRAFIA", "CULTURA"}
+		for _, cat := range mainCategories {
+			if categoryCountMap[cat] < 20 {
+				availableCategories = append(availableCategories, cat)
+			}
+		}
+
+		if len(availableCategories) == 0 {
+			c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
+			return
+		}
+
+		// Randomly select one of the available categories
+		mrand.Seed(time.Now().UnixNano())
+		selectedCategory := availableCategories[mrand.Intn(len(availableCategories))]
+		query = query.Where("category = ?", selectedCategory)
+	} else {
+		// Apply category filter if exists for other modes
+		if session.Categories != "" {
+			categories := splitString(session.Categories, ",")
+			if len(categories) > 0 {
+				query = query.Where("category IN ?", categories)
+			}
 		}
 	}
 

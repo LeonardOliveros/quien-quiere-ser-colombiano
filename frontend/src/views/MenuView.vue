@@ -30,7 +30,7 @@
           <div>
             <strong>Contrarreloj</strong>
             <br>
-            <small>3 horas para todas las preguntas</small>
+            <small>1 hora - 20 preguntas por categoría</small>
           </div>
         </button>
 
@@ -175,10 +175,10 @@ async function startGame(mode: string) {
     }
   }
 
-  // For timed mode, backend will force 80 questions
+  // For timed mode, backend will force 80 questions (20 per category)
   if (mode === 'timed') {
     questionCount = 80 // Backend will enforce this
-    timeLimit = 180 // 3 hours in minutes
+    timeLimit = 60 // 1 hour in minutes
   } else if (mode === 'weak') {
     focusWeakAreas = true
   }
