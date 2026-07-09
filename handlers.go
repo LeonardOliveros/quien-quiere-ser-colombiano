@@ -8,6 +8,7 @@ import (
 	mrand "math/rand"
 	"net/http"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -194,19 +195,13 @@ func startGame(c *gin.Context) {
 		config.TimeLimit = 3600 // 1 hour in seconds (60 minutes * 60 seconds)
 		config.Categories = []string{"CONSTITUCION", "HISTORIA", "GEOGRAFIA", "CULTURA"}
 	} else if len(config.Categories) > 0 {
-		categoriesStr = config.Categories[0]
-		for i := 1; i < len(config.Categories); i++ {
-			categoriesStr += "," + config.Categories[i]
-		}
+		categoriesStr = strings.Join(config.Categories, ",")
 	}
 
 	// Verify that questions are available for the selected criteria
 	query := db.Model(&Question{})
 	if categoriesStr != "" {
-		categories := splitString(categoriesStr, ",")
-		if len(categories) > 0 {
-			query = query.Where("category IN ?", categories)
-		}
+		query = query.Where("category IN ?", strings.Split(categoriesStr, ","))
 	}
 	var availableCount int64
 	query.Count(&availableCount)
@@ -220,7 +215,6 @@ func startGame(c *gin.Context) {
 		UserID:         userID.(uint),
 		Mode:           config.Mode,
 		Categories:     categoriesStr,
-		QuestionSequence: "", // No longer needed - questions are selected randomly
 		Status:         "ACTIVE",
 		StartTime:      time.Now(),
 		TimeLimit:      config.TimeLimit,
@@ -319,16 +313,12 @@ func getNextQuestion(c *gin.Context) {
 		}
 
 		// Randomly select one of the available categories
-		mrand.Seed(time.Now().UnixNano())
 		selectedCategory := availableCategories[mrand.Intn(len(availableCategories))]
 		query = query.Where("category = ?", selectedCategory)
 	} else {
 		// Apply category filter if exists for other modes
 		if session.Categories != "" {
-			categories := splitString(session.Categories, ",")
-			if len(categories) > 0 {
-				query = query.Where("category IN ?", categories)
-			}
+			query = query.Where("category IN ?", strings.Split(session.Categories, ","))
 		}
 	}
 
@@ -359,7 +349,6 @@ func getNextQuestion(c *gin.Context) {
 	db.Create(&history)
 
 	// Randomize the order of choices to prevent visual memorization
-	mrand.Seed(time.Now().UnixNano())
 	mrand.Shuffle(len(question.Choices), func(i, j int) {
 		question.Choices[i], question.Choices[j] = question.Choices[j], question.Choices[i]
 	})
@@ -555,7 +544,6 @@ func useFiftyFifty(c *gin.Context) {
 	}
 
 	// Shuffle and take 2
-	mrand.Seed(time.Now().UnixNano())
 	mrand.Shuffle(len(incorrectChoiceIDs), func(i, j int) {
 		incorrectChoiceIDs[i], incorrectChoiceIDs[j] = incorrectChoiceIDs[j], incorrectChoiceIDs[i]
 	})
@@ -633,17 +621,10 @@ func pauseGame(c *gin.Context) {
 	sessionID := int(session.ID)
 
 	// Calculate and save the elapsed time before pausing
+	// (start_time is adjusted on resume, so this spans only active play)
 	currentElapsed := session.TimeElapsed
 	if session.Status == "ACTIVE" {
-		// Add the time since last resume (or start)
-		var timeSinceLastActive int
-		if session.PausedAt != nil {
-			// This shouldn't happen in ACTIVE state, but handle it
-			timeSinceLastActive = int(time.Since(session.StartTime).Seconds())
-		} else {
-			timeSinceLastActive = int(time.Since(session.StartTime).Seconds())
-		}
-		currentElapsed = timeSinceLastActive
+		currentElapsed = int(time.Since(session.StartTime).Seconds())
 	}
 
 	now := time.Now()
@@ -662,7 +643,10 @@ func pauseGame(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Game paused successfully"})
 }
 
-func getAnyPausedGame(c *gin.Context) {
+// respondPausedGame finds the most recent active/paused session for the
+// authenticated user (optionally filtered by mode), completes any older
+// leftover sessions and responds with the session's progress summary.
+func respondPausedGame(c *gin.Context, mode string) {
 	// Get user ID from context
 	userID, exists := c.Get("userID")
 	if !exists {
@@ -670,9 +654,17 @@ func getAnyPausedGame(c *gin.Context) {
 		return
 	}
 
+	resumable := func() *gorm.DB {
+		q := db.Where("user_id = ? AND status IN ?", userID, []string{"PAUSED", "ACTIVE"})
+		if mode != "" {
+			q = q.Where("mode = ?", mode)
+		}
+		return q
+	}
+
 	// Clean up old active/paused games (keep only the most recent one)
 	var oldSessions []GameSession
-	db.Where("user_id = ? AND status IN ?", userID, []string{"PAUSED", "ACTIVE"}).
+	resumable().
 		Order("updated_at DESC").
 		Offset(1). // Skip the most recent one
 		Find(&oldSessions)
@@ -681,9 +673,9 @@ func getAnyPausedGame(c *gin.Context) {
 		db.Model(&oldSession).Update("status", "COMPLETED")
 	}
 
-	// Find the most recent active or paused game for this user (any mode)
+	// Find the most recent active or paused game
 	var session GameSession
-	err := db.Where("user_id = ? AND status IN ?", userID, []string{"PAUSED", "ACTIVE"}).
+	err := resumable().
 		Order("updated_at DESC").
 		First(&session).Error
 
@@ -734,78 +726,12 @@ func getAnyPausedGame(c *gin.Context) {
 	})
 }
 
+func getAnyPausedGame(c *gin.Context) {
+	respondPausedGame(c, "")
+}
+
 func getPausedGame(c *gin.Context) {
-	mode := c.Param("mode")
-
-	// Get user ID from context
-	userID, exists := c.Get("userID")
-	if !exists {
-		c.JSON(http.StatusUnauthorized, gin.H{"error": "User not authenticated"})
-		return
-	}
-
-	// Clean up old active/paused games for this mode (keep only the most recent one)
-	var oldSessions []GameSession
-	db.Where("user_id = ? AND mode = ? AND status IN ?", userID, mode, []string{"PAUSED", "ACTIVE"}).
-		Order("updated_at DESC").
-		Offset(1). // Skip the most recent one
-		Find(&oldSessions)
-
-	for _, oldSession := range oldSessions {
-		db.Model(&oldSession).Update("status", "COMPLETED")
-	}
-
-	// Find the most recent active or paused game for this user and mode
-	var session GameSession
-	err := db.Where("user_id = ? AND mode = ? AND status IN ?", userID, mode, []string{"PAUSED", "ACTIVE"}).
-		Order("updated_at DESC").
-		First(&session).Error
-
-	if err != nil {
-		// No active or paused game found
-		c.JSON(http.StatusNotFound, gin.H{"error": "No paused game found"})
-		return
-	}
-
-	// Get progress information (flag placeholders don't count as answers)
-	var answeredCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ? AND choice_id IS NOT NULL", session.ID).Count(&answeredCount)
-
-	// Count incorrect answers
-	var incorrectCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ? AND choice_id IS NOT NULL AND is_correct = ?", session.ID, false).Count(&incorrectCount)
-
-	// Count flagged questions
-	var flaggedCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ? AND is_flagged = ?", session.ID, true).Count(&flaggedCount)
-
-	// Get flagged question IDs
-	var flaggedIDs []uint
-	db.Model(&GameAnswer{}).
-		Where("game_session_id = ? AND is_flagged = ?", session.ID, true).
-		Pluck("question_id", &flaggedIDs)
-
-	// Calculate elapsed time
-	timeElapsed := calculateCurrentTimeElapsed(session)
-	timeRemaining := getTimeRemaining(session)
-
-	c.JSON(http.StatusOK, gin.H{
-		"session_id":         session.ID,
-		"mode":               session.Mode,
-		"categories":         session.Categories,
-		"total_questions":    session.TotalQuestions,
-		"answered_questions": answeredCount,
-		"correct_answers":    session.CorrectAnswers,
-		"incorrect_answers":  incorrectCount,
-		"flagged_count":      flaggedCount,
-		"flagged_questions":  flaggedIDs,
-		"score":              session.Score,
-		"time_limit":         session.TimeLimit,
-		"time_elapsed":       timeElapsed,
-		"time_remaining":     timeRemaining,
-		"start_time":         session.StartTime,
-		"status":             session.Status,
-	})
+	respondPausedGame(c, c.Param("mode"))
 }
 
 func getGameResults(c *gin.Context) {
@@ -1300,121 +1226,4 @@ func generateResources(area string) string {
 	return `{"videos": [], "documents": ["COLOMBIA: NUESTRA CASA"], "exercises": []}`
 }
 
-func splitString(s string, sep string) []string {
-	if s == "" {
-		return []string{}
-	}
-	result := []string{}
-	current := ""
-	for _, char := range s {
-		if string(char) == sep {
-			if current != "" {
-				result = append(result, current)
-				current = ""
-			}
-		} else {
-			current += string(char)
-		}
-	}
-	if current != "" {
-		result = append(result, current)
-	}
-	return result
-}
 
-func generateQuestionSequence(userID uint, mode string, categoriesStr string, questionCount int) string {
-	var allQuestionIDs []uint
-
-	// Get IDs of questions already used by this user in active sessions
-	var usedQuestionIDs []uint
-	db.Table("question_histories").
-		Select("DISTINCT question_histories.question_id").
-		Joins("JOIN game_sessions ON game_sessions.id = question_histories.game_session_id").
-		Where("game_sessions.user_id = ? AND game_sessions.status = ?", userID, "ACTIVE").
-		Pluck("question_id", &usedQuestionIDs)
-
-	// Time Trial mode: 20 random questions from each of the 4 main categories
-	if mode == "TIMED" {
-		mainCategories := []string{"CONSTITUCION", "HISTORIA", "GEOGRAFIA", "CULTURA"}
-		questionsPerCategory := 20
-
-		for _, category := range mainCategories {
-			var categoryQuestionIDs []uint
-			query := db.Model(&Question{}).Where("category = ?", category)
-
-			// Exclude already used questions
-			if len(usedQuestionIDs) > 0 {
-				query = query.Where("id NOT IN ?", usedQuestionIDs)
-			}
-
-			query.Order("RANDOM()").
-				Limit(questionsPerCategory).
-				Pluck("id", &categoryQuestionIDs)
-
-			allQuestionIDs = append(allQuestionIDs, categoryQuestionIDs...)
-		}
-
-		// Shuffle the combined list so categories are mixed
-		mrand.Seed(time.Now().UnixNano())
-		mrand.Shuffle(len(allQuestionIDs), func(i, j int) {
-			allQuestionIDs[i], allQuestionIDs[j] = allQuestionIDs[j], allQuestionIDs[i]
-		})
-	} else {
-		// For other modes (PRACTICE, WEAK_AREAS, etc.): use sequential order
-		query := db.Model(&Question{})
-
-		// Apply category filter
-		if categoriesStr != "" {
-			categories := splitString(categoriesStr, ",")
-			if len(categories) > 0 {
-				query = query.Where("category IN ?", categories)
-			}
-		} else if mode == "WEAK_AREAS" {
-			weakCategories := getUserWeakCategories(userID)
-			if len(weakCategories) > 0 {
-				query = query.Where("category IN ?", weakCategories)
-			}
-		}
-
-		// Exclude already used questions
-		if len(usedQuestionIDs) > 0 {
-			query = query.Where("id NOT IN ?", usedQuestionIDs)
-		}
-
-		// Get all matching question IDs, ordered by ID for consistency
-		query.Order("id ASC").Pluck("id", &allQuestionIDs)
-
-		// Limit to the requested number of questions
-		if len(allQuestionIDs) > questionCount {
-			allQuestionIDs = allQuestionIDs[:questionCount]
-		}
-	}
-
-	if len(allQuestionIDs) == 0 {
-		return ""
-	}
-
-	// Convert to comma-separated string
-	result := fmt.Sprintf("%d", allQuestionIDs[0])
-	for i := 1; i < len(allQuestionIDs); i++ {
-		result += fmt.Sprintf(",%d", allQuestionIDs[i])
-	}
-	return result
-}
-
-func parseQuestionSequence(sequence string) []uint {
-	if sequence == "" {
-		return []uint{}
-	}
-
-	parts := splitString(sequence, ",")
-	questionIDs := make([]uint, 0, len(parts))
-
-	for _, part := range parts {
-		if id, err := strconv.ParseUint(part, 10, 32); err == nil {
-			questionIDs = append(questionIDs, uint(id))
-		}
-	}
-
-	return questionIDs
-}

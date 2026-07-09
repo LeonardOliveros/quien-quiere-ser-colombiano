@@ -46,7 +46,6 @@ type GameSession struct {
 	User          User      `json:"user,omitempty"`
 	Mode          string    `json:"mode"` // PRACTICE, TIMED, WEAK_AREAS, FULL_TEST, CATEGORY
 	Categories    string    `json:"categories"` // Comma-separated list of categories for filtering
-	QuestionSequence string `gorm:"type:text" json:"question_sequence"` // Comma-separated list of question IDs in order
 	Status        string    `json:"status"` // ACTIVE, PAUSED, COMPLETED
 	StartTime     time.Time `json:"start_time"`
 	EndTime       *time.Time `json:"end_time"`
