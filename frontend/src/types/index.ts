@@ -190,6 +190,24 @@ export interface QuestionCount {
   }>
 }
 
+export interface PausedGame {
+  session_id: number
+  mode: string
+  categories: string
+  total_questions: number
+  answered_questions: number
+  correct_answers: number
+  incorrect_answers: number
+  flagged_count: number
+  flagged_questions: number[]
+  score: number
+  time_limit: number
+  time_elapsed: number
+  time_remaining: number
+  start_time: string
+  status: 'ACTIVE' | 'PAUSED'
+}
+
 // API Response types
 export interface ApiResponse<T> {
   success: boolean

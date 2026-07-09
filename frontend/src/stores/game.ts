@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import api from '@/services/api'
-import type { Question, GameResults, AnswerSubmission } from '@/types'
+import type { Question, GameResults, AnswerSubmission, PausedGame } from '@/types'
 
 export const useGameStore = defineStore('game', () => {
   const sessionId = ref<string | null>(null)
@@ -156,7 +156,7 @@ export const useGameStore = defineStore('game', () => {
     }
   }
 
-  async function checkPausedGame(mode: string): Promise<{ hasPausedGame: boolean; pausedGameData?: any }> {
+  async function checkPausedGame(mode: string): Promise<{ hasPausedGame: boolean; pausedGameData?: PausedGame }> {
     try {
       const data = await api.getPausedGame(mode)
       return { hasPausedGame: true, pausedGameData: data }

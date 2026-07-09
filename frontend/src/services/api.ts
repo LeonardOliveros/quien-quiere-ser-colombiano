@@ -15,7 +15,8 @@ import type {
   GameHistory,
   Recommendation,
   Question,
-  QuestionCount
+  QuestionCount,
+  PausedGame
 } from '@/types'
 
 class ApiService {
@@ -136,13 +137,13 @@ class ApiService {
     return response.data
   }
 
-  async getPausedGame(mode: string): Promise<any> {
-    const response = await this.axiosInstance.get(`/game/paused/${mode}`)
+  async getPausedGame(mode: string): Promise<PausedGame> {
+    const response = await this.axiosInstance.get<PausedGame>(`/game/paused/${mode}`)
     return response.data
   }
 
-  async getAnyPausedGame(): Promise<any> {
-    const response = await this.axiosInstance.get('/game/paused')
+  async getAnyPausedGame(): Promise<PausedGame> {
+    const response = await this.axiosInstance.get<PausedGame>('/game/paused')
     return response.data
   }
 
