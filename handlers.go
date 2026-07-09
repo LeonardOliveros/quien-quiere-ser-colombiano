@@ -17,22 +17,28 @@ import (
 
 // User authentication handlers
 func registerUser(c *gin.Context) {
-	var user User
-	if err := c.ShouldBindJSON(&user); err != nil {
+	var registerData struct {
+		Username string `json:"username" binding:"required,min=3,max=50"`
+		Email    string `json:"email" binding:"required,email"`
+		Password string `json:"password" binding:"required,min=8,max=72"`
+	}
+	if err := c.ShouldBindJSON(&registerData); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 
-	plainPassword := user.Password
-
 	// Hash password
-	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(plainPassword), bcrypt.DefaultCost)
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(registerData.Password), bcrypt.DefaultCost)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to hash password"})
 		return
 	}
 
-	user.Password = string(hashedPassword)
+	user := User{
+		Username: registerData.Username,
+		Email:    registerData.Email,
+		Password: string(hashedPassword),
+	}
 
 	if err := db.Create(&user).Error; err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Username or email already exists"})
