@@ -751,6 +751,20 @@ func getGameResults(c *gin.Context) {
 	incorrectAnswers := []IncorrectAnswer{}
 	flaggedQuestions := []Question{}
 
+	// Prefetch the correct choice of every question in one query
+	questionIDs := make([]uint, 0, len(answers))
+	for _, answer := range answers {
+		questionIDs = append(questionIDs, answer.QuestionID)
+	}
+	correctByQuestion := make(map[uint]Choice)
+	if len(questionIDs) > 0 {
+		var correctChoices []Choice
+		db.Where("question_id IN ? AND is_correct = true", questionIDs).Find(&correctChoices)
+		for _, choice := range correctChoices {
+			correctByQuestion[choice.QuestionID] = choice
+		}
+	}
+
 	for _, answer := range answers {
 		// Flag placeholders were never answered: track the flag, skip scoring
 		if answer.ChoiceID == nil {
@@ -771,9 +785,8 @@ func getGameResults(c *gin.Context) {
 			score.CorrectAnswers++
 		} else {
 			// Add to incorrect answers
-			var correctChoice Choice
-			db.Where("question_id = ? AND is_correct = true", answer.QuestionID).First(&correctChoice)
-			
+			correctChoice := correctByQuestion[answer.QuestionID]
+
 			incorrectAnswers = append(incorrectAnswers, IncorrectAnswer{
 				Question:      answer.Question,
 				UserChoice:    answer.Choice,
@@ -877,14 +890,18 @@ func getQuestionsCount(c *gin.Context) {
 	var totalCount int64
 	db.Model(&Question{}).Count(&totalCount)
 
-	// Get count by category
-	categories := []string{"CULTURA", "GEOGRAFIA", "HISTORIA", "CONSTITUCION"}
-	categoryCount := make(map[string]int64)
-
-	for _, category := range categories {
-		var count int64
-		db.Model(&Question{}).Where("category = ?", category).Count(&count)
-		categoryCount[category] = count
+	// Get count by category in a single grouped query
+	categoryCount := map[string]int64{"CULTURA": 0, "GEOGRAFIA": 0, "HISTORIA": 0, "CONSTITUCION": 0}
+	var categoryCounts []struct {
+		Category string
+		Count    int64
+	}
+	db.Model(&Question{}).
+		Select("category, COUNT(*) as count").
+		Group("category").
+		Scan(&categoryCounts)
+	for _, cc := range categoryCounts {
+		categoryCount[cc.Category] = cc.Count
 	}
 
 	// Get count by subcategory (optional detailed breakdown)
