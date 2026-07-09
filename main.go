@@ -113,12 +113,14 @@ func setupRoutes(r *gin.Engine) {
 
 			// Study recommendations
 			protected.GET("/recommendations/:userId", getStudyRecommendations)
+
+			// Question routes (answers are stripped from responses)
+			protected.GET("/questions", getQuestions)
+			protected.GET("/questions/:id", getQuestion)
+			protected.GET("/questions/category/:category", getQuestionsByCategory)
 		}
 
 		// Public question routes
-		api.GET("/questions", getQuestions)
-		api.GET("/questions/:id", getQuestion)
-		api.GET("/questions/category/:category", getQuestionsByCategory)
 		api.GET("/questions/count", getQuestionsCount)
 	}
 }

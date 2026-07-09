@@ -826,9 +826,20 @@ func getGameResults(c *gin.Context) {
 }
 
 // Question handlers
+
+// hideCorrectChoices strips the answer key before questions leave the API.
+func hideCorrectChoices(questions []Question) {
+	for i := range questions {
+		for j := range questions[i].Choices {
+			questions[i].Choices[j].IsCorrect = false
+		}
+	}
+}
+
 func getQuestions(c *gin.Context) {
 	var questions []Question
 	db.Preload("Choices").Find(&questions)
+	hideCorrectChoices(questions)
 	c.JSON(http.StatusOK, questions)
 }
 
@@ -839,6 +850,7 @@ func getQuestion(c *gin.Context) {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Question not found"})
 		return
 	}
+	hideCorrectChoices([]Question{question})
 	c.JSON(http.StatusOK, question)
 }
 
@@ -846,6 +858,7 @@ func getQuestionsByCategory(c *gin.Context) {
 	category := c.Param("category")
 	var questions []Question
 	db.Preload("Choices").Where("category = ?", category).Find(&questions)
+	hideCorrectChoices(questions)
 	c.JSON(http.StatusOK, questions)
 }
 
