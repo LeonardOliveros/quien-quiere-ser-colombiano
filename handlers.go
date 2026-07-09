@@ -1108,7 +1108,7 @@ func getUserWeakCategories(userID uint) []string {
 		FROM game_answers ga
 		JOIN questions q ON ga.question_id = q.id
 		JOIN game_sessions gs ON ga.game_session_id = gs.id
-		WHERE gs.user_id = ?
+		WHERE gs.user_id = ? AND ga.choice_id IS NOT NULL
 		GROUP BY q.category
 		HAVING (SUM(CASE WHEN ga.is_correct THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) < 50
 		ORDER BY COUNT(*) DESC
@@ -1124,19 +1124,31 @@ func calculateUserStats(userID uint) UserStats {
 	
 	// Get total games
 	db.Model(&GameSession{}).Where("user_id = ?", userID).Count(&stats.TotalGames)
-	
-	// Get overall performance
-	var sessions []GameSession
-	db.Where("user_id = ? AND status = ?", userID, "COMPLETED").Find(&sessions)
-	
-	for _, session := range sessions {
-		stats.TotalQuestions += session.TotalQuestions
-		stats.CorrectAnswers += session.CorrectAnswers
-		if session.Score > stats.BestScore {
-			stats.BestScore = session.Score
-		}
+
+	// Get overall performance from actually answered questions
+	// (session.TotalQuestions is the planned count, which overstates
+	// abandoned or partially played games)
+	var overall struct {
+		Total   int
+		Correct int
 	}
-	
+	db.Raw(`
+		SELECT
+			COUNT(*) as total,
+			COALESCE(SUM(CASE WHEN ga.is_correct THEN 1 ELSE 0 END), 0) as correct
+		FROM game_answers ga
+		JOIN game_sessions gs ON ga.game_session_id = gs.id
+		WHERE gs.user_id = ? AND ga.choice_id IS NOT NULL
+	`, userID).Scan(&overall)
+	stats.TotalQuestions = overall.Total
+	stats.CorrectAnswers = overall.Correct
+
+	var bestScore int
+	db.Model(&GameSession{}).
+		Where("user_id = ? AND status = ?", userID, "COMPLETED").
+		Select("COALESCE(MAX(score), 0)").Scan(&bestScore)
+	stats.BestScore = bestScore
+
 	if stats.TotalQuestions > 0 {
 		stats.AverageScore = float64(stats.CorrectAnswers) / float64(stats.TotalQuestions) * 100
 	}
@@ -1157,7 +1169,7 @@ func calculateUserStats(userID uint) UserStats {
 			FROM game_answers ga
 			JOIN questions q ON ga.question_id = q.id
 			JOIN game_sessions gs ON ga.game_session_id = gs.id
-			WHERE gs.user_id = ? AND q.category = ?
+			WHERE gs.user_id = ? AND q.category = ? AND ga.choice_id IS NOT NULL
 		`
 		
 		var result struct {
@@ -1182,20 +1194,39 @@ func calculateUserStats(userID uint) UserStats {
 		}
 	}
 	
-	// Get recent progress
-	recentSessions := []GameSession{}
-	db.Where("user_id = ? AND status = ?", userID, "COMPLETED").
-		Order("created_at desc").Limit(10).Find(&recentSessions)
-	
-	for _, session := range recentSessions {
-		point := ProgressPoint{
-			Date:       session.CreatedAt,
-			Score:      session.Score,
-			Percentage: float64(session.CorrectAnswers) / float64(session.TotalQuestions) * 100,
-		}
-		stats.RecentProgress = append(stats.RecentProgress, point)
+	// Get recent progress, computing percentages from answered questions
+	var progress []struct {
+		CreatedAt time.Time
+		Score     int
+		Answered  int
+		Correct   int
 	}
-	
+	db.Raw(`
+		SELECT
+			gs.created_at,
+			gs.score,
+			COUNT(ga.id) as answered,
+			COALESCE(SUM(CASE WHEN ga.is_correct THEN 1 ELSE 0 END), 0) as correct
+		FROM game_sessions gs
+		LEFT JOIN game_answers ga ON ga.game_session_id = gs.id AND ga.choice_id IS NOT NULL
+		WHERE gs.user_id = ? AND gs.status = 'COMPLETED'
+		GROUP BY gs.id
+		ORDER BY gs.created_at DESC
+		LIMIT 10
+	`, userID).Scan(&progress)
+
+	for _, p := range progress {
+		percentage := 0.0
+		if p.Answered > 0 {
+			percentage = float64(p.Correct) / float64(p.Answered) * 100
+		}
+		stats.RecentProgress = append(stats.RecentProgress, ProgressPoint{
+			Date:       p.CreatedAt,
+			Score:      p.Score,
+			Percentage: percentage,
+		})
+	}
+
 	return stats
 }
 
