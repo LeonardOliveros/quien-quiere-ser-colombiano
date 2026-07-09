@@ -29,9 +29,6 @@ fi
 
 echo "✅ Dependencias instaladas"
 
-# Create necessary directories
-mkdir -p templates static
-
 # Check if database exists
 if [ -f "quiz.db" ]; then
     echo "✅ Base de datos encontrada"
