@@ -112,6 +112,47 @@ func authRequired() gin.HandlerFunc {
 	}
 }
 
+// requireOwnedSession loads the session from the :sessionId param and verifies
+// it belongs to the authenticated user.
+func requireOwnedSession(c *gin.Context) (GameSession, bool) {
+	sessionID, err := strconv.Atoi(c.Param("sessionId"))
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid session ID"})
+		return GameSession{}, false
+	}
+
+	var session GameSession
+	if err := db.First(&session, sessionID).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Session not found"})
+		return GameSession{}, false
+	}
+
+	userID, exists := c.Get("userID")
+	if !exists || session.UserID != userID.(uint) {
+		c.JSON(http.StatusForbidden, gin.H{"error": "Session does not belong to the authenticated user"})
+		return GameSession{}, false
+	}
+
+	return session, true
+}
+
+// requireOwnUserID verifies the :userId param matches the authenticated user.
+func requireOwnUserID(c *gin.Context) (uint, bool) {
+	userID, err := strconv.Atoi(c.Param("userId"))
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid user ID"})
+		return 0, false
+	}
+
+	authUserID, exists := c.Get("userID")
+	if !exists || authUserID.(uint) != uint(userID) {
+		c.JSON(http.StatusForbidden, gin.H{"error": "Not authorized to access this user's data"})
+		return 0, false
+	}
+
+	return uint(userID), true
+}
+
 // Game handlers
 func startGame(c *gin.Context) {
 	var config GameConfig
@@ -188,13 +229,11 @@ func startGame(c *gin.Context) {
 }
 
 func getNextQuestion(c *gin.Context) {
-	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
-
-	var session GameSession
-	if err := db.First(&session, sessionID).Error; err != nil {
-		c.JSON(http.StatusNotFound, gin.H{"error": "Session not found"})
+	session, ok := requireOwnedSession(c)
+	if !ok {
 		return
 	}
+	sessionID := int(session.ID)
 
 	// If session is PAUSED, reactivate it and adjust start time
 	if session.Status == "PAUSED" {
@@ -333,8 +372,12 @@ func getNextQuestion(c *gin.Context) {
 }
 
 func submitAnswer(c *gin.Context) {
-	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
-	
+	session, ok := requireOwnedSession(c)
+	if !ok {
+		return
+	}
+	sessionID := int(session.ID)
+
 	var answerData struct {
 		QuestionID uint `json:"question_id"`
 		ChoiceID   uint `json:"choice_id"`
@@ -384,7 +427,11 @@ func submitAnswer(c *gin.Context) {
 }
 
 func flagQuestion(c *gin.Context) {
-	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
+	session, ok := requireOwnedSession(c)
+	if !ok {
+		return
+	}
+	sessionID := int(session.ID)
 
 	var flagData struct {
 		QuestionID uint `json:"question_id"`
@@ -411,6 +458,10 @@ func flagQuestion(c *gin.Context) {
 }
 
 func useFiftyFifty(c *gin.Context) {
+	if _, ok := requireOwnedSession(c); !ok {
+		return
+	}
+
 	var request struct {
 		QuestionID uint `json:"question_id"`
 	}
@@ -454,6 +505,10 @@ func useFiftyFifty(c *gin.Context) {
 }
 
 func useAutosolve(c *gin.Context) {
+	if _, ok := requireOwnedSession(c); !ok {
+		return
+	}
+
 	var request struct {
 		QuestionID uint `json:"question_id"`
 	}
@@ -490,7 +545,11 @@ func useAutosolve(c *gin.Context) {
 }
 
 func endGame(c *gin.Context) {
-	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
+	session, ok := requireOwnedSession(c)
+	if !ok {
+		return
+	}
+	sessionID := int(session.ID)
 
 	endTime := time.Now()
 	db.Model(&GameSession{}).Where("id = ?", sessionID).Updates(map[string]interface{}{
@@ -505,14 +564,11 @@ func endGame(c *gin.Context) {
 }
 
 func pauseGame(c *gin.Context) {
-	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
-
-	// Get the session to calculate elapsed time
-	var session GameSession
-	if err := db.First(&session, sessionID).Error; err != nil {
-		c.JSON(http.StatusNotFound, gin.H{"error": "Session not found"})
+	session, ok := requireOwnedSession(c)
+	if !ok {
 		return
 	}
+	sessionID := int(session.ID)
 
 	// Calculate and save the elapsed time before pausing
 	currentElapsed := session.TimeElapsed
@@ -691,13 +747,11 @@ func getPausedGame(c *gin.Context) {
 }
 
 func getGameResults(c *gin.Context) {
-	sessionID, _ := strconv.Atoi(c.Param("sessionId"))
-	
-	var session GameSession
-	if err := db.Preload("User").First(&session, sessionID).Error; err != nil {
-		c.JSON(http.StatusNotFound, gin.H{"error": "Session not found"})
+	session, ok := requireOwnedSession(c)
+	if !ok {
 		return
 	}
+	sessionID := int(session.ID)
 
 	// Get all answers
 	var answers []GameAnswer
@@ -831,29 +885,41 @@ func getQuestionsCount(c *gin.Context) {
 
 // User statistics handlers
 func getUserStats(c *gin.Context) {
-	userID, _ := strconv.Atoi(c.Param("userId"))
-	
-	stats := calculateUserStats(uint(userID))
+	userID, ok := requireOwnUserID(c)
+	if !ok {
+		return
+	}
+
+	stats := calculateUserStats(userID)
 	c.JSON(http.StatusOK, stats)
 }
 
 func getWeakAreas(c *gin.Context) {
-	userID, _ := strconv.Atoi(c.Param("userId"))
-	
-	weakAreas := identifyWeakAreas(uint(userID))
+	userID, ok := requireOwnUserID(c)
+	if !ok {
+		return
+	}
+
+	weakAreas := identifyWeakAreas(userID)
 	c.JSON(http.StatusOK, gin.H{"weak_areas": weakAreas})
 }
 
 func getGameHistory(c *gin.Context) {
-	userID, _ := strconv.Atoi(c.Param("userId"))
-	
+	userID, ok := requireOwnUserID(c)
+	if !ok {
+		return
+	}
+
 	var sessions []GameSession
 	db.Where("user_id = ?", userID).Order("created_at desc").Limit(20).Find(&sessions)
 	c.JSON(http.StatusOK, sessions)
 }
 
 func getStudyRecommendations(c *gin.Context) {
-	userID, _ := strconv.Atoi(c.Param("userId"))
+	userID, ok := requireOwnUserID(c)
+	if !ok {
+		return
+	}
 
 	var recommendations []StudyRecommendation
 	db.Where("user_id = ?", userID).Order("priority desc").Find(&recommendations)
@@ -861,12 +927,8 @@ func getStudyRecommendations(c *gin.Context) {
 }
 
 func resetUserStats(c *gin.Context) {
-	userID, _ := strconv.Atoi(c.Param("userId"))
-
-	// Get user ID from auth context to verify authorization
-	authUserID, exists := c.Get("userID")
-	if !exists || authUserID.(uint) != uint(userID) {
-		c.JSON(http.StatusForbidden, gin.H{"error": "Unauthorized to reset these statistics"})
+	userID, ok := requireOwnUserID(c)
+	if !ok {
 		return
 	}
 
