@@ -6,7 +6,7 @@ Una aplicación interactiva estilo "Quién quiere ser millonario" para preparar 
 
 ### Modos de Juego
 - **Modo Práctica**: Sin límite de tiempo, aprende a tu ritmo
-- **Contrarreloj**: 80 preguntas en 3 horas, simula el examen real
+- **Contrarreloj**: 80 preguntas (20 por categoría) en 1 hora, simula el examen real
 - **Áreas Débiles**: Enfoque inteligente en tus áreas de mejora
 - **Por Categoría**: Practica temas específicos
 
@@ -17,7 +17,7 @@ Una aplicación interactiva estilo "Quién quiere ser millonario" para preparar 
 - 🎭 **Cultura y Sociedad** (40% mínimo para aprobar)
 
 ### Funcionalidades
-- ✅ Base de datos con 450+ preguntas del examen oficial
+- ✅ Base de datos con 750+ preguntas del examen oficial
 - 📊 Estadísticas detalladas por categoría
 - 🚩 Sistema de marcado de preguntas dudosas
 - 💡 Ayudas estilo millonario (50:50, Pista, Saltar)
@@ -64,13 +64,11 @@ quiz-app/
 ├── models.go            # Modelos de datos
 ├── handlers.go          # Controladores API
 ├── seeder.go            # Poblador de preguntas
+├── data/
+│   └── questions.json   # Banco de preguntas (embebido en el binario)
 ├── go.mod               # Dependencias Go
 ├── quiz.db              # Base de datos SQLite (se crea automáticamente)
-├── templates/
-│   └── index.html       # Interfaz web principal
-└── static/
-    ├── style.css        # Estilos CSS
-    └── app.js           # Lógica JavaScript
+└── frontend/            # SPA Vue 3 + TypeScript (build en dist/)
 ```
 
 ## 💻 Uso de la Aplicación
@@ -109,30 +107,37 @@ quiz-app/
 ## 🔧 Configuración Avanzada
 
 ### Variables de Entorno (.env)
+
+Copia `.env.example` a `.env` y ajusta según necesites:
 ```env
 PORT=8080                    # Puerto del servidor
 DATABASE_PATH=quiz.db        # Ruta de la base de datos
+GIN_MODE=debug               # debug | release | test
+ALLOWED_ORIGINS=             # Orígenes CORS permitidos (vacío = todos, solo dev)
 ```
 
 ### Agregar Más Preguntas
 
-Edita el archivo `seeder.go` y agrega preguntas en el formato:
-```go
+Edita `data/questions.json` (embebido en el binario al compilar) y agrega preguntas en el formato:
+```json
 {
-    Category:    "CATEGORIA",
-    SubCategory: "Subcategoría",
-    Text:        "¿Pregunta?",
-    Difficulty:  1-5,
-    Points:      10,
-    Explanation: "Explicación de la respuesta",
-    Choices: []Choice{
-        {Text: "Opción A", IsCorrect: false, Order: 1},
-        {Text: "Opción B", IsCorrect: true, Order: 2},
-        {Text: "Opción C", IsCorrect: false, Order: 3},
-        {Text: "Opción D", IsCorrect: false, Order: 4},
-    },
+    "category": "CATEGORIA",
+    "subcategory": "Subcategoría",
+    "text": "¿Pregunta?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Explicación de la respuesta",
+    "choices": [
+        {"text": "Opción A", "is_correct": false, "order": 1},
+        {"text": "Opción B", "is_correct": true, "order": 2},
+        {"text": "Opción C", "is_correct": false, "order": 3},
+        {"text": "Opción D", "is_correct": false, "order": 4}
+    ]
 }
 ```
+
+Nota: el seeder solo corre cuando la base de datos está vacía; usa `npm run clean:db` y reinicia para re-sembrar.
 
 ## 🐛 Solución de Problemas
 
