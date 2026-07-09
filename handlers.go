@@ -69,11 +69,16 @@ func loginUser(c *gin.Context) {
 		return
 	}
 
-	// Generate session token
+	// Generate session token with expiry
 	token := generateToken()
+	expiresAt := time.Now().Add(tokenTTL)
 
 	// Save token to database
-	if err := db.Model(&user).Update("token", token).Error; err != nil {
+	updates := map[string]interface{}{
+		"token":            token,
+		"token_expires_at": expiresAt,
+	}
+	if err := db.Model(&user).Updates(updates).Error; err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create session"})
 		return
 	}
@@ -102,6 +107,12 @@ func authRequired() gin.HandlerFunc {
 		var user User
 		if err := db.Where("token = ?", token).First(&user).Error; err != nil {
 			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+			c.Abort()
+			return
+		}
+
+		if user.TokenExpiresAt == nil || time.Now().After(*user.TokenExpiresAt) {
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Token expired"})
 			c.Abort()
 			return
 		}
@@ -959,6 +970,9 @@ func resetUserStats(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{"message": "Statistics reset successfully"})
 }
+
+// tokenTTL is how long a login session token stays valid.
+const tokenTTL = 7 * 24 * time.Hour
 
 // Helper functions
 func generateToken() string {

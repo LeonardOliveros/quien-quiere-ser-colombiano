@@ -11,6 +11,7 @@ type User struct {
 	Password  string    `gorm:"column:password" json:"-"`
 	Email     string    `gorm:"unique" json:"email"`
 	Token     string    `gorm:"column:token" json:"-"`
+	TokenExpiresAt *time.Time `json:"-"`
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
