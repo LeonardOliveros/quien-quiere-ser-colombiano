@@ -390,8 +390,8 @@ func submitAnswer(c *gin.Context) {
 	sessionID := int(session.ID)
 
 	var answerData struct {
-		QuestionID uint `json:"question_id"`
-		ChoiceID   uint `json:"choice_id"`
+		QuestionID uint `json:"question_id" binding:"required"`
+		ChoiceID   uint `json:"choice_id" binding:"required"`
 		TimeSpent  int  `json:"time_spent"`
 	}
 
@@ -400,9 +400,38 @@ func submitAnswer(c *gin.Context) {
 		return
 	}
 
-	// Check if answer is correct
+	if session.Status == "COMPLETED" {
+		c.JSON(http.StatusConflict, gin.H{"error": "Game session is already completed"})
+		return
+	}
+
+	// Enforce the time limit server-side
+	if session.TimeLimit > 0 && getTimeRemaining(session) <= 0 {
+		now := time.Now()
+		db.Model(&GameSession{}).Where("id = ?", sessionID).Updates(map[string]interface{}{
+			"status":   "COMPLETED",
+			"end_time": now,
+		})
+		c.JSON(http.StatusConflict, gin.H{"error": "Time limit exceeded"})
+		return
+	}
+
+	// Reject answering the same question twice in a session
+	var alreadyAnswered int64
+	db.Model(&GameAnswer{}).
+		Where("game_session_id = ? AND question_id = ? AND choice_id IS NOT NULL", sessionID, answerData.QuestionID).
+		Count(&alreadyAnswered)
+	if alreadyAnswered > 0 {
+		c.JSON(http.StatusConflict, gin.H{"error": "Question already answered"})
+		return
+	}
+
+	// Check if answer is correct, validating the choice belongs to the question
 	var choice Choice
-	db.First(&choice, answerData.ChoiceID)
+	if err := db.First(&choice, answerData.ChoiceID).Error; err != nil || choice.QuestionID != answerData.QuestionID {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Choice does not belong to the submitted question"})
+		return
+	}
 
 	gameAnswer := GameAnswer{
 		GameSessionID: uint(sessionID),
