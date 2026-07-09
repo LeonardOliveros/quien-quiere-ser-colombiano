@@ -269,10 +269,10 @@ func getNextQuestion(c *gin.Context) {
 		Where("game_session_id = ?", sessionID).
 		Pluck("question_id", &usedQuestionIDs)
 
-	// Get answered question IDs
+	// Get answered question IDs (flag placeholders don't count as answers)
 	var answeredIDs []uint
 	db.Model(&GameAnswer{}).
-		Where("game_session_id = ?", sessionID).
+		Where("game_session_id = ? AND choice_id IS NOT NULL", sessionID).
 		Pluck("question_id", &answeredIDs)
 
 	// Check if we've reached the maximum number of questions
@@ -294,7 +294,7 @@ func getNextQuestion(c *gin.Context) {
 		db.Table("game_answers").
 			Select("questions.category, COUNT(*) as count").
 			Joins("JOIN questions ON questions.id = game_answers.question_id").
-			Where("game_answers.game_session_id = ?", sessionID).
+			Where("game_answers.game_session_id = ? AND game_answers.choice_id IS NOT NULL", sessionID).
 			Group("questions.category").
 			Scan(&categoryCount)
 
@@ -442,7 +442,15 @@ func submitAnswer(c *gin.Context) {
 		AnsweredAt:    time.Now(),
 	}
 
-	if err := db.Create(&gameAnswer).Error; err != nil {
+	// Fill in the flag placeholder row if the question was flagged first
+	var placeholder GameAnswer
+	if err := db.Where("game_session_id = ? AND question_id = ? AND choice_id IS NULL",
+		sessionID, answerData.QuestionID).First(&placeholder).Error; err == nil {
+		gameAnswer.ID = placeholder.ID
+		gameAnswer.IsFlagged = placeholder.IsFlagged
+	}
+
+	if err := db.Save(&gameAnswer).Error; err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save answer"})
 		return
 	}
@@ -490,6 +498,20 @@ func flagQuestion(c *gin.Context) {
 	if result.Error != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": result.Error.Error()})
 		return
+	}
+
+	// The question may not have been answered yet: create a flagged
+	// placeholder row that submitAnswer fills in later
+	if result.RowsAffected == 0 {
+		placeholder := GameAnswer{
+			GameSessionID: uint(sessionID),
+			QuestionID:    flagData.QuestionID,
+			IsFlagged:     true,
+		}
+		if err := db.Create(&placeholder).Error; err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to flag question"})
+			return
+		}
 	}
 
 	c.JSON(http.StatusOK, gin.H{
@@ -671,13 +693,13 @@ func getAnyPausedGame(c *gin.Context) {
 		return
 	}
 
-	// Get progress information
+	// Get progress information (flag placeholders don't count as answers)
 	var answeredCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ?", session.ID).Count(&answeredCount)
+	db.Model(&GameAnswer{}).Where("game_session_id = ? AND choice_id IS NOT NULL", session.ID).Count(&answeredCount)
 
 	// Count incorrect answers
 	var incorrectCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ? AND is_correct = ?", session.ID, false).Count(&incorrectCount)
+	db.Model(&GameAnswer{}).Where("game_session_id = ? AND choice_id IS NOT NULL AND is_correct = ?", session.ID, false).Count(&incorrectCount)
 
 	// Count flagged questions
 	var flaggedCount int64
@@ -745,13 +767,13 @@ func getPausedGame(c *gin.Context) {
 		return
 	}
 
-	// Get progress information
+	// Get progress information (flag placeholders don't count as answers)
 	var answeredCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ?", session.ID).Count(&answeredCount)
+	db.Model(&GameAnswer{}).Where("game_session_id = ? AND choice_id IS NOT NULL", session.ID).Count(&answeredCount)
 
 	// Count incorrect answers
 	var incorrectCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ? AND is_correct = ?", session.ID, false).Count(&incorrectCount)
+	db.Model(&GameAnswer{}).Where("game_session_id = ? AND choice_id IS NOT NULL AND is_correct = ?", session.ID, false).Count(&incorrectCount)
 
 	// Count flagged questions
 	var flaggedCount int64
@@ -804,6 +826,14 @@ func getGameResults(c *gin.Context) {
 	flaggedQuestions := []Question{}
 
 	for _, answer := range answers {
+		// Flag placeholders were never answered: track the flag, skip scoring
+		if answer.ChoiceID == nil {
+			if answer.IsFlagged {
+				flaggedQuestions = append(flaggedQuestions, answer.Question)
+			}
+			continue
+		}
+
 		category := answer.Question.Category
 		if _, exists := categoryScores[category]; !exists {
 			categoryScores[category] = CategoryScore{Category: category}
@@ -843,10 +873,18 @@ func getGameResults(c *gin.Context) {
 		recommendations = append(recommendations, rec.Description)
 	}
 
+	// Count only real answers (not flag placeholders)
+	answeredTotal := 0
+	for _, answer := range answers {
+		if answer.ChoiceID != nil {
+			answeredTotal++
+		}
+	}
+
 	// Calculate percentage safely (avoid division by zero)
 	percentage := 0.0
-	if len(answers) > 0 {
-		percentage = float64(session.CorrectAnswers) / float64(len(answers)) * 100
+	if answeredTotal > 0 {
+		percentage = float64(session.CorrectAnswers) / float64(answeredTotal) * 100
 	}
 
 	// EndTime is nil until the game is ended; fall back to elapsed time
@@ -857,7 +895,7 @@ func getGameResults(c *gin.Context) {
 
 	result := GameResult{
 		SessionID:        session.ID,
-		TotalQuestions:   len(answers),
+		TotalQuestions:   answeredTotal,
 		CorrectAnswers:   session.CorrectAnswers,
 		Score:            session.Score,
 		Percentage:       percentage,
