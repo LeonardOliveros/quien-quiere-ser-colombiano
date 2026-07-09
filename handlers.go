@@ -820,13 +820,19 @@ func getGameResults(c *gin.Context) {
 		percentage = float64(session.CorrectAnswers) / float64(len(answers)) * 100
 	}
 
+	// EndTime is nil until the game is ended; fall back to elapsed time
+	timeTaken := calculateCurrentTimeElapsed(session)
+	if session.EndTime != nil {
+		timeTaken = int(session.EndTime.Sub(session.StartTime).Seconds())
+	}
+
 	result := GameResult{
 		SessionID:        session.ID,
 		TotalQuestions:   len(answers),
 		CorrectAnswers:   session.CorrectAnswers,
 		Score:            session.Score,
 		Percentage:       percentage,
-		TimeTaken:        int(session.EndTime.Sub(session.StartTime).Seconds()),
+		TimeTaken:        timeTaken,
 		CategoryScores:   categoryScores,
 		IncorrectAnswers: incorrectAnswers,
 		FlaggedQuestions: flaggedQuestions,
