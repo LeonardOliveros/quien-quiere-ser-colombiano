@@ -579,6 +579,96 @@ h1.display-3 {
     }
 }
 
+/* ============================================
+   Overrides de Bootstrap — Tema Tricolor 🇨🇴
+   Reemplazan los colores stock (cian, azul y
+   rojo genéricos) por la paleta de la bandera.
+   ============================================ */
+
+.btn-primary {
+    background: linear-gradient(145deg, var(--flag-blue), #14418F);
+    border-color: var(--flag-yellow);
+    color: var(--text-main);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: linear-gradient(145deg, #14418F, var(--flag-blue));
+    border-color: var(--flag-yellow);
+    color: var(--flag-yellow);
+}
+
+.btn-info {
+    background-color: var(--flag-blue-light);
+    border-color: var(--flag-blue-light);
+    color: #fff;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+    background-color: #2E5BC7;
+    border-color: #2E5BC7;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: var(--flag-red);
+    border-color: var(--flag-red);
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: #A50D1F;
+    border-color: #A50D1F;
+}
+
+.btn-warning {
+    background-color: var(--flag-yellow);
+    border-color: var(--flag-yellow);
+    color: var(--text-dark);
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+    background-color: #E6B800;
+    border-color: #E6B800;
+    color: var(--text-dark);
+}
+
+.btn-success {
+    background-color: var(--emerald);
+    border-color: var(--emerald);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #0C8F63;
+    border-color: #0C8F63;
+}
+
+/* Badges: amarillo bandera con texto azul noche para
+   categorías/info, esmeralda y rojo bandera para estados */
+.badge.bg-info {
+    background-color: var(--flag-yellow) !important;
+    color: var(--text-dark);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.badge.bg-success {
+    background-color: var(--emerald) !important;
+    color: #06281F;
+}
+
+.badge.bg-danger {
+    background-color: var(--flag-red) !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--flag-yellow) !important;
+    color: var(--text-dark) !important;
+}
+
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 12px;
