@@ -222,7 +222,7 @@ function backToMenu() {
 
 .category-score-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--success-color), #5cb85c);
+  background: linear-gradient(90deg, var(--success-color), #34D399);
   transition: width 1s ease;
   display: flex;
   align-items: center;

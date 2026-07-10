@@ -456,7 +456,7 @@ function formatElapsedTime(seconds: number): string {
 
 .answer-btn {
   width: 100%;
-  background: linear-gradient(145deg, #1e3c72, #2a5298);
+  background: linear-gradient(145deg, #0A2A6B, #14418F);
   border: 2px solid var(--gold-color);
   color: var(--text-light);
   padding: 20px;
@@ -471,9 +471,9 @@ function formatElapsedTime(seconds: number): string {
 }
 
 .answer-btn:hover:not(.disabled) {
-  background: linear-gradient(145deg, #2a5298, #1e3c72);
+  background: linear-gradient(145deg, #14418F, #0A2A6B);
   transform: translateX(5px);
-  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 5px 20px var(--glow-yellow);
 }
 
 .answer-btn.disabled {
@@ -568,7 +568,7 @@ function formatElapsedTime(seconds: number): string {
 
 .progress-bar {
   transition: width 0.5s ease;
-  background: linear-gradient(90deg, var(--success-color), #5cb85c);
+  background: linear-gradient(90deg, var(--success-color), #34D399);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,11 +612,11 @@ function formatElapsedTime(seconds: number): string {
 @keyframes correctPulse {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 0 20px rgba(40, 167, 69, 0.6);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.6);
   }
   50% {
     transform: scale(1.05);
-    box-shadow: 0 0 40px rgba(40, 167, 69, 1), 0 0 60px rgba(40, 167, 69, 0.8);
+    box-shadow: 0 0 40px rgba(16, 185, 129, 1), 0 0 60px rgba(16, 185, 129, 0.8);
   }
 }
 
@@ -627,14 +627,14 @@ function formatElapsedTime(seconds: number): string {
 }
 
 .answer-btn.correct {
-  background: linear-gradient(145deg, #28a745, #218838) !important;
-  border-color: #28a745 !important;
+  background: linear-gradient(145deg, #10B981, #0C8F63) !important;
+  border-color: #10B981 !important;
   animation: correctPulse 1.5s ease-in-out infinite;
 }
 
 .answer-btn.incorrect {
-  background: linear-gradient(145deg, #dc3545, #c82333) !important;
-  border-color: #dc3545 !important;
+  background: linear-gradient(145deg, #CE1126, #A50D1F) !important;
+  border-color: #CE1126 !important;
   animation: incorrectShake 0.5s ease-in-out;
 }
 

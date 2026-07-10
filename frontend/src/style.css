@@ -1,30 +1,38 @@
-/* Quiz App Styles - Neon Arcade Theme 🎮 */
+/* Quiz App Styles - Tricolor Colombia Theme 🇨🇴 */
 
 :root {
-    /* 🎨 Neon Arcade Color Palette */
-    --bg-main: #121212;            /* Gris carbón muy oscuro (fondo principal) */
-    --bg-card: #1E1E24;            /* Gris acero (tarjetas/paneles) */
-    --neon-yellow: #FFEA00;        /* Amarillo neón (acento primario) */
-    --neon-blue: #2979FF;          /* Azul eléctrico (acento secundario) */
-    --neon-red: #FF1744;           /* Rojo neón intenso (acento terciario) */
-    --text-main: #FAFAFA;          /* Blanco humo (texto principal) */
+    /* 🇨🇴 Paleta bandera de Colombia */
+    --bg-main: #0B1B3A;            /* Azul noche (derivado del azul bandera) */
+    --bg-card: #12264F;            /* Azul profundo (tarjetas/paneles) */
+    --flag-yellow: #FFCD00;        /* Amarillo bandera (Pantone 116) */
+    --flag-blue: #0033A0;          /* Azul bandera (Pantone 286) */
+    --flag-blue-light: #3E6DDC;    /* Azul claro para bordes sobre fondo oscuro */
+    --flag-red: #CE1126;           /* Rojo bandera (Pantone 186) */
+    --flag-red-light: #E8455B;     /* Rojo claro para texto sobre fondo oscuro */
+    --emerald: #10B981;            /* Verde esmeralda (éxito) */
+    --text-main: #FDF9EE;          /* Blanco cálido (texto principal) */
 
     /* Colores con transparencias para glows */
-    --glow-yellow: rgba(255, 234, 0, 0.6);
-    --glow-blue: rgba(41, 121, 255, 0.6);
-    --glow-red: rgba(255, 23, 68, 0.6);
+    --glow-yellow: rgba(255, 205, 0, 0.45);
+    --glow-blue: rgba(62, 109, 220, 0.45);
+    --glow-red: rgba(206, 17, 38, 0.45);
+
+    /* Alias del tema anterior para compatibilidad */
+    --neon-yellow: var(--flag-yellow);
+    --neon-blue: var(--flag-blue-light);
+    --neon-red: var(--flag-red);
 
     /* Legacy mapping para compatibilidad */
     --primary-color: var(--bg-main);
     --secondary-color: var(--bg-card);
-    --accent-color: var(--neon-blue);
-    --accent-teal: var(--neon-yellow);
-    --gold-color: var(--neon-yellow);
-    --success-color: #00E676;      /* Verde neón para éxito */
-    --danger-color: var(--neon-red);
-    --warning-color: var(--neon-yellow);
+    --accent-color: var(--flag-blue);
+    --accent-teal: var(--flag-yellow);
+    --gold-color: var(--flag-yellow);
+    --success-color: var(--emerald);
+    --danger-color: var(--flag-red-light);
+    --warning-color: var(--flag-yellow);
     --text-light: var(--text-main);
-    --text-dark: #121212;
+    --text-dark: #0B1B3A;
 }
 
 * {
@@ -34,11 +42,29 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--bg-main);
     color: var(--text-main);
     min-height: 100vh;
     overflow-x: hidden;
+}
+
+/* Cinta tricolor fija en la parte superior (proporciones de la bandera 2:1:1) */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(
+        to bottom,
+        var(--flag-yellow) 0 50%,
+        var(--flag-blue) 50% 75%,
+        var(--flag-red) 75% 100%
+    );
+    z-index: 1100;
+    pointer-events: none;
 }
 
 /* Typography */
@@ -246,10 +272,10 @@ h1.display-3 {
 }
 
 .answer-btn.correct {
-    background: rgba(0, 230, 118, 0.2);
-    border-color: #00E676;
+    background: rgba(16, 185, 129, 0.2);
+    border-color: var(--emerald);
     animation: correctPulse 1.5s ease-in-out 3;
-    box-shadow: 0 0 30px rgba(0, 230, 118, 0.8), 0 0 60px rgba(0, 230, 118, 0.4);
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.7), 0 0 60px rgba(16, 185, 129, 0.35);
 }
 
 .answer-btn.incorrect {
@@ -272,11 +298,11 @@ h1.display-3 {
 @keyframes correctPulse {
     0%, 100% {
         transform: scale(1);
-        box-shadow: 0 0 20px rgba(40, 167, 69, 0.6);
+        box-shadow: 0 0 20px rgba(16, 185, 129, 0.6);
     }
     50% {
         transform: scale(1.08);
-        box-shadow: 0 0 40px rgba(40, 167, 69, 1), 0 0 60px rgba(40, 167, 69, 0.8);
+        box-shadow: 0 0 40px rgba(16, 185, 129, 1), 0 0 60px rgba(16, 185, 129, 0.8);
     }
 }
 
@@ -328,7 +354,7 @@ h1.display-3 {
 
 .progress-bar {
     transition: width 0.5s ease;
-    background: linear-gradient(90deg, var(--success-color), #5cb85c);
+    background: linear-gradient(90deg, var(--success-color), #34D399);
 }
 
 .score-display {
@@ -426,7 +452,7 @@ h1.display-3 {
 
 .category-score-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--success-color), #5cb85c);
+    background: linear-gradient(90deg, var(--success-color), #34D399);
     transition: width 1s ease;
     display: flex;
     align-items: center;

@@ -267,8 +267,25 @@ async function showQuestionCount() {
 .text-golden {
   color: var(--gold-color);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 2px;
+}
+
+/* Subrayado tricolor bajo el título */
+.text-golden::after {
+  content: '';
+  display: block;
+  width: 180px;
+  height: 10px;
+  margin: 18px auto 0;
+  border-radius: 5px;
+  background: linear-gradient(
+    to bottom,
+    var(--flag-yellow) 0 50%,
+    var(--flag-blue) 50% 75%,
+    var(--flag-red) 75% 100%
+  );
+  box-shadow: 0 0 12px var(--glow-yellow);
 }
 
 .game-modes {
@@ -329,13 +346,12 @@ async function showQuestionCount() {
 }
 
 .btn-resume {
-  background: linear-gradient(145deg, #CAFF00, #90EE02);
-  border: 3px solid var(--neon-yellow);
-  color: #1a1a1a;
+  background: linear-gradient(145deg, var(--flag-yellow), #E6B800);
+  border: 3px solid var(--flag-yellow);
+  color: var(--text-dark);
   font-weight: bold;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   animation: resumePulse 2s ease-in-out infinite;
-  box-shadow: 0 0 20px var(--glow-yellow), 0 0 40px var(--glow-yellow), inset 0 0 10px rgba(255, 234, 0, 0.3);
+  box-shadow: 0 0 20px var(--glow-yellow), 0 0 40px var(--glow-yellow), inset 0 0 10px rgba(255, 205, 0, 0.3);
 }
 
 .btn-resume::before {
@@ -345,7 +361,7 @@ async function showQuestionCount() {
   left: -3px;
   right: -3px;
   bottom: -3px;
-  background: linear-gradient(45deg, var(--neon-yellow), #90EE02, var(--neon-yellow));
+  background: linear-gradient(45deg, var(--flag-yellow), var(--flag-blue-light), var(--flag-yellow));
   z-index: -1;
   opacity: 0.5;
   transition: opacity 0.3s ease;
@@ -354,12 +370,11 @@ async function showQuestionCount() {
 }
 
 .btn-resume:hover {
-  background: linear-gradient(145deg, #F0FF80, #C0FF60);
+  background: linear-gradient(145deg, #FFDD4D, var(--flag-yellow));
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 0 30px var(--glow-yellow), 0 0 60px var(--glow-yellow), 0 0 90px var(--glow-yellow), inset 0 0 20px rgba(255, 234, 0, 0.5);
-  border-color: #FFFF00;
-  color: #0a0a0a;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px var(--glow-yellow), 0 0 60px var(--glow-yellow), 0 0 90px var(--glow-yellow), inset 0 0 20px rgba(255, 205, 0, 0.5);
+  border-color: #FFDD4D;
+  color: var(--text-dark);
 }
 
 .btn-resume:hover::before {
@@ -369,10 +384,10 @@ async function showQuestionCount() {
 
 @keyframes resumePulse {
   0%, 100% {
-    box-shadow: 0 0 20px var(--glow-yellow), 0 0 40px var(--glow-yellow), inset 0 0 10px rgba(255, 234, 0, 0.3);
+    box-shadow: 0 0 20px var(--glow-yellow), 0 0 40px var(--glow-yellow), inset 0 0 10px rgba(255, 205, 0, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px var(--glow-yellow), 0 0 60px var(--glow-yellow), 0 0 90px rgba(255, 234, 0, 0.4), inset 0 0 15px rgba(255, 234, 0, 0.5);
+    box-shadow: 0 0 30px var(--glow-yellow), 0 0 60px var(--glow-yellow), 0 0 90px rgba(255, 205, 0, 0.4), inset 0 0 15px rgba(255, 205, 0, 0.5);
   }
 }
 
