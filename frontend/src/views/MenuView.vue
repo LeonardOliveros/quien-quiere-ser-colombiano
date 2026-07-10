@@ -63,7 +63,7 @@
         <button class="btn btn-outline-gold me-2 mb-2" @click="showRecommendationsModal">
           <i class="fas fa-lightbulb"></i> Recomendaciones
         </button>
-        <button class="btn btn-outline-gold mb-2" @click="showQuestionCount">
+        <button class="btn btn-outline-gold mb-2" @click="questionBankModalOpen = true">
           <i class="fas fa-database"></i> Base de Datos de Preguntas
         </button>
       </div>
@@ -90,6 +90,9 @@
       @close="categoryModalOpen = false"
       @select="startCategoryGame"
     />
+
+    <!-- Question Bank Modal -->
+    <QuestionBankModal v-if="questionBankModalOpen" @close="questionBankModalOpen = false" />
   </div>
 </template>
 
@@ -103,6 +106,7 @@ import StatsModal from '@/components/StatsModal.vue'
 import HistoryModal from '@/components/HistoryModal.vue'
 import RecommendationsModal from '@/components/RecommendationsModal.vue'
 import CategoryModal from '@/components/CategoryModal.vue'
+import QuestionBankModal from '@/components/QuestionBankModal.vue'
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -112,6 +116,7 @@ const statsModalOpen = ref(false)
 const historyModalOpen = ref(false)
 const recommendationsModalOpen = ref(false)
 const categoryModalOpen = ref(false)
+const questionBankModalOpen = ref(false)
 const hasPausedGame = ref(false)
 const pausedGameData = ref<any>(null)
 
@@ -243,18 +248,6 @@ function showRecommendationsModal() {
   recommendationsModalOpen.value = true
 }
 
-async function showQuestionCount() {
-  try {
-    const data = await api.getQuestionCount()
-    let message = `Total de preguntas: ${data.total}\n\nPor categoría:\n`
-    for (const [category, count] of Object.entries(data.by_category)) {
-      message += `${category}: ${count}\n`
-    }
-    alert(message)
-  } catch (error) {
-    alert('Error al cargar el conteo de preguntas')
-  }
-}
 </script>
 
 <style scoped>
