@@ -2,6 +2,8 @@ package main
 
 import (
 	"context"
+	"embed"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -13,22 +15,35 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-	"gorm.io/driver/sqlite"
-	"gorm.io/gorm"
+
+	"quiz-app/internal/domain"
+	"quiz-app/internal/seed"
+	"quiz-app/internal/storage/dynamodb"
+	"quiz-app/internal/storage/sqlite"
 )
 
-var db *gorm.DB
+//go:embed data/taxonomy.json data/questions/*.json
+var seedFS embed.FS
+
+// store is the persistence port used by the HTTP handlers. The concrete
+// adapter (SQLite locally, DynamoDB in the cloud) is chosen by DB_DRIVER.
+var store domain.Store
 
 func main() {
 	// Load .env file
 	godotenv.Load()
 
-	// Initialize database
-	initDB()
+	// Initialize the storage adapter
+	var err error
+	store, err = openStore()
+	if err != nil {
+		log.Fatal("Failed to initialize storage: ", err)
+	}
+	defer store.Close()
 
 	// Setup Gin router
 	r := gin.Default()
-	
+
 	// Configure CORS: restrict to ALLOWED_ORIGINS when set (production),
 	// otherwise allow all origins (development)
 	config := cors.DefaultConfig()
@@ -52,8 +67,14 @@ func main() {
 		c.File("./dist/index.html")
 	})
 
-	// Seed database with questions if empty
-	seedQuestions()
+	// Sync the embedded question bank into the store
+	taxonomy, seeds, err := seed.Load(seedFS)
+	if err != nil {
+		log.Fatal("Invalid seed data: ", err)
+	}
+	if err := store.SyncQuestionBank(taxonomy, seeds); err != nil {
+		log.Fatal("Failed to sync question bank: ", err)
+	}
 
 	// Start server
 	port := os.Getenv("PORT")
@@ -87,33 +108,24 @@ func main() {
 	log.Println("Server exited")
 }
 
-func initDB() {
-	dbPath := os.Getenv("DATABASE_PATH")
-	if dbPath == "" {
-		dbPath = "quiz.db"
+// openStore selects the storage adapter from the DB_DRIVER env var:
+// "sqlite" (default) for local development, "dynamodb" for the cloud.
+func openStore() (domain.Store, error) {
+	driver := strings.ToLower(os.Getenv("DB_DRIVER"))
+	switch driver {
+	case "", "sqlite":
+		dbPath := os.Getenv("DATABASE_PATH")
+		if dbPath == "" {
+			dbPath = "quiz.db"
+		}
+		log.Printf("Storage: sqlite (%s)", dbPath)
+		return sqlite.Open(dbPath)
+	case "dynamodb":
+		log.Printf("Storage: dynamodb (table %s)", os.Getenv("DYNAMODB_TABLE"))
+		return dynamodb.Open(os.Getenv("DYNAMODB_TABLE"))
+	default:
+		return nil, fmt.Errorf("unknown DB_DRIVER %q (supported: sqlite, dynamodb)", driver)
 	}
-
-	var err error
-	db, err = gorm.Open(sqlite.Open(dbPath), &gorm.Config{})
-	if err != nil {
-		log.Fatal("Failed to connect to database:", err)
-	}
-
-	// Auto migrate models
-	err = db.AutoMigrate(
-		&Question{},
-		&Choice{},
-		&User{},
-		&GameSession{},
-		&GameAnswer{},
-		&QuestionHistory{},
-		&StudyRecommendation{},
-	)
-	if err != nil {
-		log.Fatal("Failed to migrate database:", err)
-	}
-
-	log.Println("Database connected and migrated successfully")
 }
 
 func setupRoutes(r *gin.Engine) {
@@ -158,5 +170,6 @@ func setupRoutes(r *gin.Engine) {
 
 		// Public question routes
 		api.GET("/questions/count", getQuestionsCount)
+		api.GET("/categories", getCategories)
 	}
 }

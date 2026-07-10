@@ -1,0 +1,202 @@
+[
+  {
+    "code": "CULTURA",
+    "name": "Cultura",
+    "subcategories": [
+      {
+        "code": "GENERAL",
+        "name": "General"
+      },
+      {
+        "code": "SIMBOLOS_PATRIOS",
+        "name": "Símbolos Patrios"
+      },
+      {
+        "code": "ARTE_Y_ARTISTAS",
+        "name": "Arte y Artistas"
+      },
+      {
+        "code": "ARQUITECTURA_Y_TEATROS",
+        "name": "Arquitectura y Teatros"
+      },
+      {
+        "code": "LITERATURA",
+        "name": "Literatura"
+      },
+      {
+        "code": "MUSICA_Y_DANZA",
+        "name": "Música y Danza"
+      },
+      {
+        "code": "CINE_Y_TELEVISION",
+        "name": "Cine y Televisión"
+      },
+      {
+        "code": "DEPORTES",
+        "name": "Deportes"
+      },
+      {
+        "code": "FESTIVALES_Y_FERIAS",
+        "name": "Festivales y Ferias"
+      },
+      {
+        "code": "GASTRONOMIA",
+        "name": "Gastronomía"
+      },
+      {
+        "code": "TURISMO",
+        "name": "Turismo"
+      },
+      {
+        "code": "MONEDA_Y_BILLETES",
+        "name": "Moneda y Billetes"
+      },
+      {
+        "code": "RELIGION_Y_TRADICIONES",
+        "name": "Religión y Tradiciones"
+      },
+      {
+        "code": "ETNIAS_Y_DEMOGRAFIA",
+        "name": "Etnias y Demografía"
+      }
+    ]
+  },
+  {
+    "code": "GEOGRAFIA",
+    "name": "Geografía",
+    "subcategories": [
+      {
+        "code": "GENERAL",
+        "name": "General"
+      },
+      {
+        "code": "FRONTERAS_Y_LIMITES",
+        "name": "Fronteras y Límites"
+      },
+      {
+        "code": "DIVISION_POLITICA",
+        "name": "División Política"
+      },
+      {
+        "code": "REGIONES_NATURALES",
+        "name": "Regiones Naturales"
+      },
+      {
+        "code": "RELIEVE",
+        "name": "Relieve"
+      },
+      {
+        "code": "HIDROGRAFIA",
+        "name": "Hidrografía"
+      },
+      {
+        "code": "CLIMA_Y_PISOS_TERMICOS",
+        "name": "Clima y Pisos Térmicos"
+      },
+      {
+        "code": "FLORA_Y_FAUNA",
+        "name": "Flora y Fauna"
+      },
+      {
+        "code": "PARQUES_NACIONALES",
+        "name": "Parques Nacionales"
+      },
+      {
+        "code": "ECONOMIA_Y_RECURSOS",
+        "name": "Economía y Recursos"
+      },
+      {
+        "code": "POBLACION_Y_ETNIAS",
+        "name": "Población y Etnias"
+      }
+    ]
+  },
+  {
+    "code": "HISTORIA",
+    "name": "Historia",
+    "subcategories": [
+      {
+        "code": "GENERAL",
+        "name": "General"
+      },
+      {
+        "code": "PRECOLOMBINO",
+        "name": "Período Precolombino"
+      },
+      {
+        "code": "CONQUISTA",
+        "name": "La Conquista"
+      },
+      {
+        "code": "COLONIA",
+        "name": "La Colonia"
+      },
+      {
+        "code": "INDEPENDENCIA",
+        "name": "La Independencia"
+      },
+      {
+        "code": "GRAN_COLOMBIA",
+        "name": "La Gran Colombia"
+      },
+      {
+        "code": "SIGLO_XIX",
+        "name": "Siglo XIX"
+      },
+      {
+        "code": "SIGLO_XX",
+        "name": "Siglo XX"
+      },
+      {
+        "code": "CONFLICTO_Y_PAZ",
+        "name": "Conflicto Armado y Paz"
+      }
+    ]
+  },
+  {
+    "code": "CONSTITUCION",
+    "name": "Constitución",
+    "subcategories": [
+      {
+        "code": "GENERAL",
+        "name": "General"
+      },
+      {
+        "code": "PRINCIPIOS_FUNDAMENTALES",
+        "name": "Principios Fundamentales"
+      },
+      {
+        "code": "DERECHOS_Y_LIBERTADES",
+        "name": "Derechos y Libertades"
+      },
+      {
+        "code": "MECANISMOS_DE_PROTECCION",
+        "name": "Mecanismos de Protección"
+      },
+      {
+        "code": "PARTICIPACION_Y_ELECCIONES",
+        "name": "Participación y Elecciones"
+      },
+      {
+        "code": "RAMAS_DEL_PODER_PUBLICO",
+        "name": "Ramas del Poder Público"
+      },
+      {
+        "code": "ORGANISMOS_DE_CONTROL",
+        "name": "Organismos de Control"
+      },
+      {
+        "code": "ORGANIZACION_TERRITORIAL",
+        "name": "Organización Territorial"
+      },
+      {
+        "code": "ESTADOS_DE_EXCEPCION",
+        "name": "Estados de Excepción"
+      },
+      {
+        "code": "REFORMAS_CONSTITUCIONALES",
+        "name": "Reformas Constitucionales"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7442 @@
+[
+  {
+    "key": "CUL-0001",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es el nombre oficial actual del país?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nueva Granada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Gran Colombia",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "República de Colombia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Estados Unidos de Colombia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0002",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿En qué año Colombia adoptó definitivamente su nombre actual de \"República de Colombia\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1819",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1863",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1886",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1991",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0003",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Quién dio el nombre de \"República de Colombia\" el 15 de febrero de 1819?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Simón Bolívar",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cristóbal Colón",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0004",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "El nombre de Colombia es un homenaje a:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco Miranda",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cristóbal Colón",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0005",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuáles son los colores de la bandera de Colombia en orden de arriba hacia abajo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rojo, amarillo, azul",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Azul, amarillo, rojo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Amarillo, azul, rojo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Amarillo, rojo, azul",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0006",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "En la bandera nacional, el color amarillo representa:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El cielo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La sangre de los libertadores",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La riqueza del suelo, la armonía y la justicia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Los océanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0007",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Qué representa el color azul en la bandera?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La sangre derramada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El cielo, los ríos y los dos océanos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La riqueza del suelo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La vegetación",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0008",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "El color rojo de la bandera simboliza:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los ríos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La riqueza",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La sangre derramada por los libertadores",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El cielo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0009",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Quién propuso los colores de la bandera basándose en la teoría de los colores de Goethe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco Miranda",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0010",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿En qué fecha se declaró oficialmente la bandera actual mediante la Ley 124?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "15 de febrero de 1819",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "13 de julio de 1887",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "20 de julio de 1810",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "7 de agosto de 1819",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0011",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Quién diseñó el escudo de armas de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0012",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿En qué año fue diseñado el escudo nacional?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1819",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1834",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1886",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0013",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Qué ave aparece en el escudo nacional?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Águila",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cóndor",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Colibrí",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Guacamaya",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0014",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es el lema nacional que aparece en el escudo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "\"Unidad y Libertad\"",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "\"Paz y Justicia\"",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "\"Libertad y Orden\"",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "\"Patria y Honor\"",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0015",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "En la franja superior del escudo, ¿qué fruto aparece?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Manzana de oro",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Granada de oro",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Piña de oro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Naranja de oro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0016",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Qué simboliza el gorro frigio en el escudo nacional?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La riqueza",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El comercio",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La libertad",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La agricultura",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0017",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "Los dos buques en la franja inferior del escudo representan:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La marina de guerra",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los dos océanos (Caribe y Pacífico)",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El comercio con España",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La independencia naval",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0018",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Quién escribió la letra del himno nacional?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Oreste Sindici",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "José María Samper",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Jorge Isaacs",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0019",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Quién compuso la música del himno nacional?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Oreste Sindici",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "José María Córdova",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0020",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿En qué año fue compuesto el himno nacional?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1819",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1834",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1887",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1910",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0021",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es el ave nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El águila",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El cóndor de los Andes",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El colibrí",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El tucán",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0022",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es la flor nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La rosa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El girasol",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La orquídea",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El clavel",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0023",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es el nombre científico de la flor nacional?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rosa colombiana",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cattleya trianae",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Helianthus annus",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Dianthus caryophyllus",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0024",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es el árbol nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El roble",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La ceiba",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La palma de cera del Quindío",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El guayacán",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0025",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es considerado el símbolo cultural de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El café",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La esmeralda",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El sombrero vueltiao",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La mochila wayúu",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0026",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es la moneda oficial de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El peso colombiano",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El dólar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El real",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0027",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿cuál es considerado el plato insigne de Bogotá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bandeja paisa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ajiaco",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sancocho",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tamal",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0028",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué plato es típico de la región antioqueña?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Ajiaco",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Mote de queso",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bandeja paisa",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Lechona",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0029",
+    "subcategory": "GASTRONOMIA",
+    "text": "El sancocho de gallina es un plato típico del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Valle del Cauca",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Costa Caribe",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0030",
+    "subcategory": "GASTRONOMIA",
+    "text": "La lechona es un plato tradicional del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Valle del Cauca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tolima",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Boyacá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0031",
+    "subcategory": "GASTRONOMIA",
+    "text": "El mote de queso es típico de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Costa Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0032",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Cuál de estos ingredientes NO se menciona como parte del ajiaco?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pollo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tres tipos de papa",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Arroz",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Guascas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0033",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿En qué ciudad se celebra el Carnaval más famoso de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0034",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "El Carnaval de Negros y Blancos se celebra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pasto",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Popayán",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0035",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿En qué mes se celebra el Carnaval de Barranquilla?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Enero",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Febrero",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Julio",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Diciembre",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0036",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "La Feria de las Flores se celebra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Medellín",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0037",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿En qué mes se realiza la Feria de las Flores?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Mayo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Agosto",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Octubre",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Diciembre",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0038",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "El Festival Vallenato se celebra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Valledupar",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0039",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "El Festival Internacional de Teatro se realiza en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Manizales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0040",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿Cada cuántos años se celebra el Festival Iberoamericano de Teatro de Bogotá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cada año",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cada 2 años",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cada 3 años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cada 4 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0041",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "El Festival de la Leyenda Vallenata rinde homenaje a:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Carlos Vives",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Virgen del Rosario",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Francisco el Hombre",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Rafael Escalona",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0042",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Quién es conocido por sus esculturas voluminosas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Alejandro Obregón",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Fernando Botero",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Enrique Grau",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Luis Caballero",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0043",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Dónde se encuentra el Museo del Oro?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0044",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Cuál es el teatro más antiguo de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Teatro Colón",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Teatro Heredia (Hoy Teatro Colón)",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Teatro Jorge Eliécer Gaitán",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Teatro Pablo Tobón Uribe",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0045",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "El Teatro Colón está ubicado en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0046",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Quién escribió \"Cien años de soledad\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Jorge Isaacs",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Gabriel García Márquez",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Rafael Pombo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "José Eustasio Rivera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0047",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿En qué año Gabriel García Márquez ganó el Premio Nobel de Literatura?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1972",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1982",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1992",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "2002",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0048",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Quién escribió \"María\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Gabriel García Márquez",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Jorge Isaacs",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "José Eustasio Rivera",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tomás Carrasquilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0049",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "\"La Vorágine\" fue escrita por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Jorge Isaacs",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "José Eustasio Rivera",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Gabriel García Márquez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Rafael Pombo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0050",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "¿De qué región es originario el vallenato?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Costa Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Llanos Orientales",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pacífico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0051",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "La cumbia es originaria de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Andes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Costa Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Pacífico",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0052",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "El bambuco es característico de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Costa Caribe",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La región Andina",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Pacífico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0053",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "El joropo es el baile típico de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La región Andina",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Costa Caribe",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Los Llanos Orientales",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Pacífico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0054",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "El currulao es una danza del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Caribe",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pacífico",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Andes",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0055",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "¿Cuál es el instrumento principal del vallenato?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La guitarra",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El acordeón",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La flauta",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El tambor",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0056",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "La gaita es un instrumento típico de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Costa Atlántica",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Andes",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Pacífico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0057",
+    "subcategory": "DEPORTES",
+    "text": "¿Cuál es el deporte más popular en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Ciclismo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Fútbol",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Boxeo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Atletismo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0058",
+    "subcategory": "DEPORTES",
+    "text": "¿Cuál es considerado el deporte nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Fútbol",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ciclismo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Tejo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Béisbol",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0059",
+    "subcategory": "DEPORTES",
+    "text": "¿Quiénes son mencionados como ciclistas destacados en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "James Rodríguez y Falcao",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Nairo Quintana y Egan Bernal",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Mariana Pajón y Caterine Ibargüen",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Luis Herrera y Fabio Parra",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0060",
+    "subcategory": "RELIGION_Y_TRADICIONES",
+    "text": "¿Cuál es la religión predominante en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Protestantismo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Catolicismo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Islam",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Judaísmo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0061",
+    "subcategory": "RELIGION_Y_TRADICIONES",
+    "text": "¿Qué porcentaje de la población se identifica como católica en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "60%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "70%",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "79%",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "90%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0062",
+    "subcategory": "TURISMO",
+    "text": "¿Cuál de estas ciudades es mencionada como Patrimonio de la Humanidad por la UNESCO?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0063",
+    "subcategory": "TURISMO",
+    "text": "El Parque Nacional Tayrona está ubicado en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Guajira",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Magdalena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Bolívar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Atlántico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0064",
+    "subcategory": "TURISMO",
+    "text": "¿Dónde se encuentra el Santuario de Las Lajas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Boyacá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Nariño",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cundinamarca",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0065",
+    "subcategory": "TURISMO",
+    "text": "Caño Cristales es conocido como:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El río más largo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El río de los cinco colores",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El río más caudaloso",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El río sagrado",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0066",
+    "subcategory": "TURISMO",
+    "text": "¿En qué departamento se encuentra Caño Cristales?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Amazonas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Meta",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Caquetá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Guaviare",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0067",
+    "subcategory": "TURISMO",
+    "text": "El Eje Cafetero incluye los departamentos de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antioquia, Valle y Cauca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Quindío, Caldas y Risaralda",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Tolima, Huila y Cundinamarca",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Santander, Boyacá y Norte de Santander",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0068",
+    "subcategory": "TURISMO",
+    "text": "Villa de Leyva está ubicada en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cundinamarca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Boyacá",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0069",
+    "subcategory": "TURISMO",
+    "text": "¿Qué ciudad es conocida como \"La Ciudad Amurallada\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Mompox",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0070",
+    "subcategory": "TURISMO",
+    "text": "El Nevado del Ruiz se encuentra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Sierra Nevada de Santa Marta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Cordillera Central",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La Cordillera Oriental",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Cordillera Occidental",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0071",
+    "subcategory": "TURISMO",
+    "text": "¿Cuál es el pico más alto de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nevado del Ruiz",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Nevado del Huila",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Pico Cristóbal Colón",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Pico Simón Bolívar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0072",
+    "subcategory": "TURISMO",
+    "text": "La Ciudad Perdida (Teyuna) se encuentra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Sierra Nevada de Santa Marta",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Los Andes",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Amazonía",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Chocó",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0073",
+    "subcategory": "TURISMO",
+    "text": "¿Qué isla colombiana es mencionada como destino turístico en el Caribe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Gorgona",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Malpelo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "San Andrés",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Todas las anteriores",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0074",
+    "subcategory": "TURISMO",
+    "text": "El desierto de La Tatacoa está en el departamento de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Guajira",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Huila",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cesar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Magdalena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0075",
+    "subcategory": "TURISMO",
+    "text": "La Catedral de Sal está ubicada en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nemocón",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Zipaquirá",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Tunja",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Chía",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0076",
+    "subcategory": "TURISMO",
+    "text": "El Parque Arqueológico de San Agustín está en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nariño",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Huila",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cauca",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Putumayo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0077",
+    "subcategory": "TURISMO",
+    "text": "¿Cuál es la capital del departamento del Amazonas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Florencia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Mocoa",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Leticia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Mitú",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0078",
+    "subcategory": "TURISMO",
+    "text": "El Chocó tiene costas sobre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el Pacífico",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Solo el Atlántico",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Ambos océanos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Ningún océano",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0079",
+    "subcategory": "TURISMO",
+    "text": "¿Cuál es el río más importante de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Río Cauca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Río Magdalena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Río Amazonas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Río Orinoco",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0080",
+    "subcategory": "TURISMO",
+    "text": "El Archipiélago del Rosario está cerca de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "San Andrés",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0081",
+    "subcategory": "TURISMO",
+    "text": "¿En qué mes se celebran las principales festividades de Semana Santa en Popayán?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Marzo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Abril (varía según el año)",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Mayo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Junio",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0082",
+    "subcategory": "TURISMO",
+    "text": "El Puente de Boyacá es importante porque:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Es el más largo del país",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Allí se libró la batalla decisiva de la independencia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Es Patrimonio Mundial",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Conecta dos océanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0083",
+    "subcategory": "TURISMO",
+    "text": "El Museo Nacional está ubicado en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0084",
+    "subcategory": "TURISMO",
+    "text": "¿Cuál es la bebida más representativa de Colombia a nivel mundial?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El aguardiente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El café",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El guarapo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La chicha",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0085",
+    "subcategory": "TURISMO",
+    "text": "El sombrero vueltiao es originario de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Córdoba y Sucre",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Boyacá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0086",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿En qué fechas específicas se celebra el Carnaval de Barranquilla?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Diciembre 24-31",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "40 días antes de la Semana Santa",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Julio 15-20",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Agosto 1-7",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0087",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿Qué se celebra en la Feria de las Flores además del desfile de silleteros?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el desfile",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Desfile de autos antiguos, cabalgata, fondas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo música",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo gastronomía",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0088",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "El Festival Iberoamericano de Teatro de Bogotá se celebra:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cada año",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cada dos años en años pares",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cada tres años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cada cuatro años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0089",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿En qué fechas se celebra el Carnaval de Negros y Blancos en Pasto?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Diciembre 28 a enero 6",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Febrero 1-10",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Marzo 15-20",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Abril 1-7",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0090",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "El Festival del Mono Núñez se realiza en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Valledupar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ginebra, Valle",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Manizales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0091",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿Qué tipo de música se celebra en el Festival del Mono Núñez?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Vallenato",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Música andina colombiana",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Salsa",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Reggaetón",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0092",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "La Feria de Manizales se celebra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Enero",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Junio",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Agosto",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Diciembre",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0093",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿Qué festividad importante se celebra en Popayán durante la Semana Santa?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Carnaval",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Procesiones religiosas tradicionales",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Festival de música",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Feria ganadera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0094",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "El Festival Internacional de Cine de Cartagena (FICCI) se fundó en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1960",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "1970",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1980",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1990",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0095",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "La Feria de Cali se celebra del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1 al 10 de enero",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "25 de diciembre al 3 de enero",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "15 al 25 de julio",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1 al 10 de agosto",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0096",
+    "subcategory": "GASTRONOMIA",
+    "text": "El plato \"mote de queso\" incluye como ingrediente principal:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Papa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ñame",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Yuca",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Plátano",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0097",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué tipo de pescado se usa tradicionalmente en el arroz con coco caribeño?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Trucha",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pargo rojo, lebranche o bocachico",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Salmón",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Atún",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0098",
+    "subcategory": "GASTRONOMIA",
+    "text": "El \"Rondón\" de San Andrés incluye un ingrediente llamado:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Carne de res",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pigtail (colita de cerdo)",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Pollo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pavo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0099",
+    "subcategory": "GASTRONOMIA",
+    "text": "Los \"domplines\" del Rondón son:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pescados pequeños",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tortillas de maíz",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Vegetales",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Mariscos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0100",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿De qué región es típico el \"sancocho de rabo\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Andina",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Pacífico",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Orinoquía",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0101",
+    "subcategory": "GASTRONOMIA",
+    "text": "La \"lechona tolimense\" se rellena con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo arroz",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Arroz, arveja, carne de cerdo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo verduras",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pescado",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0102",
+    "subcategory": "GASTRONOMIA",
+    "text": "El \"puchero santafereño\" es originario de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0103",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué hierba característica lleva el ajiaco?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cilantro",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Guascas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Perejil",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Albahaca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0104",
+    "subcategory": "GASTRONOMIA",
+    "text": "Los \"aborrajados\" del Valle del Cauca son:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Sopas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Plátanos maduros rellenos de queso y apanados",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Carnes",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ensaladas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0105",
+    "subcategory": "GASTRONOMIA",
+    "text": "El \"tilote\" o \"titoté\" es parte de la preparación de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bandeja paisa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Arroz con coco",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sancocho",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ajiaco",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0106",
+    "subcategory": "ETNIAS_Y_DEMOGRAFIA",
+    "text": "¿Cuáles son algunos de los grupos indígenas de la Amazonía colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Wayúu y Arhuacos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tikuna, Uitoto, Cubeo, Desano, Tucano",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Muiscas y Taironas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Quimbayas y Calimas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0107",
+    "subcategory": "ETNIAS_Y_DEMOGRAFIA",
+    "text": "Los grupos Emberá, Wounaan y Awá habitan principalmente en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Amazonía",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La región Pacífica",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Sierra Nevada",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0108",
+    "subcategory": "ETNIAS_Y_DEMOGRAFIA",
+    "text": "¿Qué porcentaje de la población colombiana se identifica como católica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "60%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "70%",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "79%",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "90%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0109",
+    "subcategory": "ETNIAS_Y_DEMOGRAFIA",
+    "text": "La población afrocolombiana se concentra principalmente en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el Pacífico",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Costa Pacífica y Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo el interior",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo San Andrés",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0110",
+    "subcategory": "ETNIAS_Y_DEMOGRAFIA",
+    "text": "Los Tikunas son una etnia característica de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Sierra Nevada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Amazonía",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Chocó",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0111",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "Débora Arango fue reconocida principalmente como:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Escultora",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Acuarelista",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ceramista",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Fotógrafa",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0112",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Quién fundó el Teatro Experimental de Cali (TEC)?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Santiago García",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Enrique Buenaventura",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Fanny Mikey",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Carlos José Reyes",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0113",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "El TEC fue fundado en el año:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1945",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1955",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1965",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1975",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0114",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Qué artista colombiano murió en Mónaco en 2023?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Alejandro Obregón",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Fernando Botero",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Omar Rayo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Enrique Grau",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0115",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "La \"Paloma de la Paz\" de Botero fue entregada al presidente:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Álvaro Uribe",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Juan Manuel Santos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Iván Duque",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "César Gaviria",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0116",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿En qué año se fundó la primera Escuela de Bellas Artes en Bogotá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1834",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1886",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1910",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0117",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "Eduardo Ramírez Villamizar es conocido por su estilo:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Barroco",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Geométrico",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Impresionista",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Realista",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0118",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Quién fue Gregorio Vásquez de Arce y Ceballos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un escultor colonial",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un general",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Un poeta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0119",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "El muralismo colombiano fue influenciado por artistas como:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pablo Picasso",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Diego Rivera",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Andy Warhol",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Salvador Dalí",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0120",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "Pedro Nel Gómez fue representante del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Arte abstracto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Muralismo y realismo socialista",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Impresionismo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Arte conceptual",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0121",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "El instrumento principal del currulao es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El acordeón",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La marimba de chonta",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La guitarra",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El tambor",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0122",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "La gaita es un instrumento característico de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Costa Atlántica",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Pacífico",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Andes",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0123",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "¿De qué material está hecha la marimba de chonta?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Metal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Madera de palma",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Bambú",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Plástico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0124",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "El mapalé es una danza originaria de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Andes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Costa Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Amazonas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0125",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "¿Qué instrumento se usa en el joropo llanero?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Marimba",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Arpa, cuatro y maracas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Acordeón",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Gaita",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0126",
+    "subcategory": "TURISMO",
+    "text": "El Santuario de Las Lajas está ubicado específicamente en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El centro de Pasto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ipiales, frontera con Ecuador",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Túquerres",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Cocha",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0127",
+    "subcategory": "TURISMO",
+    "text": "¿En qué meses Caño Cristales muestra sus colores más vivos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Diciembre-enero",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Julio-noviembre",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Marzo-abril",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Todo el año",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0128",
+    "subcategory": "TURISMO",
+    "text": "¿Cuántos colores se dice que tiene Caño Cristales?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tres",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cinco",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Siete",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Diez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0129",
+    "subcategory": "TURISMO",
+    "text": "La Ciudad Perdida (Teyuna) fue construida por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Muiscas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los Tayronas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Quimbayas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Incas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0130",
+    "subcategory": "TURISMO",
+    "text": "¿En qué año aproximadamente se construyó Ciudad Perdida?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "500 d.C.",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "800 d.C.",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1200 d.C.",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1500 d.C.",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0131",
+    "subcategory": "TURISMO",
+    "text": "El Parque Arqueológico de San Agustín es famoso por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pinturas rupestres",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Estatuas megalíticas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Pirámides",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Acueductos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0132",
+    "subcategory": "TURISMO",
+    "text": "¿Cuántas hectáreas aproximadamente tiene el Parque Tayrona?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "5.000",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "15.000",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "25.000",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "35.000",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0133",
+    "subcategory": "TURISMO",
+    "text": "El desierto de La Tatacoa es conocido por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Sus dunas de arena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sus formaciones de tierra roja y gris",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sus oasis",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sus cactus gigantes",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0134",
+    "subcategory": "TURISMO",
+    "text": "¿Qué profundidad tiene la Catedral de Sal de Zipaquirá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "50 metros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "100 metros",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "180 metros",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "250 metros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0135",
+    "subcategory": "TURISMO",
+    "text": "El Puente de Boyacá es importante porque allí:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Se firmó la independencia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Se libró la batalla del 7 de agosto de 1819",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Se fundó Bogotá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Se construyó el primer puente",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0136",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Qué animal aparece en la moneda de mil pesos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Oso de anteojos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tortuga caguama",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cóndor",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Jaguar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0137",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "La moneda de quinientos pesos tiene representada:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Una guacamaya",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Una rana de cristal",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un frailejón",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Un oso",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0138",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Qué planta aparece en la moneda de cien pesos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Orquídea",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Palma de cera",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Frailejón",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Ceiba",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0139",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "El oso de anteojos aparece en la moneda de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "20 pesos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "50 pesos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "100 pesos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "200 pesos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0140",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "La guacamaya bandera está en la moneda de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "100 pesos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "200 pesos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "500 pesos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1000 pesos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0141",
+    "subcategory": "LITERATURA",
+    "text": "¿En qué año murió Gabriel García Márquez?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2010",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "2012",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "2014",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "2016",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0142",
+    "subcategory": "LITERATURA",
+    "text": "\"La María\" de Jorge Isaacs es considerada una novela:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Realista",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Romántica",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "De ciencia ficción",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Policíaca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0143",
+    "subcategory": "LITERATURA",
+    "text": "Rafael Pombo es conocido principalmente por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Novelas históricas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cuentos infantiles y fábulas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ensayos políticos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Teatro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0144",
+    "subcategory": "LITERATURA",
+    "text": "Tomás Carrasquilla escribió sobre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La vida urbana",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Costumbres antioqueñas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Historia militar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ciencia ficción",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0145",
+    "subcategory": "LITERATURA",
+    "text": "José Asunción Silva fue principalmente:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Novelista",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Poeta modernista",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Dramaturgo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cronista",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0146",
+    "subcategory": "DEPORTES",
+    "text": "¿Cómo se juega el tejo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Con pelotas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Lanzando discos metálicos a mechas con pólvora",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Con raquetas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Con palos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0147",
+    "subcategory": "DEPORTES",
+    "text": "Mariana Pajón es campeona en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Atletismo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "BMX",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Natación",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Gimnasia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0148",
+    "subcategory": "DEPORTES",
+    "text": "Caterine Ibargüen ganó medalla olímpica en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Maratón",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Triple salto",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Lanzamiento de jabalina",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Salto con garrocha",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0149",
+    "subcategory": "DEPORTES",
+    "text": "¿Quién fue René Higuita?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Ciclista",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Portero de fútbol famoso por \"el escorpión\"",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Boxeador",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Atleta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0150",
+    "subcategory": "DEPORTES",
+    "text": "Nairo Quintana ha ganado:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tour de Francia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Giro de Italia y Vuelta a España",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo carreras nacionales",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Campeonatos de pista",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0151",
+    "subcategory": "ARQUITECTURA_Y_TEATROS",
+    "text": "El Teatro Heredia está ubicado en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0152",
+    "subcategory": "ARQUITECTURA_Y_TEATROS",
+    "text": "¿En qué año se fundó el Teatro Colón de Bogotá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1792",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1825",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1892",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1920",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0153",
+    "subcategory": "ARQUITECTURA_Y_TEATROS",
+    "text": "El Teatro Pablo Tobón Uribe está en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Medellín",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0154",
+    "subcategory": "ARQUITECTURA_Y_TEATROS",
+    "text": "¿Qué característica arquitectónica tiene el Teatro Colón?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Estilo moderno",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Estilo neoclásico italiano",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Estilo colonial",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Estilo art déco",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0155",
+    "subcategory": "ARQUITECTURA_Y_TEATROS",
+    "text": "El Teatro Jorge Eliécer Gaitán antes se llamaba:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Teatro Nacional",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Teatro Municipal",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Teatro Colombia",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Teatro Popular",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0156",
+    "subcategory": "RELIGION_Y_TRADICIONES",
+    "text": "¿Qué porcentaje de protestantes hay en Colombia aproximadamente?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "5%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "10%",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "13%",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "20%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0157",
+    "subcategory": "RELIGION_Y_TRADICIONES",
+    "text": "Las procesiones de Semana Santa de Popayán datan del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Siglo XVI",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Siglo XVII",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Siglo XVIII",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Siglo XIX",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0158",
+    "subcategory": "RELIGION_Y_TRADICIONES",
+    "text": "El Santuario de Monserrate en Bogotá está a una altura de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2.640 metros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "3.152 metros",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "3.500 metros",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "4.000 metros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0159",
+    "subcategory": "RELIGION_Y_TRADICIONES",
+    "text": "La Catedral Primada de Bogotá se construyó en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1538",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1650",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1807-1823",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1900",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0160",
+    "subcategory": "RELIGION_Y_TRADICIONES",
+    "text": "El Divino Niño es una devoción popular centrada en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0161",
+    "subcategory": "GENERAL",
+    "text": "El ave nacional de Colombia es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El águila",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El cóndor de los Andes",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El colibrí",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El tucán",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0162",
+    "subcategory": "GENERAL",
+    "text": "El vallenato es originario de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La región Andina",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Costa Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La región Pacífica",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Llanos Orientales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0163",
+    "subcategory": "GENERAL",
+    "text": "La cumbia es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un plato típico",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un baile y género musical",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Una artesanía",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una celebración religiosa",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0164",
+    "subcategory": "GENERAL",
+    "text": "El Carnaval de Barranquilla se celebra:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "En diciembre",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Antes de la cuaresma",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "En julio",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "En octubre",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0165",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál de estos es un plato típico de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Paella",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Bandeja paisa",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Tacos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pizza",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0166",
+    "subcategory": "GENERAL",
+    "text": "El Festival de la Leyenda Vallenata se celebra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Valledupar",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0167",
+    "subcategory": "GENERAL",
+    "text": "Fernando Botero es famoso por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Su música",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sus esculturas y pinturas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Su literatura",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Su arquitectura",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0168",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es la bebida nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El ron",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El aguardiente",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La cerveza",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El café",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0169",
+    "subcategory": "GENERAL",
+    "text": "El tejo es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un baile típico",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un deporte nacional",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un instrumento musical",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una comida tradicional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0170",
+    "subcategory": "GENERAL",
+    "text": "¿Quién es conocido como \"El Joe\" en la música colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Carlos Vives",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Joe Arroyo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Juanes",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Shakira",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0171",
+    "subcategory": "GENERAL",
+    "text": "El Festival Iberoamericano de Teatro se realiza en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0172",
+    "subcategory": "GENERAL",
+    "text": "La mochila wayúu es una artesanía de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Embera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los Wayúu de La Guajira",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Muiscas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Kogui",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0173",
+    "subcategory": "GENERAL",
+    "text": "El bambuco es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un instrumento",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un género musical y baile andino",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Una comida",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una fiesta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0174",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál de estos escritores colombianos ganó el Premio Nobel de Literatura?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Jorge Isaacs",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "José Asunción Silva",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Gabriel García Márquez",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Álvaro Mutis",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0175",
+    "subcategory": "GENERAL",
+    "text": "La Semana Santa en Popayán es famosa por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Sus carnavales",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sus procesiones religiosas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sus conciertos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sus competencias deportivas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0176",
+    "subcategory": "GENERAL",
+    "text": "El himno nacional de Colombia debe interpretarse en actos oficiales con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el coro",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Coro y primera estrofa",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Todas las estrofas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Coro y última estrofa",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0177",
+    "subcategory": "GENERAL",
+    "text": "¿Cuáles son los colores de la bandera de Colombia en orden?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rojo, amarillo, azul",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Amarillo, azul, rojo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Azul, amarillo, rojo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Amarillo, rojo, azul",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0178",
+    "subcategory": "GENERAL",
+    "text": "El Festival Internacional de Cine de Cartagena (FICCI) se celebra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Enero",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Marzo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Julio",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Diciembre",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0179",
+    "subcategory": "GENERAL",
+    "text": "¿Quién pintó \"La violencia\" y \"Los músicos\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Fernando Botero",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Alejandro Obregón",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Enrique Grau",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Omar Rayo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0180",
+    "subcategory": "GENERAL",
+    "text": "El escritor de \"La Vorágine\" fue:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "José Eustasio Rivera",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Jorge Isaacs",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Tomás Carrasquilla",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Eduardo Caballero Calderón",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0181",
+    "subcategory": "GENERAL",
+    "text": "La champeta es un género musical originario de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sincelejo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0182",
+    "subcategory": "GENERAL",
+    "text": "El Festival de Teatro de Manizales se realiza cada:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Año",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Dos años",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Tres años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cinco años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0183",
+    "subcategory": "GENERAL",
+    "text": "El ajiaco es un plato típico de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Costa Caribe",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bogotá y el altiplano",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0184",
+    "subcategory": "GENERAL",
+    "text": "¿Quién compuso \"Colombia tierra querida\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rafael Escalona",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Lucho Bermúdez",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Carlos Vives",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Alejo Durán",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0185",
+    "subcategory": "GENERAL",
+    "text": "La totuma es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un instrumento musical",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un recipiente tradicional",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un baile",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una comida",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0186",
+    "subcategory": "GENERAL",
+    "text": "El Festival del Mono Núñez es de música:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Vallenata",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Andina colombiana",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Llanera",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tropical",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0187",
+    "subcategory": "GENERAL",
+    "text": "La Feria de Cali se celebra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Agosto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Octubre",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Diciembre",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Febrero",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0188",
+    "subcategory": "GENERAL",
+    "text": "El acordeón es el instrumento principal del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bambuco",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Vallenato",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Porro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Mapalé",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0189",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál de estos es Patrimonio de la Humanidad por la UNESCO?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Carnaval de Barranquilla",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "La Feria de las Flores",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Festival Vallenato",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Feria de Cali",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0190",
+    "subcategory": "GENERAL",
+    "text": "El tejido del sombrero fino Sandoná es típico de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Córdoba",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Nariño",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Boyacá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tolima",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0191",
+    "subcategory": "GENERAL",
+    "text": "¿Quién es el autor de \"El olvido que seremos\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Héctor Abad Faciolince",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "William Ospina",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Juan Gabriel Vásquez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Santiago Gamboa",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0192",
+    "subcategory": "GENERAL",
+    "text": "La Fiesta del Mar se celebra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "San Andrés",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Buenaventura",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0193",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Qué prócer dio el nombre de \"República de Colombia\" en el Congreso de Angostura en 1819?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El nombre fue dado por Simón Bolívar el 15 de febrero de 1819 en el Congreso de Angostura para reemplazar el nombre anterior de \"La Nueva Granada\".",
+    "choices": [
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco Miranda",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Simón Bolívar",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0194",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Qué significado se le atribuye al color amarillo en la bandera nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El amarillo representa la riqueza del suelo, pero también simboliza la armonía y la justicia.",
+    "choices": [
+      {
+        "text": "La sangre derramada por los libertadores",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El cielo y los ríos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La riqueza del suelo, la armonía y la justicia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La soberanía sobre los océanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0195",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Qué elemento se encuentra en la franja central del escudo de armas de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En la franja central, sobre un fondo de platino, se encuentra un gorro frigio sostenido por una lanza.",
+    "choices": [
+      {
+        "text": "Una granada de oro abierta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Dos buques con las velas desplegadas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Un gorro frigio sostenido por una lanza",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Dos cornucopias con monedas y frutas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0196",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Quién fue el encargado de componer la música del himno nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La música fue magistralmente creada por el italiano Oreste Sindici a petición de José Domingo Torres.",
+    "choices": [
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Oreste Sindici",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "José Domingo Torres",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0197",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Qué característica física distingue a los machos del cóndor andino?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los machos del cóndor destacan por tener una cresta carnosa roja en la cabeza.",
+    "choices": [
+      {
+        "text": "Un collar negro en la base del cuello",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Una cresta carnosa roja en la cabeza",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un plumaje completamente blanco",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una envergadura de alas de 100 km",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0198",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Cuál es el nombre científico de la orquídea considerada la flor nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La flor nacional es la *Cattleya Trianae*, conocida popularmente como \"flor de mayo\" o \"lirio de mayo\".",
+    "choices": [
+      {
+        "text": "Victoria Regia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ceroxylon Quindiuense",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cattleya Trianae",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Palma de Cera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0199",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Hasta qué altura puede crecer la Palma de Cera del Quindío?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Palma de Cera (*Ceroxylon Quindiuense*) es una palmera singular que se erige con alturas de hasta 70 metros.",
+    "choices": [
+      {
+        "text": "Hasta 30 metros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Hasta 50 metros",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Hasta 70 metros",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Hasta 100 metros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0200",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿De qué cultura indígena tiene raíces el sombrero vueltiao?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El sombrero vueltiao es una pieza artesanal característica de las sabanas del Caribe con raíces en la cultura Zenú.",
+    "choices": [
+      {
+        "text": "Cultura Tayrona",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cultura Wayúu",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cultura Zenú",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cultura Arhuaca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0201",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Qué personaje aparece homenajeado en el billete de cien mil pesos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El billete de cien mil pesos rinde homenaje al presidente Carlos Lleras Restrepo (1966-1970).",
+    "choices": [
+      {
+        "text": "Gabriel García Márquez",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Alfonso López Michelsen",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Carlos Lleras Restrepo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "José Asunción Silva",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0202",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Qué elementos de fauna aparecen en el anverso del billete de cincuenta mil pesos junto a Gabriel García Márquez?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En el anverso del billete de cincuenta mil, junto a García Márquez, se encuentra un colibrí piquicorto y un caracol burgao.",
+    "choices": [
+      {
+        "text": "Una rana arborícola y una flor",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un colibrí piquicorto y un caracol burgao",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un abejorro y una puya",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una tortuga y una serpiente",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0203",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Qué fruto acompaña la imagen del expresidente Alfonso López Michelsen en el billete de veinte mil pesos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En el anverso del billete de veinte mil se identifica la figura del mandatario junto con el fruto del anón.",
+    "choices": [
+      {
+        "text": "El fruto del café",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El fruto del cacao",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El fruto del anón",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El fruto de la palma de cera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0204",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Quién es la protagonista representada en el billete de diez mil pesos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La antropóloga Virginia Gutiérrez de Pineda es la protagonista del billete de diez mil pesos.",
+    "choices": [
+      {
+        "text": "Débora Arango",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Policarpa Salavarrieta",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Virginia Gutiérrez de Pineda",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Soledad Acosta de Samper",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0205",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Qué paisaje se presenta en el reverso del billete de cinco mil pesos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En el reverso del billete de cinco mil pesos se presenta el paisaje del páramo andino con los frailejones, el cóndor y el oso de anteojos.",
+    "choices": [
+      {
+        "text": "El Valle del Cocora",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ciudad Perdida",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El páramo andino",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Caño Cristales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0206",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Qué artista paisa es homenajeadas en el billete de dos mil pesos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El billete de dos mil pesos rinde homenaje a la artista Débora Arango con un entramado de sus obras.",
+    "choices": [
+      {
+        "text": "Virginia Gutiérrez",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Débora Arango",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Frida Kahlo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Beatriz González",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0207",
+    "subcategory": "MONEDA_Y_BILLETES",
+    "text": "¿Qué animal está representado en la moneda de doscientos pesos de la nueva familia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La moneda de doscientos pesos representa a la guacamaya bandera.",
+    "choices": [
+      {
+        "text": "El oso de anteojos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La rana de cristal",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La guacamaya bandera",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La tortuga caguama",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0208",
+    "subcategory": "GENERAL",
+    "text": "¿En qué año se creó el Servicio Oficial de Turismo, la primera institución pública encargada del desarrollo turístico en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Según la historia de la actividad turística descrita, aunque en 1918 se empezaron a crear leyes, fue hasta 1932 cuando se creó el Servicio Oficial de Turismo",
+    "choices": [
+      {
+        "text": "1918",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1931",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1932",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1968",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0209",
+    "subcategory": "GENERAL",
+    "text": "¿Qué entidad se creó mediante la Ley 60 de 1968 para encargarse de la planeación, regulación y financiación del turismo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El comienzo del turismo como política de Estado inició con la Ley 60 de 1968, la cual creó a la Corporación Nacional de Turismo (CNT)",
+    "choices": [
+      {
+        "text": "El Servicio Oficial de Turismo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Corporación Nacional de Turismo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Ministerio de Comercio",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Policía de Turismo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0210",
+    "subcategory": "GENERAL",
+    "text": "¿Cuáles son las tres ciudades costeras principales donde se concentra la mayor oferta hotelera del turismo litoral?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En el turismo litoral, la mayor oferta hotelera, restaurantes y bares se ha enfocado en las playas de Santa Marta, Barranquilla y Cartagena de Indias",
+    "choices": [
+      {
+        "text": "Tumaco, Guapi y Buenaventura",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Riohacha, Coveñas y Tolú",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Santa Marta, Barranquilla y Cartagena de Indias",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "San Andrés, Providencia y Santa Catalina",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0211",
+    "subcategory": "GENERAL",
+    "text": "¿Qué municipio del departamento de Santander es conocido por su oferta en turismo de aventura y deportes extremos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Destinos como San Gil, en el departamento de Santander, son conocidos por su oferta en turismo de aventura y actividades de montaña",
+    "choices": [
+      {
+        "text": "Barichara",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "San Gil",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Bucaramanga",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Socorro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0212",
+    "subcategory": "GENERAL",
+    "text": "¿Qué modalidad turística ha emergido como una alternativa al turismo de sol y playa, permitiendo la interacción con espacios naturales del campo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Dentro de las nuevas opciones turísticas rurales ha emergido el agroecoturismo como una alternativa al clásico turismo de sol y playa",
+    "choices": [
+      {
+        "text": "El turismo religioso",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El turismo de negocios",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El agroecoturismo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El turismo urbano",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0213",
+    "subcategory": "GENERAL",
+    "text": "¿Qué ciudades del Pacífico funcionan como puertos internacionales para el transporte con países como Ecuador, Perú y Chile?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En la zona del Pacífico se destacan las ciudades de Tumaco y Buenaventura, las cuales funcionan como puertos internacionales",
+    "choices": [
+      {
+        "text": "Nuquí y Bahía Solano",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tumaco y Buenaventura",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Guapi y Timbiquí",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Quibdó y Ladrilleros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0214",
+    "subcategory": "FESTIVALES_Y_FERIAS",
+    "text": "¿Qué festividad se celebra en la ciudad de Medellín?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Entre las festividades mencionadas que reflejan la herencia cultural se encuentra la Feria de las Flores en Medellín",
+    "choices": [
+      {
+        "text": "El Carnaval de Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Festival Vallenato",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Feria de las Flores",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Carnaval de Negros y Blancos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0215",
+    "subcategory": "GENERAL",
+    "text": "¿Qué característica natural define al Eje Cafetero además de las plantaciones de café?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El Eje Cafetero se destaca por la presencia del vulcanismo propio del Parque Nacional Natural Los Nevados",
+    "choices": [
+      {
+        "text": "Las playas de arena blanca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El desierto de la Tatacoa",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La presencia del vulcanismo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Los manglares extensos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0216",
+    "subcategory": "GENERAL",
+    "text": "¿Qué ciudades se configuran como las más importantes en términos de arquitectura urbana y centros financieros?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Bogotá, Medellín y Cali se configuran como las ciudades más importantes en términos de arquitectura urbana y centros financieros",
+    "choices": [
+      {
+        "text": "Cartagena, Santa Marta y Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Bogotá, Medellín y Cali",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Bucaramanga, Pereira y Manizales",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cúcuta, Ibagué y Villavicencio",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0217",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es la razón principal de la baja actividad turística hacia el departamento del Chocó?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Las playas del Pacífico, especialmente hacia el Chocó, no tienen un turismo muy activo debido a la baja cantidad de vías de comunicación terrestre, ya que la mayoría son fluviales",
+    "choices": [
+      {
+        "text": "La falta de atractivos naturales",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La baja cantidad de vías de comunicación terrestre",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La ausencia de población local",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El clima excesivamente frío",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0218",
+    "subcategory": "GENERAL",
+    "text": "¿Qué entidad antecedió al Ministerio de Cultura y formaba parte del Ministerio de Educación antes de la Ley 397 de 1997?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Antes de la creación del Ministerio de Cultura, las funciones correspondían al Instituto Colombiano de Cultura, conocido como Colcultura, el cual formaba parte del Ministerio de Educación",
+    "choices": [
+      {
+        "text": "El Instituto Caro y Cuervo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Museo Nacional",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Colcultura",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Artesanías de Colombia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0219",
+    "subcategory": "SIMBOLOS_PATRIOS",
+    "text": "¿Quién fue el encargado de musicalizar la letra del himno nacional escrita por Rafael Núñez?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Rafael Núñez escribió la letra del himno nacional y el compositor italiano Oreste Síndici lo musicalizó",
+    "choices": [
+      {
+        "text": "José Rozo Contreras",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco José de Caldas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Oreste Síndici",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Lucho Bermúdez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0220",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué elementos del folclore y la gastronomía destacan en la cultura de la Región Pacífica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La región destaca por su folclore, incluyendo el currulao y la marimba de chonta, y por su gastronomía con platos como el sancocho de pescado y el arroz con coco",
+    "choices": [
+      {
+        "text": "El vallenato, el acordeón, el suero costeño y la arepa de huevo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El joropo, el arpa, la ternera a la llanera y las hallacas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El currulao, la marimba de chonta, el sancocho de pescado y el arroz con coco",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El bambuco, el tiple, el ajiaco y la lechona",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0221",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Qué material utilizaban principalmente los Quimbaya para crear figuras estilizadas con gran detalle y precisión?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los Quimbaya son conocidos por su habilidad en la orfebrería, creando figuras en oro trabajadas con técnicas como la cera perdida y la tumbaga",
+    "choices": [
+      {
+        "text": "Piedra volcánica",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Oro",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Arcilla roja",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Madera tallada",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0222",
+    "subcategory": "ARTE_Y_ARTISTAS",
+    "text": "¿Qué característica define el estilo artístico del pintor y escultor Fernando Botero?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El estilo de Fernando Botero se caracteriza por jugar con la magnificación del volumen de los elementos, dotándolos de una belleza distinta, lo cual se convirtió en su marca personal",
+    "choices": [
+      {
+        "text": "El uso exclusivo de figuras geométricas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La representación abstracta del paisaje",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La magnificación del volumen de los elementos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El uso de colores monocromáticos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0223",
+    "subcategory": "ARQUITECTURA_Y_TEATROS",
+    "text": "¿Qué institución cultural fundó Fanny Elisa Mikey en el año 1981?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Fanny Mikey logró consolidar una cultura del teatro al establecer un escenario propio en 1981 con la Fundación Teatro Nacional",
+    "choices": [
+      {
+        "text": "Teatro Experimental de Cali (TEC)",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Teatro Colón",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Fundación Teatro Nacional",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Teatro La Candelaria",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0224",
+    "subcategory": "CINE_Y_TELEVISION",
+    "text": "¿En qué año llegó el cine al territorio nacional colombiano?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El cine llegó a territorio nacional en el año de 1897, existiendo una disputa sobre si la primera función fue en Cartagena o Bucaramanga",
+    "choices": [
+      {
+        "text": "1920",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1897",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1954",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1900",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0225",
+    "subcategory": "CINE_Y_TELEVISION",
+    "text": "¿Qué película dirigida por Ciro Guerra alcanzó reconocimiento internacional en 2015?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Películas como \"El abrazo de la serpiente\" (2015) alcanzaron reconocimiento internacional y consolidaron el cine colombiano en la escena global",
+    "choices": [
+      {
+        "text": "La estrategia del caracol",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rodrigo D. No Futuro",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El abrazo de la serpiente",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La gente de la universal",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0226",
+    "subcategory": "CINE_Y_TELEVISION",
+    "text": "¿Cuál era el objetivo principal de la emisora Radio Sutatenza dirigida a la población rural?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Radio Sutatenza se encargó de alfabetizar a distancia a gran parte de la población campesina dedicada a las labores agrícolas",
+    "choices": [
+      {
+        "text": "Transmitir radionovelas de entretenimiento",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Alfabetizar a distancia a la población campesina",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Emitir música folclórica exclusivamente",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Narrar eventos deportivos internacionales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0227",
+    "subcategory": "ARQUITECTURA_Y_TEATROS",
+    "text": "¿Qué sitio arqueológico ubicado en Santa Marta se destaca por sus estructuras monumentales de terrazas y templos en piedra?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Ciudad Perdida, ubicada en Santa Marta, es un famoso asentamiento indígena que cuenta con estructuras monumentales desarrolladas por culturas precolombinas",
+    "choices": [
+      {
+        "text": "Parque Arqueológico de San Agustín",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ciudad Perdida",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Pueblito Boyacense",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tierradentro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0228",
+    "subcategory": "MUSICA_Y_DANZA",
+    "text": "¿Qué ritmo musical se considera la base de las danzas de la región del Pacífico colombiano?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En el pacífico se cuenta con el currulao como base, aunque también se danzan otros ritmos como el pango y el andarele",
+    "choices": [
+      {
+        "text": "El Joropo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Bambuco",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Currulao",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Vallenato",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0229",
+    "subcategory": "LITERATURA",
+    "text": "¿Cuál es la obra literaria por la que Gabriel García Márquez recibió el premio Nobel en 1982?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Gabriel García Márquez recibió el premio Nobel en 1982 por su obra \"Cien años de Soledad\"",
+    "choices": [
+      {
+        "text": "El amor en los tiempos del cólera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La hojarasca",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Crónica de una muerte anunciada",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cien años de Soledad",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0230",
+    "subcategory": "DEPORTES",
+    "text": "¿Bajo el mandato de qué presidente se creó el Instituto Colombiano de la Juventud y el Deporte (COLDEPORTES) en 1968?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Para 1968, el presidente Carlos Lleras Restrepo, por medio del Ministerio de Educación, creó a COLDEPORTES",
+    "choices": [
+      {
+        "text": "Gustavo Rojas Pinilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Carlos Lleras Restrepo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Belisario Betancur",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "César Gaviria",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0231",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Cuáles son las tres influencias principales que se fusionaron para crear la gastronomía colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La gastronomía nacional es una fusión de diversas influencias indígenas, africanas y europeas",
+    "choices": [
+      {
+        "text": "Indígena, Asiática y Europea",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Indígena, Africana y Europea",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Africana, Árabe y Española",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Europea, Norteamericana e Indígena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0232",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿De qué expresión inglesa proviene el nombre del plato típico de San Andrés, \"Rondón\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La palabra \"Rondón\" proviene del vocablo \"run down\" que se usaba para \"ir abajo\" en busca de las verduras o ingredientes",
+    "choices": [
+      {
+        "text": "Round on",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Run down",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Run on",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Roll down",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0233",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué hierba local es indispensable en la preparación del Ajiaco santafereño para darle su sabor característico?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El ajiaco es una sopa espesa que combina diferentes tipos de papas, pollo, mazorcas y guascas, que es una hierba local",
+    "choices": [
+      {
+        "text": "Cilantro",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Laurel",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Guascas",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Orégano",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0234",
+    "subcategory": "GASTRONOMIA",
+    "text": "En la preparación de la Mamona o ternera a la llanera, ¿cuál es el único condimento que se utiliza tradicionalmente?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Este plato consta del sacrificio de una becerra criolla a la cual no se le pone condimentos, sino sal espolvoreada y candela",
+    "choices": [
+      {
+        "text": "Pimienta y comino",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ajo y cebolla",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cerveza y hierbas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sal",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0235",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Cómo se le llama al caramelo hecho de leche de coco y azúcar que da color y sabor al arroz con coco?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Para hacer el titote o caramelo que le da sabor y color al arroz se hace con la leche de coco rallado con el dulce del azúcar o de la panela",
+    "choices": [
+      {
+        "text": "Melado",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Titote",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Guarapo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tostado",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0236",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Cuáles son los ingredientes principales que componen los Chicharrones de Pirarucú de la región Amazónica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los chicharrones se preparan con filete de pirarucú condimentado y frito, y se acompañan de tacacho de plátano, fariña y casabe",
+    "choices": [
+      {
+        "text": "Filete de pirarucú, tacacho, fariña y casabe",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Bagre frito, arroz con coco y patacón",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Trucha, papa francesa y ensalada",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Bocachico, yuca cocida y suero",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0237",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué ingredientes introducidos por los españoles en el siglo XVI se incorporaron a la cocina colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Con la llegada de los españoles se introdujeron ingredientes como el trigo, el arroz, la carne de cerdo, el pollo y productos lácteos",
+    "choices": [
+      {
+        "text": "Maíz, yuca y frijoles",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Plátano, coco y mariscos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Trigo, arroz, carne de cerdo y lácteos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Papa, aguacate y ají",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0238",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Cuáles son las dos influencias culinarias que dieron origen al Puchero Santafereño?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El puchero santafereño tiene su origen milenario con la cocina inca y también en Andalucía (España)",
+    "choices": [
+      {
+        "text": "Cocina Maya y Francesa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cocina Azteca y Portuguesa",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cocina Inca y Andalucía (España)",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cocina Chibcha y Africana",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0239",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué técnica de cocción se utiliza para preparar la Chuleta Valluna típica de la región Pacífica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La chuleta valluna se prepara apanando el lomo de cerdo con harina de trigo, huevos batidos y miga de pan, para luego freírlo",
+    "choices": [
+      {
+        "text": "Asado al carbón",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sudado en leche de coco",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Apanado y frito",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Ahumado en hoja de plátano",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0240",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué ingredientes componen el \"Mute\", plato símbolo de los santanderes?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Sus ingredientes incluyen maíz peto blanco, costillas de res y cerdo, patas de res, chorizo, habas, garbanzos, papas, entre otros",
+    "choices": [
+      {
+        "text": "Arroz, frijoles, carne molida y huevo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Maíz peto, carnes variadas (res, cerdo), garbanzos y habas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Pescado, leche de coco y ñame",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pollo, tres tipos de papa y guascas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  }
+]

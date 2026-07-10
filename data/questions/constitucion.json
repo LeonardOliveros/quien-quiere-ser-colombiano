@@ -1,0 +1,3040 @@
+[
+  {
+    "key": "CON-0001",
+    "subcategory": "PRINCIPIOS_FUNDAMENTALES",
+    "text": "Según la Constitución, Colombia es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un Estado federal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un Estado social de derecho",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Una monarquía constitucional",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una república parlamentaria",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0002",
+    "subcategory": "PRINCIPIOS_FUNDAMENTALES",
+    "text": "La soberanía reside en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Congreso",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El pueblo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Corte Constitucional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0003",
+    "subcategory": "PRINCIPIOS_FUNDAMENTALES",
+    "text": "Colombia se organiza en forma de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "República unitaria y centralizada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "República unitaria, descentralizada, con autonomía de sus entidades territoriales",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Estado federal",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Confederación de estados",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0004",
+    "subcategory": "PRINCIPIOS_FUNDAMENTALES",
+    "text": "Son fines esenciales del Estado:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Servir a la comunidad",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Promover la prosperidad general",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Garantizar la efectividad de los derechos y deberes",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Todas las anteriores",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0005",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "El derecho a la vida es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Renunciable",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Inviolable",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Condicionado",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Temporal",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0006",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿Cuál de estos es un derecho fundamental?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Derecho a la propiedad",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Derecho al libre desarrollo de la personalidad",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Derecho a la vivienda",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Derecho al trabajo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0007",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "La acción de tutela protege:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Todos los derechos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Solo derechos económicos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Derechos fundamentales",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Solo el derecho a la vida",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0008",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "La tutela debe ser resuelta en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "10 días",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "30 días",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "60 días",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "90 días",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0009",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "El habeas corpus protege:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La propiedad",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La libertad personal",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El trabajo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La educación",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0010",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿Desde qué edad se es ciudadano colombiano?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "14 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "16 años",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "18 años",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "21 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0011",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "¿Cuáles son las tres ramas del poder público?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nacional, Departamental, Municipal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ejecutiva, Legislativa, Judicial",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Política, Económica, Social",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Civil, Penal, Administrativa",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0012",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "La Rama Ejecutiva está encabezada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Congreso",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Corte Suprema",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Presidente de la República",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Fiscal General",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0013",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "¿Quién es el Jefe de Estado y Jefe de Gobierno?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Vicepresidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Presidente del Congreso",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Presidente de la República",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Primer Ministro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0014",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "El período presidencial es de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "3 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "4 años",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "5 años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "6 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0015",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "¿Se permite la reelección presidencial inmediata?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Sí, una vez",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sí, indefinidamente",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "No",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Solo en caso de guerra",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0016",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "El Congreso de la República está compuesto por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el Senado",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Solo la Cámara de Representantes",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Senado y Cámara de Representantes",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Senado, Cámara y Consejo de Estado",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0017",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "¿Cuántos senadores componen el Senado?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "100",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "102",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "108",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "110",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0018",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "Los senadores son elegidos por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Circunscripción departamental",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Circunscripción nacional",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los gobernadores",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0019",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "El período de senadores y representantes es de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "4 años",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "6 años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "8 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0020",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "La función principal del Congreso es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Juzgar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Hacer las leyes",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ejecutar las leyes",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nombrar ministros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0021",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "La Corte Constitucional está compuesta por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "7 magistrados",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "9 magistrados",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "11 magistrados",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "13 magistrados",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0022",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "El período de los magistrados de la Corte Constitucional es de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "4 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "6 años",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "8 años",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Vitalicio",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0023",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "La Corte Suprema de Justicia tiene:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "20 magistrados",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "23 magistrados",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "25 magistrados",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "30 magistrados",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0024",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "El Consejo de Estado es el máximo tribunal de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Lo penal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Lo constitucional",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Lo contencioso administrativo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Lo civil",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0025",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "¿Quién dirige la Fiscalía General de la Nación?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Vicefiscal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Fiscal General",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Procurador",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Defensor del Pueblo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0026",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "El Fiscal General es elegido por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Congreso",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Corte Suprema de Justicia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Voto popular",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0027",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "El Ministerio Público está conformado por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo la Procuraduría",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Procuraduría y Defensoría del Pueblo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Procuraduría, Defensoría y Personerías",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Solo la Defensoría",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0028",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "El Procurador General de la Nación es elegido por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Senado",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La Cámara de Representantes",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Corte Constitucional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0029",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "La Contraloría General de la República se encarga de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Hacer las leyes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El control fiscal",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Juzgar delitos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Defender los derechos humanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0030",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "El Contralor General es elegido por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Congreso en pleno",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La Corte de Cuentas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Voto popular",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0031",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "El Defensor del Pueblo es elegido por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Cámara de Representantes",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Senado",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El pueblo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0032",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "La organización electoral está conformada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo la Registraduría",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Consejo Nacional Electoral y Registraduría",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo el Consejo Electoral",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tribunales electorales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0033",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "El Registrador Nacional del Estado Civil es nombrado por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Congreso",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Los presidentes de las altas cortes",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Consejo Nacional Electoral",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0034",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "El voto en Colombia es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Obligatorio",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un derecho y un deber ciudadano",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo para hombres",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo para mayores de 21 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0035",
+    "subcategory": "ORGANIZACION_TERRITORIAL",
+    "text": "Son entidades territoriales:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo los departamentos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Departamentos, municipios, distritos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Departamentos, municipios, distritos y territorios indígenas",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Solo municipios",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0036",
+    "subcategory": "ORGANIZACION_TERRITORIAL",
+    "text": "Los gobernadores son elegidos por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Voto popular",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Las asambleas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Congreso",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0037",
+    "subcategory": "ORGANIZACION_TERRITORIAL",
+    "text": "El período de los gobernadores es de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "3 años",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "4 años",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "5 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0038",
+    "subcategory": "ORGANIZACION_TERRITORIAL",
+    "text": "Los alcaldes son elegidos por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los concejos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los gobernadores",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Voto popular",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0039",
+    "subcategory": "ORGANIZACION_TERRITORIAL",
+    "text": "El período de los alcaldes es de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "3 años",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "4 años",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "5 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0040",
+    "subcategory": "ORGANIZACION_TERRITORIAL",
+    "text": "Las Asambleas Departamentales son:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Órganos de control",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Corporaciones administrativas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Tribunales",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ministerios",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0041",
+    "subcategory": "ORGANIZACION_TERRITORIAL",
+    "text": "Los Concejos Municipales:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nombran al alcalde",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Aprueban los acuerdos municipales",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Eligen al gobernador",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nombran jueces",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0042",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "Son mecanismos de participación ciudadana:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el voto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Voto, referendo, plebiscito, consulta popular",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo el plebiscito",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo la tutela",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0043",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "El referendo sirve para:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Elegir presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Aprobar o derogar leyes",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Nombrar ministros",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Elegir jueces",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0044",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "La revocatoria del mandato procede para:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Senadores",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Gobernadores y alcaldes",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Magistrados",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0045",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "La iniciativa popular legislativa requiere el respaldo de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "5% de los ciudadanos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "0.5% del censo electoral",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "10% del censo electoral",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "30% del censo electoral",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0046",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "El Banco de la República es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un ministerio",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Una entidad privada",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El banco central con autonomía",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Un departamento administrativo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0047",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "La función principal del Banco de la República es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Prestar dinero al gobierno",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Mantener el poder adquisitivo de la moneda",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Financiar empresas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cobrar impuestos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0048",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "Las Corporaciones Autónomas Regionales se encargan de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La educación",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El medio ambiente",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La salud",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La seguridad",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0049",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "La Comisión Nacional del Servicio Civil protege:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los derechos laborales privados",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El sistema de mérito en el empleo público",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Las pensiones",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La educación",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0050",
+    "subcategory": "REFORMAS_CONSTITUCIONALES",
+    "text": "La Constitución puede ser reformada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Congreso mediante acto legislativo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Solo la Corte Constitucional",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Los gobernadores",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0051",
+    "subcategory": "REFORMAS_CONSTITUCIONALES",
+    "text": "Un acto legislativo requiere:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "4 debates",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "6 debates",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "8 debates",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "10 debates",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0052",
+    "subcategory": "REFORMAS_CONSTITUCIONALES",
+    "text": "También se puede reformar la Constitución por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Decreto presidencial",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Referendo o Asamblea Constituyente",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Orden judicial",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Acuerdo de gobernadores",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0053",
+    "subcategory": "MECANISMOS_DE_PROTECCION",
+    "text": "La acción pública de inconstitucionalidad puede ser interpuesta por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo abogados",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Solo el Procurador",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cualquier ciudadano",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Solo el Presidente",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0054",
+    "subcategory": "MECANISMOS_DE_PROTECCION",
+    "text": "Las sentencias de la Corte Constitucional:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pueden ser apeladas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Son definitivas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Son solo consultivas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Requieren aprobación del Congreso",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0055",
+    "subcategory": "ESTADOS_DE_EXCEPCION",
+    "text": "Los estados de excepción son:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo guerra exterior",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Guerra exterior, conmoción interior, emergencia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo emergencia económica",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo catástrofe natural",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0056",
+    "subcategory": "ESTADOS_DE_EXCEPCION",
+    "text": "El estado de guerra exterior lo declara:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Presidente con firma de todos los ministros",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Congreso",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Senado mediante declaración",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0057",
+    "subcategory": "ESTADOS_DE_EXCEPCION",
+    "text": "El estado de conmoción interior puede durar inicialmente:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "30 días",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "90 días",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "180 días",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Un año",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0058",
+    "subcategory": "ESTADOS_DE_EXCEPCION",
+    "text": "El estado de emergencia puede declararse por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "15 días",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "30 días",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "60 días",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "90 días",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0059",
+    "subcategory": "ESTADOS_DE_EXCEPCION",
+    "text": "Durante los estados de excepción:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Se suspende la Constitución",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "No pueden suspenderse los derechos humanos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Se disuelve el Congreso",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Se suspenden todas las garantías",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0060",
+    "subcategory": "ESTADOS_DE_EXCEPCION",
+    "text": "Los decretos de estados de excepción tienen:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Vigencia permanente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Fuerza de ley mientras dure el estado",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo son recomendaciones",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "No requieren control",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0061",
+    "subcategory": "GENERAL",
+    "text": "¿Qué artículo de la Constitución establece que Colombia es un Estado Social de Derecho?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Artículo 5",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Artículo 1",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Artículo 10",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Artículo 20",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0062",
+    "subcategory": "GENERAL",
+    "text": "La tutela protege derechos:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Económicos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Colectivos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Fundamentales",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Culturales únicamente",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0063",
+    "subcategory": "GENERAL",
+    "text": "¿Cuántos años dura el período de un alcalde en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "3 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "4 años",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "5 años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "2 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0064",
+    "subcategory": "GENERAL",
+    "text": "¿Qué organismo tiene la función de acusar ante el Senado al Presidente?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Corte Suprema",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Fiscalía",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Cámara de Representantes",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Procuraduría",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0065",
+    "subcategory": "GENERAL",
+    "text": "El derecho a la doble nacionalidad en Colombia está:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Prohibido",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Permitido",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Restringido a ciertos países",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo para nacidos en Colombia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0066",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es la edad mínima para ser elegido Presidente de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "25 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "30 años",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "35 años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "40 años",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0067",
+    "subcategory": "GENERAL",
+    "text": "La revocatoria del mandato es un mecanismo que aplica para:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Presidente y Vicepresidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Senadores y Representantes",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Gobernadores y Alcaldes",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Todos los cargos de elección popular",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0068",
+    "subcategory": "GENERAL",
+    "text": "¿Cuántos magistrados tiene la Corte Suprema de Justicia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "23 magistrados",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "20 magistrados",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "25 magistrados",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "30 magistrados",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0069",
+    "subcategory": "GENERAL",
+    "text": "La iniciativa legislativa puede ser ejercida por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo el Gobierno",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Solo el Congreso",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Gobierno, Congreso y ciudadanos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Solo los ciudadanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0070",
+    "subcategory": "GENERAL",
+    "text": "¿Qué porcentaje del censo electoral se requiere para convocar un referendo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "3%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "5%",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "10%",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "15%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0071",
+    "subcategory": "GENERAL",
+    "text": "El Fiscal General de la Nación es elegido por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Corte Suprema de Justicia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Congreso",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Voto popular",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0072",
+    "subcategory": "GENERAL",
+    "text": "Los estados de excepción en Colombia son:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Guerra exterior, conmoción interior, emergencia",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Solo guerra y emergencia",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Solo conmoción interior",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Guerra, paz y emergencia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0073",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es el quórum mínimo para sesionar en el Congreso?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La mitad más uno",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un tercio",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Una cuarta parte",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Dos tercios",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0074",
+    "subcategory": "GENERAL",
+    "text": "El Banco de la República tiene como función principal:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Prestar dinero al Gobierno",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Mantener la capacidad adquisitiva de la moneda",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Financiar empresas privadas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cobrar impuestos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0075",
+    "subcategory": "GENERAL",
+    "text": "¿Quién nombra al Procurador General de la Nación?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Presidente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Senado",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La Corte Constitucional",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Consejo de Estado",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0076",
+    "subcategory": "GENERAL",
+    "text": "La acción popular protege:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Derechos fundamentales",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Derechos colectivos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Derechos individuales",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo el medio ambiente",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0077",
+    "subcategory": "GENERAL",
+    "text": "¿Cuántos debates requiere un proyecto de ley para ser aprobado?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2 debates",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "3 debates",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "4 debates",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "5 debates",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0078",
+    "subcategory": "MECANISMOS_DE_PROTECCION",
+    "text": "¿Cuál es el mecanismo judicial idóneo para proteger de manera inmediata los derechos fundamentales cuando estos son amenazados por el Estado o un tercero?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La protección judicial de los derechos fundamentales se realiza a través de la acción de tutela, la cual es un procedimiento especial, rápido y preferente",
+    "choices": [
+      {
+        "text": "Acción de Cumplimiento",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Acción de Tutela",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Acción Popular",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Habeas Corpus",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0079",
+    "subcategory": "MECANISMOS_DE_PROTECCION",
+    "text": "¿Qué cantidad mínima de personas se requiere para ejercer una Acción de Grupo con el fin de reparar un daño causado?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Para ejercer la acción de grupo se requiere un conjunto de mínimo 20 personas a las que se les haya causado el daño",
+    "choices": [
+      {
+        "text": "10 personas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "20 personas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "50 personas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "5 personas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0080",
+    "subcategory": "MECANISMOS_DE_PROTECCION",
+    "text": "¿Cuál es el término establecido por la Ley 1755 de 2015 para que la administración resuelva consultas en relación con las materias a su cargo mediante el derecho de petición?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Ley 1755 de 2015 estableció un término de 30 días hábiles para consultas en relación con las materias a cargo",
+    "choices": [
+      {
+        "text": "10 días hábiles",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "15 días hábiles",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "20 días hábiles",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "30 días hábiles",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0081",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "¿Quién es el encargado de convocar al pueblo en un plebiscito para apoyar o rechazar una decisión del Ejecutivo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El plebiscito es un mecanismo de participación donde el pueblo es convocado por el Presidente de la República",
+    "choices": [
+      {
+        "text": "El Congreso de la República",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Registrador Nacional",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Presidente de la República",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Consejo Nacional Electoral",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0082",
+    "subcategory": "PARTICIPACION_Y_ELECCIONES",
+    "text": "¿Qué porcentaje de firmas se requiere para sustentar la solicitud de revocatoria del mandato de un gobernador o alcalde?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Se debe cumplir con el porcentaje de firmas mínimo requerido, el cual debe ser superior o igual al 40% de los votos que obtuvo el elegido",
+    "choices": [
+      {
+        "text": "30% de los votos obtenidos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "40% de los votos obtenidos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "50% de los votos obtenidos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "25% de los votos obtenidos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0083",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "¿Qué corporación pública representa a la Rama Legislativa y tiene la función de reformar la Constitución y hacer las leyes?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Rama Legislativa está representada por una corporación pública colegiada de elección popular denominada Congreso de la República",
+    "choices": [
+      {
+        "text": "El Consejo de Estado",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Corte Suprema de Justicia",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Congreso de la República",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Asamblea Nacional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0084",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "¿Cuál es el máximo órgano de control fiscal del Estado colombiano encargado de vigilar el buen uso de los recursos públicos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Contraloría General de la República es el máximo órgano de control fiscal del estado colombiano",
+    "choices": [
+      {
+        "text": "La Procuraduría General de la Nación",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Defensoría del Pueblo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Fiscalía General de la Nación",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Contraloría General de la República",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0085",
+    "subcategory": "ORGANISMOS_DE_CONTROL",
+    "text": "¿Qué entidad tiene como funciones básicas regular la moneda, los cambios internacionales y el crédito?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El Banco de la República es la entidad encargada de ejercer las funciones de banca central, incluyendo regular la moneda, los cambios internacionales y el crédito",
+    "choices": [
+      {
+        "text": "La Comisión Nacional del Servicio Civil",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Banco de la República",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Ministerio de Hacienda",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Superintendencia Financiera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0086",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "¿Qué acción constitucional tutela la libertad personal cuando alguien es privado de la libertad con violación de garantías?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El habeas corpus es un derecho fundamental y una acción constitucional que tutela la libertad personal cuando alguien es privado de la libertad con violación de las garantías",
+    "choices": [
+      {
+        "text": "Acción de Tutela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Habeas Corpus",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Acción de Grupo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Acción de Cumplimiento",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0087",
+    "subcategory": "RAMAS_DEL_PODER_PUBLICO",
+    "text": "¿Quién simboliza la unidad nacional y actúa como Jefe de Estado, Jefe de Gobierno y suprema autoridad administrativa?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Rama Ejecutiva está en cabeza del presidente de la república, quién simboliza la unidad nacional, actúa como jefe de Estado, jefe de Gobierno y suprema autoridad administrativa",
+    "choices": [
+      {
+        "text": "El Presidente del Senado",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Fiscal General",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Presidente de la República",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Ministro del Interior",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0088",
+    "subcategory": "PRINCIPIOS_FUNDAMENTALES",
+    "text": "¿Qué significa que Colombia sea un Estado social de derecho en relación con los derechos humanos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El principio de Estado social de derecho significa que el Estado asegura la efectividad de los derechos humanos, respetándolos, protegiéndolos de intromisiones de terceros y garantizándolos a través de autoridades públicas",
+    "choices": [
+      {
+        "text": "Significa que el Estado asegura la efectividad de los derechos humanos, respetándolos, protegiéndolos y garantizándolos",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Significa que los derechos humanos dependen exclusivamente de la voluntad de las empresas privadas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Significa que el Estado solo protege los derechos económicos de los ciudadanos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Significa que los derechos humanos son opcionales para las autoridades públicas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0089",
+    "subcategory": "ORGANIZACION_TERRITORIAL",
+    "text": "¿En qué consiste la descentralización por colaboración?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La descentralización por colaboración se presenta cuando personas privadas ejercen funciones administrativas, como por ejemplo las Cámaras de Comercio y la Federación Nacional de Cafeteros",
+    "choices": [
+      {
+        "text": "En el otorgamiento de competencias administrativas a los departamentos y municipios",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "En la asignación de funciones del Estado a entidades creadas para una actividad especializada",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "En que personas privadas ejercen funciones administrativas",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "En la distribución de recursos únicamente a las grandes ciudades",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0090",
+    "subcategory": "PRINCIPIOS_FUNDAMENTALES",
+    "text": "¿A través de qué mecanismo se expresa la autoridad que reside en el pueblo según la soberanía popular?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La soberanía popular hace referencia a que la autoridad reside exclusivamente en el pueblo y se expresa a través del voto, permitiendo tomar decisiones de interés público y elegir representantes",
+    "choices": [
+      {
+        "text": "A través de las encuestas de opinión",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "A través de la designación directa por parte del presidente",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "A través del voto",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "A través de las juntas directivas empresariales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0091",
+    "subcategory": "PRINCIPIOS_FUNDAMENTALES",
+    "text": "¿Qué ocurre en caso de incompatibilidad entre la Constitución y otras normas jurídicas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Debido al principio de supremacía de la Constitución, que la señala como norma de normas, en caso de incompatibilidad entre ella y otras normas jurídicas, prima la aplicación de las disposiciones constitucionales",
+    "choices": [
+      {
+        "text": "Se aplica la norma más reciente aprobada por el Congreso",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Prima la aplicación de las disposiciones constitucionales",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Se debe realizar una consulta popular para decidir cuál aplicar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Prima la aplicación de la ley ordinaria sobre la Constitución",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0092",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿Cuál es la posición del ordenamiento jurídico colombiano frente a la pena de muerte?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El derecho a la vida es inviolable y, por lo tanto, en el ordenamiento jurídico colombiano la pena de muerte no es permitida en el territorio nacional",
+    "choices": [
+      {
+        "text": "Es permitida solo en casos de traición a la patria",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Es permitida si un juez especializado la ordena",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "No es permitida en el territorio nacional",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Es permitida únicamente en tiempos de guerra internacional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0093",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿A qué hace referencia la dimensión formal del derecho a la igualdad?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La dimensión formal del derecho a la igualdad implica que la legalidad debe ser aplicada en condiciones de equidad a todos los sujetos contra quienes se dirige",
+    "choices": [
+      {
+        "text": "A garantizar la paridad de oportunidades económicas entre los individuos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "A la prohibición de discriminación por razones de sexo o raza",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "A que la legalidad debe ser aplicada en condiciones de equidad a todos los sujetos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "A la distribución idéntica de recursos monetarios a toda la población",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0094",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿Qué protege el derecho al libre desarrollo de la personalidad?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Este derecho protege la capacidad y autonomía de las personas para tomar decisiones que les permitan llevar su vida de acuerdo con sus creencias y definir sus opciones vitales",
+    "choices": [
+      {
+        "text": "La capacidad de las personas para definir autónomamente sus opciones vitales",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "La obligación de seguir las tradiciones culturales de la mayoría",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El derecho a imponer las propias creencias a otros ciudadanos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La facultad de actuar sin respetar las leyes del Estado",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0095",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿Cuál es una de las garantías establecidas para la libertad de conciencia en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Para garantizar la libertad de conciencia, se establece que nadie será obligado a actuar contra su conciencia",
+    "choices": [
+      {
+        "text": "Que todas las personas deben revelar sus convicciones al Estado",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Que se puede obligar a alguien a actuar contra su conciencia por el bien común",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Que nadie será obligado a actuar contra su conciencia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Que las convicciones personales deben ser aprobadas por un juez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0096",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿Cuándo se considera vulnerado el derecho a la libertad de locomoción?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Aunque no es absoluto, este derecho se vulnera cuando se impide el tránsito de una persona en espacios de carácter público que deben ser accesibles para todos",
+    "choices": [
+      {
+        "text": "Cuando se cobra peaje en una vía concesionada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cuando se impide el tránsito de una persona en espacios de carácter público",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cuando se prohíbe el ingreso a una propiedad privada residencial",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cuando se exige pasaporte para salir del país",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0097",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿Cómo se define el derecho al trabajo en relación con la elección de la actividad?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El trabajo consiste en la realización de una actividad libremente escogida por la persona, dedicando a ella su esfuerzo intelectual o material",
+    "choices": [
+      {
+        "text": "Como la obligación de aceptar cualquier empleo ofrecido por el Estado",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Como la realización de una actividad asignada por las autoridades locales",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Como la realización de una actividad libremente escogida por la persona",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Como el deber de trabajar exclusivamente en sectores industriales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0098",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿Qué establece el artículo 39 de la Constitución respecto a la constitución de sindicatos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El artículo 39 dispone que todos los trabajadores y empleadores tienen derecho a constituir asociaciones o sindicatos sin la intervención del Estado",
+    "choices": [
+      {
+        "text": "Que se requiere permiso previo del Ministerio de Trabajo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Que tienen derecho a constituir asociaciones o sindicatos sin intervención estatal",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Que solo los trabajadores del sector público pueden formar sindicatos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Que los empleadores no tienen derecho a asociarse",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  }
+]

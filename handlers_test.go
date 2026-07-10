@@ -3,11 +3,13 @@ package main
 import (
 	"testing"
 	"time"
+
+	"quiz-app/internal/domain"
 )
 
 func TestCalculateCurrentTimeElapsed(t *testing.T) {
 	t.Run("paused session returns saved elapsed time", func(t *testing.T) {
-		session := GameSession{
+		session := domain.GameSession{
 			Status:      "PAUSED",
 			TimeElapsed: 120,
 			StartTime:   time.Now().Add(-10 * time.Minute),
@@ -18,7 +20,7 @@ func TestCalculateCurrentTimeElapsed(t *testing.T) {
 	})
 
 	t.Run("active session measures from start time", func(t *testing.T) {
-		session := GameSession{
+		session := domain.GameSession{
 			Status:    "ACTIVE",
 			StartTime: time.Now().Add(-90 * time.Second),
 		}
@@ -31,14 +33,14 @@ func TestCalculateCurrentTimeElapsed(t *testing.T) {
 
 func TestGetTimeRemaining(t *testing.T) {
 	t.Run("unlimited time returns -1", func(t *testing.T) {
-		session := GameSession{TimeLimit: 0, Status: "ACTIVE", StartTime: time.Now()}
+		session := domain.GameSession{TimeLimit: 0, Status: "ACTIVE", StartTime: time.Now()}
 		if got := getTimeRemaining(session); got != -1 {
 			t.Errorf("expected -1, got %d", got)
 		}
 	})
 
 	t.Run("remaining time is limit minus elapsed", func(t *testing.T) {
-		session := GameSession{
+		session := domain.GameSession{
 			TimeLimit: 3600,
 			Status:    "ACTIVE",
 			StartTime: time.Now().Add(-600 * time.Second),
@@ -50,7 +52,7 @@ func TestGetTimeRemaining(t *testing.T) {
 	})
 
 	t.Run("expired time clamps to zero", func(t *testing.T) {
-		session := GameSession{
+		session := domain.GameSession{
 			TimeLimit: 60,
 			Status:    "ACTIVE",
 			StartTime: time.Now().Add(-2 * time.Hour),
@@ -61,7 +63,7 @@ func TestGetTimeRemaining(t *testing.T) {
 	})
 
 	t.Run("paused session uses saved elapsed time", func(t *testing.T) {
-		session := GameSession{
+		session := domain.GameSession{
 			TimeLimit:   3600,
 			Status:      "PAUSED",
 			TimeElapsed: 1000,
@@ -113,9 +115,9 @@ func TestCategoryHelpers(t *testing.T) {
 }
 
 func TestHideCorrectChoices(t *testing.T) {
-	questions := []Question{
-		{Choices: []Choice{{IsCorrect: true}, {IsCorrect: false}}},
-		{Choices: []Choice{{IsCorrect: false}, {IsCorrect: true}}},
+	questions := []domain.Question{
+		{Choices: []domain.Choice{{IsCorrect: true}, {IsCorrect: false}}},
+		{Choices: []domain.Choice{{IsCorrect: false}, {IsCorrect: true}}},
 	}
 	hideCorrectChoices(questions)
 	for i, q := range questions {

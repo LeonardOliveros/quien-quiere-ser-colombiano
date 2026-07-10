@@ -1,0 +1,5520 @@
+[
+  {
+    "key": "HIS-0001",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿Cuál fue el nombre anterior a \"República de Colombia\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Virreinato del Perú",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Nueva Granada",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Gran Venezuela",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nueva España",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0002",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Gran Colombia incluía los territorios actuales de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Colombia y Venezuela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Colombia, Venezuela y Ecuador",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Colombia, Venezuela, Ecuador y Panamá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Solo Colombia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0003",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿En qué año se dio el nombre de \"República de Colombia\" en el Congreso de Angostura?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1819",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1821",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1830",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0004",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿Qué otros nombres tuvo Colombia antes de 1886?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo Nueva Granada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Nueva Granada, Confederación Granadina, Estados Unidos de Colombia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo Estados Unidos de Colombia",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Virreinato y Nueva Granada",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0005",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿En qué fecha se celebra la independencia de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "7 de agosto de 1819",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "20 de julio de 1810",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "12 de octubre de 1492",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "15 de febrero de 1819",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0006",
+    "subcategory": "INDEPENDENCIA",
+    "text": "El 20 de julio de 1810 marca:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Batalla de Boyacá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Grito de Independencia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La creación de la Gran Colombia",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La muerte de Bolívar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0007",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Qué evento desencadenó el Grito de Independencia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Batalla de Boyacá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Florero de Llorente",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La llegada de Bolívar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La invasión francesa a España",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0008",
+    "subcategory": "INDEPENDENCIA",
+    "text": "La Batalla de Boyacá ocurrió el:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "20 de julio de 1810",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "7 de agosto de 1819",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "15 de febrero de 1819",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "25 de diciembre de 1819",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0009",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Quién comandó las tropas patriotas en la Batalla de Boyacá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Simón Bolívar",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "José María Córdova",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0010",
+    "subcategory": "INDEPENDENCIA",
+    "text": "El período conocido como \"La Patria Boba\" se caracterizó por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La unidad total",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Guerras civiles entre centralistas y federalistas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La paz absoluta",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El dominio español",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0011",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Entre qué años ocurrió la Patria Boba?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810-1815",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "1819-1830",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1830-1840",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1850-1860",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0012",
+    "subcategory": "INDEPENDENCIA",
+    "text": "La Reconquista española fue liderada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pablo Morillo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Francisco de Miranda",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "José María Barreiro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0013",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Quién es conocido como \"El Libertador\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Simón Bolívar",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "José de San Martín",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0014",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Quién es conocido como \"El Hombre de las Leyes\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Camilo Torres",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0015",
+    "subcategory": "INDEPENDENCIA",
+    "text": "Antonio Nariño es conocido por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Ganar la Batalla de Boyacá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Traducir los Derechos del Hombre y del Ciudadano",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ser el primer presidente",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Componer el himno",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0016",
+    "subcategory": "INDEPENDENCIA",
+    "text": "Policarpa Salavarrieta fue:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Primera dama",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Heroína y mártir de la independencia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Escritora",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pintora",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0017",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿En qué año fue fusilada La Pola?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1817",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1819",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1821",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0018",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿En qué año se disolvió la Gran Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1825",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "1830",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1835",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1840",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0019",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿Quién fue el primer presidente de la Nueva Granada después de la disolución de la Gran Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Joaquín Mosquera",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "José Ignacio de Márquez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0020",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Constitución de Rionegro se promulgó en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1853",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1858",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1863",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1886",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0021",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Constitución de 1863 establecía un sistema:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Centralista",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Federalista",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Monárquico",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Socialista",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0022",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿Quién promovió la Constitución de 1886?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tomás Cipriano de Mosquera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Miguel Antonio Caro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "José María Melo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0023",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Constitución de 1886 estableció un sistema:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Federalista",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Centralista",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Parlamentario",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Comunista",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0024",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Guerra de los Mil Días ocurrió entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1885-1888",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1899-1902",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1903-1906",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1910-1913",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0025",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿En qué año se separó Panamá de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1899",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1903",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1910",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1915",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0026",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Quién fue Jorge Eliécer Gaitán?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Presidente de Colombia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Líder liberal asesinado en 1948",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "General conservador",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Escritor",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0027",
+    "subcategory": "SIGLO_XX",
+    "text": "El Bogotazo ocurrió el:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "9 de abril de 1948",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "20 de julio de 1950",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "7 de agosto de 1946",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "13 de junio de 1953",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0028",
+    "subcategory": "SIGLO_XX",
+    "text": "El período de La Violencia se sitúa aproximadamente entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1930-1940",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1946-1958",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1960-1970",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1970-1980",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0029",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Quién fue el único dictador militar del siglo XX en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Laureano Gómez",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Gustavo Rojas Pinilla",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Alberto Lleras",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Mariano Ospina",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0030",
+    "subcategory": "SIGLO_XX",
+    "text": "El Frente Nacional fue un acuerdo entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Liberales y comunistas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Liberales y conservadores",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Todos los partidos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Colombia y Venezuela",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0031",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Entre qué años funcionó el Frente Nacional?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1948-1958",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1958-1974",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1974-1990",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1990-2000",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0032",
+    "subcategory": "SIGLO_XX",
+    "text": "La actual Constitución de Colombia fue promulgada en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1986",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1989",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1991",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1994",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0033",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Quién fue César Gaviria?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Presidente durante la Constituyente de 1991",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Magistrado de la Corte",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Líder guerrillero",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "General del ejército",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0034",
+    "subcategory": "SIGLO_XX",
+    "text": "El proceso de paz con las FARC se firmó en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2012",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "2014",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "2016",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "2018",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0035",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Quién fue presidente durante la firma del acuerdo de paz con las FARC?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Álvaro Uribe",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Juan Manuel Santos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Iván Duque",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Gustavo Petro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0036",
+    "subcategory": "PRECOLOMBINO",
+    "text": "Los Muiscas habitaban principalmente en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Costa Caribe",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El altiplano cundiboyacense",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Valle del Cauca",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Sierra Nevada",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0037",
+    "subcategory": "PRECOLOMBINO",
+    "text": "Los Tayronas se ubicaban en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Andes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Sierra Nevada de Santa Marta",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La Amazonía",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Llanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0038",
+    "subcategory": "PRECOLOMBINO",
+    "text": "Los Quimbayas fueron famosos por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Su agricultura",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Su orfebrería en oro",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Su arquitectura",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Su navegación",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0039",
+    "subcategory": "PRECOLOMBINO",
+    "text": "El Dorado era un mito relacionado con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Tayronas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los Muiscas y la laguna de Guatavita",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Incas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Caribes",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0040",
+    "subcategory": "PRECOLOMBINO",
+    "text": "Los Zenúes desarrollaron un sistema de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Acueductos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Canales de drenaje en La Mojana",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Terrazas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Caminos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0041",
+    "subcategory": "CONQUISTA",
+    "text": "¿En qué año llegó Rodrigo de Bastidas a la costa colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1492",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1499",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1502",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1510",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0042",
+    "subcategory": "CONQUISTA",
+    "text": "Santa Marta fue fundada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pedro de Heredia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rodrigo de Bastidas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Gonzalo Jiménez de Quesada",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sebastián de Belalcázar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0043",
+    "subcategory": "CONQUISTA",
+    "text": "¿En qué año fue fundada Santa Marta?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1510",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1525",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1533",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1538",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0044",
+    "subcategory": "CONQUISTA",
+    "text": "Cartagena de Indias fue fundada en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1525",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1533",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1538",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1540",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0045",
+    "subcategory": "CONQUISTA",
+    "text": "¿Quién fundó Cartagena?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rodrigo de Bastidas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pedro de Heredia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Jiménez de Quesada",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nicolás de Federmán",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0046",
+    "subcategory": "CONQUISTA",
+    "text": "Bogotá fue fundada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Sebastián de Belalcázar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Gonzalo Jiménez de Quesada",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Nicolás de Federmán",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pedro de Heredia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0047",
+    "subcategory": "CONQUISTA",
+    "text": "¿En qué fecha fue fundada Bogotá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "6 de agosto de 1537",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "6 de agosto de 1538",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "20 de julio de 1538",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "12 de octubre de 1538",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0048",
+    "subcategory": "CONQUISTA",
+    "text": "El cacique muisca que resistió a los españoles fue:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tisquesusa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sagipa",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Aquiminzaque",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Todos los anteriores",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0049",
+    "subcategory": "COLONIA",
+    "text": "¿En qué año se creó la Audiencia de Santafé?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1538",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1549",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1564",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1580",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0050",
+    "subcategory": "COLONIA",
+    "text": "El Virreinato de Nueva Granada se creó por primera vez en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1700",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1717",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1739",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1750",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0051",
+    "subcategory": "COLONIA",
+    "text": "¿Por qué se suprimió temporalmente el Virreinato en 1723?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Falta de recursos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rebeliones",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Guerra con Inglaterra",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Problemas administrativos y económicos",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0052",
+    "subcategory": "COLONIA",
+    "text": "El Virreinato se restableció definitivamente en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1730",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1739",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1750",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1760",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0053",
+    "subcategory": "COLONIA",
+    "text": "La economía colonial se basaba principalmente en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Agricultura y ganadería",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Explotación de oro y trata de esclavos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Comercio",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Industria",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0054",
+    "subcategory": "COLONIA",
+    "text": "Las encomiendas eran:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tierras sin dueño",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sistema de trabajo indígena asignado a españoles",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ciudades",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Minas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0055",
+    "subcategory": "COLONIA",
+    "text": "La mita era:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un impuesto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Trabajo forzoso indígena en las minas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Una fiesta",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Un cargo político",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0056",
+    "subcategory": "COLONIA",
+    "text": "Los resguardos indígenas eran:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Prisiones",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tierras comunales para indígenas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Hospitales",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Escuelas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0057",
+    "subcategory": "COLONIA",
+    "text": "Las Reformas Borbónicas fueron implementadas por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Felipe V",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Fernando VI",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Carlos III y Carlos IV",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Fernando VII",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0058",
+    "subcategory": "COLONIA",
+    "text": "¿En qué siglo se implementaron las Reformas Borbónicas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "XVI",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "XVII",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "XVIII",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "XIX",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0059",
+    "subcategory": "COLONIA",
+    "text": "La expulsión de los jesuitas ocurrió en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1750",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1767",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1780",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1800",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0060",
+    "subcategory": "COLONIA",
+    "text": "El movimiento de los Comuneros ocurrió en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1770",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1775",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1781",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1790",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0061",
+    "subcategory": "COLONIA",
+    "text": "Los Comuneros se levantaron en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Socorro, Santander",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Popayán",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0062",
+    "subcategory": "COLONIA",
+    "text": "¿Quién lideró a los Comuneros?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "José Antonio Galán",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Camilo Torres",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Francisco de Miranda",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0063",
+    "subcategory": "COLONIA",
+    "text": "Las capitulaciones de Zipaquirá fueron:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un tratado de paz",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un acuerdo entre Comuneros y autoridades",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Una rendición",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una declaración de guerra",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0064",
+    "subcategory": "COLONIA",
+    "text": "¿Qué pasó con José Antonio Galán?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Fue perdonado",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Fue ejecutado y descuartizado",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Se exilió",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Fue nombrado gobernador",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0065",
+    "subcategory": "COLONIA",
+    "text": "La Expedición Botánica fue dirigida por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Alexander von Humboldt",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "José Celestino Mutis",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Francisco José de Caldas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Jorge Tadeo Lozano",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0066",
+    "subcategory": "COLONIA",
+    "text": "La Expedición Botánica comenzó en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1760",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1783",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1790",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1800",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0067",
+    "subcategory": "COLONIA",
+    "text": "Francisco José de Caldas era conocido como:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Precursor",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Sabio",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Libertador",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Prócer",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0068",
+    "subcategory": "COLONIA",
+    "text": "Antonio Nariño tradujo:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Biblia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los Derechos del Hombre y del Ciudadano",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Contrato Social",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Enciclopedia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0069",
+    "subcategory": "COLONIA",
+    "text": "¿En qué año tradujo Nariño los Derechos del Hombre?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1790",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1793",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1795",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1800",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0070",
+    "subcategory": "INDEPENDENCIA",
+    "text": "El Memorial de Agravios fue escrito por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Camilo Torres",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0071",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿En qué año se escribió el Memorial de Agravios?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1808",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1809",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1810",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1811",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0072",
+    "subcategory": "INDEPENDENCIA",
+    "text": "El florero de Llorente ocurrió un:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Lunes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Martes",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Viernes",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Domingo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0073",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Quiénes protagonizaron el incidente del florero?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Llorente y Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los hermanos Morales y Llorente",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Santander y Llorente",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nariño y Llorente",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0074",
+    "subcategory": "INDEPENDENCIA",
+    "text": "La primera república (Patria Boba) duró de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1808-1815",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1810-1815",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1812-1816",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1815-1819",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0075",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Por qué se llamó \"Patria Boba\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Por las derrotas militares",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Por las guerras civiles entre federalistas y centralistas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Por la falta de ejército",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Por la pobreza",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0076",
+    "subcategory": "INDEPENDENCIA",
+    "text": "El Congreso de las Provincias Unidas se reunió en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tunja",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Socorro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0077",
+    "subcategory": "INDEPENDENCIA",
+    "text": "Pablo Morillo era conocido como:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Libertador",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Pacificador",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Conquistador",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El General",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0078",
+    "subcategory": "INDEPENDENCIA",
+    "text": "El Régimen del Terror duró de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810-1815",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1815-1819",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1819-1821",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1821-1830",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0079",
+    "subcategory": "INDEPENDENCIA",
+    "text": "La Campaña Libertadora de 1819 duró:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "50 días",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "77 días",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "100 días",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "150 días",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0080",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Desde dónde partió Bolívar en la Campaña Libertadora?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Caracas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los Llanos de Casanare",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cúcuta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0081",
+    "subcategory": "INDEPENDENCIA",
+    "text": "La Batalla del Pantano de Vargas fue el:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "25 de julio de 1819",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "7 de agosto de 1819",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "10 de agosto de 1819",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "20 de julio de 1819",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0082",
+    "subcategory": "INDEPENDENCIA",
+    "text": "¿Quién comandó las tropas españolas en Boyacá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pablo Morillo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "José María Barreiro",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sámano",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Latorre",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0083",
+    "subcategory": "INDEPENDENCIA",
+    "text": "El Congreso de Cúcuta se realizó en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1819",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1821",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1823",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1825",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0084",
+    "subcategory": "INDEPENDENCIA",
+    "text": "La Constitución de Cúcuta estableció:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un sistema federal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un sistema centralista",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Una monarquía",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una dictadura",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0085",
+    "subcategory": "GRAN_COLOMBIA",
+    "text": "La Gran Colombia existió entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810-1830",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1819-1831",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1821-1835",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1825-1840",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0086",
+    "subcategory": "GRAN_COLOMBIA",
+    "text": "La capital de la Gran Colombia era:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Caracas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Quito",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Panamá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0087",
+    "subcategory": "GRAN_COLOMBIA",
+    "text": "¿Por qué se disolvió la Gran Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Guerra con España",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Diferencias regionales y políticas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Muerte de Bolívar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Invasión extranjera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0088",
+    "subcategory": "GRAN_COLOMBIA",
+    "text": "La Convención de Ocaña fue en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1826",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1828",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1830",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1832",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0089",
+    "subcategory": "GRAN_COLOMBIA",
+    "text": "La Noche Septembrina fue:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Una fiesta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un intento de asesinato a Bolívar",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Una batalla",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una reunión política",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0090",
+    "subcategory": "GRAN_COLOMBIA",
+    "text": "¿Quién salvó a Bolívar en la Noche Septembrina?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Manuela Sáenz",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sucre",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Córdova",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0091",
+    "subcategory": "GRAN_COLOMBIA",
+    "text": "Bolívar murió en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Caracas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0092",
+    "subcategory": "GRAN_COLOMBIA",
+    "text": "¿En qué fecha murió Bolívar?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "17 de diciembre de 1830",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "20 de julio de 1831",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "7 de agosto de 1832",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "24 de diciembre de 1833",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0093",
+    "subcategory": "SIGLO_XIX",
+    "text": "El primer presidente de la Nueva Granada fue:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Santander",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Joaquín Mosquera",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "José Ignacio de Márquez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0094",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Guerra de los Supremos ocurrió en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1830-1832",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1839-1842",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1845-1848",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1850-1853",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0095",
+    "subcategory": "SIGLO_XIX",
+    "text": "La abolición definitiva de la esclavitud fue en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1821",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1835",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1851",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1863",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0096",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿Quién decretó la abolición de la esclavitud?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Mosquera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "José Hilario López",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Murillo Toro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Núñez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0097",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Constitución de Rionegro era:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Centralista",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Federalista radical",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Monárquica",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Socialista",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0098",
+    "subcategory": "SIGLO_XIX",
+    "text": "Los Estados Unidos de Colombia existieron entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1850-1886",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1863-1886",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1870-1900",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1880-1910",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0099",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Regeneración fue liderada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Mosquera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Miguel Antonio Caro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Carlos Holguín",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0100",
+    "subcategory": "SIGLO_XIX",
+    "text": "El Concordato con la Iglesia se firmó en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1863",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1887",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1892",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1900",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0101",
+    "subcategory": "SIGLO_XIX",
+    "text": "La Guerra de los Mil Días causó aproximadamente:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "10.000 muertos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "50.000 muertos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "100.000 muertos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "200.000 muertos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0102",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿Quién era presidente cuando se perdió Panamá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rafael Reyes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "José Manuel Marroquín",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Miguel Antonio Caro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Carlos Holguín",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0103",
+    "subcategory": "SIGLO_XIX",
+    "text": "El tratado Herrán-Hay fue:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Aprobado por Colombia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rechazado por el Congreso colombiano",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Firmado con Panamá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Un tratado de paz",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0104",
+    "subcategory": "SIGLO_XIX",
+    "text": "Panamá declaró su independencia con apoyo de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Inglaterra",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francia",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Estados Unidos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Venezuela",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0105",
+    "subcategory": "SIGLO_XX",
+    "text": "Rafael Reyes gobernó entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1900-1904",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1904-1909",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1910-1914",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1914-1918",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0106",
+    "subcategory": "SIGLO_XX",
+    "text": "El quinquenio de Reyes se caracterizó por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Guerras civiles",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Modernización y autoritarismo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Democracia plena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Aislamiento internacional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0107",
+    "subcategory": "SIGLO_XX",
+    "text": "La República Conservadora duró:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1886-1910",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1886-1930",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1900-1930",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1910-1940",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0108",
+    "subcategory": "SIGLO_XX",
+    "text": "La Masacre de las Bananeras ocurrió en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1925",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1928",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1930",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1935",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0109",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Cuántos trabajadores murieron en la Masacre de las Bananeras?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Número exacto desconocido (versiones varían)",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "13",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "100",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "3.000",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0110",
+    "subcategory": "SIGLO_XX",
+    "text": "La República Liberal comenzó con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "López Pumarejo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Olaya Herrera",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Eduardo Santos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Alberto Lleras",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0111",
+    "subcategory": "SIGLO_XX",
+    "text": "La \"Revolución en Marcha\" fue de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Olaya Herrera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Alfonso López Pumarejo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Eduardo Santos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Laureano Gómez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0112",
+    "subcategory": "SIGLO_XX",
+    "text": "Jorge Eliécer Gaitán fue asesinado a las:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "11:00 am",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1:15 pm",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "3:00 pm",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "5:00 pm",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0113",
+    "subcategory": "SIGLO_XX",
+    "text": "El asesino de Gaitán fue:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nunca se identificó",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Juan Roa Sierra",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un sicario",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Un militar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0114",
+    "subcategory": "SIGLO_XX",
+    "text": "Se estima que en El Bogotazo murieron:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "100 personas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Entre 500 y 3.000 personas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "5.000 personas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "10.000 personas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0115",
+    "subcategory": "GENERAL",
+    "text": "¿En qué fecha se conmemora el Día de la Independencia de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "7 de agosto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "20 de julio",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "12 de octubre",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "19 de abril",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0116",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue conocido como \"El Libertador\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Simón Bolívar",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "José María Córdova",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0117",
+    "subcategory": "GENERAL",
+    "text": "La Batalla de Boyacá ocurrió en el año:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1819",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1821",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1830",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0118",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál fue el primer nombre de Colombia como república independiente?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nueva Granada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Gran Colombia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "República de Colombia",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Estados Unidos de Colombia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0119",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue el primer presidente de la Gran Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Simón Bolívar",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Camilo Torres",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0120",
+    "subcategory": "GENERAL",
+    "text": "¿Qué evento histórico ocurrió el 9 de abril de 1948?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La independencia de Panamá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El asesinato de Jorge Eliécer Gaitán (El Bogotazo)",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La firma de la Constitución",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El fin del Frente Nacional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0121",
+    "subcategory": "GENERAL",
+    "text": "El Frente Nacional fue un acuerdo político entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Liberales y Comunistas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Conservadores y Liberales",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Todos los partidos políticos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Colombia y Estados Unidos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0122",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue conocido como \"El Hombre de las Leyes\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0123",
+    "subcategory": "GENERAL",
+    "text": "La Constitución de Rionegro (1863) establecía un sistema:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Centralista",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Federalista",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Monárquico",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Socialista",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0124",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue el autor del Himno Nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "José María Córdova",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Oreste Síndici (música) y Rafael Núñez (letra)",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Jorge Isaacs",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0125",
+    "subcategory": "GENERAL",
+    "text": "El período de \"La Violencia\" en Colombia se sitúa principalmente entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1920-1930",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1948-1958",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1960-1970",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1980-1990",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0126",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál fue la primera constitución de Colombia independiente?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Constitución de Socorro (1810)",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Constitución de Cúcuta (1821)",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Constitución de 1886",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Constitución de 1991",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0127",
+    "subcategory": "GENERAL",
+    "text": "¿Quién tradujo los Derechos del Hombre y del Ciudadano al español?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Francisco de Miranda",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Camilo Torres",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0128",
+    "subcategory": "GENERAL",
+    "text": "La Regeneración fue un movimiento político liderado por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rafael Núñez",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Jorge Eliécer Gaitán",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Laureano Gómez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Alfonso López Pumarejo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0129",
+    "subcategory": "GENERAL",
+    "text": "¿En qué año se firmó el actual acuerdo de paz con las FARC?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2014",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "2016",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "2018",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "2020",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0130",
+    "subcategory": "GENERAL",
+    "text": "El M-19 fue un grupo guerrillero que se desmovilizó en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1985",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1990",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1995",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "2000",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0131",
+    "subcategory": "GENERAL",
+    "text": "El grito de independencia del 20 de julio de 1810 ocurrió por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La invasión francesa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El incidente del florero de Llorente",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La muerte de un virrey",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Un terremoto",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0132",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue conocido como \"El Precursor\" de la independencia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Simón Bolívar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Francisco de Miranda",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Antonio Nariño",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "José María Carbonell",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0133",
+    "subcategory": "GENERAL",
+    "text": "La Campaña Libertadora de 1819 fue comandada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Bolívar",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Páez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sucre",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0134",
+    "subcategory": "GENERAL",
+    "text": "¿Qué países conformaban la Gran Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Colombia y Venezuela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Colombia, Venezuela, Ecuador, Panamá",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Colombia, Ecuador y Perú",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo Colombia y Panamá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0135",
+    "subcategory": "GENERAL",
+    "text": "La Constitución de 1886 fue promovida por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tomás Cipriano de Mosquera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Rafael Núñez",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "José Hilario López",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Manuel Murillo Toro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0136",
+    "subcategory": "GENERAL",
+    "text": "¿En qué año fue abolida definitivamente la esclavitud en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1821",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1851",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1886",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0137",
+    "subcategory": "GENERAL",
+    "text": "La Batalla del Pantano de Vargas ocurrió en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1810",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1815",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1819",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1821",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0138",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue el primer presidente de la República de la Nueva Granada?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Francisco de Paula Santander",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Joaquín Mosquera",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "José Ignacio de Márquez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tomás Cipriano de Mosquera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0139",
+    "subcategory": "GENERAL",
+    "text": "El período conocido como \"La Hegemonía Conservadora\" duró aproximadamente:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "10 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "20 años",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "30 años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "45 años (1886-1930)",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0140",
+    "subcategory": "GENERAL",
+    "text": "La \"Masacre de las Bananeras\" ocurrió en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1928",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "1935",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1948",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1950",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0141",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue el presidente durante el cual Colombia perdió a Panamá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Rafael Núñez",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "José Manuel Marroquín",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Miguel Antonio Caro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Rafael Reyes",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0142",
+    "subcategory": "GENERAL",
+    "text": "La República Liberal (1930-1946) comenzó con el presidente:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Alfonso López Pumarejo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Enrique Olaya Herrera",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Eduardo Santos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Alberto Lleras",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0143",
+    "subcategory": "GENERAL",
+    "text": "El Palacio de Justicia fue tomado por el M-19 en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1980",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1985",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1989",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1990",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0144",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue conocido como \"El Tribuno del Pueblo\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Jorge Eliécer Gaitán (José Acevedo y Gómez 1810)",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Luis Carlos Galán",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Laureano Gómez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Rojas Pinilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0145",
+    "subcategory": "GENERAL",
+    "text": "La \"Séptima Papeleta\" fue un movimiento estudiantil que promovió:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La educación gratuita",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Asamblea Nacional Constituyente",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El voto femenino",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La paz con las guerrillas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0146",
+    "subcategory": "GENERAL",
+    "text": "¿En qué año las mujeres obtuvieron el derecho al voto en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1945",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1954",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1957",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1961",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0147",
+    "subcategory": "GENERAL",
+    "text": "El Tratado Urrutia-Thomson de 1914 fue firmado con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Venezuela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Estados Unidos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ecuador",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Brasil",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0148",
+    "subcategory": "GENERAL",
+    "text": "La Batalla de Palonegro fue parte de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La independencia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Guerra de los Mil Días",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La Guerra con Perú",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Las guerras civiles del siglo XIX",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0149",
+    "subcategory": "GENERAL",
+    "text": "¿Quién fue el único presidente militar del siglo XX en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Gustavo Rojas Pinilla",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Gabriel París",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Alberto Ruiz Novoa",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Rafael Reyes",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0150",
+    "subcategory": "GENERAL",
+    "text": "El proceso de descentralización administrativa comenzó con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Constitución de 1886",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Frente Nacional",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Constitución de 1991",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Ley 60 de 1993",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0151",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Qué sectores de la población fueron reconocidos explícitamente con derechos en la Constitución Política de 1991 tras haber sido excluidos anteriormente?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La nueva Constitución de 1991 reconoció los derechos de grupos que anteriormente habían sido excluidos, específicamente los indígenas, afrocolombianos y mujeres",
+    "choices": [
+      {
+        "text": "Los gremios económicos y terratenientes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los indígenas, afrocolombianos y mujeres",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los miembros de la fuerza pública y el clero",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los inmigrantes europeos y asiáticos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0152",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Qué fenómeno económico caracterizó a los gobiernos de Virgilio Barco y César Gaviria en la década de 1990?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Durante estos gobiernos se consolidó la apertura económica, lo que implicó la eliminación de barreras al comercio exterior, la inversión extranjera y la reducción de controles estatales sobre la empresa privada",
+    "choices": [
+      {
+        "text": "La nacionalización de la banca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El proteccionismo industrial",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La apertura económica",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El desarrollo agrario sostenible",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0153",
+    "subcategory": "CONFLICTO_Y_PAZ",
+    "text": "¿Qué zona geográfica específica fue desmilitarizada durante el gobierno de Andrés Pastrana para llevar a cabo diálogos con las FARC?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Se estableció una zona desmilitarizada conocida como El Caguán, que comprendía los municipios de San Vicente del Caguán, La Uribe, Mesetas, La Macarena y Vista Hermosa",
+    "choices": [
+      {
+        "text": "La zona de despeje de El Caguán",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "El nudo de Paramillo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La región del Catatumbo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Montes de María",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0154",
+    "subcategory": "CONFLICTO_Y_PAZ",
+    "text": "¿Cuál fue el nombre de la política implementada por Álvaro Uribe Vélez destinada a combatir los grupos armados ilegales y recuperar el control territorial?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Durante sus dos mandatos, Álvaro Uribe implementó la política de Seguridad Democrática, la cual buscaba combatir grupos ilegales y mejorar la seguridad general mediante el fortalecimiento de las fuerzas armadas",
+    "choices": [
+      {
+        "text": "Paz Total",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Seguridad Democrática",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Alianza para el Progreso",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Plan Colombia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0155",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Cómo denominó el expresidente Iván Duque al aislamiento decretado durante la pandemia del COVID-19?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El expresidente Iván Duque denominó a la cuarentena como \"aislamiento preventivo obligatorio colaborativo e inteligente\"",
+    "choices": [
+      {
+        "text": "Confinamiento estricto total",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cuarentena generalizada",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Aislamiento preventivo obligatorio colaborativo e inteligente",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Distanciamiento social preventivo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0156",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Qué evento desencadenó la ola de destrucción y caos conocida como el \"Bogotazo\" el 9 de abril de 1948?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El \"Bogotazo\" fue desatado por el asesinato del líder liberal Jorge Eliécer Gaitán cuando salía de su oficina en Bogotá",
+    "choices": [
+      {
+        "text": "La renuncia de Alfonso López Pumarejo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El fraude electoral de 1970",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El asesinato de Jorge Eliécer Gaitán",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El golpe de estado de Rojas Pinilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0157",
+    "subcategory": "CONFLICTO_Y_PAZ",
+    "text": "¿Cuál fue el motivo principal que llevó a la fundación del Movimiento 19 de abril (M-19) en 1974?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El M-19 se fundó debido a la frustración generada por el fraude electoral en las elecciones presidenciales de 1970, donde se otorgó la victoria a Misael Pastrana sobre Gustavo Rojas Pinilla",
+    "choices": [
+      {
+        "text": "La muerte de Camilo Torres",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El fraude electoral de las elecciones de 1970",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La caída del Muro de Berlín",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La firma del Frente Nacional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0158",
+    "subcategory": "CONFLICTO_Y_PAZ",
+    "text": "¿Qué sucedió con la estructura del narcotráfico tras la muerte de Pablo Escobar y la captura de los líderes del cartel de Cali?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Tras la desaparición de los grandes capos, hubo una reorganización donde grupos ilegales como las guerrillas (FARC, ELN) y paramilitares (AUC) tomaron el control del negocio de producción y distribución",
+    "choices": [
+      {
+        "text": "El narcotráfico desapareció completamente de Colombia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El negocio pasó exclusivamente a manos de carteles extranjeros",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Guerrillas y paramilitares tomaron el control del negocio",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Estado nacionalizó la producción de coca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0159",
+    "subcategory": "CONFLICTO_Y_PAZ",
+    "text": "¿Qué función cumple la Comisión de la Verdad dentro del proceso de postconflicto en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Comisión de la Verdad investiga y documenta las violaciones a los derechos humanos y crímenes del conflicto para esclarecer los hechos, reconocer a las víctimas y construir una memoria colectiva",
+    "choices": [
+      {
+        "text": "Juzgar penalmente a los excombatientes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Investigar y documentar hechos para construir memoria colectiva",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Otorgar amnistías inmediatas a todos los actores",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Administrar los recursos económicos de la reparación",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0160",
+    "subcategory": "COLONIA",
+    "text": "¿Cuál fue la orden religiosa expulsada tanto de España como de sus colonias en 1767 debido al fortalecimiento del Regalismo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El fortalecimiento del Regalismo, que defendía la autoridad del rey sobre la del Papa, permitió la expulsión de la Compañía de Jesús en 1767",
+    "choices": [
+      {
+        "text": "La Orden de los Agustinos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Orden de los Franciscanos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Compañía de Jesús",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Orden de los Dominicos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0161",
+    "subcategory": "SIGLO_XX",
+    "text": "¿En qué centros poblados se desarrolló la revuelta de los Comuneros entre 1780 y 1781?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La revuelta de los Comuneros se desarrolló específicamente en Socorro, Charalá, Simacota y Mogotes, entre otros centros poblados",
+    "choices": [
+      {
+        "text": "Tunja, Villa de Leyva y Paipa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena, Santa Marta y Barranquilla",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Socorro, Charalá, Simacota y Mogotes",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Popayán, Cali y Pasto",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0162",
+    "subcategory": "GENERAL",
+    "text": "¿Cómo se llamó el periódico en el que Antonio Nariño utilizó irónicamente el término \"Patria Boba\"?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Antonio Nariño utilizó el nombre \"Patria Boba\" en un periódico redactado por él mismo llamado \"Los Toros de Fucha\" para defenderse de ataques políticos",
+    "choices": [
+      {
+        "text": "La Bagatela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Aviso de Terremoto",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Los Toros de Fucha",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Espectador",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0163",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿Qué territorios comprendía la República de Colombia creada por el Congreso de Angostura en 1819?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La República de Colombia creada el 17 de diciembre de 1819 comprendía los territorios que actualmente corresponden a Colombia, Ecuador, Panamá y Venezuela",
+    "choices": [
+      {
+        "text": "Colombia, Perú, Bolivia y Chile",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Colombia, Ecuador, Panamá y Venezuela",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Colombia, Venezuela y Brasil",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Colombia, Panamá y Costa Rica",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0164",
+    "subcategory": "SIGLO_XIX",
+    "text": "¿Qué nombre recibió el país tras la promulgación de la Constitución de Rionegro en 1863?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Después de la promulgación de la Constitución de Rionegro en 1863, se le dio al país el nombre de Estados Unidos de Colombia",
+    "choices": [
+      {
+        "text": "República de la Nueva Granada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Confederación Granadina",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Estados Unidos de Colombia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "República de Colombia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0165",
+    "subcategory": "SIGLO_XX",
+    "text": "¿En qué se invirtieron los 25 millones de dólares recibidos de Estados Unidos durante el gobierno de Pedro Nel Ospina?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El dinero recibido como indemnización por la separación de Panamá se empleó en obras de infraestructura, como la ampliación de la red ferroviaria y obras en el canal del Dique",
+    "choices": [
+      {
+        "text": "En el pago de la deuda externa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "En obras de infraestructura",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "En la creación de nuevos bancos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "En el fortalecimiento del ejército",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0166",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Qué tratado firmado en 1905 permitió conseguir un crédito internacional para sanear la deuda externa de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En 1905 se firmó el tratado Averbury-Holguín, a través del cual se consiguió un crédito internacional que permitió sanear la deuda externa",
+    "choices": [
+      {
+        "text": "Tratado Urrutia-Thomson",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tratado Esguerra-Bárcenas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Tratado Averbury-Holguín",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Tratado Mallarino-Bidlack",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0167",
+    "subcategory": "SIGLO_XX",
+    "text": "¿Bajo qué ley se inició la construcción de la Ciudad Universitaria de la Universidad Nacional de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La reforma educativa bajo la ley 68 de 1935 inició la construcción de la Ciudad Universitaria de la Universidad Nacional de Colombia",
+    "choices": [
+      {
+        "text": "Ley 100 de 1936",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ley 68 de 1935",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ley 30 de 1934",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ley General de Educación",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0168",
+    "subcategory": "SIGLO_XX",
+    "text": "¿En qué fecha las mujeres votaron por primera vez en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El 1 de diciembre de 1957 se llevó a cabo el plebiscito en el que las mujeres votaron por primera vez en Colombia tras años de lucha",
+    "choices": [
+      {
+        "text": "13 de junio de 1953",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "10 de mayo de 1957",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1 de diciembre de 1957",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "7 de agosto de 1958",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0169",
+    "subcategory": "PRECOLOMBINO",
+    "text": "¿Qué penínsulas conectaba el estrecho de Beringia por el cual cruzaron los primeros pobladores humanos hacia el continente americano?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El estrecho de Beringia conectaba el extremo oriental de Asia (península de Chukotka en Rusia) con el extremo occidental de América del Norte (península de Seward en Alaska).",
+    "choices": [
+      {
+        "text": "La península de Kamchatka y la península de Alaska",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La península de Chukotka y la península de Seward",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La península de Yucatán y la península de Florida",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La península Ibérica y la península del Labrador",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0170",
+    "subcategory": "PRECOLOMBINO",
+    "text": "Además de la lengua chibcha y caribe, ¿cuál fue la otra lengua predominante entre los grupos indígenas establecidos en el territorio?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Las lenguas predominantes entre los pueblos indígenas fueron la chibcha, arawak y caribe.",
+    "choices": [
+      {
+        "text": "Quechua",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Arawak",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Náhuatl",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Guaraní",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0171",
+    "subcategory": "PRECOLOMBINO",
+    "text": "¿Hace cuántos años se estima, según hallazgos arqueológicos, que el territorio colombiano ya había sido habitado por grupos nómadas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Según los hallazgos arqueológicos, se cree que el territorio fue habitado por grupos nómadas hace 16.000 años.",
+    "choices": [
+      {
+        "text": "Hace 5.000 años",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Hace 10.000 años",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Hace 20.000 años",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Hace 16.000 años",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0172",
+    "subcategory": "CONQUISTA",
+    "text": "¿Qué conquistador fundó la ciudad de Santa Marta en el año 1533?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La colonización se intensificó a partir de 1533 con la fundación de Santa Marta por parte de Pedro de Heredia.",
+    "choices": [
+      {
+        "text": "Rodrigo de Bastidas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Gonzalo Jiménez de Quesada",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Pedro de Heredia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Sebastián de Belalcázar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0173",
+    "subcategory": "CONQUISTA",
+    "text": "¿Qué fundación marcó la culminación de la expedición de Gonzalo Jiménez de Quesada hacia el interior del territorio en 1538?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La expedición de Gonzalo Jiménez de Quesada hacia el interior culminó con la fundación de Santa Fe de Bogotá en 1538.",
+    "choices": [
+      {
+        "text": "Cartagena de Indias",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Popayán",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Santa Fe de Bogotá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Villa de Leyva",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0174",
+    "subcategory": "CONQUISTA",
+    "text": "¿Qué enfermedades traídas por los españoles desencadenaron epidemias con un alto índice de mortalidad indígena?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los españoles trajeron enfermedades desconocidas para los indígenas, como el sarampión y la viruela.",
+    "choices": [
+      {
+        "text": "La peste negra y el cólera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El sarampión y la viruela",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La fiebre amarilla y la malaria",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La gripe española y el tifus",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0175",
+    "subcategory": "COLONIA",
+    "text": "¿Cuáles eran las dos actividades en las que se basaba la economía del Virreinato de la Nueva Granada?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El Virreinato de la Nueva Granada basaba su economía en la explotación del oro y la trata de esclavos africanos.",
+    "choices": [
+      {
+        "text": "La agricultura de tabaco y la ganadería",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La explotación del oro y la trata de esclavos africanos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La exportación de café y la textilería",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La pesca artesanal y el comercio de especias",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0176",
+    "subcategory": "COLONIA",
+    "text": "¿Con qué propósito utilizaba la Corona española el oro extraído del territorio del Nuevo Reino de Granada?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El oro se usaba para financiar guerras contra los luteranos en Flandes y Alemania, los ingleses anglicanos, los franceses y los turcos.",
+    "choices": [
+      {
+        "text": "Para construir catedrales en América",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Para pagar la deuda externa con Portugal",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Para financiar guerras en Europa contra luteranos, ingleses, franceses y turcos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Para desarrollar la industria naval en el Pacífico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0177",
+    "subcategory": "COLONIA",
+    "text": "¿Qué entidad administrativa creada en 1549 abarcaba las provincias de Santa Marta, San Juan, Popayán, Guayana y Cartagena de Indias?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En 1549 se creó la Audiencia de Santafé, que abarcaba dichas provincias.",
+    "choices": [
+      {
+        "text": "El Consejo de Indias",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Real Audiencia de Santafé",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La Capitanía General de Venezuela",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Virreinato del Perú",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "HIS-0178",
+    "subcategory": "COLONIA",
+    "text": "¿Cuál fue la intención principal de la Corona al implementar las Reformas Borbónicas un siglo más tarde?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Corona se vio obligada a tomar estas medidas con la intención de mejorar la administración de las colonias y de la península, ya que se estaban escapando de su control.",
+    "choices": [
+      {
+        "text": "Otorgar la independencia a los territorios de ultramar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Mejorar la administración de las colonias y de la península",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Eliminar los impuestos a los indígenas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Promover la religión protestante en las colonias",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  }
+]

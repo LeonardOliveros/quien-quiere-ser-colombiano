@@ -60,16 +60,42 @@ http://localhost:8080
 
 ```
 quiz-app/
-├── main.go              # Archivo principal
-├── models.go            # Modelos de datos
-├── handlers.go          # Controladores API
-├── seeder.go            # Poblador de preguntas
+├── main.go                        # Wiring: elige el adaptador de storage (DB_DRIVER) y arranca el server
+├── handlers.go                    # Adaptador HTTP (Gin): solo habla con los puertos del dominio
+├── internal/
+│   ├── domain/                    # Núcleo hexagonal (sin dependencias de storage)
+│   │   ├── models.go              # Entidades: Question, GameSession, User, ...
+│   │   └── ports.go               # Puertos: Store, UserRepository, QuestionRepository, ...
+│   ├── seed/                      # Carga y validación del banco de preguntas embebido
+│   └── storage/
+│       ├── sqlite/                # Adaptador SQLite/GORM (default, local)
+│       └── dynamodb/              # Adaptador DynamoDB (esqueleto + plan de implementación)
 ├── data/
-│   └── questions.json   # Banco de preguntas (embebido en el binario)
-├── go.mod               # Dependencias Go
-├── quiz.db              # Base de datos SQLite (se crea automáticamente)
-└── frontend/            # SPA Vue 3 + TypeScript (build en dist/)
+│   ├── taxonomy.json              # Categorías y subcategorías canónicas
+│   └── questions/                 # Banco de preguntas por categoría (embebido en el binario)
+│       ├── cultura.json
+│       ├── geografia.json
+│       ├── historia.json
+│       └── constitucion.json
+├── go.mod                         # Dependencias Go
+├── quiz.db                        # Base de datos SQLite (se crea automáticamente)
+└── frontend/                      # SPA Vue 3 + TypeScript (build en dist/)
 ```
+
+### Arquitectura hexagonal (puertos y adaptadores)
+
+La persistencia está detrás del puerto `domain.Store` (`internal/domain/ports.go`):
+los handlers HTTP nunca tocan SQL ni GORM, solo interfaces del dominio. El adaptador
+se elige al arrancar con la variable `DB_DRIVER`:
+
+- `DB_DRIVER=sqlite` (o vacío): `internal/storage/sqlite`, para desarrollo local.
+- `DB_DRIVER=dynamodb`: `internal/storage/dynamodb`, pensado para la nube. Hoy es un
+  esqueleto verificado por el compilador (`var _ domain.Store = (*Store)(nil)`); el
+  diseño de tabla, GSIs y la guía para portar cada método están documentados en
+  `internal/storage/dynamodb/store.go`.
+
+Para agregar otro motor (Postgres, Turso, ...) basta con implementar `domain.Store`
+en un paquete nuevo y registrarlo en `openStore()` de `main.go`.
 
 ## 💻 Uso de la Aplicación
 
@@ -118,11 +144,11 @@ ALLOWED_ORIGINS=             # Orígenes CORS permitidos (vacío = todos, solo d
 
 ### Agregar Más Preguntas
 
-Edita `data/questions.json` (embebido en el binario al compilar) y agrega preguntas en el formato:
+Edita el archivo de la categoría correspondiente en `data/questions/` (embebido en el binario al compilar) y agrega preguntas en el formato:
 ```json
 {
-    "category": "CATEGORIA",
-    "subcategory": "Subcategoría",
+    "key": "CUL-0241",
+    "subcategory": "GASTRONOMIA",
     "text": "¿Pregunta?",
     "difficulty": 2,
     "points": 10,
@@ -137,7 +163,12 @@ Edita `data/questions.json` (embebido en el binario al compilar) y agrega pregun
 }
 ```
 
-Nota: el seeder solo corre cuando la base de datos está vacía; usa `npm run clean:db` y reinicia para re-sembrar.
+Reglas:
+- `key` es el identificador estable de la pregunta (prefijo de categoría + consecutivo). No reutilices ni cambies keys existentes.
+- `subcategory` debe ser un código definido en `data/taxonomy.json` para esa categoría. Para crear una subcategoría nueva, agrégala primero a la taxonomía.
+- Cada pregunta debe tener 2+ opciones y exactamente una correcta; el servidor valida esto al arrancar y falla si no se cumple.
+
+El seeder corre en cada arranque y sincroniza los archivos con la base de datos: crea preguntas nuevas y actualiza las modificadas (por `key`), sin duplicar. No hace falta borrar `quiz.db` para aplicar cambios.
 
 ## 🐛 Solución de Problemas
 
@@ -146,8 +177,8 @@ Nota: el seeder solo corre cuando la base de datos está vacía; usa `npm run cl
 - Asegúrate de tener permisos de escritura para crear la base de datos
 
 ### Las preguntas no cargan
-- Elimina `quiz.db` y reinicia la aplicación
-- Verifica que `seeder.go` tenga las preguntas correctamente formateadas
+- Revisa el log de arranque: el seeder valida `data/taxonomy.json` y `data/questions/*.json` y reporta el error exacto (key duplicada, subcategoría inexistente, opciones inválidas)
+- Como último recurso, elimina `quiz.db` y reinicia la aplicación
 
 ### Error de dependencias
 ```bash
@@ -244,10 +275,9 @@ quiz/
 │   │   ├── services/     # API services
 │   │   └── types/        # TypeScript types
 │   └── dist/             # Build de producción
-├── *.go                  # Backend Go
-├── handlers.go           # API handlers
-├── models.go             # Modelos de datos
-├── seeder.go             # Seed de preguntas
+├── main.go               # Wiring y arranque
+├── handlers.go           # Adaptador HTTP (Gin)
+├── internal/             # Dominio, seed y adaptadores de storage
 ├── quiz.db               # SQLite database
 ├── Makefile              # Make commands
 └── package.json          # NPM scripts
@@ -258,8 +288,9 @@ quiz/
 **Backend:**
 - Go 1.21+
 - Gin (web framework)
-- GORM (ORM)
-- SQLite (base de datos)
+- Arquitectura hexagonal: persistencia detrás del puerto `domain.Store`
+- SQLite + GORM (adaptador por defecto, local)
+- DynamoDB (adaptador para la nube, esqueleto documentado)
 
 **Frontend:**
 - Vue 3 (Composition API)

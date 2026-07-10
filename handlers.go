@@ -12,9 +12,14 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"gorm.io/gorm"
 	"golang.org/x/crypto/bcrypt"
+
+	"quiz-app/internal/domain"
 )
+
+// This file is the HTTP (driving) adapter: it translates HTTP requests into
+// calls against the domain.Store port. It must not know which storage
+// technology backs the store.
 
 // User authentication handlers
 func registerUser(c *gin.Context) {
@@ -35,13 +40,13 @@ func registerUser(c *gin.Context) {
 		return
 	}
 
-	user := User{
+	user := domain.User{
 		Username: registerData.Username,
 		Email:    registerData.Email,
 		Password: string(hashedPassword),
 	}
 
-	if err := db.Create(&user).Error; err != nil {
+	if err := store.Users().Create(&user); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Username or email already exists"})
 		return
 	}
@@ -60,8 +65,8 @@ func loginUser(c *gin.Context) {
 		return
 	}
 
-	var user User
-	if err := db.Where("username = ?", loginData.Username).First(&user).Error; err != nil {
+	user, err := store.Users().ByUsername(loginData.Username)
+	if err != nil {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid credentials"})
 		return
 	}
@@ -74,12 +79,7 @@ func loginUser(c *gin.Context) {
 	token := generateToken()
 	expiresAt := time.Now().Add(tokenTTL)
 
-	// Save token to database
-	updates := map[string]interface{}{
-		"token":            token,
-		"token_expires_at": expiresAt,
-	}
-	if err := db.Model(&user).Updates(updates).Error; err != nil {
+	if err := store.Users().SaveSessionToken(user.ID, token, expiresAt); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create session"})
 		return
 	}
@@ -105,8 +105,8 @@ func authRequired() gin.HandlerFunc {
 			return
 		}
 
-		var user User
-		if err := db.Where("token = ?", token).First(&user).Error; err != nil {
+		user, err := store.Users().ByToken(token)
+		if err != nil {
 			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
 			c.Abort()
 			return
@@ -126,23 +126,23 @@ func authRequired() gin.HandlerFunc {
 
 // requireOwnedSession loads the session from the :sessionId param and verifies
 // it belongs to the authenticated user.
-func requireOwnedSession(c *gin.Context) (GameSession, bool) {
+func requireOwnedSession(c *gin.Context) (domain.GameSession, bool) {
 	sessionID, err := strconv.Atoi(c.Param("sessionId"))
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid session ID"})
-		return GameSession{}, false
+		return domain.GameSession{}, false
 	}
 
-	var session GameSession
-	if err := db.First(&session, sessionID).Error; err != nil {
+	session, err := store.Games().SessionByID(uint(sessionID))
+	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Session not found"})
-		return GameSession{}, false
+		return domain.GameSession{}, false
 	}
 
 	userID, exists := c.Get("userID")
 	if !exists || session.UserID != userID.(uint) {
 		c.JSON(http.StatusForbidden, gin.H{"error": "Session does not belong to the authenticated user"})
-		return GameSession{}, false
+		return domain.GameSession{}, false
 	}
 
 	return session, true
@@ -167,7 +167,7 @@ func requireOwnUserID(c *gin.Context) (uint, bool) {
 
 // Game handlers
 func startGame(c *gin.Context) {
-	var config GameConfig
+	var config domain.GameConfig
 	if err := c.ShouldBindJSON(&config); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
@@ -181,9 +181,7 @@ func startGame(c *gin.Context) {
 	}
 
 	// Complete any existing active or paused sessions for this user and mode
-	db.Model(&GameSession{}).
-		Where("user_id = ? AND mode = ? AND status IN ?", userID, config.Mode, []string{"ACTIVE", "PAUSED"}).
-		Update("status", "COMPLETED")
+	store.Games().CompleteResumable(userID.(uint), config.Mode, 0)
 
 	// Convert categories slice to comma-separated string
 	categoriesStr := ""
@@ -199,19 +197,13 @@ func startGame(c *gin.Context) {
 	}
 
 	// Verify that questions are available for the selected criteria
-	query := db.Model(&Question{})
-	if categoriesStr != "" {
-		query = query.Where("category IN ?", strings.Split(categoriesStr, ","))
-	}
-	var availableCount int64
-	query.Count(&availableCount)
-
-	if availableCount == 0 {
+	availableCount, err := store.Questions().Count(splitCategories(categoriesStr))
+	if err != nil || availableCount == 0 {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "No questions available for the selected criteria"})
 		return
 	}
 
-	session := GameSession{
+	session := domain.GameSession{
 		UserID:         userID.(uint),
 		Mode:           config.Mode,
 		Categories:     categoriesStr,
@@ -221,7 +213,7 @@ func startGame(c *gin.Context) {
 		TotalQuestions: config.QuestionCount,
 	}
 
-	if err := db.Create(&session).Error; err != nil {
+	if err := store.Games().CreateSession(&session); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create game session"})
 		return
 	}
@@ -233,41 +225,37 @@ func startGame(c *gin.Context) {
 	})
 }
 
+// splitCategories converts the session's comma-separated category codes into
+// a slice ("" -> nil, meaning no filter).
+func splitCategories(categoriesStr string) []string {
+	if categoriesStr == "" {
+		return nil
+	}
+	return strings.Split(categoriesStr, ",")
+}
+
 func getNextQuestion(c *gin.Context) {
 	session, ok := requireOwnedSession(c)
 	if !ok {
 		return
 	}
-	sessionID := int(session.ID)
+	games := store.Games()
 
 	// If session is PAUSED, reactivate it and adjust start time
 	if session.Status == "PAUSED" {
 		// Adjust the start time to account for paused time
 		// New start time = now - time_elapsed
-		newStartTime := time.Now().Add(-time.Duration(session.TimeElapsed) * time.Second)
-
-		updates := map[string]interface{}{
-			"status":     "ACTIVE",
-			"start_time": newStartTime,
-			"paused_at":  nil,
-		}
-		db.Model(&session).Where("id = ?", sessionID).Updates(updates)
-
-		// Reload session to get updated values
-		db.First(&session, sessionID)
+		session.Status = "ACTIVE"
+		session.StartTime = time.Now().Add(-time.Duration(session.TimeElapsed) * time.Second)
+		session.PausedAt = nil
+		games.SaveSession(&session)
 	}
 
 	// Get IDs of questions already presented in this session (from history)
-	var usedQuestionIDs []uint
-	db.Model(&QuestionHistory{}).
-		Where("game_session_id = ?", sessionID).
-		Pluck("question_id", &usedQuestionIDs)
+	usedQuestionIDs, _ := games.UsedQuestionIDs(session.ID)
 
 	// Get answered question IDs (flag placeholders don't count as answers)
-	var answeredIDs []uint
-	db.Model(&GameAnswer{}).
-		Where("game_session_id = ? AND choice_id IS NOT NULL", sessionID).
-		Pluck("question_id", &answeredIDs)
+	answeredIDs, _ := games.AnsweredQuestionIDs(session.ID)
 
 	// Check if we've reached the maximum number of questions
 	if len(answeredIDs) >= session.TotalQuestions {
@@ -275,28 +263,13 @@ func getNextQuestion(c *gin.Context) {
 		return
 	}
 
-	// Build query to get a random question based on session configuration
-	query := db.Model(&Question{})
+	// Restrict the random pick to the session's categories
+	var pickFrom []string
 
 	// For TIMED mode, ensure 20 questions per category
 	if session.Mode == "TIMED" {
 		// Count questions answered per category
-		var categoryCount []struct {
-			Category string
-			Count    int64
-		}
-		db.Table("game_answers").
-			Select("questions.category, COUNT(*) as count").
-			Joins("JOIN questions ON questions.id = game_answers.question_id").
-			Where("game_answers.game_session_id = ? AND game_answers.choice_id IS NOT NULL", sessionID).
-			Group("questions.category").
-			Scan(&categoryCount)
-
-		// Create map of category counts
-		categoryCountMap := make(map[string]int64)
-		for _, cc := range categoryCount {
-			categoryCountMap[cc.Category] = cc.Count
-		}
+		categoryCountMap, _ := games.AnsweredCountByCategory(session.ID)
 
 		// Find categories that haven't reached 20 questions yet
 		availableCategories := []string{}
@@ -313,40 +286,28 @@ func getNextQuestion(c *gin.Context) {
 		}
 
 		// Randomly select one of the available categories
-		selectedCategory := availableCategories[mrand.Intn(len(availableCategories))]
-		query = query.Where("category = ?", selectedCategory)
+		pickFrom = []string{availableCategories[mrand.Intn(len(availableCategories))]}
 	} else {
 		// Apply category filter if exists for other modes
-		if session.Categories != "" {
-			query = query.Where("category IN ?", strings.Split(session.Categories, ","))
-		}
+		pickFrom = splitCategories(session.Categories)
 	}
 
-	// Exclude questions already used in this session
-	if len(usedQuestionIDs) > 0 {
-		query = query.Where("id NOT IN ?", usedQuestionIDs)
-	}
-
-	// Get a random question
-	var questionID uint
-	if err := query.Order("RANDOM()").Limit(1).Pluck("id", &questionID).Error; err != nil || questionID == 0 {
+	// Get a random question not used yet in this session
+	questionID, err := store.Questions().RandomID(pickFrom, usedQuestionIDs)
+	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No more questions available"})
 		return
 	}
 
 	// Load the selected question with choices
-	var question Question
-	if err := db.Preload("Choices").First(&question, questionID).Error; err != nil {
+	question, err := store.Questions().ByID(questionID)
+	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Question not found"})
 		return
 	}
 
 	// Register this question in the history to prevent it from being used again in active sessions
-	history := QuestionHistory{
-		GameSessionID: uint(sessionID),
-		QuestionID:    questionID,
-	}
-	db.Create(&history)
+	games.AddHistory(session.ID, questionID)
 
 	// Randomize the order of choices to prevent visual memorization
 	mrand.Shuffle(len(question.Choices), func(i, j int) {
@@ -363,11 +324,11 @@ func getNextQuestion(c *gin.Context) {
 	timeRemaining := getTimeRemaining(session)
 
 	c.JSON(http.StatusOK, gin.H{
-		"question":         question,
-		"question_number":  len(answeredIDs) + 1,
-		"total_questions":  session.TotalQuestions,
-		"time_remaining":   timeRemaining,
-		"time_elapsed":     timeElapsed,
+		"question":        question,
+		"question_number": len(answeredIDs) + 1,
+		"total_questions": session.TotalQuestions,
+		"time_remaining":  timeRemaining,
+		"time_elapsed":    timeElapsed,
 	})
 }
 
@@ -376,7 +337,7 @@ func submitAnswer(c *gin.Context) {
 	if !ok {
 		return
 	}
-	sessionID := int(session.ID)
+	games := store.Games()
 
 	var answerData struct {
 		QuestionID uint `json:"question_id" binding:"required"`
@@ -397,33 +358,29 @@ func submitAnswer(c *gin.Context) {
 	// Enforce the time limit server-side
 	if session.TimeLimit > 0 && getTimeRemaining(session) <= 0 {
 		now := time.Now()
-		db.Model(&GameSession{}).Where("id = ?", sessionID).Updates(map[string]interface{}{
-			"status":   "COMPLETED",
-			"end_time": now,
-		})
+		session.Status = "COMPLETED"
+		session.EndTime = &now
+		games.SaveSession(&session)
 		c.JSON(http.StatusConflict, gin.H{"error": "Time limit exceeded"})
 		return
 	}
 
 	// Reject answering the same question twice in a session
-	var alreadyAnswered int64
-	db.Model(&GameAnswer{}).
-		Where("game_session_id = ? AND question_id = ? AND choice_id IS NOT NULL", sessionID, answerData.QuestionID).
-		Count(&alreadyAnswered)
-	if alreadyAnswered > 0 {
+	alreadyAnswered, _ := games.HasAnswered(session.ID, answerData.QuestionID)
+	if alreadyAnswered {
 		c.JSON(http.StatusConflict, gin.H{"error": "Question already answered"})
 		return
 	}
 
 	// Check if answer is correct, validating the choice belongs to the question
-	var choice Choice
-	if err := db.First(&choice, answerData.ChoiceID).Error; err != nil || choice.QuestionID != answerData.QuestionID {
+	choice, err := store.Questions().ChoiceByID(answerData.ChoiceID)
+	if err != nil || choice.QuestionID != answerData.QuestionID {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Choice does not belong to the submitted question"})
 		return
 	}
 
-	gameAnswer := GameAnswer{
-		GameSessionID: uint(sessionID),
+	gameAnswer := domain.GameAnswer{
+		GameSessionID: session.ID,
 		QuestionID:    answerData.QuestionID,
 		ChoiceID:      &answerData.ChoiceID,
 		IsCorrect:     choice.IsCorrect,
@@ -432,33 +389,28 @@ func submitAnswer(c *gin.Context) {
 	}
 
 	// Fill in the flag placeholder row if the question was flagged first
-	var placeholder GameAnswer
-	if err := db.Where("game_session_id = ? AND question_id = ? AND choice_id IS NULL",
-		sessionID, answerData.QuestionID).First(&placeholder).Error; err == nil {
+	if placeholder, err := games.AnswerPlaceholder(session.ID, answerData.QuestionID); err == nil {
 		gameAnswer.ID = placeholder.ID
 		gameAnswer.IsFlagged = placeholder.IsFlagged
 	}
 
-	if err := db.Save(&gameAnswer).Error; err != nil {
+	if err := games.SaveAnswer(&gameAnswer); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save answer"})
 		return
 	}
 
 	// Update session score if correct
 	if choice.IsCorrect {
-		db.Model(&GameSession{}).Where("id = ?", sessionID).
-			UpdateColumn("correct_answers", db.Raw("correct_answers + ?", 1)).
-			UpdateColumn("score", db.Raw("score + ?", 10))
+		games.AddScore(session.ID, 10)
 	}
 
 	// Get the correct choice to send back in the response
-	var correctChoice Choice
-	db.Where("question_id = ? AND is_correct = true", answerData.QuestionID).First(&correctChoice)
+	correctChoices, _ := store.Questions().CorrectChoices([]uint{answerData.QuestionID})
 
 	c.JSON(http.StatusOK, gin.H{
 		"correct":           choice.IsCorrect,
 		"choice_id":         choice.ID,
-		"correct_choice_id": correctChoice.ID,
+		"correct_choice_id": correctChoices[answerData.QuestionID].ID,
 		"explanation":       getQuestionExplanation(answerData.QuestionID),
 	})
 }
@@ -468,7 +420,6 @@ func flagQuestion(c *gin.Context) {
 	if !ok {
 		return
 	}
-	sessionID := int(session.ID)
 
 	var flagData struct {
 		QuestionID uint `json:"question_id"`
@@ -479,25 +430,22 @@ func flagQuestion(c *gin.Context) {
 		return
 	}
 
-	// Ejecuta el toggle y devuelve cuántas filas fueron afectadas
-	result := db.Model(&GameAnswer{}).
-		Where("game_session_id = ? AND question_id = ?", sessionID, flagData.QuestionID).
-		Update("is_flagged", gorm.Expr("NOT is_flagged"))
-
-	if result.Error != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": result.Error.Error()})
+	// Toggle the flag on the existing answer row, if any
+	toggled, err := store.Games().ToggleFlag(session.ID, flagData.QuestionID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
 
 	// The question may not have been answered yet: create a flagged
 	// placeholder row that submitAnswer fills in later
-	if result.RowsAffected == 0 {
-		placeholder := GameAnswer{
-			GameSessionID: uint(sessionID),
+	if !toggled {
+		placeholder := domain.GameAnswer{
+			GameSessionID: session.ID,
 			QuestionID:    flagData.QuestionID,
 			IsFlagged:     true,
 		}
-		if err := db.Create(&placeholder).Error; err != nil {
+		if err := store.Games().SaveAnswer(&placeholder); err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to flag question"})
 			return
 		}
@@ -523,8 +471,8 @@ func useFiftyFifty(c *gin.Context) {
 	}
 
 	// Load question with choices
-	var question Question
-	if err := db.Preload("Choices").First(&question, request.QuestionID).Error; err != nil {
+	question, err := store.Questions().ByID(request.QuestionID)
+	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Question not found"})
 		return
 	}
@@ -569,8 +517,8 @@ func useAutosolve(c *gin.Context) {
 	}
 
 	// Load question with choices
-	var question Question
-	if err := db.Preload("Choices").First(&question, request.QuestionID).Error; err != nil {
+	question, err := store.Questions().ByID(request.QuestionID)
+	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Question not found"})
 		return
 	}
@@ -599,16 +547,14 @@ func endGame(c *gin.Context) {
 	if !ok {
 		return
 	}
-	sessionID := int(session.ID)
 
 	endTime := time.Now()
-	db.Model(&GameSession{}).Where("id = ?", sessionID).Updates(map[string]interface{}{
-		"end_time": endTime,
-		"status":   "COMPLETED",
-	})
+	session.Status = "COMPLETED"
+	session.EndTime = &endTime
+	store.Games().SaveSession(&session)
 
 	// Generate study recommendations
-	generateRecommendations(uint(sessionID))
+	generateRecommendations(session.ID)
 
 	c.JSON(http.StatusOK, gin.H{"message": "Game ended successfully"})
 }
@@ -618,7 +564,6 @@ func pauseGame(c *gin.Context) {
 	if !ok {
 		return
 	}
-	sessionID := int(session.ID)
 
 	// Calculate and save the elapsed time before pausing
 	// (start_time is adjusted on resume, so this spans only active play)
@@ -628,14 +573,11 @@ func pauseGame(c *gin.Context) {
 	}
 
 	now := time.Now()
-	// Update session: mark as PAUSED, save elapsed time, and record pause time
-	updates := map[string]interface{}{
-		"status":       "PAUSED",
-		"time_elapsed": currentElapsed,
-		"paused_at":    &now,
-	}
+	session.Status = "PAUSED"
+	session.TimeElapsed = currentElapsed
+	session.PausedAt = &now
 
-	if err := db.Model(&GameSession{}).Where("id = ?", sessionID).Updates(updates).Error; err != nil {
+	if err := store.Games().SaveSession(&session); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to pause game"})
 		return
 	}
@@ -653,55 +595,30 @@ func respondPausedGame(c *gin.Context, mode string) {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "User not authenticated"})
 		return
 	}
-
-	resumable := func() *gorm.DB {
-		q := db.Where("user_id = ? AND status IN ?", userID, []string{"PAUSED", "ACTIVE"})
-		if mode != "" {
-			q = q.Where("mode = ?", mode)
-		}
-		return q
-	}
-
-	// Clean up old active/paused games (keep only the most recent one)
-	var oldSessions []GameSession
-	resumable().
-		Order("updated_at DESC").
-		Offset(1). // Skip the most recent one
-		Find(&oldSessions)
-
-	for _, oldSession := range oldSessions {
-		db.Model(&oldSession).Update("status", "COMPLETED")
-	}
+	games := store.Games()
 
 	// Find the most recent active or paused game
-	var session GameSession
-	err := resumable().
-		Order("updated_at DESC").
-		First(&session).Error
-
+	session, err := games.LatestResumable(userID.(uint), mode)
 	if err != nil {
 		// No active or paused game found
 		c.JSON(http.StatusNotFound, gin.H{"error": "No paused game found"})
 		return
 	}
 
+	// Clean up old active/paused games (keep only the most recent one)
+	games.CompleteResumable(userID.(uint), mode, session.ID)
+
 	// Get progress information (flag placeholders don't count as answers)
-	var answeredCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ? AND choice_id IS NOT NULL", session.ID).Count(&answeredCount)
+	answeredCount, _ := games.AnsweredCount(session.ID)
 
 	// Count incorrect answers
-	var incorrectCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ? AND choice_id IS NOT NULL AND is_correct = ?", session.ID, false).Count(&incorrectCount)
+	incorrectCount, _ := games.IncorrectCount(session.ID)
 
 	// Count flagged questions
-	var flaggedCount int64
-	db.Model(&GameAnswer{}).Where("game_session_id = ? AND is_flagged = ?", session.ID, true).Count(&flaggedCount)
+	flaggedCount, _ := games.FlaggedCount(session.ID)
 
 	// Get flagged question IDs
-	var flaggedIDs []uint
-	db.Model(&GameAnswer{}).
-		Where("game_session_id = ? AND is_flagged = ?", session.ID, true).
-		Pluck("question_id", &flaggedIDs)
+	flaggedIDs, _ := games.FlaggedQuestionIDs(session.ID)
 
 	// Calculate elapsed time
 	timeElapsed := calculateCurrentTimeElapsed(session)
@@ -739,31 +656,25 @@ func getGameResults(c *gin.Context) {
 	if !ok {
 		return
 	}
-	sessionID := int(session.ID)
 
 	// Get all answers
-	var answers []GameAnswer
-	db.Preload("Question").Preload("Choice").
-		Where("game_session_id = ?", sessionID).Find(&answers)
+	answers, err := store.Games().AnswersBySession(session.ID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to load answers"})
+		return
+	}
 
 	// Calculate category scores
-	categoryScores := make(map[string]CategoryScore)
-	incorrectAnswers := []IncorrectAnswer{}
-	flaggedQuestions := []Question{}
+	categoryScores := make(map[string]domain.CategoryScore)
+	incorrectAnswers := []domain.IncorrectAnswer{}
+	flaggedQuestions := []domain.Question{}
 
 	// Prefetch the correct choice of every question in one query
 	questionIDs := make([]uint, 0, len(answers))
 	for _, answer := range answers {
 		questionIDs = append(questionIDs, answer.QuestionID)
 	}
-	correctByQuestion := make(map[uint]Choice)
-	if len(questionIDs) > 0 {
-		var correctChoices []Choice
-		db.Where("question_id IN ? AND is_correct = true", questionIDs).Find(&correctChoices)
-		for _, choice := range correctChoices {
-			correctByQuestion[choice.QuestionID] = choice
-		}
-	}
+	correctByQuestion, _ := store.Questions().CorrectChoices(questionIDs)
 
 	for _, answer := range answers {
 		// Flag placeholders were never answered: track the flag, skip scoring
@@ -774,9 +685,9 @@ func getGameResults(c *gin.Context) {
 			continue
 		}
 
-		category := answer.Question.Category
+		category := answer.Question.Category.Code
 		if _, exists := categoryScores[category]; !exists {
-			categoryScores[category] = CategoryScore{Category: category}
+			categoryScores[category] = domain.CategoryScore{Category: category}
 		}
 
 		score := categoryScores[category]
@@ -787,14 +698,14 @@ func getGameResults(c *gin.Context) {
 			// Add to incorrect answers
 			correctChoice := correctByQuestion[answer.QuestionID]
 
-			incorrectAnswers = append(incorrectAnswers, IncorrectAnswer{
+			incorrectAnswers = append(incorrectAnswers, domain.IncorrectAnswer{
 				Question:      answer.Question,
 				UserChoice:    answer.Choice,
 				CorrectChoice: correctChoice,
 				Explanation:   answer.Question.Explanation,
 			})
 		}
-		
+
 		if answer.IsFlagged {
 			flaggedQuestions = append(flaggedQuestions, answer.Question)
 		}
@@ -806,8 +717,7 @@ func getGameResults(c *gin.Context) {
 
 	// Get recommendations
 	var recommendations []string
-	var recs []StudyRecommendation
-	db.Where("user_id = ?", session.UserID).Order("priority desc").Limit(5).Find(&recs)
+	recs, _ := store.Stats().RecommendationsByUser(session.UserID, 5)
 	for _, rec := range recs {
 		recommendations = append(recommendations, rec.Description)
 	}
@@ -832,7 +742,7 @@ func getGameResults(c *gin.Context) {
 		timeTaken = int(session.EndTime.Sub(session.StartTime).Seconds())
 	}
 
-	result := GameResult{
+	result := domain.GameResult{
 		SessionID:        session.ID,
 		TotalQuestions:   answeredTotal,
 		CorrectAnswers:   session.CorrectAnswers,
@@ -851,7 +761,7 @@ func getGameResults(c *gin.Context) {
 // Question handlers
 
 // hideCorrectChoices strips the answer key before questions leave the API.
-func hideCorrectChoices(questions []Question) {
+func hideCorrectChoices(questions []domain.Question) {
 	for i := range questions {
 		for j := range questions[i].Choices {
 			questions[i].Choices[j].IsCorrect = false
@@ -860,66 +770,64 @@ func hideCorrectChoices(questions []Question) {
 }
 
 func getQuestions(c *gin.Context) {
-	var questions []Question
-	db.Preload("Choices").Find(&questions)
+	questions, err := store.Questions().List()
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to load questions"})
+		return
+	}
 	hideCorrectChoices(questions)
 	c.JSON(http.StatusOK, questions)
 }
 
 func getQuestion(c *gin.Context) {
 	id, _ := strconv.Atoi(c.Param("id"))
-	var question Question
-	if err := db.Preload("Choices").First(&question, id).Error; err != nil {
+	question, err := store.Questions().ByID(uint(id))
+	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Question not found"})
 		return
 	}
-	hideCorrectChoices([]Question{question})
+	hideCorrectChoices([]domain.Question{question})
 	c.JSON(http.StatusOK, question)
 }
 
 func getQuestionsByCategory(c *gin.Context) {
-	category := c.Param("category")
-	var questions []Question
-	db.Preload("Choices").Where("category = ?", category).Find(&questions)
+	questions, err := store.Questions().ListByCategory(c.Param("category"))
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to load questions"})
+		return
+	}
 	hideCorrectChoices(questions)
 	c.JSON(http.StatusOK, questions)
 }
 
+// getCategories returns the canonical taxonomy (categories with their subcategories).
+func getCategories(c *gin.Context) {
+	categories, err := store.Questions().Categories()
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to load categories"})
+		return
+	}
+	c.JSON(http.StatusOK, categories)
+}
+
 func getQuestionsCount(c *gin.Context) {
 	// Get total count
-	var totalCount int64
-	db.Model(&Question{}).Count(&totalCount)
+	totalCount, _ := store.Questions().Count(nil)
 
-	// Get count by category in a single grouped query
+	// Get count by category, ensuring the 4 main categories always appear
 	categoryCount := map[string]int64{"CULTURA": 0, "GEOGRAFIA": 0, "HISTORIA": 0, "CONSTITUCION": 0}
-	var categoryCounts []struct {
-		Category string
-		Count    int64
-	}
-	db.Model(&Question{}).
-		Select("category, COUNT(*) as count").
-		Group("category").
-		Scan(&categoryCounts)
-	for _, cc := range categoryCounts {
-		categoryCount[cc.Category] = cc.Count
+	byCategory, _ := store.Questions().CountsByCategory()
+	for code, count := range byCategory {
+		categoryCount[code] = count
 	}
 
 	// Get count by subcategory (optional detailed breakdown)
-	var subcategoryCounts []struct {
-		Category    string
-		SubCategory string
-		Count       int64
-	}
-
-	db.Model(&Question{}).
-		Select("category, sub_category, COUNT(*) as count").
-		Group("category, sub_category").
-		Scan(&subcategoryCounts)
+	subcategoryCounts, _ := store.Questions().CountsBySubcategory()
 
 	c.JSON(http.StatusOK, gin.H{
-		"total":             totalCount,
-		"by_category":       categoryCount,
-		"by_subcategory":    subcategoryCounts,
+		"total":          totalCount,
+		"by_category":    categoryCount,
+		"by_subcategory": subcategoryCounts,
 	})
 }
 
@@ -950,8 +858,11 @@ func getGameHistory(c *gin.Context) {
 		return
 	}
 
-	var sessions []GameSession
-	db.Where("user_id = ?", userID).Order("created_at desc").Limit(20).Find(&sessions)
+	sessions, err := store.Games().SessionsByUser(userID, 20)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to load history"})
+		return
+	}
 	c.JSON(http.StatusOK, sessions)
 }
 
@@ -961,8 +872,11 @@ func getStudyRecommendations(c *gin.Context) {
 		return
 	}
 
-	var recommendations []StudyRecommendation
-	db.Where("user_id = ?", userID).Order("priority desc").Find(&recommendations)
+	recommendations, err := store.Stats().RecommendationsByUser(userID, 0)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to load recommendations"})
+		return
+	}
 	c.JSON(http.StatusOK, recommendations)
 }
 
@@ -972,17 +886,10 @@ func resetUserStats(c *gin.Context) {
 		return
 	}
 
-	// Delete all game answers for user's sessions
-	db.Exec("DELETE FROM game_answers WHERE game_session_id IN (SELECT id FROM game_sessions WHERE user_id = ?)", userID)
-
-	// Delete all question history for user's sessions
-	db.Exec("DELETE FROM question_histories WHERE game_session_id IN (SELECT id FROM game_sessions WHERE user_id = ?)", userID)
-
-	// Delete all game sessions for the user
-	db.Where("user_id = ?", userID).Delete(&GameSession{})
-
-	// Delete all study recommendations for the user
-	db.Where("user_id = ?", userID).Delete(&StudyRecommendation{})
+	if err := store.ResetUserData(userID); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to reset statistics"})
+		return
+	}
 
 	c.JSON(http.StatusOK, gin.H{"message": "Statistics reset successfully"})
 }
@@ -998,7 +905,7 @@ func generateToken() string {
 }
 
 // calculateCurrentTimeElapsed returns the total time elapsed excluding paused time
-func calculateCurrentTimeElapsed(session GameSession) int {
+func calculateCurrentTimeElapsed(session domain.GameSession) int {
 	if session.Status == "PAUSED" {
 		// Return the saved elapsed time when paused
 		return session.TimeElapsed
@@ -1008,7 +915,7 @@ func calculateCurrentTimeElapsed(session GameSession) int {
 	return int(time.Since(session.StartTime).Seconds())
 }
 
-func getTimeRemaining(session GameSession) int {
+func getTimeRemaining(session domain.GameSession) int {
 	if session.TimeLimit == 0 {
 		return -1 // Unlimited time
 	}
@@ -1023,8 +930,10 @@ func getTimeRemaining(session GameSession) int {
 }
 
 func getQuestionExplanation(questionID uint) string {
-	var question Question
-	db.First(&question, questionID)
+	question, err := store.Questions().ByID(questionID)
+	if err != nil {
+		return ""
+	}
 	return question.Explanation
 }
 
@@ -1035,7 +944,7 @@ func checkIfPassed(category string, percentage float64) bool {
 		"GEOGRAFIA":    55.0,
 		"CULTURA":      40.0,
 	}
-	
+
 	if required, exists := passingScores[category]; exists {
 		return percentage >= required
 	}
@@ -1043,92 +952,50 @@ func checkIfPassed(category string, percentage float64) bool {
 }
 
 func getUserWeakCategories(userID uint) []string {
-	// Analyze recent performance to identify weak categories
-	var weakCategories []string
-	
-	query := `
-		SELECT q.category 
-		FROM game_answers ga
-		JOIN questions q ON ga.question_id = q.id
-		JOIN game_sessions gs ON ga.game_session_id = gs.id
-		WHERE gs.user_id = ? AND ga.choice_id IS NOT NULL
-		GROUP BY q.category
-		HAVING (SUM(CASE WHEN ga.is_correct THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) < 50
-		ORDER BY COUNT(*) DESC
-	`
-	
-	db.Raw(query, userID).Pluck("category", &weakCategories)
+	weakCategories, _ := store.Stats().WeakCategories(userID)
 	return weakCategories
 }
 
-func calculateUserStats(userID uint) UserStats {
-	var stats UserStats
+func calculateUserStats(userID uint) domain.UserStats {
+	var stats domain.UserStats
 	stats.UserID = userID
-	
+	statsRepo := store.Stats()
+
 	// Get total games
-	db.Model(&GameSession{}).Where("user_id = ?", userID).Count(&stats.TotalGames)
+	stats.TotalGames, _ = statsRepo.TotalSessions(userID)
 
 	// Get overall performance from actually answered questions
 	// (session.TotalQuestions is the planned count, which overstates
 	// abandoned or partially played games)
-	var overall struct {
-		Total   int
-		Correct int
-	}
-	db.Raw(`
-		SELECT
-			COUNT(*) as total,
-			COALESCE(SUM(CASE WHEN ga.is_correct THEN 1 ELSE 0 END), 0) as correct
-		FROM game_answers ga
-		JOIN game_sessions gs ON ga.game_session_id = gs.id
-		WHERE gs.user_id = ? AND ga.choice_id IS NOT NULL
-	`, userID).Scan(&overall)
+	overall, _ := statsRepo.OverallTotals(userID)
 	stats.TotalQuestions = overall.Total
 	stats.CorrectAnswers = overall.Correct
 
-	var bestScore int
-	db.Model(&GameSession{}).
-		Where("user_id = ? AND status = ?", userID, "COMPLETED").
-		Select("COALESCE(MAX(score), 0)").Scan(&bestScore)
-	stats.BestScore = bestScore
+	stats.BestScore, _ = statsRepo.BestScore(userID)
 
 	if stats.TotalQuestions > 0 {
 		stats.AverageScore = float64(stats.CorrectAnswers) / float64(stats.TotalQuestions) * 100
 	}
-	
+
 	// Calculate category stats
-	stats.CategoryStats = make(map[string]CategoryStats)
+	stats.CategoryStats = make(map[string]domain.CategoryStats)
 	categories := []string{"CULTURA", "GEOGRAFIA", "HISTORIA", "CONSTITUCION"}
-	
+
 	for _, category := range categories {
-		var catStats CategoryStats
+		var catStats domain.CategoryStats
 		catStats.Category = category
-		
+
 		// Get performance for this category
-		query := `
-			SELECT 
-				COUNT(*) as total,
-				SUM(CASE WHEN ga.is_correct THEN 1 ELSE 0 END) as correct
-			FROM game_answers ga
-			JOIN questions q ON ga.question_id = q.id
-			JOIN game_sessions gs ON ga.game_session_id = gs.id
-			WHERE gs.user_id = ? AND q.category = ? AND ga.choice_id IS NOT NULL
-		`
-		
-		var result struct {
-			Total   int
-			Correct int
-		}
-		db.Raw(query, userID, category).Scan(&result)
-		
-		catStats.TotalQuestions = result.Total
-		catStats.CorrectAnswers = result.Correct
+		totals, _ := statsRepo.CategoryTotals(userID, category)
+
+		catStats.TotalQuestions = totals.Total
+		catStats.CorrectAnswers = totals.Correct
 		if catStats.TotalQuestions > 0 {
 			catStats.AveragePercentage = float64(catStats.CorrectAnswers) / float64(catStats.TotalQuestions) * 100
 		}
-		
+
 		stats.CategoryStats[category] = catStats
-		
+
 		// Identify weak and strong areas
 		if catStats.AveragePercentage < 50 {
 			stats.WeakAreas = append(stats.WeakAreas, category)
@@ -1136,35 +1003,16 @@ func calculateUserStats(userID uint) UserStats {
 			stats.StrongAreas = append(stats.StrongAreas, category)
 		}
 	}
-	
-	// Get recent progress, computing percentages from answered questions
-	var progress []struct {
-		CreatedAt time.Time
-		Score     int
-		Answered  int
-		Correct   int
-	}
-	db.Raw(`
-		SELECT
-			gs.created_at,
-			gs.score,
-			COUNT(ga.id) as answered,
-			COALESCE(SUM(CASE WHEN ga.is_correct THEN 1 ELSE 0 END), 0) as correct
-		FROM game_sessions gs
-		LEFT JOIN game_answers ga ON ga.game_session_id = gs.id AND ga.choice_id IS NOT NULL
-		WHERE gs.user_id = ? AND gs.status = 'COMPLETED'
-		GROUP BY gs.id
-		ORDER BY gs.created_at DESC
-		LIMIT 10
-	`, userID).Scan(&progress)
 
+	// Get recent progress, computing percentages from answered questions
+	progress, _ := statsRepo.RecentProgress(userID, 10)
 	for _, p := range progress {
 		percentage := 0.0
 		if p.Answered > 0 {
 			percentage = float64(p.Correct) / float64(p.Answered) * 100
 		}
-		stats.RecentProgress = append(stats.RecentProgress, ProgressPoint{
-			Date:       p.CreatedAt,
+		stats.RecentProgress = append(stats.RecentProgress, domain.ProgressPoint{
+			Date:       p.Date,
 			Score:      p.Score,
 			Percentage: percentage,
 		})
@@ -1179,26 +1027,28 @@ func identifyWeakAreas(userID uint) []string {
 }
 
 func generateRecommendations(sessionID uint) {
-	var session GameSession
-	db.First(&session, sessionID)
-	
+	session, err := store.Games().SessionByID(sessionID)
+	if err != nil {
+		return
+	}
+
 	// Analyze incorrect answers
-	var incorrectAnswers []GameAnswer
-	db.Preload("Question").
-		Where("game_session_id = ? AND is_correct = false", sessionID).
-		Find(&incorrectAnswers)
-	
+	incorrectAnswers, err := store.Games().IncorrectAnswers(sessionID)
+	if err != nil {
+		return
+	}
+
 	// Group by category and subcategory
 	weaknesses := make(map[string]int)
 	for _, answer := range incorrectAnswers {
-		key := fmt.Sprintf("%s_%s", answer.Question.Category, answer.Question.SubCategory)
+		key := fmt.Sprintf("%s_%s", answer.Question.Category.Code, answer.Question.SubCategory.Name)
 		weaknesses[key]++
 	}
-	
+
 	// Create recommendations
 	for area, count := range weaknesses {
 		if count >= 2 { // If failed 2+ questions in this area
-			rec := StudyRecommendation{
+			rec := domain.StudyRecommendation{
 				UserID:      session.UserID,
 				Category:    getCategory(area),
 				SubCategory: getSubCategory(area),
@@ -1207,7 +1057,7 @@ func generateRecommendations(sessionID uint) {
 				Resources:   generateResources(area),
 				Priority:    int(math.Min(5, float64(count))),
 			}
-			db.Create(&rec)
+			store.Stats().CreateRecommendation(&rec)
 		}
 	}
 }
@@ -1242,5 +1092,3 @@ func generateResources(area string) string {
 	// Return JSON string with study materials
 	return `{"videos": [], "documents": ["COLOMBIA: NUESTRA CASA"], "exercises": []}`
 }
-
-

@@ -17,7 +17,7 @@
     "frontend": "cd frontend && npm run dev",
     "backend": "go run *.go",
     "test:backend": "go test ./...",
-    "db:seed": "go run seeder.go",
+    "db:seed": "go run .",
     "db:reset": "npm run clean:db && npm run dev:backend"
   },
   "devDependencies": {

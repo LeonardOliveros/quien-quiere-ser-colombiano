@@ -1,0 +1,6543 @@
+[
+  {
+    "key": "GEO-0001",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuántas regiones naturales tiene Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "4",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "5",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "6",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "7",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0002",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuáles son las seis regiones naturales de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Caribe, Pacífica, Andina, Orinoquía, Amazonía, Insular",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Norte, Sur, Este, Oeste, Centro, Islas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Costa, Sierra, Selva, Llanos, Montaña, Mar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Atlántica, Pacífica, Central, Oriental, Sur, Insular",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0003",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la región más extensa de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Andina",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Amazonía",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Orinoquía",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Caribe",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0004",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La región Andina se caracteriza por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Sus playas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sus tres cordilleras",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Su selva tropical",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sus llanos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0005",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué región es conocida como los Llanos Orientales?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Amazonía",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Orinoquía",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Andina",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Caribe",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0006",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La región Insular incluye:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo San Andrés",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Solo Providencia",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "San Andrés, Providencia y Santa Catalina",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Solo las islas del Pacífico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0007",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuántos kilómetros de costa tiene Colombia en el Caribe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1.200 km",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1.600 km",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "2.000 km",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "2.500 km",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0008",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuántos kilómetros de costa tiene Colombia en el Pacífico?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "900 km",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1.100 km",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1.300 km",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1.500 km",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0009",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuántos departamentos tiene Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "30",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "31",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "32",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "33",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0010",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del departamento de Antioquia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Medellín",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pereira",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0011",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del departamento del Atlántico es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Valledupar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0012",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital de Bolívar?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Montería",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sincelejo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0013",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital de Boyacá es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Duitama",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sogamoso",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Tunja",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Chiquinquirá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0014",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del departamento de Caldas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Armenia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pereira",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Manizales",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Ibagué",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0015",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Caquetá es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Leticia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Florencia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Mocoa",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Villavicencio",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0016",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del Cauca?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pasto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Popayán",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Neiva",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0017",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Cesar es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Valledupar",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Riohacha",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Montería",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0018",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "¿Cuál es la capital del departamento de Córdoba?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Según el mapa y la lista de departamentos y capitales de la región, la capital del departamento de Córdoba (identificado con el número 6) es Montería",
+    "choices": [
+      {
+        "text": "Sincelejo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Riohacha",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Montería",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Valledupar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0019",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital de Cundinamarca es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Zipaquirá",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Facatativá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Girardot",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0020",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del departamento del Chocó?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Buenaventura",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tumaco",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Quibdó",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Istmina",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0021",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Huila es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pitalito",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Garzón",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Neiva",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Plata",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0022",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital de La Guajira?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Valledupar",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Riohacha",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Maicao",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0023",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Magdalena es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ciénaga",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0024",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del Meta?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Yopal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Arauca",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Villavicencio",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Granada",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0025",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital de Nariño es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Ipiales",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tumaco",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Pasto",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Túquerres",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0026",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital de Norte de Santander?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bucaramanga",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cúcuta",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Pamplona",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ocaña",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0027",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Putumayo es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Puerto Asís",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Mocoa",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sibundoy",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Villa Garzón",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0028",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del Quindío?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pereira",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Manizales",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Armenia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Calarcá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0029",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital de Risaralda es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Armenia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Manizales",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Pereira",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Dosquebradas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0030",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital de Santander?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cúcuta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Barrancabermeja",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bucaramanga",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Girón",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0031",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital de Sucre es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Montería",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sincelejo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Corozal",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tolú",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0032",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del Tolima?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Neiva",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ibagué",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Espinal",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Honda",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0033",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Valle del Cauca es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Buenaventura",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Palmira",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cali",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Tuluá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0034",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del Arauca?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Yopal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Arauca",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Saravena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tame",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0035",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Casanare es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Villavicencio",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Arauca",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Yopal",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Aguazul",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0036",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del Vichada?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Puerto Inírida",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Puerto Carreño",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Puerto López",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Puerto Gaitán",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0037",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Guainía es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Mitú",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Puerto Inírida",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "San José del Guaviare",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Puerto Carreño",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0038",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del Guaviare?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Mitú",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Calamar",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "San José del Guaviare",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Retorno",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0039",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La capital del Vaupés es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Leticia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Mitú",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Carurú",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Taraira",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0040",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es la capital del Amazonas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Florencia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Puerto Nariño",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Leticia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Chorrera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0041",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "San Andrés y Providencia tiene su capital en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Providencia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "San Andrés",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Santa Catalina",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Johnny Cay",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0042",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Con cuántos países limita Colombia por tierra?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "3",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "4",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "5",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "6",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0043",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "Colombia limita al este con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Ecuador y Perú",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Venezuela y Brasil",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Panamá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Océano Atlántico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0044",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "Colombia limita al sur con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Venezuela y Brasil",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ecuador y Perú",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Panamá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Bolivia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0045",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Con qué país limita Colombia al noroeste?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Venezuela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Costa Rica",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Panamá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Nicaragua",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0046",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "El piso térmico cálido en Colombia va desde:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "0 a 500 metros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "0 a 1.000 metros",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "500 a 1.500 metros",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "1.000 a 2.000 metros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0047",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "¿Qué cultivos son típicos del piso térmico cálido?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Papa y trigo",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Banano, cacao, caña de azúcar",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Café y flores",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cebada y quinua",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0048",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "El piso térmico templado está entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "500 y 1.000 metros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1.000 y 2.000 metros",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "2.000 y 3.000 metros",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "3.000 y 4.000 metros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0049",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "¿En qué piso térmico se cultiva principalmente el café?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cálido",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Templado",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Frío",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Páramo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0050",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "El piso térmico frío va desde:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1.000 a 2.000 metros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "2.000 a 3.000 metros",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "3.000 a 4.000 metros",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "4.000 a 5.000 metros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0051",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "¿Qué se cultiva en el piso térmico frío?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Café y plátano",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Papa, cebolla, trigo, cebada",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Caña y cacao",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Palma y arroz",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0052",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "El páramo comienza aproximadamente a:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "2.000 metros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "2.500 metros",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "3.000 metros",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "3.500 metros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0053",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "¿Qué planta es característica del páramo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Café",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Frailejón",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Palma",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Bambú",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0054",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuántos kilómetros de costa tiene la región Caribe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1.200 km",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1.600 km",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "2.000 km",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "2.400 km",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0055",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La Ciénaga Grande de Santa Marta es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un lago",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un humedal costero",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un río",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una bahía",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0056",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué península se encuentra en La Guajira?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Península de Barú",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Península de La Guajira",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Península de Urabá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "No hay península",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0057",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "El Golfo de Urabá está entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Guajira y Magdalena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Antioquia y Chocó",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Bolívar y Atlántico",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Córdoba y Sucre",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0058",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La Sierra Nevada de Santa Marta es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Parte de los Andes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La formación montañosa costera más alta del mundo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Un volcán",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una meseta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0059",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué altura alcanza el Pico Cristóbal Colón?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "4.500 metros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "5.200 metros",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "5.775 metros",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "6.000 metros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0060",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "Los Montes de María están ubicados entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Guajira y Cesar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Bolívar y Sucre",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Córdoba y Antioquia",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Magdalena y Atlántico",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0061",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuántos kilómetros de costa tiene el Pacífico colombiano?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "900 km",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1.100 km",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1.300 km",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1.500 km",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0062",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es el principal puerto del Pacífico?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tumaco",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Buenaventura",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Bahía Solano",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nuquí",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0063",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "El río Atrato desemboca en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Pacífico",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Golfo de Urabá (Caribe)",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Magdalena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Amazonas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0064",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué característica tiene la selva del Chocó biogeográfico?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Es seca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Es una de las más lluviosas del mundo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Es templada",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Es desértica",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0065",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "Los manglares del Pacífico son importantes porque:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Producen madera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Son criaderos de especies marinas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Tienen oro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Producen sal",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0066",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuántas cordilleras atraviesan la región Andina?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Una",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Dos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Tres",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cuatro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0067",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "El Valle del Magdalena está entre las cordilleras:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Oriental y Occidental",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Central y Oriental",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Central y Occidental",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "No está entre cordilleras",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0068",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "El Valle del Cauca está entre las cordilleras:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Oriental y Central",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Central y Occidental",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo en la Occidental",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo en la Central",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0069",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Dónde está ubicado el Valle de Aburrá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "En Bogotá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "En Medellín",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "En Cali",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "En Bucaramanga",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0070",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "El Macizo Colombiano es importante porque:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Es el pico más alto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Nacen los ríos Magdalena, Cauca, Caquetá y Patía",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Tiene petróleo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Es un desierto",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0071",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿En qué departamento está el Cañón del Chicamocha?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Boyacá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Santander",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Norte de Santander",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cundinamarca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0072",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "El Nevado del Cocuy está en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Boyacá",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Tolima",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Caldas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0073",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuál es el páramo más grande del mundo ubicado en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Páramo de Santurbán",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Páramo de Sumapaz",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Páramo de Chingaza",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Páramo del Cocuy",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0074",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La Orinoquía representa aproximadamente qué porcentaje del territorio nacional:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "15%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "20%",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "28%",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "35%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0075",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cómo se conoce también a la Orinoquía?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La selva",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los Llanos Orientales",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La sabana",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La pradera",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0076",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "El río Meta es tributario del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Magdalena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Amazonas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Orinoco",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Caquetá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0077",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La Serranía de la Macarena es famosa por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Sus minas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Caño Cristales",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sus nevados",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sus desiertos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0078",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué actividad económica predomina en los Llanos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Minería",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Ganadería extensiva",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Industria",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pesca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0079",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "Los \"morichales\" de los Llanos son:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Montañas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Palmeras de moriche en zonas húmedas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ríos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Lagunas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0080",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué extensión aproximada tiene la Amazonía colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "200.000 km²",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "300.000 km²",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "403.000 km²",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "500.000 km²",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0081",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Cuántas especies de plantas se estiman en la Amazonía colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "10.000",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "20.000",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "30.000",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "40.000",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0082",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué porcentaje de especies vegetales amazónicas son endémicas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "30%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "40%",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "50%",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "60%",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0083",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La Victoria amazónica es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Un árbol",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Un nenúfar gigante",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Una orquídea",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una palma",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0084",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "El río Putumayo sirve de frontera con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Brasil",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Venezuela",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Ecuador y Perú",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Panamá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0085",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿A qué distancia está San Andrés de la costa colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "200 km",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "400 km",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "700 km",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1.000 km",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0086",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué idiomas se hablan en San Andrés además del español?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Francés",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Inglés y creole",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Portugués",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Holandés",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0087",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "La isla de Providencia es conocida por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Su industria",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Su barrera de coral",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sus minas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Su agricultura",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0088",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "Malpelo es importante porque:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tiene población",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Es santuario de fauna marina",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Tiene petróleo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Es turística",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0089",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "Gorgona fue utilizada como:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Base militar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Prisión de alta seguridad",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Hospital",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Universidad",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0090",
+    "subcategory": "HIDROGRAFIA",
+    "text": "¿Cuántos kilómetros tiene el río Magdalena?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1.200 km",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1.540 km",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "1.800 km",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "2.000 km",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0091",
+    "subcategory": "HIDROGRAFIA",
+    "text": "El río Cauca es afluente del:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Orinoco",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Amazonas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Magdalena",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Atrato",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0092",
+    "subcategory": "HIDROGRAFIA",
+    "text": "¿Dónde nace el río Magdalena?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Páramo de Sumapaz",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Macizo Colombiano (Laguna del Magdalena)",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sierra Nevada",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nudo de los Pastos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0093",
+    "subcategory": "HIDROGRAFIA",
+    "text": "El río Caquetá desemboca en el:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Orinoco",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Amazonas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Pacífico",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Magdalena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0094",
+    "subcategory": "HIDROGRAFIA",
+    "text": "La Laguna de la Cocha está en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Boyacá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Nariño",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cundinamarca",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0095",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "¿Cuántas especies de aves tiene Colombia aproximadamente?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1.200",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "1.500",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1.900",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "2.200",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0096",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "Colombia ocupa el primer lugar mundial en diversidad de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Mamíferos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Orquídeas y aves",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Reptiles",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Peces",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0097",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "¿Cuántas especies de orquídeas se estiman en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "1.500",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "2.500",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "3.500",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "4.500",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0098",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "El oso de anteojos habita principalmente en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La selva amazónica",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los bosques andinos",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los llanos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El desierto",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0099",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "El delfín rosado se encuentra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El mar Caribe",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Pacífico",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Los ríos amazónicos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El río Magdalena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0100",
+    "subcategory": "PARQUES_NACIONALES",
+    "text": "¿Cuántos parques nacionales naturales tiene Colombia aproximadamente?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "30",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "40",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "50",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "60",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0101",
+    "subcategory": "PARQUES_NACIONALES",
+    "text": "El Parque Nacional Natural más grande es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Tayrona",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Chiribiquete",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Nevados",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sierra Nevada",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0102",
+    "subcategory": "PARQUES_NACIONALES",
+    "text": "El Parque Nacional El Tuparro está en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Amazonas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Vichada",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Guainía",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Vaupés",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0103",
+    "subcategory": "PARQUES_NACIONALES",
+    "text": "El Parque Nacional Los Katíos es compartido con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Venezuela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Brasil",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Panamá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Ecuador",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0104",
+    "subcategory": "PARQUES_NACIONALES",
+    "text": "El Parque Nacional Amacayacu protege principalmente:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Páramos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Selva amazónica",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Manglares",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Desiertos",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0105",
+    "subcategory": "FRONTERAS_Y_LIMITES",
+    "text": "Colombia tiene frontera terrestre con cuántos países:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "3",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "4",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "5",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "6",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0106",
+    "subcategory": "FRONTERAS_Y_LIMITES",
+    "text": "La frontera más larga de Colombia es con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Brasil",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Venezuela",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Perú",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ecuador",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0107",
+    "subcategory": "FRONTERAS_Y_LIMITES",
+    "text": "El río Arauca sirve de frontera con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Brasil",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Venezuela",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Ecuador",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Perú",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0108",
+    "subcategory": "FRONTERAS_Y_LIMITES",
+    "text": "La frontera con Panamá está marcada por:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El río Atrato",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Tapón del Darién",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La cordillera",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El mar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0109",
+    "subcategory": "FRONTERAS_Y_LIMITES",
+    "text": "Colombia tiene fronteras marítimas con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "5 países",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "7 países",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "9 países",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "11 países",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0110",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "La principal actividad económica de la región Caribe es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Minería",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Turismo, ganadería y agroindustria",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo pesca",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo industria",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0111",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "El Cerrejón en La Guajira es una mina de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Oro",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Carbón",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Esmeraldas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sal",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0112",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "Las esmeraldas colombianas provienen principalmente de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Boyacá y Cundinamarca",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Chocó",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Santander",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0113",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "El petróleo se extrae principalmente en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo Santander",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Meta, Casanare, Arauca",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo la costa",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Eje Cafetero",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0114",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "La zona bananera del Urabá está en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Magdalena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Antioquia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Córdoba",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Chocó",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0115",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es la capital de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Bogotá D.C.",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0116",
+    "subcategory": "GENERAL",
+    "text": "Colombia limita al norte con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Venezuela y Brasil",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Mar Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Panamá",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Ecuador",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0117",
+    "subcategory": "GENERAL",
+    "text": "El pico más alto de Colombia es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pico Simón Bolívar",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Nevado del Ruiz",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Nevado del Huila",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Páramo de Sumapaz",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0118",
+    "subcategory": "GENERAL",
+    "text": "La región de la Orinoquía también es conocida como:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Los Llanos Orientales",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "La Costa Atlántica",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Pacífico",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La Amazonía",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0119",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es el único departamento de Colombia que tiene costas en ambos océanos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Valle del Cauca",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Chocó",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Nariño",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0120",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es la ciudad más poblada de Colombia después de Bogotá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Medellín",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0121",
+    "subcategory": "GENERAL",
+    "text": "El Archipiélago de San Andrés y Providencia se encuentra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Océano Pacífico",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Mar Caribe",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Golfo de México",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Atlántico Sur",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0122",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es el departamento más grande de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Meta",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Amazonas",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Vichada",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0123",
+    "subcategory": "GENERAL",
+    "text": "El Páramo de Sumapaz es importante porque:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Es el páramo más grande del mundo",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Es el volcán más activo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Es la montaña más alta",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Es el desierto más extenso",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0124",
+    "subcategory": "GENERAL",
+    "text": "El Tapón del Darién se encuentra entre:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Colombia y Venezuela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Colombia y Brasil",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Colombia y Panamá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Colombia y Ecuador",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0125",
+    "subcategory": "GENERAL",
+    "text": "La capital del departamento de Antioquia es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Medellín",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Pereira",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Manizales",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0126",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál de estas ciudades NO pertenece al Eje Cafetero?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Armenia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pereira",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Manizales",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Bucaramanga",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0127",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es el principal puerto sobre el Océano Pacífico?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Buenaventura",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0128",
+    "subcategory": "GENERAL",
+    "text": "La región Insular de Colombia incluye:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Solo San Andrés",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "San Andrés, Providencia y las islas del Pacífico",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Solo Gorgona",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Solo Malpelo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0129",
+    "subcategory": "GENERAL",
+    "text": "El Cañón del Chicamocha se encuentra en el departamento de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Boyacá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Santander",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cundinamarca",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Norte de Santander",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0130",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es la extensión territorial aproximada de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "500.000 km²",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "800.000 km²",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1.141.748 km²",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "1.500.000 km²",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0131",
+    "subcategory": "GENERAL",
+    "text": "Colombia tiene frontera marítima con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "5 países",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "7 países",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "9 países",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "11 países",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0132",
+    "subcategory": "GENERAL",
+    "text": "La capital del departamento del Meta es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Yopal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Villavicencio",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Florencia",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Arauca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0133",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es el departamento más pequeño de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Quindío",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Atlántico",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "San Andrés y Providencia",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Risaralda",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0134",
+    "subcategory": "GENERAL",
+    "text": "El Parque Nacional Natural más grande de Colombia es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Chiribiquete",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "La Macarena",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Cocuy",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Tayrona",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0135",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál de estos ríos NO nace en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Magdalena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cauca",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Orinoco",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Putumayo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0136",
+    "subcategory": "GENERAL",
+    "text": "La Península de La Guajira limita con:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Panamá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Venezuela",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Brasil",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nicaragua",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0137",
+    "subcategory": "GENERAL",
+    "text": "¿Cuántas cordilleras atraviesan el territorio colombiano?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Una",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Dos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Tres",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cuatro",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0138",
+    "subcategory": "GENERAL",
+    "text": "El Golfo de Urabá se encuentra entre los departamentos de:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Chocó y Córdoba",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Antioquia y Chocó",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Córdoba y Sucre",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Atlántico y Magdalena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0139",
+    "subcategory": "GENERAL",
+    "text": "La capital del departamento de Boyacá es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Sogamoso",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Duitama",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Tunja",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Chiquinquirá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0140",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es el punto más septentrional (norte) de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Cabo de la Vela",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Punta Gallinas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cabo Tiburón",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Punta Barú",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0141",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál de estas islas NO pertenece a Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Gorgona",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Malpelo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Margarita",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Rosario",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0142",
+    "subcategory": "GENERAL",
+    "text": "La depresión Momposina se encuentra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Costa Caribe",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los Llanos Orientales",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Valle del Magdalena",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Amazonía",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0143",
+    "subcategory": "GENERAL",
+    "text": "La capital del departamento del Cesar es:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Valledupar",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Aguachica",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Codazzi",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Bosconia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0144",
+    "subcategory": "GENERAL",
+    "text": "El Desierto de la Tatacoa está ubicado en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La Guajira",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Huila",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Cesar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Magdalena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0145",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál es el volcán más activo de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nevado del Ruiz",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Galeras",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Puracé",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Nevado del Huila",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0146",
+    "subcategory": "GENERAL",
+    "text": "¿Cuál de estas ciudades está más al sur?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Pasto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Leticia",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Mocoa",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Florencia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0147",
+    "subcategory": "GENERAL",
+    "text": "El Nudo de los Pastos o de Huaca se encuentra en:",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Nariño",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Cauca",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Putumayo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Huila",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0148",
+    "subcategory": "HIDROGRAFIA",
+    "text": "¿Cuáles son algunos de los ríos más importantes que caracterizan la hidrografía de la Región Pacífica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La región se caracteriza por tener una gran cantidad de ríos, entre los cuales los más importantes son el San Juan, el Atrato, el Baudó, el Mira y el Patía",
+    "choices": [
+      {
+        "text": "Magdalena, Cauca, Sinú, San Jorge y Nechí",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Amazonas, Orinoco, Meta, Guaviare y Vichada",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "San Juan, Atrato, Baudó, Mira y Patía",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Arauca, Casanare, Tomo, Tuparro y Bita",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0149",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué cadena montañosa corre paralela a la costa del Pacífico y alcanza picos superiores a los 4.000 metros sobre el nivel del mar?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Cordillera Occidental es la cadena montañosa que corre paralela a la costa del Pacífico y alcanza altitudes elevadas con picos que superan los 4.000 metros",
+    "choices": [
+      {
+        "text": "La Sierra Nevada de Santa Marta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Cordillera Central",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Cordillera Occidental",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Cordillera Oriental",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0150",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué nombre científico recibe la orquídea conocida comúnmente como \"flor de mayo\" presente en la región?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Dentro de las orquídeas representativas de la región, la *Cattleya trianae* es conocida como la flor de mayo",
+    "choices": [
+      {
+        "text": "Cattleya percivaliana",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cattleya warscewiczii",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cattleya trianae",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Cattleya mossiae",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0151",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Qué comunidades indígenas se mencionan explícitamente como habitantes de la Región Pacífica junto a la población afrocolombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En la región conviven comunidades indígenas como Emberá, Wounaan y Awá",
+    "choices": [
+      {
+        "text": "Wayúu, Kogui y Arhuaco",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Guambianos, Paeces y Totoroes",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Emberá, Wounaan y Awá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Tikuna, Huitoto y Bora",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0152",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "¿Cuál es la capital del departamento de Nariño según la división política de la Región Pacífica mostrada en el mapa?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Según la información de departamentos y capitales de la región, la capital del departamento de Nariño es Pasto",
+    "choices": [
+      {
+        "text": "Quibdó",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Popayán",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Pasto",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0153",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué especies de ranas venenosas se encuentran en la Región Pacífica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En la zona se encuentran ranas venenosas, específicamente la rana dorada y la rana de cristal",
+    "choices": [
+      {
+        "text": "La rana toro y la rana platanera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La rana dorada y la rana de cristal",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La rana tomate y la rana de ojos rojos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La rana arlequín y la rana marsupial",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0154",
+    "subcategory": "FRONTERAS_Y_LIMITES",
+    "text": "¿Qué departamentos abarca la franja costera de la Región Pacífica de norte a sur?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Región Pacífica es una franja costera que se extiende desde el departamento de Chocó, en el norte, hasta el departamento de Nariño en el sur",
+    "choices": [
+      {
+        "text": "Desde La Guajira hasta el Atlántico",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Desde Antioquia hasta el Valle del Cauca",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Desde el departamento de Chocó hasta el departamento de Nariño",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Desde el Meta hasta el Amazonas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0155",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué característica permite a las bromelias sobrevivir en los ambientes húmedos de la zona?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Las bromelias se caracterizan por su capacidad de almacenar agua en sus hojas, lo que les permite sobrevivir en ambientes húmedos",
+    "choices": [
+      {
+        "text": "Su sistema de raíces profundas que llega a las aguas subterráneas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Su capacidad de almacenar agua en sus hojas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sus espinas que evitan la pérdida de agua por transpiración",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Su simbiosis con hongos que retienen la humedad",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0156",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué función vital cumplen los estuarios y manglares presentes en la costa del Pacífico?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los estuarios y manglares son vitales para la conservación de la biodiversidad y cumplen un papel importante en la protección de la costa contra la erosión y los fenómenos climáticos extremos",
+    "choices": [
+      {
+        "text": "Proveen madera para la industria de la construcción exclusivamente",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Son zonas destinadas únicamente al turismo de playa",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Filtran el agua salada para convertirla en agua dulce potable",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Conservan la biodiversidad y protegen la costa contra la erosión y fenómenos climáticos",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0157",
+    "subcategory": "GENERAL",
+    "text": "¿Qué porcentaje aproximado del territorio de Colombia abarca la llanura de la región de la Orinoquia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La región se extiende por una vasta llanura que abarca aproximadamente el 28% del territorio de Colombia",
+    "choices": [
+      {
+        "text": "El 15%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El 28%",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El 45%",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El 10%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0158",
+    "subcategory": "HIDROGRAFIA",
+    "text": "¿Cuáles son los dos ríos más importantes que atraviesan la Orinoquia y conforman su red hidrográfica principal?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Orinoquia está atravesada por dos de los ríos más importantes de Colombia: el Meta y el Orinoco, los cuales conforman una extensa red hidrográfica",
+    "choices": [
+      {
+        "text": "El Magdalena y el Cauca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Amazonas y el Putumayo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El Meta y el Orinoco",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Atrato y el Sinú",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0159",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué serranía de la región es conocida por albergar el famoso Cañón del Río Cristal?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Serranía de la Macarena es especialmente conocida por su belleza natural y el famoso Cañón del Río Cristal",
+    "choices": [
+      {
+        "text": "La Serranía de la Lindosa",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Serranía del Chiribiquete",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Serranía de la Macarena",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Serranía del Perijá",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0160",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué animal que habita en los ríos y humedales de la región es considerado el roedor más grande del mundo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El Capibara es considerado la especie de roedor más grande del mundo y habita en los ríos y humedales de la región",
+    "choices": [
+      {
+        "text": "El chigüiro",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La guartinaja",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El capibara",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El ñeque",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0161",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Cuál es la especie de caimán endémica de la región que se encuentra en peligro de extinción?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El Caimán del Orinoco es una especie de caimán endémica de la región y se encuentra en peligro de extinción",
+    "choices": [
+      {
+        "text": "El caimán aguja",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El caimán del Orinoco",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El caimán negro",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La babilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0162",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "¿Cuál es la capital del departamento de Vichada?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Según la información sobre los departamentos y capitales de la región, la capital de Vichada es Puerto Carreño",
+    "choices": [
+      {
+        "text": "Yopal",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Arauca",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Villavicencio",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Puerto Carreño",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0163",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Cuáles son algunos de los grupos étnicos indígenas más representativos que habitan en la región de la Orinoquia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Entre los grupos étnicos más representativos de la región se encuentran los Sikuani, Piapoco, Puinave, Guahibo y Curripaco",
+    "choices": [
+      {
+        "text": "Wayuu, Nasa y Arhuacos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Embera, Zenu y Kogu",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Sikuani, Piapoco y Guahibo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Huitoto, Tikuna y Bora",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0164",
+    "subcategory": "GENERAL",
+    "text": "¿Qué porcentaje de la población total de Colombia representan los afrocolombianos según los datos demográficos básicos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los afrocolombianos representan aproximadamente el 6.7% de la población total de Colombia, lo que corresponde a más de 3 millones de personas",
+    "choices": [
+      {
+        "text": "4.3%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "10.5%",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "6.7%",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "28%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0165",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Cuántas personas se autorreconocieron como gitanos o ROM?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "De acuerdo con el último Censo, un total de 2.606 personas se autorreconocieron como gitanos o ROM",
+    "choices": [
+      {
+        "text": "6.650 personas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "25.300 personas",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "1.8 millones de personas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "2.606 personas",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0166",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿En qué actividades se basa principalmente la economía de la Orinoquia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La economía se basa principalmente en actividades agropecuarias, ganadería, extracción de petróleo, minería y turismo",
+    "choices": [
+      {
+        "text": "Industria textil y manufactura",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Pesca marítima y transporte portuario",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Actividades agropecuarias, ganadería, petróleo y minería",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Tecnología y servicios financieros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0167",
+    "subcategory": "RELIEVE",
+    "text": "¿Cuál de las tres cordilleras principales de Colombia se caracteriza por ser la más alta y albergar el Nevado del Huila?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Cordillera Central es la más alta de las tres cordilleras y alberga el volcán más alto de Colombia, el Nevado del Huila",
+    "choices": [
+      {
+        "text": "La Cordillera Occidental",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Cordillera Oriental",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Cordillera Central",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La Serranía del Baudó",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0168",
+    "subcategory": "RELIEVE",
+    "text": "¿En qué sistema montañoso se encuentra el Pico Cristóbal Colón, considerado la montaña más alta de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Sierra Nevada de Santa Marta se eleva abruptamente desde la costa y alcanza altitudes de más de 5.700 metros en el Pico Cristóbal Colón, lo que la convierte en la montaña más alta de Colombia",
+    "choices": [
+      {
+        "text": "Sierra Nevada de Santa Marta",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Cordillera Central",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cordillera Oriental",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Serranía de la Macarena",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0169",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué cultivos predominan en el paisaje agrícola del Valle del Cauca?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El paisaje del Valle del Cauca está dominado por extensas áreas agrícolas con cultivos de caña de azúcar, café, arroz, frutas y hortalizas",
+    "choices": [
+      {
+        "text": "Trigo y cebada",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Caña de azúcar, café y arroz",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Palma de aceite exclusivamente",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Papa y hortalizas de clima frío",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0170",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué nombre reciben las zonas de tierras bajas y pantanosas sujetas a inundaciones estacionales en la Llanura Amazónica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "A lo largo de la llanura amazónica se pueden encontrar áreas inundables conocidas como \"varzeas\" y \"igapós\", que son zonas de tierras bajas y pantanosas sujetas a inundaciones estacionales",
+    "choices": [
+      {
+        "text": "Sabanas y esteros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Varzeas e igapós",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Terrazas y mesetas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Deltas y estuarios",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0171",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Por qué actividad de observación de fauna es mundialmente reconocida la Isla Malpelo?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Isla Malpelo es uno de los lugares más importantes del mundo para la observación de tiburones y cuenta con una gran diversidad de especies marinas",
+    "choices": [
+      {
+        "text": "Buceo con tiburones, especialmente el tiburón martillo",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Avistamiento de ballenas jorobadas y sus crías",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Observación de delfines rosados de río",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Snorkel en la barrera de coral de los siete colores",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0172",
+    "subcategory": "CLIMA_Y_PISOS_TERMICOS",
+    "text": "¿Qué tipo de vegetación es característica del piso térmico de Tierras Heladas o Páramos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los páramos se caracterizan por plantas adaptadas al clima frío, como frailejones y espeletias",
+    "choices": [
+      {
+        "text": "Frailejones, musgos y líquenes",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Manglares, palmas de coco y cacao",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cafetales, guadua y caña de azúcar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cactus y vegetación desértica",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0173",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿En qué departamento de Colombia se encuentran los principales yacimientos de esmeraldas de alta calidad?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Colombia es famosa por la producción de esmeraldas de alta calidad y sus principales yacimientos se encuentran en la región de Boyacá",
+    "choices": [
+      {
+        "text": "Antioquia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Chocó",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Boyacá",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Córdoba",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0174",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿En qué regiones se ubican los depósitos importantes de níquel en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El país posee importantes depósitos de níquel en la región de la Sierra Nevada de Santa Marta y en el departamento de Córdoba",
+    "choices": [
+      {
+        "text": "Magdalena Medio y Llanos Orientales",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Sierra Nevada de Santa Marta y Córdoba",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Antioquia y Tolima",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Región Andina y Costa Caribe",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0175",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Cuáles son algunos de los grupos indígenas más prominentes mencionados que conservan su cultura e idioma en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Entre los grupos indígenas más destacados se encuentran los Wayuu, los Emberá, los Nasa, los Kogui y los Arhuacos",
+    "choices": [
+      {
+        "text": "Los Aztecas, los Mayas y los Incas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Los Wayuu, los Emberá y los Kogui",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Los Mapuches, los Aymaras y los Quechuas",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Los Zapotecas, los Mixtecas y los Toltecas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0176",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Qué comunidad específica se menciona explícitamente como parte incluida dentro del grupo poblacional de los afrocolombianos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Dentro del grupo poblacional afrocolombiano se incluye explícitamente a la comunidad de palenque",
+    "choices": [
+      {
+        "text": "La comunidad de palenque",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "La comunidad ROM",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La comunidad raizal",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La comunidad mestiza",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0177",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Cuál es el origen del grupo poblacional conocido como mestizos en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La población mestiza es el resultado de la mezcla entre indígenas y europeos que ocurrió durante la época colonial",
+    "choices": [
+      {
+        "text": "Mezcla entre africanos y europeos",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Mezcla entre indígenas y asiáticos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Mezcla entre indígenas y europeos",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Mezcla entre africanos e indígenas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0178",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "¿Cuál es la cifra estimada de habitantes que reside dentro de la ciudad de Bogotá, sin contar su área metropolitana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Bogotá tiene una población estimada de 7'181.469 habitantes, siendo la ciudad más poblada del país",
+    "choices": [
+      {
+        "text": "10 millones de habitantes",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "2'372.330 habitantes",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "3.5 millones de habitantes",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "7'181.469 habitantes",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0179",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "¿Qué evento cultural específico se destaca como parte de la oferta cultural de la ciudad de Medellín?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Medellín alberga diversos eventos culturales, destacándose entre ellos la Feria de las Flores",
+    "choices": [
+      {
+        "text": "El Carnaval de Barranquilla",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La Feria de Cali",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La Feria de las Flores",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El Festival de Blancos y Negros",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0180",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "¿Con qué título cultural es conocida la ciudad de Cali debido a su vibrante escena musical y de baile?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Cali es conocida culturalmente como la capital de la salsa",
+    "choices": [
+      {
+        "text": "La capital del vallenato",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La capital de la salsa",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La ciudad de la eterna primavera",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La capital de la montaña",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0181",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿Cuáles son los cultivos principales que sustentan la economía de las zonas rurales?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los cultivos principales en las zonas rurales incluyen café, plátano, caña de azúcar, arroz, cacao y frutas tropicales",
+    "choices": [
+      {
+        "text": "Trigo, cebada, centeno y uvas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Café, plátano, caña de azúcar y cacao",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Maíz, soja, girasol y sorgo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Papa, quinua, oca y olluco",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0182",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Qué tipos de comunidades componen generalmente la demografía de las áreas rurales en Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En las áreas rurales se encuentran generalmente comunidades campesinas, indígenas y afrocolombianas que han habitado estas zonas durante generaciones",
+    "choices": [
+      {
+        "text": "Principalmente comunidades de inmigrantes extranjeros",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Comunidades campesinas, indígenas y afrocolombianas",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Exclusivamente comunidades industriales y mineras",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Mayoritariamente población urbana desplazada temporalmente",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0183",
+    "subcategory": "HIDROGRAFIA",
+    "text": "¿Cuál es el río más largo de Colombia que atraviesa la región Caribe y es vital para el transporte de carga y pasajeros?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El río Magdalena es descrito como el más largo de Colombia, siendo vital para el transporte de carga y pasajeros, además de ser una fuente importante de agua dulce para la región",
+    "choices": [
+      {
+        "text": "El río Cauca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El río Sinú",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El río Magdalena",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El río Ranchería",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0184",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué altura alcanza el Pico Cristóbal Colón ubicado en la Sierra Nevada de Santa Marta?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "El Pico Cristóbal Colón es el pico más alto de Colombia y tiene una altitud de 5.775 metros sobre el nivel del mar",
+    "choices": [
+      {
+        "text": "4.500 metros sobre el nivel del mar",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "5.775 metros sobre el nivel del mar",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "3.200 metros sobre el nivel del mar",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "6.100 metros sobre el nivel del mar",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0185",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Cuáles son las tres especies de manglares que se encuentran presentes en los ecosistemas costeros de la región Caribe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Entre las especies de manglares presentes en el territorio se encuentran el mangle rojo, el mangle blanco y el mangle negro",
+    "choices": [
+      {
+        "text": "Mangle rojo, mangle blanco y mangle negro",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Mangle azul, mangle gris y mangle verde",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Mangle dulce, mangle salado y mangle espinoso",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Mangle de río, mangle de montaña y mangle costero",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0186",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué especies de reptiles venenosas se mencionan específicamente como parte de la fauna de la región Caribe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En la zona se encuentran serpientes venenosas, incluyendo específicamente la serpiente coral y la mapaná",
+    "choices": [
+      {
+        "text": "La cascabel y la anaconda",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La serpiente coral y la mapaná",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "La boa constrictor y la pitón",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La víbora de pestañas y la cazadora",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0187",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Qué porcentaje aproximado de la población total del país alberga la región Caribe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La región Caribe alberga cerca del 22,5% de la población total del país",
+    "choices": [
+      {
+        "text": "15,3%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "30,1%",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "22,5%",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "18,9%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0188",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué especies de palmas se destacan en la región por sus usos diversos como la obtención de frutos comestibles y fibras?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Las especies de palmas más destacadas en la región son la palma real, el chontaduro, la palma de vino y la palma de moriche",
+    "choices": [
+      {
+        "text": "Palma de cera, palma de coco y palma africana",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Palma real, chontaduro, palma de vino y palma de moriche",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Palma areca, palma botella y palma fénix",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Palma robellini, palma manila y palma yuca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0189",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "¿Cuál es la capital del departamento de Sucre?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "En la lista de departamentos y capitales, Sucre (identificado con el número 5) tiene como capital a Sincelejo",
+    "choices": [
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Santa Marta",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Sincelejo",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0190",
+    "subcategory": "RELIEVE",
+    "text": "¿En qué ubicación geográfica específica se encuentra la Serranía de Perijá?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Serranía de Perijá se encuentra en el extremo norte de la región Caribe, específicamente en la frontera con Venezuela",
+    "choices": [
+      {
+        "text": "En el centro de la llanura costera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "En el extremo sur, limitando con la región andina",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "En el mar Caribe Suroccidental",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "En el extremo norte, en la frontera con Venezuela",
+        "is_correct": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0191",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Cuáles son los tres grupos indígenas mencionados explícitamente como parte de la diversidad étnica de la región Caribe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La región es hogar de una mezcla de grupos étnicos que incluye indígenas como los wayúu, kogui y arhuaco",
+    "choices": [
+      {
+        "text": "Wayúu, Kogui y Arhuaco",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Emberá, Guambiano y Paez",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Ticuna, Huitoto y Nukak",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Zenú, Muisca y Pijao",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0192",
+    "subcategory": "FRONTERAS_Y_LIMITES",
+    "text": "¿En qué parte del país se encuentra ubicada la Región Andina y cuántas cordilleras la componen?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "En el sur del país y compuesta por una cordillera",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "En el centro-occidente del país y compuesta por tres cordilleras",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "En el norte del país y compuesta por dos cordilleras",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "En el oriente del país y compuesta por cuatro cordilleras",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0193",
+    "subcategory": "HIDROGRAFIA",
+    "text": "¿Cuáles son los ríos importantes mencionados que nacen en la Región Andina?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Amazonas, el Orinoco y el Meta",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Magdalena, el Cauca y el Caquetá",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Sinú, el Atrato y el San Jorge",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Guaviare, el Vichada y el Tomo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0194",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué fenómeno geológico dio origen a las cordilleras de la Región Andina?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "La erosión eólica y fluvial",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El vulcanismo submarino reciente",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Colisiones de las placas tectónicas",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "La sedimentación de cuencas oceánicas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0195",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Cuántas especies de aves se encuentran registradas en la Región Andina?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Más de 1.900 especies",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Aproximadamente 500 especies",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cerca de 3.000 especies",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Menos de 1.000 especies",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0196",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué porcentaje aproximado de las especies de plantas en la Región Andina son endémicas?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Alrededor del 40%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Alrededor del 60%",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Alrededor del 25%",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Alrededor del 80%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0197",
+    "subcategory": "RELIEVE",
+    "text": "¿Cuál es la función ecológica principal de los páramos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Servir como barreras contra los vientos alisios",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Actuar como zonas de cultivo intensivo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Ser fábricas de agua y esponjas naturales",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Proveer madera para la industria",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0198",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Cuántos habitantes tiene aproximadamente la Región Andina y qué porcentaje del total nacional representa?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "10 millones de habitantes, el 25% del total nacional",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "25 millones de habitantes, el 60% del total nacional",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "18 millones de habitantes, el 40,5% del total nacional",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "15 millones de habitantes, el 35% del total nacional",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0199",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "Según el mapa de departamentos y capitales, ¿cuál es la capital del departamento de Norte de Santander?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Bucaramanga",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tunja",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cúcuta",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Ibagué",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0200",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿Cuáles son algunos de los cultivos agrícolas más comunes mencionados para la Región Andina?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "Palma de aceite, arroz y algodón",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Café, maíz, papa, trigo y fríjol",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Sorgo, soya y caña de azúcar exclusivamente",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Banano, plátano y cacao",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0201",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué cañones se mencionan como ejemplos de formaciones geológicas en la región?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "",
+    "choices": [
+      {
+        "text": "El Cañón del Colorado y el Cañón del Atuel",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "El Cañón del Chicamocha, el Cañón del Río Combeima y el Cañón del Río Güejar",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El Cañón de la Cristalina y el Cañón del Pato",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El Cañón del Sumapaz y el Cañón del Duda",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0202",
+    "subcategory": "FRONTERAS_Y_LIMITES",
+    "text": "¿Con qué países limita Colombia al oriente, según su ubicación geográfica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Al oriente, Colombia limita con Venezuela (departamentos de La Guajira, Cesar, Norte de Santander, Arauca, Vichada y Guainía) y Brasil (departamentos de Amazonas, Vaupés y Guainía).",
+    "choices": [
+      {
+        "text": "Perú y Ecuador",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Panamá y Venezuela",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Venezuela y Brasil",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Brasil y Perú",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0203",
+    "subcategory": "REGIONES_NATURALES",
+    "text": "¿Qué porcentaje aproximado del territorio nacional de Colombia representa la Región Amazónica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La Región Amazónica de Colombia es una vasta área que representa aproximadamente el 42% del territorio nacional.",
+    "choices": [
+      {
+        "text": "25%",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "42%",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "60%",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "10%",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0204",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué nombre reciben las amplias llanuras formadas por los ríos de la región amazónica que se inundan durante la temporada de lluvias?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los ríos forman amplias llanuras inundables conocidas como \"varzeas\" e \"igapós\", las cuales se inundan en temporada de lluvias y sustentan una gran biodiversidad.",
+    "choices": [
+      {
+        "text": "Mesetas y colinas",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Varzeas e igapós",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Serranías y valles",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Cumbres andinas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0205",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Cuál es considerado el pez de agua dulce más grande del mundo que habita en los ríos de la región amazónica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Entre los peces más notables de la región se incluye el pirarucú, considerado uno de los peces de agua dulce más grandes del mundo.",
+    "choices": [
+      {
+        "text": "La piraña",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La anguila eléctrica",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "El pirarucú",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "El delfín rosado",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0206",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Cuáles son algunas de las plantas medicinales destacadas que se encuentran en la región amazónica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Algunas de las plantas medicinales más destacadas de la zona son la ayahuasca, el sangre de grado, la uña de gato, el copaiba y la múcura.",
+    "choices": [
+      {
+        "text": "La manzanilla y el eucalipto",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "La ayahuasca, sangre de grado y uña de gato",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "El romero y la hierbabuena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El girasol y la orquídea",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0207",
+    "subcategory": "DIVISION_POLITICA",
+    "text": "¿Cuál es la capital del departamento del Vaupés?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Según el mapa político y la lista de departamentos y capitales de la región amazónica, la capital del departamento del Vaupés es Mitú.",
+    "choices": [
+      {
+        "text": "Leticia",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Florencia",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Mitú",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Puerto Inírida",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0208",
+    "subcategory": "POBLACION_Y_ETNIAS",
+    "text": "¿Cuáles son algunos de los grupos étnicos indígenas representativos que habitan la región amazónica?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Algunos de los grupos étnicos más representativos de la región incluyen los Tikuna, Uitoto, Cubeo, Desano y Tucano.",
+    "choices": [
+      {
+        "text": "Wayuu y Emberá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Tikuna, Uitoto y Cubeo",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Guambiano y Paez",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Zenú y Muisca",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0209",
+    "subcategory": "HIDROGRAFIA",
+    "text": "¿Cuáles son los principales afluentes del río Amazonas mencionados como vitales para la región?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Los principales ríos son el Amazonas y sus afluentes, como el río Putumayo, el río Caquetá (también conocido como Japurá), el río Guaviare y el río Vaupés.",
+    "choices": [
+      {
+        "text": "Río Magdalena y Río Cauca",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Río Orinoco y Río Meta",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Río Putumayo, Río Caquetá y Río Guaviare",
+        "is_correct": true,
+        "order": 3
+      },
+      {
+        "text": "Río Sinú y Río Atrato",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0210",
+    "subcategory": "FLORA_Y_FAUNA",
+    "text": "¿Qué característica define a la vegetación de la selva ecuatorial húmeda en la Amazonía?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "Se caracteriza por tener una densa vegetación compuesta por árboles altos y frondosos que forman un dosel cerrado, creando un ambiente húmedo y sombreado.",
+    "choices": [
+      {
+        "text": "Vegetación baja y dispersa tipo sabana",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Árboles altos y frondosos que forman un dosel cerrado",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Bosques secos con árboles espinosos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Praderas extensas sin árboles",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0211",
+    "subcategory": "RELIEVE",
+    "text": "¿Qué serranía se destaca en la región amazónica como un ejemplo de cadena montañosa más baja comparada con los Andes?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "",
+    "explanation": "La región alberga serranías con colinas y elevaciones suaves, siendo la Serranía de La Macarena un ejemplo destacado de este tipo de formación.",
+    "choices": [
+      {
+        "text": "Serranía del Perijá",
+        "is_correct": false,
+        "order": 1
+      },
+      {
+        "text": "Serranía de La Macarena",
+        "is_correct": true,
+        "order": 2
+      },
+      {
+        "text": "Serranía del Baudó",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Sierra Nevada de Santa Marta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  }
+]
