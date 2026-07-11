@@ -5,8 +5,8 @@
     "text": "¿Cuántas regiones naturales tiene Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cinco continentales más una insular.",
+    "explanation": "Colombia tiene 6 regiones naturales: Caribe, Pacífica, Andina, Orinoquía, Amazonía e Insular.",
     "choices": [
       {
         "text": "4",
@@ -36,8 +36,8 @@
     "text": "¿Cuáles son las seis regiones naturales de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dos costeras, una montañosa, dos de llanura y selva, y una de islas.",
+    "explanation": "Las seis regiones naturales son Caribe, Pacífica, Andina, Orinoquía, Amazonía e Insular.",
     "choices": [
       {
         "text": "Caribe, Pacífica, Andina, Orinoquía, Amazonía, Insular",
@@ -67,8 +67,8 @@
     "text": "¿Cuál es la región más extensa de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la región selvática del sur.",
+    "explanation": "La Amazonía es la región más extensa de Colombia, cubriendo cerca del 40% del territorio nacional.",
     "choices": [
       {
         "text": "Andina",
@@ -98,8 +98,8 @@
     "text": "La región Andina se caracteriza por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los Andes se dividen en tres ramales al entrar a Colombia.",
+    "explanation": "La región Andina se caracteriza por las tres cordilleras (Occidental, Central y Oriental) en que se dividen los Andes en el Nudo de los Pastos.",
     "choices": [
       {
         "text": "Sus playas",
@@ -129,8 +129,8 @@
     "text": "¿Qué región es conocida como los Llanos Orientales?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre viene del río que la limita con Venezuela.",
+    "explanation": "La Orinoquía, cuenca del río Orinoco, es conocida como los Llanos Orientales.",
     "choices": [
       {
         "text": "Amazonía",
@@ -160,8 +160,8 @@
     "text": "La región Insular incluye:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Son tres islas del Caribe, más los cayos e islas del Pacífico.",
+    "explanation": "La región Insular incluye el archipiélago de San Andrés, Providencia y Santa Catalina en el Caribe, además de islas del Pacífico como Gorgona y Malpelo.",
     "choices": [
       {
         "text": "Solo San Andrés",
@@ -191,8 +191,8 @@
     "text": "¿Cuántos kilómetros de costa tiene Colombia en el Caribe?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la costa más larga del país: 1.6 mil kilómetros.",
+    "explanation": "Colombia tiene aproximadamente 1.600 km de costa sobre el mar Caribe.",
     "choices": [
       {
         "text": "1.200 km",
@@ -222,8 +222,8 @@
     "text": "¿Cuántos kilómetros de costa tiene Colombia en el Pacífico?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Trescientos kilómetros menos que la costa Caribe.",
+    "explanation": "La costa colombiana sobre el océano Pacífico mide aproximadamente 1.300 km.",
     "choices": [
       {
         "text": "900 km",
@@ -253,8 +253,8 @@
     "text": "¿Cuántos departamentos tiene Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el número de departamentos más conocido de América Latina: treinta y dos.",
+    "explanation": "Colombia está dividida en 32 departamentos, más el Distrito Capital de Bogotá.",
     "choices": [
       {
         "text": "30",
@@ -284,8 +284,8 @@
     "text": "¿Cuál es la capital del departamento de Antioquia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad de la eterna primavera.",
+    "explanation": "Medellín es la capital de Antioquia y la segunda ciudad más poblada del país.",
     "choices": [
       {
         "text": "Cartagena",
@@ -315,8 +315,8 @@
     "text": "La capital del departamento del Atlántico es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad del Carnaval y la Puerta de Oro de Colombia.",
+    "explanation": "Barranquilla es la capital del departamento del Atlántico.",
     "choices": [
       {
         "text": "Cartagena",
@@ -346,8 +346,8 @@
     "text": "¿Cuál es la capital de Bolívar?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad amurallada, Patrimonio de la Humanidad.",
+    "explanation": "Cartagena de Indias es la capital del departamento de Bolívar.",
     "choices": [
       {
         "text": "Barranquilla",
@@ -377,8 +377,8 @@
     "text": "La capital de Boyacá es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una de las ciudades coloniales más altas y frías del país.",
+    "explanation": "Tunja es la capital de Boyacá, fundada en 1539 sobre territorio muisca.",
     "choices": [
       {
         "text": "Duitama",
@@ -408,8 +408,8 @@
     "text": "¿Cuál es la capital del departamento de Caldas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad de las puertas abiertas, sede de la Feria más tradicional del café.",
+    "explanation": "Manizales es la capital de Caldas, en el Eje Cafetero.",
     "choices": [
       {
         "text": "Armenia",
@@ -439,8 +439,8 @@
     "text": "La capital del Caquetá es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre evoca una ciudad italiana famosa por el arte.",
+    "explanation": "Florencia es la capital del Caquetá, puerta de entrada a la Amazonía.",
     "choices": [
       {
         "text": "Leticia",
@@ -470,8 +470,8 @@
     "text": "¿Cuál es la capital del Cauca?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La 'Ciudad Blanca' famosa por sus procesiones de Semana Santa.",
+    "explanation": "Popayán es la capital del Cauca, conocida como la Ciudad Blanca.",
     "choices": [
       {
         "text": "Pasto",
@@ -501,8 +501,8 @@
     "text": "La capital del Cesar es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad del Festival de la Leyenda Vallenata.",
+    "explanation": "Valledupar, capital del Cesar, es la cuna del vallenato.",
     "choices": [
       {
         "text": "Valledupar",
@@ -532,8 +532,8 @@
     "text": "¿Cuál es la capital del departamento de Córdoba?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Según el mapa y la lista de departamentos y capitales de la región, la capital del departamento de Córdoba (identificado con el número 6) es Montería",
+    "hint": "La ciudad de la ganadería, a orillas del río Sinú.",
+    "explanation": "Montería es la capital de Córdoba, sobre el río Sinú.",
     "choices": [
       {
         "text": "Sincelejo",
@@ -563,8 +563,8 @@
     "text": "La capital de Cundinamarca es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La misma capital del país.",
+    "explanation": "Bogotá es a la vez capital de Colombia y del departamento de Cundinamarca.",
     "choices": [
       {
         "text": "Bogotá",
@@ -594,8 +594,8 @@
     "text": "¿Cuál es la capital del departamento del Chocó?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la capital chocoana, a orillas del río Atrato.",
+    "explanation": "Quibdó es la capital del Chocó, una de las ciudades más lluviosas del mundo.",
     "choices": [
       {
         "text": "Buenaventura",
@@ -625,8 +625,8 @@
     "text": "La capital del Huila es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad del Festival del Bambuco, a orillas del Magdalena.",
+    "explanation": "Neiva es la capital del Huila.",
     "choices": [
       {
         "text": "Pitalito",
@@ -656,8 +656,8 @@
     "text": "¿Cuál es la capital de La Guajira?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El puerto sobre el río Ranchería, en la tierra wayúu.",
+    "explanation": "Riohacha es la capital de La Guajira.",
     "choices": [
       {
         "text": "Santa Marta",
@@ -687,8 +687,8 @@
     "text": "La capital del Magdalena es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad más antigua de Colombia.",
+    "explanation": "Santa Marta, fundada en 1525, es la capital del Magdalena.",
     "choices": [
       {
         "text": "Barranquilla",
@@ -718,8 +718,8 @@
     "text": "¿Cuál es la capital del Meta?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La puerta de entrada a los Llanos.",
+    "explanation": "Villavicencio es la capital del Meta, conocida como la Puerta del Llano.",
     "choices": [
       {
         "text": "Yopal",
@@ -749,8 +749,8 @@
     "text": "La capital de Nariño es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad sorpresa, al pie del volcán Galeras.",
+    "explanation": "Pasto es la capital de Nariño, célebre por el Carnaval de Negros y Blancos.",
     "choices": [
       {
         "text": "Ipiales",
@@ -780,8 +780,8 @@
     "text": "¿Cuál es la capital de Norte de Santander?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad fronteriza con Venezuela donde se firmó la Constitución de 1821.",
+    "explanation": "Cúcuta es la capital de Norte de Santander.",
     "choices": [
       {
         "text": "Bucaramanga",
@@ -811,8 +811,8 @@
     "text": "La capital del Putumayo es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una pequeña capital andino-amazónica.",
+    "explanation": "Mocoa es la capital del Putumayo.",
     "choices": [
       {
         "text": "Puerto Asís",
@@ -842,8 +842,8 @@
     "text": "¿Cuál es la capital del Quindío?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Comparte nombre con un país del Cáucaso.",
+    "explanation": "Armenia es la capital del Quindío, corazón del Eje Cafetero.",
     "choices": [
       {
         "text": "Pereira",
@@ -873,8 +873,8 @@
     "text": "La capital de Risaralda es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La querendona, trasnochadora y morena.",
+    "explanation": "Pereira es la capital de Risaralda.",
     "choices": [
       {
         "text": "Armenia",
@@ -904,8 +904,8 @@
     "text": "¿Cuál es la capital de Santander?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad bonita, famosa por sus parques y hormigas culonas.",
+    "explanation": "Bucaramanga es la capital de Santander.",
     "choices": [
       {
         "text": "Cúcuta",
@@ -935,8 +935,8 @@
     "text": "La capital de Sucre es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Célebre por sus corralejas en enero.",
+    "explanation": "Sincelejo es la capital de Sucre.",
     "choices": [
       {
         "text": "Montería",
@@ -966,8 +966,8 @@
     "text": "¿Cuál es la capital del Tolima?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La capital musical de Colombia.",
+    "explanation": "Ibagué, capital del Tolima, es conocida como la Capital Musical de Colombia.",
     "choices": [
       {
         "text": "Neiva",
@@ -997,8 +997,8 @@
     "text": "La capital del Valle del Cauca es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La capital de la salsa.",
+    "explanation": "Cali es la capital del Valle del Cauca y la tercera ciudad del país.",
     "choices": [
       {
         "text": "Buenaventura",
@@ -1028,8 +1028,8 @@
     "text": "¿Cuál es la capital del Arauca?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad lleva el mismo nombre del departamento y del río fronterizo.",
+    "explanation": "Arauca es la capital del departamento de Arauca, sobre el río del mismo nombre.",
     "choices": [
       {
         "text": "Yopal",
@@ -1059,8 +1059,8 @@
     "text": "La capital del Casanare es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre significa 'corazón' en lengua achagua.",
+    "explanation": "Yopal es la capital del Casanare.",
     "choices": [
       {
         "text": "Villavicencio",
@@ -1090,8 +1090,8 @@
     "text": "¿Cuál es la capital del Vichada?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un 'puerto' sobre el Orinoco con nombre de prócer.",
+    "explanation": "Puerto Carreño es la capital del Vichada, en la confluencia del Meta con el Orinoco.",
     "choices": [
       {
         "text": "Puerto Inírida",
@@ -1121,8 +1121,8 @@
     "text": "La capital del Guainía es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Otro 'puerto', este sobre el río Inírida.",
+    "explanation": "Puerto Inírida es la capital del Guainía.",
     "choices": [
       {
         "text": "Mitú",
@@ -1152,8 +1152,8 @@
     "text": "¿Cuál es la capital del Guaviare?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lleva el nombre del santo José y del propio departamento.",
+    "explanation": "San José del Guaviare es la capital del Guaviare.",
     "choices": [
       {
         "text": "Mitú",
@@ -1183,8 +1183,8 @@
     "text": "La capital del Vaupés es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una palabra corta de dos sílabas, a orillas del río Vaupés.",
+    "explanation": "Mitú es la capital del Vaupés.",
     "choices": [
       {
         "text": "Leticia",
@@ -1214,8 +1214,8 @@
     "text": "¿Cuál es la capital del Amazonas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El puerto colombiano sobre el río Amazonas.",
+    "explanation": "Leticia, sobre el río Amazonas y fronteriza con Brasil y Perú, es la capital del Amazonas.",
     "choices": [
       {
         "text": "Florencia",
@@ -1245,8 +1245,8 @@
     "text": "San Andrés y Providencia tiene su capital en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La isla mayor del archipiélago da nombre a la capital.",
+    "explanation": "La capital del archipiélago de San Andrés, Providencia y Santa Catalina es San Andrés.",
     "choices": [
       {
         "text": "Providencia",
@@ -1276,8 +1276,8 @@
     "text": "¿Con cuántos países limita Colombia por tierra?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dos al oriente y sur, dos más al sur, y uno al noroccidente.",
+    "explanation": "Colombia limita por tierra con 5 países: Venezuela, Brasil, Perú, Ecuador y Panamá.",
     "choices": [
       {
         "text": "3",
@@ -1307,8 +1307,8 @@
     "text": "Colombia limita al este con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Sus vecinos orientales comparten el Orinoco y la Amazonía.",
+    "explanation": "Al oriente Colombia limita con Venezuela y Brasil.",
     "choices": [
       {
         "text": "Ecuador y Perú",
@@ -1338,8 +1338,8 @@
     "text": "Colombia limita al sur con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Sus dos vecinos del sur fueron parte del imperio inca.",
+    "explanation": "Al sur Colombia limita con Ecuador y Perú.",
     "choices": [
       {
         "text": "Venezuela y Brasil",
@@ -1369,8 +1369,8 @@
     "text": "¿Con qué país limita Colombia al noroeste?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El vecino del canal interoceánico.",
+    "explanation": "Al noroccidente Colombia limita con Panamá, a través del Tapón del Darién.",
     "choices": [
       {
         "text": "Venezuela",
@@ -1400,8 +1400,8 @@
     "text": "El piso térmico cálido en Colombia va desde:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Desde el nivel del mar hasta mil metros.",
+    "explanation": "El piso térmico cálido va de 0 a 1.000 metros de altitud, con temperaturas superiores a 24 °C.",
     "choices": [
       {
         "text": "0 a 500 metros",
@@ -1431,8 +1431,8 @@
     "text": "¿Qué cultivos son típicos del piso térmico cálido?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cultivos tropicales de tierra baja.",
+    "explanation": "En el piso cálido se cultivan banano, cacao, caña de azúcar, arroz y palma, entre otros.",
     "choices": [
       {
         "text": "Papa y trigo",
@@ -1462,8 +1462,8 @@
     "text": "El piso térmico templado está entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La franja del café.",
+    "explanation": "El piso templado está entre 1.000 y 2.000 metros, con temperaturas entre 17 y 24 °C; es la zona cafetera por excelencia.",
     "choices": [
       {
         "text": "500 y 1.000 metros",
@@ -1493,8 +1493,8 @@
     "text": "¿En qué piso térmico se cultiva principalmente el café?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El grano insignia crece entre los 1.000 y 2.000 metros.",
+    "explanation": "El café se cultiva principalmente en el piso templado (1.000-2.000 m), que ofrece la temperatura ideal para el grano.",
     "choices": [
       {
         "text": "Cálido",
@@ -1524,8 +1524,8 @@
     "text": "El piso térmico frío va desde:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Entre dos mil y tres mil metros.",
+    "explanation": "El piso térmico frío va de 2.000 a 3.000 metros, con temperaturas entre 12 y 17 °C; allí están Bogotá y Tunja.",
     "choices": [
       {
         "text": "1.000 a 2.000 metros",
@@ -1555,8 +1555,8 @@
     "text": "¿Qué se cultiva en el piso térmico frío?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los cultivos de la sabana de Bogotá y Boyacá.",
+    "explanation": "En el piso frío se cultivan papa, cebolla, trigo, cebada y hortalizas de clima frío.",
     "choices": [
       {
         "text": "Café y plátano",
@@ -1586,8 +1586,8 @@
     "text": "El páramo comienza aproximadamente a:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Por encima del piso frío, donde crecen los frailejones.",
+    "explanation": "El páramo comienza aproximadamente a los 3.000 metros de altitud.",
     "choices": [
       {
         "text": "2.000 metros",
@@ -1617,8 +1617,8 @@
     "text": "¿Qué planta es característica del páramo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una planta de hojas aterciopeladas que 'siembra' el agua.",
+    "explanation": "El frailejón es la planta característica del páramo; sus hojas captan la humedad de la niebla y alimentan los nacimientos de agua.",
     "choices": [
       {
         "text": "Café",
@@ -1648,8 +1648,8 @@
     "text": "¿Cuántos kilómetros de costa tiene la región Caribe?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "1.6 mil kilómetros de litoral.",
+    "explanation": "La región Caribe tiene unos 1.600 km de costa sobre el mar Caribe.",
     "choices": [
       {
         "text": "1.200 km",
@@ -1679,8 +1679,8 @@
     "text": "La Ciénaga Grande de Santa Marta es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el complejo lagunar costero más grande de Colombia.",
+    "explanation": "La Ciénaga Grande de Santa Marta es un humedal costero, el complejo lagunar más grande del país y sitio Ramsar.",
     "choices": [
       {
         "text": "Un lago",
@@ -1710,8 +1710,8 @@
     "text": "¿Qué península se encuentra en La Guajira?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La punta norte del país lleva el nombre del departamento.",
+    "explanation": "La península de La Guajira es la gran península del norte de Colombia, territorio del pueblo wayúu.",
     "choices": [
       {
         "text": "Península de Barú",
@@ -1741,8 +1741,8 @@
     "text": "El Golfo de Urabá está entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Entre el departamento paisa y el chocoano.",
+    "explanation": "El Golfo de Urabá se encuentra entre los departamentos de Antioquia y Chocó.",
     "choices": [
       {
         "text": "La Guajira y Magdalena",
@@ -1772,8 +1772,8 @@
     "text": "La Sierra Nevada de Santa Marta es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "No pertenece a los Andes y se levanta directamente desde el mar.",
+    "explanation": "La Sierra Nevada de Santa Marta es la formación montañosa costera más alta del mundo: pasa del nivel del mar a 5.775 metros en solo 42 km.",
     "choices": [
       {
         "text": "Parte de los Andes",
@@ -1803,8 +1803,8 @@
     "text": "¿Qué altura alcanza el Pico Cristóbal Colón?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Casi 5.800 metros.",
+    "explanation": "El Pico Cristóbal Colón alcanza los 5.775 metros, la mayor altura de Colombia.",
     "choices": [
       {
         "text": "4.500 metros",
@@ -1834,8 +1834,8 @@
     "text": "Los Montes de María están ubicados entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Entre los departamentos de Cartagena y Sincelejo.",
+    "explanation": "Los Montes de María se ubican entre los departamentos de Bolívar y Sucre.",
     "choices": [
       {
         "text": "La Guajira y Cesar",
@@ -1865,8 +1865,8 @@
     "text": "¿Cuántos kilómetros de costa tiene el Pacífico colombiano?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "1.3 mil kilómetros.",
+    "explanation": "El litoral Pacífico colombiano mide aproximadamente 1.300 km.",
     "choices": [
       {
         "text": "900 km",
@@ -1896,8 +1896,8 @@
     "text": "¿Cuál es el principal puerto del Pacífico?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Por allí pasa la mayor parte del comercio exterior colombiano.",
+    "explanation": "Buenaventura, en el Valle del Cauca, es el principal puerto colombiano sobre el Pacífico.",
     "choices": [
       {
         "text": "Tumaco",
@@ -1927,8 +1927,8 @@
     "text": "El río Atrato desemboca en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Aunque corre por el Chocó, no desemboca en el Pacífico.",
+    "explanation": "El río Atrato desemboca en el Golfo de Urabá, en el mar Caribe.",
     "choices": [
       {
         "text": "El Pacífico",
@@ -1958,8 +1958,8 @@
     "text": "¿Qué característica tiene la selva del Chocó biogeográfico?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Allí llueve más que en casi cualquier otro lugar del planeta.",
+    "explanation": "El Chocó biogeográfico alberga una de las selvas más lluviosas del mundo, con precipitaciones que superan los 10.000 mm anuales.",
     "choices": [
       {
         "text": "Es seca",
@@ -1989,8 +1989,8 @@
     "text": "Los manglares del Pacífico son importantes porque:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Son la 'guardería' del mar.",
+    "explanation": "Los manglares son criaderos naturales de peces, moluscos y crustáceos, además de proteger la costa de la erosión.",
     "choices": [
       {
         "text": "Producen madera",
@@ -2020,8 +2020,8 @@
     "text": "¿Cuántas cordilleras atraviesan la región Andina?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Occidental, Central y Oriental.",
+    "explanation": "Tres cordilleras atraviesan la región Andina: Occidental, Central y Oriental.",
     "choices": [
       {
         "text": "Una",
@@ -2051,8 +2051,8 @@
     "text": "El Valle del Magdalena está entre las cordilleras:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El gran río del país corre entre las dos cordilleras del oriente.",
+    "explanation": "El Valle del Magdalena se extiende entre las cordilleras Central y Oriental.",
     "choices": [
       {
         "text": "Oriental y Occidental",
@@ -2082,8 +2082,8 @@
     "text": "El Valle del Cauca está entre las cordilleras:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El río Cauca corre entre las dos cordilleras occidentales.",
+    "explanation": "El Valle del Cauca (geográfico) está entre las cordilleras Central y Occidental.",
     "choices": [
       {
         "text": "Oriental y Central",
@@ -2113,8 +2113,8 @@
     "text": "¿Dónde está ubicado el Valle de Aburrá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el valle donde se asienta la capital antioqueña.",
+    "explanation": "El Valle de Aburrá, en Antioquia, alberga a Medellín y su área metropolitana.",
     "choices": [
       {
         "text": "En Bogotá",
@@ -2144,8 +2144,8 @@
     "text": "El Macizo Colombiano es importante porque:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se le llama la 'estrella fluvial' de Colombia.",
+    "explanation": "En el Macizo Colombiano (Huila-Cauca) nacen los ríos Magdalena, Cauca, Caquetá y Patía; por eso se le llama la estrella fluvial colombiana.",
     "choices": [
       {
         "text": "Es el pico más alto",
@@ -2175,8 +2175,8 @@
     "text": "¿En qué departamento está el Cañón del Chicamocha?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El departamento de Bucaramanga.",
+    "explanation": "El Cañón del Chicamocha, uno de los más grandes del mundo, está en Santander.",
     "choices": [
       {
         "text": "Boyacá",
@@ -2206,8 +2206,8 @@
     "text": "El Nevado del Cocuy está en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El departamento de Tunja.",
+    "explanation": "La Sierra Nevada del Cocuy, con los mayores glaciares del país, está en Boyacá.",
     "choices": [
       {
         "text": "Boyacá",
@@ -2237,8 +2237,8 @@
     "text": "¿Cuál es el páramo más grande del mundo ubicado en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Está al sur de Bogotá.",
+    "explanation": "El Páramo de Sumapaz, al sur de Bogotá, es el páramo más grande del mundo.",
     "choices": [
       {
         "text": "Páramo de Santurbán",
@@ -2268,8 +2268,8 @@
     "text": "La Orinoquía representa aproximadamente qué porcentaje del territorio nacional:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Algo más de la cuarta parte del país.",
+    "explanation": "La Orinoquía representa aproximadamente el 28% del territorio nacional.",
     "choices": [
       {
         "text": "15%",
@@ -2299,8 +2299,8 @@
     "text": "¿Cómo se conoce también a la Orinoquía?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Grandes sabanas planas al oriente del país.",
+    "explanation": "La Orinoquía es conocida como los Llanos Orientales.",
     "choices": [
       {
         "text": "La selva",
@@ -2330,8 +2330,8 @@
     "text": "El río Meta es tributario del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Desemboca en el gran río que da nombre a la región.",
+    "explanation": "El río Meta es el principal tributario colombiano del Orinoco.",
     "choices": [
       {
         "text": "Magdalena",
@@ -2361,8 +2361,8 @@
     "text": "La Serranía de la Macarena es famosa por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Alberga el 'río de los cinco colores'.",
+    "explanation": "La Serranía de la Macarena es famosa por Caño Cristales, el río de los cinco colores, que debe sus tonos a la planta acuática Macarenia clavigera.",
     "choices": [
       {
         "text": "Sus minas",
@@ -2392,8 +2392,8 @@
     "text": "¿Qué actividad económica predomina en los Llanos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La actividad del llanero a caballo.",
+    "explanation": "La ganadería extensiva es la actividad económica tradicional de los Llanos, junto con el petróleo y la agricultura.",
     "choices": [
       {
         "text": "Minería",
@@ -2423,8 +2423,8 @@
     "text": "Los \"morichales\" de los Llanos son:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Bosques de una palma que crece con los 'pies en el agua'.",
+    "explanation": "Los morichales son ecosistemas de palma de moriche que crecen en zonas húmedas de los Llanos y son refugio de fauna.",
     "choices": [
       {
         "text": "Montañas",
@@ -2454,8 +2454,8 @@
     "text": "¿Qué extensión aproximada tiene la Amazonía colombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Unos 400 mil kilómetros cuadrados.",
+    "explanation": "La Amazonía colombiana tiene una extensión aproximada de 403.000 km², más de un tercio del país.",
     "choices": [
       {
         "text": "200.000 km²",
@@ -2485,8 +2485,8 @@
     "text": "¿Cuántas especies de plantas se estiman en la Amazonía colombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Treinta mil especies de plantas.",
+    "explanation": "Se estima que la Amazonía colombiana alberga unas 30.000 especies de plantas.",
     "choices": [
       {
         "text": "10.000",
@@ -2516,8 +2516,8 @@
     "text": "¿Qué porcentaje de especies vegetales amazónicas son endémicas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Más de la mitad no existe en ningún otro lugar.",
+    "explanation": "Cerca del 60% de las especies vegetales amazónicas son endémicas, es decir, exclusivas de la región.",
     "choices": [
       {
         "text": "30%",
@@ -2547,8 +2547,8 @@
     "text": "La Victoria amazónica es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Sus hojas flotantes pueden soportar el peso de un niño.",
+    "explanation": "La Victoria amazónica (Victoria regia) es un nenúfar gigante cuyas hojas alcanzan hasta 2 metros de diámetro.",
     "choices": [
       {
         "text": "Un árbol",
@@ -2578,8 +2578,8 @@
     "text": "El río Putumayo sirve de frontera con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Marca el límite sur con dos países andinos.",
+    "explanation": "El río Putumayo sirve de frontera natural entre Colombia y sus vecinos Ecuador y Perú.",
     "choices": [
       {
         "text": "Brasil",
@@ -2609,8 +2609,8 @@
     "text": "¿A qué distancia está San Andrés de la costa colombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "A setecientos kilómetros de la costa.",
+    "explanation": "San Andrés está a unos 700 km de la costa colombiana, más cerca de Nicaragua que de Colombia continental.",
     "choices": [
       {
         "text": "200 km",
@@ -2640,8 +2640,8 @@
     "text": "¿Qué idiomas se hablan en San Andrés además del español?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La herencia británica y africana del archipiélago.",
+    "explanation": "En San Andrés se habla, además del español, inglés y creole sanandresano, lengua de la población raizal.",
     "choices": [
       {
         "text": "Francés",
@@ -2671,8 +2671,8 @@
     "text": "La isla de Providencia es conocida por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un arrecife de 'siete colores'.",
+    "explanation": "Providencia es famosa por su barrera de coral, la tercera más grande del mundo, en el mar de los siete colores.",
     "choices": [
       {
         "text": "Su industria",
@@ -2702,8 +2702,8 @@
     "text": "Malpelo es importante porque:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un peñón deshabitado, paraíso de tiburones.",
+    "explanation": "Malpelo es un Santuario de Fauna y Flora marino, Patrimonio de la Humanidad, famoso por sus tiburones martillo.",
     "choices": [
       {
         "text": "Tiene población",
@@ -2733,8 +2733,8 @@
     "text": "Gorgona fue utilizada como:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Antes de ser parque natural fue una cárcel temida.",
+    "explanation": "La isla Gorgona funcionó como prisión de alta seguridad hasta 1984; hoy es Parque Nacional Natural.",
     "choices": [
       {
         "text": "Base militar",
@@ -2764,8 +2764,8 @@
     "text": "¿Cuántos kilómetros tiene el río Magdalena?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Poco más de 1.500 km.",
+    "explanation": "El río Magdalena tiene unos 1.540 km de longitud, siendo el principal río de Colombia.",
     "choices": [
       {
         "text": "1.200 km",
@@ -2795,8 +2795,8 @@
     "text": "El río Cauca es afluente del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se une al gran río en la depresión Momposina.",
+    "explanation": "El río Cauca es el principal afluente del Magdalena.",
     "choices": [
       {
         "text": "Orinoco",
@@ -2826,8 +2826,8 @@
     "text": "¿Dónde nace el río Magdalena?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la estrella fluvial del suroccidente, en una laguna de páramo.",
+    "explanation": "El Magdalena nace en la Laguna del Magdalena, en el páramo de las Papas del Macizo Colombiano.",
     "choices": [
       {
         "text": "Páramo de Sumapaz",
@@ -2857,8 +2857,8 @@
     "text": "El río Caquetá desemboca en el:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cruza la selva hacia el gran río de Suramérica.",
+    "explanation": "El río Caquetá desemboca en el Amazonas, en territorio brasileño, donde recibe el nombre de Japurá.",
     "choices": [
       {
         "text": "Orinoco",
@@ -2888,8 +2888,8 @@
     "text": "La Laguna de la Cocha está en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cerca de Pasto, a más de 2.700 metros de altitud.",
+    "explanation": "La Laguna de la Cocha, la segunda más grande de Colombia, está en Nariño.",
     "choices": [
       {
         "text": "Boyacá",
@@ -2919,8 +2919,8 @@
     "text": "¿Cuántas especies de aves tiene Colombia aproximadamente?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cerca de mil novecientas: el primer lugar del mundo.",
+    "explanation": "Colombia tiene unas 1.900 especies de aves, la mayor diversidad de aves del planeta.",
     "choices": [
       {
         "text": "1.200",
@@ -2950,8 +2950,8 @@
     "text": "Colombia ocupa el primer lugar mundial en diversidad de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una flor y un animal con alas.",
+    "explanation": "Colombia es primer país del mundo en diversidad de orquídeas y de aves.",
     "choices": [
       {
         "text": "Mamíferos",
@@ -2981,8 +2981,8 @@
     "text": "¿Cuántas especies de orquídeas se estiman en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Tres mil quinientas, incluida la flor nacional.",
+    "explanation": "Colombia alberga unas 3.500 especies de orquídeas, entre ellas la flor nacional, la Cattleya trianae.",
     "choices": [
       {
         "text": "1.500",
@@ -3012,8 +3012,8 @@
     "text": "El oso de anteojos habita principalmente en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El único oso de Suramérica vive en las montañas.",
+    "explanation": "El oso de anteojos, único oso suramericano, habita los bosques andinos y los páramos.",
     "choices": [
       {
         "text": "La selva amazónica",
@@ -3043,8 +3043,8 @@
     "text": "El delfín rosado se encuentra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un cetáceo de agua dulce y color inusual.",
+    "explanation": "El delfín rosado habita los ríos de la Amazonía y la Orinoquía.",
     "choices": [
       {
         "text": "El mar Caribe",
@@ -3074,8 +3074,8 @@
     "text": "¿Cuántos parques nacionales naturales tiene Colombia aproximadamente?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Unos sesenta, contando santuarios y demás áreas protegidas.",
+    "explanation": "Colombia cuenta con cerca de 60 áreas protegidas del Sistema de Parques Nacionales Naturales.",
     "choices": [
       {
         "text": "30",
@@ -3105,8 +3105,8 @@
     "text": "El Parque Nacional Natural más grande es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Está en la Amazonía y es Patrimonio de la Humanidad por sus pinturas rupestres.",
+    "explanation": "Chiribiquete, con más de 4,3 millones de hectáreas, es el parque nacional más grande de Colombia y alberga miles de pinturas rupestres.",
     "choices": [
       {
         "text": "Tayrona",
@@ -3136,8 +3136,8 @@
     "text": "El Parque Nacional El Tuparro está en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En el departamento de Puerto Carreño.",
+    "explanation": "El Parque Nacional El Tuparro está en el Vichada, junto al Orinoco.",
     "choices": [
       {
         "text": "Amazonas",
@@ -3167,8 +3167,8 @@
     "text": "El Parque Nacional Los Katíos es compartido con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Con el vecino del Darién.",
+    "explanation": "Los Katíos, en el Darién, es compartido ecológicamente con Panamá y es Patrimonio de la Humanidad.",
     "choices": [
       {
         "text": "Venezuela",
@@ -3198,8 +3198,8 @@
     "text": "El Parque Nacional Amacayacu protege principalmente:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Está a orillas del Amazonas, cerca de Leticia.",
+    "explanation": "Amacayacu protege selva amazónica en el trapecio amazónico, cerca de Leticia.",
     "choices": [
       {
         "text": "Páramos",
@@ -3229,8 +3229,8 @@
     "text": "Colombia tiene frontera terrestre con cuántos países:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los mismos cinco vecinos terrestres.",
+    "explanation": "Colombia tiene frontera terrestre con 5 países: Venezuela, Brasil, Perú, Ecuador y Panamá.",
     "choices": [
       {
         "text": "3",
@@ -3260,8 +3260,8 @@
     "text": "La frontera más larga de Colombia es con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Con el vecino oriental: más de 2.200 km.",
+    "explanation": "La frontera con Venezuela es la más larga de Colombia, con unos 2.219 km.",
     "choices": [
       {
         "text": "Brasil",
@@ -3291,8 +3291,8 @@
     "text": "El río Arauca sirve de frontera con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El río da nombre a un departamento llanero fronterizo.",
+    "explanation": "El río Arauca marca parte de la frontera entre Colombia y Venezuela.",
     "choices": [
       {
         "text": "Brasil",
@@ -3322,8 +3322,8 @@
     "text": "La frontera con Panamá está marcada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una selva impenetrable interrumpe la carretera Panamericana.",
+    "explanation": "El Tapón del Darién, selva densa y pantanosa, marca la frontera con Panamá; es el único tramo sin construir de la Panamericana.",
     "choices": [
       {
         "text": "El río Atrato",
@@ -3353,8 +3353,8 @@
     "text": "Colombia tiene fronteras marítimas con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Más países por mar que por tierra: nueve.",
+    "explanation": "Colombia tiene fronteras marítimas con 9 países: Panamá, Costa Rica, Nicaragua, Honduras, Jamaica, Haití, República Dominicana, Venezuela y Ecuador.",
     "choices": [
       {
         "text": "5 países",
@@ -3384,8 +3384,8 @@
     "text": "La principal actividad económica de la región Caribe es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Playas, reses y agroindustria.",
+    "explanation": "La economía del Caribe combina turismo, ganadería y agroindustria, además de los puertos.",
     "choices": [
       {
         "text": "Minería",
@@ -3415,8 +3415,8 @@
     "text": "El Cerrejón en La Guajira es una mina de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una de las minas a cielo abierto de ese mineral más grandes del mundo.",
+    "explanation": "El Cerrejón, en La Guajira, es una de las minas de carbón a cielo abierto más grandes del mundo.",
     "choices": [
       {
         "text": "Oro",
@@ -3446,8 +3446,8 @@
     "text": "Las esmeraldas colombianas provienen principalmente de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Muzo y Chivor son sus minas más famosas.",
+    "explanation": "Las esmeraldas colombianas, las más apreciadas del mundo, provienen principalmente de Boyacá (Muzo, Chivor) y Cundinamarca.",
     "choices": [
       {
         "text": "Antioquia",
@@ -3477,8 +3477,8 @@
     "text": "El petróleo se extrae principalmente en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En los departamentos llaneros.",
+    "explanation": "El petróleo colombiano se extrae principalmente en los Llanos: Meta, Casanare y Arauca.",
     "choices": [
       {
         "text": "Solo Santander",
@@ -3508,8 +3508,8 @@
     "text": "La zona bananera del Urabá está en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Urabá es una subregión del departamento paisa.",
+    "explanation": "La zona bananera de Urabá está en Antioquia, principal región exportadora de banano.",
     "choices": [
       {
         "text": "Magdalena",
@@ -3539,8 +3539,8 @@
     "text": "¿Cuál es la capital de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad del altiplano cundiboyacense a 2.600 metros.",
+    "explanation": "Bogotá D.C. es la capital de Colombia y su ciudad más poblada.",
     "choices": [
       {
         "text": "Medellín",
@@ -3570,8 +3570,8 @@
     "text": "Colombia limita al norte con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Al norte no hay tierra sino mar.",
+    "explanation": "Colombia limita al norte con el mar Caribe.",
     "choices": [
       {
         "text": "Venezuela y Brasil",
@@ -3601,8 +3601,8 @@
     "text": "El pico más alto de Colombia es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Comparte cima gemela con el Pico Cristóbal Colón en la Sierra Nevada.",
+    "explanation": "El Pico Simón Bolívar, junto con su gemelo el Cristóbal Colón (5.775 m) en la Sierra Nevada de Santa Marta, es la mayor altura de Colombia.",
     "choices": [
       {
         "text": "Pico Simón Bolívar",
@@ -3632,8 +3632,8 @@
     "text": "La región de la Orinoquía también es conocida como:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Las grandes sabanas del oriente.",
+    "explanation": "La Orinoquía es también llamada Llanos Orientales.",
     "choices": [
       {
         "text": "Los Llanos Orientales",
@@ -3663,8 +3663,8 @@
     "text": "¿Cuál es el único departamento de Colombia que tiene costas en ambos océanos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El departamento de la selva más lluviosa.",
+    "explanation": "El Chocó es el único departamento colombiano con costas sobre el Caribe y el Pacífico.",
     "choices": [
       {
         "text": "Antioquia",
@@ -3694,8 +3694,8 @@
     "text": "¿Cuál es la ciudad más poblada de Colombia después de Bogotá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La capital de Antioquia.",
+    "explanation": "Medellín es la segunda ciudad más poblada de Colombia, después de Bogotá.",
     "choices": [
       {
         "text": "Cali",
@@ -3725,8 +3725,8 @@
     "text": "El Archipiélago de San Andrés y Providencia se encuentra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "A 700 km de la costa norte.",
+    "explanation": "El archipiélago de San Andrés y Providencia está en el mar Caribe.",
     "choices": [
       {
         "text": "El Océano Pacífico",
@@ -3756,8 +3756,8 @@
     "text": "¿Cuál es el departamento más grande de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El departamento que lleva el nombre de la gran selva.",
+    "explanation": "El Amazonas es el departamento más extenso de Colombia, con unos 109.000 km².",
     "choices": [
       {
         "text": "Antioquia",
@@ -3787,8 +3787,8 @@
     "text": "El Páramo de Sumapaz es importante porque:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ningún otro páramo del planeta lo supera en tamaño.",
+    "explanation": "El Páramo de Sumapaz es el más grande del mundo y surte de agua a Bogotá y su región.",
     "choices": [
       {
         "text": "Es el páramo más grande del mundo",
@@ -3818,8 +3818,8 @@
     "text": "El Tapón del Darién se encuentra entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La selva que interrumpe la Panamericana.",
+    "explanation": "El Tapón del Darién está en la frontera entre Colombia y Panamá.",
     "choices": [
       {
         "text": "Colombia y Venezuela",
@@ -3849,8 +3849,8 @@
     "text": "La capital del departamento de Antioquia es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad de la eterna primavera.",
+    "explanation": "Medellín es la capital de Antioquia.",
     "choices": [
       {
         "text": "Cali",
@@ -3880,8 +3880,8 @@
     "text": "¿Cuál de estas ciudades NO pertenece al Eje Cafetero?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Eje Cafetero son tres capitales vecinas; la ciudad santandereana no es una de ellas.",
+    "explanation": "El Eje Cafetero lo forman Manizales, Pereira y Armenia; Bucaramanga es la capital de Santander y no pertenece a él.",
     "choices": [
       {
         "text": "Armenia",
@@ -3911,8 +3911,8 @@
     "text": "¿Cuál es el principal puerto sobre el Océano Pacífico?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El puerto vallecaucano.",
+    "explanation": "Buenaventura es el principal puerto colombiano sobre el Pacífico.",
     "choices": [
       {
         "text": "Cartagena",
@@ -3942,8 +3942,8 @@
     "text": "La región Insular de Colombia incluye:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "No solo son las islas del Caribe.",
+    "explanation": "La región Insular comprende San Andrés, Providencia y Santa Catalina en el Caribe, y Gorgona, Gorgonilla y Malpelo en el Pacífico.",
     "choices": [
       {
         "text": "Solo San Andrés",
@@ -3973,8 +3973,8 @@
     "text": "El Cañón del Chicamocha se encuentra en el departamento de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cerca de Bucaramanga, con parque y teleférico.",
+    "explanation": "El Cañón del Chicamocha está en Santander.",
     "choices": [
       {
         "text": "Boyacá",
@@ -4004,8 +4004,8 @@
     "text": "¿Cuál es la extensión territorial aproximada de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Algo más de 1,1 millones de km².",
+    "explanation": "Colombia tiene una superficie de 1.141.748 km², el cuarto país más grande de Suramérica.",
     "choices": [
       {
         "text": "500.000 km²",
@@ -4035,8 +4035,8 @@
     "text": "Colombia tiene frontera marítima con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Nueve, gracias al mar Caribe y al Pacífico.",
+    "explanation": "Colombia tiene fronteras marítimas con 9 países.",
     "choices": [
       {
         "text": "5 países",
@@ -4066,8 +4066,8 @@
     "text": "La capital del departamento del Meta es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La Puerta del Llano.",
+    "explanation": "Villavicencio es la capital del Meta.",
     "choices": [
       {
         "text": "Yopal",
@@ -4097,8 +4097,8 @@
     "text": "¿Cuál es el departamento más pequeño de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El archipiélago es también el departamento más pequeño.",
+    "explanation": "San Andrés y Providencia es el departamento más pequeño de Colombia (52 km²).",
     "choices": [
       {
         "text": "Quindío",
@@ -4128,8 +4128,8 @@
     "text": "El Parque Nacional Natural más grande de Colombia es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El de las pinturas rupestres amazónicas.",
+    "explanation": "Chiribiquete es el parque nacional más grande de Colombia.",
     "choices": [
       {
         "text": "Chiribiquete",
@@ -4159,8 +4159,8 @@
     "text": "¿Cuál de estos ríos NO nace en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El gran río venezolano solo marca frontera.",
+    "explanation": "El Orinoco nace en Venezuela (cerro Delgado-Chalbaud); el Magdalena, el Cauca y el Putumayo sí nacen en Colombia.",
     "choices": [
       {
         "text": "Magdalena",
@@ -4190,8 +4190,8 @@
     "text": "La Península de La Guajira limita con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La península del norte comparte frontera con el vecino oriental.",
+    "explanation": "La península de La Guajira limita con Venezuela.",
     "choices": [
       {
         "text": "Panamá",
@@ -4221,8 +4221,8 @@
     "text": "¿Cuántas cordilleras atraviesan el territorio colombiano?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Tres ramales andinos.",
+    "explanation": "Tres cordilleras (Occidental, Central y Oriental) atraviesan Colombia.",
     "choices": [
       {
         "text": "Una",
@@ -4252,8 +4252,8 @@
     "text": "El Golfo de Urabá se encuentra entre los departamentos de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Entre el departamento paisa y el más lluvioso.",
+    "explanation": "El Golfo de Urabá está entre Antioquia y Chocó.",
     "choices": [
       {
         "text": "Chocó y Córdoba",
@@ -4283,8 +4283,8 @@
     "text": "La capital del departamento de Boyacá es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad colonial de los muiscas, sede de la Batalla de Boyacá cercana.",
+    "explanation": "Tunja es la capital de Boyacá.",
     "choices": [
       {
         "text": "Sogamoso",
@@ -4314,8 +4314,8 @@
     "text": "¿Cuál es el punto más septentrional (norte) de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una punta en La Guajira.",
+    "explanation": "Punta Gallinas, en La Guajira, es el punto más septentrional de Colombia y de Suramérica continental.",
     "choices": [
       {
         "text": "Cabo de la Vela",
@@ -4345,8 +4345,8 @@
     "text": "¿Cuál de estas islas NO pertenece a Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Esa isla es venezolana.",
+    "explanation": "La isla Margarita pertenece a Venezuela; Gorgona, Malpelo y las Islas del Rosario son colombianas.",
     "choices": [
       {
         "text": "Gorgona",
@@ -4376,8 +4376,8 @@
     "text": "La depresión Momposina se encuentra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Donde se juntan el Magdalena, el Cauca y el San Jorge.",
+    "explanation": "La depresión Momposina es una zona baja e inundable del valle del Magdalena, donde confluyen varios grandes ríos.",
     "choices": [
       {
         "text": "La Costa Caribe",
@@ -4407,8 +4407,8 @@
     "text": "La capital del departamento del Cesar es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La cuna del vallenato.",
+    "explanation": "Valledupar es la capital del Cesar.",
     "choices": [
       {
         "text": "Valledupar",
@@ -4438,8 +4438,8 @@
     "text": "El Desierto de la Tatacoa está ubicado en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un desierto rojo y gris famoso por su observatorio astronómico.",
+    "explanation": "El Desierto de la Tatacoa está en el Huila; es en realidad un bosque seco tropical erosionado.",
     "choices": [
       {
         "text": "La Guajira",
@@ -4469,8 +4469,8 @@
     "text": "¿Cuál es el volcán más activo de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El volcán que vigila a Pasto.",
+    "explanation": "El Galeras, junto a Pasto, es considerado el volcán más activo de Colombia.",
     "choices": [
       {
         "text": "Nevado del Ruiz",
@@ -4500,8 +4500,8 @@
     "text": "¿Cuál de estas ciudades está más al sur?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad sobre el río Amazonas.",
+    "explanation": "Leticia, en el extremo sur del trapecio amazónico, es la ciudad más meridional de Colombia.",
     "choices": [
       {
         "text": "Pasto",
@@ -4531,8 +4531,8 @@
     "text": "El Nudo de los Pastos o de Huaca se encuentra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Donde los Andes se dividen en tres cordilleras.",
+    "explanation": "El Nudo de los Pastos, en Nariño, es donde la cordillera de los Andes se ramifica en las cordilleras Occidental y Central.",
     "choices": [
       {
         "text": "Nariño",
@@ -4562,8 +4562,8 @@
     "text": "¿Cuáles son algunos de los ríos más importantes que caracterizan la hidrografía de la Región Pacífica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La región se caracteriza por tener una gran cantidad de ríos, entre los cuales los más importantes son el San Juan, el Atrato, el Baudó, el Mira y el Patía",
+    "hint": "Ríos chocoanos y nariñenses que van al mar del oeste.",
+    "explanation": "Los ríos San Juan, Atrato, Baudó, Mira y Patía caracterizan la hidrografía de la región Pacífica.",
     "choices": [
       {
         "text": "Magdalena, Cauca, Sinú, San Jorge y Nechí",
@@ -4593,8 +4593,8 @@
     "text": "¿Qué cadena montañosa corre paralela a la costa del Pacífico y alcanza picos superiores a los 4.000 metros sobre el nivel del mar?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Cordillera Occidental es la cadena montañosa que corre paralela a la costa del Pacífico y alcanza altitudes elevadas con picos que superan los 4.000 metros",
+    "hint": "La más occidental de las tres cordilleras.",
+    "explanation": "La Cordillera Occidental corre paralela a la costa Pacífica y supera los 4.000 metros en picos como el Farallones de Cali.",
     "choices": [
       {
         "text": "La Sierra Nevada de Santa Marta",
@@ -4624,8 +4624,8 @@
     "text": "¿Qué nombre científico recibe la orquídea conocida comúnmente como \"flor de mayo\" presente en la región?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Dentro de las orquídeas representativas de la región, la *Cattleya trianae* es conocida como la flor de mayo",
+    "hint": "El apellido honra a un botánico colombiano: Triana.",
+    "explanation": "La flor de mayo, flor nacional de Colombia, es la orquídea Cattleya trianae, nombrada en honor al botánico José Jerónimo Triana.",
     "choices": [
       {
         "text": "Cattleya percivaliana",
@@ -4655,8 +4655,8 @@
     "text": "¿Qué comunidades indígenas se mencionan explícitamente como habitantes de la Región Pacífica junto a la población afrocolombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En la región conviven comunidades indígenas como Emberá, Wounaan y Awá",
+    "hint": "Pueblos del Chocó y del piedemonte nariñense.",
+    "explanation": "Los pueblos Emberá, Wounaan y Awá habitan la región Pacífica junto a la población afrocolombiana.",
     "choices": [
       {
         "text": "Wayúu, Kogui y Arhuaco",
@@ -4686,8 +4686,8 @@
     "text": "¿Cuál es la capital del departamento de Nariño según la división política de la Región Pacífica mostrada en el mapa?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Según la información de departamentos y capitales de la región, la capital del departamento de Nariño es Pasto",
+    "hint": "La ciudad del Carnaval de Negros y Blancos.",
+    "explanation": "Pasto es la capital de Nariño.",
     "choices": [
       {
         "text": "Quibdó",
@@ -4717,8 +4717,8 @@
     "text": "¿Qué especies de ranas venenosas se encuentran en la Región Pacífica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En la zona se encuentran ranas venenosas, específicamente la rana dorada y la rana de cristal",
+    "hint": "Una dorada y letal, otra transparente.",
+    "explanation": "En el Pacífico habitan la rana dorada (Phyllobates terribilis), una de las más venenosas del mundo, y la rana de cristal.",
     "choices": [
       {
         "text": "La rana toro y la rana platanera",
@@ -4748,8 +4748,8 @@
     "text": "¿Qué departamentos abarca la franja costera de la Región Pacífica de norte a sur?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Región Pacífica es una franja costera que se extiende desde el departamento de Chocó, en el norte, hasta el departamento de Nariño en el sur",
+    "hint": "Del departamento más lluvioso al fronterizo con Ecuador.",
+    "explanation": "La franja costera del Pacífico abarca, de norte a sur, los departamentos de Chocó, Valle del Cauca, Cauca y Nariño.",
     "choices": [
       {
         "text": "Desde La Guajira hasta el Atlántico",
@@ -4779,8 +4779,8 @@
     "text": "¿Qué característica permite a las bromelias sobrevivir en los ambientes húmedos de la zona?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Las bromelias se caracterizan por su capacidad de almacenar agua en sus hojas, lo que les permite sobrevivir en ambientes húmedos",
+    "hint": "Sus hojas forman 'tanques' naturales.",
+    "explanation": "Las bromelias almacenan agua en las rosetas de sus hojas, lo que les permite prosperar en la selva húmeda y albergar pequeños animales.",
     "choices": [
       {
         "text": "Su sistema de raíces profundas que llega a las aguas subterráneas",
@@ -4810,8 +4810,8 @@
     "text": "¿Qué función vital cumplen los estuarios y manglares presentes en la costa del Pacífico?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los estuarios y manglares son vitales para la conservación de la biodiversidad y cumplen un papel importante en la protección de la costa contra la erosión y los fenómenos climáticos extremos",
+    "hint": "Son barrera natural y cuna de vida marina.",
+    "explanation": "Los estuarios y manglares conservan la biodiversidad y protegen la costa contra la erosión y los fenómenos climáticos.",
     "choices": [
       {
         "text": "Proveen madera para la industria de la construcción exclusivamente",
@@ -4841,8 +4841,8 @@
     "text": "¿Qué porcentaje aproximado del territorio de Colombia abarca la llanura de la región de la Orinoquia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La región se extiende por una vasta llanura que abarca aproximadamente el 28% del territorio de Colombia",
+    "hint": "Algo más de la cuarta parte del territorio.",
+    "explanation": "La llanura de la Orinoquía abarca aproximadamente el 28% del territorio colombiano.",
     "choices": [
       {
         "text": "El 15%",
@@ -4872,8 +4872,8 @@
     "text": "¿Cuáles son los dos ríos más importantes que atraviesan la Orinoquia y conforman su red hidrográfica principal?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Orinoquia está atravesada por dos de los ríos más importantes de Colombia: el Meta y el Orinoco, los cuales conforman una extensa red hidrográfica",
+    "hint": "El río llanero y el gran río fronterizo.",
+    "explanation": "El Meta y el Orinoco son los ríos principales de la Orinoquía.",
     "choices": [
       {
         "text": "El Magdalena y el Cauca",
@@ -4903,8 +4903,8 @@
     "text": "¿Qué serranía de la región es conocida por albergar el famoso Cañón del Río Cristal?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Serranía de la Macarena es especialmente conocida por su belleza natural y el famoso Cañón del Río Cristal",
+    "hint": "La sierra de Caño Cristales.",
+    "explanation": "La Serranía de la Macarena alberga el Cañón del Río Cristal y el famoso Caño Cristales.",
     "choices": [
       {
         "text": "La Serranía de la Lindosa",
@@ -4934,11 +4934,11 @@
     "text": "¿Qué animal que habita en los ríos y humedales de la región es considerado el roedor más grande del mundo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El Capibara es considerado la especie de roedor más grande del mundo y habita en los ríos y humedales de la región",
+    "hint": "En Colombia se le conoce como chigüiro.",
+    "explanation": "El capibara, llamado chigüiro en Colombia, es el roedor más grande del mundo y habita los humedales de la Orinoquía.",
     "choices": [
       {
-        "text": "El chigüiro",
+        "text": "La nutria gigante",
         "is_correct": false,
         "order": 1
       },
@@ -4965,8 +4965,8 @@
     "text": "¿Cuál es la especie de caimán endémica de la región que se encuentra en peligro de extinción?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El Caimán del Orinoco es una especie de caimán endémica de la región y se encuentra en peligro de extinción",
+    "hint": "Lleva el nombre del gran río de la región.",
+    "explanation": "El caimán del Orinoco o caimán llanero es endémico de la cuenca del Orinoco y está en peligro crítico de extinción.",
     "choices": [
       {
         "text": "El caimán aguja",
@@ -4996,8 +4996,8 @@
     "text": "¿Cuál es la capital del departamento de Vichada?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Según la información sobre los departamentos y capitales de la región, la capital de Vichada es Puerto Carreño",
+    "hint": "El puerto sobre el Orinoco.",
+    "explanation": "Puerto Carreño es la capital del Vichada.",
     "choices": [
       {
         "text": "Yopal",
@@ -5027,8 +5027,8 @@
     "text": "¿Cuáles son algunos de los grupos étnicos indígenas más representativos que habitan en la región de la Orinoquia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Entre los grupos étnicos más representativos de la región se encuentran los Sikuani, Piapoco, Puinave, Guahibo y Curripaco",
+    "hint": "Pueblos llaneros de tradición nómada y de sabana.",
+    "explanation": "Los Sikuani, Piapoco y Guahibo son grupos indígenas representativos de la Orinoquía.",
     "choices": [
       {
         "text": "Wayuu, Nasa y Arhuacos",
@@ -5058,8 +5058,8 @@
     "text": "¿Qué porcentaje de la población total de Colombia representan los afrocolombianos según los datos demográficos básicos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los afrocolombianos representan aproximadamente el 6.7% de la población total de Colombia, lo que corresponde a más de 3 millones de personas",
+    "hint": "Cerca del siete por ciento.",
+    "explanation": "Los afrocolombianos representan aproximadamente el 6,7% de la población según los datos censales.",
     "choices": [
       {
         "text": "4.3%",
@@ -5089,8 +5089,8 @@
     "text": "¿Cuántas personas se autorreconocieron como gitanos o ROM?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "De acuerdo con el último Censo, un total de 2.606 personas se autorreconocieron como gitanos o ROM",
+    "hint": "Poco más de 2.600 personas.",
+    "explanation": "En el censo de 2018, 2.606 personas se autorreconocieron como gitanos o pueblo Rrom.",
     "choices": [
       {
         "text": "6.650 personas",
@@ -5120,8 +5120,8 @@
     "text": "¿En qué actividades se basa principalmente la economía de la Orinoquia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La economía se basa principalmente en actividades agropecuarias, ganadería, extracción de petróleo, minería y turismo",
+    "hint": "Vacas, cultivos, crudo y minas.",
+    "explanation": "La economía de la Orinoquía se basa en actividades agropecuarias, ganadería, petróleo y minería.",
     "choices": [
       {
         "text": "Industria textil y manufactura",
@@ -5151,8 +5151,8 @@
     "text": "¿Cuál de las tres cordilleras principales de Colombia se caracteriza por ser la más alta y albergar el Nevado del Huila?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Cordillera Central es la más alta de las tres cordilleras y alberga el volcán más alto de Colombia, el Nevado del Huila",
+    "hint": "La cordillera de los grandes nevados y volcanes.",
+    "explanation": "La Cordillera Central es la más alta de las tres; alberga los nevados del Ruiz, Tolima y Huila.",
     "choices": [
       {
         "text": "La Cordillera Occidental",
@@ -5182,8 +5182,8 @@
     "text": "¿En qué sistema montañoso se encuentra el Pico Cristóbal Colón, considerado la montaña más alta de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Sierra Nevada de Santa Marta se eleva abruptamente desde la costa y alcanza altitudes de más de 5.700 metros en el Pico Cristóbal Colón, lo que la convierte en la montaña más alta de Colombia",
+    "hint": "No está en los Andes sino en una sierra costera.",
+    "explanation": "El Pico Cristóbal Colón está en la Sierra Nevada de Santa Marta, sistema montañoso independiente de los Andes.",
     "choices": [
       {
         "text": "Sierra Nevada de Santa Marta",
@@ -5213,8 +5213,8 @@
     "text": "¿Qué cultivos predominan en el paisaje agrícola del Valle del Cauca?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El paisaje del Valle del Cauca está dominado por extensas áreas agrícolas con cultivos de caña de azúcar, café, arroz, frutas y hortalizas",
+    "hint": "El dulce de los ingenios, el grano y el cereal de los arrozales.",
+    "explanation": "En el Valle del Cauca predominan la caña de azúcar, el café (en laderas) y el arroz.",
     "choices": [
       {
         "text": "Trigo y cebada",
@@ -5244,8 +5244,8 @@
     "text": "¿Qué nombre reciben las zonas de tierras bajas y pantanosas sujetas a inundaciones estacionales en la Llanura Amazónica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "A lo largo de la llanura amazónica se pueden encontrar áreas inundables conocidas como \"varzeas\" y \"igapós\", que son zonas de tierras bajas y pantanosas sujetas a inundaciones estacionales",
+    "hint": "Palabras de origen portugués-amazónico.",
+    "explanation": "Las varzeas (inundadas por aguas blancas) y los igapós (por aguas negras) son las llanuras inundables de la Amazonía.",
     "choices": [
       {
         "text": "Sabanas y esteros",
@@ -5275,8 +5275,8 @@
     "text": "¿Por qué actividad de observación de fauna es mundialmente reconocida la Isla Malpelo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Isla Malpelo es uno de los lugares más importantes del mundo para la observación de tiburones y cuenta con una gran diversidad de especies marinas",
+    "hint": "Los buzos van a verlo por una especie de cabeza extraña.",
+    "explanation": "Malpelo es mundialmente famosa por el buceo con tiburones, especialmente los grandes cardúmenes de tiburón martillo.",
     "choices": [
       {
         "text": "Buceo con tiburones, especialmente el tiburón martillo",
@@ -5306,8 +5306,8 @@
     "text": "¿Qué tipo de vegetación es característica del piso térmico de Tierras Heladas o Páramos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los páramos se caracterizan por plantas adaptadas al clima frío, como frailejones y espeletias",
+    "hint": "Plantas de alta montaña que resisten el frío extremo.",
+    "explanation": "En las tierras heladas o páramos crecen frailejones, musgos y líquenes.",
     "choices": [
       {
         "text": "Frailejones, musgos y líquenes",
@@ -5337,8 +5337,8 @@
     "text": "¿En qué departamento de Colombia se encuentran los principales yacimientos de esmeraldas de alta calidad?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Colombia es famosa por la producción de esmeraldas de alta calidad y sus principales yacimientos se encuentran en la región de Boyacá",
+    "hint": "El departamento de Muzo y Chivor.",
+    "explanation": "Boyacá alberga los principales yacimientos de esmeraldas de alta calidad del país.",
     "choices": [
       {
         "text": "Antioquia",
@@ -5368,8 +5368,8 @@
     "text": "¿En qué regiones se ubican los depósitos importantes de níquel en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El país posee importantes depósitos de níquel en la región de la Sierra Nevada de Santa Marta y en el departamento de Córdoba",
+    "hint": "Cerro Matoso está en uno de esos departamentos costeños.",
+    "explanation": "Los depósitos de níquel más importantes están en Córdoba (Cerro Matoso) y en la zona de la Sierra Nevada de Santa Marta.",
     "choices": [
       {
         "text": "Magdalena Medio y Llanos Orientales",
@@ -5399,8 +5399,8 @@
     "text": "¿Cuáles son algunos de los grupos indígenas más prominentes mencionados que conservan su cultura e idioma en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Entre los grupos indígenas más destacados se encuentran los Wayuu, los Emberá, los Nasa, los Kogui y los Arhuacos",
+    "hint": "Pueblos de La Guajira, el Chocó y la Sierra Nevada.",
+    "explanation": "Los Wayuu (La Guajira), los Emberá (Chocó) y los Kogui (Sierra Nevada) conservan vivas su cultura y su lengua.",
     "choices": [
       {
         "text": "Los Aztecas, los Mayas y los Incas",
@@ -5430,8 +5430,8 @@
     "text": "¿Qué comunidad específica se menciona explícitamente como parte incluida dentro del grupo poblacional de los afrocolombianos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Dentro del grupo poblacional afrocolombiano se incluye explícitamente a la comunidad de palenque",
+    "hint": "La comunidad de San Basilio, primer pueblo libre de América.",
+    "explanation": "La comunidad de palenque, como San Basilio de Palenque, hace parte de la población afrocolombiana; fue el primer pueblo libre de América.",
     "choices": [
       {
         "text": "La comunidad de palenque",
@@ -5461,8 +5461,8 @@
     "text": "¿Cuál es el origen del grupo poblacional conocido como mestizos en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La población mestiza es el resultado de la mezcla entre indígenas y europeos que ocurrió durante la época colonial",
+    "hint": "La mezcla más numerosa del país.",
+    "explanation": "Los mestizos son el resultado de la mezcla entre indígenas y europeos, y constituyen la mayoría de la población colombiana.",
     "choices": [
       {
         "text": "Mezcla entre africanos y europeos",
@@ -5492,8 +5492,8 @@
     "text": "¿Cuál es la cifra estimada de habitantes que reside dentro de la ciudad de Bogotá, sin contar su área metropolitana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Bogotá tiene una población estimada de 7'181.469 habitantes, siendo la ciudad más poblada del país",
+    "hint": "Algo más de siete millones dentro del perímetro urbano.",
+    "explanation": "Bogotá tiene unos 7,18 millones de habitantes en su perímetro urbano, sin contar el área metropolitana.",
     "choices": [
       {
         "text": "10 millones de habitantes",
@@ -5523,8 +5523,8 @@
     "text": "¿Qué evento cultural específico se destaca como parte de la oferta cultural de la ciudad de Medellín?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Medellín alberga diversos eventos culturales, destacándose entre ellos la Feria de las Flores",
+    "hint": "Un desfile de silleteros cada agosto.",
+    "explanation": "La Feria de las Flores, con su Desfile de Silleteros, es el evento cultural insignia de Medellín.",
     "choices": [
       {
         "text": "El Carnaval de Barranquilla",
@@ -5554,8 +5554,8 @@
     "text": "¿Con qué título cultural es conocida la ciudad de Cali debido a su vibrante escena musical y de baile?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Cali es conocida culturalmente como la capital de la salsa",
+    "hint": "Su género musical se baila en todo el mundo.",
+    "explanation": "Cali es conocida como la Capital Mundial de la Salsa.",
     "choices": [
       {
         "text": "La capital del vallenato",
@@ -5585,8 +5585,8 @@
     "text": "¿Cuáles son los cultivos principales que sustentan la economía de las zonas rurales?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los cultivos principales en las zonas rurales incluyen café, plátano, caña de azúcar, arroz, cacao y frutas tropicales",
+    "hint": "El grano nacional, la fruta de freír, el dulce y el chocolate.",
+    "explanation": "Café, plátano, caña de azúcar y cacao son los cultivos principales de las zonas rurales colombianas.",
     "choices": [
       {
         "text": "Trigo, cebada, centeno y uvas",
@@ -5616,8 +5616,8 @@
     "text": "¿Qué tipos de comunidades componen generalmente la demografía de las áreas rurales en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En las áreas rurales se encuentran generalmente comunidades campesinas, indígenas y afrocolombianas que han habitado estas zonas durante generaciones",
+    "hint": "Tres tipos de comunidades tradicionales.",
+    "explanation": "Las áreas rurales están habitadas principalmente por comunidades campesinas, indígenas y afrocolombianas.",
     "choices": [
       {
         "text": "Principalmente comunidades de inmigrantes extranjeros",
@@ -5647,8 +5647,8 @@
     "text": "¿Cuál es el río más largo de Colombia que atraviesa la región Caribe y es vital para el transporte de carga y pasajeros?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El río Magdalena es descrito como el más largo de Colombia, siendo vital para el transporte de carga y pasajeros, además de ser una fuente importante de agua dulce para la región",
+    "hint": "El río arteria de Colombia, de 1.540 km.",
+    "explanation": "El río Magdalena es el más largo e importante de Colombia y desemboca en el Caribe por Bocas de Ceniza, Barranquilla.",
     "choices": [
       {
         "text": "El río Cauca",
@@ -5678,8 +5678,8 @@
     "text": "¿Qué altura alcanza el Pico Cristóbal Colón ubicado en la Sierra Nevada de Santa Marta?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El Pico Cristóbal Colón es el pico más alto de Colombia y tiene una altitud de 5.775 metros sobre el nivel del mar",
+    "hint": "Casi 5.800 metros desde el nivel del mar.",
+    "explanation": "El Pico Cristóbal Colón alcanza 5.775 metros sobre el nivel del mar.",
     "choices": [
       {
         "text": "4.500 metros sobre el nivel del mar",
@@ -5709,8 +5709,8 @@
     "text": "¿Cuáles son las tres especies de manglares que se encuentran presentes en los ecosistemas costeros de la región Caribe?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Entre las especies de manglares presentes en el territorio se encuentran el mangle rojo, el mangle blanco y el mangle negro",
+    "hint": "Tres colores: rojo, blanco y negro.",
+    "explanation": "En el Caribe colombiano crecen el mangle rojo, el mangle blanco y el mangle negro.",
     "choices": [
       {
         "text": "Mangle rojo, mangle blanco y mangle negro",
@@ -5740,8 +5740,8 @@
     "text": "¿Qué especies de reptiles venenosas se mencionan específicamente como parte de la fauna de la región Caribe?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En la zona se encuentran serpientes venenosas, incluyendo específicamente la serpiente coral y la mapaná",
+    "hint": "Una de anillos de colores y otra temida en el campo.",
+    "explanation": "La serpiente coral y la mapaná (Bothrops) son las serpientes venenosas mencionadas en la fauna del Caribe.",
     "choices": [
       {
         "text": "La cascabel y la anaconda",
@@ -5771,8 +5771,8 @@
     "text": "¿Qué porcentaje aproximado de la población total del país alberga la región Caribe?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La región Caribe alberga cerca del 22,5% de la población total del país",
+    "hint": "Algo más de la quinta parte de los colombianos.",
+    "explanation": "La región Caribe alberga aproximadamente el 22,5% de la población del país.",
     "choices": [
       {
         "text": "15,3%",
@@ -5802,8 +5802,8 @@
     "text": "¿Qué especies de palmas se destacan en la región por sus usos diversos como la obtención de frutos comestibles y fibras?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Las especies de palmas más destacadas en la región son la palma real, el chontaduro, la palma de vino y la palma de moriche",
+    "hint": "Cuatro palmas: una 'real', una de fruto comestible, una de 'vino' y una llanera.",
+    "explanation": "La palma real, el chontaduro, la palma de vino y la palma de moriche se destacan por sus frutos comestibles y fibras.",
     "choices": [
       {
         "text": "Palma de cera, palma de coco y palma africana",
@@ -5833,8 +5833,8 @@
     "text": "¿Cuál es la capital del departamento de Sucre?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En la lista de departamentos y capitales, Sucre (identificado con el número 5) tiene como capital a Sincelejo",
+    "hint": "La ciudad de las corralejas.",
+    "explanation": "Sincelejo es la capital de Sucre.",
     "choices": [
       {
         "text": "Cartagena",
@@ -5864,8 +5864,8 @@
     "text": "¿En qué ubicación geográfica específica se encuentra la Serranía de Perijá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Serranía de Perijá se encuentra en el extremo norte de la región Caribe, específicamente en la frontera con Venezuela",
+    "hint": "Una serranía compartida con el vecino oriental.",
+    "explanation": "La Serranía de Perijá está en el extremo norte del país, en la frontera con Venezuela.",
     "choices": [
       {
         "text": "En el centro de la llanura costera",
@@ -5895,8 +5895,8 @@
     "text": "¿Cuáles son los tres grupos indígenas mencionados explícitamente como parte de la diversidad étnica de la región Caribe?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La región es hogar de una mezcla de grupos étnicos que incluye indígenas como los wayúu, kogui y arhuaco",
+    "hint": "El pueblo del desierto guajiro y dos pueblos de la Sierra Nevada.",
+    "explanation": "Los Wayúu, Kogui y Arhuaco son los grupos indígenas más representativos del Caribe colombiano.",
     "choices": [
       {
         "text": "Wayúu, Kogui y Arhuaco",
@@ -5926,8 +5926,8 @@
     "text": "¿En qué parte del país se encuentra ubicada la Región Andina y cuántas cordilleras la componen?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En el corazón montañoso del país, con tres ramales.",
+    "explanation": "La Región Andina está en el centro-occidente del país y la componen las cordilleras Occidental, Central y Oriental.",
     "choices": [
       {
         "text": "En el sur del país y compuesta por una cordillera",
@@ -5957,8 +5957,8 @@
     "text": "¿Cuáles son los ríos importantes mencionados que nacen en la Región Andina?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los dos grandes ríos interandinos y uno amazónico.",
+    "explanation": "En la región Andina nacen el Magdalena, el Cauca y el Caquetá, todos en el Macizo Colombiano.",
     "choices": [
       {
         "text": "El Amazonas, el Orinoco y el Meta",
@@ -5988,8 +5988,8 @@
     "text": "¿Qué fenómeno geológico dio origen a las cordilleras de la Región Andina?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El choque de placas levantó los Andes.",
+    "explanation": "Las cordilleras andinas se originaron por la colisión de las placas tectónicas de Nazca y Suramérica.",
     "choices": [
       {
         "text": "La erosión eólica y fluvial",
@@ -6019,8 +6019,8 @@
     "text": "¿Cuántas especies de aves se encuentran registradas en la Región Andina?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cerca de dos mil especies de aves.",
+    "explanation": "La región Andina registra más de 1.900 especies de aves.",
     "choices": [
       {
         "text": "Más de 1.900 especies",
@@ -6050,8 +6050,8 @@
     "text": "¿Qué porcentaje aproximado de las especies de plantas en la Región Andina son endémicas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Más de la mitad son exclusivas de la región.",
+    "explanation": "Alrededor del 60% de las plantas de la región Andina son endémicas.",
     "choices": [
       {
         "text": "Alrededor del 40%",
@@ -6081,8 +6081,8 @@
     "text": "¿Cuál es la función ecológica principal de los páramos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Actúan como esponjas que regulan el agua.",
+    "explanation": "Los páramos son fábricas de agua: capturan la humedad y la liberan lentamente, abasteciendo ríos y acueductos.",
     "choices": [
       {
         "text": "Servir como barreras contra los vientos alisios",
@@ -6112,8 +6112,8 @@
     "text": "¿Cuántos habitantes tiene aproximadamente la Región Andina y qué porcentaje del total nacional representa?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cuatro de cada diez colombianos viven allí.",
+    "explanation": "La región Andina concentra unos 18 millones de habitantes, el 40,5% de la población nacional.",
     "choices": [
       {
         "text": "10 millones de habitantes, el 25% del total nacional",
@@ -6143,8 +6143,8 @@
     "text": "Según el mapa de departamentos y capitales, ¿cuál es la capital del departamento de Norte de Santander?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad fronteriza donde se redactó la primera constitución.",
+    "explanation": "Cúcuta es la capital de Norte de Santander.",
     "choices": [
       {
         "text": "Bucaramanga",
@@ -6174,8 +6174,8 @@
     "text": "¿Cuáles son algunos de los cultivos agrícolas más comunes mencionados para la Región Andina?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El grano, el cereal indígena, el tubérculo y dos cultivos de clima frío.",
+    "explanation": "Café, maíz, papa, trigo y fríjol son los cultivos más comunes de la región Andina.",
     "choices": [
       {
         "text": "Palma de aceite, arroz y algodón",
@@ -6205,8 +6205,8 @@
     "text": "¿Qué cañones se mencionan como ejemplos de formaciones geológicas en la región?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El santandereano, el tolimense y el del Meta.",
+    "explanation": "El Cañón del Chicamocha (Santander), el del río Combeima (Tolima) y el del río Güejar (Meta) son formaciones geológicas destacadas.",
     "choices": [
       {
         "text": "El Cañón del Colorado y el Cañón del Atuel",
@@ -6236,8 +6236,8 @@
     "text": "¿Con qué países limita Colombia al oriente, según su ubicación geográfica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Al oriente, Colombia limita con Venezuela (departamentos de La Guajira, Cesar, Norte de Santander, Arauca, Vichada y Guainía) y Brasil (departamentos de Amazonas, Vaupés y Guainía).",
+    "hint": "Los vecinos del Orinoco y de la Amazonía.",
+    "explanation": "Al oriente Colombia limita con Venezuela y Brasil.",
     "choices": [
       {
         "text": "Perú y Ecuador",
@@ -6267,8 +6267,8 @@
     "text": "¿Qué porcentaje aproximado del territorio nacional de Colombia representa la Región Amazónica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Región Amazónica de Colombia es una vasta área que representa aproximadamente el 42% del territorio nacional.",
+    "hint": "Cerca del cuarenta por ciento.",
+    "explanation": "La región Amazónica representa aproximadamente el 42% del territorio nacional, la más extensa del país.",
     "choices": [
       {
         "text": "25%",
@@ -6298,8 +6298,8 @@
     "text": "¿Qué nombre reciben las amplias llanuras formadas por los ríos de la región amazónica que se inundan durante la temporada de lluvias?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los ríos forman amplias llanuras inundables conocidas como \"varzeas\" e \"igapós\", las cuales se inundan en temporada de lluvias y sustentan una gran biodiversidad.",
+    "hint": "Términos amazónicos para llanuras inundables de aguas blancas y negras.",
+    "explanation": "Las varzeas y los igapós son las llanuras amazónicas que se inundan en temporada de lluvias.",
     "choices": [
       {
         "text": "Mesetas y colinas",
@@ -6329,8 +6329,8 @@
     "text": "¿Cuál es considerado el pez de agua dulce más grande del mundo que habita en los ríos de la región amazónica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Entre los peces más notables de la región se incluye el pirarucú, considerado uno de los peces de agua dulce más grandes del mundo.",
+    "hint": "Puede superar los dos metros y respira aire.",
+    "explanation": "El pirarucú o paiche es considerado el pez de agua dulce más grande del mundo: supera los 2,5 metros y los 200 kilos.",
     "choices": [
       {
         "text": "La piraña",
@@ -6360,8 +6360,8 @@
     "text": "¿Cuáles son algunas de las plantas medicinales destacadas que se encuentran en la región amazónica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Algunas de las plantas medicinales más destacadas de la zona son la ayahuasca, el sangre de grado, la uña de gato, el copaiba y la múcura.",
+    "hint": "Plantas de la medicina tradicional amazónica.",
+    "explanation": "La ayahuasca (yagé), la sangre de grado y la uña de gato son plantas medicinales emblemáticas de la Amazonía.",
     "choices": [
       {
         "text": "La manzanilla y el eucalipto",
@@ -6391,8 +6391,8 @@
     "text": "¿Cuál es la capital del departamento del Vaupés?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Según el mapa político y la lista de departamentos y capitales de la región amazónica, la capital del departamento del Vaupés es Mitú.",
+    "hint": "La pequeña capital sobre el río Vaupés.",
+    "explanation": "Mitú es la capital del Vaupés.",
     "choices": [
       {
         "text": "Leticia",
@@ -6422,8 +6422,8 @@
     "text": "¿Cuáles son algunos de los grupos étnicos indígenas representativos que habitan la región amazónica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Algunos de los grupos étnicos más representativos de la región incluyen los Tikuna, Uitoto, Cubeo, Desano y Tucano.",
+    "hint": "Pueblos del trapecio amazónico y del Vaupés.",
+    "explanation": "Los Tikuna, Uitoto y Cubeo son grupos indígenas representativos de la Amazonía colombiana.",
     "choices": [
       {
         "text": "Wayuu y Emberá",
@@ -6453,8 +6453,8 @@
     "text": "¿Cuáles son los principales afluentes del río Amazonas mencionados como vitales para la región?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los principales ríos son el Amazonas y sus afluentes, como el río Putumayo, el río Caquetá (también conocido como Japurá), el río Guaviare y el río Vaupés.",
+    "hint": "Tres ríos colombianos que alimentan al gigante suramericano.",
+    "explanation": "El Putumayo, el Caquetá y el Guaviare son los grandes afluentes amazónicos mencionados.",
     "choices": [
       {
         "text": "Río Magdalena y Río Cauca",
@@ -6484,8 +6484,8 @@
     "text": "¿Qué característica define a la vegetación de la selva ecuatorial húmeda en la Amazonía?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Se caracteriza por tener una densa vegetación compuesta por árboles altos y frondosos que forman un dosel cerrado, creando un ambiente húmedo y sombreado.",
+    "hint": "Las copas se cierran formando un techo verde.",
+    "explanation": "La selva ecuatorial húmeda se caracteriza por árboles altos y frondosos que forman un dosel cerrado que apenas deja pasar la luz.",
     "choices": [
       {
         "text": "Vegetación baja y dispersa tipo sabana",
@@ -6515,8 +6515,8 @@
     "text": "¿Qué serranía se destaca en la región amazónica como un ejemplo de cadena montañosa más baja comparada con los Andes?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La región alberga serranías con colinas y elevaciones suaves, siendo la Serranía de La Macarena un ejemplo destacado de este tipo de formación.",
+    "hint": "La sierra de Caño Cristales, mucho más baja que los Andes.",
+    "explanation": "La Serranía de La Macarena es una cadena montañosa baja comparada con los Andes, y marca la transición entre Orinoquía, Amazonía y Andes.",
     "choices": [
       {
         "text": "Serranía del Perijá",
@@ -6535,6 +6535,130 @@
       },
       {
         "text": "Sierra Nevada de Santa Marta",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0212",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿Cuál es el centro financiero de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "La sede del Banco de la República, la bolsa de valores y los grandes bancos.",
+    "explanation": "Bogotá es el centro financiero del país: concentra la Bolsa de Valores de Colombia, el Banco de la República y las sedes de los principales bancos y empresas.",
+    "choices": [
+      {
+        "text": "Bogotá",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Medellín",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cali",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Bucaramanga",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0213",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿Cuál es el principal producto agrícola de exportación de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "El grano suave que se cultiva en el piso térmico templado.",
+    "explanation": "El café es el principal producto agrícola de exportación de Colombia y símbolo del país en el mundo.",
+    "choices": [
+      {
+        "text": "El café",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "El banano",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Las flores",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El arroz",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0214",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿Cuál es el principal puerto de Colombia sobre el océano Pacífico?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "Por allí sale y entra la mayor parte del comercio exterior del país.",
+    "explanation": "Buenaventura, en el Valle del Cauca, es el principal puerto colombiano sobre el Pacífico y uno de los más importantes del país.",
+    "choices": [
+      {
+        "text": "Buenaventura",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Tumaco",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Cartagena",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Barranquilla",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "GEO-0215",
+    "subcategory": "ECONOMIA_Y_RECURSOS",
+    "text": "¿Cuál es el aeropuerto más importante de Colombia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "Lleva el nombre de la legendaria ciudad dorada y queda en la capital.",
+    "explanation": "El Aeropuerto Internacional El Dorado de Bogotá es el más importante del país y el primero de América Latina en movimiento de carga.",
+    "choices": [
+      {
+        "text": "El Dorado, en Bogotá",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "José María Córdova, en Rionegro",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Alfonso Bonilla Aragón, en Cali",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Rafael Núñez, en Cartagena",
         "is_correct": false,
         "order": 4
       }

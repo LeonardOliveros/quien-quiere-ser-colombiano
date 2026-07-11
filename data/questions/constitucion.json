@@ -5,8 +5,8 @@
     "text": "Según la Constitución, Colombia es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Piensa en la fórmula del artículo 1: combina lo social con el imperio de la ley.",
+    "explanation": "El artículo 1 de la Constitución de 1991 define a Colombia como un Estado social de derecho, organizado en forma de República unitaria.",
     "choices": [
       {
         "text": "Un Estado federal",
@@ -36,8 +36,8 @@
     "text": "La soberanía reside en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El artículo 3 dice que de ella emana el poder público.",
+    "explanation": "Según el artículo 3, la soberanía reside exclusivamente en el pueblo, del cual emana el poder público.",
     "choices": [
       {
         "text": "El Presidente",
@@ -67,8 +67,8 @@
     "text": "Colombia se organiza en forma de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "No es federal: hay un solo centro político, pero las regiones tienen autonomía.",
+    "explanation": "El artículo 1 establece que Colombia es una República unitaria, descentralizada y con autonomía de sus entidades territoriales.",
     "choices": [
       {
         "text": "República unitaria y centralizada",
@@ -98,8 +98,8 @@
     "text": "Son fines esenciales del Estado:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Servir, promover y garantizar: las tres opciones hacen parte de la misma lista.",
+    "explanation": "El artículo 2 enumera como fines esenciales del Estado servir a la comunidad, promover la prosperidad general y garantizar la efectividad de los principios, derechos y deberes.",
     "choices": [
       {
         "text": "Servir a la comunidad",
@@ -129,8 +129,8 @@
     "text": "El derecho a la vida es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el primer derecho fundamental del artículo 11 y no admite excepciones.",
+    "explanation": "El artículo 11 declara que el derecho a la vida es inviolable y que no habrá pena de muerte.",
     "choices": [
       {
         "text": "Renunciable",
@@ -160,8 +160,8 @@
     "text": "¿Cuál de estos es un derecho fundamental?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Busca el derecho que permite a cada quien definir su propio proyecto de vida.",
+    "explanation": "El libre desarrollo de la personalidad (artículo 16) es un derecho fundamental; la vivienda o el trabajo son derechos económicos y sociales.",
     "choices": [
       {
         "text": "Derecho a la propiedad",
@@ -191,8 +191,8 @@
     "text": "La acción de tutela protege:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el mecanismo del artículo 86, pensado para un tipo específico de derechos.",
+    "explanation": "La acción de tutela (artículo 86) protege los derechos constitucionales fundamentales cuando resulten vulnerados o amenazados.",
     "choices": [
       {
         "text": "Todos los derechos",
@@ -222,8 +222,8 @@
     "text": "La tutela debe ser resuelta en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El plazo es corto: menos de dos semanas.",
+    "explanation": "El artículo 86 ordena que la tutela se resuelva en un término máximo de 10 días.",
     "choices": [
       {
         "text": "10 días",
@@ -253,8 +253,8 @@
     "text": "El habeas corpus protege:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre en latín alude a 'tener el cuerpo'.",
+    "explanation": "El habeas corpus (artículo 30) protege la libertad personal de quien es capturado ilegalmente; debe resolverse en 36 horas.",
     "choices": [
       {
         "text": "La propiedad",
@@ -284,8 +284,8 @@
     "text": "¿Desde qué edad se es ciudadano colombiano?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la mayoría de edad en Colombia.",
+    "explanation": "La ciudadanía se ejerce a partir de los 18 años, edad que habilita para votar y ser elegido.",
     "choices": [
       {
         "text": "14 años",
@@ -315,8 +315,8 @@
     "text": "¿Cuáles son las tres ramas del poder público?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una hace las leyes, otra las ejecuta y otra juzga.",
+    "explanation": "El artículo 113 establece las ramas Legislativa, Ejecutiva y Judicial como las tres ramas del poder público.",
     "choices": [
       {
         "text": "Nacional, Departamental, Municipal",
@@ -346,8 +346,8 @@
     "text": "La Rama Ejecutiva está encabezada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la máxima autoridad administrativa del país.",
+    "explanation": "La Rama Ejecutiva está encabezada por el Presidente de la República, junto con ministros y directores de departamentos administrativos.",
     "choices": [
       {
         "text": "El Congreso",
@@ -377,8 +377,8 @@
     "text": "¿Quién es el Jefe de Estado y Jefe de Gobierno?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En Colombia ambas jefaturas recaen en la misma persona.",
+    "explanation": "El artículo 115 señala que el Presidente es Jefe de Estado, Jefe de Gobierno y suprema autoridad administrativa.",
     "choices": [
       {
         "text": "El Vicepresidente",
@@ -408,8 +408,8 @@
     "text": "El período presidencial es de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Coincide con el período de alcaldes, gobernadores y congresistas.",
+    "explanation": "El período presidencial es de 4 años, según el artículo 190 de la Constitución.",
     "choices": [
       {
         "text": "3 años",
@@ -439,8 +439,8 @@
     "text": "¿Se permite la reelección presidencial inmediata?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Desde el Acto Legislativo 02 de 2015 la respuesta es tajante.",
+    "explanation": "La reelección presidencial fue eliminada por el Acto Legislativo 02 de 2015: nadie puede ser reelegido Presidente.",
     "choices": [
       {
         "text": "Sí, una vez",
@@ -470,8 +470,8 @@
     "text": "El Congreso de la República está compuesto por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es un congreso bicameral.",
+    "explanation": "El artículo 114 establece que el Congreso está integrado por el Senado de la República y la Cámara de Representantes.",
     "choices": [
       {
         "text": "Solo el Senado",
@@ -501,8 +501,8 @@
     "text": "¿Cuántos senadores componen el Senado?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Son 100 por circunscripción nacional, 2 indígenas, 5 de Comunes y 1 del segundo en la elección presidencial.",
+    "explanation": "Desde 2018 el Senado tiene 108 miembros: 100 nacionales, 2 por circunscripción indígena, 5 del partido Comunes (Acuerdo de Paz) y el candidato presidencial que ocupó el segundo lugar.",
     "choices": [
       {
         "text": "100",
@@ -532,8 +532,8 @@
     "text": "Los senadores son elegidos por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Todo el país vota por la misma lista de candidatos al Senado.",
+    "explanation": "Los senadores se eligen por circunscripción nacional (artículo 171): todos los colombianos votan las mismas listas.",
     "choices": [
       {
         "text": "Circunscripción departamental",
@@ -563,8 +563,8 @@
     "text": "El período de senadores y representantes es de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el mismo período del Presidente.",
+    "explanation": "Senadores y representantes son elegidos para períodos de 4 años.",
     "choices": [
       {
         "text": "2 años",
@@ -594,8 +594,8 @@
     "text": "La función principal del Congreso es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Por eso se llama rama 'legislativa'.",
+    "explanation": "El artículo 150 asigna al Congreso la función de hacer las leyes, además de reformar la Constitución y ejercer control político.",
     "choices": [
       {
         "text": "Juzgar",
@@ -625,8 +625,8 @@
     "text": "La Corte Constitucional está compuesta por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es un número impar, menor a diez.",
+    "explanation": "La Corte Constitucional está integrada por 9 magistrados, elegidos por el Senado de ternas enviadas por el Presidente, la Corte Suprema y el Consejo de Estado.",
     "choices": [
       {
         "text": "7 magistrados",
@@ -656,8 +656,8 @@
     "text": "El período de los magistrados de la Corte Constitucional es de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el doble del período presidencial y no admite reelección.",
+    "explanation": "Los magistrados de la Corte Constitucional son elegidos para períodos individuales de 8 años, sin reelección.",
     "choices": [
       {
         "text": "4 años",
@@ -687,8 +687,8 @@
     "text": "La Corte Suprema de Justicia tiene:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es un número impar, poco mayor a veinte.",
+    "explanation": "La Corte Suprema de Justicia, máximo tribunal de la jurisdicción ordinaria, está integrada por 23 magistrados.",
     "choices": [
       {
         "text": "20 magistrados",
@@ -718,8 +718,8 @@
     "text": "El Consejo de Estado es el máximo tribunal de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Resuelve los pleitos entre los ciudadanos y el Estado.",
+    "explanation": "El Consejo de Estado es el máximo tribunal de la jurisdicción de lo contencioso administrativo (artículo 237).",
     "choices": [
       {
         "text": "Lo penal",
@@ -749,8 +749,8 @@
     "text": "¿Quién dirige la Fiscalía General de la Nación?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El nombre del cargo coincide con el de la entidad.",
+    "explanation": "La Fiscalía General de la Nación, encargada de investigar los delitos, está dirigida por el Fiscal General de la Nación.",
     "choices": [
       {
         "text": "El Vicefiscal",
@@ -780,8 +780,8 @@
     "text": "El Fiscal General es elegido por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lo elige la máxima corte de la justicia ordinaria, de terna enviada por el Presidente.",
+    "explanation": "El Fiscal General es elegido por la Corte Suprema de Justicia de terna enviada por el Presidente de la República (artículo 249).",
     "choices": [
       {
         "text": "El Presidente",
@@ -811,8 +811,8 @@
     "text": "El Ministerio Público está conformado por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Son tres entidades que velan por los derechos y la conducta de los servidores públicos.",
+    "explanation": "El Ministerio Público lo conforman la Procuraduría General, la Defensoría del Pueblo y las personerías municipales (artículo 118).",
     "choices": [
       {
         "text": "Solo la Procuraduría",
@@ -842,8 +842,8 @@
     "text": "El Procurador General de la Nación es elegido por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lo elige la cámara alta del Congreso.",
+    "explanation": "El Procurador General es elegido por el Senado, de terna integrada por candidatos del Presidente, la Corte Suprema y el Consejo de Estado (artículo 276).",
     "choices": [
       {
         "text": "El Presidente",
@@ -873,8 +873,8 @@
     "text": "La Contraloría General de la República se encarga de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Vigila cómo se gastan los recursos públicos.",
+    "explanation": "La Contraloría General de la República ejerce el control fiscal: vigila la gestión de los recursos públicos (artículo 267).",
     "choices": [
       {
         "text": "Hacer las leyes",
@@ -904,8 +904,8 @@
     "text": "El Contralor General es elegido por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lo eligen las dos cámaras reunidas.",
+    "explanation": "El Contralor General es elegido por el Congreso en pleno, de lista conformada por convocatoria pública (artículo 267).",
     "choices": [
       {
         "text": "El Presidente",
@@ -935,8 +935,8 @@
     "text": "El Defensor del Pueblo es elegido por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lo elige la cámara baja, de terna del Presidente.",
+    "explanation": "El Defensor del Pueblo es elegido por la Cámara de Representantes de terna elaborada por el Presidente (artículo 281).",
     "choices": [
       {
         "text": "El Presidente",
@@ -966,8 +966,8 @@
     "text": "La organización electoral está conformada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Son dos entidades: una decide sobre lo electoral y otra organiza las elecciones y el registro civil.",
+    "explanation": "La organización electoral está conformada por el Consejo Nacional Electoral y la Registraduría Nacional del Estado Civil (artículo 120).",
     "choices": [
       {
         "text": "Solo la Registraduría",
@@ -997,8 +997,8 @@
     "text": "El Registrador Nacional del Estado Civil es nombrado por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lo escogen los presidentes de las tres altas cortes mediante concurso de méritos.",
+    "explanation": "El Registrador Nacional es escogido por los presidentes de la Corte Constitucional, la Corte Suprema y el Consejo de Estado, mediante concurso de méritos (artículo 266).",
     "choices": [
       {
         "text": "El Presidente",
@@ -1028,8 +1028,8 @@
     "text": "El voto en Colombia es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En Colombia votar no es obligatorio, pero sí más que un simple derecho.",
+    "explanation": "El artículo 258 define el voto como un derecho y un deber ciudadano; en Colombia no es obligatorio.",
     "choices": [
       {
         "text": "Obligatorio",
@@ -1059,8 +1059,8 @@
     "text": "Son entidades territoriales:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La lista del artículo 286 incluye cuatro tipos, entre ellos los territorios de los pueblos originarios.",
+    "explanation": "El artículo 286 reconoce como entidades territoriales a los departamentos, distritos, municipios y territorios indígenas.",
     "choices": [
       {
         "text": "Solo los departamentos",
@@ -1090,8 +1090,8 @@
     "text": "Los gobernadores son elegidos por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Desde 1991 los ciudadanos de cada departamento los eligen directamente.",
+    "explanation": "Desde la Constitución de 1991 los gobernadores son elegidos por voto popular para períodos de 4 años (artículo 303).",
     "choices": [
       {
         "text": "El Presidente",
@@ -1121,8 +1121,8 @@
     "text": "El período de los gobernadores es de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Igual que el del Presidente y los alcaldes.",
+    "explanation": "Los gobernadores son elegidos para períodos institucionales de 4 años, sin reelección inmediata.",
     "choices": [
       {
         "text": "2 años",
@@ -1152,8 +1152,8 @@
     "text": "Los alcaldes son elegidos por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los habitantes de cada municipio los eligen directamente desde 1988.",
+    "explanation": "Los alcaldes son elegidos por voto popular (artículo 314); la elección popular de alcaldes comenzó en 1988.",
     "choices": [
       {
         "text": "Los concejos",
@@ -1183,8 +1183,8 @@
     "text": "El período de los alcaldes es de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo período de gobernadores y congresistas.",
+    "explanation": "Los alcaldes son elegidos para períodos institucionales de 4 años, sin reelección inmediata.",
     "choices": [
       {
         "text": "2 años",
@@ -1214,8 +1214,8 @@
     "text": "Las Asambleas Departamentales son:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "No hacen leyes ni juzgan: administran el departamento mediante ordenanzas.",
+    "explanation": "El artículo 299 define las Asambleas Departamentales como corporaciones administrativas de elección popular; sus actos se llaman ordenanzas.",
     "choices": [
       {
         "text": "Órganos de control",
@@ -1245,8 +1245,8 @@
     "text": "Los Concejos Municipales:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Sus decisiones se llaman 'acuerdos'.",
+    "explanation": "Los Concejos Municipales son corporaciones administrativas que aprueban los acuerdos municipales, incluido el presupuesto del municipio.",
     "choices": [
       {
         "text": "Nombran al alcalde",
@@ -1276,8 +1276,8 @@
     "text": "Son mecanismos de participación ciudadana:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El artículo 103 enumera siete; la opción correcta lista varios de ellos.",
+    "explanation": "El artículo 103 consagra como mecanismos de participación el voto, el plebiscito, el referendo, la consulta popular, el cabildo abierto, la iniciativa legislativa y la revocatoria del mandato.",
     "choices": [
       {
         "text": "Solo el voto",
@@ -1307,8 +1307,8 @@
     "text": "El referendo sirve para:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la votación con la que el pueblo decide directamente sobre una norma.",
+    "explanation": "El referendo es la convocatoria al pueblo para que apruebe o rechace un proyecto de norma, o derogue una norma vigente.",
     "choices": [
       {
         "text": "Elegir presidente",
@@ -1338,8 +1338,8 @@
     "text": "La revocatoria del mandato procede para:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Aplica solo a los mandatarios locales y regionales elegidos popularmente.",
+    "explanation": "La revocatoria del mandato procede únicamente contra gobernadores y alcaldes; no aplica para el Presidente ni los congresistas.",
     "choices": [
       {
         "text": "Presidente",
@@ -1369,8 +1369,8 @@
     "text": "La iniciativa popular legislativa requiere el respaldo de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el porcentaje pequeño (5 por mil) exigido para inscribir la iniciativa ante la Registraduría.",
+    "explanation": "Para inscribir una iniciativa popular legislativa se requiere el respaldo del 5 por mil (0,5%) del censo electoral; luego se recogen más firmas (5%) para presentarla al Congreso.",
     "choices": [
       {
         "text": "5% de los ciudadanos",
@@ -1400,8 +1400,8 @@
     "text": "El Banco de la República es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Emite la moneda y no depende del Gobierno.",
+    "explanation": "El Banco de la República es el banco central de Colombia, con autonomía administrativa, patrimonial y técnica (artículo 371).",
     "choices": [
       {
         "text": "Un ministerio",
@@ -1431,8 +1431,8 @@
     "text": "La función principal del Banco de la República es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su misión es controlar la inflación.",
+    "explanation": "El artículo 373 asigna al Banco de la República la función de mantener el poder adquisitivo de la moneda, es decir, controlar la inflación.",
     "choices": [
       {
         "text": "Prestar dinero al gobierno",
@@ -1462,8 +1462,8 @@
     "text": "Las Corporaciones Autónomas Regionales se encargan de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Las CAR administran los recursos naturales en su jurisdicción.",
+    "explanation": "Las Corporaciones Autónomas Regionales (CAR) son las autoridades ambientales encargadas de administrar el medio ambiente y los recursos naturales renovables en su territorio.",
     "choices": [
       {
         "text": "La educación",
@@ -1493,8 +1493,8 @@
     "text": "La Comisión Nacional del Servicio Civil protege:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Vela por los concursos y la carrera administrativa.",
+    "explanation": "La Comisión Nacional del Servicio Civil administra y vigila la carrera administrativa, protegiendo el sistema de mérito en el empleo público (artículo 130).",
     "choices": [
       {
         "text": "Los derechos laborales privados",
@@ -1524,8 +1524,8 @@
     "text": "La Constitución puede ser reformada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Piensa en quién hace las leyes: también puede reformar la Carta mediante actos legislativos.",
+    "explanation": "Según el artículo 374, la Constitución puede ser reformada por el Congreso (mediante acto legislativo), por una Asamblea Constituyente o por el pueblo mediante referendo. La Corte Constitucional la interpreta y guarda, pero no la reforma.",
     "choices": [
       {
         "text": "Solo el Presidente",
@@ -1534,12 +1534,12 @@
       },
       {
         "text": "El Congreso mediante acto legislativo",
-        "is_correct": false,
+        "is_correct": true,
         "order": 2
       },
       {
         "text": "Solo la Corte Constitucional",
-        "is_correct": true,
+        "is_correct": false,
         "order": 3
       },
       {
@@ -1555,8 +1555,8 @@
     "text": "Un acto legislativo requiere:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El doble de los debates de una ley ordinaria, repartidos en dos períodos.",
+    "explanation": "Un acto legislativo requiere 8 debates: dos vueltas de 4 debates cada una, en períodos ordinarios consecutivos (artículo 375).",
     "choices": [
       {
         "text": "4 debates",
@@ -1586,8 +1586,8 @@
     "text": "También se puede reformar la Constitución por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Además del Congreso, existen dos vías en las que participa directamente el pueblo.",
+    "explanation": "El artículo 374 prevé tres vías de reforma: el Congreso, una Asamblea Constituyente o el pueblo mediante referendo.",
     "choices": [
       {
         "text": "Decreto presidencial",
@@ -1617,8 +1617,8 @@
     "text": "La acción pública de inconstitucionalidad puede ser interpuesta por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se llama 'pública' precisamente porque no exige ser abogado ni funcionario.",
+    "explanation": "Cualquier ciudadano puede interponer la acción pública de inconstitucionalidad contra leyes o decretos con fuerza de ley (artículo 241).",
     "choices": [
       {
         "text": "Solo abogados",
@@ -1648,8 +1648,8 @@
     "text": "Las sentencias de la Corte Constitucional:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Contra ellas no procede ningún recurso.",
+    "explanation": "Las sentencias de la Corte Constitucional hacen tránsito a cosa juzgada constitucional: son definitivas y de obligatorio cumplimiento (artículo 243).",
     "choices": [
       {
         "text": "Pueden ser apeladas",
@@ -1679,8 +1679,8 @@
     "text": "Los estados de excepción son:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Son tres: uno externo, uno interno y uno económico-social.",
+    "explanation": "Los artículos 212 a 215 regulan los tres estados de excepción: guerra exterior, conmoción interior y emergencia económica, social y ecológica.",
     "choices": [
       {
         "text": "Solo guerra exterior",
@@ -1710,8 +1710,8 @@
     "text": "El estado de guerra exterior lo declara:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "No basta la firma presidencial: se requiere la de todo el gabinete.",
+    "explanation": "El estado de guerra exterior lo declara el Presidente con la firma de todos los ministros, y en principio requiere autorización previa del Senado (artículo 212).",
     "choices": [
       {
         "text": "Solo el Presidente",
@@ -1741,8 +1741,8 @@
     "text": "El estado de conmoción interior puede durar inicialmente:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Tres meses, prorrogables dos veces.",
+    "explanation": "El estado de conmoción interior se declara hasta por 90 días, prorrogable por dos períodos iguales; la segunda prórroga requiere concepto del Senado (artículo 213).",
     "choices": [
       {
         "text": "30 días",
@@ -1772,8 +1772,8 @@
     "text": "El estado de emergencia puede declararse por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un mes, hasta tres veces al año.",
+    "explanation": "El estado de emergencia puede declararse por períodos de hasta 30 días, sin que sumen más de 90 días al año (artículo 215).",
     "choices": [
       {
         "text": "15 días",
@@ -1803,8 +1803,8 @@
     "text": "Durante los estados de excepción:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ni siquiera en las crisis más graves se tocan las garantías esenciales.",
+    "explanation": "Incluso en los estados de excepción no pueden suspenderse los derechos humanos ni las libertades fundamentales (artículo 214).",
     "choices": [
       {
         "text": "Se suspende la Constitución",
@@ -1834,8 +1834,8 @@
     "text": "Los decretos de estados de excepción tienen:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Rigen como leyes, pero solo temporalmente.",
+    "explanation": "Los decretos legislativos de los estados de excepción tienen fuerza de ley solo mientras dure el estado, y están sujetos a control automático de la Corte Constitucional.",
     "choices": [
       {
         "text": "Vigencia permanente",
@@ -1865,8 +1865,8 @@
     "text": "¿Qué artículo de la Constitución establece que Colombia es un Estado Social de Derecho?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el primer artículo de toda la Carta.",
+    "explanation": "El artículo 1 de la Constitución de 1991 define a Colombia como un Estado social de derecho.",
     "choices": [
       {
         "text": "Artículo 5",
@@ -1896,8 +1896,8 @@
     "text": "La tutela protege derechos:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los mismos que protege el artículo 86.",
+    "explanation": "La acción de tutela protege exclusivamente los derechos fundamentales; para los colectivos existen las acciones populares.",
     "choices": [
       {
         "text": "Económicos",
@@ -1927,8 +1927,8 @@
     "text": "¿Cuántos años dura el período de un alcalde en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo período de gobernadores y congresistas.",
+    "explanation": "Los alcaldes en Colombia son elegidos por voto popular para períodos de 4 años.",
     "choices": [
       {
         "text": "3 años",
@@ -1958,8 +1958,8 @@
     "text": "¿Qué organismo tiene la función de acusar ante el Senado al Presidente?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La cámara baja acusa; la cámara alta juzga.",
+    "explanation": "La Cámara de Representantes acusa ante el Senado al Presidente cuando hubiere causas constitucionales (artículo 178).",
     "choices": [
       {
         "text": "La Corte Suprema",
@@ -1989,8 +1989,8 @@
     "text": "El derecho a la doble nacionalidad en Colombia está:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El artículo 96 dice que nadie pierde la nacionalidad colombiana por adquirir otra.",
+    "explanation": "La Constitución de 1991 permite la doble nacionalidad: la calidad de colombiano no se pierde por adquirir otra nacionalidad (artículo 96).",
     "choices": [
       {
         "text": "Prohibido",
@@ -2020,8 +2020,8 @@
     "text": "¿Cuál es la edad mínima para ser elegido Presidente de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la misma edad mínima que para ser senador.",
+    "explanation": "Para ser Presidente se requiere ser colombiano de nacimiento, ciudadano en ejercicio y mayor de 30 años (artículo 191).",
     "choices": [
       {
         "text": "25 años",
@@ -2051,8 +2051,8 @@
     "text": "La revocatoria del mandato es un mecanismo que aplica para:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Solo aplica a mandatarios territoriales elegidos por voto popular.",
+    "explanation": "La revocatoria del mandato aplica únicamente para gobernadores y alcaldes, según la Ley 134 de 1994 y la Ley 1757 de 2015.",
     "choices": [
       {
         "text": "Presidente y Vicepresidente",
@@ -2082,8 +2082,8 @@
     "text": "¿Cuántos magistrados tiene la Corte Suprema de Justicia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un número impar, poco mayor a veinte.",
+    "explanation": "La Corte Suprema de Justicia está integrada por 23 magistrados.",
     "choices": [
       {
         "text": "23 magistrados",
@@ -2113,8 +2113,8 @@
     "text": "La iniciativa legislativa puede ser ejercida por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "No es exclusiva de una sola institución: hasta los ciudadanos pueden presentar proyectos.",
+    "explanation": "Pueden presentar proyectos de ley el Gobierno, los congresistas y los ciudadanos (iniciativa popular), entre otros (artículos 154-155).",
     "choices": [
       {
         "text": "Solo el Gobierno",
@@ -2144,8 +2144,8 @@
     "text": "¿Qué porcentaje del censo electoral se requiere para convocar un referendo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el mismo porcentaje del artículo 155 para la iniciativa popular ante el Congreso.",
+    "explanation": "Un referendo de iniciativa ciudadana requiere el respaldo de al menos el 5% del censo electoral vigente.",
     "choices": [
       {
         "text": "3%",
@@ -2175,8 +2175,8 @@
     "text": "El Fiscal General de la Nación es elegido por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La máxima corte de la justicia ordinaria, de terna presidencial.",
+    "explanation": "El Fiscal General de la Nación es elegido por la Corte Suprema de Justicia, de terna enviada por el Presidente (artículo 249).",
     "choices": [
       {
         "text": "El Presidente",
@@ -2206,8 +2206,8 @@
     "text": "Los estados de excepción en Colombia son:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Uno externo, uno interno y uno económico-social.",
+    "explanation": "Los tres estados de excepción son: guerra exterior, conmoción interior y emergencia económica, social y ecológica (artículos 212-215).",
     "choices": [
       {
         "text": "Guerra exterior, conmoción interior, emergencia",
@@ -2237,8 +2237,8 @@
     "text": "¿Cuál es el quórum mínimo para sesionar en el Congreso?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Para deliberar basta menos de la mitad; para decidir sí se exige mayoría.",
+    "explanation": "El quórum deliberatorio del Congreso es de una cuarta parte de los miembros; para decidir se requiere la mayoría de los integrantes (artículo 145).",
     "choices": [
       {
         "text": "La mitad más uno",
@@ -2268,8 +2268,8 @@
     "text": "El Banco de la República tiene como función principal:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Controlar la inflación es su mandato constitucional.",
+    "explanation": "El artículo 373 encarga al Banco de la República mantener la capacidad adquisitiva de la moneda.",
     "choices": [
       {
         "text": "Prestar dinero al Gobierno",
@@ -2299,8 +2299,8 @@
     "text": "¿Quién nombra al Procurador General de la Nación?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lo elige la cámara alta.",
+    "explanation": "El Procurador General es elegido por el Senado para un período de cuatro años (artículo 276).",
     "choices": [
       {
         "text": "El Presidente",
@@ -2330,8 +2330,8 @@
     "text": "La acción popular protege:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Protege intereses que pertenecen a toda la comunidad, como el ambiente o el espacio público.",
+    "explanation": "Las acciones populares (artículo 88) protegen los derechos e intereses colectivos, como el ambiente, el espacio público y la moralidad administrativa.",
     "choices": [
       {
         "text": "Derechos fundamentales",
@@ -2361,8 +2361,8 @@
     "text": "¿Cuántos debates requiere un proyecto de ley para ser aprobado?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dos en comisión y dos en plenaria.",
+    "explanation": "Un proyecto de ley ordinaria requiere 4 debates: uno en la comisión y otro en la plenaria de cada cámara.",
     "choices": [
       {
         "text": "2 debates",
@@ -2392,8 +2392,8 @@
     "text": "¿Cuál es el mecanismo judicial idóneo para proteger de manera inmediata los derechos fundamentales cuando estos son amenazados por el Estado o un tercero?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La protección judicial de los derechos fundamentales se realiza a través de la acción de tutela, la cual es un procedimiento especial, rápido y preferente",
+    "hint": "Es el mecanismo del artículo 86, de trámite preferente y sumario.",
+    "explanation": "La acción de tutela es el mecanismo preferente y sumario para la protección inmediata de los derechos fundamentales frente a autoridades o particulares.",
     "choices": [
       {
         "text": "Acción de Cumplimiento",
@@ -2423,8 +2423,8 @@
     "text": "¿Qué cantidad mínima de personas se requiere para ejercer una Acción de Grupo con el fin de reparar un daño causado?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Para ejercer la acción de grupo se requiere un conjunto de mínimo 20 personas a las que se les haya causado el daño",
+    "hint": "Es el mismo número mínimo que exige la ley para conformar el grupo afectado.",
+    "explanation": "La acción de grupo exige un conjunto de al menos 20 personas que hayan sufrido un daño común (Ley 472 de 1998).",
     "choices": [
       {
         "text": "10 personas",
@@ -2454,8 +2454,8 @@
     "text": "¿Cuál es el término establecido por la Ley 1755 de 2015 para que la administración resuelva consultas en relación con las materias a su cargo mediante el derecho de petición?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Ley 1755 de 2015 estableció un término de 30 días hábiles para consultas en relación con las materias a cargo",
+    "hint": "Las consultas tienen el plazo más largo del derecho de petición: un mes.",
+    "explanation": "La Ley 1755 de 2015 fija 30 días hábiles para resolver consultas; las peticiones generales se resuelven en 15 y las de información en 10.",
     "choices": [
       {
         "text": "10 días hábiles",
@@ -2485,8 +2485,8 @@
     "text": "¿Quién es el encargado de convocar al pueblo en un plebiscito para apoyar o rechazar una decisión del Ejecutivo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El plebiscito es un mecanismo de participación donde el pueblo es convocado por el Presidente de la República",
+    "hint": "Solo el jefe del Ejecutivo puede convocarlo, pues se trata de respaldar o rechazar sus políticas.",
+    "explanation": "El plebiscito es convocado por el Presidente de la República, con firma de todos los ministros y concepto previo del Congreso, para que el pueblo apoye o rechace una decisión del Ejecutivo.",
     "choices": [
       {
         "text": "El Congreso de la República",
@@ -2516,8 +2516,8 @@
     "text": "¿Qué porcentaje de firmas se requiere para sustentar la solicitud de revocatoria del mandato de un gobernador o alcalde?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Se debe cumplir con el porcentaje de firmas mínimo requerido, el cual debe ser superior o igual al 40% de los votos que obtuvo el elegido",
+    "hint": "Es un porcentaje calculado sobre los votos que obtuvo el mandatario, no sobre el censo.",
+    "explanation": "La Ley 1757 de 2015 exige firmas equivalentes al 40% de los votos obtenidos por el gobernador o alcalde para solicitar la revocatoria.",
     "choices": [
       {
         "text": "30% de los votos obtenidos",
@@ -2547,8 +2547,8 @@
     "text": "¿Qué corporación pública representa a la Rama Legislativa y tiene la función de reformar la Constitución y hacer las leyes?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Rama Legislativa está representada por una corporación pública colegiada de elección popular denominada Congreso de la República",
+    "hint": "Es bicameral y sus actos reformatorios se llaman actos legislativos.",
+    "explanation": "El Congreso de la República representa la Rama Legislativa: reforma la Constitución, hace las leyes y ejerce control político (artículo 114).",
     "choices": [
       {
         "text": "El Consejo de Estado",
@@ -2578,8 +2578,8 @@
     "text": "¿Cuál es el máximo órgano de control fiscal del Estado colombiano encargado de vigilar el buen uso de los recursos públicos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Contraloría General de la República es el máximo órgano de control fiscal del estado colombiano",
+    "hint": "Su nombre viene de 'contar' las cuentas públicas.",
+    "explanation": "La Contraloría General de la República es el máximo órgano de control fiscal: vigila la gestión de los recursos públicos (artículo 267).",
     "choices": [
       {
         "text": "La Procuraduría General de la Nación",
@@ -2609,8 +2609,8 @@
     "text": "¿Qué entidad tiene como funciones básicas regular la moneda, los cambios internacionales y el crédito?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El Banco de la República es la entidad encargada de ejercer las funciones de banca central, incluyendo regular la moneda, los cambios internacionales y el crédito",
+    "hint": "Es la banca central, dirigida por su Junta Directiva.",
+    "explanation": "El Banco de la República regula la moneda, los cambios internacionales y el crédito, y emite la moneda legal (artículo 371).",
     "choices": [
       {
         "text": "La Comisión Nacional del Servicio Civil",
@@ -2640,8 +2640,8 @@
     "text": "¿Qué acción constitucional tutela la libertad personal cuando alguien es privado de la libertad con violación de garantías?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El habeas corpus es un derecho fundamental y una acción constitucional que tutela la libertad personal cuando alguien es privado de la libertad con violación de las garantías",
+    "hint": "Su nombre en latín significa 'que tengas el cuerpo'.",
+    "explanation": "El habeas corpus (artículo 30) protege a quien es privado de la libertad con violación de las garantías; se resuelve en 36 horas.",
     "choices": [
       {
         "text": "Acción de Tutela",
@@ -2671,8 +2671,8 @@
     "text": "¿Quién simboliza la unidad nacional y actúa como Jefe de Estado, Jefe de Gobierno y suprema autoridad administrativa?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Rama Ejecutiva está en cabeza del presidente de la república, quién simboliza la unidad nacional, actúa como jefe de Estado, jefe de Gobierno y suprema autoridad administrativa",
+    "hint": "El artículo 188 dice que simboliza la unidad nacional.",
+    "explanation": "El Presidente de la República simboliza la unidad nacional y es Jefe de Estado, Jefe de Gobierno y suprema autoridad administrativa (artículos 115 y 188).",
     "choices": [
       {
         "text": "El Presidente del Senado",
@@ -2702,8 +2702,8 @@
     "text": "¿Qué significa que Colombia sea un Estado social de derecho en relación con los derechos humanos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El principio de Estado social de derecho significa que el Estado asegura la efectividad de los derechos humanos, respetándolos, protegiéndolos de intromisiones de terceros y garantizándolos a través de autoridades públicas",
+    "hint": "La clave está en tres verbos: respetar, proteger y garantizar.",
+    "explanation": "En un Estado social de derecho el Estado no solo reconoce los derechos humanos: debe respetarlos, protegerlos y garantizar su efectividad (artículos 1 y 2).",
     "choices": [
       {
         "text": "Significa que el Estado asegura la efectividad de los derechos humanos, respetándolos, protegiéndolos y garantizándolos",
@@ -2733,8 +2733,8 @@
     "text": "¿En qué consiste la descentralización por colaboración?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La descentralización por colaboración se presenta cuando personas privadas ejercen funciones administrativas, como por ejemplo las Cámaras de Comercio y la Federación Nacional de Cafeteros",
+    "hint": "Ocurre cuando particulares cumplen funciones públicas, como las cámaras de comercio o los notarios.",
+    "explanation": "La descentralización por colaboración se da cuando personas o entidades privadas ejercen funciones administrativas, como las cámaras de comercio o los curadores urbanos.",
     "choices": [
       {
         "text": "En el otorgamiento de competencias administrativas a los departamentos y municipios",
@@ -2764,8 +2764,8 @@
     "text": "¿A través de qué mecanismo se expresa la autoridad que reside en el pueblo según la soberanía popular?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La soberanía popular hace referencia a que la autoridad reside exclusivamente en el pueblo y se expresa a través del voto, permitiendo tomar decisiones de interés público y elegir representantes",
+    "hint": "Es el mecanismo de participación más básico y frecuente.",
+    "explanation": "La soberanía popular se expresa principalmente a través del voto, con el cual el pueblo elige a sus representantes y decide en los mecanismos de participación.",
     "choices": [
       {
         "text": "A través de las encuestas de opinión",
@@ -2795,8 +2795,8 @@
     "text": "¿Qué ocurre en caso de incompatibilidad entre la Constitución y otras normas jurídicas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Debido al principio de supremacía de la Constitución, que la señala como norma de normas, en caso de incompatibilidad entre ella y otras normas jurídicas, prima la aplicación de las disposiciones constitucionales",
+    "hint": "El artículo 4 dice que la Constitución es 'norma de normas'.",
+    "explanation": "El artículo 4 establece que la Constitución es norma de normas: en caso de incompatibilidad, priman las disposiciones constitucionales.",
     "choices": [
       {
         "text": "Se aplica la norma más reciente aprobada por el Congreso",
@@ -2826,8 +2826,8 @@
     "text": "¿Cuál es la posición del ordenamiento jurídico colombiano frente a la pena de muerte?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El derecho a la vida es inviolable y, por lo tanto, en el ordenamiento jurídico colombiano la pena de muerte no es permitida en el territorio nacional",
+    "hint": "El artículo 11 la prohíbe sin excepciones.",
+    "explanation": "El artículo 11 dispone que el derecho a la vida es inviolable y que no habrá pena de muerte en Colombia, sin excepción alguna.",
     "choices": [
       {
         "text": "Es permitida solo en casos de traición a la patria",
@@ -2857,8 +2857,8 @@
     "text": "¿A qué hace referencia la dimensión formal del derecho a la igualdad?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La dimensión formal del derecho a la igualdad implica que la legalidad debe ser aplicada en condiciones de equidad a todos los sujetos contra quienes se dirige",
+    "hint": "Se refiere a la igualdad 'ante la ley', no a la igualdad material.",
+    "explanation": "La dimensión formal de la igualdad (artículo 13) exige que la ley se aplique en condiciones de equidad a todas las personas, sin privilegios ni exclusiones.",
     "choices": [
       {
         "text": "A garantizar la paridad de oportunidades económicas entre los individuos",
@@ -2888,8 +2888,8 @@
     "text": "¿Qué protege el derecho al libre desarrollo de la personalidad?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Este derecho protege la capacidad y autonomía de las personas para tomar decisiones que les permitan llevar su vida de acuerdo con sus creencias y definir sus opciones vitales",
+    "hint": "Es el derecho a decidir el propio proyecto de vida sin imposiciones.",
+    "explanation": "El artículo 16 garantiza el libre desarrollo de la personalidad: cada persona define autónomamente sus opciones vitales, sin más límites que los derechos de los demás y el orden jurídico.",
     "choices": [
       {
         "text": "La capacidad de las personas para definir autónomamente sus opciones vitales",
@@ -2919,8 +2919,8 @@
     "text": "¿Cuál es una de las garantías establecidas para la libertad de conciencia en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Para garantizar la libertad de conciencia, se establece que nadie será obligado a actuar contra su conciencia",
+    "hint": "Nadie puede ser forzado a actuar contra sus convicciones.",
+    "explanation": "El artículo 18 garantiza la libertad de conciencia: nadie será molestado por sus convicciones ni obligado a actuar contra su conciencia.",
     "choices": [
       {
         "text": "Que todas las personas deben revelar sus convicciones al Estado",
@@ -2950,8 +2950,8 @@
     "text": "¿Cuándo se considera vulnerado el derecho a la libertad de locomoción?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Aunque no es absoluto, este derecho se vulnera cuando se impide el tránsito de una persona en espacios de carácter público que deben ser accesibles para todos",
+    "hint": "La clave es el carácter público del espacio por el que se transita.",
+    "explanation": "El derecho de locomoción (artículo 24) se vulnera cuando se impide a una persona transitar libremente por espacios públicos; no aplica a propiedades privadas ni a requisitos legales como el pasaporte.",
     "choices": [
       {
         "text": "Cuando se cobra peaje en una vía concesionada",
@@ -2981,8 +2981,8 @@
     "text": "¿Cómo se define el derecho al trabajo en relación con la elección de la actividad?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El trabajo consiste en la realización de una actividad libremente escogida por la persona, dedicando a ella su esfuerzo intelectual o material",
+    "hint": "La libertad de escoger profesión u oficio es parte esencial de este derecho.",
+    "explanation": "El derecho al trabajo (artículos 25 y 26) implica realizar una actividad libremente escogida; nadie puede ser obligado a un empleo determinado.",
     "choices": [
       {
         "text": "Como la obligación de aceptar cualquier empleo ofrecido por el Estado",
@@ -3012,8 +3012,8 @@
     "text": "¿Qué establece el artículo 39 de la Constitución respecto a la constitución de sindicatos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El artículo 39 dispone que todos los trabajadores y empleadores tienen derecho a constituir asociaciones o sindicatos sin la intervención del Estado",
+    "hint": "La clave es 'sin intervención del Estado' para su constitución.",
+    "explanation": "El artículo 39 garantiza a trabajadores y empleadores el derecho a constituir sindicatos o asociaciones sin intervención del Estado; su registro basta para el reconocimiento jurídico.",
     "choices": [
       {
         "text": "Que se requiere permiso previo del Ministerio de Trabajo",
@@ -3032,6 +3032,192 @@
       },
       {
         "text": "Que los empleadores no tienen derecho a asociarse",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0099",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿En cuál de estos casos se está vulnerando el derecho fundamental al libre desarrollo de la personalidad?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "Este derecho protege las decisiones sobre la propia apariencia y proyecto de vida.",
+    "explanation": "Destituir a alguien por su apariencia personal (como un tatuaje) vulnera el libre desarrollo de la personalidad (artículo 16); los otros casos vulneran la igualdad, la libertad de expresión y el debido proceso.",
+    "choices": [
+      {
+        "text": "Un funcionario público es destituido por tener un tatuaje",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Un niño es discriminado en el colegio por pertenecer a una etnia",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "A un periodista le prohíben publicar una investigación",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una persona es detenida sin orden judicial ni flagrancia",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0100",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿En cuál de estos casos se está vulnerando el derecho fundamental a la igualdad?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "El artículo 13 prohíbe la discriminación por razones de raza u origen.",
+    "explanation": "Discriminar a un niño por su etnia vulnera el derecho a la igualdad (artículo 13); los demás casos afectan otros derechos como el libre desarrollo de la personalidad, la intimidad y la libertad de locomoción.",
+    "choices": [
+      {
+        "text": "Un niño es discriminado en el colegio por pertenecer a una etnia",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Un funcionario es destituido por tener un tatuaje",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Una empresa revisa el correo personal de un empleado sin autorización",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "A una persona se le impide salir de su barrio sin justificación legal",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0101",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿En cuál de estos casos se está vulnerando la libertad de conciencia?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "El artículo 18 protege a quien no quiere actuar contra sus convicciones.",
+    "explanation": "Obligar a una persona a jurar en contra de sus creencias vulnera la libertad de conciencia (artículo 18): nadie puede ser obligado a actuar contra sus convicciones ni a revelarlas.",
+    "choices": [
+      {
+        "text": "Un empleado es obligado a participar en un acto religioso contrario a sus creencias",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Un colegio exige el uso de uniforme a sus estudiantes",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Una alcaldía cobra una multa por arrojar basura a la calle",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Una empresa exige experiencia laboral para un cargo",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0102",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿En cuál de estos casos se está vulnerando la libertad de locomoción?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "El artículo 24 garantiza circular libremente por el territorio y sus espacios públicos.",
+    "explanation": "Impedir sin fundamento legal que una persona transite por una vía pública vulnera la libertad de locomoción (artículo 24); el peaje, el control migratorio y las normas de tránsito son restricciones legítimas.",
+    "choices": [
+      {
+        "text": "A una persona se le impide sin justificación legal transitar por una vía pública",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Se cobra peaje en una carretera concesionada",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Se exige pasaporte para viajar a otro país",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Se impone un pico y placa vehicular en una ciudad",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0103",
+    "subcategory": "DERECHOS_Y_LIBERTADES",
+    "text": "¿En cuál de estos casos se está vulnerando el derecho de asociación sindical?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "El artículo 39 protege la creación de sindicatos sin represalias.",
+    "explanation": "Despedir a trabajadores por fundar un sindicato vulnera el derecho de asociación sindical (artículo 39); exigir requisitos legales de registro o votar la junta directiva son actuaciones normales de la vida sindical.",
+    "choices": [
+      {
+        "text": "Una empresa despide a los trabajadores que fundaron un sindicato",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "El sindicato registra sus estatutos ante el Ministerio de Trabajo",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Los afiliados eligen democráticamente su junta directiva",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "La empresa negocia un pliego de peticiones con el sindicato",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CON-0104",
+    "subcategory": "MECANISMOS_DE_PROTECCION",
+    "text": "A una persona le niegan sin razón válida una cirugía urgente que compromete su vida. ¿Qué mecanismo debe usar para proteger de inmediato sus derechos fundamentales?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "Es el mecanismo del artículo 86, que se resuelve en 10 días.",
+    "explanation": "La acción de tutela procede para la protección inmediata de derechos fundamentales como la vida y la salud; se resuelve en máximo 10 días (artículo 86).",
+    "choices": [
+      {
+        "text": "La acción de tutela",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "La acción popular",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "La acción de grupo",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "El derecho de petición",
         "is_correct": false,
         "order": 4
       }

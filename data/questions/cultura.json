@@ -5,8 +5,8 @@
     "text": "¿Cuál es el nombre oficial actual del país?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El nombre que rige desde 1886.",
+    "explanation": "El nombre oficial del país es República de Colombia, adoptado definitivamente con la Constitución de 1886.",
     "choices": [
       {
         "text": "Nueva Granada",
@@ -36,8 +36,8 @@
     "text": "¿En qué año Colombia adoptó definitivamente su nombre actual de \"República de Colombia\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El año de la Constitución de Núñez.",
+    "explanation": "Con la Constitución de 1886 el país retomó definitivamente el nombre de República de Colombia.",
     "choices": [
       {
         "text": "1819",
@@ -67,8 +67,8 @@
     "text": "¿Quién dio el nombre de \"República de Colombia\" el 15 de febrero de 1819?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Libertador, en el Congreso de Angostura.",
+    "explanation": "Simón Bolívar dio el nombre de República de Colombia el 15 de febrero de 1819 en el Congreso de Angostura.",
     "choices": [
       {
         "text": "Francisco de Paula Santander",
@@ -98,8 +98,8 @@
     "text": "El nombre de Colombia es un homenaje a:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Honra al navegante que llegó a América en 1492.",
+    "explanation": "El nombre de Colombia es un homenaje a Cristóbal Colón, el navegante que descubrió América para Europa.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -129,8 +129,8 @@
     "text": "¿Cuáles son los colores de la bandera de Colombia en orden de arriba hacia abajo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La franja más ancha va primero.",
+    "explanation": "La bandera tiene tres franjas horizontales: amarillo (mitad superior), azul y rojo.",
     "choices": [
       {
         "text": "Rojo, amarillo, azul",
@@ -160,8 +160,8 @@
     "text": "En la bandera nacional, el color amarillo representa:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El color de la abundancia del suelo colombiano.",
+    "explanation": "El amarillo representa la riqueza del suelo colombiano, así como la armonía y la justicia.",
     "choices": [
       {
         "text": "El cielo",
@@ -191,8 +191,8 @@
     "text": "¿Qué representa el color azul en la bandera?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El color de las aguas y del firmamento.",
+    "explanation": "El azul simboliza el cielo, los ríos y los dos océanos que bañan a Colombia.",
     "choices": [
       {
         "text": "La sangre derramada",
@@ -222,8 +222,8 @@
     "text": "El color rojo de la bandera simboliza:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Recuerda el sacrificio de los próceres.",
+    "explanation": "El rojo simboliza la sangre derramada por los libertadores en las luchas de independencia.",
     "choices": [
       {
         "text": "Los ríos",
@@ -253,8 +253,8 @@
     "text": "¿Quién propuso los colores de la bandera basándose en la teoría de los colores de Goethe?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Precursor venezolano, inspirado en Goethe.",
+    "explanation": "Francisco de Miranda concibió el tricolor inspirándose, según la tradición, en la teoría de los colores de Goethe.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -284,8 +284,8 @@
     "text": "¿En qué fecha se declaró oficialmente la bandera actual mediante la Ley 124?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un 13 de julio, bajo el gobierno de Núñez.",
+    "explanation": "La bandera actual fue oficializada mediante la Ley 124 del 13 de julio de 1887.",
     "choices": [
       {
         "text": "15 de febrero de 1819",
@@ -315,8 +315,8 @@
     "text": "¿Quién diseñó el escudo de armas de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Hombre de las Leyes, durante su presidencia.",
+    "explanation": "El escudo de armas fue adoptado en 1834, durante la presidencia de Francisco de Paula Santander.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -346,8 +346,8 @@
     "text": "¿En qué año fue diseñado el escudo nacional?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Durante la presidencia de Santander, en los años treinta del siglo XIX.",
+    "explanation": "El escudo nacional fue diseñado y adoptado en 1834.",
     "choices": [
       {
         "text": "1810",
@@ -377,8 +377,8 @@
     "text": "¿Qué ave aparece en el escudo nacional?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La misma ave nacional.",
+    "explanation": "En la cima del escudo aparece el cóndor de los Andes, símbolo de libertad y soberanía.",
     "choices": [
       {
         "text": "Águila",
@@ -408,8 +408,8 @@
     "text": "¿Cuál es el lema nacional que aparece en el escudo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dos palabras: una sobre la libertad, otra sobre la disciplina.",
+    "explanation": "El lema nacional que sostiene el cóndor en el escudo es 'Libertad y Orden'.",
     "choices": [
       {
         "text": "\"Unidad y Libertad\"",
@@ -439,8 +439,8 @@
     "text": "En la franja superior del escudo, ¿qué fruto aparece?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El fruto que da nombre a la Nueva Granada.",
+    "explanation": "En la franja superior del escudo aparece una granada de oro abierta, que evoca la Nueva Granada, flanqueada por dos cornucopias.",
     "choices": [
       {
         "text": "Manzana de oro",
@@ -470,8 +470,8 @@
     "text": "¿Qué simboliza el gorro frigio en el escudo nacional?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El gorro rojo de los esclavos libertos romanos.",
+    "explanation": "El gorro frigio, en la franja central sobre una lanza, simboliza la libertad.",
     "choices": [
       {
         "text": "La riqueza",
@@ -501,8 +501,8 @@
     "text": "Los dos buques en la franja inferior del escudo representan:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Colombia tiene salida a dos mares.",
+    "explanation": "Los dos buques con velas desplegadas representan los dos océanos que bañan a Colombia: el Caribe (Atlántico) y el Pacífico.",
     "choices": [
       {
         "text": "La marina de guerra",
@@ -532,8 +532,8 @@
     "text": "¿Quién escribió la letra del himno nacional?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un presidente que también era poeta.",
+    "explanation": "La letra del Himno Nacional fue escrita por el presidente Rafael Núñez.",
     "choices": [
       {
         "text": "Oreste Sindici",
@@ -563,8 +563,8 @@
     "text": "¿Quién compuso la música del himno nacional?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un maestro italiano radicado en Bogotá.",
+    "explanation": "La música del Himno Nacional fue compuesta por el italiano Oreste Síndici.",
     "choices": [
       {
         "text": "Rafael Núñez",
@@ -594,8 +594,8 @@
     "text": "¿En qué año fue compuesto el himno nacional?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo año del Concordato, un año después de la Constitución centralista.",
+    "explanation": "El Himno Nacional fue compuesto y estrenado en 1887; fue oficializado por ley en 1920.",
     "choices": [
       {
         "text": "1819",
@@ -625,8 +625,8 @@
     "text": "¿Cuál es el ave nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El ave del escudo, la de mayor envergadura del continente.",
+    "explanation": "El cóndor de los Andes es el ave nacional de Colombia; puede superar los 3 metros de envergadura.",
     "choices": [
       {
         "text": "El águila",
@@ -656,8 +656,8 @@
     "text": "¿Cuál es la flor nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La flor de mayo, orgullo de la diversidad nacional.",
+    "explanation": "La orquídea Cattleya trianae es la flor nacional de Colombia, país con la mayor diversidad de orquídeas del mundo.",
     "choices": [
       {
         "text": "La rosa",
@@ -687,8 +687,8 @@
     "text": "¿Cuál es el nombre científico de la flor nacional?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su apellido científico honra al botánico José Jerónimo Triana.",
+    "explanation": "La flor nacional es la Cattleya trianae, llamada así en honor al botánico colombiano José Jerónimo Triana.",
     "choices": [
       {
         "text": "Rosa colombiana",
@@ -718,8 +718,8 @@
     "text": "¿Cuál es el árbol nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El árbol más alto del mundo entre las palmas, del Valle de Cocora.",
+    "explanation": "La palma de cera del Quindío (Ceroxylon quindiuense), que crece en el Valle de Cocora, es el árbol nacional.",
     "choices": [
       {
         "text": "El roble",
@@ -749,8 +749,8 @@
     "text": "¿Cuál es considerado el símbolo cultural de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una artesanía zenú tejida en caña flecha.",
+    "explanation": "El sombrero vueltiao, tejido en caña flecha por el pueblo Zenú, es el símbolo cultural de Colombia por ley.",
     "choices": [
       {
         "text": "El café",
@@ -780,8 +780,8 @@
     "text": "¿Cuál es la moneda oficial de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lleva el mismo nombre que otras monedas latinoamericanas.",
+    "explanation": "La moneda oficial es el peso colombiano, emitido por el Banco de la República.",
     "choices": [
       {
         "text": "El bolívar",
@@ -811,8 +811,8 @@
     "text": "¿cuál es considerado el plato insigne de Bogotá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una sopa de tres papas con guascas.",
+    "explanation": "El ajiaco santafereño, sopa de pollo con tres tipos de papa y guascas, es el plato insigne de Bogotá.",
     "choices": [
       {
         "text": "Bandeja paisa",
@@ -842,8 +842,8 @@
     "text": "¿Qué plato es típico de la región antioqueña?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Frijoles, chicharrón, arepa y mucho más en un solo plato.",
+    "explanation": "La bandeja paisa, con frijoles, arroz, chicharrón, carne molida, chorizo, huevo, arepa y aguacate, es el plato típico de Antioquia.",
     "choices": [
       {
         "text": "Ajiaco",
@@ -873,8 +873,8 @@
     "text": "El sancocho de gallina es un plato típico del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se cocina a fuego de leña en el departamento de la salsa.",
+    "explanation": "El sancocho de gallina es el plato típico del Valle del Cauca.",
     "choices": [
       {
         "text": "Valle del Cauca",
@@ -904,8 +904,8 @@
     "text": "La lechona es un plato tradicional del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cerdo relleno horneado por horas, del departamento de Ibagué.",
+    "explanation": "La lechona, cerdo relleno de arroz, arveja y carne, es el plato tradicional del Tolima.",
     "choices": [
       {
         "text": "Valle del Cauca",
@@ -935,8 +935,8 @@
     "text": "El mote de queso es típico de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una sopa costeña de ñame con queso.",
+    "explanation": "El mote de queso, sopa espesa de ñame con queso costeño, es típico de la Costa Caribe.",
     "choices": [
       {
         "text": "Antioquia",
@@ -966,8 +966,8 @@
     "text": "¿Cuál de estos ingredientes NO se menciona como parte del ajiaco?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El ajiaco es una sopa de papas, no lleva ese acompañante como ingrediente.",
+    "explanation": "El ajiaco lleva pollo, tres tipos de papa y guascas; el arroz no es ingrediente de la sopa (se sirve aparte, como acompañamiento).",
     "choices": [
       {
         "text": "Pollo",
@@ -997,8 +997,8 @@
     "text": "¿En qué ciudad se celebra el Carnaval más famoso de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La Puerta de Oro celebra la fiesta declarada Patrimonio de la Humanidad.",
+    "explanation": "El Carnaval de Barranquilla es el carnaval más famoso de Colombia y Patrimonio Oral e Inmaterial de la Humanidad (UNESCO).",
     "choices": [
       {
         "text": "Cartagena",
@@ -1028,8 +1028,8 @@
     "text": "El Carnaval de Negros y Blancos se celebra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la ciudad sorpresa, cada inicio de año.",
+    "explanation": "El Carnaval de Negros y Blancos, Patrimonio de la Humanidad, se celebra en Pasto del 28 de diciembre al 6 de enero.",
     "choices": [
       {
         "text": "Barranquilla",
@@ -1059,8 +1059,8 @@
     "text": "¿En qué mes se celebra el Carnaval de Barranquilla?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cuarenta días antes de Semana Santa.",
+    "explanation": "El Carnaval de Barranquilla se celebra normalmente en febrero, los cuatro días antes del Miércoles de Ceniza.",
     "choices": [
       {
         "text": "Enero",
@@ -1090,8 +1090,8 @@
     "text": "La Feria de las Flores se celebra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la ciudad de la eterna primavera.",
+    "explanation": "La Feria de las Flores, con su Desfile de Silleteros, se celebra en Medellín.",
     "choices": [
       {
         "text": "Bogotá",
@@ -1121,8 +1121,8 @@
     "text": "¿En qué mes se realiza la Feria de las Flores?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mes de la fiesta silletera.",
+    "explanation": "La Feria de las Flores de Medellín se realiza en agosto.",
     "choices": [
       {
         "text": "Mayo",
@@ -1152,8 +1152,8 @@
     "text": "El Festival Vallenato se celebra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la cuna del acordeón, capital del Cesar.",
+    "explanation": "El Festival de la Leyenda Vallenata se celebra en Valledupar cada abril.",
     "choices": [
       {
         "text": "Barranquilla",
@@ -1183,8 +1183,8 @@
     "text": "El Festival Internacional de Teatro se realiza en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la capital, cada Semana Santa de los años pares.",
+    "explanation": "El Festival Iberoamericano de Teatro, uno de los más grandes del mundo, se realiza en Bogotá.",
     "choices": [
       {
         "text": "Medellín",
@@ -1214,8 +1214,8 @@
     "text": "¿Cada cuántos años se celebra el Festival Iberoamericano de Teatro de Bogotá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En los años pares.",
+    "explanation": "El Festival Iberoamericano de Teatro de Bogotá se celebra cada 2 años.",
     "choices": [
       {
         "text": "Cada año",
@@ -1245,8 +1245,8 @@
     "text": "El Festival de la Leyenda Vallenata rinde homenaje a:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mítico acordeonero que venció al diablo.",
+    "explanation": "El Festival de la Leyenda Vallenata rinde homenaje a Francisco el Hombre, el legendario juglar que según el mito venció al diablo tocando el acordeón.",
     "choices": [
       {
         "text": "Carlos Vives",
@@ -1276,8 +1276,8 @@
     "text": "¿Quién es conocido por sus esculturas voluminosas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El maestro de las figuras 'gordas'.",
+    "explanation": "Fernando Botero es mundialmente famoso por sus pinturas y esculturas de volúmenes exagerados, el 'boterismo'.",
     "choices": [
       {
         "text": "Alejandro Obregón",
@@ -1307,8 +1307,8 @@
     "text": "¿Dónde se encuentra el Museo del Oro?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la capital, con la mayor colección de orfebrería prehispánica del mundo.",
+    "explanation": "El Museo del Oro, del Banco de la República, está en Bogotá y guarda unas 34.000 piezas de orfebrería prehispánica.",
     "choices": [
       {
         "text": "Medellín",
@@ -1338,8 +1338,8 @@
     "text": "¿Cuál es el teatro más antiguo de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre original honra al fundador de Cartagena.",
+    "explanation": "El Teatro Heredia de Cartagena (hoy Teatro Adolfo Mejía) es considerado el teatro más antiguo del país en la tradición de la cartilla.",
     "choices": [
       {
         "text": "Teatro Colón",
@@ -1369,8 +1369,8 @@
     "text": "El Teatro Colón está ubicado en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la capital, frente al Palacio de San Carlos.",
+    "explanation": "El Teatro Colón, principal escenario nacional, está en el centro histórico de Bogotá.",
     "choices": [
       {
         "text": "Cartagena",
@@ -1400,8 +1400,8 @@
     "text": "¿Quién escribió \"Cien años de soledad\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Nobel de Aracataca.",
+    "explanation": "Gabriel García Márquez, 'Gabo', escribió Cien años de soledad (1967), obra cumbre del realismo mágico.",
     "choices": [
       {
         "text": "Jorge Isaacs",
@@ -1431,8 +1431,8 @@
     "text": "¿En qué año Gabriel García Márquez ganó el Premio Nobel de Literatura?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El año del Mundial de España.",
+    "explanation": "García Márquez recibió el Premio Nobel de Literatura en 1982.",
     "choices": [
       {
         "text": "1972",
@@ -1462,8 +1462,8 @@
     "text": "¿Quién escribió \"María\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La novela romántica del Valle del Cauca, escrita en la hacienda El Paraíso.",
+    "explanation": "María (1867), de Jorge Isaacs, es la gran novela romántica de la literatura colombiana.",
     "choices": [
       {
         "text": "Gabriel García Márquez",
@@ -1493,8 +1493,8 @@
     "text": "\"La Vorágine\" fue escrita por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La novela de la selva y las caucherías.",
+    "explanation": "La Vorágine (1924), de José Eustasio Rivera, denuncia la explotación cauchera en la selva amazónica.",
     "choices": [
       {
         "text": "Jorge Isaacs",
@@ -1524,8 +1524,8 @@
     "text": "¿De qué región es originario el vallenato?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La música del acordeón, la caja y la guacharaca.",
+    "explanation": "El vallenato nació en la Costa Caribe, en la región de Valledupar.",
     "choices": [
       {
         "text": "Antioquia",
@@ -1555,8 +1555,8 @@
     "text": "La cumbia es originaria de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El ritmo de tambores y polleras que es madre de muchos otros.",
+    "explanation": "La cumbia es originaria de la Costa Caribe colombiana, fusión de raíces indígenas, africanas y europeas.",
     "choices": [
       {
         "text": "Los Andes",
@@ -1586,8 +1586,8 @@
     "text": "El bambuco es característico de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El ritmo de las montañas, con tiple y bandola.",
+    "explanation": "El bambuco es el aire musical característico de la región Andina.",
     "choices": [
       {
         "text": "La Costa Caribe",
@@ -1617,8 +1617,8 @@
     "text": "El joropo es el baile típico de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El baile del arpa, el cuatro y las maracas.",
+    "explanation": "El joropo es el baile típico de los Llanos Orientales.",
     "choices": [
       {
         "text": "La región Andina",
@@ -1648,8 +1648,8 @@
     "text": "El currulao es una danza del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El ritmo de la marimba de chonta.",
+    "explanation": "El currulao es la danza tradicional del Pacífico colombiano.",
     "choices": [
       {
         "text": "Caribe",
@@ -1679,8 +1679,8 @@
     "text": "¿Cuál es el instrumento principal del vallenato?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Llegó de Europa y se volvió el alma de la música de Valledupar.",
+    "explanation": "El acordeón es el instrumento principal del vallenato, junto con la caja y la guacharaca.",
     "choices": [
       {
         "text": "La guitarra",
@@ -1710,8 +1710,8 @@
     "text": "La gaita es un instrumento típico de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una flauta indígena de los Montes de María.",
+    "explanation": "La gaita es el instrumento típico de la Costa Atlántica, herencia indígena de los Montes de María.",
     "choices": [
       {
         "text": "Los Llanos",
@@ -1741,8 +1741,8 @@
     "text": "¿Cuál es el deporte más popular en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El deporte de la Selección que une al país.",
+    "explanation": "El fútbol es el deporte más popular de Colombia.",
     "choices": [
       {
         "text": "Ciclismo",
@@ -1772,8 +1772,8 @@
     "text": "¿Cuál es considerado el deporte nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se juega con discos metálicos y pólvora.",
+    "explanation": "El tejo o turmequé, de origen muisca, es el deporte nacional de Colombia por la Ley 613 de 2000.",
     "choices": [
       {
         "text": "Fútbol",
@@ -1803,8 +1803,8 @@
     "text": "¿Quiénes son mencionados como ciclistas destacados en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los 'escarabajos' que ganaron el Giro y el Tour.",
+    "explanation": "Nairo Quintana y Egan Bernal son los ciclistas colombianos más destacados de la última década.",
     "choices": [
       {
         "text": "James Rodríguez y Falcao",
@@ -1834,8 +1834,8 @@
     "text": "¿Cuál es la religión predominante en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La religión traída por los españoles.",
+    "explanation": "El catolicismo es la religión predominante en Colombia.",
     "choices": [
       {
         "text": "Protestantismo",
@@ -1865,8 +1865,8 @@
     "text": "¿Qué porcentaje de la población se identifica como católica en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cerca de ocho de cada diez colombianos.",
+    "explanation": "Aproximadamente el 79% de la población colombiana se identifica como católica.",
     "choices": [
       {
         "text": "60%",
@@ -1896,8 +1896,8 @@
     "text": "¿Cuál de estas ciudades es mencionada como Patrimonio de la Humanidad por la UNESCO?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La ciudad amurallada.",
+    "explanation": "Cartagena de Indias fue declarada Patrimonio de la Humanidad por la UNESCO en 1984 por su puerto, fortalezas y conjunto monumental.",
     "choices": [
       {
         "text": "Bogotá",
@@ -1927,8 +1927,8 @@
     "text": "El Parque Nacional Tayrona está ubicado en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En el departamento de Santa Marta.",
+    "explanation": "El Parque Nacional Natural Tayrona está en el departamento del Magdalena, cerca de Santa Marta.",
     "choices": [
       {
         "text": "La Guajira",
@@ -1958,8 +1958,8 @@
     "text": "¿Dónde se encuentra el Santuario de Las Lajas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En Ipiales, sobre un cañón fronterizo con Ecuador.",
+    "explanation": "El Santuario de Las Lajas, basílica neogótica construida sobre el cañón del río Guáitara, está en Ipiales, Nariño.",
     "choices": [
       {
         "text": "Boyacá",
@@ -1989,8 +1989,8 @@
     "text": "Caño Cristales es conocido como:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Sus aguas se tiñen de rojo, amarillo, verde, azul y negro.",
+    "explanation": "Caño Cristales, en la Serranía de la Macarena, es llamado 'el río de los cinco colores' por la planta acuática que tiñe sus aguas.",
     "choices": [
       {
         "text": "El río más largo",
@@ -2020,8 +2020,8 @@
     "text": "¿En qué departamento se encuentra Caño Cristales?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En el departamento de Villavicencio.",
+    "explanation": "Caño Cristales está en la Serranía de la Macarena, departamento del Meta.",
     "choices": [
       {
         "text": "Amazonas",
@@ -2051,8 +2051,8 @@
     "text": "El Eje Cafetero incluye los departamentos de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Tres departamentos pequeños del centro-occidente.",
+    "explanation": "El Eje Cafetero lo conforman Quindío, Caldas y Risaralda, corazón del Paisaje Cultural Cafetero (Patrimonio de la Humanidad).",
     "choices": [
       {
         "text": "Antioquia, Valle y Cauca",
@@ -2082,8 +2082,8 @@
     "text": "Villa de Leyva está ubicada en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un pueblo colonial con una plaza empedrada gigante.",
+    "explanation": "Villa de Leyva, con su famosa Plaza Mayor empedrada, está en Boyacá.",
     "choices": [
       {
         "text": "Cundinamarca",
@@ -2113,8 +2113,8 @@
     "text": "¿Qué ciudad es conocida como \"La Ciudad Amurallada\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Sus murallas la defendieron de los piratas.",
+    "explanation": "Cartagena de Indias es 'La Ciudad Amurallada', por las fortificaciones construidas en la Colonia.",
     "choices": [
       {
         "text": "Santa Marta",
@@ -2144,8 +2144,8 @@
     "text": "El Nevado del Ruiz se encuentra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la cordillera de los grandes volcanes nevados.",
+    "explanation": "El Nevado del Ruiz hace parte de la Cordillera Central, en el Parque Nacional Los Nevados.",
     "choices": [
       {
         "text": "La Sierra Nevada de Santa Marta",
@@ -2175,8 +2175,8 @@
     "text": "¿Cuál es el pico más alto de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Está en la Sierra Nevada de Santa Marta y lleva el nombre del navegante.",
+    "explanation": "El Pico Cristóbal Colón (5.775 m), en la Sierra Nevada de Santa Marta, es el punto más alto de Colombia.",
     "choices": [
       {
         "text": "Nevado del Ruiz",
@@ -2206,8 +2206,8 @@
     "text": "La Ciudad Perdida (Teyuna) se encuentra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La 'Machu Picchu colombiana' de los Tayronas.",
+    "explanation": "Ciudad Perdida o Teyuna, construida por los Tayronas, está en la Sierra Nevada de Santa Marta.",
     "choices": [
       {
         "text": "La Sierra Nevada de Santa Marta",
@@ -2237,8 +2237,8 @@
     "text": "¿Qué isla colombiana es mencionada como destino turístico en el Caribe?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La isla del mar de los siete colores.",
+    "explanation": "San Andrés es el principal destino turístico insular colombiano en el Caribe.",
     "choices": [
       {
         "text": "Gorgona",
@@ -2268,8 +2268,8 @@
     "text": "El desierto de La Tatacoa está en el departamento de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En el departamento del Festival del Bambuco.",
+    "explanation": "El desierto de La Tatacoa está en el Huila, cerca de Villavieja.",
     "choices": [
       {
         "text": "La Guajira",
@@ -2299,8 +2299,8 @@
     "text": "La Catedral de Sal está ubicada en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una iglesia subterránea en una mina de sal.",
+    "explanation": "La Catedral de Sal, excavada en una mina de sal a 180 metros de profundidad, está en Zipaquirá, Cundinamarca.",
     "choices": [
       {
         "text": "Nemocón",
@@ -2330,8 +2330,8 @@
     "text": "El Parque Arqueológico de San Agustín está en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El parque de las estatuas megalíticas, en el sur andino.",
+    "explanation": "El Parque Arqueológico de San Agustín, Patrimonio de la Humanidad, está en el Huila.",
     "choices": [
       {
         "text": "Nariño",
@@ -2361,8 +2361,8 @@
     "text": "¿Cuál es la capital del departamento del Amazonas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El puerto sobre el gran río de Suramérica.",
+    "explanation": "Leticia es la capital del Amazonas.",
     "choices": [
       {
         "text": "Florencia",
@@ -2392,8 +2392,8 @@
     "text": "El Chocó tiene costas sobre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el único departamento con dos litorales.",
+    "explanation": "El Chocó tiene costas sobre el océano Pacífico y el mar Caribe.",
     "choices": [
       {
         "text": "Solo el Pacífico",
@@ -2423,8 +2423,8 @@
     "text": "¿Cuál es el río más importante de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El río que atraviesa el país de sur a norte.",
+    "explanation": "El río Magdalena, de unos 1.540 km, es el río más importante de Colombia.",
     "choices": [
       {
         "text": "Río Cauca",
@@ -2454,8 +2454,8 @@
     "text": "El Archipiélago del Rosario está cerca de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Islas coralinas frente a la ciudad amurallada.",
+    "explanation": "El archipiélago de Islas del Rosario está a unos 45 minutos en lancha de Cartagena.",
     "choices": [
       {
         "text": "Santa Marta",
@@ -2485,8 +2485,8 @@
     "text": "¿En qué mes se celebran las principales festividades de Semana Santa en Popayán?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Depende del calendario lunar de la Pascua.",
+    "explanation": "La Semana Santa de Popayán suele caer en marzo o abril, según el calendario litúrgico.",
     "choices": [
       {
         "text": "Marzo",
@@ -2516,8 +2516,8 @@
     "text": "El Puente de Boyacá es importante porque:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Allí se selló la independencia el 7 de agosto de 1819.",
+    "explanation": "En el Puente de Boyacá se libró la batalla decisiva de la independencia, el 7 de agosto de 1819.",
     "choices": [
       {
         "text": "Es el más largo del país",
@@ -2547,8 +2547,8 @@
     "text": "El Museo Nacional está ubicado en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la capital, en un antiguo panóptico.",
+    "explanation": "El Museo Nacional de Colombia, el más antiguo del país (1823), está en Bogotá, en el edificio del antiguo Panóptico.",
     "choices": [
       {
         "text": "Cartagena",
@@ -2578,8 +2578,8 @@
     "text": "¿Cuál es la bebida más representativa de Colombia a nivel mundial?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El grano suave más famoso del mundo.",
+    "explanation": "El café colombiano es la bebida más representativa del país a nivel mundial.",
     "choices": [
       {
         "text": "El aguardiente",
@@ -2609,8 +2609,8 @@
     "text": "El sombrero vueltiao es originario de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La tierra del pueblo Zenú.",
+    "explanation": "El sombrero vueltiao es originario de las sabanas de Córdoba y Sucre, tierra del pueblo Zenú.",
     "choices": [
       {
         "text": "Antioquia",
@@ -2640,8 +2640,8 @@
     "text": "¿En qué fechas específicas se celebra el Carnaval de Barranquilla?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se cuenta hacia atrás desde la Semana Santa.",
+    "explanation": "El Carnaval de Barranquilla se celebra 40 días antes de la Semana Santa, culminando el martes anterior al Miércoles de Ceniza.",
     "choices": [
       {
         "text": "Diciembre 24-31",
@@ -2671,8 +2671,8 @@
     "text": "¿Qué se celebra en la Feria de las Flores además del desfile de silleteros?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "No solo son flores: hay autos clásicos, caballos y fondas.",
+    "explanation": "Además del Desfile de Silleteros, la Feria de las Flores incluye desfile de autos antiguos, cabalgata y fondas tradicionales.",
     "choices": [
       {
         "text": "Solo el desfile",
@@ -2702,8 +2702,8 @@
     "text": "El Festival Iberoamericano de Teatro de Bogotá se celebra:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los años pares, en Semana Santa.",
+    "explanation": "El Festival Iberoamericano de Teatro de Bogotá se celebra cada dos años, en los años pares.",
     "choices": [
       {
         "text": "Cada año",
@@ -2733,8 +2733,8 @@
     "text": "¿En qué fechas se celebra el Carnaval de Negros y Blancos en Pasto?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Del Día de los Inocentes al Día de Reyes.",
+    "explanation": "El Carnaval de Negros y Blancos se celebra en Pasto del 28 de diciembre al 6 de enero, con el día de Negros el 5 y el de Blancos el 6.",
     "choices": [
       {
         "text": "Diciembre 28 a enero 6",
@@ -2764,8 +2764,8 @@
     "text": "El Festival del Mono Núñez se realiza en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En un pueblo vallecaucano famoso por la música andina.",
+    "explanation": "El Festival del Mono Núñez se realiza en Ginebra, Valle del Cauca.",
     "choices": [
       {
         "text": "Valledupar",
@@ -2795,8 +2795,8 @@
     "text": "¿Qué tipo de música se celebra en el Festival del Mono Núñez?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Bambucos, pasillos y guabinas.",
+    "explanation": "El Festival del Mono Núñez es el certamen más importante de la música andina colombiana.",
     "choices": [
       {
         "text": "Vallenato",
@@ -2826,8 +2826,8 @@
     "text": "La Feria de Manizales se celebra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Empieza el año con toros y tango en la capital caldense.",
+    "explanation": "La Feria de Manizales se celebra en enero.",
     "choices": [
       {
         "text": "Enero",
@@ -2857,8 +2857,8 @@
     "text": "¿Qué festividad importante se celebra en Popayán durante la Semana Santa?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cargueros y pasos que recorren la Ciudad Blanca desde el siglo XVI.",
+    "explanation": "En Popayán se celebran las procesiones de Semana Santa, Patrimonio de la Humanidad, tradición que data del siglo XVI.",
     "choices": [
       {
         "text": "Carnaval",
@@ -2888,8 +2888,8 @@
     "text": "El Festival Internacional de Cine de Cartagena (FICCI) se fundó en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es el festival de cine más antiguo de América Latina.",
+    "explanation": "El Festival Internacional de Cine de Cartagena (FICCI) se fundó en 1960 y es el más antiguo de América Latina.",
     "choices": [
       {
         "text": "1960",
@@ -2919,8 +2919,8 @@
     "text": "La Feria de Cali se celebra del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Empieza el día de Navidad.",
+    "explanation": "La Feria de Cali se celebra tradicionalmente del 25 de diciembre al 3 de enero, con su famoso Salsódromo.",
     "choices": [
       {
         "text": "1 al 10 de enero",
@@ -2950,8 +2950,8 @@
     "text": "El plato \"mote de queso\" incluye como ingrediente principal:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un tubérculo costeño parecido a la papa pero más grande.",
+    "explanation": "El mote de queso se prepara con ñame, queso costeño y suero.",
     "choices": [
       {
         "text": "Papa",
@@ -2981,8 +2981,8 @@
     "text": "¿Qué tipo de pescado se usa tradicionalmente en el arroz con coco caribeño?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Pescados de mar y de ciénaga del Caribe.",
+    "explanation": "El arroz con coco caribeño acompaña tradicionalmente pescados como el pargo rojo, el lebranche o el bocachico.",
     "choices": [
       {
         "text": "Trucha",
@@ -3012,8 +3012,8 @@
     "text": "El \"Rondón\" de San Andrés incluye un ingrediente llamado:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre en inglés significa 'colita de cerdo'.",
+    "explanation": "El rondón sanandresano lleva pigtail (colita de cerdo), pescado, caracol, yuca y leche de coco.",
     "choices": [
       {
         "text": "Carne de res",
@@ -3043,8 +3043,8 @@
     "text": "Los \"domplines\" del Rondón son:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Masas cocidas dentro del guiso de coco.",
+    "explanation": "Los domplines (dumplings) del rondón son tortillas o masas de harina/maíz cocidas en la preparación.",
     "choices": [
       {
         "text": "Pescados pequeños",
@@ -3074,8 +3074,8 @@
     "text": "¿De qué región es típico el \"sancocho de rabo\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una sopa costeña con la cola de la res.",
+    "explanation": "El sancocho de rabo (cola de res) es típico de la región Caribe.",
     "choices": [
       {
         "text": "Andina",
@@ -3105,8 +3105,8 @@
     "text": "La \"lechona tolimense\" se rellena con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El cerdo se rellena con un grano, una leguminosa y su propia carne.",
+    "explanation": "La lechona tolimense se rellena con arroz, arveja y carne de cerdo, y se hornea por horas.",
     "choices": [
       {
         "text": "Solo arroz",
@@ -3136,8 +3136,8 @@
     "text": "El \"puchero santafereño\" es originario de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El cocido de la capital, heredero de Andalucía.",
+    "explanation": "El puchero santafereño es originario de Bogotá; combina carnes, papa, yuca, plátano y repollo.",
     "choices": [
       {
         "text": "Medellín",
@@ -3167,8 +3167,8 @@
     "text": "¿Qué hierba característica lleva el ajiaco?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una hierba que solo se usa en esta sopa.",
+    "explanation": "Las guascas son la hierba que da el sabor característico al ajiaco santafereño.",
     "choices": [
       {
         "text": "Cilantro",
@@ -3198,8 +3198,8 @@
     "text": "Los \"aborrajados\" del Valle del Cauca son:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Plátano maduro, queso y apanado frito.",
+    "explanation": "Los aborrajados vallunos son plátanos maduros rellenos de queso, apanados y fritos.",
     "choices": [
       {
         "text": "Sopas",
@@ -3229,8 +3229,8 @@
     "text": "El \"tilote\" o \"titoté\" es parte de la preparación de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El caramelo del coco frito en su propia leche.",
+    "explanation": "El titoté es el caramelo que se forma al reducir la leche de coco, base del arroz con coco costeño.",
     "choices": [
       {
         "text": "Bandeja paisa",
@@ -3260,8 +3260,8 @@
     "text": "¿Cuáles son algunos de los grupos indígenas de la Amazonía colombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Pueblos del trapecio amazónico y del Vaupés.",
+    "explanation": "Los Tikuna, Uitoto, Cubeo, Desano y Tucano son pueblos indígenas de la Amazonía colombiana.",
     "choices": [
       {
         "text": "Wayúu y Arhuacos",
@@ -3291,8 +3291,8 @@
     "text": "Los grupos Emberá, Wounaan y Awá habitan principalmente en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los pueblos de la selva más lluviosa.",
+    "explanation": "Los Emberá, Wounaan y Awá habitan principalmente la región Pacífica.",
     "choices": [
       {
         "text": "La Amazonía",
@@ -3322,8 +3322,8 @@
     "text": "¿Qué porcentaje de la población colombiana se identifica como católica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cerca de cuatro quintas partes.",
+    "explanation": "Aproximadamente el 79% de los colombianos se identifica como católico.",
     "choices": [
       {
         "text": "60%",
@@ -3353,8 +3353,8 @@
     "text": "La población afrocolombiana se concentra principalmente en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En los dos litorales.",
+    "explanation": "La población afrocolombiana se concentra principalmente en las costas Pacífica y Caribe.",
     "choices": [
       {
         "text": "Solo el Pacífico",
@@ -3384,8 +3384,8 @@
     "text": "Los Tikunas son una etnia característica de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El pueblo del trapecio amazónico, célebre por sus máscaras.",
+    "explanation": "Los Tikuna son la etnia más numerosa del trapecio amazónico colombiano.",
     "choices": [
       {
         "text": "La Sierra Nevada",
@@ -3415,8 +3415,8 @@
     "text": "Débora Arango fue reconocida principalmente como:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Pionera del arte de la acuarela y del desnudo crítico en Colombia.",
+    "explanation": "Débora Arango, homenajeada en el billete de $2.000, fue una acuarelista antioqueña pionera del arte moderno colombiano.",
     "choices": [
       {
         "text": "Escultora",
@@ -3446,8 +3446,8 @@
     "text": "¿Quién fundó el Teatro Experimental de Cali (TEC)?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El dramaturgo que creó la 'creación colectiva' en Cali.",
+    "explanation": "Enrique Buenaventura fundó el Teatro Experimental de Cali (TEC) y desarrolló el método de creación colectiva.",
     "choices": [
       {
         "text": "Santiago García",
@@ -3477,8 +3477,8 @@
     "text": "El TEC fue fundado en el año:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Mediados de los años cincuenta.",
+    "explanation": "El Teatro Experimental de Cali fue fundado en 1955.",
     "choices": [
       {
         "text": "1945",
@@ -3508,8 +3508,8 @@
     "text": "¿Qué artista colombiano murió en Mónaco en 2023?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El maestro de los volúmenes murió a los 91 años en Europa.",
+    "explanation": "Fernando Botero murió en Mónaco en septiembre de 2023.",
     "choices": [
       {
         "text": "Alejandro Obregón",
@@ -3539,8 +3539,8 @@
     "text": "La \"Paloma de la Paz\" de Botero fue entregada al presidente:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Al presidente que firmó la paz con las FARC.",
+    "explanation": "Botero entregó su escultura 'Paloma de la Paz' al presidente Juan Manuel Santos como símbolo de la reconciliación.",
     "choices": [
       {
         "text": "Álvaro Uribe",
@@ -3570,8 +3570,8 @@
     "text": "¿En qué año se fundó la primera Escuela de Bellas Artes en Bogotá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo año de la Constitución centralista.",
+    "explanation": "La primera Escuela de Bellas Artes de Bogotá se fundó en 1886.",
     "choices": [
       {
         "text": "1810",
@@ -3601,8 +3601,8 @@
     "text": "Eduardo Ramírez Villamizar es conocido por su estilo:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Esculturas de módulos y formas puras.",
+    "explanation": "Eduardo Ramírez Villamizar fue pionero del arte geométrico y constructivista en Colombia.",
     "choices": [
       {
         "text": "Barroco",
@@ -3632,8 +3632,8 @@
     "text": "¿Quién fue Gregorio Vásquez de Arce y Ceballos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El gran artista santafereño del siglo XVII, autor de cientos de obras religiosas.",
+    "explanation": "Gregorio Vásquez de Arce y Ceballos (1638-1711) fue el pintor más importante de la época colonial neogranadina.",
     "choices": [
       {
         "text": "Un presidente",
@@ -3641,7 +3641,7 @@
         "order": 1
       },
       {
-        "text": "Un escultor colonial",
+        "text": "Un pintor colonial",
         "is_correct": true,
         "order": 2
       },
@@ -3663,8 +3663,8 @@
     "text": "El muralismo colombiano fue influenciado por artistas como:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El muralista mexicano de los frescos sociales.",
+    "explanation": "El muralismo colombiano, con Pedro Nel Gómez a la cabeza, recibió la influencia del mexicano Diego Rivera.",
     "choices": [
       {
         "text": "Pablo Picasso",
@@ -3694,8 +3694,8 @@
     "text": "Pedro Nel Gómez fue representante del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El muralista de Medellín.",
+    "explanation": "Pedro Nel Gómez fue el gran representante del muralismo y el realismo social en Colombia.",
     "choices": [
       {
         "text": "Arte abstracto",
@@ -3725,8 +3725,8 @@
     "text": "El instrumento principal del currulao es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un 'piano de la selva' hecho de palma.",
+    "explanation": "La marimba de chonta es el instrumento principal del currulao y de la música del Pacífico.",
     "choices": [
       {
         "text": "El acordeón",
@@ -3756,8 +3756,8 @@
     "text": "La gaita es un instrumento característico de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Herencia indígena de los Montes de María.",
+    "explanation": "La gaita es característica de la Costa Atlántica (Caribe).",
     "choices": [
       {
         "text": "Los Llanos",
@@ -3787,8 +3787,8 @@
     "text": "¿De qué material está hecha la marimba de chonta?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La palma que también da el chontaduro.",
+    "explanation": "La marimba de chonta se fabrica con madera de la palma de chonta.",
     "choices": [
       {
         "text": "Metal",
@@ -3818,8 +3818,8 @@
     "text": "El mapalé es una danza originaria de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Danza afro de movimientos frenéticos, nacida del trabajo de los pescadores.",
+    "explanation": "El mapalé es una danza de herencia africana de la Costa Caribe.",
     "choices": [
       {
         "text": "Los Andes",
@@ -3849,8 +3849,8 @@
     "text": "¿Qué instrumento se usa en el joropo llanero?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Tres instrumentos: uno de cuerdas grandes, uno pequeño y uno de semillas.",
+    "explanation": "El joropo se interpreta con arpa, cuatro y maracas.",
     "choices": [
       {
         "text": "Marimba",
@@ -3880,8 +3880,8 @@
     "text": "El Santuario de Las Lajas está ubicado específicamente en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la ciudad fronteriza del sur, sobre el cañón del Guáitara.",
+    "explanation": "El Santuario de Las Lajas está en Ipiales, Nariño, junto a la frontera con Ecuador.",
     "choices": [
       {
         "text": "El centro de Pasto",
@@ -3911,8 +3911,8 @@
     "text": "¿En qué meses Caño Cristales muestra sus colores más vivos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la temporada de lluvias del segundo semestre.",
+    "explanation": "Caño Cristales muestra sus colores más intensos entre julio y noviembre, cuando florece la Macarenia clavigera.",
     "choices": [
       {
         "text": "Diciembre-enero",
@@ -3942,8 +3942,8 @@
     "text": "¿Cuántos colores se dice que tiene Caño Cristales?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Como su apodo lo indica.",
+    "explanation": "A Caño Cristales se le atribuyen cinco colores: rojo, amarillo, verde, azul y negro.",
     "choices": [
       {
         "text": "Tres",
@@ -3973,8 +3973,8 @@
     "text": "La Ciudad Perdida (Teyuna) fue construida por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El pueblo de la Sierra Nevada.",
+    "explanation": "Ciudad Perdida (Teyuna) fue construida por los Tayronas en la Sierra Nevada de Santa Marta.",
     "choices": [
       {
         "text": "Los Muiscas",
@@ -4004,8 +4004,8 @@
     "text": "¿En qué año aproximadamente se construyó Ciudad Perdida?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Siglos antes de la llegada de los españoles.",
+    "explanation": "Se estima que Ciudad Perdida fue construida hacia el año 800 d.C.",
     "choices": [
       {
         "text": "500 d.C.",
@@ -4035,8 +4035,8 @@
     "text": "El Parque Arqueológico de San Agustín es famoso por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Enormes figuras de piedra tallada.",
+    "explanation": "San Agustín es famoso por sus estatuas megalíticas, el mayor conjunto de monumentos religiosos megalíticos de Suramérica.",
     "choices": [
       {
         "text": "Pinturas rupestres",
@@ -4066,8 +4066,8 @@
     "text": "¿Cuántas hectáreas aproximadamente tiene el Parque Tayrona?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Unas quince mil hectáreas entre mar y sierra.",
+    "explanation": "El Parque Tayrona tiene aproximadamente 15.000 hectáreas (12.000 terrestres y 3.000 marinas).",
     "choices": [
       {
         "text": "5.000",
@@ -4097,8 +4097,8 @@
     "text": "El desierto de La Tatacoa es conocido por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cárcavas rojizas y grises, ideales para ver estrellas.",
+    "explanation": "La Tatacoa es conocida por sus formaciones erosionadas de tierra roja (Cuzco) y gris (Los Hoyos), y su observatorio astronómico.",
     "choices": [
       {
         "text": "Sus dunas de arena",
@@ -4128,8 +4128,8 @@
     "text": "¿Qué profundidad tiene la Catedral de Sal de Zipaquirá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Casi doscientos metros bajo tierra.",
+    "explanation": "La Catedral de Sal de Zipaquirá está excavada a 180 metros de profundidad en una antigua mina de sal.",
     "choices": [
       {
         "text": "50 metros",
@@ -4159,8 +4159,8 @@
     "text": "El Puente de Boyacá es importante porque allí:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La fecha es hoy fiesta nacional.",
+    "explanation": "En el Puente de Boyacá se libró la batalla del 7 de agosto de 1819, que selló la independencia.",
     "choices": [
       {
         "text": "Se firmó la independencia",
@@ -4190,8 +4190,8 @@
     "text": "¿Qué animal aparece en la moneda de mil pesos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una tortuga marina del Caribe.",
+    "explanation": "En la moneda de $1.000 aparece la tortuga caguama, especie amenazada del Caribe colombiano.",
     "choices": [
       {
         "text": "Oso de anteojos",
@@ -4221,8 +4221,8 @@
     "text": "La moneda de quinientos pesos tiene representada:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un anfibio transparente.",
+    "explanation": "La moneda de $500 muestra la rana de cristal, cuyo cuerpo translúcido deja ver sus órganos.",
     "choices": [
       {
         "text": "Una guacamaya",
@@ -4252,8 +4252,8 @@
     "text": "¿Qué planta aparece en la moneda de cien pesos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La planta del páramo.",
+    "explanation": "En la moneda de $100 aparece el frailejón, planta emblemática de los páramos.",
     "choices": [
       {
         "text": "Orquídea",
@@ -4283,8 +4283,8 @@
     "text": "El oso de anteojos aparece en la moneda de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La de menor denominación de la familia actual.",
+    "explanation": "El oso de anteojos, único oso suramericano, aparece en la moneda de $50.",
     "choices": [
       {
         "text": "20 pesos",
@@ -4314,8 +4314,8 @@
     "text": "La guacamaya bandera está en la moneda de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El ave multicolor de los símbolos patrios cromáticos.",
+    "explanation": "La guacamaya bandera, con los colores de la bandera nacional, aparece en la moneda de $200.",
     "choices": [
       {
         "text": "100 pesos",
@@ -4345,8 +4345,8 @@
     "text": "¿En qué año murió Gabriel García Márquez?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Murió en México, un Jueves Santo.",
+    "explanation": "Gabriel García Márquez murió el 17 de abril de 2014 en Ciudad de México.",
     "choices": [
       {
         "text": "2010",
@@ -4376,8 +4376,8 @@
     "text": "\"La María\" de Jorge Isaacs es considerada una novela:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Amor idílico y trágico en el Valle del Cauca.",
+    "explanation": "María, de Jorge Isaacs, es la novela romántica por excelencia de la literatura hispanoamericana.",
     "choices": [
       {
         "text": "Realista",
@@ -4407,8 +4407,8 @@
     "text": "Rafael Pombo es conocido principalmente por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El autor de 'La pobre viejecita' y 'Rin Rin Renacuajo'.",
+    "explanation": "Rafael Pombo es célebre por sus cuentos infantiles y fábulas como Rin Rin Renacuajo y La pobre viejecita.",
     "choices": [
       {
         "text": "Novelas históricas",
@@ -4438,8 +4438,8 @@
     "text": "Tomás Carrasquilla escribió sobre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El narrador de 'La marquesa de Yolombó'.",
+    "explanation": "Tomás Carrasquilla retrató las costumbres y el habla de la Antioquia tradicional.",
     "choices": [
       {
         "text": "La vida urbana",
@@ -4469,8 +4469,8 @@
     "text": "José Asunción Silva fue principalmente:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El autor del 'Nocturno', precursor del modernismo.",
+    "explanation": "José Asunción Silva fue el gran poeta modernista colombiano, autor del Nocturno; aparecía en el billete de $5.000.",
     "choices": [
       {
         "text": "Novelista",
@@ -4500,8 +4500,8 @@
     "text": "¿Cómo se juega el tejo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se lanza un disco hacia un tablero con estallidos.",
+    "explanation": "El tejo consiste en lanzar un disco metálico hacia un tablero de arcilla con mechas de pólvora que estallan al acertar.",
     "choices": [
       {
         "text": "Con pelotas",
@@ -4531,8 +4531,8 @@
     "text": "Mariana Pajón es campeona en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Doble oro olímpico sobre una bicicleta pequeña.",
+    "explanation": "Mariana Pajón es doble campeona olímpica de BMX (Londres 2012 y Río 2016).",
     "choices": [
       {
         "text": "Atletismo",
@@ -4562,8 +4562,8 @@
     "text": "Caterine Ibargüen ganó medalla olímpica en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Oro en Río 2016 en una prueba de tres impulsos.",
+    "explanation": "Caterine Ibargüen ganó el oro olímpico en triple salto en Río 2016 y la plata en Londres 2012.",
     "choices": [
       {
         "text": "Maratón",
@@ -4593,8 +4593,8 @@
     "text": "¿Quién fue René Higuita?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El arquero del despeje acrobático.",
+    "explanation": "René Higuita, portero de la Selección Colombia, es famoso por su atajada 'el escorpión' en Wembley (1995).",
     "choices": [
       {
         "text": "Ciclista",
@@ -4624,8 +4624,8 @@
     "text": "Nairo Quintana ha ganado:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ganó las grandes vueltas de Italia (2014) y España (2016).",
+    "explanation": "Nairo Quintana ha ganado el Giro de Italia (2014) y la Vuelta a España (2016).",
     "choices": [
       {
         "text": "Tour de Francia",
@@ -4655,8 +4655,8 @@
     "text": "El Teatro Heredia está ubicado en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la ciudad amurallada; hoy se llama Teatro Adolfo Mejía.",
+    "explanation": "El Teatro Heredia (hoy Teatro Adolfo Mejía) está en Cartagena de Indias.",
     "choices": [
       {
         "text": "Bogotá",
@@ -4686,8 +4686,8 @@
     "text": "¿En qué año se fundó el Teatro Colón de Bogotá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se inauguró para conmemorar el IV centenario del descubrimiento de América.",
+    "explanation": "El Teatro Colón de Bogotá fue inaugurado en 1892, en el cuarto centenario del viaje de Colón.",
     "choices": [
       {
         "text": "1792",
@@ -4717,8 +4717,8 @@
     "text": "El Teatro Pablo Tobón Uribe está en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lleva el nombre de un filántropo antioqueño.",
+    "explanation": "El Teatro Pablo Tobón Uribe está en Medellín.",
     "choices": [
       {
         "text": "Bogotá",
@@ -4748,8 +4748,8 @@
     "text": "¿Qué característica arquitectónica tiene el Teatro Colón?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su fachada y su sala de herradura recuerdan a los teatros de ópera europeos.",
+    "explanation": "El Teatro Colón es de estilo neoclásico italiano, obra del arquitecto Pietro Cantini.",
     "choices": [
       {
         "text": "Estilo moderno",
@@ -4779,8 +4779,8 @@
     "text": "El Teatro Jorge Eliécer Gaitán antes se llamaba:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre original aludía a la ciudad, no a un personaje.",
+    "explanation": "El Teatro Jorge Eliécer Gaitán de Bogotá se llamaba originalmente Teatro Municipal.",
     "choices": [
       {
         "text": "Teatro Nacional",
@@ -4810,8 +4810,8 @@
     "text": "¿Qué porcentaje de protestantes hay en Colombia aproximadamente?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Algo más de la décima parte.",
+    "explanation": "Los protestantes y evangélicos representan aproximadamente el 13% de la población colombiana.",
     "choices": [
       {
         "text": "5%",
@@ -4841,8 +4841,8 @@
     "text": "Las procesiones de Semana Santa de Popayán datan del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Datan de la época de la fundación de la ciudad.",
+    "explanation": "Las procesiones de Semana Santa de Popayán se celebran desde el siglo XVI y son Patrimonio de la Humanidad.",
     "choices": [
       {
         "text": "Siglo XVI",
@@ -4872,8 +4872,8 @@
     "text": "El Santuario de Monserrate en Bogotá está a una altura de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Quinientos metros por encima de Bogotá.",
+    "explanation": "El santuario de Monserrate está a 3.152 metros sobre el nivel del mar, dominando Bogotá.",
     "choices": [
       {
         "text": "2.640 metros",
@@ -4903,8 +4903,8 @@
     "text": "La Catedral Primada de Bogotá se construyó en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se construyó a comienzos del siglo XIX, en tiempos de la independencia.",
+    "explanation": "La actual Catedral Primada de Bogotá se construyó entre 1807 y 1823, en la Plaza de Bolívar.",
     "choices": [
       {
         "text": "1538",
@@ -4934,8 +4934,8 @@
     "text": "El Divino Niño es una devoción popular centrada en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su templo está en el barrio 20 de Julio.",
+    "explanation": "La devoción al Divino Niño se centra en el santuario del barrio 20 de Julio, en Bogotá.",
     "choices": [
       {
         "text": "Bogotá",
@@ -4965,8 +4965,8 @@
     "text": "El ave nacional de Colombia es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El ave del escudo nacional.",
+    "explanation": "El cóndor de los Andes es el ave nacional de Colombia.",
     "choices": [
       {
         "text": "El águila",
@@ -4996,8 +4996,8 @@
     "text": "El vallenato es originario de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La música de Valledupar.",
+    "explanation": "El vallenato es originario de la Costa Caribe.",
     "choices": [
       {
         "text": "La región Andina",
@@ -5027,8 +5027,8 @@
     "text": "La cumbia es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se baila con velas y polleras, y también se escucha.",
+    "explanation": "La cumbia es a la vez un baile y un género musical, emblema del folclor colombiano.",
     "choices": [
       {
         "text": "Un plato típico",
@@ -5058,8 +5058,8 @@
     "text": "El Carnaval de Barranquilla se celebra:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Justo antes del tiempo litúrgico de abstinencia.",
+    "explanation": "El Carnaval de Barranquilla se celebra antes de la cuaresma, culminando el martes de carnaval.",
     "choices": [
       {
         "text": "En diciembre",
@@ -5089,8 +5089,8 @@
     "text": "¿Cuál de estos es un plato típico de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El plato de los arrieros antioqueños.",
+    "explanation": "La bandeja paisa es uno de los platos más representativos de Colombia.",
     "choices": [
       {
         "text": "Paella",
@@ -5120,8 +5120,8 @@
     "text": "El Festival de la Leyenda Vallenata se celebra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La capital mundial del vallenato.",
+    "explanation": "El Festival de la Leyenda Vallenata se celebra en Valledupar.",
     "choices": [
       {
         "text": "Barranquilla",
@@ -5151,8 +5151,8 @@
     "text": "Fernando Botero es famoso por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El artista de las figuras voluminosas.",
+    "explanation": "Fernando Botero es famoso por sus esculturas y pinturas de formas voluminosas.",
     "choices": [
       {
         "text": "Su música",
@@ -5182,8 +5182,8 @@
     "text": "¿Cuál es la bebida nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El producto insignia que se exporta a todo el mundo.",
+    "explanation": "El café es considerado la bebida nacional de Colombia.",
     "choices": [
       {
         "text": "El ron",
@@ -5213,8 +5213,8 @@
     "text": "El tejo es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "De origen muisca, con pólvora.",
+    "explanation": "El tejo es el deporte nacional de Colombia.",
     "choices": [
       {
         "text": "Un baile típico",
@@ -5244,8 +5244,8 @@
     "text": "¿Quién es conocido como \"El Joe\" en la música colombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El cantante cartagenero de 'Rebelión' ('No le pegue a la negra').",
+    "explanation": "Joe Arroyo, 'El Joe', fue el gran cantante y compositor de la música tropical colombiana.",
     "choices": [
       {
         "text": "Carlos Vives",
@@ -5275,8 +5275,8 @@
     "text": "El Festival Iberoamericano de Teatro se realiza en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La capital teatral de Iberoamérica cada dos años.",
+    "explanation": "El Festival Iberoamericano de Teatro se realiza en Bogotá.",
     "choices": [
       {
         "text": "Medellín",
@@ -5306,8 +5306,8 @@
     "text": "La mochila wayúu es una artesanía de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El tejido del pueblo del desierto guajiro.",
+    "explanation": "La mochila wayúu es la artesanía tradicional del pueblo Wayúu de La Guajira.",
     "choices": [
       {
         "text": "Los Embera",
@@ -5337,8 +5337,8 @@
     "text": "El bambuco es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El aire musical de la zona montañosa.",
+    "explanation": "El bambuco es un género musical y baile tradicional de la región Andina.",
     "choices": [
       {
         "text": "Un instrumento",
@@ -5368,8 +5368,8 @@
     "text": "¿Cuál de estos escritores colombianos ganó el Premio Nobel de Literatura?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El único Nobel de literatura colombiano, en 1982.",
+    "explanation": "Gabriel García Márquez ganó el Premio Nobel de Literatura en 1982.",
     "choices": [
       {
         "text": "Jorge Isaacs",
@@ -5399,8 +5399,8 @@
     "text": "La Semana Santa en Popayán es famosa por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una tradición religiosa de más de cuatro siglos.",
+    "explanation": "La Semana Santa de Popayán es famosa por sus procesiones religiosas, Patrimonio Cultural Inmaterial de la Humanidad.",
     "choices": [
       {
         "text": "Sus carnavales",
@@ -5430,8 +5430,8 @@
     "text": "El himno nacional de Colombia debe interpretarse en actos oficiales con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La parte cantada es corta: estribillo y una estrofa.",
+    "explanation": "En actos oficiales el Himno Nacional se interpreta con el coro y la primera estrofa (coro-estrofa-coro).",
     "choices": [
       {
         "text": "Solo el coro",
@@ -5461,8 +5461,8 @@
     "text": "¿Cuáles son los colores de la bandera de Colombia en orden?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La mitad superior es del color del oro.",
+    "explanation": "Los colores de la bandera, de arriba hacia abajo, son amarillo, azul y rojo.",
     "choices": [
       {
         "text": "Rojo, amarillo, azul",
@@ -5492,8 +5492,8 @@
     "text": "El Festival Internacional de Cine de Cartagena (FICCI) se celebra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "A comienzos de año, antes de Semana Santa.",
+    "explanation": "El FICCI se celebra en Cartagena en marzo (a veces febrero-abril, según el año).",
     "choices": [
       {
         "text": "Enero",
@@ -5523,8 +5523,8 @@
     "text": "¿Quién pintó \"La violencia\" y \"Los músicos\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El pintor de los cóndores y las barracudas.",
+    "explanation": "Alejandro Obregón, pintor de 'La violencia' y 'Los músicos', fue figura central del arte moderno colombiano.",
     "choices": [
       {
         "text": "Fernando Botero",
@@ -5554,8 +5554,8 @@
     "text": "El escritor de \"La Vorágine\" fue:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El poeta huilense que se 'jugó el corazón al azar' en la selva.",
+    "explanation": "José Eustasio Rivera escribió La Vorágine (1924).",
     "choices": [
       {
         "text": "José Eustasio Rivera",
@@ -5585,8 +5585,8 @@
     "text": "La champeta es un género musical originario de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Nació en los barrios afro de la ciudad amurallada, con influencia africana.",
+    "explanation": "La champeta es un género musical nacido en Cartagena, con fuertes raíces afrocaribeñas.",
     "choices": [
       {
         "text": "Barranquilla",
@@ -5616,8 +5616,8 @@
     "text": "El Festival de Teatro de Manizales se realiza cada:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Igual que el Iberoamericano de Bogotá.",
+    "explanation": "El Festival Internacional de Teatro de Manizales se realiza cada dos años (la cartilla lo registra bienal; hoy es anual en la práctica).",
     "choices": [
       {
         "text": "Año",
@@ -5647,8 +5647,8 @@
     "text": "El ajiaco es un plato típico de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La sopa de guascas del altiplano.",
+    "explanation": "El ajiaco es el plato típico de Bogotá y el altiplano cundiboyacense.",
     "choices": [
       {
         "text": "Antioquia",
@@ -5678,8 +5678,8 @@
     "text": "¿Quién compuso \"Colombia tierra querida\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El maestro del porro y la cumbia de orquesta, nacido en El Carmen de Bolívar.",
+    "explanation": "Lucho Bermúdez compuso 'Colombia tierra querida', himno no oficial del país.",
     "choices": [
       {
         "text": "Rafael Escalona",
@@ -5709,8 +5709,8 @@
     "text": "La totuma es:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se saca del fruto seco del totumo.",
+    "explanation": "La totuma es un recipiente tradicional hecho del fruto del árbol de totumo.",
     "choices": [
       {
         "text": "Un instrumento musical",
@@ -5740,8 +5740,8 @@
     "text": "El Festival del Mono Núñez es de música:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Bambucos y pasillos en Ginebra, Valle.",
+    "explanation": "El Festival del Mono Núñez es el máximo certamen de la música andina colombiana.",
     "choices": [
       {
         "text": "Vallenata",
@@ -5771,8 +5771,8 @@
     "text": "La Feria de Cali se celebra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cierra el año con el Salsódromo.",
+    "explanation": "La Feria de Cali se celebra en diciembre, del 25 al 30 tradicionalmente.",
     "choices": [
       {
         "text": "Agosto",
@@ -5802,8 +5802,8 @@
     "text": "El acordeón es el instrumento principal del:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La música de Francisco el Hombre.",
+    "explanation": "El acordeón es el instrumento principal del vallenato.",
     "choices": [
       {
         "text": "Bambuco",
@@ -5833,8 +5833,8 @@
     "text": "¿Cuál de estos es Patrimonio de la Humanidad por la UNESCO?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La fiesta de la Puerta de Oro, reconocida por la UNESCO en 2003.",
+    "explanation": "El Carnaval de Barranquilla fue declarado Obra Maestra del Patrimonio Oral e Inmaterial de la Humanidad por la UNESCO.",
     "choices": [
       {
         "text": "El Carnaval de Barranquilla",
@@ -5864,8 +5864,8 @@
     "text": "El tejido del sombrero fino Sandoná es típico de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un tejido de paja toquilla del sur del país.",
+    "explanation": "El sombrero fino de Sandoná se teje en paja toquilla en ese municipio de Nariño.",
     "choices": [
       {
         "text": "Córdoba",
@@ -5895,8 +5895,8 @@
     "text": "¿Quién es el autor de \"El olvido que seremos\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El hijo que escribió sobre su padre asesinado.",
+    "explanation": "Héctor Abad Faciolince escribió 'El olvido que seremos' (2006), sobre la vida y asesinato de su padre.",
     "choices": [
       {
         "text": "Héctor Abad Faciolince",
@@ -5926,8 +5926,8 @@
     "text": "La Fiesta del Mar se celebra en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En la bahía de la ciudad más antigua.",
+    "explanation": "La Fiesta del Mar se celebra en Santa Marta, con competencias náuticas y eventos culturales.",
     "choices": [
       {
         "text": "Cartagena",
@@ -5957,8 +5957,8 @@
     "text": "¿Qué prócer dio el nombre de \"República de Colombia\" en el Congreso de Angostura en 1819?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El nombre fue dado por Simón Bolívar el 15 de febrero de 1819 en el Congreso de Angostura para reemplazar el nombre anterior de \"La Nueva Granada\".",
+    "hint": "El Libertador, en Angostura.",
+    "explanation": "Simón Bolívar propuso el nombre de República de Colombia en el Congreso de Angostura (1819).",
     "choices": [
       {
         "text": "Francisco de Paula Santander",
@@ -5988,8 +5988,8 @@
     "text": "¿Qué significado se le atribuye al color amarillo en la bandera nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El amarillo representa la riqueza del suelo, pero también simboliza la armonía y la justicia.",
+    "hint": "Riqueza, armonía y justicia.",
+    "explanation": "El amarillo de la bandera representa la riqueza del suelo, la armonía y la justicia.",
     "choices": [
       {
         "text": "La sangre derramada por los libertadores",
@@ -6019,8 +6019,8 @@
     "text": "¿Qué elemento se encuentra en la franja central del escudo de armas de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En la franja central, sobre un fondo de platino, se encuentra un gorro frigio sostenido por una lanza.",
+    "hint": "El símbolo de la libertad sobre un asta.",
+    "explanation": "En la franja central del escudo hay un gorro frigio sostenido por una lanza, símbolo de la libertad.",
     "choices": [
       {
         "text": "Una granada de oro abierta",
@@ -6050,8 +6050,8 @@
     "text": "¿Quién fue el encargado de componer la música del himno nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La música fue magistralmente creada por el italiano Oreste Sindici a petición de José Domingo Torres.",
+    "hint": "Un músico italiano radicado en Colombia.",
+    "explanation": "Oreste Síndici compuso la música del Himno Nacional sobre la letra de Rafael Núñez.",
     "choices": [
       {
         "text": "Rafael Núñez",
@@ -6081,8 +6081,8 @@
     "text": "¿Qué característica física distingue a los machos del cóndor andino?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los machos del cóndor destacan por tener una cresta carnosa roja en la cabeza.",
+    "hint": "Solo los machos la llevan sobre la cabeza.",
+    "explanation": "El macho del cóndor andino se distingue por una cresta carnosa roja en la cabeza.",
     "choices": [
       {
         "text": "Un collar negro en la base del cuello",
@@ -6112,8 +6112,8 @@
     "text": "¿Cuál es el nombre científico de la orquídea considerada la flor nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La flor nacional es la *Cattleya Trianae*, conocida popularmente como \"flor de mayo\" o \"lirio de mayo\".",
+    "hint": "Género Cattleya, especie dedicada a Triana.",
+    "explanation": "La flor nacional es la orquídea Cattleya trianae, conocida como flor de mayo.",
     "choices": [
       {
         "text": "Victoria Regia",
@@ -6143,8 +6143,8 @@
     "text": "¿Hasta qué altura puede crecer la Palma de Cera del Quindío?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Palma de Cera (*Ceroxylon Quindiuense*) es una palmera singular que se erige con alturas de hasta 70 metros.",
+    "hint": "Es la palma más alta del mundo.",
+    "explanation": "La palma de cera del Quindío puede alcanzar hasta 70 metros de altura, la palma más alta del mundo.",
     "choices": [
       {
         "text": "Hasta 30 metros",
@@ -6174,8 +6174,8 @@
     "text": "¿De qué cultura indígena tiene raíces el sombrero vueltiao?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El sombrero vueltiao es una pieza artesanal característica de las sabanas del Caribe con raíces en la cultura Zenú.",
+    "hint": "El pueblo de las sabanas de Córdoba y Sucre, maestro de la caña flecha.",
+    "explanation": "El sombrero vueltiao tiene sus raíces en la cultura Zenú, que lo teje en caña flecha desde hace siglos.",
     "choices": [
       {
         "text": "Cultura Tayrona",
@@ -6205,8 +6205,8 @@
     "text": "¿Qué personaje aparece homenajeado en el billete de cien mil pesos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El billete de cien mil pesos rinde homenaje al presidente Carlos Lleras Restrepo (1966-1970).",
+    "hint": "Un expresidente reformista, en la mayor denominación.",
+    "explanation": "El billete de $100.000 homenajea al expresidente Carlos Lleras Restrepo.",
     "choices": [
       {
         "text": "Gabriel García Márquez",
@@ -6236,8 +6236,8 @@
     "text": "¿Qué elementos de fauna aparecen en el anverso del billete de cincuenta mil pesos junto a Gabriel García Márquez?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En el anverso del billete de cincuenta mil, junto a García Márquez, se encuentra un colibrí piquicorto y un caracol burgao.",
+    "hint": "Un ave diminuta y un molusco, junto a Gabo y las mariposas amarillas.",
+    "explanation": "En el billete de $50.000, junto a García Márquez, aparecen un colibrí piquicorto y un caracol burgao.",
     "choices": [
       {
         "text": "Una rana arborícola y una flor",
@@ -6267,8 +6267,8 @@
     "text": "¿Qué fruto acompaña la imagen del expresidente Alfonso López Michelsen en el billete de veinte mil pesos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En el anverso del billete de veinte mil se identifica la figura del mandatario junto con el fruto del anón.",
+    "hint": "Una fruta dulce de pulpa blanca, típica de tierra cálida.",
+    "explanation": "El billete de $20.000, con Alfonso López Michelsen, incluye el fruto del anón y alusiones a La Guajira.",
     "choices": [
       {
         "text": "El fruto del café",
@@ -6298,8 +6298,8 @@
     "text": "¿Quién es la protagonista representada en el billete de diez mil pesos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La antropóloga Virginia Gutiérrez de Pineda es la protagonista del billete de diez mil pesos.",
+    "hint": "Una antropóloga pionera, primera mujer en ese billete.",
+    "explanation": "El billete de $10.000 homenajea a Virginia Gutiérrez de Pineda, antropóloga pionera de los estudios de familia en Colombia.",
     "choices": [
       {
         "text": "Débora Arango",
@@ -6329,8 +6329,8 @@
     "text": "¿Qué paisaje se presenta en el reverso del billete de cinco mil pesos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En el reverso del billete de cinco mil pesos se presenta el paisaje del páramo andino con los frailejones, el cóndor y el oso de anteojos.",
+    "hint": "El ecosistema de los frailejones, junto al poeta Silva.",
+    "explanation": "El reverso del billete de $5.000 muestra el páramo andino, complementando al poeta José Asunción Silva del anverso.",
     "choices": [
       {
         "text": "El Valle del Cocora",
@@ -6360,8 +6360,8 @@
     "text": "¿Qué artista paisa es homenajeadas en el billete de dos mil pesos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El billete de dos mil pesos rinde homenaje a la artista Débora Arango con un entramado de sus obras.",
+    "hint": "La acuarelista de Envigado.",
+    "explanation": "El billete de $2.000 homenajea a la pintora antioqueña Débora Arango.",
     "choices": [
       {
         "text": "Virginia Gutiérrez",
@@ -6391,8 +6391,8 @@
     "text": "¿Qué animal está representado en la moneda de doscientos pesos de la nueva familia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La moneda de doscientos pesos representa a la guacamaya bandera.",
+    "hint": "El ave con los colores de la bandera.",
+    "explanation": "La moneda de $200 muestra la guacamaya bandera.",
     "choices": [
       {
         "text": "El oso de anteojos",
@@ -6422,8 +6422,8 @@
     "text": "¿En qué año se creó el Servicio Oficial de Turismo, la primera institución pública encargada del desarrollo turístico en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Según la historia de la actividad turística descrita, aunque en 1918 se empezaron a crear leyes, fue hasta 1932 cuando se creó el Servicio Oficial de Turismo",
+    "hint": "Comienzos de los años treinta.",
+    "explanation": "El Servicio Oficial de Turismo, primera institución pública de turismo, se creó en 1932.",
     "choices": [
       {
         "text": "1918",
@@ -6453,8 +6453,8 @@
     "text": "¿Qué entidad se creó mediante la Ley 60 de 1968 para encargarse de la planeación, regulación y financiación del turismo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El comienzo del turismo como política de Estado inició con la Ley 60 de 1968, la cual creó a la Corporación Nacional de Turismo (CNT)",
+    "hint": "Una 'corporación' creada a finales de los sesenta.",
+    "explanation": "La Ley 60 de 1968 creó la Corporación Nacional de Turismo, encargada de planear, regular y financiar el turismo.",
     "choices": [
       {
         "text": "El Servicio Oficial de Turismo",
@@ -6484,8 +6484,8 @@
     "text": "¿Cuáles son las tres ciudades costeras principales donde se concentra la mayor oferta hotelera del turismo litoral?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En el turismo litoral, la mayor oferta hotelera, restaurantes y bares se ha enfocado en las playas de Santa Marta, Barranquilla y Cartagena de Indias",
+    "hint": "Las tres grandes del litoral Caribe.",
+    "explanation": "Santa Marta, Barranquilla y Cartagena concentran la mayor oferta hotelera del turismo litoral.",
     "choices": [
       {
         "text": "Tumaco, Guapi y Buenaventura",
@@ -6515,8 +6515,8 @@
     "text": "¿Qué municipio del departamento de Santander es conocido por su oferta en turismo de aventura y deportes extremos?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Destinos como San Gil, en el departamento de Santander, son conocidos por su oferta en turismo de aventura y actividades de montaña",
+    "hint": "La capital del turismo de aventura, cerca de Barichara.",
+    "explanation": "San Gil, Santander, es el principal destino de turismo de aventura y deportes extremos del país.",
     "choices": [
       {
         "text": "Barichara",
@@ -6546,8 +6546,8 @@
     "text": "¿Qué modalidad turística ha emergido como una alternativa al turismo de sol y playa, permitiendo la interacción con espacios naturales del campo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Dentro de las nuevas opciones turísticas rurales ha emergido el agroecoturismo como una alternativa al clásico turismo de sol y playa",
+    "hint": "Combina el agro con el ecoturismo.",
+    "explanation": "El agroecoturismo permite interactuar con espacios naturales del campo, como alternativa al sol y playa.",
     "choices": [
       {
         "text": "El turismo religioso",
@@ -6577,8 +6577,8 @@
     "text": "¿Qué ciudades del Pacífico funcionan como puertos internacionales para el transporte con países como Ecuador, Perú y Chile?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En la zona del Pacífico se destacan las ciudades de Tumaco y Buenaventura, las cuales funcionan como puertos internacionales",
+    "hint": "El gran puerto vallecaucano y el puerto nariñense.",
+    "explanation": "Tumaco y Buenaventura funcionan como puertos internacionales del Pacífico hacia Ecuador, Perú y Chile.",
     "choices": [
       {
         "text": "Nuquí y Bahía Solano",
@@ -6608,8 +6608,8 @@
     "text": "¿Qué festividad se celebra en la ciudad de Medellín?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Entre las festividades mencionadas que reflejan la herencia cultural se encuentra la Feria de las Flores en Medellín",
+    "hint": "La fiesta de los silleteros.",
+    "explanation": "La Feria de las Flores es la festividad emblemática de Medellín.",
     "choices": [
       {
         "text": "El Carnaval de Barranquilla",
@@ -6639,8 +6639,8 @@
     "text": "¿Qué característica natural define al Eje Cafetero además de las plantaciones de café?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El Eje Cafetero se destaca por la presencia del vulcanismo propio del Parque Nacional Natural Los Nevados",
+    "hint": "Sus suelos fértiles vienen de los volcanes nevados.",
+    "explanation": "El Eje Cafetero se caracteriza también por el vulcanismo (Nevado del Ruiz, Cerro Bravo), que fertiliza sus suelos.",
     "choices": [
       {
         "text": "Las playas de arena blanca",
@@ -6670,8 +6670,8 @@
     "text": "¿Qué ciudades se configuran como las más importantes en términos de arquitectura urbana y centros financieros?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Bogotá, Medellín y Cali se configuran como las ciudades más importantes en términos de arquitectura urbana y centros financieros",
+    "hint": "Las tres ciudades más pobladas.",
+    "explanation": "Bogotá, Medellín y Cali son las ciudades más importantes en arquitectura urbana y como centros financieros.",
     "choices": [
       {
         "text": "Cartagena, Santa Marta y Barranquilla",
@@ -6701,8 +6701,8 @@
     "text": "¿Cuál es la razón principal de la baja actividad turística hacia el departamento del Chocó?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Las playas del Pacífico, especialmente hacia el Chocó, no tienen un turismo muy activo debido a la baja cantidad de vías de comunicación terrestre, ya que la mayoría son fluviales",
+    "hint": "Llegar por carretera es casi imposible.",
+    "explanation": "La baja actividad turística del Chocó se debe a la escasez de vías de comunicación terrestre.",
     "choices": [
       {
         "text": "La falta de atractivos naturales",
@@ -6732,8 +6732,8 @@
     "text": "¿Qué entidad antecedió al Ministerio de Cultura y formaba parte del Ministerio de Educación antes de la Ley 397 de 1997?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Antes de la creación del Ministerio de Cultura, las funciones correspondían al Instituto Colombiano de Cultura, conocido como Colcultura, el cual formaba parte del Ministerio de Educación",
+    "hint": "El instituto de cultura que dependía del Ministerio de Educación.",
+    "explanation": "Colcultura antecedió al Ministerio de Cultura, creado por la Ley 397 de 1997.",
     "choices": [
       {
         "text": "El Instituto Caro y Cuervo",
@@ -6763,8 +6763,8 @@
     "text": "¿Quién fue el encargado de musicalizar la letra del himno nacional escrita por Rafael Núñez?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Rafael Núñez escribió la letra del himno nacional y el compositor italiano Oreste Síndici lo musicalizó",
+    "hint": "El maestro italiano de Bogotá.",
+    "explanation": "Oreste Síndici musicalizó la letra del Himno Nacional escrita por Rafael Núñez.",
     "choices": [
       {
         "text": "José Rozo Contreras",
@@ -6794,8 +6794,8 @@
     "text": "¿Qué elementos del folclore y la gastronomía destacan en la cultura de la Región Pacífica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La región destaca por su folclore, incluyendo el currulao y la marimba de chonta, y por su gastronomía con platos como el sancocho de pescado y el arroz con coco",
+    "hint": "Marimba, currulao y sabores de pescado y coco.",
+    "explanation": "El folclor del Pacífico destaca por el currulao, la marimba de chonta, el sancocho de pescado y el arroz con coco.",
     "choices": [
       {
         "text": "El vallenato, el acordeón, el suero costeño y la arepa de huevo",
@@ -6825,8 +6825,8 @@
     "text": "¿Qué material utilizaban principalmente los Quimbaya para crear figuras estilizadas con gran detalle y precisión?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los Quimbaya son conocidos por su habilidad en la orfebrería, creando figuras en oro trabajadas con técnicas como la cera perdida y la tumbaga",
+    "hint": "El material del famoso Poporo.",
+    "explanation": "Los Quimbaya trabajaron el oro con maestría, como muestra el Poporo Quimbaya del Museo del Oro.",
     "choices": [
       {
         "text": "Piedra volcánica",
@@ -6856,8 +6856,8 @@
     "text": "¿Qué característica define el estilo artístico del pintor y escultor Fernando Botero?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El estilo de Fernando Botero se caracteriza por jugar con la magnificación del volumen de los elementos, dotándolos de una belleza distinta, lo cual se convirtió en su marca personal",
+    "hint": "Sus personajes parecen 'inflados'.",
+    "explanation": "El estilo de Botero se define por la magnificación del volumen de figuras y objetos.",
     "choices": [
       {
         "text": "El uso exclusivo de figuras geométricas",
@@ -6887,8 +6887,8 @@
     "text": "¿Qué institución cultural fundó Fanny Elisa Mikey en el año 1981?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Fanny Mikey logró consolidar una cultura del teatro al establecer un escenario propio en 1981 con la Fundación Teatro Nacional",
+    "hint": "La actriz y gestora argentina-colombiana del Festival Iberoamericano.",
+    "explanation": "Fanny Mikey fundó la Fundación Teatro Nacional en 1981 y cofundó el Festival Iberoamericano de Teatro.",
     "choices": [
       {
         "text": "Teatro Experimental de Cali (TEC)",
@@ -6918,8 +6918,8 @@
     "text": "¿En qué año llegó el cine al territorio nacional colombiano?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El cine llegó a territorio nacional en el año de 1897, existiendo una disputa sobre si la primera función fue en Cartagena o Bucaramanga",
+    "hint": "Apenas dos años después de su invención en París.",
+    "explanation": "El cine llegó a Colombia en 1897, poco después de su invención por los hermanos Lumière.",
     "choices": [
       {
         "text": "1920",
@@ -6949,8 +6949,8 @@
     "text": "¿Qué película dirigida por Ciro Guerra alcanzó reconocimiento internacional en 2015?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Películas como \"El abrazo de la serpiente\" (2015) alcanzaron reconocimiento internacional y consolidaron el cine colombiano en la escena global",
+    "hint": "Filmada en blanco y negro en la Amazonía; nominada al Óscar.",
+    "explanation": "El abrazo de la serpiente (2015), de Ciro Guerra, fue la primera película colombiana nominada al Óscar a mejor película extranjera.",
     "choices": [
       {
         "text": "La estrategia del caracol",
@@ -6980,8 +6980,8 @@
     "text": "¿Cuál era el objetivo principal de la emisora Radio Sutatenza dirigida a la población rural?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Radio Sutatenza se encargó de alfabetizar a distancia a gran parte de la población campesina dedicada a las labores agrícolas",
+    "hint": "Enseñar a leer por las ondas radiales.",
+    "explanation": "Radio Sutatenza fue pionera mundial en la alfabetización a distancia de la población campesina.",
     "choices": [
       {
         "text": "Transmitir radionovelas de entretenimiento",
@@ -7011,8 +7011,8 @@
     "text": "¿Qué sitio arqueológico ubicado en Santa Marta se destaca por sus estructuras monumentales de terrazas y templos en piedra?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Ciudad Perdida, ubicada en Santa Marta, es un famoso asentamiento indígena que cuenta con estructuras monumentales desarrolladas por culturas precolombinas",
+    "hint": "Terrazas de piedra de los Tayronas en la Sierra.",
+    "explanation": "Ciudad Perdida, en la Sierra Nevada de Santa Marta, destaca por sus terrazas y estructuras monumentales de piedra.",
     "choices": [
       {
         "text": "Parque Arqueológico de San Agustín",
@@ -7042,8 +7042,8 @@
     "text": "¿Qué ritmo musical se considera la base de las danzas de la región del Pacífico colombiano?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En el pacífico se cuenta con el currulao como base, aunque también se danzan otros ritmos como el pango y el andarele",
+    "hint": "El ritmo de la marimba.",
+    "explanation": "El currulao es la base de las danzas del Pacífico colombiano.",
     "choices": [
       {
         "text": "El Joropo",
@@ -7073,8 +7073,8 @@
     "text": "¿Cuál es la obra literaria por la que Gabriel García Márquez recibió el premio Nobel en 1982?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Gabriel García Márquez recibió el premio Nobel en 1982 por su obra \"Cien años de Soledad\"",
+    "hint": "La saga de los Buendía en Macondo.",
+    "explanation": "Cien años de soledad (1967) es la obra cumbre por la que García Márquez recibió el Nobel en 1982.",
     "choices": [
       {
         "text": "El amor en los tiempos del cólera",
@@ -7104,8 +7104,8 @@
     "text": "¿Bajo el mandato de qué presidente se creó el Instituto Colombiano de la Juventud y el Deporte (COLDEPORTES) en 1968?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Para 1968, el presidente Carlos Lleras Restrepo, por medio del Ministerio de Educación, creó a COLDEPORTES",
+    "hint": "El mismo presidente del billete de $100.000.",
+    "explanation": "Coldeportes fue creado en 1968 durante el gobierno de Carlos Lleras Restrepo.",
     "choices": [
       {
         "text": "Gustavo Rojas Pinilla",
@@ -7135,8 +7135,8 @@
     "text": "¿Cuáles son las tres influencias principales que se fusionaron para crear la gastronomía colombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La gastronomía nacional es una fusión de diversas influencias indígenas, africanas y europeas",
+    "hint": "Tres continentes en un solo fogón.",
+    "explanation": "La gastronomía colombiana es la fusión de las cocinas indígena, africana y europea (española).",
     "choices": [
       {
         "text": "Indígena, Asiática y Europea",
@@ -7166,8 +7166,8 @@
     "text": "¿De qué expresión inglesa proviene el nombre del plato típico de San Andrés, \"Rondón\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La palabra \"Rondón\" proviene del vocablo \"run down\" que se usaba para \"ir abajo\" en busca de las verduras o ingredientes",
+    "hint": "En inglés criollo significa 'reducir' o 'bajar el fuego'.",
+    "explanation": "El nombre 'rondón' proviene de la expresión inglesa 'run down', por la cocción lenta del guiso en leche de coco.",
     "choices": [
       {
         "text": "Round on",
@@ -7197,8 +7197,8 @@
     "text": "¿Qué hierba local es indispensable en la preparación del Ajiaco santafereño para darle su sabor característico?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El ajiaco es una sopa espesa que combina diferentes tipos de papas, pollo, mazorcas y guascas, que es una hierba local",
+    "hint": "La hierba sagrada del altiplano.",
+    "explanation": "Las guascas son indispensables para el sabor característico del ajiaco santafereño.",
     "choices": [
       {
         "text": "Cilantro",
@@ -7228,8 +7228,8 @@
     "text": "En la preparación de la Mamona o ternera a la llanera, ¿cuál es el único condimento que se utiliza tradicionalmente?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Este plato consta del sacrificio de una becerra criolla a la cual no se le pone condimentos, sino sal espolvoreada y candela",
+    "hint": "Solo un condimento, el más básico de todos.",
+    "explanation": "La mamona o ternera a la llanera se sazona tradicionalmente solo con sal, asada lentamente en chuzos junto al fuego.",
     "choices": [
       {
         "text": "Pimienta y comino",
@@ -7259,8 +7259,8 @@
     "text": "¿Cómo se le llama al caramelo hecho de leche de coco y azúcar que da color y sabor al arroz con coco?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Para hacer el titote o caramelo que le da sabor y color al arroz se hace con la leche de coco rallado con el dulce del azúcar o de la panela",
+    "hint": "El caramelo del coco.",
+    "explanation": "El titoté es el caramelo de leche de coco y azúcar que da color y sabor al arroz con coco.",
     "choices": [
       {
         "text": "Melado",
@@ -7290,8 +7290,8 @@
     "text": "¿Cuáles son los ingredientes principales que componen los Chicharrones de Pirarucú de la región Amazónica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los chicharrones se preparan con filete de pirarucú condimentado y frito, y se acompañan de tacacho de plátano, fariña y casabe",
+    "hint": "El pez gigante amazónico con acompañamientos de plátano y yuca.",
+    "explanation": "Los chicharrones de pirarucú llevan filete de pirarucú con tacacho (plátano), fariña y casabe (derivados de yuca).",
     "choices": [
       {
         "text": "Filete de pirarucú, tacacho, fariña y casabe",
@@ -7321,8 +7321,8 @@
     "text": "¿Qué ingredientes introducidos por los españoles en el siglo XVI se incorporaron a la cocina colombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Con la llegada de los españoles se introdujeron ingredientes como el trigo, el arroz, la carne de cerdo, el pollo y productos lácteos",
+    "hint": "Cereales europeos, un grano asiático, y productos del cerdo y la vaca.",
+    "explanation": "Los españoles introdujeron en el siglo XVI el trigo, el arroz, la carne de cerdo y los lácteos, que se sumaron al maíz, la papa y la yuca nativos.",
     "choices": [
       {
         "text": "Maíz, yuca y frijoles",
@@ -7352,8 +7352,8 @@
     "text": "¿Cuáles son las dos influencias culinarias que dieron origen al Puchero Santafereño?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El puchero santafereño tiene su origen milenario con la cocina inca y también en Andalucía (España)",
+    "hint": "Un imperio andino y una región del sur de España.",
+    "explanation": "Según la tradición, el puchero santafereño fusiona la cocina inca (papas, maíz) con el cocido de Andalucía, España.",
     "choices": [
       {
         "text": "Cocina Maya y Francesa",
@@ -7383,8 +7383,8 @@
     "text": "¿Qué técnica de cocción se utiliza para preparar la Chuleta Valluna típica de la región Pacífica?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La chuleta valluna se prepara apanando el lomo de cerdo con harina de trigo, huevos batidos y miga de pan, para luego freírlo",
+    "hint": "Se empaniza y se lleva al aceite caliente.",
+    "explanation": "La chuleta valluna es carne de cerdo (o res) apanada y frita, plato insigne del Valle del Cauca.",
     "choices": [
       {
         "text": "Asado al carbón",
@@ -7414,8 +7414,8 @@
     "text": "¿Qué ingredientes componen el \"Mute\", plato símbolo de los santanderes?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Sus ingredientes incluyen maíz peto blanco, costillas de res y cerdo, patas de res, chorizo, habas, garbanzos, papas, entre otros",
+    "hint": "Un maíz especial con dos leguminosas y varias carnes.",
+    "explanation": "El mute santandereano lleva maíz peto, carnes de res y cerdo, garbanzos y habas.",
     "choices": [
       {
         "text": "Arroz, frijoles, carne molida y huevo",
@@ -7434,6 +7434,99 @@
       },
       {
         "text": "Pollo, tres tipos de papa y guascas",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0241",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Cuáles ingredientes utilizaban los pueblos indígenas precolombinos, base de la gastronomía colombiana?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "Los productos autóctonos de América, antes de la llegada de los europeos.",
+    "explanation": "Según la cartilla, los pueblos indígenas precolombinos utilizaban maíz, yuca, fríjoles, tubérculos y frutas tropicales en sus preparaciones.",
+    "choices": [
+      {
+        "text": "Maíz, yuca, fríjoles, tubérculos y frutas tropicales",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Trigo, arroz, cerdo y lácteos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Plátano, coco, mariscos y especias",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Aceite de oliva, uvas y almendras",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0242",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Cuáles son los ingredientes incluidos en la gastronomía colombiana durante la colonización por los españoles o europeos?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "Cereales, un grano de origen asiático y productos de animales de granja europeos.",
+    "explanation": "Con la llegada de los españoles en el siglo XVI se incorporaron el trigo, el arroz, la carne de cerdo, el pollo y los productos lácteos a la cocina colombiana.",
+    "choices": [
+      {
+        "text": "Trigo, arroz, carne de cerdo, pollo y lácteos",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Maíz, yuca y frutas tropicales",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Plátano, coco y mariscos",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Papa, aguacate y ají",
+        "is_correct": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "key": "CUL-0243",
+    "subcategory": "GASTRONOMIA",
+    "text": "¿Qué ingredientes caracterizan la influencia africana en la gastronomía colombiana, especialmente en las costas Pacífica y Caribe?",
+    "difficulty": 2,
+    "points": 10,
+    "hint": "Sabores costeños: una fruta para freír, un fruto de palma y productos del mar.",
+    "explanation": "La cocina afrocolombiana se caracteriza por el uso del plátano, el coco, los mariscos y las especias, combinados en platos sabrosos y picantes.",
+    "choices": [
+      {
+        "text": "Plátano, coco, mariscos y especias",
+        "is_correct": true,
+        "order": 1
+      },
+      {
+        "text": "Trigo, arroz y lácteos",
+        "is_correct": false,
+        "order": 2
+      },
+      {
+        "text": "Maíz, papa y fríjoles",
+        "is_correct": false,
+        "order": 3
+      },
+      {
+        "text": "Carne de res, cebada y centeno",
         "is_correct": false,
         "order": 4
       }

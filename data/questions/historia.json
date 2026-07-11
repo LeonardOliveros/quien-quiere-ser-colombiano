@@ -5,8 +5,8 @@
     "text": "¿Cuál fue el nombre anterior a \"República de Colombia\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre honraba al territorio 'granadino' conquistado por los españoles.",
+    "explanation": "Antes de llamarse República de Colombia, el país se conocía como la Nueva Granada, nombre heredado del Virreinato de la Nueva Granada.",
     "choices": [
       {
         "text": "Virreinato del Perú",
@@ -36,8 +36,8 @@
     "text": "La Gran Colombia incluía los territorios actuales de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Incluía cuatro países actuales, uno de ellos separado en 1903.",
+    "explanation": "La Gran Colombia comprendía los territorios actuales de Colombia, Venezuela, Ecuador y Panamá.",
     "choices": [
       {
         "text": "Colombia y Venezuela",
@@ -67,8 +67,8 @@
     "text": "¿En qué año se dio el nombre de \"República de Colombia\" en el Congreso de Angostura?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo año de la Batalla de Boyacá.",
+    "explanation": "El 15 de febrero de 1819, en el Congreso de Angostura, Simón Bolívar propuso el nombre de República de Colombia en homenaje a Cristóbal Colón.",
     "choices": [
       {
         "text": "1810",
@@ -98,8 +98,8 @@
     "text": "¿Qué otros nombres tuvo Colombia antes de 1886?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El país cambió de nombre tres veces entre 1831 y 1886.",
+    "explanation": "Tras la disolución de la Gran Colombia el país se llamó República de la Nueva Granada (1832), Confederación Granadina (1858) y Estados Unidos de Colombia (1863), hasta retomar en 1886 el nombre de República de Colombia.",
     "choices": [
       {
         "text": "Solo Nueva Granada",
@@ -129,8 +129,8 @@
     "text": "¿En qué fecha se celebra la independencia de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la fecha del famoso incidente del florero.",
+    "explanation": "El 20 de julio de 1810 se dio el Grito de Independencia en Santafé de Bogotá, fecha que se celebra como el Día de la Independencia.",
     "choices": [
       {
         "text": "7 de agosto de 1819",
@@ -160,8 +160,8 @@
     "text": "El 20 de julio de 1810 marca:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Fue el inicio del proceso, no su culminación militar.",
+    "explanation": "El 20 de julio de 1810 marca el Grito de Independencia; la independencia se selló militarmente en la Batalla de Boyacá (1819).",
     "choices": [
       {
         "text": "La Batalla de Boyacá",
@@ -191,8 +191,8 @@
     "text": "¿Qué evento desencadenó el Grito de Independencia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un objeto prestado (o negado) desató la revuelta en la plaza mayor.",
+    "explanation": "El incidente del florero de Llorente: los criollos pidieron prestado un florero al comerciante español José González Llorente y su negativa desató la revuelta popular del 20 de julio de 1810.",
     "choices": [
       {
         "text": "La Batalla de Boyacá",
@@ -222,8 +222,8 @@
     "text": "La Batalla de Boyacá ocurrió el:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Esta fecha es hoy fiesta nacional: día de la Batalla de Boyacá.",
+    "explanation": "La Batalla de Boyacá se libró el 7 de agosto de 1819 en el puente de Boyacá y selló la independencia de Colombia.",
     "choices": [
       {
         "text": "20 de julio de 1810",
@@ -253,8 +253,8 @@
     "text": "¿Quién comandó las tropas patriotas en la Batalla de Boyacá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Libertador en persona dirigió la campaña.",
+    "explanation": "Simón Bolívar comandó el ejército patriota en la Batalla de Boyacá, derrotando a las tropas realistas de José María Barreiro.",
     "choices": [
       {
         "text": "Francisco de Paula Santander",
@@ -284,8 +284,8 @@
     "text": "El período conocido como \"La Patria Boba\" se caracterizó por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los criollos, ya independientes, pelearon entre sí por el modelo de Estado.",
+    "explanation": "La Patria Boba (1810-1815) se caracterizó por las guerras civiles entre centralistas y federalistas, lo que facilitó la Reconquista española.",
     "choices": [
       {
         "text": "La unidad total",
@@ -315,8 +315,8 @@
     "text": "¿Entre qué años ocurrió la Patria Boba?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Empieza con el Grito de Independencia y termina con la llegada de Morillo.",
+    "explanation": "La Patria Boba abarca de 1810 a 1815, entre el Grito de Independencia y el inicio de la Reconquista española.",
     "choices": [
       {
         "text": "1810-1815",
@@ -346,8 +346,8 @@
     "text": "La Reconquista española fue liderada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lo apodaban 'El Pacificador'.",
+    "explanation": "La Reconquista española (1815-1819) fue liderada por el general Pablo Morillo, conocido como 'El Pacificador'.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -377,8 +377,8 @@
     "text": "¿Quién es conocido como \"El Libertador\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Libertó cinco naciones sudamericanas.",
+    "explanation": "Simón Bolívar es conocido como 'El Libertador' por encabezar la independencia de Colombia, Venezuela, Ecuador, Perú y Bolivia.",
     "choices": [
       {
         "text": "Francisco de Paula Santander",
@@ -408,8 +408,8 @@
     "text": "¿Quién es conocido como \"El Hombre de las Leyes\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Fue el gran organizador civil y jurídico de la república.",
+    "explanation": "Francisco de Paula Santander es 'El Hombre de las Leyes' por su empeño en organizar el Estado bajo el imperio de la ley.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -439,8 +439,8 @@
     "text": "Antonio Nariño es conocido por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Difundió en español un documento clave de la Revolución Francesa.",
+    "explanation": "Antonio Nariño tradujo y publicó en 1793 la Declaración de los Derechos del Hombre y del Ciudadano, por lo cual fue perseguido y encarcelado.",
     "choices": [
       {
         "text": "Ganar la Batalla de Boyacá",
@@ -470,8 +470,8 @@
     "text": "Policarpa Salavarrieta fue:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la heroína que aparecía en los billetes de $10.000.",
+    "explanation": "Policarpa Salavarrieta, 'La Pola', fue espía de los patriotas y murió fusilada por los españoles; es la gran heroína y mártir de la independencia.",
     "choices": [
       {
         "text": "Primera dama",
@@ -501,8 +501,8 @@
     "text": "¿En qué año fue fusilada La Pola?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dos años antes de la Batalla de Boyacá.",
+    "explanation": "La Pola fue fusilada en Bogotá el 14 de noviembre de 1817, durante el Régimen del Terror de la Reconquista española.",
     "choices": [
       {
         "text": "1810",
@@ -532,17 +532,17 @@
     "text": "¿En qué año se disolvió la Gran Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Coincide con el año de la muerte de Bolívar.",
+    "explanation": "La Gran Colombia se disolvió en 1830, cuando Venezuela y Ecuador se separaron; el proceso concluyó en 1831 con la creación de la República de la Nueva Granada.",
     "choices": [
       {
         "text": "1825",
-        "is_correct": true,
+        "is_correct": false,
         "order": 1
       },
       {
         "text": "1830",
-        "is_correct": false,
+        "is_correct": true,
         "order": 2
       },
       {
@@ -563,8 +563,8 @@
     "text": "¿Quién fue el primer presidente de la Nueva Granada después de la disolución de la Gran Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Hombre de las Leyes asumió el poder en 1832.",
+    "explanation": "Francisco de Paula Santander fue el primer presidente de la República de la Nueva Granada (1832-1837), tras la disolución de la Gran Colombia.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -594,8 +594,8 @@
     "text": "La Constitución de Rionegro se promulgó en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En plena época del radicalismo liberal.",
+    "explanation": "La Constitución de Rionegro se promulgó en 1863 y dio origen a los Estados Unidos de Colombia.",
     "choices": [
       {
         "text": "1853",
@@ -625,8 +625,8 @@
     "text": "La Constitución de 1863 establecía un sistema:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Creaba nueve estados soberanos.",
+    "explanation": "La Constitución de 1863 estableció un sistema federalista radical: nueve estados soberanos unidos en los Estados Unidos de Colombia.",
     "choices": [
       {
         "text": "Centralista",
@@ -656,8 +656,8 @@
     "text": "¿Quién promovió la Constitución de 1886?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El líder de la Regeneración.",
+    "explanation": "Rafael Núñez, líder del movimiento de la Regeneración, promovió la Constitución de 1886, que rigió a Colombia por más de un siglo.",
     "choices": [
       {
         "text": "Tomás Cipriano de Mosquera",
@@ -687,8 +687,8 @@
     "text": "La Constitución de 1886 estableció un sistema:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Fue la reacción contra el federalismo de Rionegro.",
+    "explanation": "La Constitución de 1886 estableció un sistema centralista: los estados soberanos se convirtieron en departamentos bajo un gobierno central fuerte.",
     "choices": [
       {
         "text": "Federalista",
@@ -718,8 +718,8 @@
     "text": "La Guerra de los Mil Días ocurrió entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Fue la guerra civil con la que cerró el siglo XIX.",
+    "explanation": "La Guerra de los Mil Días (1899-1902) enfrentó a liberales y conservadores; dejó unos 100.000 muertos y debilitó al país antes de la pérdida de Panamá.",
     "choices": [
       {
         "text": "1885-1888",
@@ -749,8 +749,8 @@
     "text": "¿En qué año se separó Panamá de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un año después de terminar la Guerra de los Mil Días.",
+    "explanation": "Panamá se separó de Colombia el 3 de noviembre de 1903, con apoyo de Estados Unidos, interesado en construir el canal.",
     "choices": [
       {
         "text": "1899",
@@ -780,8 +780,8 @@
     "text": "¿Quién fue Jorge Eliécer Gaitán?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su muerte desató el Bogotazo.",
+    "explanation": "Jorge Eliécer Gaitán fue el líder popular del Partido Liberal; su asesinato el 9 de abril de 1948 desató el Bogotazo.",
     "choices": [
       {
         "text": "Presidente de Colombia",
@@ -811,8 +811,8 @@
     "text": "El Bogotazo ocurrió el:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La fecha del asesinato de Gaitán.",
+    "explanation": "El Bogotazo ocurrió el 9 de abril de 1948, tras el asesinato de Jorge Eliécer Gaitán: una revuelta que destruyó el centro de Bogotá.",
     "choices": [
       {
         "text": "9 de abril de 1948",
@@ -842,8 +842,8 @@
     "text": "El período de La Violencia se sitúa aproximadamente entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Empieza con la posguerra de Gaitán y termina con el Frente Nacional.",
+    "explanation": "La Violencia fue el enfrentamiento bipartidista entre liberales y conservadores, situado aproximadamente entre 1946 y 1958.",
     "choices": [
       {
         "text": "1930-1940",
@@ -873,8 +873,8 @@
     "text": "¿Quién fue el único dictador militar del siglo XX en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Gobernó entre 1953 y 1957 y construyó grandes obras como el aeropuerto El Dorado.",
+    "explanation": "El general Gustavo Rojas Pinilla fue el único dictador militar del siglo XX (1953-1957); durante su gobierno llegó la televisión a Colombia.",
     "choices": [
       {
         "text": "Laureano Gómez",
@@ -904,8 +904,8 @@
     "text": "El Frente Nacional fue un acuerdo entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los dos partidos tradicionales acordaron alternarse el poder.",
+    "explanation": "El Frente Nacional fue el pacto entre liberales y conservadores para alternarse la presidencia y repartirse la burocracia, como salida a La Violencia.",
     "choices": [
       {
         "text": "Liberales y comunistas",
@@ -935,8 +935,8 @@
     "text": "¿Entre qué años funcionó el Frente Nacional?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Duró 16 años y cuatro presidencias alternadas.",
+    "explanation": "El Frente Nacional funcionó entre 1958 y 1974, con dos presidentes liberales y dos conservadores alternados.",
     "choices": [
       {
         "text": "1948-1958",
@@ -966,8 +966,8 @@
     "text": "La actual Constitución de Colombia fue promulgada en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Nació de la Séptima Papeleta y una Asamblea Constituyente.",
+    "explanation": "La Constitución vigente fue promulgada el 4 de julio de 1991 por la Asamblea Nacional Constituyente.",
     "choices": [
       {
         "text": "1986",
@@ -997,8 +997,8 @@
     "text": "¿Quién fue César Gaviria?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su gobierno (1990-1994) impulsó la apertura económica.",
+    "explanation": "César Gaviria fue el presidente durante la Asamblea Constituyente de 1991 y la promulgación de la nueva Constitución.",
     "choices": [
       {
         "text": "Presidente durante la Constituyente de 1991",
@@ -1028,8 +1028,8 @@
     "text": "El proceso de paz con las FARC se firmó en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Se firmó en el Teatro Colón de Bogotá, en noviembre.",
+    "explanation": "El Acuerdo de Paz entre el Estado colombiano y las FARC-EP se firmó en 2016, durante el gobierno de Juan Manuel Santos.",
     "choices": [
       {
         "text": "2012",
@@ -1059,8 +1059,8 @@
     "text": "¿Quién fue presidente durante la firma del acuerdo de paz con las FARC?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Recibió el Premio Nobel de Paz por ello.",
+    "explanation": "Juan Manuel Santos era el presidente cuando se firmó el acuerdo de paz con las FARC en 2016; recibió el Premio Nobel de Paz ese año.",
     "choices": [
       {
         "text": "Álvaro Uribe",
@@ -1090,8 +1090,8 @@
     "text": "Los Muiscas habitaban principalmente en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Vivían donde hoy están Bogotá, Tunja y Sogamoso.",
+    "explanation": "Los Muiscas habitaban el altiplano cundiboyacense; eran expertos agricultores, comerciantes de sal y orfebres, y protagonistas de la leyenda de El Dorado.",
     "choices": [
       {
         "text": "La Costa Caribe",
@@ -1121,8 +1121,8 @@
     "text": "Los Tayronas se ubicaban en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Construyeron Ciudad Perdida (Teyuna).",
+    "explanation": "Los Tayronas se asentaron en la Sierra Nevada de Santa Marta, donde construyeron centros urbanos de piedra como Ciudad Perdida.",
     "choices": [
       {
         "text": "Los Andes",
@@ -1152,8 +1152,8 @@
     "text": "Los Quimbayas fueron famosos por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su pieza más famosa es el Poporo del Museo del Oro.",
+    "explanation": "Los Quimbayas, del eje cafetero actual, fueron célebres por su orfebrería en oro, como el famoso Poporo Quimbaya.",
     "choices": [
       {
         "text": "Su agricultura",
@@ -1183,8 +1183,8 @@
     "text": "El Dorado era un mito relacionado con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El cacique se cubría de polvo de oro y se sumergía en una laguna sagrada.",
+    "explanation": "El mito de El Dorado nació del ritual muisca en la laguna de Guatavita, donde el nuevo zipa se cubría con polvo de oro y ofrendaba piezas al agua.",
     "choices": [
       {
         "text": "Los Tayronas",
@@ -1214,8 +1214,8 @@
     "text": "Los Zenúes desarrollaron un sistema de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Fue una obra hidráulica monumental en tierras inundables del Caribe.",
+    "explanation": "Los Zenúes construyeron un extenso sistema de canales de drenaje en la región de La Mojana, que les permitió cultivar en zonas inundables.",
     "choices": [
       {
         "text": "Acueductos",
@@ -1245,8 +1245,8 @@
     "text": "¿En qué año llegó Rodrigo de Bastidas a la costa colombiana?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Siete años después del primer viaje de Colón.",
+    "explanation": "Rodrigo de Bastidas recorrió la costa caribe colombiana en 1499, siendo de los primeros europeos en explorar el territorio.",
     "choices": [
       {
         "text": "1492",
@@ -1276,8 +1276,8 @@
     "text": "Santa Marta fue fundada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo explorador que recorrió la costa en 1499.",
+    "explanation": "Rodrigo de Bastidas fundó Santa Marta en 1525, la ciudad más antigua de Colombia que aún existe.",
     "choices": [
       {
         "text": "Pedro de Heredia",
@@ -1307,8 +1307,8 @@
     "text": "¿En qué año fue fundada Santa Marta?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Es la ciudad colombiana existente más antigua.",
+    "explanation": "Santa Marta fue fundada por Rodrigo de Bastidas el 29 de julio de 1525.",
     "choices": [
       {
         "text": "1510",
@@ -1338,8 +1338,8 @@
     "text": "Cartagena de Indias fue fundada en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ocho años después de Santa Marta.",
+    "explanation": "Cartagena de Indias fue fundada en 1533 por Pedro de Heredia y se convirtió en el principal puerto del imperio español en América.",
     "choices": [
       {
         "text": "1525",
@@ -1369,8 +1369,8 @@
     "text": "¿Quién fundó Cartagena?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su estatua está frente a la Torre del Reloj en la ciudad amurallada.",
+    "explanation": "Pedro de Heredia fundó Cartagena de Indias en 1533.",
     "choices": [
       {
         "text": "Rodrigo de Bastidas",
@@ -1400,8 +1400,8 @@
     "text": "Bogotá fue fundada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El conquistador que remontó el río Magdalena hasta el altiplano muisca.",
+    "explanation": "Gonzalo Jiménez de Quesada fundó Santafé de Bogotá en 1538, tras su expedición por el río Magdalena hasta territorio muisca.",
     "choices": [
       {
         "text": "Sebastián de Belalcázar",
@@ -1431,8 +1431,8 @@
     "text": "¿En qué fecha fue fundada Bogotá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un día antes de la fecha que hoy es fiesta nacional por Boyacá, pero de 1538.",
+    "explanation": "Bogotá fue fundada el 6 de agosto de 1538 por Gonzalo Jiménez de Quesada con el nombre de Santafé.",
     "choices": [
       {
         "text": "6 de agosto de 1537",
@@ -1462,8 +1462,8 @@
     "text": "El cacique muisca que resistió a los españoles fue:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Tres caciques resistieron sucesivamente: el zipa, su sucesor y el último zaque.",
+    "explanation": "Tisquesusa, Sagipa y Aquiminzaque resistieron la conquista española del territorio muisca; los tres murieron a manos de los conquistadores.",
     "choices": [
       {
         "text": "Tisquesusa",
@@ -1493,8 +1493,8 @@
     "text": "¿En qué año se creó la Audiencia de Santafé?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Once años después de la fundación de Bogotá.",
+    "explanation": "La Real Audiencia de Santafé fue creada en 1549 y abarcaba las provincias de Santa Marta, San Juan, Popayán, Guayana y Cartagena de Indias.",
     "choices": [
       {
         "text": "1538",
@@ -1524,8 +1524,8 @@
     "text": "El Virreinato de Nueva Granada se creó por primera vez en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "A comienzos del siglo XVIII, bajo los Borbones.",
+    "explanation": "El Virreinato de la Nueva Granada fue creado por primera vez en 1717; se suprimió en 1723 y se restableció definitivamente en 1739.",
     "choices": [
       {
         "text": "1700",
@@ -1555,8 +1555,8 @@
     "text": "¿Por qué se suprimió temporalmente el Virreinato en 1723?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La nueva estructura no funcionó como se esperaba.",
+    "explanation": "El Virreinato se suprimió temporalmente en 1723 por problemas administrativos y económicos: los costos superaban los beneficios para la Corona.",
     "choices": [
       {
         "text": "Falta de recursos",
@@ -1586,8 +1586,8 @@
     "text": "El Virreinato se restableció definitivamente en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dieciséis años después de su supresión.",
+    "explanation": "El Virreinato de la Nueva Granada fue restablecido definitivamente en 1739, con capital en Santafé de Bogotá.",
     "choices": [
       {
         "text": "1730",
@@ -1617,8 +1617,8 @@
     "text": "La economía colonial se basaba principalmente en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dos actividades: una minera y otra basada en personas esclavizadas.",
+    "explanation": "La economía del Virreinato se basaba en la explotación del oro y la trata de esclavos africanos, con Cartagena como principal puerto negrero.",
     "choices": [
       {
         "text": "Agricultura y ganadería",
@@ -1648,8 +1648,8 @@
     "text": "Las encomiendas eran:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Grupos de indígenas 'encomendados' a un español para trabajar y ser evangelizados.",
+    "explanation": "La encomienda era un sistema colonial en el que se asignaba trabajo indígena a un español (encomendero), a cambio de evangelización y protección teórica.",
     "choices": [
       {
         "text": "Tierras sin dueño",
@@ -1679,8 +1679,8 @@
     "text": "La mita era:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Sistema de turnos de trabajo obligatorio de origen andino.",
+    "explanation": "La mita era el trabajo forzoso por turnos que debían cumplir los indígenas, especialmente en las minas.",
     "choices": [
       {
         "text": "Un impuesto",
@@ -1710,8 +1710,8 @@
     "text": "Los resguardos indígenas eran:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Aún existen hoy como figura de propiedad colectiva indígena.",
+    "explanation": "Los resguardos eran (y siguen siendo) tierras comunales de propiedad colectiva indígena, reconocidas desde la Colonia.",
     "choices": [
       {
         "text": "Prisiones",
@@ -1741,8 +1741,8 @@
     "text": "Las Reformas Borbónicas fueron implementadas por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los reyes ilustrados de finales del siglo XVIII.",
+    "explanation": "Las Reformas Borbónicas fueron implementadas principalmente por Carlos III y Carlos IV para modernizar la administración del imperio.",
     "choices": [
       {
         "text": "Felipe V",
@@ -1772,8 +1772,8 @@
     "text": "¿En qué siglo se implementaron las Reformas Borbónicas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El siglo de la Ilustración.",
+    "explanation": "Las Reformas Borbónicas se implementaron en el siglo XVIII, buscando mayor control y recaudo en las colonias.",
     "choices": [
       {
         "text": "XVI",
@@ -1803,8 +1803,8 @@
     "text": "La expulsión de los jesuitas ocurrió en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo año en toda la América española, bajo Carlos III.",
+    "explanation": "La Compañía de Jesús (jesuitas) fue expulsada de España y sus colonias en 1767, por orden de Carlos III.",
     "choices": [
       {
         "text": "1750",
@@ -1834,8 +1834,8 @@
     "text": "El movimiento de los Comuneros ocurrió en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una década antes de la Revolución Francesa.",
+    "explanation": "La insurrección de los Comuneros estalló en 1781 contra los nuevos impuestos de las Reformas Borbónicas.",
     "choices": [
       {
         "text": "1770",
@@ -1865,8 +1865,8 @@
     "text": "Los Comuneros se levantaron en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En una villa santandereana famosa por su papel revolucionario.",
+    "explanation": "El movimiento comunero nació en Socorro (Santander) en 1781, extendiéndose a Charalá, Simacota y Mogotes.",
     "choices": [
       {
         "text": "Bogotá",
@@ -1896,8 +1896,8 @@
     "text": "¿Quién lideró a los Comuneros?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su nombre es sinónimo de rebeldía popular; fue ejecutado y descuartizado.",
+    "explanation": "José Antonio Galán lideró a los Comuneros tras la firma de las capitulaciones; fue capturado y ejecutado en 1782.",
     "choices": [
       {
         "text": "Antonio Nariño",
@@ -1927,8 +1927,8 @@
     "text": "Las capitulaciones de Zipaquirá fueron:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un pacto que las autoridades incumplieron apenas se dispersó la multitud.",
+    "explanation": "Las capitulaciones de Zipaquirá fueron el acuerdo entre los Comuneros y las autoridades coloniales; el arzobispo-virrey las anuló después.",
     "choices": [
       {
         "text": "Un tratado de paz",
@@ -1958,8 +1958,8 @@
     "text": "¿Qué pasó con José Antonio Galán?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su castigo fue ejemplarizante y brutal.",
+    "explanation": "José Antonio Galán fue ejecutado en 1782 y su cuerpo descuartizado y exhibido como escarmiento.",
     "choices": [
       {
         "text": "Fue perdonado",
@@ -1989,8 +1989,8 @@
     "text": "La Expedición Botánica fue dirigida por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un sacerdote y sabio gaditano, médico del virrey.",
+    "explanation": "José Celestino Mutis dirigió la Real Expedición Botánica del Nuevo Reino de Granada, iniciada en 1783.",
     "choices": [
       {
         "text": "Alexander von Humboldt",
@@ -2020,8 +2020,8 @@
     "text": "La Expedición Botánica comenzó en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo año en que terminó la independencia de Estados Unidos.",
+    "explanation": "La Expedición Botánica comenzó en 1783 bajo la dirección de José Celestino Mutis, con sede principal en Mariquita y luego Bogotá.",
     "choices": [
       {
         "text": "1760",
@@ -2051,8 +2051,8 @@
     "text": "Francisco José de Caldas era conocido como:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Astrónomo y geógrafo payanés fusilado en 1816.",
+    "explanation": "Francisco José de Caldas, 'El Sabio', fue científico de la Expedición Botánica y mártir de la independencia, fusilado durante la Reconquista.",
     "choices": [
       {
         "text": "El Precursor",
@@ -2082,8 +2082,8 @@
     "text": "Antonio Nariño tradujo:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El documento emblema de la Revolución Francesa.",
+    "explanation": "Antonio Nariño tradujo del francés la Declaración de los Derechos del Hombre y del Ciudadano, difundiendo las ideas ilustradas.",
     "choices": [
       {
         "text": "La Biblia",
@@ -2113,8 +2113,8 @@
     "text": "¿En qué año tradujo Nariño los Derechos del Hombre?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cuatro años después del estallido de la Revolución Francesa.",
+    "explanation": "Nariño imprimió su traducción de los Derechos del Hombre en 1793, lo que le costó cárcel y persecución.",
     "choices": [
       {
         "text": "1790",
@@ -2144,8 +2144,8 @@
     "text": "El Memorial de Agravios fue escrito por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Lo escribió el mismo prócer que presidió las Provincias Unidas y murió fusilado.",
+    "explanation": "Camilo Torres escribió en 1809 el Memorial de Agravios, reclamando igualdad de representación para los americanos ante la Corona.",
     "choices": [
       {
         "text": "Antonio Nariño",
@@ -2175,8 +2175,8 @@
     "text": "¿En qué año se escribió el Memorial de Agravios?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un año antes del Grito de Independencia.",
+    "explanation": "El Memorial de Agravios fue redactado por Camilo Torres en 1809, aunque nunca se envió oficialmente a España.",
     "choices": [
       {
         "text": "1808",
@@ -2206,8 +2206,8 @@
     "text": "El florero de Llorente ocurrió un:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Era día de mercado en la plaza mayor.",
+    "explanation": "El 20 de julio de 1810 cayó viernes, día de mercado en Santafé, lo que garantizó una plaza llena para la revuelta planeada por los criollos.",
     "choices": [
       {
         "text": "Lunes",
@@ -2237,8 +2237,8 @@
     "text": "¿Quiénes protagonizaron el incidente del florero?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dos hermanos criollos fueron a pedir prestado el florero al español.",
+    "explanation": "Los hermanos Francisco y Antonio Morales protagonizaron con el comerciante español José González Llorente el incidente del florero que desató el 20 de julio.",
     "choices": [
       {
         "text": "Llorente y Bolívar",
@@ -2268,8 +2268,8 @@
     "text": "La primera república (Patria Boba) duró de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Del Grito de Independencia a la llegada del Pacificador.",
+    "explanation": "La Primera República o Patria Boba se extendió de 1810 a 1815, cuando comenzó la Reconquista de Pablo Morillo.",
     "choices": [
       {
         "text": "1808-1815",
@@ -2299,8 +2299,8 @@
     "text": "¿Por qué se llamó \"Patria Boba\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El nombre irónico se debe a las peleas internas de los criollos.",
+    "explanation": "Se llamó 'Patria Boba' por las constantes guerras civiles entre federalistas y centralistas, que impidieron consolidar la independencia.",
     "choices": [
       {
         "text": "Por las derrotas militares",
@@ -2330,8 +2330,8 @@
     "text": "El Congreso de las Provincias Unidas se reunió en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En una ciudad boyacense, capital de las Provincias Unidas.",
+    "explanation": "El Congreso de las Provincias Unidas de la Nueva Granada sesionó principalmente en Tunja, bajo el liderazgo de Camilo Torres.",
     "choices": [
       {
         "text": "Bogotá",
@@ -2361,8 +2361,8 @@
     "text": "Pablo Morillo era conocido como:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su apodo era irónico, dado el terror que impuso.",
+    "explanation": "Pablo Morillo era llamado 'El Pacificador', aunque su Reconquista instauró el Régimen del Terror con cientos de patriotas ejecutados.",
     "choices": [
       {
         "text": "El Libertador",
@@ -2392,8 +2392,8 @@
     "text": "El Régimen del Terror duró de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "De la llegada de Morillo a la Batalla de Boyacá.",
+    "explanation": "El Régimen del Terror (1815-1819) fue la etapa de persecución y ejecución de patriotas durante la Reconquista española.",
     "choices": [
       {
         "text": "1810-1815",
@@ -2423,8 +2423,8 @@
     "text": "La Campaña Libertadora de 1819 duró:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Poco más de dos meses y medio, desde los Llanos hasta Boyacá.",
+    "explanation": "La Campaña Libertadora de 1819 duró 77 días: partió de los Llanos de Casanare, cruzó el páramo de Pisba y culminó en la Batalla de Boyacá.",
     "choices": [
       {
         "text": "50 días",
@@ -2454,8 +2454,8 @@
     "text": "¿Desde dónde partió Bolívar en la Campaña Libertadora?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Partió de las llanuras orientales, cruzando el páramo de Pisba.",
+    "explanation": "Bolívar inició la Campaña Libertadora desde los Llanos de Casanare, cruzando la cordillera por el páramo de Pisba para sorprender a los realistas.",
     "choices": [
       {
         "text": "Caracas",
@@ -2485,8 +2485,8 @@
     "text": "La Batalla del Pantano de Vargas fue el:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Casi dos semanas antes de Boyacá; allí brillaron los 14 lanceros de Rondón.",
+    "explanation": "La Batalla del Pantano de Vargas, el 25 de julio de 1819, fue el antecedente decisivo de Boyacá; la carga de los lanceros de Juan José Rondón salvó a los patriotas.",
     "choices": [
       {
         "text": "25 de julio de 1819",
@@ -2516,8 +2516,8 @@
     "text": "¿Quién comandó las tropas españolas en Boyacá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un joven coronel realista que fue capturado y fusilado después.",
+    "explanation": "José María Barreiro comandaba las tropas realistas en Boyacá; fue capturado en la batalla y fusilado en octubre de 1819.",
     "choices": [
       {
         "text": "Pablo Morillo",
@@ -2547,8 +2547,8 @@
     "text": "El Congreso de Cúcuta se realizó en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El congreso que organizó constitucionalmente a la Gran Colombia.",
+    "explanation": "El Congreso de Cúcuta de 1821 expidió la Constitución de la Gran Colombia y eligió a Bolívar presidente y a Santander vicepresidente.",
     "choices": [
       {
         "text": "1819",
@@ -2578,8 +2578,8 @@
     "text": "La Constitución de Cúcuta estableció:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Bolívar quería un Estado fuerte y unido.",
+    "explanation": "La Constitución de Cúcuta (1821) estableció un sistema centralista para la Gran Colombia.",
     "choices": [
       {
         "text": "Un sistema federal",
@@ -2609,8 +2609,8 @@
     "text": "La Gran Colombia existió entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Nació en Angostura y murió con la separación de Venezuela y Ecuador.",
+    "explanation": "La Gran Colombia existió entre 1819 (Congreso de Angostura) y 1831, cuando se disolvió tras la separación de Venezuela y Ecuador.",
     "choices": [
       {
         "text": "1810-1830",
@@ -2640,8 +2640,8 @@
     "text": "La capital de la Gran Colombia era:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La misma capital actual de Colombia.",
+    "explanation": "Bogotá fue la capital de la Gran Colombia.",
     "choices": [
       {
         "text": "Caracas",
@@ -2671,8 +2671,8 @@
     "text": "¿Por qué se disolvió la Gran Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ni guerras externas ni invasiones: el problema fue interno.",
+    "explanation": "La Gran Colombia se disolvió por las diferencias regionales y políticas, especialmente entre bolivarianos (centralistas) y santanderistas (federalistas).",
     "choices": [
       {
         "text": "Guerra con España",
@@ -2702,8 +2702,8 @@
     "text": "La Convención de Ocaña fue en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La convención fallida que precedió a la dictadura de Bolívar.",
+    "explanation": "La Convención de Ocaña (1828) intentó reformar la Constitución de Cúcuta; su fracaso llevó a Bolívar a asumir poderes dictatoriales.",
     "choices": [
       {
         "text": "1826",
@@ -2733,8 +2733,8 @@
     "text": "La Noche Septembrina fue:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ocurrió el 25 de septiembre de 1828 en el Palacio de San Carlos.",
+    "explanation": "La Noche Septembrina (25 de septiembre de 1828) fue el intento de asesinato contra Bolívar en Bogotá, del cual escapó por la ventana gracias a Manuela Sáenz.",
     "choices": [
       {
         "text": "Una fiesta",
@@ -2764,8 +2764,8 @@
     "text": "¿Quién salvó a Bolívar en la Noche Septembrina?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su compañera, apodada 'la Libertadora del Libertador'.",
+    "explanation": "Manuela Sáenz alertó a Bolívar y lo ayudó a escapar por la ventana, ganándose el título de 'Libertadora del Libertador'.",
     "choices": [
       {
         "text": "Santander",
@@ -2795,8 +2795,8 @@
     "text": "Bolívar murió en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "En una quinta cerca del mar Caribe, camino al exilio.",
+    "explanation": "Bolívar murió en la Quinta de San Pedro Alejandrino, en Santa Marta, cuando se dirigía al exilio en Europa.",
     "choices": [
       {
         "text": "Bogotá",
@@ -2826,8 +2826,8 @@
     "text": "¿En qué fecha murió Bolívar?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una semana antes de Navidad de 1830.",
+    "explanation": "Simón Bolívar murió el 17 de diciembre de 1830 en Santa Marta, a los 47 años.",
     "choices": [
       {
         "text": "17 de diciembre de 1830",
@@ -2857,8 +2857,8 @@
     "text": "El primer presidente de la Nueva Granada fue:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Hombre de las Leyes regresó del exilio para gobernar.",
+    "explanation": "Francisco de Paula Santander fue el primer presidente de la República de la Nueva Granada (1832-1837).",
     "choices": [
       {
         "text": "Bolívar",
@@ -2888,8 +2888,8 @@
     "text": "La Guerra de los Supremos ocurrió en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La primera gran guerra civil de la república, iniciada por un tema religioso.",
+    "explanation": "La Guerra de los Supremos (1839-1842) fue la primera guerra civil de la Nueva Granada, iniciada por el cierre de conventos en Pasto.",
     "choices": [
       {
         "text": "1830-1832",
@@ -2919,8 +2919,8 @@
     "text": "La abolición definitiva de la esclavitud fue en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "A mitad del siglo XIX, bajo un gobierno liberal.",
+    "explanation": "La esclavitud fue abolida definitivamente en Colombia el 1 de enero de 1852, mediante la ley de 1851 sancionada por José Hilario López.",
     "choices": [
       {
         "text": "1821",
@@ -2950,8 +2950,8 @@
     "text": "¿Quién decretó la abolición de la esclavitud?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un presidente liberal de mediados del siglo XIX.",
+    "explanation": "El presidente José Hilario López sancionó en 1851 la ley que abolió definitivamente la esclavitud.",
     "choices": [
       {
         "text": "Mosquera",
@@ -2981,8 +2981,8 @@
     "text": "La Constitución de Rionegro era:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Dio soberanía casi total a los nueve estados.",
+    "explanation": "La Constitución de Rionegro (1863) era federalista radical: estados soberanos, período presidencial de dos años y amplias libertades individuales.",
     "choices": [
       {
         "text": "Centralista",
@@ -3012,8 +3012,8 @@
     "text": "Los Estados Unidos de Colombia existieron entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El período del federalismo radical.",
+    "explanation": "Los Estados Unidos de Colombia existieron entre 1863 y 1886, bajo la Constitución de Rionegro.",
     "choices": [
       {
         "text": "1850-1886",
@@ -3043,8 +3043,8 @@
     "text": "La Regeneración fue liderada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su lema era 'regeneración o catástrofe'.",
+    "explanation": "Rafael Núñez lideró la Regeneración, movimiento que acabó con el federalismo y produjo la Constitución centralista de 1886.",
     "choices": [
       {
         "text": "Mosquera",
@@ -3074,8 +3074,8 @@
     "text": "El Concordato con la Iglesia se firmó en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un año después de la Constitución de 1886.",
+    "explanation": "El Concordato entre Colombia y la Santa Sede se firmó en 1887, dando a la Iglesia católica gran influencia en la educación y el registro civil.",
     "choices": [
       {
         "text": "1863",
@@ -3105,8 +3105,8 @@
     "text": "La Guerra de los Mil Días causó aproximadamente:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Una cifra de seis dígitos que marcó a una nación de apenas cuatro millones.",
+    "explanation": "La Guerra de los Mil Días (1899-1902) dejó aproximadamente 100.000 muertos, en un país de unos cuatro millones de habitantes.",
     "choices": [
       {
         "text": "10.000 muertos",
@@ -3136,8 +3136,8 @@
     "text": "¿Quién era presidente cuando se perdió Panamá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un presidente conservador recordado justamente por esa pérdida.",
+    "explanation": "José Manuel Marroquín era el presidente cuando Panamá se separó en 1903.",
     "choices": [
       {
         "text": "Rafael Reyes",
@@ -3167,8 +3167,8 @@
     "text": "El tratado Herrán-Hay fue:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Senado colombiano no lo ratificó, y eso precipitó la separación.",
+    "explanation": "El tratado Herrán-Hay (1903), que autorizaba a EE. UU. a construir el canal, fue rechazado por el Congreso colombiano, lo que precipitó la separación de Panamá.",
     "choices": [
       {
         "text": "Aprobado por Colombia",
@@ -3198,8 +3198,8 @@
     "text": "Panamá declaró su independencia con apoyo de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La potencia interesada en construir el canal.",
+    "explanation": "Panamá declaró su independencia el 3 de noviembre de 1903 con el respaldo de Estados Unidos, que buscaba construir el canal interoceánico.",
     "choices": [
       {
         "text": "Inglaterra",
@@ -3229,8 +3229,8 @@
     "text": "Rafael Reyes gobernó entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su gobierno se conoce como 'el Quinquenio'.",
+    "explanation": "Rafael Reyes gobernó entre 1904 y 1909, período conocido como el Quinquenio de Reyes.",
     "choices": [
       {
         "text": "1900-1904",
@@ -3260,8 +3260,8 @@
     "text": "El quinquenio de Reyes se caracterizó por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Impulsó industria y ferrocarriles, pero cerró el Congreso.",
+    "explanation": "El Quinquenio de Reyes combinó modernización económica (industria, ferrocarriles) con autoritarismo: cerró el Congreso y gobernó con una Asamblea Nacional.",
     "choices": [
       {
         "text": "Guerras civiles",
@@ -3291,8 +3291,8 @@
     "text": "La República Conservadora duró:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "De la Constitución de Núñez a la llegada de Olaya Herrera.",
+    "explanation": "La República o Hegemonía Conservadora se extendió de 1886 a 1930, 44 años de gobiernos del partido conservador.",
     "choices": [
       {
         "text": "1886-1910",
@@ -3322,8 +3322,8 @@
     "text": "La Masacre de las Bananeras ocurrió en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ocurrió en Ciénaga, Magdalena, contra huelguistas de la United Fruit Company.",
+    "explanation": "La Masacre de las Bananeras ocurrió el 5-6 de diciembre de 1928 en Ciénaga (Magdalena), cuando el ejército disparó contra trabajadores en huelga de la United Fruit Company.",
     "choices": [
       {
         "text": "1925",
@@ -3353,8 +3353,8 @@
     "text": "¿Cuántos trabajadores murieron en la Masacre de las Bananeras?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "García Márquez la noveló con una cifra; los historiadores aún debaten.",
+    "explanation": "El número de muertos en las Bananeras es desconocido: las versiones van desde decenas hasta miles, cifra inmortalizada por García Márquez en Cien años de soledad.",
     "choices": [
       {
         "text": "Número exacto desconocido (versiones varían)",
@@ -3384,8 +3384,8 @@
     "text": "La República Liberal comenzó con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ganó en 1930 aprovechando la división conservadora.",
+    "explanation": "Enrique Olaya Herrera inició la República Liberal en 1930, terminando 44 años de hegemonía conservadora.",
     "choices": [
       {
         "text": "López Pumarejo",
@@ -3415,8 +3415,8 @@
     "text": "La \"Revolución en Marcha\" fue de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Su lema de reformas sociales y laborales en los años 30.",
+    "explanation": "La 'Revolución en Marcha' fue el programa reformista de Alfonso López Pumarejo (1934-1938): reforma agraria, derechos laborales y educación pública.",
     "choices": [
       {
         "text": "Olaya Herrera",
@@ -3446,8 +3446,8 @@
     "text": "Jorge Eliécer Gaitán fue asesinado a las:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "A la hora del almuerzo, saliendo de su oficina.",
+    "explanation": "Gaitán fue asesinado a la 1:15 pm del 9 de abril de 1948, al salir de su oficina en el centro de Bogotá.",
     "choices": [
       {
         "text": "11:00 am",
@@ -3477,8 +3477,8 @@
     "text": "El asesino de Gaitán fue:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La multitud lo linchó de inmediato, dejando dudas para siempre.",
+    "explanation": "Juan Roa Sierra disparó contra Gaitán y fue linchado por la multitud; sus motivaciones siguen siendo un misterio.",
     "choices": [
       {
         "text": "Nunca se identificó",
@@ -3508,8 +3508,8 @@
     "text": "Se estima que en El Bogotazo murieron:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Las cifras varían, pero se cuentan en cientos o miles.",
+    "explanation": "En el Bogotazo murieron entre 500 y 3.000 personas y el centro de Bogotá quedó destruido.",
     "choices": [
       {
         "text": "100 personas",
@@ -3539,8 +3539,8 @@
     "text": "¿En qué fecha se conmemora el Día de la Independencia de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La fecha del florero de Llorente.",
+    "explanation": "El Día de la Independencia se conmemora el 20 de julio, aniversario del Grito de Independencia de 1810.",
     "choices": [
       {
         "text": "7 de agosto",
@@ -3570,8 +3570,8 @@
     "text": "¿Quién fue conocido como \"El Libertador\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Nació en Caracas en 1783.",
+    "explanation": "Simón Bolívar es 'El Libertador', líder de la independencia de cinco naciones.",
     "choices": [
       {
         "text": "Antonio Nariño",
@@ -3601,8 +3601,8 @@
     "text": "La Batalla de Boyacá ocurrió en el año:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El año del Congreso de Angostura y de la campaña libertadora.",
+    "explanation": "La Batalla de Boyacá se libró el 7 de agosto de 1819.",
     "choices": [
       {
         "text": "1810",
@@ -3632,8 +3632,8 @@
     "text": "¿Cuál fue el primer nombre de Colombia como república independiente?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El nombre con que los historiadores conocen la república de Bolívar.",
+    "explanation": "Al independizarse, el país adoptó el nombre de República de Colombia (1819), que los historiadores llaman 'Gran Colombia' para distinguirla de la actual.",
     "choices": [
       {
         "text": "Nueva Granada",
@@ -3663,8 +3663,8 @@
     "text": "¿Quién fue el primer presidente de la Gran Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Libertador fue elegido en Angostura y ratificado en Cúcuta.",
+    "explanation": "Simón Bolívar fue el primer presidente de la Gran Colombia, con Santander como vicepresidente.",
     "choices": [
       {
         "text": "Francisco de Paula Santander",
@@ -3694,8 +3694,8 @@
     "text": "¿Qué evento histórico ocurrió el 9 de abril de 1948?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ese día mataron al caudillo liberal más popular del país.",
+    "explanation": "El 9 de abril de 1948 fue asesinado Jorge Eliécer Gaitán, lo que desató la revuelta conocida como el Bogotazo.",
     "choices": [
       {
         "text": "La independencia de Panamá",
@@ -3725,8 +3725,8 @@
     "text": "El Frente Nacional fue un acuerdo político entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los dos partidos tradicionales se alternaron el poder por 16 años.",
+    "explanation": "El Frente Nacional (1958-1974) fue el acuerdo de alternancia entre conservadores y liberales para superar La Violencia.",
     "choices": [
       {
         "text": "Liberales y Comunistas",
@@ -3756,8 +3756,8 @@
     "text": "¿Quién fue conocido como \"El Hombre de las Leyes\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El organizador civil de la república, rival de Bolívar.",
+    "explanation": "Francisco de Paula Santander es conocido como 'El Hombre de las Leyes'.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -3787,8 +3787,8 @@
     "text": "La Constitución de Rionegro (1863) establecía un sistema:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Creó los Estados Unidos de Colombia.",
+    "explanation": "La Constitución de Rionegro de 1863 estableció el sistema federalista de los Estados Unidos de Colombia.",
     "choices": [
       {
         "text": "Centralista",
@@ -3818,8 +3818,8 @@
     "text": "¿Quién fue el autor del Himno Nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un músico italiano compuso la melodía; un presidente escribió los versos.",
+    "explanation": "El Himno Nacional tiene música del italiano Oreste Síndici y letra del presidente Rafael Núñez; fue estrenado en 1887.",
     "choices": [
       {
         "text": "José María Córdova",
@@ -3849,8 +3849,8 @@
     "text": "El período de \"La Violencia\" en Colombia se sitúa principalmente entre:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Del Bogotazo al Frente Nacional.",
+    "explanation": "La Violencia se sitúa principalmente entre 1948 (Bogotazo) y 1958 (inicio del Frente Nacional).",
     "choices": [
       {
         "text": "1920-1930",
@@ -3880,8 +3880,8 @@
     "text": "¿Cuál fue la primera constitución de Colombia independiente?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La expidió el congreso que organizó la Gran Colombia.",
+    "explanation": "La Constitución de Cúcuta (1821) fue la primera constitución de Colombia como república independiente.",
     "choices": [
       {
         "text": "Constitución de Socorro (1810)",
@@ -3911,8 +3911,8 @@
     "text": "¿Quién tradujo los Derechos del Hombre y del Ciudadano al español?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Precursor bogotano, perseguido por esa publicación.",
+    "explanation": "Antonio Nariño tradujo al español los Derechos del Hombre y del Ciudadano en 1793.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -3942,8 +3942,8 @@
     "text": "La Regeneración fue un movimiento político liderado por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El movimiento que produjo la Constitución de 1886.",
+    "explanation": "La Regeneración fue liderada por Rafael Núñez, con el lema 'una nación, una fe, un Dios'.",
     "choices": [
       {
         "text": "Rafael Núñez",
@@ -3973,8 +3973,8 @@
     "text": "¿En qué año se firmó el actual acuerdo de paz con las FARC?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El año en que Santos recibió el Nobel de Paz.",
+    "explanation": "El acuerdo de paz con las FARC se firmó en noviembre de 2016 en el Teatro Colón de Bogotá.",
     "choices": [
       {
         "text": "2014",
@@ -4004,8 +4004,8 @@
     "text": "El M-19 fue un grupo guerrillero que se desmovilizó en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Entregó las armas y se convirtió en partido político; uno de sus líderes llegó a la Constituyente.",
+    "explanation": "El M-19 se desmovilizó en 1990 y se transformó en el movimiento político Alianza Democrática M-19, clave en la Constituyente de 1991.",
     "choices": [
       {
         "text": "1985",
@@ -4035,8 +4035,8 @@
     "text": "El grito de independencia del 20 de julio de 1810 ocurrió por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Todo empezó pidiendo prestado un adorno de mesa.",
+    "explanation": "El Grito de Independencia se desencadenó por el incidente del florero de Llorente, planeado por los criollos para provocar la revuelta.",
     "choices": [
       {
         "text": "La invasión francesa",
@@ -4066,8 +4066,8 @@
     "text": "¿Quién fue conocido como \"El Precursor\" de la independencia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un venezolano que intentó liberar América antes que Bolívar.",
+    "explanation": "Francisco de Miranda es 'El Precursor' de la independencia hispanoamericana, por sus tempranos intentos emancipadores.",
     "choices": [
       {
         "text": "Simón Bolívar",
@@ -4097,8 +4097,8 @@
     "text": "La Campaña Libertadora de 1819 fue comandada por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El Libertador dirigió la travesía de los Llanos al altiplano.",
+    "explanation": "Simón Bolívar comandó la Campaña Libertadora de 1819, que culminó en la Batalla de Boyacá.",
     "choices": [
       {
         "text": "Santander",
@@ -4128,8 +4128,8 @@
     "text": "¿Qué países conformaban la Gran Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Cuatro países actuales, incluido el del canal interoceánico.",
+    "explanation": "La Gran Colombia reunía los actuales Colombia, Venezuela, Ecuador y Panamá.",
     "choices": [
       {
         "text": "Colombia y Venezuela",
@@ -4159,8 +4159,8 @@
     "text": "La Constitución de 1886 fue promovida por:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El presidente-poeta de la Regeneración.",
+    "explanation": "Rafael Núñez promovió la Constitución de 1886; además escribió la letra del Himno Nacional.",
     "choices": [
       {
         "text": "Tomás Cipriano de Mosquera",
@@ -4190,8 +4190,8 @@
     "text": "¿En qué año fue abolida definitivamente la esclavitud en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "A mediados del siglo XIX, bajo José Hilario López.",
+    "explanation": "La esclavitud fue abolida definitivamente en 1851 (efectiva el 1 de enero de 1852).",
     "choices": [
       {
         "text": "1810",
@@ -4221,8 +4221,8 @@
     "text": "La Batalla del Pantano de Vargas ocurrió en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El mismo año de Boyacá, dos semanas antes.",
+    "explanation": "La Batalla del Pantano de Vargas ocurrió el 25 de julio de 1819.",
     "choices": [
       {
         "text": "1810",
@@ -4252,8 +4252,8 @@
     "text": "¿Quién fue el primer presidente de la República de la Nueva Granada?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El vicepresidente de la Gran Colombia asumió el nuevo Estado en 1832.",
+    "explanation": "Francisco de Paula Santander fue el primer presidente de la República de la Nueva Granada (1832-1837).",
     "choices": [
       {
         "text": "Francisco de Paula Santander",
@@ -4283,8 +4283,8 @@
     "text": "El período conocido como \"La Hegemonía Conservadora\" duró aproximadamente:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "De Núñez a Olaya Herrera: casi medio siglo.",
+    "explanation": "La Hegemonía Conservadora duró aproximadamente 44-45 años, de 1886 a 1930.",
     "choices": [
       {
         "text": "10 años",
@@ -4314,8 +4314,8 @@
     "text": "La \"Masacre de las Bananeras\" ocurrió en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Un año antes de la caída de la bolsa de Nueva York.",
+    "explanation": "La Masacre de las Bananeras ocurrió en diciembre de 1928 en Ciénaga, Magdalena.",
     "choices": [
       {
         "text": "1928",
@@ -4345,8 +4345,8 @@
     "text": "¿Quién fue el presidente durante el cual Colombia perdió a Panamá?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Gobernaba en 1903; se le atribuye la frase de recibir un país y entregar dos.",
+    "explanation": "José Manuel Marroquín presidía Colombia cuando Panamá se separó en 1903.",
     "choices": [
       {
         "text": "Rafael Núñez",
@@ -4376,8 +4376,8 @@
     "text": "La República Liberal (1930-1946) comenzó con el presidente:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Ganó las elecciones de 1930 gracias a la división conservadora.",
+    "explanation": "Enrique Olaya Herrera (1930-1934) inició la República Liberal.",
     "choices": [
       {
         "text": "Alfonso López Pumarejo",
@@ -4407,8 +4407,8 @@
     "text": "El Palacio de Justicia fue tomado por el M-19 en:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La toma y retoma dejaron casi un centenar de muertos, incluidos 11 magistrados.",
+    "explanation": "El M-19 se tomó el Palacio de Justicia el 6 de noviembre de 1985; la retoma militar dejó cerca de 100 muertos, entre ellos 11 magistrados.",
     "choices": [
       {
         "text": "1980",
@@ -4438,8 +4438,8 @@
     "text": "¿Quién fue conocido como \"El Tribuno del Pueblo\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El caudillo del pueblo asesinado en 1948 heredó el título del prócer de 1810.",
+    "explanation": "Jorge Eliécer Gaitán fue llamado 'El Tribuno del Pueblo', título asociado originalmente a José Acevedo y Gómez, orador del 20 de julio de 1810.",
     "choices": [
       {
         "text": "Jorge Eliécer Gaitán (José Acevedo y Gómez 1810)",
@@ -4469,8 +4469,8 @@
     "text": "La \"Séptima Papeleta\" fue un movimiento estudiantil que promovió:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "Los estudiantes metieron una papeleta extra en las elecciones de 1990.",
+    "explanation": "La Séptima Papeleta fue el movimiento estudiantil que en 1990 promovió la convocatoria de la Asamblea Nacional Constituyente, origen de la Constitución de 1991.",
     "choices": [
       {
         "text": "La educación gratuita",
@@ -4500,8 +4500,8 @@
     "text": "¿En qué año las mujeres obtuvieron el derecho al voto en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El derecho se aprobó en 1954, pero lo ejercieron por primera vez tres años después.",
+    "explanation": "Las mujeres colombianas obtuvieron el voto con el Acto Legislativo 3 de 1954 y lo ejercieron por primera vez en el plebiscito del 1 de diciembre de 1957.",
     "choices": [
       {
         "text": "1945",
@@ -4531,8 +4531,8 @@
     "text": "El Tratado Urrutia-Thomson de 1914 fue firmado con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El país que había apoyado la separación de Panamá pagó una indemnización.",
+    "explanation": "El Tratado Urrutia-Thomson (1914) se firmó con Estados Unidos: Colombia reconoció la independencia de Panamá a cambio de 25 millones de dólares.",
     "choices": [
       {
         "text": "Venezuela",
@@ -4562,8 +4562,8 @@
     "text": "La Batalla de Palonegro fue parte de:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La batalla más sangrienta de la guerra civil de 1899-1902.",
+    "explanation": "La Batalla de Palonegro (1900), cerca de Bucaramanga, fue la más cruenta de la Guerra de los Mil Días.",
     "choices": [
       {
         "text": "La independencia",
@@ -4593,8 +4593,8 @@
     "text": "¿Quién fue el único presidente militar del siglo XX en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "El general que gobernó de 1953 a 1957.",
+    "explanation": "Gustavo Rojas Pinilla fue el único presidente militar del siglo XX; llegó al poder por golpe de Estado en 1953.",
     "choices": [
       {
         "text": "Gustavo Rojas Pinilla",
@@ -4624,8 +4624,8 @@
     "text": "El proceso de descentralización administrativa comenzó con:",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "",
+    "hint": "La carta política que creó la elección popular y la autonomía territorial plena.",
+    "explanation": "La Constitución de 1991 consolidó la descentralización administrativa, dando autonomía a las entidades territoriales.",
     "choices": [
       {
         "text": "La Constitución de 1886",
@@ -4655,8 +4655,8 @@
     "text": "¿Qué sectores de la población fueron reconocidos explícitamente con derechos en la Constitución Política de 1991 tras haber sido excluidos anteriormente?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La nueva Constitución de 1991 reconoció los derechos de grupos que anteriormente habían sido excluidos, específicamente los indígenas, afrocolombianos y mujeres",
+    "hint": "Piensa en los grupos históricamente marginados que la Carta del 91 reconoció.",
+    "explanation": "La Constitución de 1991 reconoció explícitamente derechos a los pueblos indígenas, las comunidades afrocolombianas y las mujeres, consagrando la diversidad étnica y cultural de la nación.",
     "choices": [
       {
         "text": "Los gremios económicos y terratenientes",
@@ -4686,8 +4686,8 @@
     "text": "¿Qué fenómeno económico caracterizó a los gobiernos de Virgilio Barco y César Gaviria en la década de 1990?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Durante estos gobiernos se consolidó la apertura económica, lo que implicó la eliminación de barreras al comercio exterior, la inversión extranjera y la reducción de controles estatales sobre la empresa privada",
+    "hint": "Colombia abrió sus mercados al mundo a comienzos de los 90.",
+    "explanation": "Los gobiernos de Barco y Gaviria impulsaron la apertura económica: reducción de aranceles y liberalización del comercio exterior.",
     "choices": [
       {
         "text": "La nacionalización de la banca",
@@ -4717,8 +4717,8 @@
     "text": "¿Qué zona geográfica específica fue desmilitarizada durante el gobierno de Andrés Pastrana para llevar a cabo diálogos con las FARC?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Se estableció una zona desmilitarizada conocida como El Caguán, que comprendía los municipios de San Vicente del Caguán, La Uribe, Mesetas, La Macarena y Vista Hermosa",
+    "hint": "Una zona del Caquetá del tamaño de Suiza.",
+    "explanation": "Durante el gobierno de Andrés Pastrana (1998-2002) se desmilitarizó la zona de despeje de El Caguán para los diálogos con las FARC, que fracasaron en 2002.",
     "choices": [
       {
         "text": "La zona de despeje de El Caguán",
@@ -4748,8 +4748,8 @@
     "text": "¿Cuál fue el nombre de la política implementada por Álvaro Uribe Vélez destinada a combatir los grupos armados ilegales y recuperar el control territorial?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Durante sus dos mandatos, Álvaro Uribe implementó la política de Seguridad Democrática, la cual buscaba combatir grupos ilegales y mejorar la seguridad general mediante el fortalecimiento de las fuerzas armadas",
+    "hint": "Su nombre combina 'seguridad' con un adjetivo político.",
+    "explanation": "La Seguridad Democrática fue la política del gobierno de Álvaro Uribe (2002-2010) para combatir los grupos armados ilegales y recuperar el control del territorio.",
     "choices": [
       {
         "text": "Paz Total",
@@ -4779,8 +4779,8 @@
     "text": "¿Cómo denominó el expresidente Iván Duque al aislamiento decretado durante la pandemia del COVID-19?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El expresidente Iván Duque denominó a la cuarentena como \"aislamiento preventivo obligatorio colaborativo e inteligente\"",
+    "hint": "Un nombre largo con cuatro adjetivos.",
+    "explanation": "El gobierno de Iván Duque denominó 'aislamiento preventivo obligatorio colaborativo e inteligente' al confinamiento decretado durante la pandemia de COVID-19.",
     "choices": [
       {
         "text": "Confinamiento estricto total",
@@ -4810,8 +4810,8 @@
     "text": "¿Qué evento desencadenó la ola de destrucción y caos conocida como el \"Bogotazo\" el 9 de abril de 1948?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El \"Bogotazo\" fue desatado por el asesinato del líder liberal Jorge Eliécer Gaitán cuando salía de su oficina en Bogotá",
+    "hint": "El magnicidio del caudillo liberal.",
+    "explanation": "El Bogotazo fue desencadenado por el asesinato de Jorge Eliécer Gaitán el 9 de abril de 1948.",
     "choices": [
       {
         "text": "La renuncia de Alfonso López Pumarejo",
@@ -4841,8 +4841,8 @@
     "text": "¿Cuál fue el motivo principal que llevó a la fundación del Movimiento 19 de abril (M-19) en 1974?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El M-19 se fundó debido a la frustración generada por el fraude electoral en las elecciones presidenciales de 1970, donde se otorgó la victoria a Misael Pastrana sobre Gustavo Rojas Pinilla",
+    "hint": "Su nombre es la fecha de esas elecciones cuestionadas.",
+    "explanation": "El M-19 (Movimiento 19 de Abril) se fundó como respuesta al presunto fraude electoral del 19 de abril de 1970, que dio la victoria a Misael Pastrana sobre Rojas Pinilla.",
     "choices": [
       {
         "text": "La muerte de Camilo Torres",
@@ -4872,8 +4872,8 @@
     "text": "¿Qué sucedió con la estructura del narcotráfico tras la muerte de Pablo Escobar y la captura de los líderes del cartel de Cali?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Tras la desaparición de los grandes capos, hubo una reorganización donde grupos ilegales como las guerrillas (FARC, ELN) y paramilitares (AUC) tomaron el control del negocio de producción y distribución",
+    "hint": "El negocio no desapareció: cambió de manos hacia los actores armados.",
+    "explanation": "Tras la caída de los grandes carteles, guerrillas y paramilitares tomaron el control del narcotráfico, financiando con él el conflicto armado.",
     "choices": [
       {
         "text": "El narcotráfico desapareció completamente de Colombia",
@@ -4903,8 +4903,8 @@
     "text": "¿Qué función cumple la Comisión de la Verdad dentro del proceso de postconflicto en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Comisión de la Verdad investiga y documenta las violaciones a los derechos humanos y crímenes del conflicto para esclarecer los hechos, reconocer a las víctimas y construir una memoria colectiva",
+    "hint": "Su tarea es esclarecer lo ocurrido, no castigar.",
+    "explanation": "La Comisión de la Verdad, creada por el Acuerdo de Paz de 2016, investiga y documenta lo ocurrido en el conflicto para construir memoria colectiva; no impone penas.",
     "choices": [
       {
         "text": "Juzgar penalmente a los excombatientes",
@@ -4934,8 +4934,8 @@
     "text": "¿Cuál fue la orden religiosa expulsada tanto de España como de sus colonias en 1767 debido al fortalecimiento del Regalismo?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El fortalecimiento del Regalismo, que defendía la autoridad del rey sobre la del Papa, permitió la expulsión de la Compañía de Jesús en 1767",
+    "hint": "La orden fundada por Ignacio de Loyola.",
+    "explanation": "La Compañía de Jesús (jesuitas) fue expulsada de España y sus colonias en 1767, en el marco del regalismo borbónico.",
     "choices": [
       {
         "text": "La Orden de los Agustinos",
@@ -4965,8 +4965,8 @@
     "text": "¿En qué centros poblados se desarrolló la revuelta de los Comuneros entre 1780 y 1781?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La revuelta de los Comuneros se desarrolló específicamente en Socorro, Charalá, Simacota y Mogotes, entre otros centros poblados",
+    "hint": "Cuatro poblaciones santandereanas.",
+    "explanation": "La revuelta comunera (1780-1781) se desarrolló en Socorro, Charalá, Simacota y Mogotes, en el actual departamento de Santander.",
     "choices": [
       {
         "text": "Tunja, Villa de Leyva y Paipa",
@@ -4996,8 +4996,8 @@
     "text": "¿Cómo se llamó el periódico en el que Antonio Nariño utilizó irónicamente el término \"Patria Boba\"?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Antonio Nariño utilizó el nombre \"Patria Boba\" en un periódico redactado por él mismo llamado \"Los Toros de Fucha\" para defenderse de ataques políticos",
+    "hint": "Un título taurino, escrito desde su quinta en Fucha.",
+    "explanation": "Antonio Nariño acuñó irónicamente el término 'Patria Boba' en su periódico Los Toros de Fucha (1823).",
     "choices": [
       {
         "text": "La Bagatela",
@@ -5027,8 +5027,8 @@
     "text": "¿Qué territorios comprendía la República de Colombia creada por el Congreso de Angostura en 1819?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La República de Colombia creada el 17 de diciembre de 1819 comprendía los territorios que actualmente corresponden a Colombia, Ecuador, Panamá y Venezuela",
+    "hint": "Los mismos cuatro territorios de la Gran Colombia.",
+    "explanation": "La República de Colombia creada en Angostura (1819) comprendía los actuales Colombia, Ecuador, Panamá y Venezuela.",
     "choices": [
       {
         "text": "Colombia, Perú, Bolivia y Chile",
@@ -5058,8 +5058,8 @@
     "text": "¿Qué nombre recibió el país tras la promulgación de la Constitución de Rionegro en 1863?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Después de la promulgación de la Constitución de Rionegro en 1863, se le dio al país el nombre de Estados Unidos de Colombia",
+    "hint": "El nombre imita al de la unión americana del norte.",
+    "explanation": "Con la Constitución de Rionegro (1863) el país pasó a llamarse Estados Unidos de Colombia.",
     "choices": [
       {
         "text": "República de la Nueva Granada",
@@ -5089,8 +5089,8 @@
     "text": "¿En qué se invirtieron los 25 millones de dólares recibidos de Estados Unidos durante el gobierno de Pedro Nel Ospina?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El dinero recibido como indemnización por la separación de Panamá se empleó en obras de infraestructura, como la ampliación de la red ferroviaria y obras en el canal del Dique",
+    "hint": "La indemnización por Panamá se convirtió en ferrocarriles y carreteras.",
+    "explanation": "Los 25 millones de dólares del Tratado Urrutia-Thomson, recibidos bajo Pedro Nel Ospina, se invirtieron en obras de infraestructura como ferrocarriles y carreteras.",
     "choices": [
       {
         "text": "En el pago de la deuda externa",
@@ -5120,8 +5120,8 @@
     "text": "¿Qué tratado firmado en 1905 permitió conseguir un crédito internacional para sanear la deuda externa de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En 1905 se firmó el tratado Averbury-Holguín, a través del cual se consiguió un crédito internacional que permitió sanear la deuda externa",
+    "hint": "Lleva los apellidos de un lord inglés y un canciller colombiano.",
+    "explanation": "El Tratado Averbury-Holguín (1905) permitió renegociar la deuda externa y conseguir crédito internacional durante el Quinquenio de Reyes.",
     "choices": [
       {
         "text": "Tratado Urrutia-Thomson",
@@ -5151,8 +5151,8 @@
     "text": "¿Bajo qué ley se inició la construcción de la Ciudad Universitaria de la Universidad Nacional de Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La reforma educativa bajo la ley 68 de 1935 inició la construcción de la Ciudad Universitaria de la Universidad Nacional de Colombia",
+    "hint": "Una ley de 1935, bajo la República Liberal de López Pumarejo.",
+    "explanation": "La Ley 68 de 1935 organizó la Universidad Nacional y dio inicio a la construcción de la Ciudad Universitaria en Bogotá.",
     "choices": [
       {
         "text": "Ley 100 de 1936",
@@ -5182,8 +5182,8 @@
     "text": "¿En qué fecha las mujeres votaron por primera vez en Colombia?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El 1 de diciembre de 1957 se llevó a cabo el plebiscito en el que las mujeres votaron por primera vez en Colombia tras años de lucha",
+    "hint": "Fue en el plebiscito que ratificó el Frente Nacional.",
+    "explanation": "Las mujeres votaron por primera vez el 1 de diciembre de 1957, en el plebiscito que aprobó el Frente Nacional.",
     "choices": [
       {
         "text": "13 de junio de 1953",
@@ -5213,8 +5213,8 @@
     "text": "¿Qué penínsulas conectaba el estrecho de Beringia por el cual cruzaron los primeros pobladores humanos hacia el continente americano?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El estrecho de Beringia conectaba el extremo oriental de Asia (península de Chukotka en Rusia) con el extremo occidental de América del Norte (península de Seward en Alaska).",
+    "hint": "Una península siberiana y una de Alaska.",
+    "explanation": "El estrecho de Beringia conectaba la península de Chukotka (Siberia) con la península de Seward (Alaska), ruta de los primeros pobladores de América.",
     "choices": [
       {
         "text": "La península de Kamchatka y la península de Alaska",
@@ -5244,8 +5244,8 @@
     "text": "Además de la lengua chibcha y caribe, ¿cuál fue la otra lengua predominante entre los grupos indígenas establecidos en el territorio?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Las lenguas predominantes entre los pueblos indígenas fueron la chibcha, arawak y caribe.",
+    "hint": "La familia lingüística de los pueblos de la Guajira y la Amazonía.",
+    "explanation": "Junto al chibcha y al caribe, la lengua arawak fue una de las tres grandes familias lingüísticas de los pueblos indígenas del territorio colombiano.",
     "choices": [
       {
         "text": "Quechua",
@@ -5275,8 +5275,8 @@
     "text": "¿Hace cuántos años se estima, según hallazgos arqueológicos, que el territorio colombiano ya había sido habitado por grupos nómadas?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Según los hallazgos arqueológicos, se cree que el territorio fue habitado por grupos nómadas hace 16.000 años.",
+    "hint": "Más de quince milenios, según los hallazgos arqueológicos.",
+    "explanation": "Los hallazgos arqueológicos indican que el territorio colombiano estaba habitado por grupos nómadas hace unos 16.000 años.",
     "choices": [
       {
         "text": "Hace 5.000 años",
@@ -5303,11 +5303,11 @@
   {
     "key": "HIS-0172",
     "subcategory": "CONQUISTA",
-    "text": "¿Qué conquistador fundó la ciudad de Santa Marta en el año 1533?",
+    "text": "¿Qué conquistador fundó la ciudad de Cartagena de Indias en el año 1533?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La colonización se intensificó a partir de 1533 con la fundación de Santa Marta por parte de Pedro de Heredia.",
+    "hint": "Su estatua está frente a la Torre del Reloj de la ciudad amurallada.",
+    "explanation": "Pedro de Heredia fundó Cartagena de Indias en 1533; Santa Marta había sido fundada por Rodrigo de Bastidas en 1525.",
     "choices": [
       {
         "text": "Rodrigo de Bastidas",
@@ -5337,8 +5337,8 @@
     "text": "¿Qué fundación marcó la culminación de la expedición de Gonzalo Jiménez de Quesada hacia el interior del territorio en 1538?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La expedición de Gonzalo Jiménez de Quesada hacia el interior culminó con la fundación de Santa Fe de Bogotá en 1538.",
+    "hint": "La expedición terminó en el altiplano muisca con una fundación en 1538.",
+    "explanation": "La expedición de Gonzalo Jiménez de Quesada por el río Magdalena culminó con la fundación de Santa Fe de Bogotá el 6 de agosto de 1538.",
     "choices": [
       {
         "text": "Cartagena de Indias",
@@ -5368,8 +5368,8 @@
     "text": "¿Qué enfermedades traídas por los españoles desencadenaron epidemias con un alto índice de mortalidad indígena?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "Los españoles trajeron enfermedades desconocidas para los indígenas, como el sarampión y la viruela.",
+    "hint": "Dos enfermedades eruptivas para las que los indígenas no tenían defensas.",
+    "explanation": "El sarampión y la viruela, traídos por los europeos, causaron epidemias devastadoras entre la población indígena, que carecía de inmunidad.",
     "choices": [
       {
         "text": "La peste negra y el cólera",
@@ -5399,8 +5399,8 @@
     "text": "¿Cuáles eran las dos actividades en las que se basaba la economía del Virreinato de la Nueva Granada?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El Virreinato de la Nueva Granada basaba su economía en la explotación del oro y la trata de esclavos africanos.",
+    "hint": "Minería y comercio de personas esclavizadas.",
+    "explanation": "La economía del Virreinato de la Nueva Granada se basaba en la explotación del oro y la trata de esclavos africanos.",
     "choices": [
       {
         "text": "La agricultura de tabaco y la ganadería",
@@ -5430,8 +5430,8 @@
     "text": "¿Con qué propósito utilizaba la Corona española el oro extraído del territorio del Nuevo Reino de Granada?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "El oro se usaba para financiar guerras contra los luteranos en Flandes y Alemania, los ingleses anglicanos, los franceses y los turcos.",
+    "hint": "El oro americano financiaba los conflictos europeos de la Corona.",
+    "explanation": "La Corona usaba el oro del Nuevo Reino de Granada para financiar sus guerras en Europa contra luteranos, ingleses, franceses y turcos.",
     "choices": [
       {
         "text": "Para construir catedrales en América",
@@ -5461,8 +5461,8 @@
     "text": "¿Qué entidad administrativa creada en 1549 abarcaba las provincias de Santa Marta, San Juan, Popayán, Guayana y Cartagena de Indias?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "En 1549 se creó la Audiencia de Santafé, que abarcaba dichas provincias.",
+    "hint": "El tribunal y órgano de gobierno creado en 1549 en Santafé.",
+    "explanation": "La Real Audiencia de Santafé, creada en 1549, administraba las provincias de Santa Marta, San Juan, Popayán, Guayana y Cartagena de Indias.",
     "choices": [
       {
         "text": "El Consejo de Indias",
@@ -5492,8 +5492,8 @@
     "text": "¿Cuál fue la intención principal de la Corona al implementar las Reformas Borbónicas un siglo más tarde?",
     "difficulty": 2,
     "points": 10,
-    "hint": "",
-    "explanation": "La Corona se vio obligada a tomar estas medidas con la intención de mejorar la administración de las colonias y de la península, ya que se estaban escapando de su control.",
+    "hint": "Buscaban recuperar el control y las rentas del imperio.",
+    "explanation": "Las Reformas Borbónicas buscaban mejorar la administración de las colonias y de la península, aumentando el control y el recaudo de la Corona.",
     "choices": [
       {
         "text": "Otorgar la independencia a los territorios de ultramar",
