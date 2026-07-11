@@ -69,7 +69,8 @@ quiz-app/
 │   ├── seed/                      # Carga y validación del banco de preguntas embebido
 │   └── storage/
 │       ├── sqlite/                # Adaptador SQLite/GORM (default, local)
-│       └── dynamodb/              # Adaptador DynamoDB (esqueleto + plan de implementación)
+│       ├── dynamodb/              # Adaptador DynamoDB (nube/serverless, single-table)
+│       └── storagetest/           # Suite de conformidad compartida entre adaptadores
 ├── data/
 │   ├── taxonomy.json              # Categorías y subcategorías canónicas
 │   └── questions/                 # Banco de preguntas por categoría (embebido en el binario)
@@ -89,10 +90,15 @@ los handlers HTTP nunca tocan SQL ni GORM, solo interfaces del dominio. El adapt
 se elige al arrancar con la variable `DB_DRIVER`:
 
 - `DB_DRIVER=sqlite` (o vacío): `internal/storage/sqlite`, para desarrollo local.
-- `DB_DRIVER=dynamodb`: `internal/storage/dynamodb`, pensado para la nube. Hoy es un
-  esqueleto verificado por el compilador (`var _ domain.Store = (*Store)(nil)`); el
-  diseño de tabla, GSIs y la guía para portar cada método están documentados en
-  `internal/storage/dynamodb/store.go`.
+- `DB_DRIVER=dynamodb`: `internal/storage/dynamodb`, para la nube/serverless.
+  Usa una sola tabla (PK/SK, sin GSIs) con lecturas fuertemente consistentes;
+  el diseño de claves está documentado en `internal/storage/dynamodb/keys.go`.
+
+Ambos adaptadores pasan la misma suite de conformidad
+(`internal/storage/storagetest`), que codifica la semántica exacta del puerto:
+`go test ./internal/storage/...` la corre contra SQLite siempre, y contra
+DynamoDB Local cuando `DYNAMODB_TEST_ENDPOINT` está definido
+(`make dynamodb-local && make test-integration`).
 
 Para agregar otro motor (Postgres, Turso, ...) basta con implementar `domain.Store`
 en un paquete nuevo y registrarlo en `openStore()` de `main.go`.
@@ -169,6 +175,121 @@ Reglas:
 - Cada pregunta debe tener 2+ opciones y exactamente una correcta; el servidor valida esto al arrancar y falla si no se cumple.
 
 El seeder corre en cada arranque y sincroniza los archivos con la base de datos: crea preguntas nuevas y actualiza las modificadas (por `key`), sin duplicar. No hace falta borrar `quiz.db` para aplicar cambios.
+
+## ☁️ Despliegue serverless en AWS
+
+La app corre 100% serverless: Lambda (Go, arm64) + DynamoDB (on-demand) +
+API Gateway HTTP API + S3 + CloudFront, definido con CDK en `infra/`.
+
+```
+Navegador ── CloudFront (HTTPS, un solo dominio)
+               ├─ por defecto ──> S3 privado (OAC) ── SPA Vue (dist/)
+               └─ /api/* ───────> API Gateway ──> Lambda ──> DynamoDB
+```
+
+Como el frontend usa rutas relativas (`/api`), no hay CORS ni cambios de
+configuración: CloudFront enruta el mismo dominio a S3 y al API.
+
+### Requisitos
+
+- Cuenta AWS con credenciales configuradas (`aws configure`)
+- Node.js 18+ (CDK) y Go 1.25+
+- Primera vez en la cuenta/región: `cd infra && npx cdk bootstrap`
+
+### Comandos
+
+```bash
+make infra-install   # instala dependencias de CDK (una vez)
+make synth           # genera el template (compila la Lambda)
+make deploy          # build del frontend + despliegue completo
+make seed-remote     # re-sincroniza el banco de preguntas en la Lambda
+make destroy         # elimina el stack (la tabla DynamoDB se conserva)
+```
+
+`make deploy` imprime el `DistributionUrl` (https://xxxx.cloudfront.net): esa
+es la app. El banco de preguntas se siembra automáticamente al desplegar (un
+custom resource invoca la Lambda con `{"quizapp_action":"seed"}`); en la
+Lambda `SEED_ON_START=false`, así los cold starts no tocan el banco.
+
+### Desarrollo local contra DynamoDB
+
+```bash
+make dynamodb-local    # DynamoDB Local en :8000 (Docker o java + DDB_LOCAL_DIR)
+make test-integration  # suite de conformidad contra DynamoDB Local
+make run-ddb           # la app local con DB_DRIVER=dynamodb (tabla auto-creada)
+make seed-local        # siembra one-off (go run . -seed)
+```
+
+### CI/CD (GitHub Actions)
+
+`.github/workflows/deploy.yml` corre `make lambda-build` + `cdk deploy` en
+cada push a `main` (y manualmente vía "Run workflow"). Se autentica contra AWS
+por OIDC — sin llaves de acceso de larga duración guardadas en GitHub.
+
+Configuración única, con credenciales admin locales (`aws configure`):
+
+```bash
+ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+REGION=us-east-1
+
+# 1. Bootstrap de la cuenta/región (si no se hizo ya) — crea los roles
+#    cdk-hnb659fds-*-role-$ACCOUNT_ID-$REGION que la CI va a asumir.
+cd infra && npx cdk bootstrap "aws://$ACCOUNT_ID/$REGION" && cd ..
+
+# 2. Proveedor OIDC de GitHub (una vez por cuenta AWS; puede que ya exista)
+aws iam create-open-id-connect-provider \
+  --url https://token.actions.githubusercontent.com \
+  --client-id-list sts.amazonaws.com \
+  --thumbprint-list 6938fd4d98bab03faadb97b34396831e3780aea
+
+# 3. Rol que GitHub Actions asume, restringido a este repo/rama
+cat > /tmp/trust-policy.json <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Principal": { "Federated": "arn:aws:iam::$ACCOUNT_ID:oidc-provider/token.actions.githubusercontent.com" },
+    "Action": "sts:AssumeRoleWithWebIdentity",
+    "Condition": {
+      "StringEquals": { "token.actions.githubusercontent.com:aud": "sts.amazonaws.com" },
+      "StringLike": { "token.actions.githubusercontent.com:sub": "repo:LeonardOliveros/quien-quiere-ser-colombiano:ref:refs/heads/main" }
+    }
+  }]
+}
+EOF
+aws iam create-role --role-name github-quiz-app-deploy \
+  --assume-role-policy-document file:///tmp/trust-policy.json
+
+# 4. Permisos: el rol solo necesita poder asumir los roles que cdk bootstrap
+#    ya creó (deploy/file-publishing/lookup) — esos ya tienen los permisos
+#    reales para tocar CloudFormation, Lambda, S3, DynamoDB, etc.
+cat > /tmp/deploy-policy.json <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Action": "sts:AssumeRole",
+    "Resource": "arn:aws:iam::$ACCOUNT_ID:role/cdk-hnb659fds-*-role-$ACCOUNT_ID-$REGION"
+  }]
+}
+EOF
+aws iam put-role-policy --role-name github-quiz-app-deploy \
+  --policy-name cdk-assume-bootstrap-roles \
+  --policy-document file:///tmp/deploy-policy.json
+
+aws iam get-role --role-name github-quiz-app-deploy --query Role.Arn --output text
+```
+
+Guarda el ARN que imprime el último comando como secret del repo
+`AWS_DEPLOY_ROLE_ARN` (Settings → Secrets and variables → Actions → Secrets).
+
+### Costos y dominio propio
+
+Todo es on-demand/free-tier friendly: sin tráfico no hay costo fijo salvo
+centavos de S3/CloudFront. Para usar dominio propio (Route 53 + ACM), el stack
+ya deja los puntos de enganche documentados en
+`infra/lib/quiz-app-stack.ts` (`domainName`/`hostedZoneDomain`): certificado
+DNS-validado, alias en CloudFront y un `ARecord` — sin reestructurar nada.
 
 ## 🐛 Solución de Problemas
 
@@ -290,7 +411,8 @@ quiz/
 - Gin (web framework)
 - Arquitectura hexagonal: persistencia detrás del puerto `domain.Store`
 - SQLite + GORM (adaptador por defecto, local)
-- DynamoDB (adaptador para la nube, esqueleto documentado)
+- DynamoDB (adaptador para la nube/serverless, single-table sin GSIs)
+- AWS CDK (infra/: Lambda + API Gateway + S3 + CloudFront + DynamoDB)
 
 **Frontend:**
 - Vue 3 (Composition API)

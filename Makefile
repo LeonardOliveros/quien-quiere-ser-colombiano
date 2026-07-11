@@ -163,3 +163,79 @@ db-stats:
 .PHONY: setup
 setup: deps frontend-install build-all
 	@echo "Setup complete! Run 'make dev-full' to start development"
+
+# ===== AWS serverless (Lambda + DynamoDB + API Gateway + S3 + CloudFront) =====
+
+DDB_PORT=8000
+DDB_ENDPOINT=http://localhost:$(DDB_PORT)
+
+## dynamodb-local: Start DynamoDB Local on :8000 (Docker, or java + DDB_LOCAL_DIR=/path/to/dynamodb_local)
+.PHONY: dynamodb-local
+dynamodb-local:
+	@docker run --rm -d --name quiz-ddb -p $(DDB_PORT):8000 amazon/dynamodb-local >/dev/null 2>&1 && \
+		echo "DynamoDB Local (docker) on :$(DDB_PORT)" || \
+	( [ -n "$(DDB_LOCAL_DIR)" ] && cd "$(DDB_LOCAL_DIR)" && \
+		(java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -inMemory -port $(DDB_PORT) > /tmp/quiz-ddb.log 2>&1 &) && \
+		echo "DynamoDB Local (java) on :$(DDB_PORT)" || \
+		echo "Docker not available. Install Docker, or download DynamoDB Local and set DDB_LOCAL_DIR" )
+
+## dynamodb-local-stop: Stop DynamoDB Local
+.PHONY: dynamodb-local-stop
+dynamodb-local-stop:
+	@docker stop quiz-ddb >/dev/null 2>&1 || pkill -f DynamoDBLocal.jar || true
+	@echo "DynamoDB Local stopped"
+
+## test-integration: Run the storage conformance suite against DynamoDB Local
+.PHONY: test-integration
+test-integration:
+	DYNAMODB_TEST_ENDPOINT=$(DDB_ENDPOINT) $(GO) test ./internal/storage/dynamodb/ -run TestConformance -v
+
+## run-ddb: Run the app locally against DynamoDB Local (table quiz-local, auto-created + seeded)
+.PHONY: run-ddb
+run-ddb:
+	DB_DRIVER=dynamodb DYNAMODB_TABLE=quiz-local DYNAMODB_ENDPOINT=$(DDB_ENDPOINT) $(GO) run .
+
+## seed-local: One-off question-bank sync into DynamoDB Local
+.PHONY: seed-local
+seed-local:
+	DB_DRIVER=dynamodb DYNAMODB_TABLE=quiz-local DYNAMODB_ENDPOINT=$(DDB_ENDPOINT) $(GO) run . -seed
+
+## lambda-build: Verify the Lambda build (CGO off, linux/arm64)
+.PHONY: lambda-build
+lambda-build:
+	CGO_ENABLED=0 GOOS=linux GOARCH=arm64 $(GO) build -o /dev/null .
+	@echo "Lambda build OK"
+
+## infra-install: Install CDK dependencies
+.PHONY: infra-install
+infra-install:
+	cd infra && npm install
+
+## synth: Synthesize the CloudFormation template (also compiles the Go Lambda)
+.PHONY: synth
+synth:
+	cd infra && npx cdk synth --quiet
+
+## diff: Diff the CDK stack against what is deployed
+.PHONY: diff
+diff:
+	cd infra && npx cdk diff
+
+## deploy: Build the frontend and deploy the whole stack to AWS
+.PHONY: deploy
+deploy: frontend-build lambda-build
+	cd infra && npx cdk deploy
+
+## seed-remote: Re-run the question-bank sync on the deployed Lambda
+.PHONY: seed-remote
+seed-remote:
+	aws lambda invoke --region us-east-1 \
+		--function-name $$(aws cloudformation describe-stacks --region us-east-1 --stack-name QuizAppStack \
+			--query "Stacks[0].Outputs[?OutputKey=='FunctionName'].OutputValue" --output text) \
+		--cli-binary-format raw-in-base64-out \
+		--payload '{"quizapp_action":"seed"}' /dev/stdout
+
+## destroy: Tear down the AWS stack (the DynamoDB table is retained)
+.PHONY: destroy
+destroy:
+	cd infra && npx cdk destroy

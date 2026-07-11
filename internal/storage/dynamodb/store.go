@@ -1,172 +1,244 @@
-// Package dynamodb is the (pending) DynamoDB adapter of the domain.Store port,
-// meant for cloud deployments (DB_DRIVER=dynamodb).
+// Package dynamodb is the DynamoDB adapter of the domain.Store port, meant
+// for serverless deployments (DB_DRIVER=dynamodb).
 //
-// # Status
+// Everything lives in one on-demand table (env DYNAMODB_TABLE) with generic
+// PK/SK string keys and no GSIs: every access path the port needs is served
+// by strongly consistent GetItem/Query calls, so freshly written data (login
+// tokens, new sessions, pause state) is immediately readable — GSIs are only
+// eventually consistent and would race the read-your-own-write flows of the
+// HTTP layer. See keys.go for the full key layout.
 //
-// This is a compile-checked skeleton: every repository method returns
-// ErrNotImplemented. The interface assertion below guarantees that when the
-// implementation is written, it satisfies exactly the same port the SQLite
-// adapter does — the HTTP layer will not need any change.
+// The question bank is immutable at runtime and cached in memory (cache.go);
+// stats are aggregated in Go over the user's own partitions, which stay small.
 //
-// # Implementation notes
-//
-// Dependencies: github.com/aws/aws-sdk-go-v2 (config, dynamodb, attributevalue).
-//
-// Suggested single-table design (env DYNAMODB_TABLE, on-demand billing):
-//
-//	Entity            PK                      SK
-//	Category          TAXONOMY                CAT#<code>
-//	SubCategory       TAXONOMY                CAT#<code>#SUB#<code>
-//	Question          QUESTION#<key>          META            (choices embedded as a list attribute)
-//	User              USER#<username>         META
-//	GameSession       USER#<id>               SESSION#<id>
-//	GameAnswer        SESSION#<id>            ANSWER#<questionID>
-//	QuestionHistory   SESSION#<id>            HISTORY#<questionID>
-//	StudyRecommend.   USER#<id>               REC#<id>
-//
-// GSIs:
-//   - gsi_category (question lookups by category): PK=CAT#<code>, SK=QUESTION#<key>
-//   - gsi_token (auth): PK=TOKEN#<token>
-//
-// Porting guidance per port method:
-//   - QuestionRepository.RandomID: query gsi_category (or scan all keys),
-//     filter excludeIDs in memory, pick with math/rand. The question bank is
-//     ~700 items, so loading the key list is cheap; cache it in the adapter.
-//   - Choices travel embedded in the question item; ChoiceByID/CorrectChoices
-//     resolve from the parent question (choice IDs are "<questionID>#<order>").
-//   - StatsRepository: DynamoDB has no GROUP BY. Query the user's sessions
-//     (PK=USER#<id>), then their answers per session, and aggregate in Go.
-//     Volumes are small (a user's own history); no need for precomputed
-//     counters yet. If they grow, maintain running totals on an item
-//     USER#<id>/STATS updated transactionally from SaveAnswer.
-//   - SyncQuestionBank: BatchWriteItem in chunks of 25; same upsert-by-key
-//     semantics as the SQLite adapter (read existing keys first, never delete).
-//   - Numeric IDs (sessions, answers, recommendations): generate with a
-//     counter item (UpdateItem ADD) or switch the domain ID fields to strings
-//     with ULIDs — decide when implementing.
-//
-// Local testing: DynamoDB Local via Docker
-// (amazon/dynamodb-local, endpoint override http://localhost:8000).
+// Local development/testing: run DynamoDB Local (amazon/dynamodb-local) and
+// set DYNAMODB_ENDPOINT=http://localhost:8000 — the adapter then also creates
+// the table automatically if it does not exist.
 package dynamodb
 
 import (
+	"context"
 	"errors"
 	"fmt"
+	"os"
 	"time"
+
+	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/config"
+	"github.com/aws/aws-sdk-go-v2/credentials"
+	"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue"
+	"github.com/aws/aws-sdk-go-v2/service/dynamodb"
+	"github.com/aws/aws-sdk-go-v2/service/dynamodb/types"
 
 	"quiz-app/internal/domain"
 )
 
-// ErrNotImplemented is returned by every method until the adapter is written.
-var ErrNotImplemented = errors.New("dynamodb adapter not implemented yet")
+// Store implements domain.Store on top of a single DynamoDB table.
+type Store struct {
+	client *dynamodb.Client
+	table  string
+	cache  bankCache
+}
 
-// Store will implement domain.Store on top of DynamoDB.
-type Store struct{}
-
-// The build breaks here if Store drifts from the port contract.
 var _ domain.Store = (*Store)(nil)
 
-// Open validates configuration and connects to DynamoDB.
+// Open connects to DynamoDB. When DYNAMODB_ENDPOINT is set (DynamoDB Local),
+// it also applies dummy defaults for region/credentials and auto-creates the
+// table, so local runs need no AWS account configuration.
 func Open(table string) (*Store, error) {
-	return nil, fmt.Errorf("DB_DRIVER=dynamodb: %w (see internal/storage/dynamodb/store.go for the implementation plan)", ErrNotImplemented)
+	if table == "" {
+		return nil, errors.New("DYNAMODB_TABLE must be set when DB_DRIVER=dynamodb")
+	}
+	ctx := context.Background()
+	endpoint := os.Getenv("DYNAMODB_ENDPOINT")
+
+	var optFns []func(*config.LoadOptions) error
+	if endpoint != "" {
+		if os.Getenv("AWS_REGION") == "" && os.Getenv("AWS_DEFAULT_REGION") == "" {
+			optFns = append(optFns, config.WithRegion("us-east-1"))
+		}
+		if os.Getenv("AWS_ACCESS_KEY_ID") == "" {
+			optFns = append(optFns, config.WithCredentialsProvider(
+				credentials.NewStaticCredentialsProvider("local", "local", "")))
+		}
+	}
+	cfg, err := config.LoadDefaultConfig(ctx, optFns...)
+	if err != nil {
+		return nil, fmt.Errorf("load AWS config: %w", err)
+	}
+
+	client := dynamodb.NewFromConfig(cfg, func(o *dynamodb.Options) {
+		if endpoint != "" {
+			o.BaseEndpoint = aws.String(endpoint)
+		}
+	})
+
+	s := &Store{client: client, table: table}
+	if endpoint != "" {
+		if err := s.ensureTable(ctx); err != nil {
+			return nil, err
+		}
+	}
+	return s, nil
 }
 
-func (s *Store) Users() domain.UserRepository         { return userRepo{} }
-func (s *Store) Questions() domain.QuestionRepository { return questionRepo{} }
-func (s *Store) Games() domain.GameRepository         { return gameRepo{} }
-func (s *Store) Stats() domain.StatsRepository        { return statsRepo{} }
+// ensureTable creates the table when it does not exist (local endpoint only —
+// in AWS the table is provisioned by the infrastructure, never by the app).
+func (s *Store) ensureTable(ctx context.Context) error {
+	_, err := s.client.DescribeTable(ctx, &dynamodb.DescribeTableInput{TableName: aws.String(s.table)})
+	if err == nil {
+		return nil
+	}
+	var notFound *types.ResourceNotFoundException
+	if !errors.As(err, &notFound) {
+		return fmt.Errorf("describe table %s: %w", s.table, err)
+	}
 
-func (s *Store) SyncQuestionBank([]domain.SeedCategory, []domain.SeedQuestion) error {
-	return ErrNotImplemented
+	_, err = s.client.CreateTable(ctx, &dynamodb.CreateTableInput{
+		TableName:   aws.String(s.table),
+		BillingMode: types.BillingModePayPerRequest,
+		AttributeDefinitions: []types.AttributeDefinition{
+			{AttributeName: aws.String("PK"), AttributeType: types.ScalarAttributeTypeS},
+			{AttributeName: aws.String("SK"), AttributeType: types.ScalarAttributeTypeS},
+		},
+		KeySchema: []types.KeySchemaElement{
+			{AttributeName: aws.String("PK"), KeyType: types.KeyTypeHash},
+			{AttributeName: aws.String("SK"), KeyType: types.KeyTypeRange},
+		},
+	})
+	if err != nil {
+		return fmt.Errorf("create table %s: %w", s.table, err)
+	}
+	waiter := dynamodb.NewTableExistsWaiter(s.client)
+	if err := waiter.Wait(ctx, &dynamodb.DescribeTableInput{TableName: aws.String(s.table)}, 30*time.Second); err != nil {
+		return fmt.Errorf("wait for table %s: %w", s.table, err)
+	}
+	return nil
 }
-func (s *Store) ResetUserData(uint) error { return ErrNotImplemented }
-func (s *Store) Close() error             { return nil }
 
-type userRepo struct{}
+func (s *Store) Users() domain.UserRepository         { return &userRepo{s} }
+func (s *Store) Questions() domain.QuestionRepository { return &questionRepo{s} }
+func (s *Store) Games() domain.GameRepository         { return &gameRepo{s} }
+func (s *Store) Stats() domain.StatsRepository        { return &statsRepo{s} }
 
-func (userRepo) Create(*domain.User) error                      { return ErrNotImplemented }
-func (userRepo) ByUsername(string) (domain.User, error)         { return domain.User{}, ErrNotImplemented }
-func (userRepo) ByToken(string) (domain.User, error)            { return domain.User{}, ErrNotImplemented }
-func (userRepo) SaveSessionToken(uint, string, time.Time) error { return ErrNotImplemented }
+func (s *Store) Close() error { return nil }
 
-type questionRepo struct{}
+// ResetUserData deletes the user's sessions (with their answers and question
+// history) and study recommendations. The account, its uniqueness markers and
+// the auth token are kept, matching the SQLite adapter.
+func (s *Store) ResetUserData(userID uint) error {
+	ctx := context.Background()
 
-func (questionRepo) ByID(uint) (domain.Question, error) { return domain.Question{}, ErrNotImplemented }
-func (questionRepo) List() ([]domain.Question, error)   { return nil, ErrNotImplemented }
-func (questionRepo) ListByCategory(string) ([]domain.Question, error) {
-	return nil, ErrNotImplemented
-}
-func (questionRepo) RandomID([]string, []uint) (uint, error) { return 0, ErrNotImplemented }
-func (questionRepo) Count([]string) (int64, error)           { return 0, ErrNotImplemented }
-func (questionRepo) CountsByCategory() (map[string]int64, error) {
-	return nil, ErrNotImplemented
-}
-func (questionRepo) CountsBySubcategory() ([]domain.SubcategoryCount, error) {
-	return nil, ErrNotImplemented
-}
-func (questionRepo) ChoiceByID(uint) (domain.Choice, error) {
-	return domain.Choice{}, ErrNotImplemented
-}
-func (questionRepo) CorrectChoices([]uint) (map[uint]domain.Choice, error) {
-	return nil, ErrNotImplemented
-}
-func (questionRepo) Categories() ([]domain.Category, error) { return nil, ErrNotImplemented }
+	var deletes []map[string]types.AttributeValue
+	addDelete := func(pk, sk string) {
+		deletes = append(deletes, map[string]types.AttributeValue{
+			"PK": &types.AttributeValueMemberS{Value: pk},
+			"SK": &types.AttributeValueMemberS{Value: sk},
+		})
+	}
 
-type gameRepo struct{}
+	sessions, err := s.queryPrefix(ctx, pkUser(userID), prefixSession)
+	if err != nil {
+		return err
+	}
+	for _, item := range sessions {
+		var session sessionItem
+		if err := attributevalue.UnmarshalMap(item, &session); err != nil {
+			return fmt.Errorf("unmarshal session: %w", err)
+		}
+		// The whole SESSION#<id> partition: pointer, answers, history.
+		partition, err := s.queryPartition(ctx, pkSession(session.ID))
+		if err != nil {
+			return err
+		}
+		for _, sub := range partition {
+			addDelete(pkSession(session.ID), sub["SK"].(*types.AttributeValueMemberS).Value)
+		}
+		addDelete(pkUser(userID), session.SK)
+	}
 
-func (gameRepo) CreateSession(*domain.GameSession) error { return ErrNotImplemented }
-func (gameRepo) SessionByID(uint) (domain.GameSession, error) {
-	return domain.GameSession{}, ErrNotImplemented
-}
-func (gameRepo) SaveSession(*domain.GameSession) error { return ErrNotImplemented }
-func (gameRepo) AddScore(uint, int) error              { return ErrNotImplemented }
-func (gameRepo) SessionsByUser(uint, int) ([]domain.GameSession, error) {
-	return nil, ErrNotImplemented
-}
-func (gameRepo) LatestResumable(uint, string) (domain.GameSession, error) {
-	return domain.GameSession{}, ErrNotImplemented
-}
-func (gameRepo) CompleteResumable(uint, string, uint) error { return ErrNotImplemented }
-func (gameRepo) SaveAnswer(*domain.GameAnswer) error        { return ErrNotImplemented }
-func (gameRepo) AnswerPlaceholder(uint, uint) (domain.GameAnswer, error) {
-	return domain.GameAnswer{}, ErrNotImplemented
-}
-func (gameRepo) HasAnswered(uint, uint) (bool, error) { return false, ErrNotImplemented }
-func (gameRepo) ToggleFlag(uint, uint) (bool, error)  { return false, ErrNotImplemented }
-func (gameRepo) AnswersBySession(uint) ([]domain.GameAnswer, error) {
-	return nil, ErrNotImplemented
-}
-func (gameRepo) IncorrectAnswers(uint) ([]domain.GameAnswer, error) {
-	return nil, ErrNotImplemented
-}
-func (gameRepo) AnsweredCount(uint) (int64, error)        { return 0, ErrNotImplemented }
-func (gameRepo) IncorrectCount(uint) (int64, error)       { return 0, ErrNotImplemented }
-func (gameRepo) FlaggedCount(uint) (int64, error)         { return 0, ErrNotImplemented }
-func (gameRepo) FlaggedQuestionIDs(uint) ([]uint, error)  { return nil, ErrNotImplemented }
-func (gameRepo) AnsweredQuestionIDs(uint) ([]uint, error) { return nil, ErrNotImplemented }
-func (gameRepo) AnsweredCountByCategory(uint) (map[string]int64, error) {
-	return nil, ErrNotImplemented
-}
-func (gameRepo) AddHistory(uint, uint) error          { return ErrNotImplemented }
-func (gameRepo) UsedQuestionIDs(uint) ([]uint, error) { return nil, ErrNotImplemented }
+	recs, err := s.queryPrefix(ctx, pkUser(userID), prefixRec)
+	if err != nil {
+		return err
+	}
+	for _, item := range recs {
+		addDelete(pkUser(userID), item["SK"].(*types.AttributeValueMemberS).Value)
+	}
 
-type statsRepo struct{}
+	return s.batchDelete(ctx, deletes)
+}
 
-func (statsRepo) TotalSessions(uint) (int64, error) { return 0, ErrNotImplemented }
-func (statsRepo) BestScore(uint) (int, error)       { return 0, ErrNotImplemented }
-func (statsRepo) OverallTotals(uint) (domain.AnswerTotals, error) {
-	return domain.AnswerTotals{}, ErrNotImplemented
+// batchDelete removes keys in chunks of 25, retrying unprocessed items.
+func (s *Store) batchDelete(ctx context.Context, keys []map[string]types.AttributeValue) error {
+	for start := 0; start < len(keys); start += 25 {
+		chunk := keys[start:min(start+25, len(keys))]
+		requests := make([]types.WriteRequest, 0, len(chunk))
+		for _, key := range chunk {
+			requests = append(requests, types.WriteRequest{
+				DeleteRequest: &types.DeleteRequest{Key: key},
+			})
+		}
+		if err := s.batchWrite(ctx, requests); err != nil {
+			return err
+		}
+	}
+	return nil
 }
-func (statsRepo) CategoryTotals(uint, string) (domain.AnswerTotals, error) {
-	return domain.AnswerTotals{}, ErrNotImplemented
+
+// batchWrite issues one BatchWriteItem call (max 25 requests), retrying
+// unprocessed items with backoff.
+func (s *Store) batchWrite(ctx context.Context, requests []types.WriteRequest) error {
+	pending := map[string][]types.WriteRequest{s.table: requests}
+	for attempt := 0; len(pending[s.table]) > 0; attempt++ {
+		if attempt > 8 {
+			return fmt.Errorf("batch write: %d items still unprocessed after retries", len(pending[s.table]))
+		}
+		if attempt > 0 {
+			time.Sleep(time.Duration(50*(1<<attempt)) * time.Millisecond)
+		}
+		out, err := s.client.BatchWriteItem(ctx, &dynamodb.BatchWriteItemInput{RequestItems: pending})
+		if err != nil {
+			return fmt.Errorf("batch write: %w", err)
+		}
+		pending = out.UnprocessedItems
+	}
+	return nil
 }
-func (statsRepo) RecentProgress(uint, int) ([]domain.ProgressEntry, error) {
-	return nil, ErrNotImplemented
+
+// getItem fetches one item (strongly consistent) into out.
+// Returns domain.ErrNotFound when the item does not exist.
+func (s *Store) getItem(ctx context.Context, pk, sk string, out any) error {
+	res, err := s.client.GetItem(ctx, &dynamodb.GetItemInput{
+		TableName: aws.String(s.table),
+		Key: map[string]types.AttributeValue{
+			"PK": &types.AttributeValueMemberS{Value: pk},
+			"SK": &types.AttributeValueMemberS{Value: sk},
+		},
+		ConsistentRead: aws.Bool(true),
+	})
+	if err != nil {
+		return fmt.Errorf("get %s/%s: %w", pk, sk, err)
+	}
+	if len(res.Item) == 0 {
+		return domain.ErrNotFound
+	}
+	if err := attributevalue.UnmarshalMap(res.Item, out); err != nil {
+		return fmt.Errorf("unmarshal %s/%s: %w", pk, sk, err)
+	}
+	return nil
 }
-func (statsRepo) WeakCategories(uint) ([]string, error) { return nil, ErrNotImplemented }
-func (statsRepo) CreateRecommendation(*domain.StudyRecommendation) error {
-	return ErrNotImplemented
-}
-func (statsRepo) RecommendationsByUser(uint, int) ([]domain.StudyRecommendation, error) {
-	return nil, ErrNotImplemented
+
+// putItem marshals and writes one item.
+func (s *Store) putItem(ctx context.Context, item any) error {
+	av, err := attributevalue.MarshalMap(item)
+	if err != nil {
+		return fmt.Errorf("marshal item: %w", err)
+	}
+	if _, err := s.client.PutItem(ctx, &dynamodb.PutItemInput{
+		TableName: aws.String(s.table),
+		Item:      av,
+	}); err != nil {
+		return fmt.Errorf("put item: %w", err)
+	}
+	return nil
 }

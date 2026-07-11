@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"embed"
+	"flag"
 	"fmt"
 	"log"
 	"net/http"
@@ -33,6 +34,9 @@ func main() {
 	// Load .env file
 	godotenv.Load()
 
+	seedOnly := flag.Bool("seed", false, "sync the question bank into the store and exit")
+	flag.Parse()
+
 	// Initialize the storage adapter
 	var err error
 	store, err = openStore()
@@ -41,40 +45,31 @@ func main() {
 	}
 	defer store.Close()
 
-	// Setup Gin router
-	r := gin.Default()
-
-	// Configure CORS: restrict to ALLOWED_ORIGINS when set (production),
-	// otherwise allow all origins (development)
-	config := cors.DefaultConfig()
-	if origins := os.Getenv("ALLOWED_ORIGINS"); origins != "" {
-		config.AllowOrigins = strings.Split(origins, ",")
-	} else {
-		config.AllowAllOrigins = true
+	// One-off seeding (e.g. against DynamoDB Local or a real AWS table).
+	if *seedOnly {
+		if err := syncQuestionBank(); err != nil {
+			log.Fatal("Failed to sync question bank: ", err)
+		}
+		return
 	}
-	config.AllowHeaders = []string{"Origin", "Content-Type", "Authorization"}
-	r.Use(cors.New(config))
 
-	// Serve Vue.js SPA static files
-	r.Static("/assets", "./dist/assets")
-	r.StaticFile("/favicon.ico", "./dist/favicon.ico")
-
-	// Routes
-	setupRoutes(r)
-
-	// Serve Vue.js SPA for all non-API routes (must be last)
-	r.NoRoute(func(c *gin.Context) {
-		c.File("./dist/index.html")
-	})
-
-	// Sync the embedded question bank into the store
-	taxonomy, seeds, err := seed.Load(seedFS)
-	if err != nil {
-		log.Fatal("Invalid seed data: ", err)
+	// Sync the embedded question bank into the store, unless disabled
+	// (SEED_ON_START=false in Lambda: seeding happens at deploy time there,
+	// not on every cold start).
+	if seedOnStart() {
+		if err := syncQuestionBank(); err != nil {
+			log.Fatal("Failed to sync question bank: ", err)
+		}
 	}
-	if err := store.SyncQuestionBank(taxonomy, seeds); err != nil {
-		log.Fatal("Failed to sync question bank: ", err)
+
+	// Inside AWS Lambda the router is driven by API Gateway events instead of
+	// a listening socket, and the SPA is served from S3/CloudFront.
+	if os.Getenv("AWS_LAMBDA_FUNCTION_NAME") != "" {
+		runLambda(buildRouter(false))
+		return
 	}
+
+	r := buildRouter(true)
 
 	// Start server
 	port := os.Getenv("PORT")
@@ -106,6 +101,61 @@ func main() {
 		log.Fatal("Server forced to shutdown:", err)
 	}
 	log.Println("Server exited")
+}
+
+// buildRouter assembles the Gin engine. serveSPA additionally mounts the Vue
+// build from ./dist (local single-binary mode); in Lambda the SPA lives on
+// S3 behind CloudFront and only the API routes are needed.
+func buildRouter(serveSPA bool) *gin.Engine {
+	r := gin.Default()
+
+	// Configure CORS: restrict to ALLOWED_ORIGINS when set (production),
+	// otherwise allow all origins (development)
+	config := cors.DefaultConfig()
+	if origins := os.Getenv("ALLOWED_ORIGINS"); origins != "" {
+		config.AllowOrigins = strings.Split(origins, ",")
+	} else {
+		config.AllowAllOrigins = true
+	}
+	config.AllowHeaders = []string{"Origin", "Content-Type", "Authorization"}
+	r.Use(cors.New(config))
+
+	if serveSPA {
+		// Serve Vue.js SPA static files
+		r.Static("/assets", "./dist/assets")
+		r.StaticFile("/favicon.ico", "./dist/favicon.ico")
+	}
+
+	// Routes
+	setupRoutes(r)
+
+	if serveSPA {
+		// Serve Vue.js SPA for all non-API routes (must be last)
+		r.NoRoute(func(c *gin.Context) {
+			c.File("./dist/index.html")
+		})
+	}
+
+	return r
+}
+
+// seedOnStart reports whether the startup question-bank sync is enabled.
+// Defaults to true so the local `go run .` flow keeps working unchanged.
+func seedOnStart() bool {
+	switch strings.ToLower(os.Getenv("SEED_ON_START")) {
+	case "false", "0", "no":
+		return false
+	}
+	return true
+}
+
+// syncQuestionBank loads the embedded seed files and upserts them.
+func syncQuestionBank() error {
+	taxonomy, seeds, err := seed.Load(seedFS)
+	if err != nil {
+		return fmt.Errorf("invalid seed data: %w", err)
+	}
+	return store.SyncQuestionBank(taxonomy, seeds)
 }
 
 // openStore selects the storage adapter from the DB_DRIVER env var:
