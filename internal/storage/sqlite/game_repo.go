@@ -1,9 +1,8 @@
 package sqlite
 
 import (
-	"errors"
+	"strings"
 
-	"github.com/mattn/go-sqlite3"
 	"gorm.io/gorm"
 
 	"quiz-app/internal/domain"
@@ -66,10 +65,15 @@ func (r *gameRepo) CompleteResumable(userID uint, mode string, keepID uint) erro
 
 // SaveAnswer relies on idx_answer_session_question (see domain.GameAnswer) to
 // reject a racing duplicate insert that HasAnswered's check-then-act missed.
+//
+// The unique-violation check matches on SQLite's own error text rather than
+// driver-specific error types (e.g. mattn/go-sqlite3's sqlite3.Error): that
+// driver's error types only exist in cgo builds, and this package must still
+// compile under CGO_ENABLED=0 for the Lambda build even though it's never
+// the active DB_DRIVER there.
 func (r *gameRepo) SaveAnswer(answer *domain.GameAnswer) error {
 	err := r.db.Save(answer).Error
-	var sqliteErr sqlite3.Error
-	if errors.As(err, &sqliteErr) && sqliteErr.ExtendedCode == sqlite3.ErrConstraintUnique {
+	if err != nil && strings.Contains(err.Error(), "UNIQUE constraint failed") {
 		return domain.ErrAlreadyAnswered
 	}
 	return err
