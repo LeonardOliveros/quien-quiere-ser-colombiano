@@ -88,11 +88,11 @@ func loginUser(c *gin.Context) {
 
 	user, err := store.Users().ByUsername(loginData.Username)
 	if err != nil {
-		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid credentials"})
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Usuario o contraseña inválidos"})
 		return
 	}
 	if err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(loginData.Password)); err != nil {
-		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid credentials"})
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Usuario o contraseña inválidos"})
 		return
 	}
 
