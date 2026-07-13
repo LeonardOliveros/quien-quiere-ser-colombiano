@@ -1,6 +1,9 @@
 package sqlite
 
 import (
+	"errors"
+
+	"github.com/mattn/go-sqlite3"
 	"gorm.io/gorm"
 
 	"quiz-app/internal/domain"
@@ -61,8 +64,15 @@ func (r *gameRepo) CompleteResumable(userID uint, mode string, keepID uint) erro
 	return q.Update("status", "COMPLETED").Error
 }
 
+// SaveAnswer relies on idx_answer_session_question (see domain.GameAnswer) to
+// reject a racing duplicate insert that HasAnswered's check-then-act missed.
 func (r *gameRepo) SaveAnswer(answer *domain.GameAnswer) error {
-	return r.db.Save(answer).Error
+	err := r.db.Save(answer).Error
+	var sqliteErr sqlite3.Error
+	if errors.As(err, &sqliteErr) && sqliteErr.ExtendedCode == sqlite3.ErrConstraintUnique {
+		return domain.ErrAlreadyAnswered
+	}
+	return err
 }
 
 func (r *gameRepo) AnswerPlaceholder(sessionID, questionID uint) (domain.GameAnswer, error) {

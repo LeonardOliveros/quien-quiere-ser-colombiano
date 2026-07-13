@@ -2,6 +2,7 @@ package dynamodb
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"sort"
 	"time"
@@ -224,6 +225,9 @@ func (r *gameRepo) CompleteResumable(userID uint, mode string, keepID uint) erro
 // SaveAnswer inserts (assigning a new ID) or overwrites the answer row for
 // (session, question). The row is keyed by question, matching the app's
 // one-answer-per-question invariant; filling a flag placeholder keeps its ID.
+// The write is conditional so a racing duplicate submission (both readers
+// passing HasAnswered before either writes) can't overwrite an already
+// scored answer and double-count the session's score.
 func (r *gameRepo) SaveAnswer(answer *domain.GameAnswer) error {
 	ctx := context.Background()
 	if answer.ID == 0 {
@@ -233,7 +237,24 @@ func (r *gameRepo) SaveAnswer(answer *domain.GameAnswer) error {
 		}
 		answer.ID = id
 	}
-	return r.s.putItem(ctx, newAnswerItem(*answer))
+
+	item, err := attributevalue.MarshalMap(newAnswerItem(*answer))
+	if err != nil {
+		return fmt.Errorf("marshal answer: %w", err)
+	}
+	_, err = r.s.client.PutItem(ctx, &dynamodb.PutItemInput{
+		TableName:           aws.String(r.s.table),
+		Item:                item,
+		ConditionExpression: aws.String("attribute_not_exists(PK) OR attribute_not_exists(choice_id)"),
+	})
+	var condErr *types.ConditionalCheckFailedException
+	if errors.As(err, &condErr) {
+		return domain.ErrAlreadyAnswered
+	}
+	if err != nil {
+		return fmt.Errorf("save answer: %w", err)
+	}
+	return nil
 }
 
 func (r *gameRepo) answerRow(ctx context.Context, sessionID, questionID uint) (answerItem, error) {

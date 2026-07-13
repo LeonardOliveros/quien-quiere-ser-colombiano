@@ -101,8 +101,8 @@ type GameSession struct {
 // GameAnswer represents a user's answer in a game session
 type GameAnswer struct {
 	ID            uint      `gorm:"primaryKey" json:"id"`
-	GameSessionID uint      `gorm:"index" json:"game_session_id"`
-	QuestionID    uint      `gorm:"index" json:"question_id"`
+	GameSessionID uint      `gorm:"uniqueIndex:idx_answer_session_question" json:"game_session_id"`
+	QuestionID    uint      `gorm:"uniqueIndex:idx_answer_session_question" json:"question_id"`
 	Question      Question  `json:"question,omitempty"`
 	ChoiceID      *uint     `json:"choice_id"`
 	Choice        *Choice   `json:"choice,omitempty"`

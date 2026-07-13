@@ -3,6 +3,7 @@ package main
 import (
 	"crypto/rand"
 	"encoding/hex"
+	"errors"
 	"fmt"
 	"math"
 	mrand "math/rand"
@@ -395,6 +396,10 @@ func submitAnswer(c *gin.Context) {
 	}
 
 	if err := games.SaveAnswer(&gameAnswer); err != nil {
+		if errors.Is(err, domain.ErrAlreadyAnswered) {
+			c.JSON(http.StatusConflict, gin.H{"error": "Question already answered"})
+			return
+		}
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save answer"})
 		return
 	}

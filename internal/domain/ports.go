@@ -10,6 +10,13 @@ import (
 // (gorm.ErrRecordNotFound, dynamodb item missing, ...) into this sentinel.
 var ErrNotFound = errors.New("record not found")
 
+// ErrAlreadyAnswered is returned by SaveAnswer when a real answer (choice_id
+// set) already exists for (game_session_id, question_id). Adapters must
+// enforce this at the data layer (unique index / conditional write) and
+// translate the resulting constraint violation into this sentinel, so a
+// racing duplicate submission cannot double-score a session.
+var ErrAlreadyAnswered = errors.New("question already answered")
+
 // Store is the persistence port of the application. The HTTP adapter talks
 // only to this interface; swapping SQLite for DynamoDB means providing
 // another implementation and selecting it at startup (DB_DRIVER).

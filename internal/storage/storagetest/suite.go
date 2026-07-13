@@ -12,6 +12,7 @@
 package storagetest
 
 import (
+	"errors"
 	"slices"
 	"testing"
 	"time"
@@ -592,6 +593,22 @@ func testAnswerLifecycle(t *testing.T, st domain.Store) {
 	}
 	if n, err := games.IncorrectCount(s.ID); err != nil || n != 1 {
 		t.Errorf("IncorrectCount(filled wrong): got (%d, %v), want 1", n, err)
+	}
+
+	// A racing duplicate submission (fresh insert attempt for a
+	// session+question that's already answered) must be rejected instead of
+	// creating a second row or silently overwriting the score.
+	dupe := domain.GameAnswer{
+		GameSessionID: s.ID,
+		QuestionID:    q.ID,
+		ChoiceID:      &choice.ID,
+		AnsweredAt:    time.Now(),
+	}
+	if err := games.SaveAnswer(&dupe); !errors.Is(err, domain.ErrAlreadyAnswered) {
+		t.Errorf("SaveAnswer(duplicate): got %v, want ErrAlreadyAnswered", err)
+	}
+	if n, err := games.AnsweredCount(s.ID); err != nil || n != 1 {
+		t.Errorf("AnsweredCount after rejected duplicate: got (%d, %v), want 1", n, err)
 	}
 
 	answers, err := games.AnswersBySession(s.ID)
