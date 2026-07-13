@@ -24,7 +24,10 @@ class ApiService {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: '/api',
+      // Same-origin '/api' by default (local dev via Vite proxy, or a
+      // merged-origin deploy); set VITE_API_BASE_URL at build time to point
+      // at a separate API domain (e.g. https://api.quienquieresercolombiano.com/api).
+      baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
       headers: {
         'Content-Type': 'application/json'
       }

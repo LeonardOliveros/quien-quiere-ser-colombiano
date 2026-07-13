@@ -12,27 +12,31 @@ import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as cr from 'aws-cdk-lib/custom-resources';
 import * as iam from 'aws-cdk-lib/aws-iam';
+import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 
 const repoRoot = path.join(__dirname, '..', '..');
 
 export interface QuizAppStackProps extends cdk.StackProps {
   /**
-   * Custom domain hook (not wired yet — deploys use the CloudFront URL).
-   * When set together with hostedZoneDomain, add to this stack:
-   *   1. route53.HostedZone.fromLookup({ domainName: hostedZoneDomain })
-   *   2. new acm.Certificate({ domainName, validation: fromDns(zone) })
-   *      (this stack already lives in us-east-1, as CloudFront requires)
-   *   3. Distribution props: { domainNames: [domainName], certificate }
-   *   4. new route53.ARecord({ zone, recordName: domainName,
-   *        target: RecordTarget.fromAlias(new targets.CloudFrontTarget(distribution)) })
+   * Custom domain, all optional together. DNS lives in Cloudflare (not
+   * Route53), so the certificate is requested out-of-band (AWS CLI) and
+   * validated manually via a Cloudflare CNAME, then imported here by ARN —
+   * see README "Dominio propio (Cloudflare)". Without these, the stack
+   * behaves as before: CloudFront/API Gateway default domains only.
    */
-  readonly domainName?: string;
-  readonly hostedZoneDomain?: string;
+  readonly siteDomainNames?: string[];
+  readonly apiDomainName?: string;
+  readonly certificateArn?: string;
 }
 
 export class QuizAppStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: QuizAppStackProps) {
     super(scope, id, props);
+
+    const domainsConfigured = !!(props?.siteDomainNames?.length && props?.apiDomainName && props?.certificateArn);
+    const certificate = props?.certificateArn
+      ? acm.Certificate.fromCertificateArn(this, 'Certificate', props.certificateArn)
+      : undefined;
 
     // ------------------------------------------------------------------ data
     // Single table, generic PK/SK keys, no GSIs (see internal/storage/dynamodb).
@@ -59,14 +63,27 @@ export class QuizAppStack extends cdk.Stack {
         DYNAMODB_TABLE: table.tableName,
         SEED_ON_START: 'false', // seeding runs at deploy time (custom resource)
         GIN_MODE: 'release',
+        ...(props?.siteDomainNames?.length
+          ? { ALLOWED_ORIGINS: props.siteDomainNames.map((d) => `https://${d}`).join(',') }
+          : {}),
       },
     });
     table.grantReadWriteData(apiFn);
+
+    // Regional custom domain for the API (api.<domain>), separate from the
+    // site's CloudFront distribution — Cloudflare CNAMEs straight to it.
+    const apiDomain = domainsConfigured
+      ? new apigwv2.DomainName(this, 'ApiDomainName', {
+          domainName: props!.apiDomainName!,
+          certificate: certificate!,
+        })
+      : undefined;
 
     const httpApi = new apigwv2.HttpApi(this, 'HttpApi', {
       defaultIntegration: new HttpLambdaIntegration('ApiIntegration', apiFn, {
         payloadFormatVersion: apigwv2.PayloadFormatVersion.VERSION_2_0,
       }),
+      ...(apiDomain ? { defaultDomainMapping: { domainName: apiDomain } } : {}),
     });
 
     // ------------------------------------------------------------------- web
@@ -95,12 +112,15 @@ function handler(event) {
 `),
     });
 
-    // API Gateway origin: apiEndpoint is https://<id>.execute-api.<region>.amazonaws.com
-    const apiDomain = cdk.Fn.select(2, cdk.Fn.split('/', httpApi.apiEndpoint));
-
+    // With a custom domain, the API lives on its own subdomain (api.<domain>,
+    // via apiDomain above) and the frontend is built with an absolute
+    // VITE_API_BASE_URL, so no /api/* behavior is needed here. Without one
+    // (default AWS domains), the frontend still calls the relative '/api',
+    // so this distribution keeps proxying it to API Gateway same-origin.
     const distribution = new cloudfront.Distribution(this, 'Distribution', {
-      comment: 'Quiz app: SPA from S3, /api/* to API Gateway',
+      comment: 'Quiz app: SPA from S3' + (domainsConfigured ? '' : ', /api/* to API Gateway'),
       defaultRootObject: 'index.html',
+      ...(domainsConfigured ? { domainNames: props!.siteDomainNames, certificate } : {}),
       defaultBehavior: {
         origin: origins.S3BucketOrigin.withOriginAccessControl(siteBucket),
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
@@ -110,16 +130,19 @@ function handler(event) {
           eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
         }],
       },
-      additionalBehaviors: {
-        '/api/*': {
-          origin: new origins.HttpOrigin(apiDomain),
-          viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-          allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,
-          cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
-          // Forward everything except Host: API Gateway routes on its own host.
-          originRequestPolicy: cloudfront.OriginRequestPolicy.ALL_VIEWER_EXCEPT_HOST_HEADER,
+      ...(domainsConfigured ? {} : {
+        additionalBehaviors: {
+          '/api/*': {
+            // apiEndpoint is https://<id>.execute-api.<region>.amazonaws.com
+            origin: new origins.HttpOrigin(cdk.Fn.select(2, cdk.Fn.split('/', httpApi.apiEndpoint))),
+            viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+            allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,
+            cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
+            // Forward everything except Host: API Gateway routes on its own host.
+            originRequestPolicy: cloudfront.OriginRequestPolicy.ALL_VIEWER_EXCEPT_HOST_HEADER,
+          },
         },
-      },
+      }),
     });
 
     new s3deploy.BucketDeployment(this, 'DeploySite', {
@@ -167,5 +190,9 @@ function handler(event) {
     new cdk.CfnOutput(this, 'ApiEndpoint', { value: httpApi.apiEndpoint });
     new cdk.CfnOutput(this, 'TableName', { value: table.tableName });
     new cdk.CfnOutput(this, 'FunctionName', { value: apiFn.functionName });
+    if (apiDomain) {
+      // CNAME target for api.<domain> in Cloudflare (proxied).
+      new cdk.CfnOutput(this, 'ApiCustomDomainTarget', { value: apiDomain.regionalDomainName });
+    }
   }
 }

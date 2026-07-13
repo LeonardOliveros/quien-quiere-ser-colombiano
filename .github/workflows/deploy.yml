@@ -37,8 +37,13 @@ jobs:
         working-directory: frontend
 
       - name: Build frontend
+        # VITE_API_BASE_URL only takes effect once ACM_CERTIFICATE_ARN is set
+        # (see cdk deploy step below) — until then this stays empty and the
+        # frontend keeps calling the same-origin '/api' as before.
         run: npm run build
         working-directory: frontend
+        env:
+          VITE_API_BASE_URL: ${{ secrets.ACM_CERTIFICATE_ARN && 'https://api.quienquieresercolombiano.com/api' || '' }}
 
       - name: Verify Lambda cross-compiles (linux/arm64)
         run: make lambda-build
@@ -54,5 +59,17 @@ jobs:
           aws-region: us-east-1
 
       - name: cdk deploy
-        run: npx cdk deploy --require-approval never
+        # Domain context is only passed once ACM_CERTIFICATE_ARN exists (see
+        # README "Dominio propio (Cloudflare)"); until then the stack deploys
+        # with its default CloudFront/API Gateway domains.
+        run: |
+          CONTEXT_ARGS=()
+          if [ -n "${{ secrets.ACM_CERTIFICATE_ARN }}" ]; then
+            CONTEXT_ARGS=(
+              -c siteDomainNames=quienquieresercolombiano.com,www.quienquieresercolombiano.com
+              -c apiDomainName=api.quienquieresercolombiano.com
+              -c certificateArn="${{ secrets.ACM_CERTIFICATE_ARN }}"
+            )
+          fi
+          npx cdk deploy --require-approval never "${CONTEXT_ARGS[@]}"
         working-directory: infra

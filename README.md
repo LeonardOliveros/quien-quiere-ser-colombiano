@@ -182,13 +182,18 @@ La app corre 100% serverless: Lambda (Go, arm64) + DynamoDB (on-demand) +
 API Gateway HTTP API + S3 + CloudFront, definido con CDK en `infra/`.
 
 ```
-Navegador ── CloudFront (HTTPS, un solo dominio)
-               ├─ por defecto ──> S3 privado (OAC) ── SPA Vue (dist/)
-               └─ /api/* ───────> API Gateway ──> Lambda ──> DynamoDB
+Navegador ── quienquieresercolombiano.com ── CloudFront (HTTPS) ── S3 privado (OAC) ── SPA Vue (dist/)
+         └── api.quienquieresercolombiano.com ── API Gateway (HTTPS) ── Lambda ── DynamoDB
 ```
 
-Como el frontend usa rutas relativas (`/api`), no hay CORS ni cambios de
-configuración: CloudFront enruta el mismo dominio a S3 y al API.
+Sin dominio propio configurado, el stack usa los dominios por defecto de
+AWS: CloudFront enruta `/api/*` a API Gateway en el mismo origen, y el
+frontend llama a la API con la ruta relativa `/api` — sin CORS, sin cambios
+de configuración. Con dominio propio (sección siguiente), frontend y API
+quedan en **subdominios separados**, así que el build del frontend necesita
+`VITE_API_BASE_URL` y la Lambda necesita `ALLOWED_ORIGINS` (CORS) — ambos ya
+resueltos por `infra/bin/infra.ts` y `.github/workflows/deploy.yml` cuando
+pasas el contexto de dominio (ver abajo).
 
 ### Requisitos
 
@@ -283,13 +288,97 @@ aws iam get-role --role-name github-quiz-app-deploy --query Role.Arn --output te
 Guarda el ARN que imprime el último comando como secret del repo
 `AWS_DEPLOY_ROLE_ARN` (Settings → Secrets and variables → Actions → Secrets).
 
-### Costos y dominio propio
+### Costos
 
 Todo es on-demand/free-tier friendly: sin tráfico no hay costo fijo salvo
-centavos de S3/CloudFront. Para usar dominio propio (Route 53 + ACM), el stack
-ya deja los puntos de enganche documentados en
-`infra/lib/quiz-app-stack.ts` (`domainName`/`hostedZoneDomain`): certificado
-DNS-validado, alias en CloudFront y un `ARecord` — sin reestructurar nada.
+centavos de S3/CloudFront.
+
+### Dominio propio (Cloudflare)
+
+El DNS de `quienquieresercolombiano.com` vive en Cloudflare (no Route 53) para
+usar su proxy como protección DDoS delante de CloudFront y de API Gateway.
+El frontend queda en el dominio raíz y la API en un subdominio separado:
+
+```
+quienquieresercolombiano.com         → Cloudflare (proxied) → CloudFront → S3 (SPA)
+www.quienquieresercolombiano.com     → Cloudflare (proxied) → CloudFront → S3 (SPA)
+api.quienquieresercolombiano.com     → Cloudflare (proxied) → API Gateway custom domain → Lambda
+```
+
+**1. Apunta el dominio a Cloudflare** — agrégalo en el dashboard de
+Cloudflare (Add a Site) y actualiza los nameservers en el registrador donde
+compraste el dominio con los que te asigne Cloudflare. Puede tardar hasta unas
+horas en propagar.
+
+**2. Pide el certificado ACM** (un solo certificado cubre los tres nombres;
+tiene que ser en `us-east-1` porque CloudFront lo exige y el stack ya vive
+ahí):
+
+```bash
+aws acm request-certificate \
+  --domain-name quienquieresercolombiano.com \
+  --subject-alternative-names www.quienquieresercolombiano.com api.quienquieresercolombiano.com \
+  --validation-method DNS \
+  --region us-east-1
+```
+
+Saca los registros CNAME de validación (uno por nombre) y añádelos en
+Cloudflare como **DNS only** (nube gris, no proxied — la validación de ACM no
+debe pasar por el proxy):
+
+```bash
+aws acm describe-certificate --region us-east-1 --certificate-arn <ARN> \
+  --query 'Certificate.DomainValidationOptions[].ResourceRecord'
+```
+
+Espera a que el estado pase a `ISSUED` (unos minutos tras crear los CNAME):
+
+```bash
+aws acm wait certificate-validated --region us-east-1 --certificate-arn <ARN>
+```
+
+**3. Guarda el secret en GitHub** — Settings → Secrets and variables →
+Actions → Secrets → `ACM_CERTIFICATE_ARN` con el ARN del paso anterior. En
+cuanto exista, el siguiente push a `main` (o "Run workflow") despliega el
+stack ya con `siteDomainNames`, `apiDomainName` y el certificado (ver
+`.github/workflows/deploy.yml`), y el build del frontend usa
+`VITE_API_BASE_URL=https://api.quienquieresercolombiano.com/api` en vez de la
+ruta relativa `/api`.
+
+Para probarlo localmente antes de hacer push, o para desplegar a mano:
+
+```bash
+cd infra
+npx cdk deploy \
+  -c siteDomainNames=quienquieresercolombiano.com,www.quienquieresercolombiano.com \
+  -c apiDomainName=api.quienquieresercolombiano.com \
+  -c certificateArn=<ARN>
+```
+
+**4. Crea los registros en Cloudflare** con los outputs de ese deploy — con
+la **nube naranja activada (proxied)** en los tres, para que el tráfico pase
+por la protección DDoS de Cloudflare:
+
+| Nombre | Tipo | Destino (output de CDK) |
+|---|---|---|
+| `quienquieresercolombiano.com` (`@`) | CNAME | `DistributionUrl` (sin `https://`) |
+| `www` | CNAME | `DistributionUrl` (sin `https://`) |
+| `api` | CNAME | `ApiCustomDomainTarget` |
+
+Cloudflare aplana (flattens) el CNAME del apex automáticamente aunque el
+registro sea de tipo CNAME en el nombre raíz.
+
+**5. SSL/TLS en Cloudflare** → modo **Full (strict)**: tanto CloudFront como
+el dominio custom de API Gateway ya sirven con el certificado ACM válido, así
+que Cloudflare puede verificar el origen extremo a extremo (no uses
+"Flexible", que dejaría el tramo Cloudflare→AWS sin cifrar).
+
+**6. Redirect `www` → raíz** (opcional pero recomendado): Cloudflare → Rules
+→ Redirect Rules → regla que mande `www.quienquieresercolombiano.com/*` a
+`https://quienquieresercolombiano.com/$1` con 301.
+
+Una vez propagado el DNS, `https://quienquieresercolombiano.com` sirve el
+frontend y `https://api.quienquieresercolombiano.com` la API.
 
 ## 🐛 Solución de Problemas
 
