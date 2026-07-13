@@ -207,12 +207,22 @@ async function handleRegister() {
   const result = await authStore.register(registerForm.value)
 
   if (result.success) {
-    registerSuccess.value = result.message + ' Ahora puedes iniciar sesión.'
     confirmPassword.value = ''
-    setTimeout(() => {
-      showRegister.value = false
-      registerSuccess.value = ''
-    }, 2000)
+
+    const loginResult = await authStore.login({
+      username: registerForm.value.username,
+      password: registerForm.value.password
+    })
+
+    if (loginResult.success) {
+      router.push('/')
+    } else {
+      registerSuccess.value = result.message + ' Ahora puedes iniciar sesión.'
+      setTimeout(() => {
+        showRegister.value = false
+        registerSuccess.value = ''
+      }, 2000)
+    }
   } else {
     registerError.value = result.message
   }

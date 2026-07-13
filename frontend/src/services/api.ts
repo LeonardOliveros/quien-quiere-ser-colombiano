@@ -52,7 +52,8 @@ class ApiService {
     this.axiosInstance.interceptors.response.use(
       (response) => response,
       (error: AxiosError) => {
-        if (error.response?.status === 401) {
+        const isAuthEndpoint = error.config?.url?.includes('/login') || error.config?.url?.includes('/register')
+        if (error.response?.status === 401 && !isAuthEndpoint) {
           localStorage.removeItem('token')
           localStorage.removeItem('userId')
           window.location.href = '/login'
