@@ -11,6 +11,7 @@ import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as cr from 'aws-cdk-lib/custom-resources';
+import * as iam from 'aws-cdk-lib/aws-iam';
 
 const repoRoot = path.join(__dirname, '..', '..');
 
@@ -147,7 +148,15 @@ function handler(event) {
     const seeder = new cr.AwsCustomResource(this, 'Seeder', {
       onCreate: seedCall,
       onUpdate: seedCall,
-      policy: cr.AwsCustomResourcePolicy.fromSdkCalls({ resources: [apiFn.functionArn] }),
+      // fromSdkCalls infers the IAM action from the SDK method name ("invoke"
+      // -> "lambda:Invoke"), which isn't a real IAM action — the actual one
+      // is "lambda:InvokeFunction" — so it must be spelled out explicitly.
+      policy: cr.AwsCustomResourcePolicy.fromStatements([
+        new iam.PolicyStatement({
+          actions: ['lambda:InvokeFunction'],
+          resources: [apiFn.functionArn],
+        }),
+      ]),
       installLatestAwsSdk: false,
       timeout: cdk.Duration.minutes(2),
     });
