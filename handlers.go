@@ -13,6 +13,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/go-playground/validator/v10"
 	"golang.org/x/crypto/bcrypt"
 
 	"quiz-app/internal/domain"
@@ -30,7 +31,7 @@ func registerUser(c *gin.Context) {
 		Password string `json:"password" binding:"required,min=8,max=72"`
 	}
 	if err := c.ShouldBindJSON(&registerData); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		c.JSON(http.StatusBadRequest, gin.H{"error": registerValidationMessage(err)})
 		return
 	}
 
@@ -48,11 +49,30 @@ func registerUser(c *gin.Context) {
 	}
 
 	if err := store.Users().Create(&user); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Username or email already exists"})
+		c.JSON(http.StatusConflict, gin.H{"error": "El usuario o el email ya está registrado"})
 		return
 	}
 
 	c.JSON(http.StatusCreated, gin.H{"message": "User created successfully", "user_id": user.ID})
+}
+
+// registerValidationMessage turns binding errors into user-facing Spanish
+// messages instead of leaking raw validator output.
+func registerValidationMessage(err error) string {
+	var verrs validator.ValidationErrors
+	if errors.As(err, &verrs) {
+		for _, fe := range verrs {
+			switch fe.Field() {
+			case "Username":
+				return "El usuario debe tener entre 3 y 50 caracteres"
+			case "Email":
+				return "El email no es válido"
+			case "Password":
+				return "La contraseña debe tener entre 8 y 72 caracteres"
+			}
+		}
+	}
+	return "Datos de registro inválidos"
 }
 
 func loginUser(c *gin.Context) {
