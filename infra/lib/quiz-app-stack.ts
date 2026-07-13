@@ -92,7 +92,6 @@ export class QuizAppStack extends cdk.Stack {
     // Billing visibility: applied to every taggable resource in the stack.
     cdk.Tags.of(this).add('Project', 'QuienQuiereSerColombiano');
     cdk.Tags.of(this).add('Repository', 'https://github.com/LeonardOliveros/quien-quiere-ser-colombiano');
-    cdk.Tags.of(this).add('Database', table.tableName);
 
     // Regional custom domain for the API (api.<domain>), separate from the
     // site's CloudFront distribution — Cloudflare CNAMEs straight to it.
