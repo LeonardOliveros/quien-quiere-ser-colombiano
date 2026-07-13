@@ -22,13 +22,24 @@
                 </div>
                 <div class="mb-3">
                   <label for="loginPassword" class="form-label">Contraseña</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="loginPassword"
-                    v-model="loginForm.password"
-                    required
-                  >
+                  <div class="password-wrapper">
+                    <input
+                      :type="showLoginPassword ? 'text' : 'password'"
+                      class="form-control"
+                      id="loginPassword"
+                      v-model="loginForm.password"
+                      required
+                    >
+                    <button
+                      type="button"
+                      class="password-toggle"
+                      @click="showLoginPassword = !showLoginPassword"
+                      :aria-label="showLoginPassword ? 'Ocultar contraseña' : 'Mostrar contraseña'"
+                      tabindex="-1"
+                    >
+                      <i :class="showLoginPassword ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+                    </button>
+                  </div>
                 </div>
                 <div v-if="loginError" class="alert alert-danger">{{ loginError }}</div>
                 <button type="submit" class="btn btn-primary w-100" :disabled="isLoading">
@@ -68,19 +79,54 @@
                 </div>
                 <div class="mb-3">
                   <label for="registerPassword" class="form-label">Contraseña</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="registerPassword"
-                    v-model="registerForm.password"
-                    required
-                  >
+                  <div class="password-wrapper">
+                    <input
+                      :type="showRegisterPassword ? 'text' : 'password'"
+                      class="form-control"
+                      id="registerPassword"
+                      v-model="registerForm.password"
+                      required
+                    >
+                    <button
+                      type="button"
+                      class="password-toggle"
+                      @click="showRegisterPassword = !showRegisterPassword"
+                      :aria-label="showRegisterPassword ? 'Ocultar contraseña' : 'Mostrar contraseña'"
+                      tabindex="-1"
+                    >
+                      <i :class="showRegisterPassword ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="registerConfirmPassword" class="form-label">Confirmar contraseña</label>
+                  <div class="password-wrapper">
+                    <input
+                      :type="showConfirmPassword ? 'text' : 'password'"
+                      class="form-control"
+                      id="registerConfirmPassword"
+                      v-model="confirmPassword"
+                      required
+                    >
+                    <button
+                      type="button"
+                      class="password-toggle"
+                      @click="showConfirmPassword = !showConfirmPassword"
+                      :aria-label="showConfirmPassword ? 'Ocultar contraseña' : 'Mostrar contraseña'"
+                      tabindex="-1"
+                    >
+                      <i :class="showConfirmPassword ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+                    </button>
+                  </div>
+                  <small v-if="confirmPassword && confirmPassword !== registerForm.password" class="text-mismatch">
+                    Las contraseñas no coinciden
+                  </small>
                 </div>
                 <div v-if="registerError" class="alert alert-danger">{{ registerError }}</div>
                 <div v-if="registerSuccess" class="alert alert-success">{{ registerSuccess }}</div>
                 <button type="submit" class="btn btn-primary w-100" :disabled="isLoading">
                   <span v-if="isLoading">Cargando...</span>
-                  <span v-else">Registrarse</span>
+                  <span v-else>Registrarse</span>
                 </button>
               </form>
               <p class="text-center mt-3">
@@ -105,6 +151,10 @@ const authStore = useAuthStore()
 
 const showRegister = ref(false)
 const isLoading = ref(false)
+const showLoginPassword = ref(false)
+const showRegisterPassword = ref(false)
+const showConfirmPassword = ref(false)
+const confirmPassword = ref('')
 
 const loginForm = ref({
   username: '',
@@ -137,14 +187,21 @@ async function handleLogin() {
 }
 
 async function handleRegister() {
-  isLoading.value = true
   registerError.value = ''
   registerSuccess.value = ''
+
+  if (registerForm.value.password !== confirmPassword.value) {
+    registerError.value = 'Las contraseñas no coinciden'
+    return
+  }
+
+  isLoading.value = true
 
   const result = await authStore.register(registerForm.value)
 
   if (result.success) {
     registerSuccess.value = result.message + ' Ahora puedes iniciar sesión.'
+    confirmPassword.value = ''
     setTimeout(() => {
       showRegister.value = false
       registerSuccess.value = ''
@@ -198,6 +255,37 @@ async function handleRegister() {
 .form-label {
   color: var(--text-light);
   font-weight: 500;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .form-control {
+  padding-right: 44px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--gold-color);
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+.password-toggle:hover {
+  color: var(--text-light);
+}
+
+.text-mismatch {
+  color: #ff8a8a;
+  display: block;
+  margin-top: 4px;
 }
 
 .btn-primary {
