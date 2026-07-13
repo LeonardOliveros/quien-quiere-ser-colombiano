@@ -160,6 +160,10 @@
 
         <!-- Action Buttons -->
         <div class="actions mt-4">
+          <button class="btn btn-lg btn-share" @click="shareCard" :disabled="sharing">
+            <i :class="sharing ? 'fas fa-spinner fa-spin' : 'fas fa-share-alt'"></i>
+            {{ sharing ? 'Generando...' : 'Compartir Resultado' }}
+          </button>
           <button class="btn btn-lg btn-primary" @click="playAgain">
             <i class="fas fa-redo"></i> Jugar de Nuevo
           </button>
@@ -167,6 +171,7 @@
             <i class="fas fa-home"></i> Volver al Menú
           </button>
         </div>
+        <p v-if="shareMessage" class="share-feedback">{{ shareMessage }}</p>
       </div>
     </div>
   </div>
@@ -177,6 +182,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useGameStore } from '@/stores/game'
 import SkeletonBlock from '@/components/SkeletonBlock.vue'
+import { shareResults } from '@/utils/shareCard'
 import type { GameResults } from '@/types'
 
 const router = useRouter()
@@ -236,6 +242,26 @@ function formatTime(seconds: number): string {
     return `${minutes}m ${secs}s`
   } else {
     return `${secs}s`
+  }
+}
+
+const sharing = ref(false)
+const shareMessage = ref('')
+
+async function shareCard() {
+  if (!results.value || sharing.value) return
+  sharing.value = true
+  shareMessage.value = ''
+
+  try {
+    const outcome = await shareResults(results.value)
+    if (outcome === 'downloaded') {
+      shareMessage.value = '¡Imagen descargada! Súbela a Instagram, LinkedIn o donde quieras 🇨🇴'
+    }
+  } catch {
+    shareMessage.value = 'No se pudo generar la imagen. Inténtalo de nuevo.'
+  } finally {
+    sharing.value = false
   }
 }
 
@@ -614,6 +640,31 @@ function backToMenu() {
   background: var(--gold-color);
   color: var(--primary-color);
   transform: translateY(-2px);
+}
+
+.btn-share {
+  background: var(--gold-color);
+  border: 2px solid var(--gold-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-share:hover:not(:disabled) {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.btn-share:disabled {
+  opacity: 0.7;
+}
+
+.share-feedback {
+  text-align: center;
+  margin-top: 14px;
+  color: var(--gold-color);
+  font-size: 0.95rem;
 }
 
 @keyframes fadeIn {
