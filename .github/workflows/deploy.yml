@@ -73,6 +73,7 @@ jobs:
               -c siteDomainNames="${{ vars.SITE_DOMAIN_NAMES }}"
               -c apiDomainName="${{ vars.API_DOMAIN_NAME }}"
               -c certificateArn="${{ secrets.ACM_CERTIFICATE_ARN }}"
+              -c cloudflareOriginSecret="${{ secrets.CLOUDFLARE_ORIGIN_SECRET }}"
             )
           fi
           npx cdk deploy --require-approval never "${CONTEXT_ARGS[@]}"

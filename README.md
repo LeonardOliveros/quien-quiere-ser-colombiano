@@ -337,19 +337,33 @@ Espera a que el estado pase a `ISSUED` (unos minutos tras crear los CNAME):
 aws acm wait certificate-validated --region us-east-1 --certificate-arn <ARN>
 ```
 
-**3. Configura el secret y las variables en GitHub** — Settings → Secrets and
+**3. Genera el secreto de origen** — CloudFront (función de viewer-request) y
+la Lambda rechazan con 403 cualquier request que no traiga el header
+`X-Origin-Verify` con este valor exacto. Es lo que impide que alguien se
+salte la protección DDoS de Cloudflare pegándole directo al dominio de
+CloudFront o de API Gateway (`*.cloudfront.net` / `*.execute-api...`), que
+siguen siendo públicos aunque el DNS "de verdad" pase por Cloudflare:
+
+```bash
+openssl rand -hex 32
+```
+
+Guárdalo, lo necesitas en los dos pasos siguientes.
+
+**4. Configura el secret y las variables en GitHub** — Settings → Secrets and
 variables → Actions:
 
-- **Secrets** → `ACM_CERTIFICATE_ARN` con el ARN del paso anterior.
+- **Secrets** → `ACM_CERTIFICATE_ARN` con el ARN del paso 2, y
+  `CLOUDFLARE_ORIGIN_SECRET` con el valor del paso 3.
 - **Variables** → `SITE_DOMAIN_NAMES` = `quienquieresercolombiano.com,www.quienquieresercolombiano.com`
   y `API_DOMAIN_NAME` = `api.quienquieresercolombiano.com` (así los dominios
   no quedan hardcodeados en `.github/workflows/deploy.yml`).
 
 En cuanto exista el secret, el siguiente push a `main` (o "Run workflow")
-despliega el stack ya con `siteDomainNames`, `apiDomainName` y el certificado
-(ver `.github/workflows/deploy.yml`), y el build del frontend usa
-`VITE_API_BASE_URL=https://<API_DOMAIN_NAME>/api` en vez de la ruta relativa
-`/api`.
+despliega el stack ya con `siteDomainNames`, `apiDomainName`, el certificado y
+el secreto de origen (ver `.github/workflows/deploy.yml`), y el build del
+frontend usa `VITE_API_BASE_URL=https://<API_DOMAIN_NAME>/api` en vez de la
+ruta relativa `/api`.
 
 Para probarlo localmente antes de hacer push, o para desplegar a mano:
 
@@ -358,10 +372,11 @@ cd infra
 npx cdk deploy \
   -c siteDomainNames=quienquieresercolombiano.com,www.quienquieresercolombiano.com \
   -c apiDomainName=api.quienquieresercolombiano.com \
-  -c certificateArn=<ARN>
+  -c certificateArn=<ARN> \
+  -c cloudflareOriginSecret=<valor del paso 3>
 ```
 
-**4. Crea los registros en Cloudflare** con los outputs de ese deploy — con
+**5. Crea los registros en Cloudflare** con los outputs de ese deploy — con
 la **nube naranja activada (proxied)** en los tres, para que el tráfico pase
 por la protección DDoS de Cloudflare:
 
@@ -374,12 +389,26 @@ por la protección DDoS de Cloudflare:
 Cloudflare aplana (flattens) el CNAME del apex automáticamente aunque el
 registro sea de tipo CNAME en el nombre raíz.
 
-**5. SSL/TLS en Cloudflare** → modo **Full (strict)**: tanto CloudFront como
+**6. Configura la Transform Rule en Cloudflare** para que inyecte el header
+en todo lo que reenvía al origen — Cloudflare → Rules → **Transform Rules** →
+**Modify Request Header** → Create rule:
+
+- Nombre: `Origin verify` (o el que quieras).
+- When incoming requests match: `Hostname` is in `quienquieresercolombiano.com`,
+  `www.quienquieresercolombiano.com`, `api.quienquieresercolombiano.com`
+  (o simplemente "All incoming requests" si prefieres no filtrar por host).
+- Then: **Set static** → Header name `X-Origin-Verify` → Value: el secreto
+  del paso 3.
+
+Sin esta regla, CloudFront y la Lambda rechazan con 403 hasta el tráfico que
+sí viene por Cloudflare — no lo saltes.
+
+**7. SSL/TLS en Cloudflare** → modo **Full (strict)**: tanto CloudFront como
 el dominio custom de API Gateway ya sirven con el certificado ACM válido, así
 que Cloudflare puede verificar el origen extremo a extremo (no uses
 "Flexible", que dejaría el tramo Cloudflare→AWS sin cifrar).
 
-**6. Redirect `www` → raíz** (opcional pero recomendado): Cloudflare → Rules
+**8. Redirect `www` → raíz** (opcional pero recomendado): Cloudflare → Rules
 → Redirect Rules → regla que mande `www.quienquieresercolombiano.com/*` a
 `https://quienquieresercolombiano.com/$1` con 301.
 

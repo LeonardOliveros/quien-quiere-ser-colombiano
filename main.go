@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"crypto/subtle"
 	"embed"
 	"flag"
 	"fmt"
@@ -109,6 +110,15 @@ func main() {
 func buildRouter(serveSPA bool) *gin.Engine {
 	r := gin.Default()
 
+	// Reject requests missing the shared secret Cloudflare injects via a
+	// Transform Rule, so direct calls to the API Gateway domain (bypassing
+	// Cloudflare's proxy/DDoS protection) get a 403 instead of reaching the
+	// Lambda. No-op unless ORIGIN_VERIFY_SECRET is set, which only happens
+	// when a custom domain + Cloudflare is configured (see infra/README).
+	if secret := os.Getenv("ORIGIN_VERIFY_SECRET"); secret != "" {
+		r.Use(originVerifyRequired(secret))
+	}
+
 	// Configure CORS: restrict to ALLOWED_ORIGINS when set. In release mode
 	// (Lambda/production) ALLOWED_ORIGINS is required — fail fast instead of
 	// silently falling back to a wildcard that would let any site call the
@@ -149,6 +159,20 @@ func buildRouter(serveSPA bool) *gin.Engine {
 	}
 
 	return r
+}
+
+// originVerifyRequired rejects any request whose X-Origin-Verify header
+// doesn't match secret, in constant time to avoid leaking the secret through
+// response-time comparisons.
+func originVerifyRequired(secret string) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		got := c.GetHeader("X-Origin-Verify")
+		if subtle.ConstantTimeCompare([]byte(got), []byte(secret)) != 1 {
+			c.AbortWithStatus(http.StatusForbidden)
+			return
+		}
+		c.Next()
+	}
 }
 
 // seedOnStart reports whether the startup question-bank sync is enabled.

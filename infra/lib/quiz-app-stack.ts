@@ -27,13 +27,27 @@ export interface QuizAppStackProps extends cdk.StackProps {
   readonly siteDomainNames?: string[];
   readonly apiDomainName?: string;
   readonly certificateArn?: string;
+  /**
+   * Shared secret Cloudflare injects as the `X-Origin-Verify` header (via a
+   * Transform Rule) on every request it forwards. CloudFront (viewer-request
+   * function) and the Lambda both reject requests missing/mismatching it, so
+   * direct hits to the CloudFront/API Gateway default domains — bypassing
+   * Cloudflare's proxy/DDoS protection — get a 403 instead of reaching the
+   * origin. Required alongside the other three domain props; see README.
+   */
+  readonly cloudflareOriginSecret?: string;
 }
 
 export class QuizAppStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: QuizAppStackProps) {
     super(scope, id, props);
 
-    const domainsConfigured = !!(props?.siteDomainNames?.length && props?.apiDomainName && props?.certificateArn);
+    const domainsConfigured = !!(
+      props?.siteDomainNames?.length &&
+      props?.apiDomainName &&
+      props?.certificateArn &&
+      props?.cloudflareOriginSecret
+    );
     const certificate = props?.certificateArn
       ? acm.Certificate.fromCertificateArn(this, 'Certificate', props.certificateArn)
       : undefined;
@@ -66,6 +80,11 @@ export class QuizAppStack extends cdk.Stack {
         ...(props?.siteDomainNames?.length
           ? { ALLOWED_ORIGINS: props.siteDomainNames.map((d) => `https://${d}`).join(',') }
           : {}),
+        // Only set when Cloudflare fronts a custom domain (see
+        // cloudflareOriginSecret above) — checked by originVerifyRequired()
+        // in main.go so direct calls to the API Gateway default/custom
+        // domain (bypassing Cloudflare) get a 403.
+        ...(domainsConfigured ? { ORIGIN_VERIFY_SECRET: props!.cloudflareOriginSecret! } : {}),
       },
     });
     table.grantReadWriteData(apiFn);
@@ -95,15 +114,37 @@ export class QuizAppStack extends cdk.Stack {
       autoDeleteObjects: true,
     });
 
-    // SPA fallback scoped to the S3 behavior only: extension-less paths are
-    // Vue Router routes and must serve index.html. Distribution-wide
-    // errorResponses would also rewrite legitimate API 403/404 JSON bodies
-    // into index.html, so a viewer-request function is used instead.
+    // Viewer-request function scoped to the S3 behavior only. It does two
+    // things:
+    //  1. When Cloudflare is configured (domainsConfigured), reject any
+    //     request missing the `X-Origin-Verify` secret header — this is what
+    //     stops someone from bypassing Cloudflare's proxy/DDoS protection by
+    //     calling the CloudFront default domain directly. Cloudflare adds
+    //     the header via a Transform Rule (see README); it can't be a
+    //     distribution-wide WAF rule because CloudFront Functions are the
+    //     cheapest way to do this without provisioning a WAF WebACL.
+    //  2. SPA fallback: extension-less paths are Vue Router routes and must
+    //     serve index.html. Distribution-wide errorResponses would also
+    //     rewrite legitimate API 403/404 JSON bodies into index.html, so this
+    //     is scoped to the function instead.
+    const originVerifyCheck = domainsConfigured
+      ? `
+  var secretHeader = headers['x-origin-verify'];
+  if (!secretHeader || secretHeader.value !== ${JSON.stringify(props!.cloudflareOriginSecret)}) {
+    return {
+      statusCode: 403,
+      statusDescription: 'Forbidden',
+      body: { encoding: 'text', data: 'Forbidden' },
+    };
+  }`
+      : '';
     const spaRewriteFn = new cloudfront.Function(this, 'SpaRewrite', {
-      comment: 'Rewrite extension-less URIs to /index.html (SPA fallback)',
+      comment: 'Verify Cloudflare origin secret; rewrite extension-less URIs to /index.html (SPA fallback)',
       code: cloudfront.FunctionCode.fromInline(`
 function handler(event) {
   var request = event.request;
+  var headers = request.headers;
+${originVerifyCheck}
   if (!request.uri.split('/').pop().includes('.')) {
     request.uri = '/index.html';
   }
