@@ -85,6 +85,7 @@
                       class="form-control"
                       id="registerPassword"
                       v-model="registerForm.password"
+                      minlength="8"
                       required
                     >
                     <button
@@ -97,6 +98,7 @@
                       <i :class="showRegisterPassword ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
                     </button>
                   </div>
+                  <small class="form-hint">Mínimo 8 caracteres</small>
                 </div>
                 <div class="mb-3">
                   <label for="registerConfirmPassword" class="form-label">Confirmar contraseña</label>
@@ -189,6 +191,11 @@ async function handleLogin() {
 async function handleRegister() {
   registerError.value = ''
   registerSuccess.value = ''
+
+  if (registerForm.value.password.length < 8) {
+    registerError.value = 'La contraseña debe tener al menos 8 caracteres'
+    return
+  }
 
   if (registerForm.value.password !== confirmPassword.value) {
     registerError.value = 'Las contraseñas no coinciden'
@@ -284,6 +291,12 @@ async function handleRegister() {
 
 .text-mismatch {
   color: #ff8a8a;
+  display: block;
+  margin-top: 4px;
+}
+
+.form-hint {
+  color: rgba(255, 255, 255, 0.6);
   display: block;
   margin-top: 4px;
 }
