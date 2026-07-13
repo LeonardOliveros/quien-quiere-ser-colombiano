@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <button
+      class="music-toggle"
+      type="button"
+      :aria-label="audioStore.muted ? 'Activar música' : 'Silenciar música'"
+      @click="audioStore.toggleMute"
+    >
+      <i :class="audioStore.muted ? 'fas fa-volume-mute' : 'fas fa-volume-up'"></i>
+    </button>
     <router-view />
     <footer class="app-footer">
       <div class="footer-content">
@@ -22,17 +30,44 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { useAuthStore } from './stores/auth'
+import { useAudioStore } from './stores/audio'
 
 const authStore = useAuthStore()
+const audioStore = useAudioStore()
 const currentYear = new Date().getFullYear()
 
 onMounted(() => {
   authStore.checkAuth()
+  audioStore.init()
+  // Browsers block audio-with-sound until a user gesture; start on the
+  // first click/tap anywhere in the app instead of gating it behind a
+  // specific button.
+  document.addEventListener('pointerdown', () => audioStore.start(), { once: true })
 })
 </script>
 
 <style>
 /* Global styles will be imported via main.ts */
+
+.music-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--flag-yellow);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.music-toggle:hover {
+  background: rgba(0, 0, 0, 0.55);
+}
 
 .app-footer {
   background: rgba(0, 0, 0, 0.35);

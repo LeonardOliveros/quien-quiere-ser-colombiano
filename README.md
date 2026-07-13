@@ -415,6 +415,44 @@ que Cloudflare puede verificar el origen extremo a extremo (no uses
 Una vez propagado el DNS, `https://quienquieresercolombiano.com` sirve el
 frontend y `https://api.quienquieresercolombiano.com` la API.
 
+### Assets multimedia (S3 + CloudFront)
+
+El stack crea un bucket privado (`MediaBucket`, OAC) para música de fondo y
+otros assets estáticos, servido por la misma distribución de CloudFront bajo
+`/media/*` — mismo origen que el sitio, sin CORS ni variable de entorno
+adicional en el frontend. A diferencia de `SiteBucket` (que `cdk deploy`
+reemplaza por completo en cada push), este bucket **no se gestiona por CDK**:
+subir un archivo pesado como asset de CDK lo dejaría comprometido para
+siempre en el historial de git y en cada `cdk synth`. En su lugar, se sube a
+mano con el AWS CLI una vez que el bucket ya existe (tras el primer deploy
+que incluya `MediaBucket`):
+
+```bash
+# Nombre del bucket (output MediaBucketName del stack ya desplegado)
+aws cloudformation describe-stacks --stack-name QuizAppStack \
+  --query "Stacks[0].Outputs[?OutputKey=='MediaBucketName'].OutputValue" --output text
+
+# La key debe empezar por "media/" — es lo que matchea el behavior /media/*
+# (no hay originPath configurado que recorte el prefijo)
+aws s3 cp "himno-nacional-instrumental-v1.mp3" \
+  s3://<MediaBucketName>/media/audio/himno-nacional-instrumental-v1.mp3
+```
+
+Convención de nombre: `<slug-descriptivo>-v<N>.<ext>` — un archivo nuevo sube
+como `-v2`, `-v3`, etc. en vez de sobreescribir la key existente, porque el
+behavior usa `CACHING_OPTIMIZED` (~24h de TTL en el edge); sobreescribir la
+misma key serviría bytes viejos hasta que expire el caché o se invalide a
+mano:
+
+```bash
+aws cloudfront create-invalidation --distribution-id <ID> --paths "/media/audio/*"
+```
+
+El frontend referencia la ruta relativa fija en `frontend/src/stores/audio.ts`
+(`/media/audio/himno-nacional-instrumental-v1.mp3`) — si subes una versión
+nueva con otro nombre, actualiza esa constante. En desarrollo local, el proxy
+de Vite (`frontend/vite.config.ts`) reenvía `/media` al sitio ya desplegado.
+
 ## 🐛 Solución de Problemas
 
 ### La aplicación no inicia

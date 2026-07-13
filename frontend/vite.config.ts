@@ -15,6 +15,12 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:8080',
         changeOrigin: true
+      },
+      // No local media server; forward to the deployed CDN so `npm run dev`
+      // also has background music (public asset, safe to proxy without auth).
+      '/media': {
+        target: 'https://quienquieresercolombiano.com',
+        changeOrigin: true
       }
     }
   },

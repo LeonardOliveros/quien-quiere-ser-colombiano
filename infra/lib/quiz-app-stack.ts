@@ -114,6 +114,20 @@ export class QuizAppStack extends cdk.Stack {
       autoDeleteObjects: true,
     });
 
+    // Static media (background music, future audio/video assets), separate
+    // from siteBucket because that one is fully replaced (prune: true) on
+    // every frontend deploy — a media file would survive that here. Served
+    // through the same CloudFront distribution under /media/* (see
+    // additionalBehaviors below) so the frontend can reference it with a
+    // same-origin relative path, no CORS/env var needed.
+    const mediaBucket = new s3.Bucket(this, 'MediaBucket', {
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      encryption: s3.BucketEncryption.S3_MANAGED,
+      enforceSSL: true,
+      removalPolicy: cdk.RemovalPolicy.DESTROY, // reproducible from infra/assets/media
+      autoDeleteObjects: true,
+    });
+
     // Viewer-request function scoped to the S3 behavior only. It does two
     // things:
     //  1. When Cloudflare is configured (domainsConfigured), reject any
@@ -171,8 +185,25 @@ ${originVerifyCheck}
           eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
         }],
       },
-      ...(domainsConfigured ? {} : {
-        additionalBehaviors: {
+      additionalBehaviors: {
+        // Long-lived edge cache: media/ objects are named with a version
+        // suffix (e.g. himno-nacional-instrumental-v1.mp3) instead of being
+        // overwritten in place, so CACHING_OPTIMIZED's ~24h default TTL never
+        // serves stale bytes — a new version just gets a new URL.
+        '/media/*': {
+          origin: origins.S3BucketOrigin.withOriginAccessControl(mediaBucket),
+          viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+          cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
+          // Reuse the same function as the default behavior so the
+          // Cloudflare origin-verify check (bypass protection) also covers
+          // media requests; its SPA-rewrite half is a no-op here since every
+          // media path has a file extension.
+          functionAssociations: [{
+            function: spaRewriteFn,
+            eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
+          }],
+        },
+        ...(domainsConfigured ? {} : {
           '/api/*': {
             // apiEndpoint is https://<id>.execute-api.<region>.amazonaws.com
             origin: new origins.HttpOrigin(cdk.Fn.select(2, cdk.Fn.split('/', httpApi.apiEndpoint))),
@@ -182,8 +213,8 @@ ${originVerifyCheck}
             // Forward everything except Host: API Gateway routes on its own host.
             originRequestPolicy: cloudfront.OriginRequestPolicy.ALL_VIEWER_EXCEPT_HOST_HEADER,
           },
-        },
-      }),
+        }),
+      },
     });
 
     new s3deploy.BucketDeployment(this, 'DeploySite', {
@@ -193,6 +224,15 @@ ${originVerifyCheck}
       distributionPaths: ['/*'],
       prune: true,
     });
+
+    // mediaBucket's contents are NOT managed by CDK/BucketDeployment: media
+    // files (e.g. background music) are uploaded directly with `aws s3 cp`
+    // (see README "Media assets (S3 + CloudFront)") instead of being
+    // committed to the repo as a CDK asset. Object key must start with
+    // `media/` to match the /media/* behavior above (no originPath
+    // stripping is configured), e.g.:
+    //   aws s3 cp <file> s3://<MediaBucketName output>/media/audio/<name>.mp3
+    //   aws cloudfront create-invalidation --distribution-id <id> --paths "/media/audio/<name>.mp3"
 
     // ---------------------------------------------------------------- seeder
     // Deploy-time seeding: invoke the API function with the seed action. The
@@ -231,6 +271,7 @@ ${originVerifyCheck}
     new cdk.CfnOutput(this, 'ApiEndpoint', { value: httpApi.apiEndpoint });
     new cdk.CfnOutput(this, 'TableName', { value: table.tableName });
     new cdk.CfnOutput(this, 'FunctionName', { value: apiFn.functionName });
+    new cdk.CfnOutput(this, 'MediaBucketName', { value: mediaBucket.bucketName });
     if (apiDomain) {
       // CNAME target for api.<domain> in Cloudflare (proxied).
       new cdk.CfnOutput(this, 'ApiCustomDomainTarget', { value: apiDomain.regionalDomainName });
