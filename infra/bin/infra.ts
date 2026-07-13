@@ -14,6 +14,10 @@ const apiDomainName = app.node.tryGetContext('apiDomainName') as string | undefi
 const certificateArn = app.node.tryGetContext('certificateArn') as string | undefined;
 const cloudflareOriginSecret = app.node.tryGetContext('cloudflareOriginSecret') as string | undefined;
 
+// Cost alert: pass via `-c budgetAlertEmail=you@example.com`. Independent of
+// the custom-domain context above — see QuizAppStackProps.budgetAlertEmail.
+const budgetAlertEmail = app.node.tryGetContext('budgetAlertEmail') as string | undefined;
+
 new QuizAppStack(app, 'QuizAppStack', {
   // us-east-1 so a CloudFront ACM certificate can live in this same stack
   // (CloudFront only accepts certificates from us-east-1).
@@ -23,4 +27,5 @@ new QuizAppStack(app, 'QuizAppStack', {
   apiDomainName,
   certificateArn,
   cloudflareOriginSecret,
+  budgetAlertEmail,
 });

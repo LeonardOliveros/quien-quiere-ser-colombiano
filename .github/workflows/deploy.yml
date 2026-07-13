@@ -96,12 +96,17 @@ jobs:
         run: |
           CONTEXT_ARGS=()
           if [ -n "${{ secrets.ACM_CERTIFICATE_ARN }}" ]; then
-            CONTEXT_ARGS=(
+            CONTEXT_ARGS+=(
               -c siteDomainNames="${{ vars.SITE_DOMAIN_NAMES }}"
               -c apiDomainName="${{ vars.API_DOMAIN_NAME }}"
               -c certificateArn="${{ secrets.ACM_CERTIFICATE_ARN }}"
               -c cloudflareOriginSecret="${{ secrets.CLOUDFLARE_ORIGIN_SECRET }}"
             )
+          fi
+          # Cost alert (see README "Costos"): independent of the domain setup
+          # above, only needs the BUDGET_ALERT_EMAIL repo secret.
+          if [ -n "${{ secrets.BUDGET_ALERT_EMAIL }}" ]; then
+            CONTEXT_ARGS+=(-c budgetAlertEmail="${{ secrets.BUDGET_ALERT_EMAIL }}")
           fi
           npx cdk deploy --require-approval never "${CONTEXT_ARGS[@]}"
         working-directory: infra

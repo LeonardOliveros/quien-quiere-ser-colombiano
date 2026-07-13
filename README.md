@@ -293,6 +293,13 @@ Guarda el ARN que imprime el último comando como secret del repo
 Todo es on-demand/free-tier friendly: sin tráfico no hay costo fijo salvo
 centavos de S3/CloudFront.
 
+**Alerta de presupuesto:** como nada aquí limita tráfico abusivo por IP más
+allá del Bot Fight Mode gratuito de Cloudflare, el stack puede crear un AWS
+Budget (cuenta completa, límite $10 USD/mes) que avisa por correo si se
+alcanza el 100% del gasto real. Es opcional: solo se crea si existe el secret
+`BUDGET_ALERT_EMAIL` (Settings → Secrets and variables → Actions → Secrets)
+con el correo a notificar.
+
 ### Dominio propio (Cloudflare)
 
 El DNS de `quienquieresercolombiano.com` vive en Cloudflare (no Route 53) para

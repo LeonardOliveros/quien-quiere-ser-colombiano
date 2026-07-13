@@ -13,6 +13,7 @@ import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as cr from 'aws-cdk-lib/custom-resources';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
+import * as budgets from 'aws-cdk-lib/aws-budgets';
 
 const repoRoot = path.join(__dirname, '..', '..');
 
@@ -36,7 +37,17 @@ export interface QuizAppStackProps extends cdk.StackProps {
    * origin. Required alongside the other three domain props; see README.
    */
   readonly cloudflareOriginSecret?: string;
+  /**
+   * Email to alert when actual monthly AWS cost crosses budgetAlertLimitUsd
+   * (see Costos in README) — nothing in this stack rate-limits abusive
+   * traffic per IP, so this is the last-resort tripwire against a runaway
+   * bill from the pay-per-use resources (Lambda, DynamoDB on-demand).
+   * Optional: without it, no CfnBudget is created.
+   */
+  readonly budgetAlertEmail?: string;
 }
+
+const BUDGET_ALERT_LIMIT_USD = 10;
 
 export class QuizAppStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: QuizAppStackProps) {
@@ -269,6 +280,32 @@ ${originVerifyCheck}
       timeout: cdk.Duration.minutes(2),
     });
     seeder.node.addDependency(table);
+
+    // ----------------------------------------------------------- cost alert
+    // Account-wide (not scoped to this stack's resources) since tag-based
+    // budget filters need cost-allocation tags activated manually in the
+    // Billing console first — an account-wide cap is simpler and reliable
+    // out of the box, which fits an AWS account used mainly for this project.
+    if (props?.budgetAlertEmail) {
+      new budgets.CfnBudget(this, 'CostAlertBudget', {
+        budget: {
+          budgetType: 'COST',
+          timeUnit: 'MONTHLY',
+          budgetLimit: { amount: BUDGET_ALERT_LIMIT_USD, unit: 'USD' },
+        },
+        notificationsWithSubscribers: [
+          {
+            notification: {
+              notificationType: 'ACTUAL',
+              comparisonOperator: 'GREATER_THAN',
+              threshold: 100,
+              thresholdType: 'PERCENTAGE',
+            },
+            subscribers: [{ subscriptionType: 'EMAIL', address: props.budgetAlertEmail }],
+          },
+        ],
+      });
+    }
 
     // --------------------------------------------------------------- outputs
     new cdk.CfnOutput(this, 'DistributionUrl', { value: `https://${distribution.distributionDomainName}` });
