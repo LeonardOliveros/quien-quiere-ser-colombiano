@@ -26,7 +26,7 @@ export const useGameStore = defineStore('game', () => {
   // Game config
   const gameMode = ref<string | null>(null)
   const categories = ref<string[]>([])
-  const timeLimit = ref<number>(0)
+  const timeLimit = ref<number>(0) // seconds (0 = unlimited)
 
   // Results
   const results = ref<GameResults | null>(null)
@@ -40,19 +40,20 @@ export const useGameStore = defineStore('game', () => {
     focusWeakAreas?: boolean
   ): Promise<{ success: boolean; message?: string }> {
     try {
+      // Backend expects the time limit in seconds
       const data = await api.startGame(
-        mode,
+        mode.toUpperCase(),
         questionCount,
-        timeLimitMinutes,
+        timeLimitMinutes * 60,
         selectedCategories,
         difficulty,
         focusWeakAreas
       )
 
       sessionId.value = data.session_id
-      gameMode.value = mode
+      gameMode.value = mode.toUpperCase()
       categories.value = data.config.categories
-      timeLimit.value = timeLimitMinutes
+      timeLimit.value = data.config.time_limit
       totalQuestions.value = data.config.question_count
       startTime.value = Date.now()
 
@@ -90,7 +91,7 @@ export const useGameStore = defineStore('game', () => {
 
   async function submitAnswer(
     choiceId: number
-  ): Promise<{ success: boolean; correct?: boolean; correctChoiceId?: number; explanation?: string; message?: string }> {
+  ): Promise<{ success: boolean; correct?: boolean; correctChoiceId?: number; explanation?: string; message?: string; timeUp?: boolean }> {
     try {
       const timeSpent = Math.floor((Date.now() - startTime.value!) / 1000)
       const submission: AnswerSubmission = {
@@ -114,6 +115,15 @@ export const useGameStore = defineStore('game', () => {
         explanation: data.explanation
       }
     } catch (error: any) {
+      // 409 with these messages means the session is over server-side —
+      // the game should end instead of showing an error
+      const serverError: string = error.response?.data?.error || ''
+      if (
+        error.response?.status === 409 &&
+        (serverError.includes('Time limit') || serverError.includes('already completed'))
+      ) {
+        return { success: false, timeUp: true, message: serverError }
+      }
       return { success: false, message: error.response?.data?.error || 'Error al enviar la respuesta' }
     }
   }

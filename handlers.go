@@ -174,6 +174,9 @@ func startGame(c *gin.Context) {
 		return
 	}
 
+	// Normalize the mode so mode-specific rules (e.g. TIMED) always apply
+	config.Mode = strings.ToUpper(strings.TrimSpace(config.Mode))
+
 	// Get user ID from context (set by authRequired middleware)
 	userID, exists := c.Get("userID")
 	if !exists {
@@ -250,6 +253,17 @@ func getNextQuestion(c *gin.Context) {
 		session.StartTime = time.Now().Add(-time.Duration(session.TimeElapsed) * time.Second)
 		session.PausedAt = nil
 		games.SaveSession(&session)
+	}
+
+	// If the time limit already ran out, complete the session instead of
+	// handing out another question (the frontend treats 404 as game over)
+	if session.TimeLimit > 0 && getTimeRemaining(session) <= 0 {
+		now := time.Now()
+		session.Status = "COMPLETED"
+		session.EndTime = &now
+		games.SaveSession(&session)
+		c.JSON(http.StatusNotFound, gin.H{"error": "Time limit exceeded"})
+		return
 	}
 
 	// Get IDs of questions already presented in this session (from history)

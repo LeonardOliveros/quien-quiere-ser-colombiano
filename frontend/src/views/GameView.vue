@@ -6,7 +6,7 @@
         <div class="row align-items-center">
           <div class="col-md-3">
             <div v-if="gameStore.timeLimit > 0" class="timer-display">
-              <i class="fas fa-clock"></i> Tiempo restante: {{ formatTime(timeLeft) }}
+              <i class="fas fa-clock"></i> Restante: {{ formatTime(timeLeft) }}
             </div>
             <div v-else class="timer-display">
               <i class="fas fa-stopwatch"></i> Tiempo: {{ formatElapsedTime(elapsedTime) }}
@@ -191,10 +191,8 @@ onMounted(async () => {
 
   // Start timer - use time_elapsed from backend to continue where we left off
   if (gameStore.timeLimit > 0) {
-    // Countdown timer for timed mode
-    // Calculate remaining time based on elapsed time
-    const totalSeconds = gameStore.timeLimit * 60
-    timeLeft.value = totalSeconds - gameStore.timeElapsed
+    // Countdown timer for timed mode (timeLimit is in seconds)
+    timeLeft.value = Math.max(0, gameStore.timeLimit - gameStore.timeElapsed)
     startTimer()
   } else {
     // Elapsed time counter for practice mode - continue from where we left off
@@ -218,6 +216,13 @@ async function loadQuestion() {
     } else {
       alert(result.message || 'Error al cargar la pregunta')
     }
+    return
+  }
+
+  // Re-sync the countdown with the server on every question so the local
+  // timer never drifts (e.g. throttled intervals in background tabs)
+  if (gameStore.timeLimit > 0 && gameStore.timeRemaining >= 0) {
+    timeLeft.value = gameStore.timeRemaining
   }
 
   // Reset question state
@@ -259,6 +264,9 @@ async function selectAnswer(choiceId: number) {
     setTimeout(async () => {
       await loadQuestion()
     }, 3000)
+  } else if (result.timeUp) {
+    // The server ended the session (time limit) — go to results
+    await finishGame()
   } else {
     alert(result.message || 'Error al enviar la respuesta')
   }
@@ -362,9 +370,10 @@ function startTimer() {
 }
 
 function formatTime(seconds: number): string {
-  const hours = Math.floor(seconds / 3600)
-  const minutes = Math.floor((seconds % 3600) / 60)
-  const secs = seconds % 60
+  const total = Math.max(0, seconds)
+  const hours = Math.floor(total / 3600)
+  const minutes = Math.floor((total % 3600) / 60)
+  const secs = total % 60
   return `${hours}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`
 }
 
@@ -397,9 +406,12 @@ function formatElapsedTime(seconds: number): string {
 }
 
 .timer-display {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--warning-color);
   font-weight: bold;
+  /* Digits with a fixed width so the header doesn't jiggle every second */
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .question-counter {
