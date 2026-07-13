@@ -95,7 +95,7 @@
           class="btn-lifeline"
           :class="{ 'used': gameStore.fiftyFiftyRemaining === 0 || fiftyFiftyUsedOnCurrentQuestion }"
           @click="useFiftyFifty"
-          :disabled="gameStore.fiftyFiftyRemaining === 0 || fiftyFiftyUsedOnCurrentQuestion || showingAnswer"
+          :disabled="gameStore.fiftyFiftyRemaining === 0 || fiftyFiftyUsedOnCurrentQuestion || answering || showingAnswer"
         >
           <i class="fas fa-divide"></i> 50:50 ({{ gameStore.fiftyFiftyRemaining }})
         </button>
@@ -103,7 +103,7 @@
           class="btn-lifeline"
           :class="{ 'used': gameStore.autosolveRemaining === 0 }"
           @click="useAutosolve"
-          :disabled="gameStore.autosolveRemaining === 0 || showingAnswer"
+          :disabled="gameStore.autosolveRemaining === 0 || answering || showingAnswer"
         >
           <i class="fas fa-check-circle"></i> Resolver ({{ gameStore.autosolveRemaining }})
         </button>
@@ -111,7 +111,7 @@
           class="btn-lifeline"
           :class="{ 'used': gameStore.skipsRemaining === 0 }"
           @click="skipQuestion"
-          :disabled="gameStore.skipsRemaining === 0 || showingAnswer"
+          :disabled="gameStore.skipsRemaining === 0 || answering || showingAnswer"
         >
           <i class="fas fa-forward"></i> Saltar ({{ gameStore.skipsRemaining }})
         </button>
@@ -285,6 +285,7 @@ async function flagCurrentQuestion() {
 }
 
 async function useFiftyFifty() {
+  if (answering.value || showingAnswer.value) return
   if (gameStore.useFiftyFifty() && gameStore.currentQuestion && gameStore.sessionId) {
     try {
       // Call backend to get which incorrect choices to remove
@@ -308,6 +309,7 @@ async function useFiftyFifty() {
 }
 
 async function useAutosolve() {
+  if (answering.value || showingAnswer.value) return
   if (gameStore.useAutosolve() && gameStore.currentQuestion && gameStore.sessionId) {
     try {
       // Call backend to get the correct choice
@@ -326,6 +328,7 @@ async function useAutosolve() {
 }
 
 async function skipQuestion() {
+  if (answering.value || showingAnswer.value) return
   if (gameStore.useSkip()) {
     await loadQuestion()
   }
@@ -573,7 +576,8 @@ function formatElapsedTime(seconds: number): string {
   box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
 }
 
-.btn-lifeline.used {
+.btn-lifeline.used,
+.btn-lifeline:disabled {
   background: #666;
   opacity: 0.5;
   cursor: not-allowed;
