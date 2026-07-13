@@ -7,8 +7,30 @@
           <button type="button" class="btn-close btn-close-white" @click="$emit('close')"></button>
         </div>
         <div class="modal-body">
-          <div v-if="loading" class="text-center">
-            <div class="spinner-border text-warning" role="status"></div>
+          <div v-if="loading" aria-busy="true">
+            <span class="visually-hidden">Cargando estadísticas...</span>
+            <div class="stats-section">
+              <SkeletonBlock width="200px" height="1rem" radius="4px" class="mb-3" />
+              <div class="row">
+                <div v-for="n in 4" :key="n" class="col-md-3 col-6 mb-3">
+                  <div class="stat-card">
+                    <SkeletonBlock width="60%" height="2rem" radius="4px" class="mx-auto" />
+                    <SkeletonBlock width="80%" height="0.85rem" radius="4px" class="mx-auto mt-2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stats-section mt-4">
+              <SkeletonBlock width="140px" height="1rem" radius="4px" class="mb-3" />
+              <div v-for="n in 3" :key="n" class="category-stat-item">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <SkeletonBlock width="35%" height="0.95rem" radius="4px" />
+                  <SkeletonBlock width="50px" height="1.2rem" radius="999px" />
+                </div>
+                <SkeletonBlock height="20px" radius="4px" />
+              </div>
+            </div>
           </div>
 
           <div v-else-if="stats">
@@ -108,6 +130,7 @@
 import { ref, onMounted } from 'vue'
 import { useAuthStore } from '@/stores/auth'
 import api from '@/services/api'
+import SkeletonBlock from '@/components/SkeletonBlock.vue'
 import type { UserStats } from '@/types'
 
 const emit = defineEmits(['close'])

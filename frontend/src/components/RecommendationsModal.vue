@@ -7,8 +7,17 @@
           <button type="button" class="btn-close btn-close-white" @click="$emit('close')"></button>
         </div>
         <div class="modal-body">
-          <div v-if="loading" class="text-center">
-            <div class="spinner-border text-warning" role="status"></div>
+          <div v-if="loading" class="recommendations-list" aria-busy="true">
+            <span class="visually-hidden">Cargando recomendaciones...</span>
+            <div v-for="n in 3" :key="n" class="recommendation-item">
+              <SkeletonBlock width="45%" height="1.05rem" radius="4px" />
+              <SkeletonBlock width="100%" height="0.85rem" radius="4px" class="mt-3" />
+              <SkeletonBlock width="80%" height="0.85rem" radius="4px" class="mt-2" />
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <SkeletonBlock width="90px" height="1.4rem" radius="999px" />
+                <SkeletonBlock width="70px" height="0.75rem" radius="4px" />
+              </div>
+            </div>
           </div>
 
           <div v-else-if="recommendations && recommendations.length > 0">
@@ -37,6 +46,7 @@
 import { ref, onMounted } from 'vue'
 import { useAuthStore } from '@/stores/auth'
 import api from '@/services/api'
+import SkeletonBlock from '@/components/SkeletonBlock.vue'
 import type { Recommendation } from '@/types'
 
 const emit = defineEmits(['close'])

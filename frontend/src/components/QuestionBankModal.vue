@@ -7,8 +7,22 @@
           <button type="button" class="btn-close btn-close-white" @click="$emit('close')"></button>
         </div>
         <div class="modal-body">
-          <div v-if="loading" class="text-center">
-            <div class="spinner-border text-warning" role="status"></div>
+          <div v-if="loading" aria-busy="true">
+            <span class="visually-hidden">Cargando base de preguntas...</span>
+            <div class="bank-total">
+              <SkeletonBlock width="90px" height="2.4rem" radius="6px" />
+              <SkeletonBlock width="140px" height="1rem" radius="4px" />
+            </div>
+            <div class="category-list">
+              <div v-for="n in 4" :key="n" class="category-block">
+                <div class="category-toggle">
+                  <SkeletonBlock width="16px" height="16px" radius="4px" />
+                  <SkeletonBlock class="category-name" width="120px" height="1rem" radius="4px" />
+                  <SkeletonBlock width="30px" height="1rem" radius="4px" />
+                </div>
+                <SkeletonBlock height="10px" radius="5px" />
+              </div>
+            </div>
           </div>
 
           <div v-else-if="counts">
@@ -54,6 +68,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import api from '@/services/api'
+import SkeletonBlock from '@/components/SkeletonBlock.vue'
 import type { QuestionCount } from '@/types'
 
 defineEmits(['close'])

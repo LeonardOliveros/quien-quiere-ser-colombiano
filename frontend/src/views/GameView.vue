@@ -46,9 +46,14 @@
       <div v-if="gameStore.currentQuestion" class="question-box">
         <p class="question-text">{{ gameStore.currentQuestion.text }}</p>
       </div>
+      <div v-else class="question-box" aria-busy="true">
+        <span class="visually-hidden">Cargando pregunta...</span>
+        <SkeletonBlock width="90%" height="1.3rem" radius="4px" class="mx-auto" />
+        <SkeletonBlock width="65%" height="1.3rem" radius="4px" class="mx-auto mt-3" />
+      </div>
 
       <!-- Answers Grid -->
-      <div class="answers-grid">
+      <div v-if="gameStore.currentQuestion" class="answers-grid">
         <div class="row g-3">
           <div
             v-for="(choice, index) in visibleChoices"
@@ -68,6 +73,13 @@
               <span class="answer-letter">{{ String.fromCharCode(65 + index) }}</span>
               <span class="answer-text">{{ choice.text }}</span>
             </button>
+          </div>
+        </div>
+      </div>
+      <div v-else class="answers-grid" aria-busy="true">
+        <div class="row g-3">
+          <div v-for="n in 4" :key="n" class="col-md-6">
+            <SkeletonBlock height="68px" radius="15px" />
           </div>
         </div>
       </div>
@@ -138,6 +150,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useGameStore } from '@/stores/game'
 import api from '@/services/api'
+import SkeletonBlock from '@/components/SkeletonBlock.vue'
 
 const router = useRouter()
 const gameStore = useGameStore()

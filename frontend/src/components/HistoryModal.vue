@@ -7,8 +7,24 @@
           <button type="button" class="btn-close btn-close-white" @click="$emit('close')"></button>
         </div>
         <div class="modal-body">
-          <div v-if="loading" class="text-center">
-            <div class="spinner-border text-warning" role="status"></div>
+          <div v-if="loading" class="history-list" aria-busy="true">
+            <span class="visually-hidden">Cargando historial...</span>
+            <div v-for="n in 5" :key="n" class="history-item">
+              <div class="row align-items-center">
+                <div class="col-md-3">
+                  <SkeletonBlock width="90%" height="0.8rem" radius="4px" />
+                </div>
+                <div class="col-md-3">
+                  <SkeletonBlock width="60px" height="1.2rem" radius="999px" />
+                </div>
+                <div class="col-md-3">
+                  <SkeletonBlock width="50%" height="0.9rem" radius="4px" />
+                </div>
+                <div class="col-md-3">
+                  <SkeletonBlock width="50px" height="1.2rem" radius="999px" />
+                </div>
+              </div>
+            </div>
           </div>
 
           <div v-else-if="history && history.length > 0">
@@ -51,6 +67,7 @@
 import { ref, onMounted } from 'vue'
 import { useAuthStore } from '@/stores/auth'
 import api from '@/services/api'
+import SkeletonBlock from '@/components/SkeletonBlock.vue'
 import type { GameHistory } from '@/types'
 
 const emit = defineEmits(['close'])

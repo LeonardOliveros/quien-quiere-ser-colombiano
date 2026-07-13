@@ -3,9 +3,34 @@
     <div class="container py-5 results-content">
       <h1 class="text-center mb-4 text-golden">Resultados del Examen</h1>
 
-      <div v-if="loading" class="text-center">
-        <div class="spinner-border text-warning" role="status">
-          <span class="visually-hidden">Cargando...</span>
+      <div v-if="loading" aria-busy="true">
+        <span class="visually-hidden">Cargando resultados...</span>
+
+        <div class="result-card hero-card">
+          <div class="hero-score">
+            <SkeletonBlock width="190px" height="190px" radius="50%" />
+          </div>
+          <div class="hero-details">
+            <SkeletonBlock width="140px" height="1.8rem" radius="999px" />
+            <SkeletonBlock width="260px" height="0.85rem" radius="4px" class="mt-2" />
+            <div class="stat-tiles">
+              <div v-for="n in 4" :key="n" class="stat-tile">
+                <SkeletonBlock width="40%" height="1.4rem" radius="4px" />
+                <SkeletonBlock width="70%" height="0.7rem" radius="4px" class="mt-2" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card section-card">
+          <SkeletonBlock width="220px" height="1.1rem" radius="4px" class="mb-4" />
+          <div v-for="n in 4" :key="n" class="category-row">
+            <div class="category-head">
+              <SkeletonBlock width="30%" height="0.95rem" radius="4px" />
+              <SkeletonBlock width="120px" height="0.95rem" radius="4px" />
+            </div>
+            <SkeletonBlock height="10px" radius="5px" />
+          </div>
         </div>
       </div>
 
@@ -151,6 +176,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useGameStore } from '@/stores/game'
+import SkeletonBlock from '@/components/SkeletonBlock.vue'
 import type { GameResults } from '@/types'
 
 const router = useRouter()
