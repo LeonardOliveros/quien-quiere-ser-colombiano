@@ -60,12 +60,15 @@
         <button class="btn btn-outline-gold me-2 mb-2" @click="showHistoryModal">
           <i class="fas fa-history"></i> Historial
         </button>
+        <!-- Ocultos por ahora: Recomendaciones y Base de Datos de Preguntas -->
+        <!--
         <button class="btn btn-outline-gold me-2 mb-2" @click="showRecommendationsModal">
           <i class="fas fa-lightbulb"></i> Recomendaciones
         </button>
         <button class="btn btn-outline-gold mb-2" @click="questionBankModalOpen = true">
           <i class="fas fa-database"></i> Base de Datos de Preguntas
         </button>
+        -->
       </div>
 
       <div class="text-center mt-4">
@@ -244,9 +247,10 @@ function showHistoryModal() {
   historyModalOpen.value = true
 }
 
-function showRecommendationsModal() {
-  recommendationsModalOpen.value = true
-}
+// Oculto por ahora junto con su botón en el menú
+// function showRecommendationsModal() {
+//   recommendationsModalOpen.value = true
+// }
 
 </script>
 
