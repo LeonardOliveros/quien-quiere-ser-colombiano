@@ -337,13 +337,19 @@ Espera a que el estado pase a `ISSUED` (unos minutos tras crear los CNAME):
 aws acm wait certificate-validated --region us-east-1 --certificate-arn <ARN>
 ```
 
-**3. Guarda el secret en GitHub** — Settings → Secrets and variables →
-Actions → Secrets → `ACM_CERTIFICATE_ARN` con el ARN del paso anterior. En
-cuanto exista, el siguiente push a `main` (o "Run workflow") despliega el
-stack ya con `siteDomainNames`, `apiDomainName` y el certificado (ver
-`.github/workflows/deploy.yml`), y el build del frontend usa
-`VITE_API_BASE_URL=https://api.quienquieresercolombiano.com/api` en vez de la
-ruta relativa `/api`.
+**3. Configura el secret y las variables en GitHub** — Settings → Secrets and
+variables → Actions:
+
+- **Secrets** → `ACM_CERTIFICATE_ARN` con el ARN del paso anterior.
+- **Variables** → `SITE_DOMAIN_NAMES` = `quienquieresercolombiano.com,www.quienquieresercolombiano.com`
+  y `API_DOMAIN_NAME` = `api.quienquieresercolombiano.com` (así los dominios
+  no quedan hardcodeados en `.github/workflows/deploy.yml`).
+
+En cuanto exista el secret, el siguiente push a `main` (o "Run workflow")
+despliega el stack ya con `siteDomainNames`, `apiDomainName` y el certificado
+(ver `.github/workflows/deploy.yml`), y el build del frontend usa
+`VITE_API_BASE_URL=https://<API_DOMAIN_NAME>/api` en vez de la ruta relativa
+`/api`.
 
 Para probarlo localmente antes de hacer push, o para desplegar a mano:
 

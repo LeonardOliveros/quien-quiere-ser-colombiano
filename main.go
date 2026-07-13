@@ -109,15 +109,27 @@ func main() {
 func buildRouter(serveSPA bool) *gin.Engine {
 	r := gin.Default()
 
-	// Configure CORS: restrict to ALLOWED_ORIGINS when set (production),
-	// otherwise allow all origins (development)
+	// Configure CORS: restrict to ALLOWED_ORIGINS when set. In release mode
+	// (Lambda/production) ALLOWED_ORIGINS is required — fail fast instead of
+	// silently falling back to a wildcard that would let any site call the
+	// API with a stolen/leaked token. Local dev (debug mode) may still leave
+	// it unset and get an open CORS policy for convenience.
 	config := cors.DefaultConfig()
+	config.AllowMethods = []string{"GET", "POST", "DELETE"}
+	config.AllowHeaders = []string{"Content-Type", "Authorization"}
+	config.AllowCredentials = false
+
 	if origins := os.Getenv("ALLOWED_ORIGINS"); origins != "" {
-		config.AllowOrigins = strings.Split(origins, ",")
+		list := strings.Split(origins, ",")
+		for i, o := range list {
+			list[i] = strings.TrimSpace(o)
+		}
+		config.AllowOrigins = list
+	} else if gin.Mode() == gin.ReleaseMode {
+		log.Fatal("ALLOWED_ORIGINS must be set in release mode")
 	} else {
 		config.AllowAllOrigins = true
 	}
-	config.AllowHeaders = []string{"Origin", "Content-Type", "Authorization"}
 	r.Use(cors.New(config))
 
 	if serveSPA {
