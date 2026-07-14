@@ -18,6 +18,11 @@ const cloudflareOriginSecret = app.node.tryGetContext('cloudflareOriginSecret') 
 // the custom-domain context above — see QuizAppStackProps.budgetAlertEmail.
 const budgetAlertEmail = app.node.tryGetContext('budgetAlertEmail') as string | undefined;
 
+// Admin panel + guest abuse cap: `-c adminUsernames=leo,ana` and optionally
+// `-c guestDailyCap=2000` — see QuizAppStackProps for details.
+const adminUsernamesCtx = app.node.tryGetContext('adminUsernames') as string | undefined;
+const guestDailyCapCtx = app.node.tryGetContext('guestDailyCap') as string | undefined;
+
 new QuizAppStack(app, 'QuizAppStack', {
   // us-east-1 so a CloudFront ACM certificate can live in this same stack
   // (CloudFront only accepts certificates from us-east-1).
@@ -28,4 +33,6 @@ new QuizAppStack(app, 'QuizAppStack', {
   certificateArn,
   cloudflareOriginSecret,
   budgetAlertEmail,
+  adminUsernames: adminUsernamesCtx?.split(','),
+  guestDailyCap: guestDailyCapCtx ? Number(guestDailyCapCtx) : undefined,
 });

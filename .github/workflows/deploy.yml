@@ -108,5 +108,10 @@ jobs:
           if [ -n "${{ secrets.BUDGET_ALERT_EMAIL }}" ]; then
             CONTEXT_ARGS+=(-c budgetAlertEmail="${{ secrets.BUDGET_ALERT_EMAIL }}")
           fi
+          # Admin panel (see README "Panel admin y modo invitado"): usernames
+          # allowed to read GET /api/admin/metrics.
+          if [ -n "${{ secrets.ADMIN_USERNAMES }}" ]; then
+            CONTEXT_ARGS+=(-c adminUsernames="${{ secrets.ADMIN_USERNAMES }}")
+          fi
           npx cdk deploy --require-approval never "${CONTEXT_ARGS[@]}"
         working-directory: infra

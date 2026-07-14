@@ -3,6 +3,8 @@ import type {
   LoginCredentials,
   RegisterCredentials,
   AuthResponse,
+  GuestAuthResponse,
+  AdminMetrics,
   RegisterResponse,
   StartGameResponse,
   QuestionResponse,
@@ -54,9 +56,13 @@ class ApiService {
       (error: AxiosError) => {
         const isAuthEndpoint = error.config?.url?.includes('/login') || error.config?.url?.includes('/register')
         if (error.response?.status === 401 && !isAuthEndpoint) {
+          const wasGuest = localStorage.getItem('isGuest') === 'true'
           localStorage.removeItem('token')
           localStorage.removeItem('userId')
-          window.location.href = '/login'
+          localStorage.removeItem('isGuest')
+          localStorage.removeItem('isAdmin')
+          // Expired guest sessions get a friendly hint on the login screen
+          window.location.href = wasGuest ? '/login?expired=guest' : '/login'
         }
         return Promise.reject(error)
       }
@@ -71,6 +77,19 @@ class ApiService {
 
   async login(credentials: LoginCredentials): Promise<AuthResponse> {
     const response = await this.axiosInstance.post<AuthResponse>('/login', credentials)
+    return response.data
+  }
+
+  async guestLogin(): Promise<GuestAuthResponse> {
+    const response = await this.axiosInstance.post<GuestAuthResponse>('/guest')
+    return response.data
+  }
+
+  // Admin endpoints (server returns 404 for non-admin users)
+  async getAdminMetrics(days = 14): Promise<AdminMetrics> {
+    const response = await this.axiosInstance.get<AdminMetrics>('/admin/metrics', {
+      params: { days }
+    })
     return response.data
   }
 

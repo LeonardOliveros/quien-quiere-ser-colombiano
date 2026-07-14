@@ -5,6 +5,12 @@
         ¿Quién Quiere Ser Colombiano?
       </h1>
 
+      <div v-if="authStore.isGuest" class="text-center mb-4">
+        <span class="guest-badge">
+          <i class="fas fa-user-clock me-1"></i> Invitado — tu progreso se guarda por 24 horas
+        </span>
+      </div>
+
       <div class="game-modes">
         <!-- Resume Button (shown only when there's a paused game) -->
         <button v-if="hasPausedGame" class="btn-game btn-resume" @click="resumePausedGame">
@@ -72,6 +78,9 @@
       </div>
 
       <div class="text-center mt-4">
+        <button v-if="authStore.isAdmin" class="btn btn-outline-gold me-2" @click="router.push('/admin')">
+          <i class="fas fa-gauge"></i> Panel Admin
+        </button>
         <button class="btn btn-danger" @click="logout">
           <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
         </button>
@@ -401,6 +410,16 @@ function showHistoryModal() {
   background: var(--gold-color);
   color: var(--primary-color);
   transform: translateY(-2px);
+}
+
+.guest-badge {
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.12);
+  border: 1px solid var(--gold-color);
+  color: var(--gold-color);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.9rem;
 }
 
 @keyframes fadeIn {

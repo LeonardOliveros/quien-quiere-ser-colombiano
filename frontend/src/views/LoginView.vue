@@ -41,12 +41,27 @@
                     </button>
                   </div>
                 </div>
+                <div v-if="guestExpired" class="alert alert-warning">
+                  Tu sesión de invitado expiró. Puedes jugar de nuevo como invitado o crear una cuenta para conservar tu progreso.
+                </div>
                 <div v-if="loginError" class="alert alert-danger">{{ loginError }}</div>
                 <button type="submit" class="btn btn-primary w-100" :disabled="isLoading">
                   <span v-if="isLoading">Cargando...</span>
                   <span v-else>Iniciar Sesión</span>
                 </button>
               </form>
+              <button
+                type="button"
+                class="btn btn-guest w-100 mt-3"
+                :disabled="isLoading"
+                @click="handleGuestLogin"
+              >
+                <span v-if="isLoading">Cargando...</span>
+                <span v-else><i class="fas fa-user-clock me-2"></i>Jugar como invitado</span>
+              </button>
+              <p class="text-center guest-hint mt-2">
+                Sin registro. Tu progreso como invitado se guarda solo por 24 horas.
+              </p>
               <p class="text-center mt-3">
                 ¿No tienes cuenta?
                 <a href="#" @click.prevent="showRegister = true" class="text-golden">Regístrate</a>
@@ -134,12 +149,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 
 const router = useRouter()
+const route = useRoute()
 const authStore = useAuthStore()
+
+const guestExpired = computed(() => route.query.expired === 'guest')
 
 const showRegister = ref(false)
 const isLoading = ref(false)
@@ -167,6 +185,21 @@ async function handleLogin() {
   loginError.value = ''
 
   const result = await authStore.login(loginForm.value)
+
+  if (result.success) {
+    router.push('/')
+  } else {
+    loginError.value = result.message
+  }
+
+  isLoading.value = false
+}
+
+async function handleGuestLogin() {
+  isLoading.value = true
+  loginError.value = ''
+
+  const result = await authStore.loginAsGuest()
 
   if (result.success) {
     router.push('/')
@@ -319,6 +352,34 @@ async function handleRegister() {
 .btn-primary:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.btn-guest {
+  background: transparent;
+  border: 2px solid var(--gold-color);
+  color: var(--gold-color);
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-guest:hover:not(:disabled) {
+  background: rgba(255, 215, 0, 0.15);
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
+  transform: translateY(-2px);
+  color: var(--gold-color);
+}
+
+.btn-guest:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.guest-hint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin-bottom: 0;
 }
 
 @keyframes fadeIn {

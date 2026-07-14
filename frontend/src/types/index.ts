@@ -13,11 +13,41 @@ export interface AuthResponse {
   user_id: string
   token: string
   message: string
+  username?: string
+  is_admin?: boolean
+}
+
+export interface GuestAuthResponse {
+  user_id: string
+  username: string
+  token: string
+  message: string
+  is_guest: boolean
 }
 
 export interface RegisterResponse {
   user_id: string
   message: string
+}
+
+// Admin metrics types
+export interface MetricsTotals {
+  registered_users: number
+  guest_users: number
+  total_games: number
+}
+
+export interface DailyMetrics {
+  date: string
+  active_users: number
+  games_started: number
+  new_guests: number
+  new_users: number
+}
+
+export interface AdminMetrics {
+  totals: MetricsTotals
+  daily: DailyMetrics[]
 }
 
 // Question types

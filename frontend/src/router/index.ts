@@ -25,6 +25,14 @@ const routes: RouteRecordRaw[] = [
     name: 'Results',
     component: () => import('@/views/ResultsView.vue'),
     meta: { requiresAuth: true }
+  },
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: () => import('@/views/AdminView.vue'),
+    // requiresAdmin is cosmetic: the real gate is the server, which answers
+    // 404 to non-admin users.
+    meta: { requiresAuth: true, requiresAdmin: true }
   }
 ]
 
@@ -38,6 +46,8 @@ router.beforeEach((to, _from, next) => {
 
   if (to.meta.requiresAuth && !authStore.isAuthenticated) {
     next('/login')
+  } else if (to.meta.requiresAdmin && !authStore.isAdmin) {
+    next('/')
   } else if (to.path === '/login' && authStore.isAuthenticated) {
     next('/')
   } else {

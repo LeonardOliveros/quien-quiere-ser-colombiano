@@ -45,6 +45,20 @@ export interface QuizAppStackProps extends cdk.StackProps {
    * Optional: without it, no CfnBudget is created.
    */
   readonly budgetAlertEmail?: string;
+  /**
+   * Usernames (comma-joined into ADMIN_USERNAMES) allowed to call the
+   * admin-only endpoints (GET /api/admin/metrics). Optional: without it, no
+   * user is an admin and the endpoints answer 404 to everyone.
+   */
+  readonly adminUsernames?: string[];
+  /**
+   * Cost circuit breaker for the unauthenticated POST /api/guest endpoint:
+   * once this many guest accounts were created in one (Colombian) day, guest
+   * creation returns 503 until the day rolls over. Defaults to 2000 in the
+   * app when unset. Cloudflare rate limiting is the first line of defense;
+   * this bounds the damage if it's bypassed.
+   */
+  readonly guestDailyCap?: number;
 }
 
 const BUDGET_ALERT_LIMIT_USD = 10;
@@ -96,6 +110,10 @@ export class QuizAppStack extends cdk.Stack {
         // in main.go so direct calls to the API Gateway default/custom
         // domain (bypassing Cloudflare) get a 403.
         ...(domainsConfigured ? { ORIGIN_VERIFY_SECRET: props!.cloudflareOriginSecret! } : {}),
+        ...(props?.adminUsernames?.length
+          ? { ADMIN_USERNAMES: props.adminUsernames.join(',') }
+          : {}),
+        ...(props?.guestDailyCap ? { GUEST_DAILY_CAP: String(props.guestDailyCap) } : {}),
       },
     });
     table.grantReadWriteData(apiFn);

@@ -300,6 +300,37 @@ alcanza el 100% del gasto real. Es opcional: solo se crea si existe el secret
 `BUDGET_ALERT_EMAIL` (Settings → Secrets and variables → Actions → Secrets)
 con el correo a notificar.
 
+### Panel admin y modo invitado
+
+**Modo invitado:** `POST /api/guest` (botón "Jugar como invitado" en el login)
+crea una cuenta anónima autodestruible: todo lo del invitado (perfil, token,
+partidas, respuestas) lleva TTL de DynamoDB y desaparece 24 horas después de
+su última actividad. Los borrados por TTL son gratis, así que los invitados no
+acumulan almacenamiento.
+
+Como el endpoint es público, tiene dos frenos de costo:
+
+1. **Regla de rate limiting en Cloudflare** (el plan gratis incluye una):
+   en el dashboard → Security → WAF → Rate limiting rules, crea una regla
+   para `api.quienquieresercolombiano.com` con expresión
+   `(http.request.uri.path eq "/api/guest" and http.request.method eq "POST")`
+   y un límite tipo 5 peticiones / 10 segundos por IP.
+2. **Tope diario en la app**: la variable `GUEST_DAILY_CAP` (default 2000)
+   hace que el endpoint responda 503 cuando ya se crearon esos invitados en el
+   día (hora de Colombia). Se pasa con `-c guestDailyCap=N` al deploy.
+
+**Panel admin:** `GET /api/admin/metrics` devuelve totales (usuarios
+registrados, invitados, partidas) y actividad diaria (jugadores activos,
+partidas, altas) de los últimos N días; la vista `/admin` del frontend lo
+muestra. Solo responde a los usuarios listados en `ADMIN_USERNAMES` (para
+cualquier otro es un 404, como si no existiera). En CI se pasa con el secret
+`ADMIN_USERNAMES` del repo (Settings → Secrets and variables → Actions);
+localmente va en `.env`.
+
+Las métricas se guardan como contadores atómicos en la misma tabla DynamoDB
+(items `DAY#<fecha>` + `COUNTER#guest`): cuestan 2–4 escrituras por partida,
+es decir, prácticamente $0/mes.
+
 ### Dominio propio (Cloudflare)
 
 El DNS de `quienquieresercolombiano.com` vive en Cloudflare (no Route 53) para
