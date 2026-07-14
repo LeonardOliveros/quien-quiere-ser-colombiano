@@ -185,12 +185,16 @@ func (r *statsRepo) CreateRecommendation(rec *domain.StudyRecommendation) error 
 	}
 	rec.ID = id
 	rec.CreatedAt = time.Now()
-	return r.s.putItem(ctx, recommendationItem{
+	item := recommendationItem{
 		PK: pkUser(rec.UserID), SK: skRec(id),
 		ID: id, UserID: rec.UserID, Category: rec.Category, SubCategory: rec.SubCategory,
 		Weakness: rec.Weakness, Description: rec.Description, Resources: rec.Resources,
 		Priority: rec.Priority, CreatedAt: rec.CreatedAt,
-	})
+	}
+	if rec.IsGuest {
+		item.TTL = guestTTL(rec.CreatedAt)
+	}
+	return r.s.putItem(ctx, item)
 }
 
 func (r *statsRepo) RecommendationsByUser(userID uint, limit int) ([]domain.StudyRecommendation, error) {

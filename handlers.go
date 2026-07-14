@@ -5,11 +5,14 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"log"
 	"math"
 	mrand "math/rand"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -41,6 +44,12 @@ func registerUser(c *gin.Context) {
 		return
 	}
 
+	// The invitado- prefix is reserved for auto-generated guest accounts.
+	if strings.HasPrefix(strings.ToLower(registerData.Username), guestUsernamePrefix) {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Ese nombre de usuario está reservado"})
+		return
+	}
+
 	user := domain.User{
 		Username: registerData.Username,
 		Password: string(hashedPassword),
@@ -51,7 +60,76 @@ func registerUser(c *gin.Context) {
 		return
 	}
 
+	recordUserCreated(false)
+
 	c.JSON(http.StatusCreated, gin.H{"message": "User created successfully", "user_id": user.ID})
+}
+
+const guestUsernamePrefix = "invitado-"
+
+// guestUsername generates a throwaway display name for a guest. The random
+// suffix makes collisions negligible without a uniqueness reservation.
+func guestUsername() string {
+	b := make([]byte, 4)
+	rand.Read(b)
+	return guestUsernamePrefix + hex.EncodeToString(b)
+}
+
+// guestDailyCap is a cost circuit breaker for the unauthenticated guest
+// endpoint: once this many guests were created today, creation returns 503
+// until the (Colombian) day rolls over. Cloudflare rate limiting is the first
+// line of defense; this cap bounds the damage if that is bypassed.
+var guestDailyCap = sync.OnceValue(func() int64 {
+	if v := os.Getenv("GUEST_DAILY_CAP"); v != "" {
+		if n, err := strconv.ParseInt(v, 10, 64); err == nil && n > 0 {
+			return n
+		}
+		log.Printf("invalid GUEST_DAILY_CAP %q, using default", v)
+	}
+	return 2000
+})
+
+// recordUserCreated bumps the usage metrics after a successful signup.
+// Best-effort: analytics must never fail the request.
+func recordUserCreated(isGuest bool) {
+	if err := store.Metrics().RecordUserCreated(isGuest, domain.MetricsDay(time.Now())); err != nil {
+		log.Printf("metrics: record user created: %v", err)
+	}
+}
+
+// createGuest issues an anonymous, self-expiring account so people can play
+// without registering. Everything the guest does is recorded under a real
+// user ID, but all of it disappears domain.GuestDataTTL after their last
+// activity (DynamoDB TTL / SQLite boot cleanup).
+func createGuest(c *gin.Context) {
+	today, err := store.Metrics().Daily(1)
+	if err == nil && len(today) == 1 && today[0].NewGuests >= guestDailyCap() {
+		c.JSON(http.StatusServiceUnavailable, gin.H{"error": "Demasiados invitados por hoy, inténtalo más tarde o crea una cuenta"})
+		return
+	}
+
+	user := domain.User{Username: guestUsername(), IsGuest: true}
+	if err := store.Users().Create(&user); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "No se pudo crear la sesión de invitado"})
+		return
+	}
+
+	token := generateToken()
+	expiresAt := time.Now().Add(domain.GuestDataTTL)
+	if err := store.Users().SaveSessionToken(user.ID, token, expiresAt); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "No se pudo crear la sesión de invitado"})
+		return
+	}
+
+	recordUserCreated(true)
+
+	c.JSON(http.StatusCreated, gin.H{
+		"message":  "Guest session created",
+		"user_id":  user.ID,
+		"username": user.Username,
+		"token":    token,
+		"is_guest": true,
+	})
 }
 
 // registerValidationMessage turns binding errors into user-facing Spanish
@@ -87,6 +165,11 @@ func loginUser(c *gin.Context) {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "Usuario o contraseña inválidos"})
 		return
 	}
+	// Guests have no password and can only be created via POST /guest.
+	if user.IsGuest {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Usuario o contraseña inválidos"})
+		return
+	}
 	if err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(loginData.Password)); err != nil {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "Usuario o contraseña inválidos"})
 		return
@@ -102,9 +185,11 @@ func loginUser(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"message": "Login successful",
-		"user_id": user.ID,
-		"token":   token,
+		"message":  "Login successful",
+		"user_id":  user.ID,
+		"username": user.Username,
+		"token":    token,
+		"is_admin": isAdmin(user.Username),
 	})
 }
 
@@ -135,10 +220,82 @@ func authRequired() gin.HandlerFunc {
 			return
 		}
 
-		// Store user ID in context
+		// Guest data expires GuestDataTTL after the last activity: refresh
+		// the expiry on traffic, at most once per guestTouchInterval so a
+		// game in progress doesn't write on every request. Best-effort — a
+		// failed touch only shortens the guest's grace period.
+		if user.IsGuest {
+			newExpiry := time.Now().Add(domain.GuestDataTTL)
+			if user.TokenExpiresAt.Before(newExpiry.Add(-guestTouchInterval)) {
+				if err := store.Users().TouchGuest(user.ID, token, newExpiry); err != nil {
+					log.Printf("touch guest %d: %v", user.ID, err)
+				}
+			}
+		}
+
+		// Store user identity in context
 		c.Set("userID", user.ID)
+		c.Set("username", user.Username)
+		c.Set("isGuest", user.IsGuest)
 		c.Next()
 	}
+}
+
+// guestTouchInterval limits how often authenticated guest traffic refreshes
+// the guest's expiry (each touch costs storage writes).
+const guestTouchInterval = time.Hour
+
+// adminUsernames is the allowlist from ADMIN_USERNAMES (comma-separated).
+// Evaluated lazily so it runs after main() has loaded .env.
+var adminUsernames = sync.OnceValue(func() map[string]bool {
+	admins := make(map[string]bool)
+	for _, name := range strings.Split(os.Getenv("ADMIN_USERNAMES"), ",") {
+		if name = strings.TrimSpace(name); name != "" {
+			admins[name] = true
+		}
+	}
+	return admins
+})
+
+func isAdmin(username string) bool { return adminUsernames()[username] }
+
+// adminRequired gates admin endpoints. Non-admins get a 404 (not 403) so the
+// endpoints stay invisible to anyone probing the API.
+func adminRequired() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		if !isAdmin(c.GetString("username")) {
+			c.AbortWithStatus(http.StatusNotFound)
+			return
+		}
+		c.Next()
+	}
+}
+
+// getAdminMetrics returns lifetime totals plus a per-day breakdown of the
+// last ?days= days (default 14, max 31).
+func getAdminMetrics(c *gin.Context) {
+	days := 14
+	if v := c.Query("days"); v != "" {
+		n, err := strconv.Atoi(v)
+		if err != nil || n < 1 || n > 31 {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "days must be between 1 and 31"})
+			return
+		}
+		days = n
+	}
+
+	totals, err := store.Metrics().Totals()
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to load metrics"})
+		return
+	}
+	daily, err := store.Metrics().Daily(days)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to load metrics"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"totals": totals, "daily": daily})
 }
 
 // requireOwnedSession loads the session from the :sessionId param and verifies
@@ -231,11 +388,17 @@ func startGame(c *gin.Context) {
 		StartTime:      time.Now(),
 		TimeLimit:      config.TimeLimit,
 		TotalQuestions: config.QuestionCount,
+		IsGuest:        c.GetBool("isGuest"),
 	}
 
 	if err := store.Games().CreateSession(&session); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create game session"})
 		return
+	}
+
+	// Usage metrics (games per day, daily active users). Best-effort.
+	if err := store.Metrics().RecordGameStarted(session.UserID, domain.MetricsDay(time.Now())); err != nil {
+		log.Printf("metrics: record game started: %v", err)
 	}
 
 	c.JSON(http.StatusOK, gin.H{
@@ -1085,6 +1248,7 @@ func generateRecommendations(sessionID uint) {
 		if count >= 2 { // If failed 2+ questions in this area
 			rec := domain.StudyRecommendation{
 				UserID:      session.UserID,
+				IsGuest:     session.IsGuest,
 				Category:    getCategory(area),
 				SubCategory: getSubCategory(area),
 				Weakness:    area,

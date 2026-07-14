@@ -31,6 +31,7 @@ type Store interface {
 	Questions() QuestionRepository
 	Games() GameRepository
 	Stats() StatsRepository
+	Metrics() MetricsRepository
 
 	// SyncQuestionBank idempotently upserts the taxonomy and question bank:
 	// categories/subcategories keyed by code, questions keyed by Key,
@@ -50,6 +51,26 @@ type UserRepository interface {
 	ByUsername(username string) (User, error)
 	ByToken(token string) (User, error)
 	SaveSessionToken(userID uint, token string, expiresAt time.Time) error
+
+	// TouchGuest extends a guest's expiry (profile and current token) and
+	// records the activity time. Best-effort semantics: callers may ignore
+	// the error. Only ever called for users with IsGuest set.
+	TouchGuest(userID uint, token string, expiresAt time.Time) error
+}
+
+// MetricsRepository records and reads aggregate usage counters. Handlers call
+// RecordUserCreated right after Users().Create and RecordGameStarted right
+// after Games().CreateSession; implementations may rely on that pairing
+// (DynamoDB keeps explicit counters, SQLite derives everything with SQL and
+// implements the Record* methods as no-ops).
+type MetricsRepository interface {
+	RecordUserCreated(isGuest bool, day string) error
+	RecordGameStarted(userID uint, day string) error
+
+	Totals() (MetricsTotals, error)
+	// Daily returns the last `days` days including today, newest first,
+	// zero-filled for days without activity.
+	Daily(days int) ([]DailyMetrics, error)
 }
 
 // SubcategoryCount is one row of the question-bank breakdown.

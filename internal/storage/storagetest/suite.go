@@ -36,6 +36,8 @@ func RunStoreSuite(t *testing.T, open func(t *testing.T) domain.Store) {
 	t.Run("Stats", func(t *testing.T) { testStats(t, open(t)) })
 	t.Run("Recommendations", func(t *testing.T) { testRecommendations(t, open(t)) })
 	t.Run("ResetUserData", func(t *testing.T) { testResetUserData(t, open(t)) })
+	t.Run("GuestUsers", func(t *testing.T) { testGuestUsers(t, open(t)) })
+	t.Run("Metrics", func(t *testing.T) { testMetrics(t, open(t)) })
 }
 
 // --- fixture -----------------------------------------------------------------
@@ -1109,5 +1111,123 @@ func testResetUserData(t *testing.T, st domain.Store) {
 	}
 	if totals, _ := stats.OverallTotals(other.ID); totals.Total != 1 {
 		t.Errorf("other user's totals after reset: %+v", totals)
+	}
+}
+
+func createGuest(t *testing.T, st domain.Store, username string) domain.User {
+	t.Helper()
+	u := domain.User{Username: username, IsGuest: true}
+	if err := st.Users().Create(&u); err != nil {
+		t.Fatalf("Users().Create(guest %s): %v", username, err)
+	}
+	if u.ID == 0 {
+		t.Fatalf("Users().Create(guest %s): ID not assigned", username)
+	}
+	return u
+}
+
+func testGuestUsers(t *testing.T, st domain.Store) {
+	users := st.Users()
+
+	g := createGuest(t, st, "invitado-abc123")
+	exp := time.Now().Add(domain.GuestDataTTL).UTC().Truncate(time.Second)
+	if err := users.SaveSessionToken(g.ID, "guest-tok", exp); err != nil {
+		t.Fatalf("SaveSessionToken(guest): %v", err)
+	}
+
+	byTok, err := users.ByToken("guest-tok")
+	if err != nil {
+		t.Fatalf("ByToken(guest): %v", err)
+	}
+	if !byTok.IsGuest {
+		t.Error("ByToken(guest): IsGuest=false, want true")
+	}
+	if byTok.TokenExpiresAt == nil || !byTok.TokenExpiresAt.Equal(exp) {
+		t.Errorf("ByToken(guest): TokenExpiresAt=%v, want %v", byTok.TokenExpiresAt, exp)
+	}
+
+	// TouchGuest extends the token expiry and records the activity.
+	newExp := exp.Add(time.Hour)
+	if err := users.TouchGuest(g.ID, "guest-tok", newExp); err != nil {
+		t.Fatalf("TouchGuest: %v", err)
+	}
+	touched, err := users.ByToken("guest-tok")
+	if err != nil {
+		t.Fatalf("ByToken after touch: %v", err)
+	}
+	if touched.TokenExpiresAt == nil || !touched.TokenExpiresAt.Equal(newExp) {
+		t.Errorf("TouchGuest: TokenExpiresAt=%v, want %v", touched.TokenExpiresAt, newExp)
+	}
+	if touched.LastActivityAt == nil {
+		t.Error("TouchGuest: LastActivityAt not set")
+	}
+
+	// Guests and registered users coexist; registered flow is untouched.
+	r := createUser(t, st, "registrada")
+	byName, err := users.ByUsername("registrada")
+	if err != nil || byName.ID != r.ID {
+		t.Fatalf("ByUsername(registered): (%+v, %v)", byName, err)
+	}
+	if byName.IsGuest {
+		t.Error("registered user reported as guest")
+	}
+}
+
+func testMetrics(t *testing.T, st domain.Store) {
+	metrics := st.Metrics()
+	day := domain.MetricsDay(time.Now())
+
+	// Paired-call contract: Record* right after the corresponding create.
+	r1 := createUser(t, st, "ana")
+	if err := metrics.RecordUserCreated(false, day); err != nil {
+		t.Fatalf("RecordUserCreated(registered): %v", err)
+	}
+	g1 := createGuest(t, st, "invitado-m1")
+	if err := metrics.RecordUserCreated(true, day); err != nil {
+		t.Fatalf("RecordUserCreated(guest): %v", err)
+	}
+
+	startGame := func(userID uint) {
+		t.Helper()
+		createSession(t, st, userID, "PRACTICE", "ACTIVE")
+		if err := metrics.RecordGameStarted(userID, day); err != nil {
+			t.Fatalf("RecordGameStarted(%d): %v", userID, err)
+		}
+	}
+
+	// Same user twice on the same day must count once for active_users.
+	startGame(r1.ID)
+	startGame(r1.ID)
+	startGame(g1.ID)
+
+	totals, err := metrics.Totals()
+	if err != nil {
+		t.Fatalf("Totals: %v", err)
+	}
+	want := domain.MetricsTotals{RegisteredUsers: 1, GuestUsers: 1, TotalGames: 3}
+	if totals != want {
+		t.Errorf("Totals: got %+v, want %+v", totals, want)
+	}
+
+	daily, err := metrics.Daily(7)
+	if err != nil {
+		t.Fatalf("Daily: %v", err)
+	}
+	if len(daily) != 7 {
+		t.Fatalf("Daily(7): got %d entries, want 7", len(daily))
+	}
+	today := daily[0]
+	if today.Date != day {
+		t.Errorf("Daily[0].Date=%s, want %s (newest first)", today.Date, day)
+	}
+	wantToday := domain.DailyMetrics{Date: day, ActiveUsers: 2, GamesStarted: 3, NewGuests: 1, NewUsers: 1}
+	if today != wantToday {
+		t.Errorf("Daily[0]: got %+v, want %+v", today, wantToday)
+	}
+	for _, m := range daily[1:] {
+		empty := domain.DailyMetrics{Date: m.Date}
+		if m != empty {
+			t.Errorf("Daily(%s): got %+v, want zero-filled", m.Date, m)
+		}
 	}
 }

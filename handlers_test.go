@@ -138,3 +138,43 @@ func TestGenerateToken(t *testing.T) {
 		t.Error("two generated tokens should not collide")
 	}
 }
+
+func TestMetricsDay(t *testing.T) {
+	// 02:00 UTC is 21:00 of the previous day in Colombia (UTC-5): late-night
+	// games must count for the Colombian day, not the UTC one.
+	utcLateNight := time.Date(2026, 7, 14, 2, 0, 0, 0, time.UTC)
+	if got := domain.MetricsDay(utcLateNight); got != "2026-07-13" {
+		t.Errorf("MetricsDay(02:00 UTC) = %q, want 2026-07-13", got)
+	}
+	utcNoon := time.Date(2026, 7, 14, 12, 0, 0, 0, time.UTC)
+	if got := domain.MetricsDay(utcNoon); got != "2026-07-14" {
+		t.Errorf("MetricsDay(12:00 UTC) = %q, want 2026-07-14", got)
+	}
+}
+
+func TestGuestUsername(t *testing.T) {
+	seen := make(map[string]bool)
+	for i := 0; i < 100; i++ {
+		name := guestUsername()
+		if len(name) != len(guestUsernamePrefix)+8 {
+			t.Fatalf("guestUsername() = %q, want prefix %q + 8 hex chars", name, guestUsernamePrefix)
+		}
+		if name[:len(guestUsernamePrefix)] != guestUsernamePrefix {
+			t.Fatalf("guestUsername() = %q, missing prefix %q", name, guestUsernamePrefix)
+		}
+		if seen[name] {
+			t.Fatalf("guestUsername() repeated %q within 100 draws", name)
+		}
+		seen[name] = true
+	}
+}
+
+func TestIsAdmin(t *testing.T) {
+	t.Setenv("ADMIN_USERNAMES", "leo, ana ,")
+	if !isAdmin("leo") || !isAdmin("ana") {
+		t.Error("expected leo and ana to be admins")
+	}
+	if isAdmin("otro") || isAdmin("") {
+		t.Error("unexpected admin for unknown/empty username")
+	}
+}

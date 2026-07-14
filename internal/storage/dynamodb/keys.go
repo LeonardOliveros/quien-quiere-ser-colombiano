@@ -13,8 +13,10 @@ import (
 //	SubCategory       TAXONOMY                  CAT#<cat>#SUB#<code>
 //	Question          QBANK                     Q#<key>
 //	User profile      USER#<id>                 PROFILE
-//	Username unique   UNIQ#USERNAME#<username>  UNIQ
+//	Username unique   UNIQ#USERNAME#<username>  UNIQ (registered users only)
 //	Auth token        TOKEN#<token>             META
+//	Day rollup        DAY#<yyyy-mm-dd>          META
+//	DAU dedup marker  DAY#<yyyy-mm-dd>          USER#<id>
 //	GameSession       USER#<id>                 SESSION#<pad12(id)>
 //	Session pointer   SESSION#<id>              META
 //	GameAnswer        SESSION#<id>              ANSWER#<pad12(qid)>
@@ -44,6 +46,11 @@ func pkCounter(entity string) string { return "COUNTER#" + entity }
 func pkUser(id uint) string          { return "USER#" + strconv.FormatUint(uint64(id), 10) }
 func pkUniqUsername(u string) string { return "UNIQ#USERNAME#" + u }
 func pkToken(token string) string    { return "TOKEN#" + token }
+
+// pkDay is the partition of one day's usage rollup (SK META) and its DAU
+// dedup markers (SK USER#<id>). day is domain.MetricsDay formatted.
+func pkDay(day string) string  { return "DAY#" + day }
+func skDayUser(id uint) string { return "USER#" + strconv.FormatUint(uint64(id), 10) }
 
 // pkSession is the partition holding the session pointer, answers and history.
 func pkSession(id uint) string { return "SESSION#" + strconv.FormatUint(uint64(id), 10) }

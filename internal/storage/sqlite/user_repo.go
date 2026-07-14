@@ -34,3 +34,11 @@ func (r *userRepo) SaveSessionToken(userID uint, token string, expiresAt time.Ti
 		"token_expires_at": expiresAt,
 	}).Error
 }
+
+func (r *userRepo) TouchGuest(userID uint, token string, expiresAt time.Time) error {
+	now := time.Now()
+	return r.db.Model(&domain.User{}).Where("id = ? AND token = ?", userID, token).Updates(map[string]interface{}{
+		"token_expires_at": expiresAt,
+		"last_activity_at": now,
+	}).Error
+}

@@ -5,6 +5,7 @@ package sqlite
 
 import (
 	"errors"
+	"time"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
@@ -40,13 +41,44 @@ func Open(path string) (*Store, error) {
 		return nil, err
 	}
 
+	if err := cleanupExpiredGuests(db); err != nil {
+		return nil, err
+	}
+
 	return &Store{db: db}, nil
+}
+
+// cleanupExpiredGuests is the local stand-in for DynamoDB's TTL: guests whose
+// token expired (last activity + domain.GuestDataTTL) are removed along with
+// everything they created.
+func cleanupExpiredGuests(db *gorm.DB) error {
+	return db.Transaction(func(tx *gorm.DB) error {
+		// datetime() normalizes the stored timezone-suffixed timestamps to
+		// UTC before comparing; raw TEXT comparison would be lexicographic
+		// and break across timezone/format differences.
+		const expired = "SELECT id FROM users WHERE is_guest AND datetime(token_expires_at) < datetime(?)"
+		now := time.Now().UTC().Format("2006-01-02 15:04:05")
+		steps := []string{
+			"DELETE FROM game_answers WHERE game_session_id IN (SELECT id FROM game_sessions WHERE user_id IN (" + expired + "))",
+			"DELETE FROM question_histories WHERE game_session_id IN (SELECT id FROM game_sessions WHERE user_id IN (" + expired + "))",
+			"DELETE FROM game_sessions WHERE user_id IN (" + expired + ")",
+			"DELETE FROM study_recommendations WHERE user_id IN (" + expired + ")",
+			"DELETE FROM users WHERE is_guest AND datetime(token_expires_at) < datetime(?)",
+		}
+		for _, stmt := range steps {
+			if err := tx.Exec(stmt, now).Error; err != nil {
+				return err
+			}
+		}
+		return nil
+	})
 }
 
 func (s *Store) Users() domain.UserRepository         { return &userRepo{db: s.db} }
 func (s *Store) Questions() domain.QuestionRepository { return &questionRepo{db: s.db} }
 func (s *Store) Games() domain.GameRepository         { return &gameRepo{db: s.db} }
 func (s *Store) Stats() domain.StatsRepository        { return &statsRepo{db: s.db} }
+func (s *Store) Metrics() domain.MetricsRepository    { return &metricsRepo{db: s.db} }
 
 func (s *Store) ResetUserData(userID uint) error {
 	return s.db.Transaction(func(tx *gorm.DB) error {

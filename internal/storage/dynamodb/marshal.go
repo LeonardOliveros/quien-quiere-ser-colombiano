@@ -57,17 +57,25 @@ type userItem struct {
 	Password       string     `dynamodbav:"password"`
 	Token          string     `dynamodbav:"token"`
 	TokenExpiresAt *time.Time `dynamodbav:"token_expires_at,omitempty"`
+	IsGuest        bool       `dynamodbav:"guest,omitempty"`
+	LastActivityAt *time.Time `dynamodbav:"last_activity_at,omitempty"`
 	CreatedAt      time.Time  `dynamodbav:"created_at"`
 	UpdatedAt      time.Time  `dynamodbav:"updated_at"`
+	TTL            int64      `dynamodbav:"ttl,omitempty"` // guests only
 }
 
 func (i userItem) toDomain() domain.User {
 	return domain.User{
 		ID: i.ID, Username: i.Username, Password: i.Password,
 		Token: i.Token, TokenExpiresAt: i.TokenExpiresAt,
+		IsGuest: i.IsGuest, LastActivityAt: i.LastActivityAt,
 		CreatedAt: i.CreatedAt, UpdatedAt: i.UpdatedAt,
 	}
 }
+
+// guestTTL is the item expiry stamped on everything a guest owns: their data
+// self-destructs domain.GuestDataTTL after it was last written/touched.
+func guestTTL(now time.Time) int64 { return now.Add(domain.GuestDataTTL).Unix() }
 
 // uniqItem reserves a unique value (username) for a user.
 type uniqItem struct {
@@ -103,19 +111,25 @@ type sessionItem struct {
 	TotalQuestions int        `dynamodbav:"total_questions"`
 	CorrectAnswers int        `dynamodbav:"correct_answers"`
 	Score          int        `dynamodbav:"score"`
+	IsGuest        bool       `dynamodbav:"guest,omitempty"`
 	CreatedAt      time.Time  `dynamodbav:"created_at"`
 	UpdatedAt      time.Time  `dynamodbav:"updated_at"`
+	TTL            int64      `dynamodbav:"ttl,omitempty"` // guests only
 }
 
 func newSessionItem(s domain.GameSession) sessionItem {
-	return sessionItem{
+	item := sessionItem{
 		PK: pkUser(s.UserID), SK: skSession(s.ID),
 		ID: s.ID, UserID: s.UserID, Mode: s.Mode, Categories: s.Categories,
 		Status: s.Status, StartTime: s.StartTime, EndTime: s.EndTime,
 		PausedAt: s.PausedAt, TimeElapsed: s.TimeElapsed, TimeLimit: s.TimeLimit,
 		TotalQuestions: s.TotalQuestions, CorrectAnswers: s.CorrectAnswers,
-		Score: s.Score, CreatedAt: s.CreatedAt, UpdatedAt: s.UpdatedAt,
+		Score: s.Score, IsGuest: s.IsGuest, CreatedAt: s.CreatedAt, UpdatedAt: s.UpdatedAt,
 	}
+	if s.IsGuest {
+		item.TTL = guestTTL(time.Now())
+	}
+	return item
 }
 
 func (i sessionItem) toDomain() domain.GameSession {
@@ -124,16 +138,18 @@ func (i sessionItem) toDomain() domain.GameSession {
 		Status: i.Status, StartTime: i.StartTime, EndTime: i.EndTime,
 		PausedAt: i.PausedAt, TimeElapsed: i.TimeElapsed, TimeLimit: i.TimeLimit,
 		TotalQuestions: i.TotalQuestions, CorrectAnswers: i.CorrectAnswers,
-		Score: i.Score, CreatedAt: i.CreatedAt, UpdatedAt: i.UpdatedAt,
+		Score: i.Score, IsGuest: i.IsGuest, CreatedAt: i.CreatedAt, UpdatedAt: i.UpdatedAt,
 	}
 }
 
 // sessionPointerItem maps a session ID to its owner, so SessionByID resolves
 // with two strongly consistent GetItems and no GSI.
 type sessionPointerItem struct {
-	PK     string `dynamodbav:"PK"`
-	SK     string `dynamodbav:"SK"`
-	UserID uint   `dynamodbav:"user_id"`
+	PK      string `dynamodbav:"PK"`
+	SK      string `dynamodbav:"SK"`
+	UserID  uint   `dynamodbav:"user_id"`
+	IsGuest bool   `dynamodbav:"guest,omitempty"`
+	TTL     int64  `dynamodbav:"ttl,omitempty"` // guests only
 }
 
 type answerItem struct {
@@ -147,6 +163,7 @@ type answerItem struct {
 	IsFlagged     bool      `dynamodbav:"is_flagged"`
 	TimeSpent     int       `dynamodbav:"time_spent"`
 	AnsweredAt    time.Time `dynamodbav:"answered_at"`
+	TTL           int64     `dynamodbav:"ttl,omitempty"` // guest sessions only
 }
 
 func newAnswerItem(a domain.GameAnswer) answerItem {
@@ -172,6 +189,7 @@ type historyItem struct {
 	GameSessionID uint      `dynamodbav:"game_session_id"`
 	QuestionID    uint      `dynamodbav:"question_id"`
 	CreatedAt     time.Time `dynamodbav:"created_at"`
+	TTL           int64     `dynamodbav:"ttl,omitempty"` // guest sessions only
 }
 
 type recommendationItem struct {
@@ -186,6 +204,19 @@ type recommendationItem struct {
 	Resources   string    `dynamodbav:"resources"`
 	Priority    int       `dynamodbav:"priority"`
 	CreatedAt   time.Time `dynamodbav:"created_at"`
+	TTL         int64     `dynamodbav:"ttl,omitempty"` // guests only
+}
+
+// dayMetricsItem is the per-day usage rollup read by the admin dashboard.
+// Counters are bumped with ADD expressions; the struct exists for reads.
+type dayMetricsItem struct {
+	PK           string `dynamodbav:"PK"`
+	SK           string `dynamodbav:"SK"`
+	GamesStarted int64  `dynamodbav:"games_started"`
+	ActiveUsers  int64  `dynamodbav:"active_users"`
+	NewGuests    int64  `dynamodbav:"new_guests"`
+	NewUsers     int64  `dynamodbav:"new_users"`
+	TTL          int64  `dynamodbav:"ttl,omitempty"`
 }
 
 func (i recommendationItem) toDomain() domain.StudyRecommendation {

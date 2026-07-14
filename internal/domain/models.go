@@ -24,6 +24,11 @@ type SubCategory struct {
 	Name       string `json:"name"`
 }
 
+// GuestDataTTL is how long a guest's data lives after their last activity.
+// The DynamoDB adapter stamps it as the item TTL; handlers use it as the
+// guest token lifetime so both expire together.
+const GuestDataTTL = 24 * time.Hour
+
 // User represents a quiz participant
 type User struct {
 	ID             uint       `gorm:"primaryKey" json:"id"`
@@ -31,6 +36,8 @@ type User struct {
 	Password       string     `gorm:"column:password" json:"-"`
 	Token          string     `gorm:"column:token" json:"-"`
 	TokenExpiresAt *time.Time `json:"-"`
+	IsGuest        bool       `gorm:"default:false" json:"is_guest"`
+	LastActivityAt *time.Time `json:"-"`
 	CreatedAt      time.Time  `json:"created_at"`
 	UpdatedAt      time.Time  `json:"updated_at"`
 }
@@ -93,6 +100,7 @@ type GameSession struct {
 	TotalQuestions int        `json:"total_questions"`
 	CorrectAnswers int        `json:"correct_answers"`
 	Score          int        `json:"score"`
+	IsGuest        bool       `json:"-"` // denormalized from the owner so adapters can expire guest data
 	CreatedAt      time.Time  `json:"created_at"`
 	UpdatedAt      time.Time  `json:"updated_at"`
 }
@@ -129,7 +137,34 @@ type StudyRecommendation struct {
 	Description string    `json:"description"`
 	Resources   string    `json:"resources"` // JSON string of study materials
 	Priority    int       `json:"priority"`  // 1-5, higher is more urgent
+	IsGuest     bool      `json:"-"`         // denormalized from the owner so adapters can expire guest data
 	CreatedAt   time.Time `json:"created_at"`
+}
+
+// MetricsTotals holds lifetime usage counters for the admin dashboard.
+type MetricsTotals struct {
+	RegisteredUsers int64 `json:"registered_users"`
+	GuestUsers      int64 `json:"guest_users"`
+	TotalGames      int64 `json:"total_games"`
+}
+
+// MetricsTimezone is the timezone used to bucket daily metrics. Colombia has
+// no DST, so a fixed offset is safe; UTC days would split Colombian evenings
+// across two dates.
+var MetricsTimezone = time.FixedZone("COT", -5*3600)
+
+// MetricsDay formats t as the daily-metrics bucket key (2006-01-02 in COT).
+func MetricsDay(t time.Time) string {
+	return t.In(MetricsTimezone).Format("2006-01-02")
+}
+
+// DailyMetrics holds per-day usage counters (Date format 2006-01-02).
+type DailyMetrics struct {
+	Date         string `json:"date"`
+	ActiveUsers  int64  `json:"active_users"` // users who started at least one game
+	GamesStarted int64  `json:"games_started"`
+	NewGuests    int64  `json:"new_guests"`
+	NewUsers     int64  `json:"new_users"`
 }
 
 // GameResult represents the summary of a completed game

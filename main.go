@@ -221,6 +221,11 @@ func setupRoutes(r *gin.Engine) {
 		// Auth routes (public)
 		api.POST("/register", registerUser)
 		api.POST("/login", loginUser)
+		api.POST("/guest", createGuest)
+
+		// Admin routes (hidden: non-admins get 404)
+		admin := api.Group("/admin", authRequired(), adminRequired())
+		admin.GET("/metrics", getAdminMetrics)
 
 		// Protected routes (require authentication)
 		protected := api.Group("")

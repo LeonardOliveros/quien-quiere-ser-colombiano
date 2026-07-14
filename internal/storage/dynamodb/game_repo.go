@@ -35,9 +35,13 @@ func (r *gameRepo) CreateSession(session *domain.GameSession) error {
 	if err != nil {
 		return fmt.Errorf("marshal session: %w", err)
 	}
-	pointer, err := attributevalue.MarshalMap(sessionPointerItem{
-		PK: pkSession(id), SK: skMeta, UserID: session.UserID,
-	})
+	pointerItem := sessionPointerItem{
+		PK: pkSession(id), SK: skMeta, UserID: session.UserID, IsGuest: session.IsGuest,
+	}
+	if session.IsGuest {
+		pointerItem.TTL = guestTTL(now)
+	}
+	pointer, err := attributevalue.MarshalMap(pointerItem)
 	if err != nil {
 		return fmt.Errorf("marshal session pointer: %w", err)
 	}
@@ -51,16 +55,42 @@ func (r *gameRepo) CreateSession(session *domain.GameSession) error {
 	if err != nil {
 		return fmt.Errorf("create session: %w", err)
 	}
+	r.s.guestSessions.Store(id, session.IsGuest)
 	return nil
+}
+
+// sessionPointer resolves the pointer item of a session, caching its guest
+// flag for the per-question TTL stamping in SaveAnswer/AddHistory.
+func (r *gameRepo) sessionPointer(ctx context.Context, sessionID uint) (sessionPointerItem, error) {
+	var pointer sessionPointerItem
+	if err := r.s.getItem(ctx, pkSession(sessionID), skMeta, &pointer); err != nil {
+		return pointer, err
+	}
+	r.s.guestSessions.Store(sessionID, pointer.IsGuest)
+	return pointer, nil
 }
 
 // sessionOwner resolves the owner of a session via the pointer item.
 func (r *gameRepo) sessionOwner(ctx context.Context, sessionID uint) (uint, error) {
-	var pointer sessionPointerItem
-	if err := r.s.getItem(ctx, pkSession(sessionID), skMeta, &pointer); err != nil {
+	pointer, err := r.sessionPointer(ctx, sessionID)
+	if err != nil {
 		return 0, err
 	}
 	return pointer.UserID, nil
+}
+
+// isGuestSession reports whether the session belongs to a guest, from cache
+// when possible. Lookup failures degrade to false: the write then simply
+// lacks a TTL, which only delays cleanup, never breaks correctness.
+func (r *gameRepo) isGuestSession(ctx context.Context, sessionID uint) bool {
+	if v, ok := r.s.guestSessions.Load(sessionID); ok {
+		return v.(bool)
+	}
+	pointer, err := r.sessionPointer(ctx, sessionID)
+	if err != nil {
+		return false
+	}
+	return pointer.IsGuest
 }
 
 func (r *gameRepo) SessionByID(id uint) (domain.GameSession, error) {
@@ -238,7 +268,11 @@ func (r *gameRepo) SaveAnswer(answer *domain.GameAnswer) error {
 		answer.ID = id
 	}
 
-	item, err := attributevalue.MarshalMap(newAnswerItem(*answer))
+	answerRow := newAnswerItem(*answer)
+	if r.isGuestSession(ctx, answer.GameSessionID) {
+		answerRow.TTL = guestTTL(time.Now())
+	}
+	item, err := attributevalue.MarshalMap(answerRow)
 	if err != nil {
 		return fmt.Errorf("marshal answer: %w", err)
 	}
@@ -483,10 +517,16 @@ func (r *gameRepo) AnsweredCountByCategory(sessionID uint) (map[string]int64, er
 }
 
 func (r *gameRepo) AddHistory(sessionID, questionID uint) error {
-	return r.s.putItem(context.Background(), historyItem{
+	ctx := context.Background()
+	now := time.Now()
+	item := historyItem{
 		PK: pkSession(sessionID), SK: skHistory(questionID),
-		GameSessionID: sessionID, QuestionID: questionID, CreatedAt: time.Now(),
-	})
+		GameSessionID: sessionID, QuestionID: questionID, CreatedAt: now,
+	}
+	if r.isGuestSession(ctx, sessionID) {
+		item.TTL = guestTTL(now)
+	}
+	return r.s.putItem(ctx, item)
 }
 
 func (r *gameRepo) UsedQuestionIDs(sessionID uint) ([]uint, error) {

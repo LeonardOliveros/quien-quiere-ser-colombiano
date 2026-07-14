@@ -21,6 +21,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"sync"
 	"time"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
@@ -38,6 +39,12 @@ type Store struct {
 	client *dynamodb.Client
 	table  string
 	cache  bankCache
+
+	// guestSessions caches sessionID -> IsGuest so per-question writes
+	// (answers, history) can stamp guest TTLs without re-reading the
+	// session pointer every time. Sessions never change owner, so entries
+	// are immutable once cached.
+	guestSessions sync.Map
 }
 
 var _ domain.Store = (*Store)(nil)
@@ -120,6 +127,7 @@ func (s *Store) Users() domain.UserRepository         { return &userRepo{s} }
 func (s *Store) Questions() domain.QuestionRepository { return &questionRepo{s} }
 func (s *Store) Games() domain.GameRepository         { return &gameRepo{s} }
 func (s *Store) Stats() domain.StatsRepository        { return &statsRepo{s} }
+func (s *Store) Metrics() domain.MetricsRepository    { return &metricsRepo{s} }
 
 func (s *Store) Close() error { return nil }
 
