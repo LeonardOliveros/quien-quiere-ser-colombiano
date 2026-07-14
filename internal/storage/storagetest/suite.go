@@ -102,7 +102,7 @@ func questionsByKey(t *testing.T, st domain.Store) map[string]domain.Question {
 
 func createUser(t *testing.T, st domain.Store, username string) domain.User {
 	t.Helper()
-	u := domain.User{Username: username, Password: "hash-" + username, Email: username + "@example.com"}
+	u := domain.User{Username: username, Password: "hash-" + username}
 	if err := st.Users().Create(&u); err != nil {
 		t.Fatalf("Users().Create(%s): %v", username, err)
 	}
@@ -275,22 +275,18 @@ func testUsers(t *testing.T, st domain.Store) {
 	if err != nil {
 		t.Fatalf("ByUsername: %v", err)
 	}
-	if got.ID != u.ID || got.Email != u.Email || got.Password != u.Password {
-		t.Errorf("ByUsername: got %+v, want id=%d email=%s", got, u.ID, u.Email)
+	if got.ID != u.ID || got.Password != u.Password {
+		t.Errorf("ByUsername: got %+v, want id=%d", got, u.ID)
 	}
 
 	if _, err := users.ByUsername("nadie"); err != domain.ErrNotFound {
 		t.Errorf("ByUsername(missing): got %v, want ErrNotFound", err)
 	}
 
-	// Duplicate username and duplicate email must fail.
-	dupU := domain.User{Username: "ana", Password: "x", Email: "otra@example.com"}
+	// Duplicate username must fail.
+	dupU := domain.User{Username: "ana", Password: "x"}
 	if err := users.Create(&dupU); err == nil {
 		t.Error("Create duplicate username: expected error, got nil")
-	}
-	dupE := domain.User{Username: "otra", Password: "x", Email: u.Email}
-	if err := users.Create(&dupE); err == nil {
-		t.Error("Create duplicate email: expected error, got nil")
 	}
 
 	// Token save + lookup.

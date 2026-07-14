@@ -68,16 +68,6 @@
                   >
                 </div>
                 <div class="mb-3">
-                  <label for="registerEmail" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="registerEmail"
-                    v-model="registerForm.email"
-                    required
-                  >
-                </div>
-                <div class="mb-3">
                   <label for="registerPassword" class="form-label">Contraseña</label>
                   <div class="password-wrapper">
                     <input
@@ -165,7 +155,6 @@ const loginForm = ref({
 
 const registerForm = ref({
   username: '',
-  email: '',
   password: ''
 })
 

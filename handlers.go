@@ -27,7 +27,6 @@ import (
 func registerUser(c *gin.Context) {
 	var registerData struct {
 		Username string `json:"username" binding:"required,min=3,max=50"`
-		Email    string `json:"email" binding:"required,email"`
 		Password string `json:"password" binding:"required,min=8,max=72"`
 	}
 	if err := c.ShouldBindJSON(&registerData); err != nil {
@@ -44,12 +43,11 @@ func registerUser(c *gin.Context) {
 
 	user := domain.User{
 		Username: registerData.Username,
-		Email:    registerData.Email,
 		Password: string(hashedPassword),
 	}
 
 	if err := store.Users().Create(&user); err != nil {
-		c.JSON(http.StatusConflict, gin.H{"error": "El usuario o el email ya está registrado"})
+		c.JSON(http.StatusConflict, gin.H{"error": "El usuario ya está registrado"})
 		return
 	}
 
@@ -65,8 +63,6 @@ func registerValidationMessage(err error) string {
 			switch fe.Field() {
 			case "Username":
 				return "El usuario debe tener entre 3 y 50 caracteres"
-			case "Email":
-				return "El email no es válido"
 			case "Password":
 				return "La contraseña debe tener entre 8 y 72 caracteres"
 			}

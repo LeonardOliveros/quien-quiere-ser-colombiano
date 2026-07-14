@@ -29,7 +29,6 @@ type User struct {
 	ID             uint       `gorm:"primaryKey" json:"id"`
 	Username       string     `gorm:"unique;not null" json:"username"`
 	Password       string     `gorm:"column:password" json:"-"`
-	Email          string     `gorm:"unique" json:"email"`
 	Token          string     `gorm:"column:token" json:"-"`
 	TokenExpiresAt *time.Time `json:"-"`
 	CreatedAt      time.Time  `json:"created_at"`

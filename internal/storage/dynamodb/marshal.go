@@ -55,7 +55,6 @@ type userItem struct {
 	ID             uint       `dynamodbav:"id"`
 	Username       string     `dynamodbav:"username"`
 	Password       string     `dynamodbav:"password"`
-	Email          string     `dynamodbav:"email"`
 	Token          string     `dynamodbav:"token"`
 	TokenExpiresAt *time.Time `dynamodbav:"token_expires_at,omitempty"`
 	CreatedAt      time.Time  `dynamodbav:"created_at"`
@@ -64,13 +63,13 @@ type userItem struct {
 
 func (i userItem) toDomain() domain.User {
 	return domain.User{
-		ID: i.ID, Username: i.Username, Password: i.Password, Email: i.Email,
+		ID: i.ID, Username: i.Username, Password: i.Password,
 		Token: i.Token, TokenExpiresAt: i.TokenExpiresAt,
 		CreatedAt: i.CreatedAt, UpdatedAt: i.UpdatedAt,
 	}
 }
 
-// uniqItem reserves a unique value (username, email) for a user.
+// uniqItem reserves a unique value (username) for a user.
 type uniqItem struct {
 	PK     string `dynamodbav:"PK"`
 	SK     string `dynamodbav:"SK"`

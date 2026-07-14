@@ -14,7 +14,6 @@ import (
 //	Question          QBANK                     Q#<key>
 //	User profile      USER#<id>                 PROFILE
 //	Username unique   UNIQ#USERNAME#<username>  UNIQ
-//	Email unique      UNIQ#EMAIL#<email>        UNIQ
 //	Auth token        TOKEN#<token>             META
 //	GameSession       USER#<id>                 SESSION#<pad12(id)>
 //	Session pointer   SESSION#<id>              META
@@ -44,7 +43,6 @@ func pad12(id uint) string { return fmt.Sprintf("%012d", id) }
 func pkCounter(entity string) string { return "COUNTER#" + entity }
 func pkUser(id uint) string          { return "USER#" + strconv.FormatUint(uint64(id), 10) }
 func pkUniqUsername(u string) string { return "UNIQ#USERNAME#" + u }
-func pkUniqEmail(e string) string    { return "UNIQ#EMAIL#" + e }
 func pkToken(token string) string    { return "TOKEN#" + token }
 
 // pkSession is the partition holding the session pointer, answers and history.

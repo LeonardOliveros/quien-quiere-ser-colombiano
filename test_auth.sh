@@ -6,7 +6,7 @@ echo "=== Testing Authentication Flow ==="
 echo -e "\n1. Testing registration..."
 REGISTER_RESPONSE=$(curl -s -X POST http://localhost:8080/api/register \
   -H "Content-Type: application/json" \
-  -d '{"username":"testuser","email":"test@test.com","password":"testpass"}')
+  -d '{"username":"testuser","password":"testpass"}')
 echo "Register response: $REGISTER_RESPONSE"
 
 # Test login

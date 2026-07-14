@@ -15,9 +15,9 @@ import (
 
 type userRepo struct{ s *Store }
 
-// Create inserts the profile plus uniqueness markers for username and email
-// in one transaction; any marker collision fails the whole transaction, which
-// mirrors the UNIQUE constraints of the SQLite schema.
+// Create inserts the profile plus a uniqueness marker for the username in one
+// transaction; a marker collision fails the whole transaction, which mirrors
+// the UNIQUE constraint of the SQLite schema.
 func (r *userRepo) Create(user *domain.User) error {
 	ctx := context.Background()
 	id, err := r.s.nextID(ctx, "user")
@@ -31,7 +31,7 @@ func (r *userRepo) Create(user *domain.User) error {
 
 	profile, err := attributevalue.MarshalMap(userItem{
 		PK: pkUser(id), SK: skProfile,
-		ID: id, Username: user.Username, Password: user.Password, Email: user.Email,
+		ID: id, Username: user.Username, Password: user.Password,
 		Token: user.Token, TokenExpiresAt: user.TokenExpiresAt,
 		CreatedAt: now, UpdatedAt: now,
 	})
@@ -39,14 +39,7 @@ func (r *userRepo) Create(user *domain.User) error {
 		return fmt.Errorf("marshal user: %w", err)
 	}
 
-	uniq := func(pk string) (map[string]types.AttributeValue, error) {
-		return attributevalue.MarshalMap(uniqItem{PK: pk, SK: skUniq, UserID: id})
-	}
-	usernameMarker, err := uniq(pkUniqUsername(user.Username))
-	if err != nil {
-		return err
-	}
-	emailMarker, err := uniq(pkUniqEmail(user.Email))
+	usernameMarker, err := attributevalue.MarshalMap(uniqItem{PK: pkUniqUsername(user.Username), SK: skUniq, UserID: id})
 	if err != nil {
 		return err
 	}
@@ -56,7 +49,6 @@ func (r *userRepo) Create(user *domain.User) error {
 		TransactItems: []types.TransactWriteItem{
 			{Put: &types.Put{TableName: aws.String(r.s.table), Item: profile, ConditionExpression: notExists}},
 			{Put: &types.Put{TableName: aws.String(r.s.table), Item: usernameMarker, ConditionExpression: notExists}},
-			{Put: &types.Put{TableName: aws.String(r.s.table), Item: emailMarker, ConditionExpression: notExists}},
 		},
 	})
 	if err != nil {
